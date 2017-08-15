@@ -2,6 +2,7 @@
   angular.module('app')
   .controller('homeCtrl', function($scope){
 
+
       let homeMainContainer = document.getElementById('home-hero'),
           headlineContent = document.getElementById('headline-content'),
           backgroundGrad = document.getElementById('home-linear-grad'),
@@ -88,4 +89,4 @@
       // });
 
   })
-})()
+})();

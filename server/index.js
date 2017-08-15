@@ -3,7 +3,7 @@ const express = require('express'),
       session = require('express-session'),
       bodyParser = require('body-parser'),
       massive = require('massive'),
-      config = require('../config');
+      config = require('../config.js');
 
 // const dbPassword = config.dbPassword;
 const port = process.env.PORT || config.port;

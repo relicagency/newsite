@@ -23,12 +23,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/index.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="366">
+              <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+              <folding>
+                <marker date="1502821966720" expanded="true" signature="859:965" ph="{&quot;body-parser&quot;: &quot;^1.17.1&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,20 +148,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -260,7 +248,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133789000" />
+    <option name="totallyTimeSpent" value="133968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1384" height="736" extended-state="6" />
@@ -1042,22 +1030,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding>
-            <marker date="1502821966720" expanded="true" signature="0:967" ph="{&quot;name&quot;: &quot;newsite&quot;...}" />
-            <marker date="1502821966720" expanded="true" signature="119:183" ph="{&quot;start&quot;: &quot;nodemon server/index.js&quot;...}" />
-            <marker date="1502821966720" expanded="true" signature="201:285" ph="{&quot;type&quot;: &quot;git&quot;...}" />
-            <marker date="1502821966720" expanded="true" signature="358:422" ph="{&quot;url&quot;: &quot;https://github.com/relicagency/newsite/issues&quot;...}" />
-            <marker date="1502821966720" expanded="true" signature="508:748" ph="{&quot;babel-preset-es2015&quot;: &quot;^6.22.0&quot;...}" />
-            <marker date="1502821966720" expanded="true" signature="768:965" ph="{&quot;body-parser&quot;: &quot;^1.17.1&quot;...}" />
-            <marker date="1502821966720" expanded="true" signature="859:965" ph="{&quot;body-parser&quot;: &quot;^1.17.1&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1107,9 +1079,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="320">
+          <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding>
+            <marker date="1502825190317" expanded="true" signature="611:717" ph="//..." />
+            <marker date="1502825190317" expanded="true" signature="720:892" ph="//..." />
+            <marker date="1502825190317" expanded="true" signature="896:1142" ph="//..." />
+            <marker date="1502825190317" expanded="true" signature="1233:1284" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <marker date="1502821966720" expanded="true" signature="859:965" ph="{&quot;body-parser&quot;: &quot;^1.17.1&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>

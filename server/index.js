@@ -2,11 +2,12 @@
 const express = require('express'),
       session = require('express-session'),
       bodyParser = require('body-parser'),
-      massive = require('massive'),
-      config = require('../config.js');
+      massive = require('massive');
+
+      // config = require('../config.js');
 
 // const dbPassword = config.dbPassword;
-const port = process.env.PORT || config.port;
+const port = process.env.PORT || 3000;
 // const conStr = `postgres://postgres:${dbPassword}@localhost/relictwo`;
 
 

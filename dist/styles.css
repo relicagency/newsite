@@ -227,7 +227,7 @@
   background-color: #BD9A35; }
 
 .swn-bottom-content-one {
-  background-image: url("../images/traditional-media-tile.png");
+  background-image: url("../images/traditional-media-tile.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -244,11 +244,11 @@
   height: 500px; }
 
 .swn-bottom-content-two {
-  background-image: url("../images/dino-work-tile.png");
+  background-image: url("../images/dino-work-tile.jpg");
   background-size: cover; }
 
 .swn-bottom-content-three {
-  background-image: url("../images/newsroom-tile.png");
+  background-image: url("../images/newsroom-tile.jpg");
   background-size: cover; }
 
 .services-container {
@@ -519,6 +519,9 @@ nav {
     top: 30px;
     left: 35px;
     cursor: pointer; }
+  nav .nav-logo-svg {
+    height: 50px;
+    width: 194px; }
   nav ul {
     list-style: none;
     position: absolute;

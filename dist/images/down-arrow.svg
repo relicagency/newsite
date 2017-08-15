@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2016 -3803.353 28.501 13.653">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #bd9b37;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path id="down-arrow" class="cls-1" d="M1.3,1.5,15.2,13.085,28.524,2.079" transform="translate(-2016.66 -3804.085)"/>
+</svg>

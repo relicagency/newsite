@@ -1,0 +1,107 @@
+<div class="services-main-container">
+
+
+    <div class="services-main-content-container">
+
+        <div class="services-main-title">services</div>
+
+
+                <div class="services-content-top">
+                    <div class="services-top-services" id="top-services-one" ng-mouseover="changeContent(0)">
+                        <img class="services-tile" id="services-tile-one" src="../../images/account-tile2.svg">
+                        <p>traditional media</p>
+                        <img class="down-arrow" src="../../images/down-arrow.svg">
+                    </div>
+                    <div class="services-top-services" id="top-services-two" ng-mouseover="changeContent(1)">
+                        <img class="services-tile" id="services-tile-two" src="../../images/creative-tile2.svg">
+                        <p>creative</p>
+                        <img class="down-arrow" src="../../images/down-arrow.svg">
+                    </div>
+                    <div class="services-top-services" id="top-services-three" ng-mouseover="changeContent(2)">
+                        <img class="services-tile" id="services-tile-three" src="../../images/demand-gen-tile.svg">
+                        <p>demand gen</p>
+                        <img class="down-arrow" src="../../images/down-arrow.svg">
+                    </div>
+                    <div class="services-top-services" id="top-services-four" ng-mouseover="changeContent(3)">
+                        <img class="services-tile" id="services-tile-four" src="../../images/digital-tile.svg">
+                        <p>digital</p>
+                        <img class="down-arrow" src="../../images/down-arrow.svg">
+                    </div>-
+                    <div class="services-top-services" id="top-services-five" ng-mouseover="changeContent(4)">
+                        <img class="services-tile" id="services-tile-five" src="../../images/traditional-tile.svg">
+                        <p>pr & content</p>
+                        <img class="down-arrow" src="../../images/down-arrow.svg">
+                    </div>
+                </div>
+                <div class="services-content-middle">
+                        <div class="content-two-top">
+                            <div class="top-two-sec" id="top-sec-0"></div>
+                            <div class="top-two-sec" id="top-sec-1"></div>
+                            <div class="top-two-sec" id="top-sec-2"></div>
+                            <div class="top-two-sec" id="top-sec-3"></div>
+                            <div class="top-two-sec" id="top-sec-4"></div>
+                        </div>
+
+                    <p class="services-content-title">{{services[content].title}}</p>
+
+                    <p class="service-content-info">{{services[content].info}}</p>
+
+                </div>
+
+        <div class="services-accordion">
+            <div class="services-accordion-section" ng-click="accordionPop('one')">
+                <p>Creative Strategy</p>
+                <img class="services-plus-sign" id="plus-sign-one" src="../../images/plus-sign.svg">
+            </div>
+            <div class="services-accordion-pop" id="accordion-pop-one"></div>
+            <div class="services-accordion-section" ng-click="accordionPop('two')">
+                <p>Campaign Development</p>
+                <img class="services-plus-sign" id="plus-sign-two" src="../../images/plus-sign.svg">
+            </div>
+            <div class="services-accordion-pop" id="accordion-pop-two"></div>
+            <div class="services-accordion-section" ng-click="accordionPop('three')">
+                <p>Branding</p>
+                <img class="services-plus-sign" id="plus-sign-three" src="../../images/plus-sign.svg">
+            </div>
+            <div class="services-accordion-pop" id="accordion-pop-three"></div>
+            <div class="services-accordion-section" ng-click="accordionPop('four')">
+                <p>Graphic Design</p>
+                <img class="services-plus-sign" id="plus-sign-four" src="../../images/plus-sign.svg">
+            </div>
+            <div class="services-accordion-pop" id="accordion-pop-four"></div>
+            <div class="services-accordion-section" ng-click="accordionPop('five')">
+                <p>TV/Radio Production</p>
+                <img class="services-plus-sign" id="plus-sign-five" src="../../images/plus-sign.svg">
+            </div>
+            <div class="services-accordion-pop" id="accordion-pop-five"></div>
+            <div class="services-accordion-section" ng-click="accordionPop('six')">
+                <p>Digital Media</p>
+                <img class="services-plus-sign" id="plus-sign-six" src="../../images/plus-sign.svg">
+            </div>
+            <div class="services-accordion-pop" id="accordion-pop-six"></div>
+            <div class="services-accordion-section" ng-click="accordionPop('seven')">
+                <p>Web Design/Development</p>
+                <img class="services-plus-sign" id="plus-sign-seven" src="../../images/plus-sign.svg">
+            </div>
+            <div class="services-accordion-pop" id="accordion-pop-seven"></div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="services-main-background"></div>
+
+    <!--<div class="services-main-background-gradient"></div>-->
+
+    <div class="looking-for-help services-looking-for-help">
+
+        <p>Looking for advertising help?</p>
+        <button class="get-started-button">Get Started</button>
+
+    </div>
+
+
+</div>

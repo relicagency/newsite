@@ -14,7 +14,7 @@ const port = process.env.PORT || 3000;
 // ==== Server Initialization ==================================
 const app = module.exports = express();
 
-app.use(express.static(__dirname + './../dist'));
+app.use(express.static(__dirname + '../dist/index.html'));
 app.use(bodyParser.json());
 
 // app.use(session({

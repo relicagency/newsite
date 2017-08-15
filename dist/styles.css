@@ -475,8 +475,16 @@
 
 .home-video-play-icon {
   position: absolute;
-  height: 125px;
-  width: 125px; }
+  height: calc(100vh / 6);
+  cursor: pointer;
+  z-index: 2; }
+
+.home-video-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #161616;
+  opacity: 0.3; }
 
 .looking-for-help {
   position: relative;

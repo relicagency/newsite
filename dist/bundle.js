@@ -20,6 +20,10 @@
       url: '/contact',
       controller: 'contactCtrl',
       templateUrl: './components/contact/contact.html'
+    }).state('about', {
+      url: '/about',
+      controller: 'aboutCtrl',
+      templateUrl: './components/about/about.html'
     });
 
     $urlRouterProvider.otherwise('/home');
@@ -50,12 +54,20 @@
 'use strict';
 
 /**
+ * Created by Seth on 8/16/2017.
+ */
+(function () {
+    angular.module('app').controller('aboutCtrl', function (mainService) {
+        console.log('Yo, its the about page...');
+    });
+})();
+'use strict';
+
+/**
  * Created by Seth on 8/14/2017.
  */
 (function () {
-    angular.module('app').controller('contactCtrl', function (mainService) {
-        console.log('Yo, its the contact page...');
-    });
+    angular.module('app').controller('contactCtrl', function (mainService) {});
 })();
 'use strict';
 
@@ -230,31 +242,6 @@
 })();
 'use strict';
 
-/**
- * Created by Seth on 8/9/2017.
- */
-(function () {
-
-    angular.module('app').directive('footerDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/footer/footer.html',
-            controller: 'footerCtrl'
-        };
-    });
-})();
-'use strict';
-
-(function () {
-    angular.module('app').controller('footerCtrl', function ($scope) {
-
-        $scope.footerSocialHover = function (social) {
-            TweenMax.fromTo(document.getElementById('footer-social-' + social), 1, { height: "40px", width: "40px" }, { height: "35px", width: "35px" });
-        };
-    });
-})();
-'use strict';
-
 (function () {
 
     angular.module('app').directive('homeContentDir', function () {
@@ -346,6 +333,31 @@
                 height: "200",
                 width: "275px"
             });
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/9/2017.
+ */
+(function () {
+
+    angular.module('app').directive('footerDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/footer/footer.html',
+            controller: 'footerCtrl'
+        };
+    });
+})();
+'use strict';
+
+(function () {
+    angular.module('app').controller('footerCtrl', function ($scope) {
+
+        $scope.footerSocialHover = function (social) {
+            TweenMax.fromTo(document.getElementById('footer-social-' + social), 1, { height: "40px", width: "40px" }, { height: "35px", width: "35px" });
         };
     });
 })();

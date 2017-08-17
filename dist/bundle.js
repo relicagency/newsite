@@ -90,9 +90,6 @@
     angular.module('app').controller('contactCtrl', function ($scope, mainService) {
 
         $scope.contactRelic = function (contact) {
-
-            console.log(contact);
-
             mainService.contactRelic(contact).then(function (response) {
                 console.log(response);
             });

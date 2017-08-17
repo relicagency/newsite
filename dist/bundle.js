@@ -49,7 +49,27 @@
  * Created by Seth on 8/11/2017.
  */
 (function () {
-    angular.module('app').service('mainService', function ($http) {});
+    angular.module('app').service('mainService', function ($http) {
+
+        this.contactRelic = function (contact) {
+            return $http({
+                method: 'POST',
+                url: '/relic/contact',
+                data: {
+                    firstName: contact.firstName,
+                    lastName: contact.lastName,
+                    jobTitle: contact.jobTitle,
+                    business: contact.business,
+                    email: contact.email,
+                    phone: contact.phone,
+                    message: contact.message,
+                    captcha: contact.captcha
+                }
+            }).then(function (response) {
+                return response;
+            });
+        };
+    });
 })();
 'use strict';
 
@@ -57,7 +77,7 @@
  * Created by Seth on 8/16/2017.
  */
 (function () {
-    angular.module('app').controller('aboutCtrl', function (mainService) {
+    angular.module('app').controller('aboutCtrl', function ($scope, mainService) {
         console.log('Yo, its the about page...');
     });
 })();
@@ -67,7 +87,17 @@
  * Created by Seth on 8/14/2017.
  */
 (function () {
-    angular.module('app').controller('contactCtrl', function (mainService) {});
+    angular.module('app').controller('contactCtrl', function ($scope, mainService) {
+
+        $scope.contactRelic = function (contact) {
+
+            console.log(contact);
+
+            mainService.contactRelic(contact).then(function (response) {
+                console.log(response);
+            });
+        };
+    });
 })();
 'use strict';
 
@@ -242,6 +272,31 @@
 })();
 'use strict';
 
+/**
+ * Created by Seth on 8/9/2017.
+ */
+(function () {
+
+    angular.module('app').directive('footerDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/footer/footer.html',
+            controller: 'footerCtrl'
+        };
+    });
+})();
+'use strict';
+
+(function () {
+    angular.module('app').controller('footerCtrl', function ($scope) {
+
+        $scope.footerSocialHover = function (social) {
+            TweenMax.fromTo(document.getElementById('footer-social-' + social), 1, { height: "40px", width: "40px" }, { height: "35px", width: "35px" });
+        };
+    });
+})();
+'use strict';
+
 (function () {
 
     angular.module('app').directive('homeContentDir', function () {
@@ -333,31 +388,6 @@
                 height: "200",
                 width: "275px"
             });
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/9/2017.
- */
-(function () {
-
-    angular.module('app').directive('footerDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/footer/footer.html',
-            controller: 'footerCtrl'
-        };
-    });
-})();
-'use strict';
-
-(function () {
-    angular.module('app').controller('footerCtrl', function ($scope) {
-
-        $scope.footerSocialHover = function (social) {
-            TweenMax.fromTo(document.getElementById('footer-social-' + social), 1, { height: "40px", width: "40px" }, { height: "35px", width: "35px" });
         };
     });
 })();

@@ -1,5 +1,8 @@
 <div class="contact-main-container">
 
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
     <div class="contact-main-background"></div>
 
     <div class="contact-main-content">
@@ -13,15 +16,17 @@
             <p class="get-started">get started</p>
 
             <form class="contact-form">
-                <input class="contact-input" type="text" placeholder="First Name">
-                <input class="contact-input" type="text" placeholder="Last Name">
-                <input class="contact-input" type="text" placeholder="Job Title">
-                <input class="contact-input" type="text" placeholder="Business Name">
-                <input class="contact-input" type="email" placeholder="Email">
-                <input class="contact-input" type="text" placeholder="Phone Number">
-                <input class="contact-input" type="text" placeholder="Message">
+                <input ng-model="contact.firstName" class="contact-input" type="text" placeholder="First Name">
+                <input ng-model="contact.lastName" class="contact-input" type="text" placeholder="Last Name">
+                <input ng-model="contact.jobTitle" class="contact-input" type="text" placeholder="Job Title">
+                <input ng-model="contact.business" class="contact-input" type="text" placeholder="Business Name">
+                <input ng-model="contact.email" class="contact-input" type="email" placeholder="Email">
+                <input ng-model="contact.phone" class="contact-input" type="text" placeholder="Phone Number">
+                <input ng-model="contact.message" class="contact-input" type="text" placeholder="Message">
 
-                <button class="get-started-button contact-button" type="submit">Submit</button>
+                <div ng-model="contact.recaptcha" class="g-recaptcha" data-sitekey="6LfjNi0UAAAAABBsQ1W4gywWWmj8ZM5re4bf5Gcz"></div>
+
+                <button class="get-started-button contact-button" ng-click="contactRelic(contact)" type="submit">Submit</button>
             </form>
         </div>
         <div class="contact-map-container">

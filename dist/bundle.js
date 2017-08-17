@@ -24,6 +24,10 @@
       url: '/about',
       controller: 'aboutCtrl',
       templateUrl: './components/about/about.html'
+    }).state('tourism', {
+      url: '/expertise/tourism',
+      controller: 'tourismCtrl',
+      templateUrl: './components/tourism/tourism.html'
     });
 
     $urlRouterProvider.otherwise('/home');
@@ -70,6 +74,144 @@
             });
         };
     });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/9/2017.
+ */
+(function () {
+
+    angular.module('app').directive('footerDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/footer/footer.html',
+            controller: 'footerCtrl'
+        };
+    });
+})();
+'use strict';
+
+(function () {
+    angular.module('app').controller('footerCtrl', function ($scope) {
+
+        $scope.footerSocialHover = function (social) {
+            TweenMax.fromTo(document.getElementById('footer-social-' + social), 1, { height: "40px", width: "40px" }, { height: "35px", width: "35px" });
+        };
+    });
+})();
+'use strict';
+
+(function () {
+
+    angular.module('app').directive('homeContentDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/home-content/home-content.html',
+            controller: 'homeContentCtrl'
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/9/2017.
+ */
+(function () {
+    angular.module('app').controller('homeContentCtrl', function ($scope) {
+
+        var previousContent = "main-content",
+            previousTop = "",
+            mainContent = document.getElementById('main-content'),
+            services = document.getElementById('services'),
+            work = document.getElementById('work'),
+            articles = document.getElementById('articles');
+
+        $scope.switchContent = function (switcher) {
+
+            TweenMax.to(document.getElementById("top-" + switcher), 0.5, { backgroundColor: "white", color: '#161616' });
+            if (previousTop !== "" && previousTop !== "top-" + switcher) {
+                TweenMax.to(document.getElementById(previousTop), 0.5, { backgroundColor: '#161616', color: "white" });
+            }
+
+            TweenMax.to(document.getElementById(previousContent), 0, { display: "none" });
+            TweenMax.to(document.getElementById(switcher), 0, { display: 'flex' });
+
+            previousContent = switcher;
+            previousTop = "top-" + switcher;
+        };
+
+        $scope.switcher = function () {
+            TweenMax.to(document.getElementById(previousContent), 0, { display: "none" });
+            TweenMax.to(document.getElementById('main-content'), 0, { display: "flex" }, 0.5);
+            TweenMax.to(document.getElementById(previousTop), 0.25, { backgroundColor: '#161616', color: "white" });
+
+            previousContent = 'main-content';
+            previousTop = "";
+        };
+
+        $scope.swnContentHover = function (num) {
+
+            if (num === "four") {
+                TweenMax.to(document.getElementById('services-content-' + num), 0.5, { ease: Power2.easeOut, height: "250px" }, 0.25);
+            } else {
+                TweenMax.to(document.getElementById('services-content-' + num), 0.5, { ease: Power2.easeOut, height: "350px" }, 0.25);
+            }
+        };
+
+        $scope.swnContentHoverLeave = function (num) {
+            if (num === "four") {
+                TweenMax.to(document.getElementById('services-content-' + num), 0.25, { ease: Power2.easeOut, height: "200px" });
+            } else {
+                TweenMax.to(document.getElementById('services-content-' + num), 0.25, { ease: Power2.easeOut, height: "300px" });
+            }
+        };
+
+        $scope.clientHover = function (num) {
+            TweenMax.to(document.getElementById('client-image-' + num), 0.5, {
+                height: "225px",
+                width: "225px",
+                ease: Power3.easeOut
+            });
+        };
+        $scope.clientHoverLeave = function (num) {
+            TweenMax.to(document.getElementById('client-image-' + num), 0.25, {
+                height: "200px",
+                width: "200px"
+            });
+        };
+
+        $scope.articleHover = function (num) {
+            TweenMax.to(document.getElementById('article-pic-' + num), 0.5, {
+                height: "225px",
+                width: "300px",
+                ease: Power3.easeOut
+            });
+        };
+        $scope.articleHoverLeave = function (num) {
+            TweenMax.to(document.getElementById('article-pic-' + num), 0.25, {
+                height: "200",
+                width: "275px"
+            });
+        };
+    });
+})();
+'use strict';
+
+(function () {
+  angular.module('app').controller('navCtrl', function ($scope) {});
+})();
+'use strict';
+
+(function () {
+
+  angular.module('app').directive('navDir', function () {
+    return {
+      restrict: 'E',
+      templateUrl: './directives/nav/navTmpl.html',
+      controller: 'navCtrl'
+    };
+  });
 })();
 'use strict';
 
@@ -270,139 +412,9 @@
 'use strict';
 
 /**
- * Created by Seth on 8/9/2017.
+ * Created by Seth on 8/17/2017.
  */
 (function () {
-
-    angular.module('app').directive('footerDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/footer/footer.html',
-            controller: 'footerCtrl'
-        };
-    });
-})();
-'use strict';
-
-(function () {
-    angular.module('app').controller('footerCtrl', function ($scope) {
-
-        $scope.footerSocialHover = function (social) {
-            TweenMax.fromTo(document.getElementById('footer-social-' + social), 1, { height: "40px", width: "40px" }, { height: "35px", width: "35px" });
-        };
-    });
-})();
-'use strict';
-
-(function () {
-
-    angular.module('app').directive('homeContentDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/home-content/home-content.html',
-            controller: 'homeContentCtrl'
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/9/2017.
- */
-(function () {
-    angular.module('app').controller('homeContentCtrl', function ($scope) {
-
-        var previousContent = "main-content",
-            previousTop = "",
-            mainContent = document.getElementById('main-content'),
-            services = document.getElementById('services'),
-            work = document.getElementById('work'),
-            articles = document.getElementById('articles');
-
-        $scope.switchContent = function (switcher) {
-
-            TweenMax.to(document.getElementById("top-" + switcher), 0.5, { backgroundColor: "white", color: '#161616' });
-            if (previousTop !== "" && previousTop !== "top-" + switcher) {
-                TweenMax.to(document.getElementById(previousTop), 0.5, { backgroundColor: '#161616', color: "white" });
-            }
-
-            TweenMax.to(document.getElementById(previousContent), 0, { display: "none" });
-            TweenMax.to(document.getElementById(switcher), 0, { display: 'flex' });
-
-            previousContent = switcher;
-            previousTop = "top-" + switcher;
-        };
-
-        $scope.switcher = function () {
-            TweenMax.to(document.getElementById(previousContent), 0, { display: "none" });
-            TweenMax.to(document.getElementById('main-content'), 0, { display: "flex" }, 0.5);
-            TweenMax.to(document.getElementById(previousTop), 0.25, { backgroundColor: '#161616', color: "white" });
-
-            previousContent = 'main-content';
-            previousTop = "";
-        };
-
-        $scope.swnContentHover = function (num) {
-
-            if (num === "four") {
-                TweenMax.to(document.getElementById('services-content-' + num), 0.5, { ease: Power2.easeOut, height: "250px" }, 0.25);
-            } else {
-                TweenMax.to(document.getElementById('services-content-' + num), 0.5, { ease: Power2.easeOut, height: "350px" }, 0.25);
-            }
-        };
-
-        $scope.swnContentHoverLeave = function (num) {
-            if (num === "four") {
-                TweenMax.to(document.getElementById('services-content-' + num), 0.25, { ease: Power2.easeOut, height: "200px" });
-            } else {
-                TweenMax.to(document.getElementById('services-content-' + num), 0.25, { ease: Power2.easeOut, height: "300px" });
-            }
-        };
-
-        $scope.clientHover = function (num) {
-            TweenMax.to(document.getElementById('client-image-' + num), 0.5, {
-                height: "225px",
-                width: "225px",
-                ease: Power3.easeOut
-            });
-        };
-        $scope.clientHoverLeave = function (num) {
-            TweenMax.to(document.getElementById('client-image-' + num), 0.25, {
-                height: "200px",
-                width: "200px"
-            });
-        };
-
-        $scope.articleHover = function (num) {
-            TweenMax.to(document.getElementById('article-pic-' + num), 0.5, {
-                height: "225px",
-                width: "300px",
-                ease: Power3.easeOut
-            });
-        };
-        $scope.articleHoverLeave = function (num) {
-            TweenMax.to(document.getElementById('article-pic-' + num), 0.25, {
-                height: "200",
-                width: "275px"
-            });
-        };
-    });
-})();
-'use strict';
-
-(function () {
-  angular.module('app').controller('navCtrl', function ($scope) {});
-})();
-'use strict';
-
-(function () {
-
-  angular.module('app').directive('navDir', function () {
-    return {
-      restrict: 'E',
-      templateUrl: './directives/nav/navTmpl.html',
-      controller: 'navCtrl'
-    };
-  });
+  angular.module('app').controller('tourismCtrl', function ($scope, mainService) {});
 })();
 //# sourceMappingURL=maps/bundle.js.map

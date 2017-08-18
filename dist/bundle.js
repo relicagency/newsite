@@ -103,6 +103,11 @@
 'use strict';
 
 (function () {
+  angular.module('app').controller('expertiseCtrl', function ($scope) {});
+})();
+'use strict';
+
+(function () {
       angular.module('app').controller('homeCtrl', function ($scope) {
 
             var homeMainContainer = document.getElementById('home-hero'),
@@ -189,11 +194,6 @@
             //     video.volume = volumeBar.value;
             // });
       });
-})();
-'use strict';
-
-(function () {
-  angular.module('app').controller('expertiseCtrl', function ($scope) {});
 })();
 'use strict';
 
@@ -403,7 +403,23 @@
 'use strict';
 
 (function () {
-  angular.module('app').controller('navCtrl', function ($scope) {});
+      angular.module('app').controller('navCtrl', function ($scope) {
+
+            $scope.navDropper = function (num) {
+
+                  TweenMax.to(document.getElementById('nav-drop-' + num), 0.4, {
+                        ease: Power3.easeIn,
+                        height: "100%"
+                  });
+            };
+
+            $scope.navShrinker = function (num) {
+                  TweenMax.to(document.getElementById('nav-drop-' + num), 0.25, {
+                        ease: Power3.easeOut,
+                        height: 0
+                  });
+            };
+      });
 })();
 'use strict';
 

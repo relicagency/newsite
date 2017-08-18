@@ -78,6 +78,210 @@
 'use strict';
 
 /**
+ * Created by Seth on 8/16/2017.
+ */
+(function () {
+    angular.module('app').controller('aboutCtrl', function ($scope, mainService) {
+        console.log('Yo, its the about page...');
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/14/2017.
+ */
+(function () {
+    angular.module('app').controller('contactCtrl', function ($scope, mainService) {
+
+        $scope.contactRelic = function (contact) {
+            mainService.contactRelic(contact).then(function (response) {
+                console.log(response);
+            });
+        };
+    });
+})();
+'use strict';
+
+(function () {
+      angular.module('app').controller('homeCtrl', function ($scope) {
+
+            var homeMainContainer = document.getElementById('home-hero'),
+                headlineContent = document.getElementById('headline-content'),
+                backgroundGrad = document.getElementById('home-linear-grad'),
+                navBackdrop = document.getElementById('nav-backdrop');
+
+            window.onscroll = function () {
+                  var csParaStart = window.pageYOffset * 0.75;
+
+                  homeMainContainer.style.backgroundPositionY = csParaStart + "px";
+                  headlineContent.style.opacity = 1 - csParaStart * 0.0019;
+                  headlineContent.style.top = 50 + csParaStart * 0.075 + "%";
+                  backgroundGrad.style.opacity = 0.5 - csParaStart * 0.004;
+
+                  if (window.pageYOffset > 100) {
+                        TweenMax.to(navBackdrop, 2, { opacity: "0.8" });
+                  }if (window.pageYOffset < 95) {
+                        TweenMax.to(navBackdrop, 2, { opacity: 0 });
+                  }
+            };
+
+            // let video = document.getElementsByClassName('home-video');
+            //
+            // let playButton = document.getElementsByClassName('play-pause');
+            // let mute = document.getElementsByClassName('mute');
+            // let fullScreen = document.getElementsByClassName('full-screen');
+            //
+            // let seekBar = document.getElementsByClassName('seek-bar');
+            // let volumeBar = document.getElementsByClassName('volume-bar');
+            //
+            // playButton.addEventListener('click', function(){
+            //     if(video.paused == true){
+            //         video.play();
+            //
+            //         playButton.innerHTML = 'Pause'
+            //     } else{
+            //         video.pause();
+            //         playButton.innerHTML = 'Play'
+            //     }
+            //
+            // });
+            //
+            // mute.addEventListener('click', function(){
+            //     if(video.muted == false){
+            //         video.muted = true;
+            //         mute.innerHTML = 'Unmute'
+            //     } else {
+            //         video.muted = false;
+            //
+            //         mute.innerHTML = 'Mute'
+            //     }
+            // });
+            //
+            // fullScreen.addEventListener('click', function(){
+            //     if(video.requestFullScreen){
+            //         video.requestFullScreen();
+            //     }  else if (video.mozRequestFullScreen){
+            //         video.mozRequestFullScreen();
+            //     } else if (video.webkitRequestFullScreen){
+            //         video.webkitRequestFullScreen();
+            //     }
+            // });
+            //
+            // seekBar.addEventListener('change', function(){
+            //     let time = video.duration * (seekBar.value / 100)
+            //     video.currentTime = time;
+            // });
+            //
+            // video.addEventListener('timeupdate', function(){
+            //     let value = (100 / video.duration) * video.currentTime;
+            //     seekBar.value = value;
+            // });
+            //
+            // seekBar.addEventListener('mousedown', function(){
+            //     video.pause();
+            // });
+            // seekBar.addEventListener('mouseup', function(){
+            //     video.play();
+            //     playButton.innerHTML = 'Pause'
+            // });
+            //
+            // volumeBar.addEventListener('change', function () {
+            //     video.volume = volumeBar.value;
+            // });
+      });
+})();
+'use strict';
+
+(function () {
+  angular.module('app').controller('expertiseCtrl', function ($scope) {});
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/11/2017.
+ */
+(function () {
+    angular.module('app').controller('servicesCtrl', function ($scope, mainService) {
+
+        var lastAccordion = "";
+        var lastTopSec = -1;
+        $scope.content = 0;
+
+        $scope.changeContent = function (num) {
+            $scope.content = num;
+
+            TweenMax.to(document.getElementById('top-sec-' + num), 0.10, {
+                backgroundColor: "#BD9A35"
+            });
+
+            if (lastTopSec > -1 && lastTopSec !== num) {
+                TweenMax.to(document.getElementById('top-sec-' + lastTopSec), 0.10, {
+                    backgroundColor: "transparent"
+                });
+            }
+
+            lastTopSec = num;
+        };
+
+        $scope.accordionPop = function (num) {
+
+            TweenMax.to(document.getElementById('accordion-pop-' + num), 0.5, {
+                ease: Power3.easeIn,
+                height: "460px"
+            });
+            TweenMax.to(document.getElementById('plus-sign-' + num), 0.5, {
+                transform: "rotate(315deg)",
+                height: "65px",
+                width: "50px"
+            });
+
+            if (lastAccordion !== "" && document.getElementById('accordion-pop-' + lastAccordion).style.height !== "0px") {
+
+                TweenMax.to(document.getElementById('accordion-pop-' + lastAccordion), 0.5, {
+                    ease: Power3.easeOut,
+                    height: 0
+                });
+                TweenMax.to(document.getElementById('plus-sign-' + lastAccordion), 0.5, {
+                    transform: "rotate(0deg)",
+                    height: "55px",
+                    width: "40px"
+                });
+            }
+
+            lastAccordion = num;
+        };
+
+        $scope.content = 0;
+
+        $scope.services = [{
+            title: 'traditional',
+            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
+        }, {
+            title: 'creative',
+            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
+        }, {
+            title: 'demand gen',
+            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
+        }, {
+            title: 'digital',
+            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
+        }, {
+            title: 'pr & content',
+            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
+        }];
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/17/2017.
+ */
+(function () {
+  angular.module('app').controller('tourismCtrl', function ($scope, mainService) {});
+})();
+'use strict';
+
+/**
  * Created by Seth on 8/9/2017.
  */
 (function () {
@@ -212,209 +416,5 @@
       controller: 'navCtrl'
     };
   });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/16/2017.
- */
-(function () {
-    angular.module('app').controller('aboutCtrl', function ($scope, mainService) {
-        console.log('Yo, its the about page...');
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/14/2017.
- */
-(function () {
-    angular.module('app').controller('contactCtrl', function ($scope, mainService) {
-
-        $scope.contactRelic = function (contact) {
-            mainService.contactRelic(contact).then(function (response) {
-                console.log(response);
-            });
-        };
-    });
-})();
-'use strict';
-
-(function () {
-  angular.module('app').controller('expertiseCtrl', function ($scope) {});
-})();
-'use strict';
-
-(function () {
-      angular.module('app').controller('homeCtrl', function ($scope) {
-
-            var homeMainContainer = document.getElementById('home-hero'),
-                headlineContent = document.getElementById('headline-content'),
-                backgroundGrad = document.getElementById('home-linear-grad'),
-                navBackdrop = document.getElementById('nav-backdrop');
-
-            window.onscroll = function () {
-                  var csParaStart = window.pageYOffset * 0.75;
-
-                  homeMainContainer.style.backgroundPositionY = csParaStart + "px";
-                  headlineContent.style.opacity = 1 - csParaStart * 0.0019;
-                  headlineContent.style.top = 50 + csParaStart * 0.075 + "%";
-                  backgroundGrad.style.opacity = 0.5 - csParaStart * 0.004;
-
-                  if (window.pageYOffset > 100) {
-                        TweenMax.to(navBackdrop, 2, { opacity: "0.8" });
-                  }if (window.pageYOffset < 95) {
-                        TweenMax.to(navBackdrop, 2, { opacity: 0 });
-                  }
-            };
-
-            // let video = document.getElementsByClassName('home-video');
-            //
-            // let playButton = document.getElementsByClassName('play-pause');
-            // let mute = document.getElementsByClassName('mute');
-            // let fullScreen = document.getElementsByClassName('full-screen');
-            //
-            // let seekBar = document.getElementsByClassName('seek-bar');
-            // let volumeBar = document.getElementsByClassName('volume-bar');
-            //
-            // playButton.addEventListener('click', function(){
-            //     if(video.paused == true){
-            //         video.play();
-            //
-            //         playButton.innerHTML = 'Pause'
-            //     } else{
-            //         video.pause();
-            //         playButton.innerHTML = 'Play'
-            //     }
-            //
-            // });
-            //
-            // mute.addEventListener('click', function(){
-            //     if(video.muted == false){
-            //         video.muted = true;
-            //         mute.innerHTML = 'Unmute'
-            //     } else {
-            //         video.muted = false;
-            //
-            //         mute.innerHTML = 'Mute'
-            //     }
-            // });
-            //
-            // fullScreen.addEventListener('click', function(){
-            //     if(video.requestFullScreen){
-            //         video.requestFullScreen();
-            //     }  else if (video.mozRequestFullScreen){
-            //         video.mozRequestFullScreen();
-            //     } else if (video.webkitRequestFullScreen){
-            //         video.webkitRequestFullScreen();
-            //     }
-            // });
-            //
-            // seekBar.addEventListener('change', function(){
-            //     let time = video.duration * (seekBar.value / 100)
-            //     video.currentTime = time;
-            // });
-            //
-            // video.addEventListener('timeupdate', function(){
-            //     let value = (100 / video.duration) * video.currentTime;
-            //     seekBar.value = value;
-            // });
-            //
-            // seekBar.addEventListener('mousedown', function(){
-            //     video.pause();
-            // });
-            // seekBar.addEventListener('mouseup', function(){
-            //     video.play();
-            //     playButton.innerHTML = 'Pause'
-            // });
-            //
-            // volumeBar.addEventListener('change', function () {
-            //     video.volume = volumeBar.value;
-            // });
-      });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/11/2017.
- */
-(function () {
-    angular.module('app').controller('servicesCtrl', function ($scope, mainService) {
-
-        var lastAccordion = "";
-        var lastTopSec = -1;
-        $scope.content = 0;
-
-        $scope.changeContent = function (num) {
-            $scope.content = num;
-
-            TweenMax.to(document.getElementById('top-sec-' + num), 0.10, {
-                backgroundColor: "#BD9A35"
-            });
-
-            if (lastTopSec > -1 && lastTopSec !== num) {
-                TweenMax.to(document.getElementById('top-sec-' + lastTopSec), 0.10, {
-                    backgroundColor: "transparent"
-                });
-            }
-
-            lastTopSec = num;
-        };
-
-        $scope.accordionPop = function (num) {
-
-            TweenMax.to(document.getElementById('accordion-pop-' + num), 0.5, {
-                ease: Power3.easeIn,
-                height: "460px"
-            });
-            TweenMax.to(document.getElementById('plus-sign-' + num), 0.5, {
-                transform: "rotate(315deg)",
-                height: "65px",
-                width: "50px"
-            });
-
-            if (lastAccordion !== "" && document.getElementById('accordion-pop-' + lastAccordion).style.height !== "0px") {
-
-                TweenMax.to(document.getElementById('accordion-pop-' + lastAccordion), 0.5, {
-                    ease: Power3.easeOut,
-                    height: 0
-                });
-                TweenMax.to(document.getElementById('plus-sign-' + lastAccordion), 0.5, {
-                    transform: "rotate(0deg)",
-                    height: "55px",
-                    width: "40px"
-                });
-            }
-
-            lastAccordion = num;
-        };
-
-        $scope.content = 0;
-
-        $scope.services = [{
-            title: 'traditional',
-            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
-        }, {
-            title: 'creative',
-            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
-        }, {
-            title: 'demand gen',
-            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
-        }, {
-            title: 'digital',
-            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
-        }, {
-            title: 'pr & content',
-            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
-        }];
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/17/2017.
- */
-(function () {
-  angular.module('app').controller('tourismCtrl', function ($scope, mainService) {});
 })();
 //# sourceMappingURL=maps/bundle.js.map

@@ -4,18 +4,22 @@
     <img class="nav-logo-svg" ui-sref="home" src="./images/main-relic-logo.svg"/>
   </div>
   <ul>
-    <li ng-mouseleave="navShrinker('one')" ng-mouseenter="navDropper('one')" ui-sref="tourism" class="underlined">Expertise</li>
-    <li ng-mouseleave="navShrinker('two')" ng-mouseenter="navDropper('two')" class="underlined">Work</li>
-    <li ng-mouseleave="navShrinker('three')" ng-mouseenter="navDropper('three')" ui-sref="about" class="underlined">About</li>
-    <li ng-mouseleave="navShrinker('four')" ng-mouseenter="navDropper('four')" class="underlined" ui-sref="services">Services</li>
-    <li ng-mouseleave="navShrinker('five')" ng-mouseenter="navDropper('five')" class="underlined">Newsroom</li>
-    <li ng-mouseleave="navShrinker('six')" ng-mouseenter="navDropper('six')" class="underlined">Blog</li>
-    <li ng-mouseleave="navShrinker('seven')" ng-mouseenter="navDropper('seven')" ui-sref="contact" class="underlined">Contact</li>
-    <li ng-mouseleave="navShrinker('eight')" ng-mouseenter="navDropper('eight')" class="cta-button">Get Started</li>
+    <li ng-mouseenter="navDropper('one')" ui-sref="tourism" class="underlined">Expertise</li>
+    <li ng-mouseenter="navDropper('two')" class="underlined">Work</li>
+    <li ng-mouseenter="navDropper('three')" ui-sref="about" class="underlined">About</li>
+    <li ng-mouseenter="navDropper('four')" class="underlined" ui-sref="services">Services</li>
+    <li ng-mouseenter="navDropper('five')" class="underlined">Newsroom</li>
+    <li ng-mouseenter="navDropper('six')" class="underlined">Blog</li>
+    <li ng-mouseenter="navDropper('seven')" ui-sref="contact" class="underlined">Contact</li>
+    <li ng-mouseenter="navDropper('eight')" class="cta-button">Get Started</li>
   </ul>
 
   <div class="dropdowns">
-    <div  id="nav-drop-one" class="nav-drop nav-drop-one"></div>
+    <div  id="nav-drop-one" class="nav-drop nav-drop-one">
+      <div class="nav-drop-sec"><p>Tourism</p></div>
+      <div class="nav-drop-sec"><p>Telecom</p></div>
+      <div class="nav-drop-sec"><p>Technology</p></div>
+    </div>
     <div  id="nav-drop-two" class="nav-drop nav-drop-two"></div>
     <div  id="nav-drop-three" class="nav-drop nav-drop-three"></div>
     <div  id="nav-drop-four" class="nav-drop nav-drop-four"></div>

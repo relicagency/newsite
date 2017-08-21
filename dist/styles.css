@@ -571,41 +571,60 @@ nav {
   align-items: center; }
   nav .nav-logo {
     position: absolute;
-    top: 30px;
+    top: 25px;
     left: 35px;
     cursor: pointer; }
   nav .nav-logo-svg {
     height: 50px;
     width: 194px; }
-  nav ul {
-    list-style: none;
+  nav .nav-items {
     position: absolute;
-    top: 25px;
-    right: 30px; }
-  nav li {
-    box-sizing: border-box;
-    padding: 10px;
-    color: #cccccc;
-    font-size: 13px;
-    line-height: 34px;
-    margin-left: 15px;
-    display: inline-block;
-    position: relative;
+    top: 50%;
+    right: 14%;
+    transform: translate(0, -43%);
+    height: 100%;
+    width: 46%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; }
+  nav .nav-item-title {
+    color: #95989a;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    font-family: sans-serif;
     cursor: pointer;
-    font-weight: bold; }
-  nav li:hover {
-    color: white; }
-  nav li:after {
+    letter-spacing: 1px;
+    transition: 0.25s; }
+  nav .nav-item-title p:after {
     content: '';
     display: block;
+    margin-top: 7px;
     opacity: 0;
     height: 3px;
     background: #299bde;
     transition: opacity 0.2s; }
-  nav li:hover:after {
-    opacity: 100; }
+  nav .nav-item-title:hover {
+    color: white; }
+  nav .nav-item-title p:hover:after {
+    opacity: 1; }
+  nav .nav-item-drop {
+    position: absolute;
+    top: 63px;
+    height: 0;
+    width: 200px;
+    background-color: transparent;
+    display: none;
+    flex-direction: column; }
+  nav .drop-down-item {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #242424;
+    margin-top: 3px; }
   nav .cta-button {
     color: white;
     text-transform: none;
@@ -613,82 +632,16 @@ nav {
     background-color: #299bde;
     border-radius: 50px;
     padding: 7px 25px; }
-
-.dropdowns {
-  position: fixed;
-  top: 72px;
-  right: 0;
-  height: 365px;
-  width: 835px;
-  background-color: transparent;
-  opacity: 0.5; }
-
-.nav-drop {
-  position: absolute;
-  top: 0;
-  display: flex;
-  flex-direction: column; }
-
-.nav-drop-sec {
-  position: relative;
-  height: 100px;
-  width: 100%;
-  background-color: white;
-  color: #242424;
-  opacity: 0.7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2px; }
-
-.nav-drop-one {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 500px; }
-
-.nav-drop-two {
-  position: absolute;
-  top: 0;
-  left: 113px;
-  width: 100px;
-  background-color: #299bde; }
-
-.nav-drop-three {
-  position: absolute;
-  top: 0;
-  left: 193px;
-  width: 100px;
-  background-color: #299bde; }
-
-.nav-drop-four {
-  position: absolute;
-  top: 0;
-  left: 279px;
-  width: 100px;
-  background-color: #299bde; }
-
-.nav-drop-five {
-  position: absolute;
-  top: 0;
-  left: 384px;
-  width: 100px;
-  background-color: #299bde; }
-
-.nav-drop-six {
-  position: absolute;
-  top: 0;
-  left: 503px;
-  width: 100px;
-  background-color: #299bde; }
-
-.nav-drop-seven {
-  position: absolute;
-  top: 0;
-  left: 580px;
-  width: 100px;
-  background-color: #299bde; }
+  nav .cta-button-nav {
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 26px;
+    right: 50px;
+    cursor: pointer;
+    height: 49px;
+    width: 184px;
+    font-size: large; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

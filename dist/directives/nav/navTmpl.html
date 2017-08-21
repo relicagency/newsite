@@ -3,29 +3,49 @@
   <div class="nav-logo">
     <img class="nav-logo-svg" ui-sref="home" src="./images/main-relic-logo.svg"/>
   </div>
-  <ul>
-    <li ng-mouseenter="navDropper('one')" ui-sref="tourism" class="underlined">Expertise</li>
-    <li ng-mouseenter="navDropper('two')" class="underlined">Work</li>
-    <li ng-mouseenter="navDropper('three')" ui-sref="about" class="underlined">About</li>
-    <li ng-mouseenter="navDropper('four')" class="underlined" ui-sref="services">Services</li>
-    <li ng-mouseenter="navDropper('five')" class="underlined">Newsroom</li>
-    <li ng-mouseenter="navDropper('six')" class="underlined">Blog</li>
-    <li ng-mouseenter="navDropper('seven')" ui-sref="contact" class="underlined">Contact</li>
-    <li ng-mouseenter="navDropper('eight')" class="cta-button">Get Started</li>
-  </ul>
+  <div class="nav-items">
 
-  <div class="dropdowns">
-    <div  id="nav-drop-one" class="nav-drop nav-drop-one">
-      <div class="nav-drop-sec"><p>Tourism</p></div>
-      <div class="nav-drop-sec"><p>Telecom</p></div>
-      <div class="nav-drop-sec"><p>Technology</p></div>
+    <div class="nav-item" ng-mouseenter="navDropper('one')" ng-mouseleave="navShrinker('one')">
+      <div class="nav-item-title"><p>Expertise</p></div>
+      <div class="nav-item-drop nav-item-drop-one" id="nav-item-drop-one">
+        <div class="drop-down-item"><p>Tourism</p></div>
+        <div class="drop-down-item"><p>Telecom</p></div>
+        <div class="drop-down-item"><p>Tech</p></div>
+      </div>
     </div>
-    <div  id="nav-drop-two" class="nav-drop nav-drop-two"></div>
-    <div  id="nav-drop-three" class="nav-drop nav-drop-three"></div>
-    <div  id="nav-drop-four" class="nav-drop nav-drop-four"></div>
-    <div  id="nav-drop-five" class="nav-drop nav-drop-five"></div>
-    <div  id="nav-drop-six" class="nav-drop nav-drop-six"></div>
-    <div  id="nav-drop-seven" class="nav-drop nav-drop-seven"></div>
+    <div class="nav-item" ng-mouseenter="navDropper('two')" ng-mouseleave="navShrinker('two')">
+      <div class="nav-item-title"><p>Work</p></div>
+      <div class="nav-item-drop nav-item-drop-two" id="nav-item-drop-two">
+        <div class="drop-down-item"><p>Tourism</p></div>
+        <div class="drop-down-item"><p>Telecom</p></div>
+        <div class="drop-down-item"><p>Tech</p></div>
+      </div>
+    </div>
+    <div class="nav-item">
+      <div class="nav-item-title"><p>About</p></div>
+    </div>
+    <div class="nav-item" ng-mouseenter="navDropper('three')" ng-mouseleave="navShrinker('three')">
+      <div class="nav-item-title"><p>Services</p></div>
+      <div class="nav-item-drop nav-item-drop-four" id="nav-item-drop-three">
+        <div class="drop-down-item"><p>Tourism</p></div>
+        <div class="drop-down-item"><p>Telecom</p></div>
+        <div class="drop-down-item"><p>Tech</p></div>
+      </div>
+    </div>
+    <div class="nav-item">
+      <div class="nav-item-title"><p>Newsroom</p></div>
+    </div>
+    <div class="nav-item">
+      <div class="nav-item-title"><p>Blog</p></div>
+    </div>
+    <div class="nav-item">
+      <div class="nav-item-title"><p>Contact</p></div>
+    </div>
+
   </div>
+
+  <button class="cta-button cta-button-nav">
+    Get Started
+  </button>
 
 </nav>

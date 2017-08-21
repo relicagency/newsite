@@ -78,16 +78,6 @@
 'use strict';
 
 /**
- * Created by Seth on 8/16/2017.
- */
-(function () {
-    angular.module('app').controller('aboutCtrl', function ($scope, mainService) {
-        console.log('Yo, its the about page...');
-    });
-})();
-'use strict';
-
-/**
  * Created by Seth on 8/14/2017.
  */
 (function () {
@@ -98,6 +88,16 @@
                 console.log(response);
             });
         };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/16/2017.
+ */
+(function () {
+    angular.module('app').controller('aboutCtrl', function ($scope, mainService) {
+        console.log('Yo, its the about page...');
     });
 })();
 'use strict';
@@ -403,27 +403,27 @@
 'use strict';
 
 (function () {
-      angular.module('app').controller('navCtrl', function ($scope) {
+    angular.module('app').controller('navCtrl', function ($scope) {
 
-            var lastNum = "";
+        $scope.navDropper = function (num) {
 
-            $scope.navDropper = function (num) {
+            console.log('Yo!!!');
 
-                  TweenMax.to(document.getElementById('nav-drop-' + num), 0.4, {
-                        ease: Power3.easeIn,
-                        height: "100%"
-                  });
+            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.4, {
+                ease: Power3.easeIn,
+                display: "flex",
+                height: "500px"
+            });
+        };
 
-                  if (lastNum !== "" && lastNum !== num) {
-                        TweenMax.to(document.getElementById('nav-drop-' + lastNum), 0.25, {
-                              ease: Power3.easeOut,
-                              height: 0
-                        });
-                  }
-
-                  lastNum = num;
-            };
-      });
+        $scope.navShrinker = function (num) {
+            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.25, {
+                ease: Power3.easeIn,
+                display: "none",
+                height: 0
+            });
+        };
+    });
 })();
 'use strict';
 

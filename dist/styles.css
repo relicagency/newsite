@@ -1,5 +1,5 @@
 .about-main-container {
-  height: 400vh;
+  height: 262vh;
   width: 100%;
   background-color: #161616; }
 
@@ -14,16 +14,16 @@
 
 .about-main-content {
   position: absolute;
-  top: 76%;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   width: 90%;
   display: flex;
   flex-direction: column; }
 
 .about-content-title {
   position: relative;
-  height: 95vh;
+  height: 20vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -74,7 +74,7 @@
 .about-router {
   position: relative;
   width: 100%;
-  height: 50vh; }
+  height: 60vh; }
 
 .about-router-underlay {
   position: absolute;
@@ -85,9 +85,9 @@
 
 .about-router-story {
   position: absolute;
-  left: 20%;
+  left: 15%;
   height: 100%;
-  width: 20%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,9 +95,9 @@
 
 .story-router-pic {
   position: relative;
-  height: 30%;
+  height: 55%;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   background-color: #242424; }
 
 .story-router-title {
@@ -108,15 +108,15 @@
 
 .story-router-down {
   position: relative;
-  margin-top: 50px;
+  margin-top: 13px;
   color: #BD9A35;
   font-size: 50px; }
 
 .about-router-leadership {
   position: absolute;
-  right: 20%;
+  right: 15%;
   height: 100%;
-  width: 20%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,9 +124,9 @@
 
 .leadership-router-pic {
   position: relative;
-  height: 30%;
+  height: 55%;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   background-color: #242424; }
 
 .leadership-router-title {
@@ -137,13 +137,13 @@
 
 .leadership-router-down {
   position: relative;
-  margin-top: 50px;
+  margin-top: 13px;
   color: #BD9A35;
   font-size: 50px; }
 
 .about-route-title {
   position: relative;
-  height: 180%;
+  height: 15vh;
   background-color: white;
   color: #BD9A35;
   display: flex;
@@ -159,9 +159,45 @@
 
 .about-route-leadership {
   position: relative;
-  height: 100vh;
   width: 100%;
-  background-color: #299bde; }
+  background-color: transparent; }
+
+.leadership-leader {
+  position: relative;
+  width: 100%;
+  height: 175px;
+  background-color: black;
+  margin-top: 2px;
+  cursor: pointer;
+  color: black;
+  overflow: hidden; }
+
+.leader-pic {
+  position: absolute;
+  top: 35px;
+  left: 150px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; }
+
+.leader-name {
+  position: absolute;
+  top: 85px;
+  left: 300px;
+  transform: translate(0, -3px);
+  color: white;
+  font-size: 24px; }
+
+.leader-about {
+  position: absolute;
+  top: 130px;
+  left: 300px;
+  width: 921px;
+  line-height: 43px;
+  letter-spacing: 1px; }
+
+#about-looking-for-help {
+  height: 45vh; }
 
 .contact-main-container {
   width: 100%;

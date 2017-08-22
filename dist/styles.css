@@ -155,6 +155,145 @@
   font-size: large;
   font-weight: 700; }
 
+.demandgen-main-container {
+  width: 100%;
+  height: 250vh;
+  background-color: #161616;
+  display: flex;
+  flex-direction: column; }
+
+.demandgen-main-background {
+  position: relative;
+  height: 39%;
+  width: 100%;
+  background-image: url("../images/demandgen-bckgrnd.jpg");
+  background-size: cover; }
+
+.demandgen-main-backfill {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  background-color: #161616; }
+
+.demandgen-main-content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 85%;
+  transform: translate(-50%, -16%);
+  display: flex;
+  flex-direction: column; }
+
+.demandgen-title {
+  position: relative;
+  height: 145px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px; }
+
+.demandgen-experts {
+  position: relative;
+  height: 320px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
+
+.demandgen-experts-top {
+  position: relative;
+  height: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+
+.demandgen-experts-top-left {
+  height: 100%;
+  width: 25%;
+  background-color: #BD9A35; }
+
+.demandgen-experts-top-right {
+  height: 100%;
+  width: 75%;
+  background-color: #D0D0D0; }
+
+.demandgen-industry-experts {
+  position: absolute;
+  top: 37%;
+  left: 20%;
+  font-size: 30px;
+  color: #BD9A35;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 3px;
+  line-height: 35px; }
+
+.demandgen-industry-info {
+  position: absolute;
+  top: 37%;
+  left: 35%;
+  font-size: 20px;
+  color: #727272;
+  width: 817px; }
+
+.demandgen-video {
+  position: relative;
+  height: 750px;
+  width: 100%;
+  background-color: transparent; }
+
+.demandgen-video-underlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8; }
+
+.demandgen-clients-title {
+  position: relative;
+  height: 160px;
+  width: 100%;
+  background-color: white;
+  color: #BD9A35;
+  text-transform: capitalize;
+  font-size: 28px;
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.demandgen-clients {
+  position: relative;
+  height: 527px;
+  width: 100%;
+  background-color: black; }
+
+.demandgen-clients-clients {
+  position: absolute;
+  height: 230px;
+  width: calc(230px * 2.1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer; }
+
+.demandgen-clients-clients img {
+  margin: -3px;
+  outline: 0;
+  padding: 0; }
+
+.demandgen-work {
+  height: 230px;
+  margin: 0;
+  outline: 0; }
+
+#demandgen-looking-for-help {
+  position: relative; }
+
 .footer-container {
   position: relative;
   width: 100%;

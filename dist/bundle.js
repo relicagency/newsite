@@ -102,7 +102,7 @@
  */
 (function () {
     angular.module('app').controller('aboutCtrl', function ($scope, mainService) {
-        console.log('Yo, its the about page...');
+        $scope.aboutRouterTitle = "Leadership";
     });
 })();
 'use strict';

@@ -1,16 +1,167 @@
 .about-main-container {
-  height: 100vh;
+  height: 400vh;
+  width: 100%;
+  background-color: #161616; }
+
+.about-main-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 145%;
   width: 100%;
   background-image: url("./images/about-bckgrnd.jpg");
   background-size: cover; }
 
-.about-main-container h1 {
+.about-main-content {
   position: absolute;
-  top: 50%;
+  top: 76%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  width: 90%;
+  display: flex;
+  flex-direction: column; }
+
+.about-content-title {
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: white; }
+
+.about-content-intro {
+  position: relative;
+  height: 30vh;
+  width: 100%;
+  background-color: white; }
+
+.about-intro-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+
+.intro-top-left {
+  height: 100%;
+  width: 30%;
+  background-color: #BD9A35; }
+
+.intro-top-right {
+  height: 100%;
+  width: 70%;
+  background-color: #95989a; }
+
+.intro-title {
+  position: absolute;
+  top: 20%;
+  left: 24%;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #BD9A35; }
+
+.intro-para {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  color: #161616;
+  width: 42%; }
+
+.about-router {
+  position: relative;
+  width: 100%;
+  height: 50vh; }
+
+.about-router-underlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6; }
+
+.about-router-story {
+  position: absolute;
+  left: 20%;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.story-router-pic {
+  position: relative;
+  height: 30%;
+  width: 100%;
+  margin-bottom: 50px;
+  background-color: #242424; }
+
+.story-router-title {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 23px;
+  color: #BD9A35; }
+
+.story-router-down {
+  position: relative;
+  margin-top: 50px;
+  color: #BD9A35;
   font-size: 50px; }
+
+.about-router-leadership {
+  position: absolute;
+  right: 20%;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.leadership-router-pic {
+  position: relative;
+  height: 30%;
+  width: 100%;
+  margin-bottom: 50px;
+  background-color: #242424; }
+
+.leadership-router-title {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 23px;
+  color: #BD9A35; }
+
+.leadership-router-down {
+  position: relative;
+  margin-top: 50px;
+  color: #BD9A35;
+  font-size: 50px; }
+
+.about-route-title {
+  position: relative;
+  height: 180%;
+  background-color: white;
+  color: #BD9A35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px; }
+
+.about-routes {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.about-route-leadership {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #299bde; }
 
 .contact-main-container {
   width: 100%;

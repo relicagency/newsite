@@ -164,7 +164,7 @@
 
 .demandgen-main-background {
   position: relative;
-  height: 39%;
+  height: 57%;
   width: 100%;
   background-image: url("../images/demandgen-bckgrnd.jpg");
   background-size: cover; }
@@ -1005,7 +1005,7 @@ table {
 
 .tech-main-background {
   position: relative;
-  height: 39%;
+  height: 57%;
   width: 100%;
   background-image: url("../images/tech-bckgrnd.jpg");
   background-size: cover; }
@@ -1144,7 +1144,7 @@ table {
 
 .telecom-main-background {
   position: relative;
-  height: 39%;
+  height: 59%;
   width: 100%;
   background-image: url("../images/creative-bckgrnd.jpg");
   background-size: cover; }
@@ -1321,7 +1321,7 @@ h2 {
 
 .tourism-main-background {
   position: relative;
-  height: 39%;
+  height: 57%;
   width: 100%;
   background-image: url("../images/tourism-bckgrnd.jpg");
   background-size: cover; }

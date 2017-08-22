@@ -28,6 +28,14 @@
       url: '/expertise/tourism',
       controller: 'tourismCtrl',
       templateUrl: './components/tourism/tourism.html'
+    }).state('telecom', {
+      url: '/telecom',
+      controller: 'telecomCtrl',
+      templateUrl: './components/telecom/telecom.html'
+    }).state('tech', {
+      url: '/tech',
+      controller: 'techCtrl',
+      templateUrl: './components/tech/tech.html'
     });
 
     $urlRouterProvider.otherwise('/home');
@@ -78,6 +86,16 @@
 'use strict';
 
 /**
+ * Created by Seth on 8/16/2017.
+ */
+(function () {
+    angular.module('app').controller('aboutCtrl', function ($scope, mainService) {
+        console.log('Yo, its the about page...');
+    });
+})();
+'use strict';
+
+/**
  * Created by Seth on 8/14/2017.
  */
 (function () {
@@ -89,21 +107,6 @@
             });
         };
     });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/16/2017.
- */
-(function () {
-    angular.module('app').controller('aboutCtrl', function ($scope, mainService) {
-        console.log('Yo, its the about page...');
-    });
-})();
-'use strict';
-
-(function () {
-  angular.module('app').controller('expertiseCtrl', function ($scope) {});
 })();
 'use strict';
 
@@ -197,6 +200,11 @@
 })();
 'use strict';
 
+(function () {
+  angular.module('app').controller('expertiseCtrl', function ($scope) {});
+})();
+'use strict';
+
 /**
  * Created by Seth on 8/11/2017.
  */
@@ -270,6 +278,22 @@
             info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
         }];
     });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+  angular.module('app').controller('techCtrl', function ($scope, mainService) {});
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+  angular.module('app').controller('telecomCtrl', function ($scope, mainService) {});
 })();
 'use strict';
 

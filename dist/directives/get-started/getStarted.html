@@ -6,7 +6,30 @@
 </div>
 
 <div class="cta-pop-up" id="cta-pop-up">
-    <button class="pop-up-exit" ng-click="ctaHide()">
-        <img class="pop-up-exit-x" src="../../images/plus-sign.svg">
-    </button>
+
+    <div class="cta-pop-up-form">
+
+        <button class="pop-up-exit" ng-click="ctaHide()">
+            <img class="pop-up-exit-x" src="../../images/exit.svg">
+        </button>
+
+        <div class="cta-get-started-title"><p>Get Started with Relic</p></div>
+
+        <div class="cta-contact-form-container">
+            <form class="cta-contact-form">
+                <input ng-model="contact.firstName" class="cta-contact-input" type="text" placeholder="First Name">
+                <input ng-model="contact.lastName" class="cta-contact-input" type="text" placeholder="Last Name">
+                <input ng-model="contact.jobTitle" class="cta-contact-input" type="text" placeholder="Job Title">
+                <input ng-model="contact.business" class="cta-contact-input" type="text" placeholder="Business Name">
+                <input ng-model="contact.email" class="cta-contact-input" type="email" placeholder="Email">
+                <input ng-model="contact.phone" class="cta-contact-input" type="text" placeholder="Phone Number">
+                <input ng-model="contact.message" class="cta-contact-input" type="text" placeholder="Message">
+
+                <!--<div class="g-recaptcha" data-callback={{captchaRelic}} data-sitekey="6LfjNi0UAAAAABBsQ1W4gywWWmj8ZM5re4bf5Gcz"></div>-->
+
+                <button class="cta-get-started-button contact-button" ng-click="contactRelic(contact)" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
 </div>

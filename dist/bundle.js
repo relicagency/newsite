@@ -48,6 +48,10 @@
       url: '/work/tds',
       controller: 'tdsCtrl',
       templateUrl: './components/tds/tds.html'
+    }).state('newsroom', {
+      url: '/newsroom',
+      controller: 'newsroomCtrl',
+      templateUrl: './components/newsroom/newsroom.html'
     });
 
     $urlRouterProvider.otherwise('/home');
@@ -106,29 +110,26 @@
 
         var lastLeader = '';
         var expand = true;
-        var aboutRouter = true;
 
-        $scope.changeAboutRoute = function () {
+        $scope.changeAboutRoute = function (route) {
 
-            aboutRouter = !aboutRouter;
-
-            if (aboutRouter) {
-                TweenMax.to(document.getElementById('about-route-story'), 0.5, {
+            if (route === 'story') {
+                TweenMax.to(document.getElementById('about-route-story'), 0.25, {
                     ease: Power2.easeIn,
                     display: "inline"
                 });
-                TweenMax.to(document.getElementById('about-route-leadership'), 0.5, {
+                TweenMax.to(document.getElementById('about-route-leadership'), 0.25, {
                     ease: Power2.easeOut,
                     display: "none"
                 });
             }
 
-            if (!aboutRouter) {
-                TweenMax.to(document.getElementById('about-route-leadership'), 0.5, {
+            if (route === 'leadership') {
+                TweenMax.to(document.getElementById('about-route-leadership'), 0.25, {
                     ease: Power2.easeIn,
-                    display: "flex"
+                    display: "inline"
                 });
-                TweenMax.to(document.getElementById('about-route-story'), 0.5, {
+                TweenMax.to(document.getElementById('about-route-story'), 0.25, {
                     ease: Power2.easeOut,
                     display: "none"
                 });
@@ -300,6 +301,14 @@
             //     video.volume = volumeBar.value;
             // });
       });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/23/2017.
+ */
+(function () {
+  angular.module('app').controller('newsroomCtrl', function ($scope, mainService) {});
 })();
 'use strict';
 

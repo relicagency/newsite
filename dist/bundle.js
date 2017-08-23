@@ -172,11 +172,11 @@
             if (expand) {
 
                 TweenMax.to(document.getElementById('about-main-container'), 0.5, {
-                    height: "335vh"
+                    height: "295vh"
                 });
             } else if (!expand) {
                 TweenMax.to(document.getElementById('about-main-container'), 0.5, {
-                    height: "262vh"
+                    height: "216vh"
                 });
             }
 
@@ -206,6 +206,38 @@
  */
 (function () {
   angular.module('app').controller('demandgenCtrl', function ($scope, mainService) {});
+})();
+'use strict';
+
+(function () {
+  angular.module('app').controller('expertiseCtrl', function ($scope) {});
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/23/2017.
+ */
+(function () {
+    angular.module('app').controller('newsroomCtrl', function ($scope, mainService) {
+
+        var lastRoute = "";
+
+        $scope.newsroomRouteShow = function (num) {
+            TweenMax.to(document.getElementById('newsroom-route-' + num), 0.5, {
+                ease: Power2.easeIn,
+                opacity: 1
+            });
+
+            if (lastRoute !== "" && lastRoute !== num) {
+                TweenMax.to(document.getElementById('newsroom-route-' + lastRoute), 0.5, {
+                    ease: Power2.easeOut,
+                    opacity: 0
+                });
+            }
+
+            lastRoute = num;
+        };
+    });
 })();
 'use strict';
 
@@ -299,11 +331,6 @@
 })();
 'use strict';
 
-(function () {
-  angular.module('app').controller('expertiseCtrl', function ($scope) {});
-})();
-'use strict';
-
 /**
  * Created by Seth on 8/11/2017.
  */
@@ -381,29 +408,10 @@
 'use strict';
 
 /**
- * Created by Seth on 8/23/2017.
+ * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('newsroomCtrl', function ($scope, mainService) {
-
-        var lastRoute = "";
-
-        $scope.newsroomRouteShow = function (num) {
-            TweenMax.to(document.getElementById('newsroom-route-' + num), 0.5, {
-                ease: Power2.easeIn,
-                opacity: 1
-            });
-
-            if (lastRoute !== "" && lastRoute !== num) {
-                TweenMax.to(document.getElementById('newsroom-route-' + lastRoute), 0.5, {
-                    ease: Power2.easeOut,
-                    opacity: 0
-                });
-            }
-
-            lastRoute = num;
-        };
-    });
+  angular.module('app').controller('tdsCtrl', function ($scope, mainService) {});
 })();
 'use strict';
 
@@ -419,23 +427,15 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-  angular.module('app').controller('tdsCtrl', function ($scope, mainService) {});
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/21/2017.
- */
-(function () {
   angular.module('app').controller('telecomCtrl', function ($scope, mainService) {});
 })();
 'use strict';
 
 /**
- * Created by Seth on 8/21/2017.
+ * Created by Seth on 8/17/2017.
  */
 (function () {
-  angular.module('app').controller('workCtrl', function ($scope, mainService) {});
+  angular.module('app').controller('tourismCtrl', function ($scope, mainService) {});
 })();
 'use strict';
 
@@ -459,6 +459,43 @@
 
         $scope.footerSocialHover = function (social) {
             TweenMax.fromTo(document.getElementById('footer-social-' + social), 1, { height: "40px", width: "40px" }, { height: "35px", width: "35px" });
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/23/2017.
+ */
+(function () {
+    angular.module('app').directive('getStartedDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/get-started/getStarted.html',
+            controller: 'getStartedCtrl'
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/23/2017.
+ */
+(function () {
+    angular.module('app').controller('getStartedCtrl', function ($scope, mainService) {
+
+        $scope.ctaShow = function () {
+            TweenMax.to(document.getElementById('cta-pop-up'), 0.5, {
+                ease: Power2.easeIn,
+                display: 'inline'
+            });
+        };
+
+        $scope.ctaHide = function () {
+            TweenMax.to(document.getElementById('cta-pop-up'), 0.5, {
+                ease: Power2.easeIn,
+                display: 'none'
+            });
         };
     });
 })();
@@ -560,6 +597,14 @@
 })();
 'use strict';
 
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+  angular.module('app').controller('workCtrl', function ($scope, mainService) {});
+})();
+'use strict';
+
 (function () {
     angular.module('app').controller('navCtrl', function ($scope) {
 
@@ -594,13 +639,5 @@
       controller: 'navCtrl'
     };
   });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/17/2017.
- */
-(function () {
-  angular.module('app').controller('tourismCtrl', function ($scope, mainService) {});
 })();
 //# sourceMappingURL=maps/bundle.js.map

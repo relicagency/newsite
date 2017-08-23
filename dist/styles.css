@@ -1,5 +1,5 @@
 .about-main-container {
-  height: 262vh;
+  height: 216vh;
   width: 100%;
   background-color: #161616; }
 
@@ -406,7 +406,7 @@
 
 .demandgen-main-container {
   width: 100%;
-  height: 250vh;
+  height: 213vh;
   background-color: #161616;
   display: flex;
   flex-direction: column; }
@@ -595,6 +595,66 @@
   display: flex;
   flex-direction: row;
   align-items: center; }
+
+.cta-pop-up {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10; }
+
+.pop-up-exit {
+  position: fixed;
+  top: 200px;
+  right: 200px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer; }
+
+.pop-up-exit:active {
+  outline: none;
+  border: none; }
+
+.pop-up-exit:focus {
+  outline: none;
+  border: none; }
+
+.pop-up-exit-x {
+  transform: rotate(45deg);
+  height: 100px;
+  fill: white; }
+
+.looking-for-help {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+
+.looking-for-help p {
+  font-size: large;
+  letter-spacing: 2px;
+  margin-bottom: 50px; }
+
+.get-started-button {
+  border: none;
+  height: 50px;
+  width: 200px;
+  border-radius: 50px;
+  background-color: #299bde;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  cursor: pointer; }
 
 .swn-container {
   position: relative;
@@ -921,34 +981,6 @@
   background-color: #161616;
   opacity: 0.3; }
 
-.looking-for-help {
-  position: relative;
-  height: calc(100vh / 2.5);
-  width: 100%;
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white; }
-
-.looking-for-help p {
-  font-size: large;
-  letter-spacing: 2px;
-  margin-bottom: 50px; }
-
-.get-started-button {
-  border: none;
-  height: 50px;
-  width: 200px;
-  border-radius: 50px;
-  background-color: #299bde;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: x-large;
-  font-weight: bold;
-  cursor: pointer; }
-
 nav {
   position: fixed;
   top: 0;
@@ -1229,7 +1261,7 @@ table {
 
 .services-main-container {
   width: 100%;
-  height: 100%;
+  height: 220vh;
   background-color: #161616;
   display: flex;
   flex-direction: column; }
@@ -1394,7 +1426,7 @@ table {
   position: relative; }
 
 .tds-main-container {
-  height: 650vh;
+  height: 623vh;
   width: 100%;
   background-color: #161616; }
 
@@ -1521,7 +1553,7 @@ table {
 
 .tech-main-container {
   width: 100%;
-  height: 250vh;
+  height: 213vh;
   background-color: #161616;
   display: flex;
   flex-direction: column; }
@@ -1660,7 +1692,7 @@ table {
 
 .telecom-main-container {
   width: 100%;
-  height: 250vh;
+  height: 212vh;
   background-color: #161616;
   display: flex;
   flex-direction: column; }
@@ -1837,7 +1869,7 @@ h2 {
 
 .tourism-main-container {
   width: 100%;
-  height: 374vh;
+  height: 339vh;
   background-color: #161616;
   display: flex;
   flex-direction: column; }

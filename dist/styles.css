@@ -795,7 +795,7 @@
 
 .article-pic {
   height: 200px;
-  width: 275px; }
+  width: 200px; }
 
 .home-content-hide {
   display: none; }
@@ -1392,6 +1392,132 @@ table {
   margin-top: 100px;
   margin-bottom: 100px;
   position: relative; }
+
+.tds-main-container {
+  height: 650vh;
+  width: 100%;
+  background-color: #161616; }
+
+.tds-main-background {
+  position: absolute;
+  top: 0;
+  height: 151%;
+  width: 100%;
+  background-image: url("../images/TDS-bckgrnd.jpg"); }
+
+.tds-main-content {
+  position: absolute;
+  top: 332%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%; }
+
+.tds-content-title {
+  height: 17vh;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+  letter-spacing: 4px; }
+
+.tds-top-bars {
+  position: relative;
+  height: 15px;
+  width: 100%;
+  display: flex; }
+
+.tds-top-bars-left {
+  height: 100%;
+  width: 25%;
+  background-color: #BD9A35; }
+
+.tds-top-bars-right {
+  height: 100%;
+  width: 75%;
+  background-color: #D0D0D0; }
+
+.tds-content-intro {
+  position: relative;
+  height: 30vh;
+  width: 100%;
+  background-color: white; }
+
+.tds-logo {
+  height: 103px;
+  position: absolute;
+  top: 21%;
+  left: 5%; }
+
+.tds-intro-text {
+  top: 22%;
+  position: absolute;
+  width: 900px;
+  left: 30%; }
+
+.tds-stats-container {
+  position: relative;
+  height: 50vh;
+  width: 100%; }
+
+.tds-stats-underlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7; }
+
+.tds-stats-pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%); }
+
+.tds-video-container {
+  position: relative;
+  height: 70vh;
+  width: 100%; }
+
+.tds-work-video {
+  position: absolute;
+  top: 50%;
+  height: 30vw;
+  width: 70vw;
+  left: 50%;
+  transform: translate(-50%, -58%); }
+
+.tds-work-video-play {
+  z-index: 1;
+  position: absolute;
+  top: 44%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  height: 150px; }
+
+.tds-work-title {
+  position: relative;
+  height: 12vh;
+  background-color: white;
+  color: #BD9A35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px; }
+
+.tds-work-pics {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-bottom: 2px solid #161616; }
+
+.tds-work-pic-title {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 15px;
+  color: #727272; }
 
 .tech-main-container {
   width: 100%;

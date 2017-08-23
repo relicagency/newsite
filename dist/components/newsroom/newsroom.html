@@ -2,5 +2,63 @@
 <div class="newsroom-main-background"></div>
     <div class="newsroom-main-content">
         <div class="newsroom-content-title">newsroom</div>
+        <div class="newsroom-routes-container">
+            <div class="routes-router">
+                <div class="routes-underlay"></div>
+                <div class="nr-routes-nav">
+                    <div class="nr-route-nav" ng-mouseenter="newsroomRouteShow('one')">
+                        <img class="blue-triangle" src="../../images/blue-triangle.svg">
+                        <p class="route-nav-title">Latest News</p>
+                    </div>
+                    <div class="nr-route-nav" ng-mouseenter="newsroomRouteShow('two')">
+                        <img class="blue-triangle" src="../../images/blue-triangle.svg">
+                        <p class="route-nav-title">Media Resources</p>
+                    </div>
+                    <div class="nr-route-nav" ng-mouseenter="newsroomRouteShow('three')">
+                        <img class="blue-triangle" src="../../images/blue-triangle.svg">
+                        <p class="route-nav-title">Press Releases</p>
+                    </div>
+                    <div class="nr-route-nav" ng-mouseenter="newsroomRouteShow('four')">
+                        <img class="blue-triangle" src="../../images/blue-triangle.svg">
+                        <p class="route-nav-title">Videos & Photos</p>
+                    </div>
+                    <div class="nr-route-nav" ng-mouseenter="newsroomRouteShow('five')">
+                        <img class="blue-triangle" src="../../images/blue-triangle.svg">
+                        <p class="route-nav-title">Awards</p>
+                    </div>
+                </div>
+                <div class="nr-press-contact">
+                    <div class="nr-press-contact-title">press contact</div>
+                    <img class="nr-adam-pic" src="../../images/Adam.png">
+                    <div class="nr-adam-stoker">Adam Stoker</div>
+                    <button class="get-started-button" id="nr-press-call">Email</button>
+                    <button class="get-started-button" id="nr-press-email">Call</button>
+                </div>
+                <div class="press-underlay"></div>
+            </div>
+            <div class="routes-route">
+                <div class="newsroom-route" id="newsroom-route-one">
+                    <div class="newsroom-route-title"><p>Latest News</p></div>
+                </div>
+                <div class="newsroom-route" id="newsroom-route-two">
+                    <div class="newsroom-route-title"><p>Media Resources</p></div>
+                </div>
+                <div class="newsroom-route" id="newsroom-route-three">
+                    <div class="newsroom-route-title"><p>Press Releases</p></div>
+                </div>
+                <div class="newsroom-route" id="newsroom-route-four">
+                    <div class="newsroom-route-title"><p>Videos & Photos</p></div>
+                </div>
+                <div class="newsroom-route" id="newsroom-route-five">
+                    <div class="newsroom-route-title"><p>Awards</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="looking-for-help" id="newsroom-looking-for-help">
+
+            <p>Looking for advertising help?</p>
+            <a ui-sref="contact"><button class="get-started-button">Get Started</button></a>
+
+        </div>
     </div>
 </div>

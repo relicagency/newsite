@@ -1101,7 +1101,8 @@ nav {
     width: 200px;
     background-color: transparent;
     display: none;
-    flex-direction: column; }
+    flex-direction: column;
+    color: transparent; }
   nav .drop-down-item {
     height: 50px;
     width: 100%;
@@ -1110,7 +1111,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #242424;
     margin-top: 3px;
     cursor: pointer; }
   nav .cta-button {

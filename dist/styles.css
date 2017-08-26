@@ -947,9 +947,10 @@
   position: relative;
   height: 100%;
   width: 100%;
-  background-image: url("../images/home-back.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url(../images/gold-elephant2-min.png);
+  background-size: 203%;
+  background-position-x: 50%;
+  background-position-y: -280px; }
 
 .linear-gradient-container {
   position: fixed;
@@ -1350,7 +1351,7 @@ table {
 
 .services-main-content-container {
   position: absolute;
-  top: 24%;
+  top: 14%;
   width: 90%;
   left: 50%;
   transform: translate(-50%);
@@ -1361,21 +1362,20 @@ table {
 
 .services-main-title {
   position: relative;
-  height: 196px;
+  height: 114px;
   width: 100%;
   color: white;
   text-transform: uppercase;
-  font-size: 41px;
+  font-size: 30px;
   letter-spacing: 3px;
   display: flex;
   justify-content: center; }
 
 .services-content-top {
   position: relative;
-  height: 500px;
+  height: 366px;
   width: 100%;
-  background-color: #161616;
-  opacity: 0.7;
+  background-color: rgba(22, 22, 22, 0.9);
   display: flex;
   flex-direction: row; }
 

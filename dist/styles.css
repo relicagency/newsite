@@ -556,7 +556,8 @@
   position: relative;
   left: 46px;
   height: 50px;
-  width: 50px; }
+  width: 50px;
+  cursor: pointer; }
 
 .footer-list {
   position: relative;
@@ -578,10 +579,11 @@
   position: relative;
   font-family: sans-serif;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  transition-duration: 0.5s; }
 
 .footer-container li:hover {
-  color: #808080; }
+  color: white; }
 
 .footer-social-icon {
   height: 35px;
@@ -725,7 +727,7 @@
 
 .swn-container {
   position: relative;
-  height: 85vh;
+  height: 65vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -742,7 +744,7 @@
 .swn-top-container {
   position: relative;
   width: 100%;
-  height: 15%;
+  height: 20%;
   display: flex;
   flex-direction: row; }
 
@@ -768,7 +770,7 @@
 .swn-bottom-container {
   position: relative;
   width: 100%;
-  height: 85%;
+  height: 80%;
   display: flex;
   flex-direction: row; }
 
@@ -785,22 +787,15 @@
   width: calc(100% / 3);
   background-color: white; }
 
-.swn-bottom-content:hover {
-  background-color: #BD9A35; }
-
 .swn-bottom-content-one {
-  background-image: url("../images/traditional-media-tile.jpg");
+  background-image: url("../images/Mask Group 16.png");
   background-size: cover;
+  background-position-x: 45%;
+  background-color: #161616;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-
-.swn-bottom-content-one p {
-  text-transform: uppercase;
-  font-size: x-large;
-  color: white;
-  letter-spacing: 3px; }
 
 .traditional-media-circle {
   height: 500px; }
@@ -813,11 +808,30 @@
   background-image: url("../images/newsroom-tile.jpg");
   background-size: cover; }
 
+.swn-bottom-content-inner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.swn-bottom-content-inner img {
+  width: 40px;
+  margin: 30px; }
+
 .services-container {
   position: relative;
-  width: 100%;
-  height: 65vh;
-  background-color: white;
+  left: 50%;
+  transform: translate(-50%);
+  height: 100%;
+  width: 95%;
   display: flex;
   flex-direction: row; }
 
@@ -829,44 +843,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #727272;
-  text-transform: uppercase;
-  font-size: large;
-  font-weight: bold;
-  letter-spacing: 3px;
   cursor: pointer; }
 
-.services-content p {
-  position: absolute;
-  bottom: 150px;
-  margin-top: 20px; }
+.services-content img {
+  height: 15vw;
+  width: 15vw; }
 
 .services-content-four img {
-  height: 200px; }
-
-.services-content-four p {
-  margin-top: 10px; }
-
-.services-content-svg {
-  height: 300px; }
+  height: 11vw;
+  width: 11vw; }
 
 .clients-container {
   position: relative;
-  width: 100%;
-  height: 65vh;
-  background-color: white;
+  left: 50%;
+  transform: translate(-50%);
+  height: 100%;
+  width: 95%;
   display: flex;
   flex-direction: row; }
-
-.featured-clients {
-  position: absolute;
-  top: 23%;
-  left: 4.5%;
-  text-transform: uppercase;
-  color: #BD9A35;
-  font-size: x-large;
-  letter-spacing: 3px;
-  z-index: 1; }
 
 .clients-content {
   position: relative;
@@ -877,28 +871,18 @@
   justify-content: center; }
 
 .clients-content img {
-  height: 200px;
-  width: 200px;
+  height: 14vw;
+  width: 14vw;
   cursor: pointer; }
 
 .articles {
   position: relative;
   left: 50%;
   transform: translate(-50%);
-  height: 65vh;
-  width: 90%;
+  height: 100%;
+  width: 95%;
   display: flex;
   flex-direction: row; }
-
-.featured-articles {
-  position: absolute;
-  top: 25%;
-  left: 1.5%;
-  text-transform: uppercase;
-  color: #BD9A35;
-  font-size: x-large;
-  letter-spacing: 3px;
-  z-index: 1; }
 
 .articles-content {
   position: relative;
@@ -921,8 +905,8 @@
   letter-spacing: 3px; }
 
 .article-pic {
-  height: 200px;
-  width: 200px; }
+  height: 14vw;
+  width: 14vw; }
 
 .home-content-hide {
   display: none; }
@@ -1022,12 +1006,6 @@
   height: calc(100% - 35px);
   width: 50%;
   overflow: hidden; }
-
-.home-video-play {
-  position: absolute;
-  top: 35%;
-  left: 43%;
-  transform: translate(-50%, -50%); }
 
 .home-client-video {
   position: absolute;

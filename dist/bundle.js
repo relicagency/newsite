@@ -94,7 +94,7 @@
 
         this.parallaxIt = function (pic, picLax) {
             TweenMax.to(pic, 0, {
-                bottom: picLax + "px"
+                top: picLax + "px"
             });
         };
 

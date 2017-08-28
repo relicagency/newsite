@@ -274,9 +274,16 @@
   top: 0;
   width: 100%;
   height: 150%;
+  overflow: hidden; }
+
+.contact-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
   background-image: url("./images/contact-bckgrnd.jpg");
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0; }
 
 .contact-main-content {
   position: relative;
@@ -895,15 +902,6 @@
   align-items: center;
   cursor: pointer; }
 
-.article-title {
-  position: absolute;
-  color: #808080;
-  text-transform: uppercase;
-  font-size: large;
-  left: 9%;
-  top: 70%;
-  letter-spacing: 3px; }
-
 .article-pic {
   height: 14vw;
   width: 14vw; }
@@ -1046,21 +1044,26 @@ nav {
   nav .nav-items {
     position: absolute;
     top: 50%;
-    right: 14%;
-    transform: translate(0, -43%);
+    right: 2.5%;
+    transform: translate(0, -50%);
     height: 100%;
     width: 60%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: flex-end; }
+  nav .nav-item {
+    margin-left: 45px; }
   nav .nav-item-title {
     color: #95989a;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     cursor: pointer;
     letter-spacing: 1px;
-    transition: 0.25s; }
+    transition: 0.25s;
+    font-size: 20px; }
+  nav .nav-item-title p {
+    margin-top: 15px; }
   nav .nav-item-title p:after {
     content: '';
     display: block;
@@ -1102,9 +1105,9 @@ nav {
   nav .cta-button-nav {
     outline: none;
     border: none;
-    position: absolute;
-    top: 26px;
-    right: 50px;
+    /* position: absolute; */
+    /* top: 26px; */
+    /* right: 50px; */
     cursor: pointer;
     height: 49px;
     width: 184px;
@@ -2199,5 +2202,12 @@ h2 {
 
 #tourism-looking-for-help {
   position: relative; }
+
+.universal-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #161616;
+  z-index: -5; }
 
 /*# sourceMappingURL=maps/styles.css.map */

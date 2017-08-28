@@ -79,6 +79,25 @@
 (function () {
     angular.module('app').service('mainService', function ($http) {
 
+        var nav = document.getElementById('nav');
+
+        this.navBackground = function (offset) {
+
+            if (offset > 100) {
+                TweenMax.to(nav, 2, {
+                    backgroundColor: "rgba(0,0,0,0.9)"
+                });
+            }if (offset < 95) {
+                TweenMax.to(nav, 2, { backgroundColor: "rgba(0,0,0,0)" });
+            }
+        };
+
+        this.parallaxIt = function (pic, picLax) {
+            TweenMax.to(pic, 0, {
+                bottom: picLax + "px"
+            });
+        };
+
         this.contactRelic = function (contact) {
             return $http({
                 method: 'POST',
@@ -108,8 +127,19 @@
     angular.module('app').controller('aboutCtrl', function ($scope, mainService) {
         $scope.aboutRouterTitle = "Leadership";
 
-        var lastLeader = '';
-        var expand = true;
+        var lastLeader = '',
+            expand = true,
+            homeMainBack = document.getElementById('about-main-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(homeMainBack, csParaStart);
+        };
 
         $scope.changeAboutRoute = function (route) {
 
@@ -192,6 +222,17 @@
 (function () {
     angular.module('app').controller('contactCtrl', function ($scope, mainService) {
 
+        var backgroundPic = document.getElementById('contact-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.5050505050505050;
+
+            // backgroundPic.style.bottom = csParaStart + "px";
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+
         $scope.contactRelic = function (contact) {
             mainService.contactRelic(contact).then(function (response) {
                 console.log(response);
@@ -205,7 +246,19 @@
  * Created by Seth on 8/22/2017.
  */
 (function () {
-  angular.module('app').controller('demandgenCtrl', function ($scope, mainService) {});
+    angular.module('app').controller('demandgenCtrl', function ($scope, mainService) {
+
+        var homeMainBack = document.getElementById('demandgen-main-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(homeMainBack, csParaStart);
+        };
+    });
 })();
 'use strict';
 
@@ -215,28 +268,24 @@
 'use strict';
 
 (function () {
-    angular.module('app').controller('homeCtrl', function ($scope) {
+          angular.module('app').controller('homeCtrl', function ($scope, mainService) {
 
-        var homeMainContainer = document.getElementById('home-hero'),
-            headlineContent = document.getElementById('headline-content'),
-            backgroundGrad = document.getElementById('home-linear-grad'),
-            navBackdrop = document.getElementById('nav-backdrop');
+                    var homeMainBack = document.getElementById('home-hero'),
+                        headlineContent = document.getElementById('headline-content'),
+                        backgroundGrad = document.getElementById('home-linear-grad');
 
-        window.onscroll = function () {
-            var csParaStart = window.pageYOffset * 0.75;
+                    window.onscroll = function () {
+                              var offSet = window.pageYOffset,
+                                  csParaStart = offSet * 0.75;
 
-            homeMainContainer.style.backgroundPositionY = csParaStart + "px";
-            headlineContent.style.opacity = 1 - csParaStart * 0.0019;
-            headlineContent.style.top = 50 + csParaStart * 0.075 + "%";
-            backgroundGrad.style.opacity = 0.5 - csParaStart * 0.004;
+                              mainService.navBackground(offSet);
+                              mainService.parallaxIt(homeMainBack, csParaStart);
 
-            if (window.pageYOffset > 100) {
-                TweenMax.to(navBackdrop, 2, { opacity: "0.8" });
-            }if (window.pageYOffset < 95) {
-                TweenMax.to(navBackdrop, 2, { opacity: 0 });
-            }
-        };
-    });
+                              headlineContent.style.opacity = 1 - csParaStart * 0.0019;
+                              headlineContent.style.top = 50 + csParaStart * 0.075 + "%";
+                              backgroundGrad.style.opacity = 0.5 - csParaStart * 0.004;
+                    };
+          });
 })();
 'use strict';
 
@@ -245,6 +294,17 @@
  */
 (function () {
     angular.module('app').controller('newsroomCtrl', function ($scope, mainService) {
+
+        var homeMainBack = document.getElementById('newsroom-main-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(homeMainBack, csParaStart);
+        };
 
         var lastRoute = "";
 
@@ -275,7 +335,18 @@
 
         var lastAccordion = "";
         var lastTopSec = -1;
+        var homeMainBack = document.getElementById('services-main-background');
         $scope.content = 0;
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(homeMainBack, csParaStart);
+        };
 
         $scope.changeContent = function (num) {
             $scope.content = num;
@@ -347,7 +418,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-  angular.module('app').controller('tdsCtrl', function ($scope, mainService) {});
+    angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
+
+        var homeMainBack = dosument.getElementById('tds.main-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(homeMainBack, csParaStart);
+        };
+    });
 })();
 'use strict';
 
@@ -355,7 +439,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-  angular.module('app').controller('techCtrl', function ($scope, mainService) {});
+    angular.module('app').controller('techCtrl', function ($scope, mainService) {
+
+        var homeMainBack = document.getElementById('tech-main-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(homeMainBack, csParaStart);
+        };
+    });
 })();
 'use strict';
 
@@ -363,7 +460,19 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-  angular.module('app').controller('telecomCtrl', function ($scope, mainService) {});
+    angular.module('app').controller('telecomCtrl', function ($scope, mainService) {
+
+        var homeMainBack = document.getElementById('telecom-main-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(homeMainBack, csParaStart);
+        };
+    });
 })();
 'use strict';
 
@@ -371,7 +480,20 @@
  * Created by Seth on 8/17/2017.
  */
 (function () {
-  angular.module('app').controller('tourismCtrl', function ($scope, mainService) {});
+    angular.module('app').controller('tourismCtrl', function ($scope, mainService) {
+
+        var homeMainBack = document.getElementById('tourism-main-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(homeMainBack, csParaStart);
+        };
+    });
 })();
 'use strict';
 

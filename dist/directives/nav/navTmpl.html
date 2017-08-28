@@ -6,7 +6,7 @@
   <div class="nav-items">
 
     <div class="nav-item" ng-mouseenter="navDropper('one')" ng-mouseleave="navShrinker('one')">
-      <div class="nav-item-title" ui-sref="expertise"><p>Expertise</p></div>
+      <div class="nav-item-title"><p>Expertise</p></div>
       <div class="nav-item-drop nav-item-drop-one" id="nav-item-drop-one">
         <div class="drop-down-item" ng-mouseleave="dropDownHoverLeave('one')" ng-mouseenter="dropDownHover('one')" id="drop-down-item-one" ui-sref="tourism"><p>Tourism</p></div>
         <div class="drop-down-item" ng-mouseleave="dropDownHoverLeave('two')" ng-mouseenter="dropDownHover('two')" id="drop-down-item-two" ui-sref="telecom"><p>Telecom</p></div>
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="nav-item" ng-mouseenter="navDropper('two')" ng-mouseleave="navShrinker('two')">
-      <div class="nav-item-title" ui-sref="work"><p>Work</p></div>
+      <div class="nav-item-title"><p>Work</p></div>
       <div class="nav-item-drop nav-item-drop-two" id="nav-item-drop-two">
         <div class="drop-down-item" ui-sref="tds" ng-mouseleave="dropDownHoverLeave('five')" ng-mouseenter="dropDownHover('five')" id="drop-down-item-five"><p>TDS</p></div>
       </div>
@@ -42,12 +42,13 @@
     <div class="nav-item">
       <div class="nav-item-title" ui-sref="contact"><p>Contact</p></div>
     </div>
+    <div class="nav-item">
+      <button class="cta-button cta-button-nav">
+        Get Started
+      </button>
+    </div>
 
   </div>
-<div class="nav-item">
-  <button class="cta-button cta-button-nav">
-    Get Started
-  </button>
-</div>
+
 
 </nav>

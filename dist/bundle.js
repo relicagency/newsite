@@ -129,16 +129,14 @@
 
         var lastLeader = '',
             expand = true,
-            homeMainBack = document.getElementById('about-main-background');
+            backgroundPic = document.getElementById('about-background');
 
         window.onscroll = function () {
             var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                csParaStart = offSet * 0.5050505050505050;
 
             mainService.navBackground(offSet);
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(homeMainBack, csParaStart);
+            mainService.parallaxIt(backgroundPic, csParaStart);
         };
 
         $scope.changeAboutRoute = function (route) {
@@ -248,15 +246,14 @@
 (function () {
     angular.module('app').controller('demandgenCtrl', function ($scope, mainService) {
 
-        var homeMainBack = document.getElementById('demandgen-main-background');
+        var backgroundPic = document.getElementById('demandgen-background');
 
         window.onscroll = function () {
             var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                csParaStart = offSet * 0.5050505050505050;
 
             mainService.navBackground(offSet);
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(homeMainBack, csParaStart);
+            mainService.parallaxIt(backgroundPic, csParaStart);
         };
     });
 })();
@@ -276,14 +273,17 @@
 
                     window.onscroll = function () {
                               var offSet = window.pageYOffset,
-                                  csParaStart = offSet * 0.75;
+                                  csParaStart = offSet * 0.75,
+                                  homeMainBackY = homeMainBack.style.backgroundPositionY;
+
+                              console.log(homeMainBack.style.backgroundPositionY);
 
                               mainService.navBackground(offSet);
-                              mainService.parallaxIt(homeMainBack, csParaStart);
 
                               headlineContent.style.opacity = 1 - csParaStart * 0.0019;
                               headlineContent.style.top = 50 + csParaStart * 0.075 + "%";
                               backgroundGrad.style.opacity = 0.5 - csParaStart * 0.004;
+                              homeMainBack.style.backgroundPositionY = -280 + csParaStart + 'px';
                     };
           });
 })();
@@ -295,15 +295,14 @@
 (function () {
     angular.module('app').controller('newsroomCtrl', function ($scope, mainService) {
 
-        var homeMainBack = document.getElementById('newsroom-main-background');
+        var backgroundPic = document.getElementById('newsroom-background');
 
         window.onscroll = function () {
             var offSet = window.pageYOffset,
                 csParaStart = offSet * 0.75;
 
             mainService.navBackground(offSet);
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(homeMainBack, csParaStart);
+            mainService.parallaxIt(backgroundPic, csParaStart);
         };
 
         var lastRoute = "";
@@ -335,7 +334,7 @@
 
         var lastAccordion = "";
         var lastTopSec = -1;
-        var homeMainBack = document.getElementById('services-main-background');
+        var backgroundPic = document.getElementById('services-background');
         $scope.content = 0;
 
         window.onscroll = function () {
@@ -343,9 +342,7 @@
                 csParaStart = offSet * 0.75;
 
             mainService.navBackground(offSet);
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(homeMainBack, csParaStart);
+            mainService.parallaxIt(backgroundPic, csParaStart);
         };
 
         $scope.changeContent = function (num) {
@@ -420,16 +417,14 @@
 (function () {
     angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
 
-        var homeMainBack = dosument.getElementById('tds.main-background');
+        var backgroundPic = document.getElementById('tds-background');
 
         window.onscroll = function () {
             var offSet = window.pageYOffset,
                 csParaStart = offSet * 0.75;
 
             mainService.navBackground(offSet);
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(homeMainBack, csParaStart);
+            mainService.parallaxIt(backgroundPic, csParaStart);
         };
     });
 })();
@@ -441,16 +436,14 @@
 (function () {
     angular.module('app').controller('techCtrl', function ($scope, mainService) {
 
-        var homeMainBack = document.getElementById('tech-main-background');
+        var backgroundPic = document.getElementById('tech-background');
 
         window.onscroll = function () {
             var offSet = window.pageYOffset,
                 csParaStart = offSet * 0.75;
 
             mainService.navBackground(offSet);
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(homeMainBack, csParaStart);
+            mainService.parallaxIt(backgroundPic, csParaStart);
         };
     });
 })();
@@ -462,15 +455,14 @@
 (function () {
     angular.module('app').controller('telecomCtrl', function ($scope, mainService) {
 
-        var homeMainBack = document.getElementById('telecom-main-background');
+        var backgroundPic = document.getElementById('telecom-background');
 
         window.onscroll = function () {
             var offSet = window.pageYOffset,
                 csParaStart = offSet * 0.75;
 
             mainService.navBackground(offSet);
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(homeMainBack, csParaStart);
+            mainService.parallaxIt(backgroundPic, csParaStart);
         };
     });
 })();
@@ -482,16 +474,14 @@
 (function () {
     angular.module('app').controller('tourismCtrl', function ($scope, mainService) {
 
-        var homeMainBack = document.getElementById('tourism-main-background');
+        var backgroundPic = document.getElementById('tourism-background');
 
         window.onscroll = function () {
             var offSet = window.pageYOffset,
                 csParaStart = offSet * 0.75;
 
             mainService.navBackground(offSet);
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(homeMainBack, csParaStart);
+            mainService.parallaxIt(backgroundPic, csParaStart);
         };
     });
 })();

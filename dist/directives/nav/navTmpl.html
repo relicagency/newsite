@@ -6,7 +6,7 @@
   <div class="nav-items">
 
     <div class="nav-item" ng-mouseenter="navDropper('one')" ng-mouseleave="navShrinker('one')" ng-click="routeLighter('one')">
-      <div class="nav-item-title" id="nav-item-title-one"><p>Expertise</p></div>
+      <div class="nav-item-title" id="nav-item-title-one" ui-sref="expertise"><p>Expertise</p></div>
       <div class="nav-item-drop nav-item-drop-one" id="nav-item-drop-one">
         <div class="drop-down-item" ng-mouseleave="dropDownHoverLeave('one')" ng-mouseenter="dropDownHover('one')" id="drop-down-item-one" ui-sref="tourism"><p>Tourism</p></div>
         <div class="drop-down-item" ng-mouseleave="dropDownHoverLeave('two')" ng-mouseenter="dropDownHover('two')" id="drop-down-item-two" ui-sref="telecom"><p>Telecom</p></div>
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="nav-item" ng-mouseenter="navDropper('two')" ng-mouseleave="navShrinker('two')" ng-click="routeLighter('two')">
-      <div class="nav-item-title" id="nav-item-title-two"><p>Work</p></div>
+      <div class="nav-item-title" id="nav-item-title-two" ui-sref="work"><p>Work</p></div>
       <div class="nav-item-drop nav-item-drop-two" id="nav-item-drop-two">
         <div class="drop-down-item" ui-sref="tds" ng-mouseleave="dropDownHoverLeave('five')" ng-mouseenter="dropDownHover('five')" id="drop-down-item-five"><p>TDS</p></div>
       </div>

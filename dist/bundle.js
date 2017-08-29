@@ -215,6 +215,25 @@
 'use strict';
 
 /**
+ * Created by Seth on 8/22/2017.
+ */
+(function () {
+    angular.module('app').controller('demandgenCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('demandgen-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.5050505050505050;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
+/**
  * Created by Seth on 8/14/2017.
  */
 (function () {
@@ -235,25 +254,6 @@
             mainService.contactRelic(contact).then(function (response) {
                 console.log(response);
             });
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/22/2017.
- */
-(function () {
-    angular.module('app').controller('demandgenCtrl', function ($scope, mainService) {
-
-        var backgroundPic = document.getElementById('demandgen-background');
-
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.5050505050505050;
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
         };
     });
 })();
@@ -652,6 +652,35 @@
 
 (function () {
     angular.module('app').controller('navCtrl', function ($scope) {
+
+        var lastNavTitle = "";
+
+        $scope.routeLighter = function (num) {
+
+            var title = document.getElementById('nav-item-title-' + num),
+                lastTitle = document.getElementById('nav-item-title-' + lastNavTitle);
+
+            if (num === "home") {
+                TweenMax.to(lastTitle, 0.1, {
+                    color: "#95989A"
+                });
+
+                lastNavTitle = "";
+                return;
+            }
+
+            if (lastNavTitle !== "" && lastNavTitle !== num) {
+                TweenMax.to(lastTitle, 0.1, {
+                    color: "#95989A"
+                });
+            }
+
+            TweenMax.to(title, 0.25, {
+                color: "white"
+            });
+
+            lastNavTitle = num;
+        };
 
         $scope.navDropper = function (num) {
 

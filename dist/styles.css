@@ -1088,6 +1088,26 @@
     background-position-x: 50%;
     background-position-y: -50px; } }
 
+@media screen and (max-device-width: 850px) {
+  .headline-content {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .headline-content h2 {
+    margin-bottom: 10px;
+    line-height: 35px; }
+  .home-hero {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/gold-elephant2-min.png");
+    background-repeat: no-repeat;
+    background-size: 88%;
+    background-position-x: 50%;
+    background-position-y: 354px; } }
+
 nav {
   position: fixed;
   top: 0;

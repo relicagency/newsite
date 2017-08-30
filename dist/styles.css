@@ -571,18 +571,40 @@
   background-image: url("../images/work-bckgrnd.png");
   background-size: cover; }
 
+.expertise-title {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%);
+  letter-spacing: 3px; }
+
 .expertise-main-content {
   position: absolute;
   top: 50%;
   left: 50%;
+  height: 30%;
   transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%; }
 
-.expertise-main-content img {
+.expertise-content {
   height: calc(100vw / 6);
   width: calc(100vw / 6);
-  margin-bottom: 10px; }
+  margin: -1px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #bd9a35;
+  font-size: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #bd9a35;
+  border-bottom: 1px solid #bd9a35;
+  cursor: pointer; }
 
 .footer-container {
   position: relative;
@@ -948,7 +970,8 @@
   height: 100%;
   background-color: #161616;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow-x: hidden; }
 
 .home-hero {
   position: relative;
@@ -961,7 +984,9 @@
   background-position-y: -280px; }
 
 .linear-gradient-container {
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   background: linear-gradient(to bottom, #000000, transparent);
@@ -988,7 +1013,7 @@
 .video-container {
   position: relative;
   width: 100%;
-  height: calc((100vw / 2) * 0.46); }
+  height: calc((100vw / 2) * 0.455559); }
 
 .video-top-why {
   width: 100%;
@@ -1032,7 +1057,7 @@
 .home-client-video-tuac {
   position: absolute;
   width: calc(100vw / 2);
-  left: 50%;
+  left: calc(50% - 1px);
   top: 0; }
 
 .home-video-play-icon {
@@ -1047,14 +1072,14 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100px;
+  height: 90px;
   z-index: 10;
   display: flex;
   align-items: center; }
   nav .nav-logo {
     position: absolute;
-    top: 25px;
-    left: 35px;
+    top: 18px;
+    left: 12px;
     cursor: pointer; }
   nav .nav-logo-svg {
     height: 50px;

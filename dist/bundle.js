@@ -311,7 +311,7 @@
             }if (window.innerWidth < 1100 && window.innerWidth > 850) {
                 homeMainBack.style.backgroundPositionY = -50 + csParaStart + 'px';
             }if (window.innerWidth < 850) {
-                homeMainBack.style.backgroundPositionY = 354 - csParaStart + 'px';
+                homeMainBack.style.backgroundPositionY = 300 - csParaStart + 'px';
             }
         };
     });

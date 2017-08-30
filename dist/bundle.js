@@ -281,27 +281,31 @@
 'use strict';
 
 (function () {
-          angular.module('app').controller('homeCtrl', function ($scope, mainService) {
+    angular.module('app').controller('homeCtrl', function ($scope, mainService) {
 
-                    var homeMainBack = document.getElementById('home-hero'),
-                        headlineContent = document.getElementById('headline-content'),
-                        backgroundGrad = document.getElementById('home-linear-grad');
+        var homeMainBack = document.getElementById('home-hero'),
+            headlineContent = document.getElementById('headline-content'),
+            backgroundGrad = document.getElementById('home-linear-grad');
 
-                    window.onscroll = function () {
-                              var offSet = window.pageYOffset,
-                                  csParaStart = offSet * 0.75,
-                                  homeMainBackY = homeMainBack.style.backgroundPositionY;
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
 
-                              console.log(homeMainBack.style.backgroundPositionY);
+            mainService.navBackground(offSet);
 
-                              mainService.navBackground(offSet);
+            headlineContent.style.opacity = 1 - csParaStart * 0.0019;
+            headlineContent.style.top = 50 + csParaStart * 0.075 + "%";
+            backgroundGrad.style.opacity = 0.5 - csParaStart * 0.004;
 
-                              headlineContent.style.opacity = 1 - csParaStart * 0.0019;
-                              headlineContent.style.top = 50 + csParaStart * 0.075 + "%";
-                              backgroundGrad.style.opacity = 0.5 - csParaStart * 0.004;
-                              homeMainBack.style.backgroundPositionY = -280 + csParaStart + 'px';
-                    };
-          });
+            if (window.innerWidth > 1400) {
+                homeMainBack.style.backgroundPositionY = -281 + csParaStart + 'px';
+            }if (window.innerWidth < 1400 && window.innerWidth > 1100) {
+                homeMainBack.style.backgroundPositionY = -124 + csParaStart + 'px';
+            }if (window.innerWidth < 1100) {
+                homeMainBack.style.backgroundPositionY = -50 + csParaStart + 'px';
+            }
+        };
+    });
 })();
 'use strict';
 

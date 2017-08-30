@@ -1295,6 +1295,35 @@ nav {
     width: 130px;
     font-size: 12px; } }
 
+@media screen and (max-device-width: 850px) {
+  nav .nav-items {
+    position: absolute;
+    top: 50%;
+    right: 2.5%;
+    transform: translate(0, -50%);
+    height: 100%;
+    width: 60%;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; }
+  nav .mobile-nav {
+    visibility: visible;
+    position: absolute;
+    top: 28px;
+    right: 59px; }
+  nav .mobile-hamburger {
+    height: 20px;
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  nav .hamburger-patty {
+    height: 2px;
+    width: 30px;
+    background-color: white; } }
+
 .newsroom-main-container {
   height: 146vh;
   width: 100%;

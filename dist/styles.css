@@ -38,46 +38,6 @@
   font-size: 40px;
   color: white; }
 
-.about-content-intro {
-  position: relative;
-  height: 30vh;
-  width: 100%;
-  background-color: white; }
-
-.about-intro-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 12px;
-  width: 100%;
-  display: flex;
-  flex-direction: row; }
-
-.intro-top-left {
-  height: 100%;
-  width: 30%;
-  background-color: #BD9A35; }
-
-.intro-top-right {
-  height: 100%;
-  width: 70%;
-  background-color: #95989a; }
-
-.intro-title {
-  position: absolute;
-  top: 20%;
-  left: 24%;
-  text-transform: uppercase;
-  font-size: 30px;
-  color: #BD9A35; }
-
-.intro-para {
-  position: absolute;
-  top: 20%;
-  left: 40%;
-  color: #161616;
-  width: 42%; }
-
 .about-router {
   position: relative;
   width: 100%;
@@ -483,17 +443,17 @@
 
 .demandgen-experts-top-left {
   height: 100%;
-  width: 25%;
+  width: 30%;
   background-color: #BD9A35; }
 
 .demandgen-experts-top-right {
   height: 100%;
-  width: 75%;
+  width: 70%;
   background-color: #D0D0D0; }
 
 .demandgen-industry-experts {
   position: absolute;
-  top: 37%;
+  top: 22%;
   left: 20%;
   font-size: 30px;
   color: #BD9A35;
@@ -504,7 +464,7 @@
 
 .demandgen-industry-info {
   position: absolute;
-  top: 37%;
+  top: 22%;
   left: 35%;
   font-size: 20px;
   color: #727272;
@@ -782,16 +742,16 @@
   margin-left: 25px;
   display: inline-block;
   position: relative;
-  font-family: sans-serif;
+  font-family: 'Rogan-Regular', sans-serif;
   font-weight: bold;
   cursor: pointer;
-  transition-duration: 0.5s; }
+  transition-duration: 0.5s;
+  letter-spacing: 1px; }
 
 .footer-container ul {
   list-style: none;
   color: #727272;
-  text-transform: uppercase;
-  font-family: sans-serif; }
+  text-transform: uppercase; }
 
 .footer-container li:hover {
   color: white; }
@@ -817,7 +777,6 @@
   margin-left: 25px;
   display: inline-block;
   position: relative;
-  font-family: sans-serif;
   font-weight: bold;
   cursor: pointer;
   transition-duration: 0.5s; }
@@ -848,7 +807,7 @@
     margin-left: 3px;
     display: inline-block;
     position: relative;
-    font-family: sans-serif;
+    font-family: 'Rogan-Regular', sans-serif;
     font-weight: bold;
     cursor: pointer;
     transition-duration: 0.5s; }
@@ -856,7 +815,7 @@
     list-style: none;
     color: #727272;
     text-transform: uppercase;
-    font-family: sans-serif; }
+    font-family: 'Rogan-Regular', sans-serif; }
   .footer-container li:hover {
     color: white; }
   .footer-social-icon {
@@ -878,7 +837,7 @@
     margin-left: 25px;
     display: inline-block;
     position: relative;
-    font-family: sans-serif;
+    font-family: 'Rogan-Regular', sans-serif;
     font-weight: bold;
     cursor: pointer;
     transition-duration: 0.5s; } }
@@ -909,7 +868,7 @@
     margin-left: 3px;
     display: inline-block;
     position: relative;
-    font-family: sans-serif;
+    font-family: 'Rogan-Regular', sans-serif;
     font-weight: bold;
     cursor: pointer;
     transition-duration: 0.5s; }
@@ -939,7 +898,7 @@
     margin-left: 25px;
     display: inline-block;
     position: relative;
-    font-family: sans-serif;
+    font-family: 'Rogan-Regular', sans-serif;
     font-weight: bold;
     cursor: pointer;
     transition-duration: 0.5s; } }
@@ -1106,7 +1065,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: large; }
+  font-size: 2vmin; }
 
 .swn-top-content i {
   color: #BD9A35;
@@ -1391,6 +1350,14 @@
     background-position-x: 50%;
     background-position-y: 300px; } }
 
+.mobile-nav {
+  visibility: hidden;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  height: 10px;
+  width: 10px; }
+
 .mobile-nav-popup {
   position: fixed;
   top: 0;
@@ -1462,7 +1429,8 @@ nav {
   height: 90px;
   z-index: 10;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-family: 'Rogan-Regular', sans-serif; }
   nav .nav-logo {
     position: absolute;
     top: 18px;
@@ -1486,7 +1454,6 @@ nav {
     margin-left: 45px; }
   nav .nav-item-title {
     color: #95989a;
-    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     cursor: pointer;
     letter-spacing: 1px;
@@ -1518,12 +1485,11 @@ nav {
   nav .drop-down-item {
     height: 50px;
     width: 100%;
-    background-color: white;
-    opacity: 0.7;
+    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3px;
+    margin-top: 1px;
     cursor: pointer; }
   nav .cta-button {
     color: white;
@@ -1535,9 +1501,6 @@ nav {
   nav .cta-button-nav {
     outline: none;
     border: none;
-    /* position: absolute; */
-    /* top: 26px; */
-    /* right: 50px; */
     cursor: pointer;
     height: 49px;
     width: 184px;
@@ -1811,9 +1774,10 @@ nav {
   position: absolute;
   top: 7%;
   left: 7%;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #BD9A35;
-  font-size: 30px; }
+  font-size: 30px;
+  font-family: 'Rogan-Medium', sans-serif; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -2001,9 +1965,8 @@ table {
   position: relative;
   height: 57px;
   width: 100%;
-  background-color: #161616;
+  background-color: rgba(22, 22, 22, 0.9);
   color: #cccccc;
-  opacity: 0.7;
   border-top: 1px solid #727272;
   display: flex;
   align-items: center;
@@ -2228,17 +2191,17 @@ table {
 
 .tech-experts-top-left {
   height: 100%;
-  width: 25%;
+  width: 30%;
   background-color: #BD9A35; }
 
 .tech-experts-top-right {
   height: 100%;
-  width: 75%;
+  width: 70%;
   background-color: #D0D0D0; }
 
 .tech-industry-experts {
   position: absolute;
-  top: 37%;
+  top: 22%;
   left: 20%;
   font-size: 30px;
   color: #BD9A35;
@@ -2249,7 +2212,7 @@ table {
 
 .tech-industry-info {
   position: absolute;
-  top: 37%;
+  top: 22%;
   left: 35%;
   font-size: 20px;
   color: #727272;
@@ -2372,17 +2335,17 @@ table {
 
 .telecom-experts-top-left {
   height: 100%;
-  width: 25%;
+  width: 30%;
   background-color: #BD9A35; }
 
 .telecom-experts-top-right {
   height: 100%;
-  width: 75%;
+  width: 70%;
   background-color: #D0D0D0; }
 
 .telecom-industry-experts {
   position: absolute;
-  top: 37%;
+  top: 22%;
   left: 20%;
   font-size: 30px;
   color: #BD9A35;
@@ -2393,7 +2356,7 @@ table {
 
 .telecom-industry-info {
   position: absolute;
-  top: 37%;
+  top: 22%;
   left: 35%;
   font-size: 20px;
   color: #727272;
@@ -2490,7 +2453,7 @@ h2 {
 .massive-text {
   text-align: center;
   font-size: 120px;
-  font-family: 'Rogan-Bold', sans-serif; }
+  font-family: Serif, serif; }
 
 @media screen and (max-device-width: 1400px) {
   h2 {
@@ -2581,17 +2544,17 @@ h2 {
 
 .tourism-experts-top-left {
   height: 100%;
-  width: 25%;
+  width: 30%;
   background-color: #BD9A35; }
 
 .tourism-experts-top-right {
   height: 100%;
-  width: 75%;
+  width: 70%;
   background-color: #D0D0D0; }
 
 .tourism-industry-experts {
   position: absolute;
-  top: 37%;
+  top: 20%;
   left: 20%;
   font-size: 30px;
   color: #BD9A35;
@@ -2602,7 +2565,7 @@ h2 {
 
 .tourism-industry-info {
   position: absolute;
-  top: 37%;
+  top: 21%;
   left: 35%;
   font-size: 20px;
   color: #727272;
@@ -2816,6 +2779,23 @@ p {
 
 div {
   font-family: 'Rogan-Regular', sans-serif; }
+
+.intro-text {
+  font-family: 'Rogan-Light', sans-serif;
+  font-size: 2vmin;
+  letter-spacing: 1px;
+  line-height: 32px; }
+
+.page-title {
+  font-family: 'Rogan-SemiBold', sans-serif;
+  font-size: 4vmin;
+  letter-spacing: 2px; }
+
+.industry-experts {
+  font-family: 'Rogan-ExtraBold', sans-serif;
+  font-size: 3.5vmin;
+  line-height: 48px;
+  letter-spacing: 4px; }
 
 .work-main-container {
   height: 200vh;

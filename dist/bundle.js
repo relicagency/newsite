@@ -442,9 +442,9 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('techCtrl', function ($scope, mainService) {
+    angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('tech-background');
+        var backgroundPic = document.getElementById('tds-background');
 
         window.onscroll = function () {
             var offSet = window.pageYOffset,
@@ -461,9 +461,9 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
+    angular.module('app').controller('techCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('tds-background');
+        var backgroundPic = document.getElementById('tech-background');
 
         window.onscroll = function () {
             var offSet = window.pageYOffset,
@@ -496,14 +496,6 @@
 'use strict';
 
 /**
- * Created by Seth on 8/21/2017.
- */
-(function () {
-  angular.module('app').controller('workCtrl', function ($scope, mainService) {});
-})();
-'use strict';
-
-/**
  * Created by Seth on 8/17/2017.
  */
 (function () {
@@ -519,6 +511,14 @@
             mainService.parallaxIt(backgroundPic, csParaStart);
         };
     });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+  angular.module('app').controller('workCtrl', function ($scope, mainService) {});
 })();
 'use strict';
 
@@ -778,14 +778,14 @@
         $scope.dropDownHover = function (num) {
 
             TweenMax.to(document.getElementById('drop-down-item-' + num), 0.2, {
-                backgroundColor: "#161616",
+                backgroundColor: "rgba(22,22,22,0.8)",
                 color: "#BD9A35"
             });
         };
 
         $scope.dropDownHoverLeave = function (num) {
             TweenMax.to(document.getElementById('drop-down-item-' + num), 0.1, {
-                backgroundColor: "white",
+                backgroundColor: "rgba(255,255,255,0.8)",
                 color: "#242424"
             });
         };

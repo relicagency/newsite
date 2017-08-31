@@ -129,7 +129,7 @@
 
         var lastLeader = '',
             expand = true,
-            backgroundPic = document.getElementById('aboutbackground');
+            backgroundPic = document.getElementById('about-background');
 
         window.onscroll = function () {
             var offSet = window.pageYOffset,
@@ -215,6 +215,32 @@
 'use strict';
 
 /**
+ * Created by Seth on 8/14/2017.
+ */
+(function () {
+    angular.module('app').controller('contactCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('contact-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.5050505050505050;
+
+            // backgroundPic.style.bottom = csParaStart + "px";
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+
+        $scope.contactRelic = function (contact) {
+            mainService.contactRelic(contact).then(function (response) {
+                console.log(response);
+            });
+        };
+    });
+})();
+'use strict';
+
+/**
  * Created by Seth on 8/22/2017.
  */
 (function () {
@@ -293,32 +319,6 @@
 'use strict';
 
 /**
- * Created by Seth on 8/14/2017.
- */
-(function () {
-    angular.module('app').controller('contactCtrl', function ($scope, mainService) {
-
-        var backgroundPic = document.getElementById('contact-background');
-
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.5050505050505050;
-
-            // backgroundPic.style.bottom = csParaStart + "px";
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-
-        $scope.contactRelic = function (contact) {
-            mainService.contactRelic(contact).then(function (response) {
-                console.log(response);
-            });
-        };
-    });
-})();
-'use strict';
-
-/**
  * Created by Seth on 8/23/2017.
  */
 (function () {
@@ -350,44 +350,6 @@
             }
 
             lastRoute = num;
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/21/2017.
- */
-(function () {
-    angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
-
-        var backgroundPic = document.getElementById('tds-background');
-
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/21/2017.
- */
-(function () {
-    angular.module('app').controller('techCtrl', function ($scope, mainService) {
-
-        var backgroundPic = document.getElementById('tech-background');
-
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
         };
     });
 })();
@@ -482,6 +444,44 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
+    angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('tds-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('techCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('tech-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
     angular.module('app').controller('telecomCtrl', function ($scope, mainService) {
 
         var backgroundPic = document.getElementById('telecom-background');
@@ -525,6 +525,31 @@
 'use strict';
 
 /**
+ * Created by Seth on 8/9/2017.
+ */
+(function () {
+
+    angular.module('app').directive('footerDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/footer/footer.html',
+            controller: 'footerCtrl'
+        };
+    });
+})();
+'use strict';
+
+(function () {
+    angular.module('app').controller('footerCtrl', function ($scope) {
+
+        $scope.footerSocialHover = function (social) {
+            TweenMax.to(document.getElementById('footer-social-' + social), 1, { fill: "white" });
+        };
+    });
+})();
+'use strict';
+
+/**
  * Created by Seth on 8/23/2017.
  */
 (function () {
@@ -556,6 +581,51 @@
                 ease: Power2.easeIn,
                 display: 'none'
             });
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/30/2017.
+ */
+(function () {
+
+    angular.module('app').directive('mobileNavDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/mobile-nav/mobile-nav.html',
+            controller: 'mobileNavCtrl'
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/30/2017.
+ */
+(function () {
+    angular.module('app').controller('mobileNavCtrl', function ($scope, mainService) {
+
+        var tl = new TimelineMax(),
+            mobileNav = document.getElementById('mobile-nav-popup'),
+            trigger = true,
+            hamburgerOne = document.getElementById('hamburger-one'),
+            hamburgerTwo = document.getElementById('hamburger-two'),
+            hamburgerThree = document.getElementById('hamburger-three'),
+            hamburgerFour = document.getElementById('hamburger-four'),
+            hamburgerFive = document.getElementById('hamburger-five'),
+            hamburgerSix = document.getElementById('hamburger-six');
+
+        $scope.exitNav = function () {
+
+            if (trigger) {
+                tl.to(hamburgerFour, 0.08, { left: "-21px", top: "19px", transform: "rotate(-90deg)" }).to(hamburgerFive, 0.08, { right: 0 }).to(hamburgerSix, 0.08, { right: 0 }, "-=0.08").to(hamburgerTwo, 0.08, { position: "absolute", top: "19px", right: "-21px", transform: "rotate(270deg)" }).to(hamburgerOne, 0.08, { position: "absolute", top: 0 }).to(hamburgerThree, 0.08, { position: "absolute", bottom: "-2px" }).to(hamburgerFive, 0.08, { transform: "rotate(45deg)" }).to(hamburgerSix, 0.08, { transform: "rotate(-45deg)" }, "-=0.08").to(mobileNav, 0.15, { right: 0, ease: Power2.easeIn });
+            }if (!trigger) {
+                tl.to(hamburgerSix, 0.08, { transform: "rotate(0deg)" }, "-=0.08").to(hamburgerFive, 0.08, { transform: "rotate(0deg)" }).to(hamburgerThree, 0.08, { position: "relative", bottom: 0 }).to(hamburgerOne, 0.08, { position: "relative" }).to(hamburgerTwo, 0.08, { position: "relative", top: '0', right: 0, transform: "rotate(0deg)" }).to(hamburgerSix, 0.08, { right: "-100px" }).to(hamburgerFive, 0.08, { right: "-100px" }, "-=0.08").to(hamburgerFour, 0.08, { top: "6px", left: 0, transform: "rotate(0deg)" }).to(mobileNav, 0.15, { right: "-101%", ease: Power2.easeOut });
+            }
+
+            trigger = !trigger;
         };
     });
 })();
@@ -654,51 +724,6 @@
 })();
 'use strict';
 
-/**
- * Created by Seth on 8/30/2017.
- */
-(function () {
-
-    angular.module('app').directive('mobileNavDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/mobile-nav/mobile-nav.html',
-            controller: 'mobileNavCtrl'
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/30/2017.
- */
-(function () {
-    angular.module('app').controller('mobileNavCtrl', function ($scope, mainService) {
-
-        var tl = new TimelineMax(),
-            mobileNav = document.getElementById('mobile-nav-popup'),
-            trigger = true,
-            hamburgerOne = document.getElementById('hamburger-one'),
-            hamburgerTwo = document.getElementById('hamburger-two'),
-            hamburgerThree = document.getElementById('hamburger-three'),
-            hamburgerFour = document.getElementById('hamburger-four'),
-            hamburgerFive = document.getElementById('hamburger-five'),
-            hamburgerSix = document.getElementById('hamburger-six');
-
-        $scope.exitNav = function () {
-
-            if (trigger) {
-                tl.to(hamburgerFour, 0.08, { left: "-21px", top: "19px", transform: "rotate(-90deg)" }).to(hamburgerFive, 0.08, { right: 0 }).to(hamburgerSix, 0.08, { right: 0 }, "-=0.08").to(hamburgerTwo, 0.08, { position: "absolute", top: "19px", right: "-21px", transform: "rotate(270deg)" }).to(hamburgerOne, 0.08, { position: "absolute", top: 0 }).to(hamburgerThree, 0.08, { position: "absolute", bottom: "-2px" }).to(hamburgerFive, 0.08, { transform: "rotate(45deg)" }).to(hamburgerSix, 0.08, { transform: "rotate(-45deg)" }, "-=0.08").to(mobileNav, 0.15, { right: 0, ease: Power2.easeIn });
-            }if (!trigger) {
-                tl.to(hamburgerSix, 0.08, { transform: "rotate(0deg)" }, "-=0.08").to(hamburgerFive, 0.08, { transform: "rotate(0deg)" }).to(hamburgerThree, 0.08, { position: "relative", bottom: 0 }).to(hamburgerOne, 0.08, { position: "relative" }).to(hamburgerTwo, 0.08, { position: "relative", top: '0', right: 0, transform: "rotate(0deg)" }).to(hamburgerSix, 0.08, { right: "-100px" }).to(hamburgerFive, 0.08, { right: "-100px" }, "-=0.08").to(hamburgerFour, 0.08, { top: "6px", left: 0, transform: "rotate(0deg)" }).to(mobileNav, 0.15, { right: "-101%", ease: Power2.easeOut });
-            }
-
-            trigger = !trigger;
-        };
-    });
-})();
-'use strict';
-
 (function () {
     angular.module('app').controller('navCtrl', function ($scope) {
 
@@ -783,30 +808,5 @@
       controller: 'navCtrl'
     };
   });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/9/2017.
- */
-(function () {
-
-    angular.module('app').directive('footerDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/footer/footer.html',
-            controller: 'footerCtrl'
-        };
-    });
-})();
-'use strict';
-
-(function () {
-    angular.module('app').controller('footerCtrl', function ($scope) {
-
-        $scope.footerSocialHover = function (social) {
-            TweenMax.to(document.getElementById('footer-social-' + social), 1, { fill: "white" });
-        };
-    });
 })();
 //# sourceMappingURL=maps/bundle.js.map

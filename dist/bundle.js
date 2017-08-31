@@ -215,32 +215,6 @@
 'use strict';
 
 /**
- * Created by Seth on 8/14/2017.
- */
-(function () {
-    angular.module('app').controller('contactCtrl', function ($scope, mainService) {
-
-        var backgroundPic = document.getElementById('contact-background');
-
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.5050505050505050;
-
-            // backgroundPic.style.bottom = csParaStart + "px";
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-
-        $scope.contactRelic = function (contact) {
-            mainService.contactRelic(contact).then(function (response) {
-                console.log(response);
-            });
-        };
-    });
-})();
-'use strict';
-
-/**
  * Created by Seth on 8/22/2017.
  */
 (function () {
@@ -262,20 +236,22 @@
 (function () {
   angular.module('app').controller('expertiseCtrl', function ($scope) {
 
-    $scope.expertCoolize = function (num) {
+    // $scope.expertCoolize = function(num) {
+    //
+    //   let expertise = document.getElementById('expertise-content-' + num);
+    //
+    //     console.log(expertise);
+    //
+    //   TweenMax.fromTo(expertise, 1, {
+    //     height: "2px",
+    //       color: "transparent"
+    //   }, {
+    //     height: "calc(100vw / 6)",
+    //       backgroundColor: "rgba(255,255,255,0.8)"
+    //   });
+    //
+    // }
 
-      var expertise = document.getElementById('expertise-content-' + num);
-
-      console.log(expertise);
-
-      TweenMax.fromTo(expertise, 1, {
-        height: "2px",
-        color: "transparent"
-      }, {
-        height: "calc(100vw / 6)",
-        backgroundColor: "rgba(255,255,255,0.8)"
-      });
-    };
   });
 })();
 'use strict';
@@ -317,6 +293,32 @@
 'use strict';
 
 /**
+ * Created by Seth on 8/14/2017.
+ */
+(function () {
+    angular.module('app').controller('contactCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('contact-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.5050505050505050;
+
+            // backgroundPic.style.bottom = csParaStart + "px";
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+
+        $scope.contactRelic = function (contact) {
+            mainService.contactRelic(contact).then(function (response) {
+                console.log(response);
+            });
+        };
+    });
+})();
+'use strict';
+
+/**
  * Created by Seth on 8/23/2017.
  */
 (function () {
@@ -348,6 +350,44 @@
             }
 
             lastRoute = num;
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('tds-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('techCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('tech-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
         };
     });
 })();
@@ -442,44 +482,6 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
-
-        var backgroundPic = document.getElementById('tds-background');
-
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/21/2017.
- */
-(function () {
-    angular.module('app').controller('techCtrl', function ($scope, mainService) {
-
-        var backgroundPic = document.getElementById('tech-background');
-
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/21/2017.
- */
-(function () {
     angular.module('app').controller('telecomCtrl', function ($scope, mainService) {
 
         var backgroundPic = document.getElementById('telecom-background');
@@ -519,31 +521,6 @@
  */
 (function () {
   angular.module('app').controller('workCtrl', function ($scope, mainService) {});
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/9/2017.
- */
-(function () {
-
-    angular.module('app').directive('footerDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/footer/footer.html',
-            controller: 'footerCtrl'
-        };
-    });
-})();
-'use strict';
-
-(function () {
-    angular.module('app').controller('footerCtrl', function ($scope) {
-
-        $scope.footerSocialHover = function (social) {
-            TweenMax.to(document.getElementById('footer-social-' + social), 1, { fill: "white" });
-        };
-    });
 })();
 'use strict';
 
@@ -720,43 +697,6 @@
         };
     });
 })();
-
-// .mobile-hamburger {
-//     visibility: visible;
-//     position: fixed;
-//     top: 50px;
-//     right: 50px;
-//     z-index: 20;
-//     height: 40px;
-//     width: 40px;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     align-items: center;
-//     background-color: transparent;
-//     outline: none;
-//     border: none;
-// }
-// .hamburger-patty {
-//     height: 2px;
-//     width: 40px;
-//     background-color: white;
-// }
-// .extra-patty-one {
-//     position: absolute;
-//     top: 6px;
-// }
-// .extra-patty-two {
-//     position: absolute;
-//     right: -100px;
-//     background-color: #bd9a35;
-// }
-// .extra-patty-three {
-//     position: absolute;
-//     right: -100px;
-//     background-color: #BD9A35;
-// }
-//
 'use strict';
 
 (function () {
@@ -843,5 +783,30 @@
       controller: 'navCtrl'
     };
   });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/9/2017.
+ */
+(function () {
+
+    angular.module('app').directive('footerDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/footer/footer.html',
+            controller: 'footerCtrl'
+        };
+    });
+})();
+'use strict';
+
+(function () {
+    angular.module('app').controller('footerCtrl', function ($scope) {
+
+        $scope.footerSocialHover = function (social) {
+            TweenMax.to(document.getElementById('footer-social-' + social), 1, { fill: "white" });
+        };
+    });
 })();
 //# sourceMappingURL=maps/bundle.js.map

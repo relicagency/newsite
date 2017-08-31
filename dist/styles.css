@@ -1375,7 +1375,17 @@
   right: -101%;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9); }
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.mobile-nav-popup h3 {
+  font-family: 'Rogan-Medium', sans-serif;
+  color: #BD9A35;
+  text-transform: uppercase;
+  font-size: 50px; }
 
 .mobile-nav-exit {
   position: absolute;

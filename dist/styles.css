@@ -71,7 +71,7 @@
 .story-router-title {
   position: relative;
   text-transform: uppercase;
-  font-size: 23px;
+  font-size: 3vmin;
   color: #BD9A35; }
 
 .story-router-down {
@@ -101,7 +101,7 @@
 .leadership-router-title {
   position: relative;
   text-transform: uppercase;
-  font-size: 23px;
+  font-size: 3vmin;
   color: #BD9A35; }
 
 .leadership-router-down {
@@ -195,23 +195,29 @@
 .our-story-title {
   position: absolute;
   top: 12%;
-  left: 15%;
-  font-size: 40px;
-  text-transform: uppercase; }
+  right: 70%;
+  font-size: 4vmin;
+  text-transform: uppercase;
+  color: #bd9a35;
+  font-family: 'Rogan-Bold', sans-serif; }
+
+#our-story {
+  font-family: 'Rogan-Bold', sans-serif; }
 
 .our-story-one {
   position: absolute;
   top: 13%;
   left: 40%;
-  width: 582px;
-  color: #161616; }
+  width: 44%;
+  color: #161616;
+  font-size: 2vmin; }
 
 .enter-relic {
-  position: absolute;
-  top: 30%;
+  position: relative;
   left: 40%;
-  font-size: 28px;
-  text-transform: uppercase; }
+  font-size: 3vmin;
+  text-transform: capitalize;
+  color: #bd9a35; }
 
 .our-story-two {
   position: absolute;
@@ -454,7 +460,7 @@
 .demandgen-industry-experts {
   position: absolute;
   top: 22%;
-  left: 20%;
+  right: 70%;
   font-size: 30px;
   color: #BD9A35;
   text-transform: uppercase;
@@ -468,7 +474,7 @@
   left: 35%;
   font-size: 20px;
   color: #727272;
-  width: 817px; }
+  width: 60%; }
 
 .demandgen-video {
   position: relative;
@@ -2075,12 +2081,12 @@ table {
   height: 103px;
   position: absolute;
   top: 21%;
-  left: 5%; }
+  right: 75%; }
 
 .tds-intro-text {
   top: 22%;
   position: absolute;
-  width: 900px;
+  width: 600%;
   left: 30%; }
 
 .tds-stats-container {
@@ -2222,7 +2228,7 @@ table {
 .tech-industry-experts {
   position: absolute;
   top: 22%;
-  left: 20%;
+  right: 70%;
   font-size: 30px;
   color: #BD9A35;
   text-transform: uppercase;
@@ -2236,7 +2242,7 @@ table {
   left: 35%;
   font-size: 20px;
   color: #727272;
-  width: 817px; }
+  width: 60%; }
 
 .tech-video {
   position: relative;
@@ -2366,7 +2372,7 @@ table {
 .telecom-industry-experts {
   position: absolute;
   top: 22%;
-  left: 20%;
+  right: 70%;
   font-size: 30px;
   color: #BD9A35;
   text-transform: uppercase;
@@ -2380,7 +2386,7 @@ table {
   left: 35%;
   font-size: 20px;
   color: #727272;
-  width: 817px; }
+  width: 60%; }
 
 .telecom-video {
   position: relative;
@@ -2575,7 +2581,7 @@ h2 {
 .tourism-industry-experts {
   position: absolute;
   top: 20%;
-  left: 20%;
+  right: 70%;
   font-size: 30px;
   color: #BD9A35;
   text-transform: uppercase;
@@ -2589,7 +2595,7 @@ h2 {
   left: 35%;
   font-size: 20px;
   color: #727272;
-  width: 817px; }
+  width: 60%; }
 
 .tourism-video {
   position: relative;

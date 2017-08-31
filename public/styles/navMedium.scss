@@ -1,5 +1,118 @@
-@media (max-device-width: 1400px) {
-  .nav-item-title {
-    font-size: 15px;
+@media screen and (max-device-width: 1400px) {
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+
+    .nav-logo {
+      position: absolute;
+      top: 15px;
+      left: 13px;
+      cursor: pointer;
+    }
+
+    .nav-logo-svg {
+      height: 50px;
+      width: 180px;
+    }
+
+    .nav-items {
+      position: absolute;
+      top: 50%;
+      right: 2.5%;
+      transform: translate(0, -50%);
+      height: 100%;
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .nav-item {
+      margin-left: 25px;
+    }
+    .nav-item-title {
+      color: #95989a;
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      cursor: pointer;
+      letter-spacing: 1px;
+      transition: 0.25s;
+      font-size: 15px;
+    }
+    .nav-item-title p {
+      margin-top: 15px;
+    }
+    .nav-item-title p:after {
+      content: '';
+      display: block;
+      margin-top: 7px;
+      opacity: 0;
+      height: 3px;
+      background: #299bde;
+      transition: opacity 0.2s;
+    }
+    .nav-item-title:hover {
+      color: white;
+    }
+    .nav-item-title p:hover:after {
+      opacity: 1;
+    }
+
+    .nav-item-drop {
+      position: absolute;
+      top: 70px;
+      height: 0;
+      width: 200px;
+      background-color: transparent;
+      display: none;
+      flex-direction: column;
+      color: transparent;
+    }
+
+    .nav-item-drop-one {
+
+    }
+    .nav-item-drop-two {
+
+    }
+    .nav-item-drop-three {
+
+    }
+
+    .drop-down-item {
+      height: 50px;
+      width: 100%;
+      background-color: white;
+      opacity: 0.7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3px;
+      cursor: pointer;
+    }
+
+    .cta-button {
+      color: white;
+      text-transform: none;
+      font-weight: 800;
+      background-color: #299bde;
+      border-radius: 50px;
+      padding: 7px 25px;
+    }
+    .cta-button-nav {
+      outline: none;
+      border: none;
+      cursor: pointer;
+      height: 39px;
+      width: 160px;
+      font-size: 16px;
+    }
+
   }
+
 }

@@ -11,6 +11,7 @@ const cachebust = new CacheBuster();
 const paths = {
   app_JS: ['public/**/*.js'],
   app_CSS: ['public/styles**/*.*css'],
+    app_FONTS: ['public/styles/webfonts/*.*'],
   app_HTML: ['public/**/*.html'],
   images: ['public/images/**/*.*']
 };
@@ -35,6 +36,11 @@ gulp.task('build-css', () => {
     .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('build-fonts', () => {
+    gulp.src(paths.app_FONTS)
+        .pipe(gulp.dest('./dist/webfonts'));
+});
+
 gulp.task('build-html', () => {
   gulp.src(paths.app_HTML)
     .pipe(cachebust.references())
@@ -44,13 +50,14 @@ gulp.task('build-html', () => {
 gulp.task('copy-images', () => {
   gulp.src(paths.images)
     .pipe(gulp.dest('./dist/images'));
-})
+});
 
 gulp.task('watch', () => {
   gulp.watch(paths.app_JS, ['build-js']);
   gulp.watch(paths.app_CSS, ['build-css']);
   gulp.watch(paths.app_HTML, ['build-html']);
   gulp.watch(paths.images, ['copy-images']);
+  gulp.watch(path.app_FONTS, ['build-fonts']);
 });
 
 gulp.task('default', [
@@ -58,5 +65,6 @@ gulp.task('default', [
   'build-js',
   'build-html',
   'copy-images',
+    'build-fonts',
   'watch'
 ]);

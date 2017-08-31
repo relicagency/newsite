@@ -1,0 +1,136 @@
+.cta-pop-up {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 10;
+}
+
+.pop-up-exit {
+  position: absolute;
+  top: 47px;
+  right: 52px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+.pop-up-exit:active {
+  outline: none;
+  border: none;
+}
+.pop-up-exit:focus {
+  outline: none;
+  border: none;
+}
+
+.pop-up-exit-x {
+  height: 32px;
+}
+
+.looking-for-help {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.looking-for-help p {
+  font-size: large;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.get-started-button {
+  border: none;
+  height: 50px;
+  width: 200px;
+  border-radius: 50px;
+  background-color: #299bde;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cta-pop-up-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 68%;
+  width: 50%;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.cta-get-started-title {
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  font-size: 30px;
+  color: #161616;
+}
+
+.cta-contact-form-container {
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cta-get-started-button {
+  left: 50%;
+  transform: translate(100%);
+  border: none;
+  height: 50px;
+  width: 200px;
+  border-radius: 50px;
+  background-color: #299bde;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cta-contact-form {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.cta-contact-input {
+  color: #727272;
+  background-color: #efefef;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: medium;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+.contact-input:focus {
+  outline: none;
+}

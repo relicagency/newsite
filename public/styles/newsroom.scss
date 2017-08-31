@@ -1,0 +1,164 @@
+.newsroom-main-container {
+  height: 146vh;
+  width: 100%;
+  background-color: #161616;
+}
+
+.newsroom-main-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 145%;
+  width: 100%;
+  background-color: #161616;
+}
+.newsroom-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url('./images/newsroom-bckgrnd.jpg');
+  background-size: cover;
+}
+
+.newsroom-main-content {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsroom-content-title {
+  position: relative;
+  height: 13vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 29px;
+  color: white;
+}
+
+.newsroom-routes-container {
+  position: relative;
+  height: 75vh;
+  width: 100%;
+}
+
+.routes-router {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25%;
+  height: 100%;
+}
+.routes-underlay {
+  position: absolute;
+  top: 0;
+  height: 40%;
+  width: 100%;
+  background-color: #95989a;
+  opacity: 0.7;
+  z-index: -1;
+}
+.press-underlay {
+  position: absolute;
+  bottom: 0;
+  height: 60%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.routes-route {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 75%;
+  background-color: white;
+}
+
+.nr-routes-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.nr-route-nav {
+  position: relative;
+  width: 100%;
+  height: calc(20% - 2px);
+  margin-bottom: 2px;
+  background-color: black;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.blue-triangle {
+  width: 18px;
+  display: none;
+}
+.route-nav-title {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+  color: white;
+}
+
+.nr-press-contact {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nr-press-contact-title {
+  color: white;
+  text-transform: capitalize;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 27px;
+}
+.nr-adam-pic {
+  height: 140px;
+  margin-bottom: 25px;
+}
+.nr-adam-stoker {
+  color: #727272;
+  margin-bottom: 25px;
+}
+#nr-press-call {
+  width: 180px;
+  height: 40px;
+  margin-bottom: 20px;
+  font-size: medium;
+}
+#nr-press-email {
+  width: 180px;
+  height: 40px;
+  font-size: medium;
+}
+
+.newsroom-route {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.newsroom-route-title {
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  text-transform: capitalize;
+  color: #BD9A35;
+  font-size: 30px;
+  font-family: 'Rogan-Medium', sans-serif;
+}

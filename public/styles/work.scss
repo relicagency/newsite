@@ -1,0 +1,35 @@
+.work-main-container {
+  height: 200vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../images/work-bckgrnd.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #161616;
+}
+.work-title {
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.work-content {
+  position: relative;
+  width: calc(100vw * 0.7);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.work-content img {
+  height: calc(100vw / 6);
+  width: calc(100vw / 6);
+  margin-bottom: 10px;
+}

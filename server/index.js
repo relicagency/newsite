@@ -2,7 +2,9 @@
 const express = require('express'),
       session = require('express-session'),
       bodyParser = require('body-parser'),
-      massive = require('massive');
+      massive = require('massive'),
+      https = require('https'),
+      contactCtrl = require('./controllers/contactCtrl');
 
       // config = require('../config.js');
 
@@ -35,6 +37,9 @@ app.use(bodyParser.json());
 //       reviewCtrl = require('./controllers/reviewCtrl.js'),
 //       userCtrl = require('./controllers/userCtrl.js');
 
+
+//=====  ENDPOINTS =======================================
+app.post('/relic/contact', contactCtrl.contactRelic);
 
 // === Listen ==================================================
 app.listen(port, () => {

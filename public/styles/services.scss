@@ -2,18 +2,24 @@
 
 .services-main-container {
   width: 100%;
-  height: 100%;
+  height: 220vh;
   background-color: #161616;
   display: flex;
   flex-direction: column;
 }
 
 .services-main-background {
-  position: relative;
+  position: absolute;
+  left: 0;
   top: 0;
   height: 200vh;
   width: 100%;
-  background-image: url('./images/services-bckgrnd@2x.png');
+}
+.services-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url('./images/services-bckgrnd.jpg');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -27,7 +33,7 @@
 
 .services-main-content-container {
   position: absolute;
-  top: 24%;
+  top: 14%;
   //height: 170%;
   width: 90%;
   left: 50%;
@@ -40,11 +46,11 @@
 
 .services-main-title {
   position: relative;
-  height: 196px;
+  height: 114px;
   width: 100%;
   color: white;
   text-transform: uppercase;
-  font-size: 41px;
+  font-size: 30px;
   letter-spacing: 3px;
   display: flex;
   justify-content: center;
@@ -52,13 +58,11 @@
 
 .services-content-top {
   position: relative;
-  height: 500px;
+  height: 366px;
   width: 100%;
-  background-color: #161616;
-  opacity: 0.7;
+  background-color: rgba(22,22,22,0.9);
   display: flex;
   flex-direction: row;
-
 }
 
 .services-top-services {
@@ -145,9 +149,8 @@ height: 15px;
   position: relative;
   height: 57px;
   width: 100%;
-  background-color: #161616;
+  background-color: rgba(22,22,22,0.9);
   color: #cccccc;
-  opacity: 0.7;
   border-top: 1px solid #727272;
   display: flex;
   align-items: center;

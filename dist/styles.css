@@ -1061,13 +1061,13 @@
     left: 50%;
     transform: translate(-50%, 0); }
   .cta-contact-input {
-    background-color: rgba(22, 22, 22, 0.5);
+    background-color: #181818;
     border: none;
     outline: none;
     margin-bottom: 3%;
-    height: 10%;
+    height: 7%;
     width: 95%;
-    font-size: 7vmin;
+    font-size: 6vmin;
     padding-left: 15px;
     font-family: 'Rogan-Light', sans-serif;
     border-radius: 5px;

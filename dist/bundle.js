@@ -356,6 +356,25 @@
 'use strict';
 
 /**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('tds-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
+/**
  * Created by Seth on 8/11/2017.
  */
 (function () {
@@ -444,25 +463,6 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
-
-        var backgroundPic = document.getElementById('tds-background');
-
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/21/2017.
- */
-(function () {
     angular.module('app').controller('techCtrl', function ($scope, mainService) {
 
         var backgroundPic = document.getElementById('tech-background');
@@ -498,6 +498,14 @@
 'use strict';
 
 /**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+  angular.module('app').controller('workCtrl', function ($scope, mainService) {});
+})();
+'use strict';
+
+/**
  * Created by Seth on 8/17/2017.
  */
 (function () {
@@ -513,14 +521,6 @@
             mainService.parallaxIt(backgroundPic, csParaStart);
         };
     });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/21/2017.
- */
-(function () {
-  angular.module('app').controller('workCtrl', function ($scope, mainService) {});
 })();
 'use strict';
 
@@ -706,48 +706,6 @@
 })();
 'use strict';
 
-/**
- * Created by Seth on 8/30/2017.
- */
-(function () {
-
-    angular.module('app').directive('mobileNavDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/mobile-nav/mobile-nav.html',
-            controller: 'mobileNavCtrl'
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/30/2017.
- */
-(function () {
-    angular.module('app').controller('mobileNavCtrl', function ($scope, mainService) {
-
-        var tl = new TimelineMax(),
-            mobileNav = document.getElementById('mobile-nav-popup'),
-            trigger = true,
-            hamburgerOne = document.getElementById('hamburger-one'),
-            hamburgerTwo = document.getElementById('hamburger-two'),
-            hamburgerThree = document.getElementById('hamburger-three');
-
-        $scope.exitNav = function () {
-
-            if (trigger) {
-                tl.to(hamburgerTwo, 0.08, { top: "47%" }).to(hamburgerOne, 0.08, { top: "47%" }).to(hamburgerThree, 0.08, { top: "47%" }).to(hamburgerOne, 0, { opacity: 0 }).to(hamburgerThree, 0.08, { transform: "rotate(45deg)" }).to(hamburgerTwo, 0.08, { transform: "rotate(-45deg)" }).to(mobileNav, 0.15, { right: 0, ease: Power2.easeIn });
-            }if (!trigger) {
-                tl.to(hamburgerThree, 0.08, { transform: "rotate(0deg)" }).to(hamburgerTwo, 0.08, { transform: "rotate(0deg)" }).to(hamburgerThree, 0.08, { top: "86%" }).to(hamburgerOne, 0.08, { opacity: 1, top: 0 }).to(hamburgerTwo, 0.08, { top: "47%" }).to(mobileNav, 0.15, { right: "-101%", ease: Power2.easeOut });
-            }
-
-            trigger = !trigger;
-        };
-    });
-})();
-'use strict';
-
 (function () {
     angular.module('app').controller('navCtrl', function ($scope) {
 
@@ -832,5 +790,47 @@
       controller: 'navCtrl'
     };
   });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/30/2017.
+ */
+(function () {
+
+    angular.module('app').directive('mobileNavDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/mobile-nav/mobile-nav.html',
+            controller: 'mobileNavCtrl'
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/30/2017.
+ */
+(function () {
+    angular.module('app').controller('mobileNavCtrl', function ($scope, mainService) {
+
+        var tl = new TimelineMax(),
+            mobileNav = document.getElementById('mobile-nav-popup'),
+            trigger = true,
+            hamburgerOne = document.getElementById('hamburger-one'),
+            hamburgerTwo = document.getElementById('hamburger-two'),
+            hamburgerThree = document.getElementById('hamburger-three');
+
+        $scope.exitNav = function () {
+
+            if (trigger) {
+                tl.to(hamburgerTwo, 0.08, { top: "47%" }).to(hamburgerOne, 0.08, { top: "47%" }).to(hamburgerThree, 0.08, { top: "47%" }).to(hamburgerOne, 0, { opacity: 0 }).to(hamburgerThree, 0.08, { transform: "rotate(45deg)" }).to(hamburgerTwo, 0.08, { transform: "rotate(-45deg)" }).to(mobileNav, 0.15, { right: 0, ease: Power2.easeIn });
+            }if (!trigger) {
+                tl.to(hamburgerThree, 0.08, { transform: "rotate(0deg)" }).to(hamburgerTwo, 0.08, { transform: "rotate(0deg)" }).to(hamburgerThree, 0.08, { top: "86%" }).to(hamburgerOne, 0.08, { opacity: 1, top: 0 }).to(hamburgerTwo, 0.08, { top: "47%" }).to(mobileNav, 0.15, { right: "-101%", ease: Power2.easeOut });
+            }
+
+            trigger = !trigger;
+        };
+    });
 })();
 //# sourceMappingURL=maps/bundle.js.map

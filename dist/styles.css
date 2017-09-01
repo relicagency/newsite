@@ -967,20 +967,25 @@
 
 .pop-up-exit {
   position: absolute;
-  background-color: transparent;
   cursor: pointer;
-  right: 5%; }
+  right: 5px;
+  top: 5px;
+  height: 5vmin;
+  width: 5vmin; }
 
-.pop-up-exit:active {
-  outline: none;
-  border: none; }
+.pop-exit-bar {
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  transform: translate(-50%); }
 
-.pop-up-exit:focus {
-  outline: none;
-  border: none; }
+.pop-exit-bar-one {
+  transform: rotate(45deg); }
 
-.pop-up-exit-x {
-  height: 25px; }
+.pop-exit-bar-two {
+  transform: rotate(-45deg); }
 
 .cta-pop-up-form {
   position: absolute;
@@ -1036,6 +1041,16 @@
   outline: none; }
 
 @media screen and (max-device-width: 850px) {
+  .cta-pop-up-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5%;
+    width: 100%;
+    background-color: #242424;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
   .cta-pop-up-form {
     position: absolute;
     top: 50%;
@@ -1045,9 +1060,18 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.95); }
   .cta-get-started-title {
-    font-size: 5vmin;
+    font-size: 6vmin;
     color: white;
-    margin-left: 5%; }
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-65%, 0); }
+  .get-started-logo-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 82px; }
   .cta-contact-form-container {
     position: absolute;
     height: 75%;

@@ -1064,11 +1064,11 @@
     background-color: rgba(22, 22, 22, 0.5);
     border: none;
     outline: none;
-    margin-bottom: 4vmin;
-    height: 13vmin;
+    margin-bottom: 3%;
+    height: 10%;
     width: 95%;
-    font-size: 4vmin;
-    padding-left: 4vmin;
+    font-size: 7vmin;
+    padding-left: 15px;
     font-family: 'Rogan-Light', sans-serif;
     border-radius: 5px;
     color: white; }

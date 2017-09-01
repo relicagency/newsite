@@ -732,17 +732,14 @@
             trigger = true,
             hamburgerOne = document.getElementById('hamburger-one'),
             hamburgerTwo = document.getElementById('hamburger-two'),
-            hamburgerThree = document.getElementById('hamburger-three'),
-            hamburgerFour = document.getElementById('hamburger-four'),
-            hamburgerFive = document.getElementById('hamburger-five'),
-            hamburgerSix = document.getElementById('hamburger-six');
+            hamburgerThree = document.getElementById('hamburger-three');
 
         $scope.exitNav = function () {
 
             if (trigger) {
-                tl.to(hamburgerFour, 0.08, { left: "-21px", top: "19px", transform: "rotate(-90deg)" }).to(hamburgerFive, 0.08, { right: 0 }).to(hamburgerSix, 0.08, { right: 0 }, "-=0.08").to(hamburgerTwo, 0.08, { position: "absolute", top: "19px", right: "-21px", transform: "rotate(270deg)" }).to(hamburgerOne, 0.08, { position: "absolute", top: 0 }).to(hamburgerThree, 0.08, { position: "absolute", bottom: 0 }).to(hamburgerFive, 0.08, { transform: "rotate(45deg)" }).to(hamburgerSix, 0.08, { transform: "rotate(-45deg)" }, "-=0.08").to(mobileNav, 0.15, { right: 0, ease: Power2.easeIn });
+                tl.to(hamburgerTwo, 0.08, { top: "47%" }).to(hamburgerOne, 0.08, { top: "47%" }).to(hamburgerThree, 0.08, { top: "47%" }).to(hamburgerOne, 0, { opacity: 0 }).to(hamburgerThree, 0.08, { transform: "rotate(45deg)" }).to(hamburgerTwo, 0.08, { transform: "rotate(-45deg)" }).to(mobileNav, 0.15, { right: 0, ease: Power2.easeIn });
             }if (!trigger) {
-                tl.to(hamburgerSix, 0.08, { transform: "rotate(0deg)" }, "-=0.08").to(hamburgerFive, 0.08, { transform: "rotate(0deg)" }).to(hamburgerThree, 0.08, { position: "relative", bottom: 0 }).to(hamburgerOne, 0.08, { position: "relative" }).to(hamburgerTwo, 0.08, { position: "relative", top: '0', right: 0, transform: "rotate(0deg)" }).to(hamburgerSix, 0.08, { right: "-100px" }).to(hamburgerFive, 0.08, { right: "-100px" }, "-=0.08").to(hamburgerFour, 0.08, { top: "6px", left: 0, transform: "rotate(0deg)" }).to(mobileNav, 0.15, { right: "-101%", ease: Power2.easeOut });
+                tl.to(hamburgerThree, 0.08, { transform: "rotate(0deg)" }).to(hamburgerTwo, 0.08, { transform: "rotate(0deg)" }).to(hamburgerThree, 0.08, { top: "86%" }).to(hamburgerOne, 0.08, { opacity: 1, top: 0 }).to(hamburgerTwo, 0.08, { top: "47%" }).to(mobileNav, 0.15, { right: "-101%", ease: Power2.easeOut });
             }
 
             trigger = !trigger;

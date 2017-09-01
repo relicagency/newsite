@@ -1521,33 +1521,24 @@
   .mobile-hamburger {
     visibility: visible;
     position: fixed;
-    top: 18px;
-    right: 50px;
+    top: 15px;
+    right: 11px;
     z-index: 20;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: transparent;
-    outline: none;
-    border: none; }
+    height: 18px;
+    width: 27px; }
   .hamburger-patty {
     height: 2px;
-    width: 40px;
+    width: 27px;
     background-color: white; }
-  .extra-patty-one {
+  .hamburger-one {
     position: absolute;
-    top: 6px; }
-  .extra-patty-two {
+    top: 0; }
+  .hamburger-two {
     position: absolute;
-    right: -100px;
-    background-color: #bd9a35; }
-  .extra-patty-three {
+    top: 47%; }
+  .hamburger-three {
     position: absolute;
-    right: -100px;
-    background-color: #BD9A35; } }
+    bottom: 0; } }
 
 nav {
   position: fixed;

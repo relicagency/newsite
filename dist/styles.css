@@ -1035,6 +1035,56 @@
 .contact-input:focus {
   outline: none; }
 
+@media screen and (max-device-width: 850px) {
+  .cta-pop-up-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95); }
+  .cta-get-started-title {
+    font-size: 5vmin;
+    color: white;
+    margin-left: 5%; }
+  .cta-contact-form-container {
+    position: absolute;
+    height: 75%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 0); }
+  .cta-contact-input {
+    background-color: rgba(22, 22, 22, 0.5);
+    border: none;
+    outline: none;
+    margin-bottom: 4vmin;
+    height: 13vmin;
+    width: 95%;
+    font-size: 4vmin;
+    padding-left: 4vmin;
+    font-family: 'Rogan-Light', sans-serif;
+    border-radius: 5px;
+    color: white; }
+  .cta-get-started-button {
+    left: -2%;
+    height: 13vmin;
+    width: 100%;
+    border: none;
+    background-color: #bd9a35;
+    color: white;
+    font-family: 'Rogan-Medium', sans-serif;
+    cursor: pointer;
+    font-size: 7vmin;
+    outline: none;
+    border-radius: 5px; } }
+
 .swn-container {
   position: relative;
   height: 65vh;

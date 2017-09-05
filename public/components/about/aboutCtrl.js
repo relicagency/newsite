@@ -7,7 +7,7 @@
 
         let lastLeader = '',
             expand = true,
-            backgroundPic = document.getElementById('aboutbackground');
+            backgroundPic = document.getElementById('about-background');
 
         window.onscroll = function() {
             let offSet = window.pageYOffset,

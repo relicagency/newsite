@@ -15,9 +15,9 @@
   width: 100%;
   background-image: url('../images/gold-elephant2-min.png');
   background-repeat: no-repeat;
-  background-size: 203%;
+  background-size: 215%;
   background-position-x: 50%;
-  background-position-y: -280px;
+  background-position-y: -15vh;
 }
 
 .linear-gradient-container {
@@ -112,6 +112,81 @@
   height: calc(100vh / 6);
   cursor: pointer;
   z-index: 2;
+}
+
+
+
+@media screen and (max-device-width: 1440px) {
+  .home-hero {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/gold-elephant2-min.png');
+    background-repeat: no-repeat;
+    background-size: 203%;
+    background-position-x: 50%;
+    background-position-y: -10vh;
+  }
+}
+
+@media screen and (max-device-width: 1024px) {
+  .home-hero {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/gold-elephant2-min.png');
+    background-repeat: no-repeat;
+    background-size: 223%;
+    background-position-x: 50%;
+    background-position-y: -14vh;
+  }
+}
+
+@media screen and (max-device-width: 768px) {
+
+  .headline-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .headline-content h2 {
+    margin-bottom: 10px;
+    line-height: 35px;
+    padding-left: 87px;
+    padding-right: 87px;
+  }
+
+
+  .home-hero {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/gold-elephant2-min.png');
+    background-repeat: no-repeat;
+    background-size: 430%;
+    background-position-x: 50%;
+    background-position-y: -15vh;
+  }
+
+
+}
+
+@media screen and (max-device-width: 425px) {
+
+  .home-hero {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/gold-elephant2-min.png');
+    background-repeat: no-repeat;
+    background-size: 530%;
+    background-position-x: 50%;
+    background-position-y: -10vh;
+  }
+
 }
 
 

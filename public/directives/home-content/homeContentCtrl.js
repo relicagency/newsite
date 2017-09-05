@@ -10,9 +10,26 @@
                 mainContent = document.getElementById('main-content'),
                 services = document.getElementById('services'),
                 work = document.getElementById('work'),
-                articles = document.getElementById('articles');
+                articles = document.getElementById('articles'),
+                swnContainer = document.getElementById('swn-container'),
+                swnTopContainer = document.getElementById('swn-top-container'),
+                swnBottomContainer = document.getElementById('swn-bottom-container');
+
 
             $scope.switchContent = function(switcher){
+
+                if(window.innerWidth < 600) {
+
+                    console.log('Yo!');
+
+                    TweenMax.to(swnContainer, 0.15, {
+                        height: "260vh"
+                    });
+                    TweenMax.to(swnTopContainer, 0.15, {
+                        height: "10%"
+                    });
+                }
+
 
                 TweenMax.to(document.getElementById("top-" + switcher), 0.5,  {backgroundColor: "white", color: '#161616'});
                 if(previousTop !== "" && previousTop !== "top-" + switcher){
@@ -34,6 +51,18 @@
 
                 previousContent = 'main-content';
                 previousTop = "";
+
+                if(window.innerWidth < 600) {
+
+                    console.log('Yo mama....');
+
+                    TweenMax.to(swnContainer, 0.15, {
+                        height: "30vh"
+                    });
+                    TweenMax.to(swnTopContainer, 0.15, {
+                        height: "80%"
+                    });
+                }
             };
 
             $scope.swnContentHover = function(num){

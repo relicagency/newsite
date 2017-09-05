@@ -78,7 +78,7 @@
 .story-router-title {
   position: relative;
   text-transform: uppercase;
-  font-size: 23px;
+  font-size: 3vmin;
   color: #BD9A35;
 }
 .story-router-down {
@@ -110,7 +110,7 @@
 .leadership-router-title {
   position: relative;
   text-transform: uppercase;
-  font-size: 23px;
+  font-size: 3vmin;
   color: #BD9A35;
 }
 .leadership-router-down {
@@ -213,23 +213,32 @@
 .our-story-title {
   position: absolute;
   top: 12%;
-  left: 15%;
-  font-size: 40px;
+  right: 70%;
+  font-size: 4vmin;
   text-transform: uppercase;
+  color: #bd9a35;
+  font-family: 'Rogan-Bold', sans-serif;
 }
+#our-story {
+  font-family: 'Rogan-Bold', sans-serif;
+
+}
+
 .our-story-one {
   position: absolute;
   top: 13%;
   left: 40%;
-  width: 582px;
+  width: 44%;
   color: #161616;
+  font-size: 2vmin;
 }
 .enter-relic {
-  position: absolute;
-  top: 30%;
+  position: relative;
+
   left: 40%;
-  font-size: 28px;
-  text-transform: uppercase;
+  font-size: 3vmin;
+  text-transform: capitalize;
+  color: #bd9a35
 }
 .our-story-two {
   position: absolute;

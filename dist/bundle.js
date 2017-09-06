@@ -121,32 +121,6 @@
 'use strict';
 
 /**
- * Created by Seth on 8/14/2017.
- */
-(function () {
-    angular.module('app').controller('contactCtrl', function ($scope, mainService) {
-
-        var backgroundPic = document.getElementById('contact-background');
-
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.5050505050505050;
-
-            // backgroundPic.style.bottom = csParaStart + "px";
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-
-        $scope.contactRelic = function (contact) {
-            mainService.contactRelic(contact).then(function (response) {
-                console.log(response);
-            });
-        };
-    });
-})();
-'use strict';
-
-/**
  * Created by Seth on 8/16/2017.
  */
 (function () {
@@ -235,6 +209,32 @@
             }
 
             lastLeader = peep;
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/14/2017.
+ */
+(function () {
+    angular.module('app').controller('contactCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('contact-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.5050505050505050;
+
+            // backgroundPic.style.bottom = csParaStart + "px";
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+
+        $scope.contactRelic = function (contact) {
+            mainService.contactRelic(contact).then(function (response) {
+                console.log(response);
+            });
         };
     });
 })();
@@ -360,25 +360,6 @@
 'use strict';
 
 /**
- * Created by Seth on 8/21/2017.
- */
-(function () {
-    angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
-
-        var backgroundPic = document.getElementById('tds-background');
-
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
-})();
-'use strict';
-
-/**
  * Created by Seth on 8/11/2017.
  */
 (function () {
@@ -459,6 +440,25 @@
             title: 'pr & content',
             info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
         }];
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('tds-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
     });
 })();
 'use strict';
@@ -574,29 +574,18 @@
     angular.module('app').controller('getStartedCtrl', function ($scope, mainService) {
 
         var mainPop = document.getElementById('cta-pop-up'),
-            barOne = document.getElementById('get-started-animation-one'),
-            barTwo = document.getElementById('get-started-animation-two'),
-            barThree = document.getElementById('get-started-animation-three'),
-            barFour = document.getElementById('get-started-animation-four'),
             barFive = document.getElementById('get-started-animation-five'),
             barSix = document.getElementById('get-started-animation-six'),
             barSeven = document.getElementById('get-started-animation-seven');
 
         $scope.ctaShow = function () {
             var tl = new TimelineMax();
-            tl.to(mainPop, 0.5, { ease: Power2.easeIn, left: 0 }).to(barOne, 0.1, { width: "100%" }, "+=0.15").to(barTwo, 0.1, { height: "100%" }).to(barThree, 0.1, { width: "100%" }).to(barFour, 0.1, { height: "100%" }).to(barFive, 0.2, { left: 0 }).to(barSix, 0.2, { right: 0 }).to(barSeven, 0.2, { left: 0 }).to(barSix, 0, { left: "101%" }, "-=0.2").to(barFour, 0.1, { height: 0 }).to(barThree, 0.1, { width: 0 }).to(barTwo, 0.1, { height: 0 }).to(barOne, 0.1, { width: 0 });
+            tl.to(mainPop, 0.5, { ease: Power2.easeIn, left: 0 }).to(barFive, 0.15, { left: 0 }, "+=0.5").to(barSix, 0.15, { right: 0 }).to(barSeven, 0.15, { left: 0 }).to(barSix, 0.15, { left: "101%" }, "-=0.15");
         };
 
         $scope.ctaHide = function () {
-            // let tl = new TimelineMax();
-            // tl.to(hamburgerTwo, 0.08, {top: "47%"})
-            //     .to(hamburgerOne, 0.08, {top: "47%"})
-            //     .to(hamburgerThree, 0.08, {top: "47%"})
-
-            TweenMax.to(document.getElementById('cta-pop-up'), 0.5, {
-                ease: Power2.easeOut,
-                left: '-101%'
-            });
+            var tl = new TimelineMax();
+            tl.to(barSeven, 0.15, { left: "101%" }).to(barSix, 0.15, { left: 0 }, "-=0.15").to(barFive, 0.15, { left: "101%" }).to(barSix, 0.15, { left: '-100%' }, "-=0.15").to(mainPop, 0.5, { ease: Power2.easeIn, left: "-101%" });
         };
     });
 })();

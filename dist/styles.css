@@ -1012,7 +1012,8 @@
   top: -4px;
   height: 6vmin;
   width: 6vmin;
-  z-index: 100; }
+  z-index: 100;
+  margin: 12px; }
 
 .pop-exit-bar-one {
   position: absolute;

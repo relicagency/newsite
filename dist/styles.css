@@ -971,7 +971,7 @@
 
 .pop-up-outline-one {
   height: 2px;
-  width: 100%;
+  width: 0;
   background-color: white;
   position: absolute;
   top: 0;
@@ -980,7 +980,7 @@
 
 .pop-up-outline-two {
   width: 2px;
-  height: 100%;
+  height: 0;
   background-color: white;
   position: absolute;
   left: 0;
@@ -989,7 +989,7 @@
 
 .pop-up-outline-three {
   height: 2px;
-  width: 100%;
+  width: 0;
   background-color: white;
   position: absolute;
   bottom: 0;
@@ -998,7 +998,7 @@
 
 .pop-up-outline-four {
   width: 2px;
-  height: 100%;
+  height: 0;
   background-color: white;
   position: absolute;
   right: 0;
@@ -1014,19 +1014,46 @@
   width: 6vmin;
   z-index: 100; }
 
-.pop-exit-bar {
+.pop-exit-bar-one {
   position: absolute;
-  background-color: white;
   height: 2px;
   width: 100%;
-  top: 50%;
-  transform: translate(-50%); }
-
-.pop-exit-bar-one {
+  bottom: 50%;
+  right: 0;
+  overflow: hidden;
   transform: rotate(45deg); }
 
+#get-started-animation-seven {
+  left: 101%; }
+
 .pop-exit-bar-two {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 50%;
+  right: 0;
+  overflow: hidden;
   transform: rotate(-45deg); }
+
+#get-started-animation-five {
+  left: 101%; }
+
+.pop-exit-bar-three {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  height: 2px;
+  width: 66%;
+  overflow: hidden; }
+
+#get-started-animation-six {
+  right: 101%; }
+
+.exit-inner-bar {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: white; }
 
 .cta-pop-up-form {
   position: absolute;

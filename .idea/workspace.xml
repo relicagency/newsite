@@ -8,7 +8,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5673a4d2-2a4d-4a5e-92e3-5f5dfa47a7ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/moab.html" afterPath="$PROJECT_DIR$/public/moab.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/bundle.js" afterPath="$PROJECT_DIR$/dist/bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/directives/get-started/getStarted.html" afterPath="$PROJECT_DIR$/dist/directives/get-started/getStarted.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/maps/bundle.js.map" afterPath="$PROJECT_DIR$/dist/maps/bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/maps/styles.css.map" afterPath="$PROJECT_DIR$/dist/maps/styles.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles.css" afterPath="$PROJECT_DIR$/dist/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/directives/get-started/getStarted.html" afterPath="$PROJECT_DIR$/public/directives/get-started/getStarted.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/directives/get-started/getStartedCtrl.js" afterPath="$PROJECT_DIR$/public/directives/get-started/getStartedCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/getStarted.scss" afterPath="$PROJECT_DIR$/public/styles/getStarted.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,6 +32,20 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="getStartedCtrl.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/directives/get-started/getStartedCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -91,7 +113,6 @@
         <option value="$PROJECT_DIR$/public/components/expertise/expertise.html" />
         <option value="$PROJECT_DIR$/public/components/expertise/expertise.js" />
         <option value="$PROJECT_DIR$/public/components/about/aboutCtrl.js" />
-        <option value="$PROJECT_DIR$/public/directives/get-started/getStartedCtrl.js" />
         <option value="$PROJECT_DIR$/public/styles/universal.scss" />
         <option value="$PROJECT_DIR$/public/styles/tourism.scss" />
         <option value="$PROJECT_DIR$/public/styles/telecom.scss" />
@@ -120,9 +141,10 @@
         <option value="$PROJECT_DIR$/public/styles/footer.scss" />
         <option value="$PROJECT_DIR$/public/styles/footerSmall.scss" />
         <option value="$PROJECT_DIR$/public/styles/footerSmaller.scss" />
-        <option value="$PROJECT_DIR$/public/styles/getStarted.scss" />
-        <option value="$PROJECT_DIR$/public/directives/get-started/getStarted.html" />
         <option value="$PROJECT_DIR$/public/moab.html" />
+        <option value="$PROJECT_DIR$/public/directives/get-started/getStarted.html" />
+        <option value="$PROJECT_DIR$/public/styles/getStarted.scss" />
+        <option value="$PROJECT_DIR$/public/directives/get-started/getStartedCtrl.js" />
       </list>
     </option>
   </component>
@@ -200,6 +222,86 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-nav" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="get-started" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -307,16 +409,16 @@
       <workItem from="1503068609958" duration="29756000" />
       <workItem from="1503346549239" duration="225164000" />
       <workItem from="1504552066404" duration="1167000" />
-      <workItem from="1504624469934" duration="33213000" />
+      <workItem from="1504624469934" duration="38364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="470064000" />
+    <option name="totallyTimeSpent" value="475215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1699" y="41" width="2418" height="1318" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -327,7 +429,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294702" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="MaxCompute Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Running Info" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -358,46 +460,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/common-rtl.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/customize-controls.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/customize-controls.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="0" column="2581" lean-forward="true" selection-start-line="0" selection-start-column="2581" selection-end-line="0" selection-end-column="2581" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/customize-controls-rtl.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/customize-controls-rtl.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="0" column="1232" lean-forward="true" selection-start-line="0" selection-start-column="1232" selection-end-line="0" selection-end-column="1232" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/customize-nav-menus.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
@@ -762,6 +824,99 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504132231458" expanded="true" signature="34:1063" ph="..." />
+            <marker date="1504132231458" expanded="true" signature="44:399" ph="..." />
+            <marker date="1504132231458" expanded="true" signature="409:1055" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/directives/mobile-nav/mobileNavCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+          <folding>
+            <marker date="1504283735465" expanded="true" signature="0:40" ph="/** Created by Seth on 8/30/2017. ...*/" />
+            <marker date="1504283735465" expanded="true" signature="137:1543" ph="{...}" />
+            <marker date="1504283735465" expanded="true" signature="528:1534" ph="{...}" />
+            <marker date="1504283735465" expanded="true" signature="554:1024" ph="{...}" />
+            <marker date="1504283735465" expanded="true" signature="1038:1491" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/getStarted.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="144" column="9" lean-forward="false" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
+          <folding>
+            <marker date="1504733420344" expanded="true" signature="18:213" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="234:303" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="325:549" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="565:698" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="719:886" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="909:928" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="952:1010" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="1033:1150" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="1171:1287" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="1310:1429" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="1451:1571" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="1587:1708" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="1727:1857" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="1887:1903" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="1922:2053" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="2082:2099" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="2121:2224" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="2252:2270" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="2288:2371" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="2391:2545" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="2575:2823" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="2848:3081" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="3101:3157" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="3178:3395" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="3417:3437" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="3484:5058" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="3508:3695" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="3716:3888" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="3915:4049" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="4075:4188" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="4220:4488" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="4511:4772" ph="{...}" />
+            <marker date="1504733420344" expanded="true" signature="4800:5055" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/directives/get-started/getStarted.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="102" lean-forward="false" selection-start-line="19" selection-start-column="102" selection-end-line="19" selection-end-column="102" />
+          <folding>
+            <marker date="1504733008804" expanded="true" signature="29:167" ph="..." />
+            <marker date="1504733008804" expanded="true" signature="209:2562" ph="..." />
+            <marker date="1504733008804" expanded="true" signature="244:2554" ph="..." />
+            <marker date="1504733008804" expanded="true" signature="679:1067" ph="..." />
+            <marker date="1504733008804" expanded="true" signature="1108:1267" ph="..." />
+            <marker date="1504733008804" expanded="true" signature="1143:1250" ph="..." />
+            <marker date="1504733008804" expanded="true" signature="1318:2543" ph="..." />
+            <marker date="1504733008804" expanded="true" signature="1436:2528" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/directives/get-started/getStartedCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding />
         </state>
       </provider>

@@ -1813,7 +1813,7 @@ nav {
   top: 0;
   width: 100%;
   height: 90px;
-  z-index: 10;
+  z-index: 20;
   display: flex;
   align-items: center;
   font-family: 'Rogan-Regular', sans-serif; }
@@ -2305,6 +2305,9 @@ table {
   width: 100%;
   background-color: #161616; }
 
+.services-content-mobile {
+  display: none; }
+
 .services-main-content-container {
   position: absolute;
   top: 14%;
@@ -2446,6 +2449,28 @@ table {
   margin-top: 100px;
   margin-bottom: 100px;
   position: relative; }
+
+@media screen and (max-device-width: 425px) {
+  .services-content-top {
+    display: none; }
+  .services-content-middle {
+    display: none; }
+  .services-accordion {
+    display: none; }
+  .services-content-mobile {
+    margin-top: 28vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5; }
+  .content-mobile-content {
+    height: 95vw;
+    width: 95vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
 
 .tds-main-container {
   height: 623vh;
@@ -3247,6 +3272,12 @@ div {
   font-size: 3.5vmin;
   line-height: 48px;
   letter-spacing: 4px; }
+
+@media screen and (max-device-width: 425px) {
+  .page-title {
+    font-family: 'Rogan-SemiBold', sans-serif;
+    font-size: 8vmin;
+    letter-spacing: 2px; } }
 
 .work-main-container {
   height: 200vh;

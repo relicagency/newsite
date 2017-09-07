@@ -24,3 +24,13 @@ div {
   line-height: 48px;
   letter-spacing: 4px;
 }
+
+@media screen and (max-device-width: 425px) {
+
+  .page-title {
+    font-family: 'Rogan-SemiBold', sans-serif;
+    font-size: 8vmin;
+    letter-spacing: 2px;
+  }
+
+}

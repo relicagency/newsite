@@ -31,6 +31,10 @@
   background-color: #161616;
 }
 
+.services-content-mobile {
+  display: none;
+}
+
 .services-main-content-container {
   position: absolute;
   top: 14%;
@@ -181,4 +185,35 @@ height: 15px;
   margin-top: 100px;
   margin-bottom: 100px;
   position: relative;
+}
+
+@media screen and (max-device-width: 425px) {
+
+  .services-content-top {
+    display: none;
+  }
+  .services-content-middle {
+    display: none;
+  }
+  .services-accordion {
+    display: none;
+  }
+
+  .services-content-mobile {
+    margin-top: 28vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+  }
+  .content-mobile-content {
+    height: 95vw;
+    width: 95vw;
+    background-color: rgba(0,0,0,0.8);
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }

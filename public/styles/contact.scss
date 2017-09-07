@@ -28,7 +28,7 @@
 
 .contact-main-content {
   position: relative;
-  height: 184vh;
+  height: 275vh;
   width: 90%;
   background-color: transparent;
   top: 12vh;
@@ -77,7 +77,7 @@
 .get-started {
   position: absolute;
   top: 8%;
-  left: 15%;
+  right: 75%;
   color: #BD9A35;
   font-size: x-large;
   text-transform: uppercase;
@@ -85,8 +85,10 @@
 
 .contact-form {
   position: absolute;
-  left: 480px;
-  top: 55px;
+  left: 30%;
+  top: 9%;
+  height: 75%;
+  width: 60%;
 }
 
 .contact-input {
@@ -95,8 +97,8 @@
   border: none;
   outline: none;
   margin-bottom: 15px;
-  height: 48px;
-  width: 1088px;
+  height: 10%;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -134,15 +136,15 @@
 }
 
 .relic-address-logo {
-  width: 325px;
+  width: 60%;
   position: absolute;
-  top: 17%;
+  bottom: 70%;
   left: 27%;
 }
 .underneath-relic {
   position: absolute;
   top: 34%;
-  left: 78%;
+  right: 22%;
   height: 2px;
   width: 50px;
   background-color: #BD9A35;
@@ -153,7 +155,7 @@
   text-align: right;
   position: absolute;
   top: 39%;
-  left: 52%;
+  right: 22%;
 }
 .address-provo {
   color: white;

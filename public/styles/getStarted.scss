@@ -26,6 +26,7 @@
   font-size: x-large;
   font-weight: bold;
   cursor: pointer;
+  letter-spacing: 2px;
 }
 
 
@@ -177,18 +178,21 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.cta-get-started-button {
-  left: -2%;
-  height: 50px;
-  width: 103%;
-  border: 1px solid #bd9a35;
-  background-color: rgba(22,22,22,0.5);
-  color: #bd9a35;
-  font-family: 'Rogan-Medium', sans-serif;
-  cursor: pointer;
-  font-size: 2vmin;
-  outline: none;
-}
+
+  .cta-get-started-button {
+    left: -2%;
+    height: 6vmin;
+    width: 100%;
+    border: none;
+    background-color: #bd9a35;
+    color: white;
+    font-family: 'Rogan-Medium', sans-serif;
+    cursor: pointer;
+    font-size: 3vmin;
+    outline: none;
+    border-radius: 5px;
+  }
+
 
 .cta-contact-form {
   width: 100%;

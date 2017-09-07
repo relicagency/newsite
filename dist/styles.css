@@ -2140,33 +2140,45 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: space-around; }
 
 .nr-press-contact-title {
   color: white;
   text-transform: capitalize;
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 27px; }
+  font-size: 3vmin;
+  font-weight: 600; }
 
 .nr-adam-pic {
-  height: 140px;
-  margin-bottom: 25px; }
+  height: 35%; }
 
 .nr-adam-stoker {
-  color: #727272;
-  margin-bottom: 25px; }
+  color: #727272; }
 
 #nr-press-call {
-  width: 180px;
-  height: 40px;
-  margin-bottom: 20px;
-  font-size: medium; }
+  width: 65%;
+  height: 10%;
+  font-size: medium;
+  border: none;
+  border-radius: 50px;
+  background-color: #299bde;
+  color: white;
+  font-family: 'Rogan-Medium', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 2px; }
 
 #nr-press-email {
-  width: 180px;
-  height: 40px;
-  font-size: medium; }
+  width: 65%;
+  height: 10%;
+  font-size: medium;
+  border: none;
+  border-radius: 50px;
+  background-color: #299bde;
+  color: white;
+  font-family: 'Rogan-Medium', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 2px; }
 
 .newsroom-route {
   position: absolute;

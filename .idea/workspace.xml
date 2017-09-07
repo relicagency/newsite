@@ -8,9 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5673a4d2-2a4d-4a5e-92e3-5f5dfa47a7ae" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/components/contact/contact.html" afterPath="$PROJECT_DIR$/dist/components/contact/contact.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/maps/styles.css.map" afterPath="$PROJECT_DIR$/dist/maps/styles.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles.css" afterPath="$PROJECT_DIR$/dist/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/contact.scss" afterPath="$PROJECT_DIR$/public/styles/contact.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/contact/contact.html" afterPath="$PROJECT_DIR$/public/components/contact/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/newsroom.scss" afterPath="$PROJECT_DIR$/public/styles/newsroom.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,11 +31,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="contact.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/styles/contact.scss">
+      <file leaf-file-name="newsroom.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/styles/newsroom.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="251" column="35" lean-forward="false" selection-start-line="251" selection-start-column="35" selection-end-line="251" selection-end-column="35" />
+            <state relative-caret-position="568">
+              <caret line="136" column="14" lean-forward="false" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -99,7 +102,6 @@
         <option value="$PROJECT_DIR$/public/components/services/services.html" />
         <option value="$PROJECT_DIR$/public/styles/services.scss" />
         <option value="$PROJECT_DIR$/public/components/newsroom/newsroom.html" />
-        <option value="$PROJECT_DIR$/public/styles/newsroom.scss" />
         <option value="$PROJECT_DIR$/public/styles/home-content-dir.scss" />
         <option value="$PROJECT_DIR$/public/directives/nav/navCtrl.js" />
         <option value="$PROJECT_DIR$/public/components/expertise/expertise.html" />
@@ -137,8 +139,9 @@
         <option value="$PROJECT_DIR$/public/directives/get-started/getStarted.html" />
         <option value="$PROJECT_DIR$/public/directives/get-started/getStartedCtrl.js" />
         <option value="$PROJECT_DIR$/public/styles/getStarted.scss" />
-        <option value="$PROJECT_DIR$/public/components/contact/contact.html" />
         <option value="$PROJECT_DIR$/public/styles/contact.scss" />
+        <option value="$PROJECT_DIR$/public/components/contact/contact.html" />
+        <option value="$PROJECT_DIR$/public/styles/newsroom.scss" />
       </list>
     </option>
   </component>
@@ -381,12 +384,12 @@
       <workItem from="1503068609958" duration="29756000" />
       <workItem from="1503346549239" duration="225164000" />
       <workItem from="1504552066404" duration="1167000" />
-      <workItem from="1504624469934" duration="47406000" />
+      <workItem from="1504624469934" duration="49761000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="484257000" />
+    <option name="totallyTimeSpent" value="486612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1699" y="41" width="2418" height="1318" extended-state="6" />
@@ -432,22 +435,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/customize-widgets.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/customize-widgets.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/customize-widgets-rtl.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -893,122 +880,193 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/components/newsroom/newsroom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504200024854" expanded="true" signature="36:3324" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="75:151" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="191:3317" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="309:3306" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="349:2368" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="445:1833" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="533:716" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="804:991" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="1081:1267" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="1356:1543" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="1632:1810" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="1880:2298" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="2407:3291" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="2476:2578" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="2647:2753" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="2824:2929" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="2999:3105" ph="..." />
+            <marker date="1504200024854" expanded="true" signature="3175:3272" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/components/contact/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        <state relative-caret-position="200">
+          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
           <folding>
-            <marker date="1504800797527" expanded="true" signature="35:12394" ph="..." />
-            <marker date="1504800797527" expanded="true" signature="184:266" ph="..." />
-            <marker date="1504800797527" expanded="true" signature="306:2292" ph="..." />
-            <marker date="1504800797527" expanded="true" signature="399:505" ph="..." />
-            <marker date="1504800797527" expanded="true" signature="550:1699" ph="..." />
-            <marker date="1504800797527" expanded="true" signature="643:1684" ph="..." />
-            <marker date="1504800797527" expanded="true" signature="1743:2281" ph="..." />
-            <marker date="1504800797527" expanded="true" signature="1788:2213" ph="..." />
-            <marker date="1504800797527" expanded="true" signature="1973:2194" ph="..." />
-            <marker date="1504800797527" expanded="true" signature="2318:2451" ph="..." />
-            <marker date="1504800797527" expanded="true" signature="2464:12386" ph="..." />
-            <marker date="1504800797527" expanded="true" signature="2493:12353" ph="{...}" />
-            <marker date="1504800797527" expanded="true" signature="2633:11953" ph="{&quot;center&quot;: relic...}" />
-            <marker date="1504800797527" expanded="true" signature="2809:11932" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="2831:3079" ph="{&quot;elementType&quot;: &quot;geometry&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="2919:3057" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="2949:3031" ph="{&quot;color&quot;: &quot;##212121&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="3101:3353" ph="{&quot;elementType&quot;: &quot;labels.icon&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="3192:3331" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="3222:3305" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="3375:3631" ph="{&quot;elementType&quot;: &quot;labels.text.fill&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="3471:3609" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="3501:3583" ph="{&quot;color&quot;: &quot;##757575&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="3653:3911" ph="{&quot;elementType&quot;: &quot;labels.text.stroke&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="3751:3889" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="3781:3863" ph="{&quot;color&quot;: &quot;##212121&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="3933:4351" ph="{&quot;featureType&quot;: &quot;administrative&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="4078:4329" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="4108:4190" ph="{&quot;color&quot;: &quot;##757575&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="4220:4303" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="4373:4694" ph="{&quot;featureType&quot;: &quot;administrative.country&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="4534:4672" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="4564:4646" ph="{&quot;color&quot;: &quot;##9e9e9e&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="4716:5032" ph="{&quot;featureType&quot;: &quot;administrative.land_parcel&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="4871:5010" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="4901:4984" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="5054:5376" ph="{&quot;featureType&quot;: &quot;administrative.locality&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="5216:5354" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="5246:5328" ph="{&quot;color&quot;: &quot;##bdbdbd&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="5398:5642" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="5481:5620" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="5511:5594" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="5664:5962" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="5801:5940" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="5831:5914" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="5984:6286" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="6126:6264" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="6156:6238" ph="{&quot;color&quot;: &quot;##757575&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="6308:6607" ph="{&quot;featureType&quot;: &quot;poi.park&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="6447:6585" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="6477:6559" ph="{&quot;color&quot;: &quot;##181818&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="6629:6936" ph="{&quot;featureType&quot;: &quot;poi.park&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="6776:6914" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="6806:6888" ph="{&quot;color&quot;: &quot;##616161&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="6958:7267" ph="{&quot;featureType&quot;: &quot;poi.park&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="7107:7245" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="7137:7219" ph="{&quot;color&quot;: &quot;##1b1b1b&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="7289:7701" ph="{&quot;featureType&quot;: &quot;road&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="7429:7679" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="7459:7541" ph="{&quot;color&quot;: &quot;##5a5a5a&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="7571:7653" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="7723:8022" ph="{&quot;featureType&quot;: &quot;road&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="7861:8000" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="7891:7974" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="8044:8347" ph="{&quot;featureType&quot;: &quot;road&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="8187:8325" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="8217:8299" ph="{&quot;color&quot;: &quot;##8a8a8a&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="8369:8673" ph="{&quot;featureType&quot;: &quot;road.arterial&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="8513:8651" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="8543:8625" ph="{&quot;color&quot;: &quot;##373737&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="8695:8998" ph="{&quot;featureType&quot;: &quot;road.highway&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="8838:8976" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="8868:8950" ph="{&quot;color&quot;: &quot;##3c3c3c&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="9020:9328" ph="{&quot;featureType&quot;: &quot;road.highway&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="9168:9306" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="9198:9280" ph="{&quot;color&quot;: &quot;##baa049&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="9350:9671" ph="{&quot;featureType&quot;: &quot;road.highway.controlled_access&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="9511:9649" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="9541:9623" ph="{&quot;color&quot;: &quot;##4e4e4e&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="9693:10019" ph="{&quot;featureType&quot;: &quot;road.highway.controlled_access&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="9859:9997" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="9889:9971" ph="{&quot;color&quot;: &quot;##8c7e31&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="10041:10341" ph="{&quot;featureType&quot;: &quot;road.local&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="10180:10319" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="10210:10293" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="10363:10672" ph="{&quot;featureType&quot;: &quot;road.local&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="10512:10650" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="10542:10624" ph="{&quot;color&quot;: &quot;##616161&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="10694:10942" ph="{&quot;featureType&quot;: &quot;transit&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="10781:10920" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="10811:10894" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="10964:11270" ph="{&quot;featureType&quot;: &quot;transit&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="11110:11248" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="11140:11222" ph="{&quot;color&quot;: &quot;##757575&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="11292:11588" ph="{&quot;featureType&quot;: &quot;water&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="11428:11566" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="11458:11540" ph="{&quot;color&quot;: &quot;##727272&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="11610:11914" ph="{&quot;featureType&quot;: &quot;water&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="11754:11892" ph="[...]" />
-            <marker date="1504800797527" expanded="true" signature="11784:11866" ph="{&quot;color&quot;: &quot;##727272&quot;...}" />
-            <marker date="1504800797527" expanded="true" signature="12062:12177" ph="{...}" />
-            <marker date="1504800797527" expanded="true" signature="12087:12163" ph="{&quot;icon&quot;: '../../images/gmap-marker.png'...}" />
-            <marker date="1504800797527" expanded="true" signature="12229:12341" ph="{&quot;position&quot;: relic...}" />
+            <marker date="1504803870994" expanded="true" signature="35:12405" ph="..." />
+            <marker date="1504803870994" expanded="true" signature="184:266" ph="..." />
+            <marker date="1504803870994" expanded="true" signature="306:2303" ph="..." />
+            <marker date="1504803870994" expanded="true" signature="410:516" ph="..." />
+            <marker date="1504803870994" expanded="true" signature="561:1710" ph="..." />
+            <marker date="1504803870994" expanded="true" signature="654:1695" ph="..." />
+            <marker date="1504803870994" expanded="true" signature="1754:2292" ph="..." />
+            <marker date="1504803870994" expanded="true" signature="1799:2224" ph="..." />
+            <marker date="1504803870994" expanded="true" signature="1984:2205" ph="..." />
+            <marker date="1504803870994" expanded="true" signature="2329:2462" ph="..." />
+            <marker date="1504803870994" expanded="true" signature="2475:12397" ph="..." />
+            <marker date="1504803870994" expanded="true" signature="2504:12364" ph="{...}" />
+            <marker date="1504803870994" expanded="true" signature="2644:11964" ph="{&quot;center&quot;: relic...}" />
+            <marker date="1504803870994" expanded="true" signature="2820:11943" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="2842:3090" ph="{&quot;elementType&quot;: &quot;geometry&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="2930:3068" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="2960:3042" ph="{&quot;color&quot;: &quot;##212121&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="3112:3364" ph="{&quot;elementType&quot;: &quot;labels.icon&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="3203:3342" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="3233:3316" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="3386:3642" ph="{&quot;elementType&quot;: &quot;labels.text.fill&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="3482:3620" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="3512:3594" ph="{&quot;color&quot;: &quot;##757575&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="3664:3922" ph="{&quot;elementType&quot;: &quot;labels.text.stroke&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="3762:3900" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="3792:3874" ph="{&quot;color&quot;: &quot;##212121&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="3944:4362" ph="{&quot;featureType&quot;: &quot;administrative&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="4089:4340" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="4119:4201" ph="{&quot;color&quot;: &quot;##757575&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="4231:4314" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="4384:4705" ph="{&quot;featureType&quot;: &quot;administrative.country&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="4545:4683" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="4575:4657" ph="{&quot;color&quot;: &quot;##9e9e9e&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="4727:5043" ph="{&quot;featureType&quot;: &quot;administrative.land_parcel&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="4882:5021" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="4912:4995" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="5065:5387" ph="{&quot;featureType&quot;: &quot;administrative.locality&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="5227:5365" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="5257:5339" ph="{&quot;color&quot;: &quot;##bdbdbd&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="5409:5653" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="5492:5631" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="5522:5605" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="5675:5973" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="5812:5951" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="5842:5925" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="5995:6297" ph="{&quot;featureType&quot;: &quot;poi&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="6137:6275" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="6167:6249" ph="{&quot;color&quot;: &quot;##757575&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="6319:6618" ph="{&quot;featureType&quot;: &quot;poi.park&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="6458:6596" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="6488:6570" ph="{&quot;color&quot;: &quot;##181818&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="6640:6947" ph="{&quot;featureType&quot;: &quot;poi.park&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="6787:6925" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="6817:6899" ph="{&quot;color&quot;: &quot;##616161&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="6969:7278" ph="{&quot;featureType&quot;: &quot;poi.park&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="7118:7256" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="7148:7230" ph="{&quot;color&quot;: &quot;##1b1b1b&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="7300:7712" ph="{&quot;featureType&quot;: &quot;road&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="7440:7690" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="7470:7552" ph="{&quot;color&quot;: &quot;##5a5a5a&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="7582:7664" ph="{&quot;visibility&quot;: &quot;on&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="7734:8033" ph="{&quot;featureType&quot;: &quot;road&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="7872:8011" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="7902:7985" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="8055:8358" ph="{&quot;featureType&quot;: &quot;road&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="8198:8336" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="8228:8310" ph="{&quot;color&quot;: &quot;##8a8a8a&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="8380:8684" ph="{&quot;featureType&quot;: &quot;road.arterial&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="8524:8662" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="8554:8636" ph="{&quot;color&quot;: &quot;##373737&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="8706:9009" ph="{&quot;featureType&quot;: &quot;road.highway&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="8849:8987" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="8879:8961" ph="{&quot;color&quot;: &quot;##3c3c3c&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="9031:9339" ph="{&quot;featureType&quot;: &quot;road.highway&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="9179:9317" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="9209:9291" ph="{&quot;color&quot;: &quot;##baa049&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="9361:9682" ph="{&quot;featureType&quot;: &quot;road.highway.controlled_access&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="9522:9660" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="9552:9634" ph="{&quot;color&quot;: &quot;##4e4e4e&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="9704:10030" ph="{&quot;featureType&quot;: &quot;road.highway.controlled_access&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="9870:10008" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="9900:9982" ph="{&quot;color&quot;: &quot;##8c7e31&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="10052:10352" ph="{&quot;featureType&quot;: &quot;road.local&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="10191:10330" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="10221:10304" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="10374:10683" ph="{&quot;featureType&quot;: &quot;road.local&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="10523:10661" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="10553:10635" ph="{&quot;color&quot;: &quot;##616161&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="10705:10953" ph="{&quot;featureType&quot;: &quot;transit&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="10792:10931" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="10822:10905" ph="{&quot;visibility&quot;: &quot;off&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="10975:11281" ph="{&quot;featureType&quot;: &quot;transit&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="11121:11259" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="11151:11233" ph="{&quot;color&quot;: &quot;##757575&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="11303:11599" ph="{&quot;featureType&quot;: &quot;water&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="11439:11577" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="11469:11551" ph="{&quot;color&quot;: &quot;##727272&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="11621:11925" ph="{&quot;featureType&quot;: &quot;water&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="11765:11903" ph="[...]" />
+            <marker date="1504803870994" expanded="true" signature="11795:11877" ph="{&quot;color&quot;: &quot;##727272&quot;...}" />
+            <marker date="1504803870994" expanded="true" signature="12073:12188" ph="{...}" />
+            <marker date="1504803870994" expanded="true" signature="12098:12174" ph="{&quot;icon&quot;: '../../images/gmap-marker.png'...}" />
+            <marker date="1504803870994" expanded="true" signature="12240:12352" ph="{&quot;position&quot;: relic...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/styles/contact.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
+        <state relative-caret-position="2920">
           <caret line="251" column="35" lean-forward="false" selection-start-line="251" selection-start-column="35" selection-end-line="251" selection-end-column="35" />
+          <folding>
+            <marker date="1504803400363" expanded="true" signature="26:155" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="182:268" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="289:474" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="498:600" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="622:814" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="834:930" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="945:1007" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="1023:1085" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="1111:1295" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="1309:1428" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="1444:1522" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="1539:1789" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="1811:1831" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="1856:1952" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="1970:1993" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="2015:2129" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="2143:2198" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="2220:2287" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="2306:2416" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="2432:2549" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="2565:2653" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="2700:3464" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="2718:2867" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="2883:2953" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="2972:3042" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="3060:3150" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="3170:3462" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="3509:4832" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="3530:3805" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="3832:3943" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="3967:4223" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="4247:4358" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="4380:4540" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="4559:4727" ph="{...}" />
+            <marker date="1504803400363" expanded="true" signature="4743:4829" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/newsroom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="136" column="14" lean-forward="false" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
           <folding />
         </state>
       </provider>

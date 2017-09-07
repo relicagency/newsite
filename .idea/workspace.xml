@@ -8,8 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5673a4d2-2a4d-4a5e-92e3-5f5dfa47a7ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/maps/styles.css.map" afterPath="$PROJECT_DIR$/dist/maps/styles.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles.css" afterPath="$PROJECT_DIR$/dist/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/contact.scss" afterPath="$PROJECT_DIR$/public/styles/contact.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="contact.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/styles/contact.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="668">
-              <caret line="196" column="13" lean-forward="false" selection-start-line="196" selection-start-column="13" selection-end-line="196" selection-end-column="13" />
+            <state relative-caret-position="828">
+              <caret line="229" column="20" lean-forward="false" selection-start-line="229" selection-start-column="20" selection-end-line="229" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -381,12 +379,12 @@
       <workItem from="1503068609958" duration="29756000" />
       <workItem from="1503346549239" duration="225164000" />
       <workItem from="1504552066404" duration="1167000" />
-      <workItem from="1504624469934" duration="46096000" />
+      <workItem from="1504624469934" duration="46695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="482947000" />
+    <option name="totallyTimeSpent" value="483546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1699" y="41" width="2418" height="1318" extended-state="6" />
@@ -1007,8 +1005,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/styles/contact.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="196" column="13" lean-forward="false" selection-start-line="196" selection-start-column="13" selection-end-line="196" selection-end-column="13" />
+        <state relative-caret-position="828">
+          <caret line="229" column="20" lean-forward="false" selection-start-line="229" selection-start-column="20" selection-end-line="229" selection-end-column="20" />
           <folding />
         </state>
       </provider>

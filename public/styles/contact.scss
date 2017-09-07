@@ -215,6 +215,22 @@
 
 @media screen and (max-device-width: 425px){
 
+
+  .contact-input {
+    color: #727272;
+    background-color: #efefef;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 5vmin;
+    padding-left: 15px;
+  }
+
   .contact-map-container {
     position: relative;
     height: 90vh;

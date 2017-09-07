@@ -97,6 +97,7 @@
   background-color: black;
   opacity: 0.8;
   cursor: pointer;
+  font-size: 2.5vmin;
 }
 .blue-triangle {
   width: 18px;
@@ -131,11 +132,12 @@
 }
 .nr-adam-stoker {
   color: #727272;
+  font-size: 2.5vmin;
 }
 #nr-press-call {
   width: 65%;
   height: 10%;
-  font-size: medium;
+  font-size: 2.5vmin;
   border: none;
   border-radius: 50px;
   background-color: #299bde;
@@ -148,7 +150,7 @@
 #nr-press-email {
   width: 65%;
   height: 10%;
-  font-size: medium;
+  font-size: 2.5vmin;
   border: none;
   border-radius: 50px;
   background-color: #299bde;
@@ -173,4 +175,50 @@
   color: #BD9A35;
   font-size: 30px;
   font-family: 'Rogan-Medium', sans-serif;
+}
+
+
+@media screen and (max-device-width: 425px) {
+
+  .newsroom-main-container {
+    height: 124vh;
+    width: 100%;
+    background-color: #161616;
+  }
+
+  .newsroom-main-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 58%;
+    width: 100%;
+    background-color: #161616;
+  }
+
+  .newsroom-main-content {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .routes-router {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+  }
+
+  .routes-route {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 60%;
+    background-color: white;
+  }
+
 }

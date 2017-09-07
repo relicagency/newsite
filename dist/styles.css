@@ -2451,6 +2451,12 @@ table {
   position: relative; }
 
 @media screen and (max-device-width: 425px) {
+  .services-main-container {
+    width: 100%;
+    height: 320vh;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column; }
   .services-content-top {
     display: none; }
   .services-content-middle {

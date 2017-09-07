@@ -2470,7 +2470,11 @@ table {
     margin-bottom: 25px;
     display: flex;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .services-mobile-tile {
+    height: 75vw; }
+  #services-mobile-tile-digital {
+    height: 60vw; } }
 
 .tds-main-container {
   height: 623vh;

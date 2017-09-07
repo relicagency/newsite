@@ -163,3 +163,80 @@
   font-size: large;
   font-weight: 700;
 }
+
+
+@media screen and (max-device-width: 768px) {
+
+  .get-started {
+    position: absolute;
+    top: 3%;
+    left: 15%;
+    right: auto;
+    color: #BD9A35;
+    font-size: x-large;
+    text-transform: uppercase;
+  }
+
+.top-bar-left {
+    height: 100%;
+    width: 15%;
+    background-color: #BD9A35;
+  }
+
+  .top-bar-right {
+    height: 100%;
+    width: 85%;
+    background-color: #CCCCCC;
+  }
+
+  .contact-form {
+    position: absolute;
+    left: 15%;
+    top: 9%;
+    height: 75%;
+    width: 70%;
+  }
+
+  .contact-button {
+    margin-top: 15px;
+    border: none;
+    height: 50px;
+    width: 105%;
+    border-radius: 50px;
+    background-color: #299bde;
+    color: white;
+    font-family: 'Rogan-Medium', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-device-width: 425px){
+
+  .contact-map-container {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-relic-info {
+    position: relative;
+    height: 45vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+  }
+
+  .contact-map {
+    position: relative;
+    overflow: hidden;
+    height: 45vh;
+    width: 100%;
+  }
+
+}

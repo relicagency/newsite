@@ -9,9 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5673a4d2-2a4d-4a5e-92e3-5f5dfa47a7ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/components/work/work.html" afterPath="$PROJECT_DIR$/dist/components/work/work.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/work/work.html" afterPath="$PROJECT_DIR$/public/components/work/work.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/bundle.js" afterPath="$PROJECT_DIR$/dist/bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/maps/bundle.js.map" afterPath="$PROJECT_DIR$/dist/maps/bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/expertise/expertise.js" afterPath="$PROJECT_DIR$/public/components/expertise/expertise.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/work/workCtrl.js" afterPath="$PROJECT_DIR$/public/components/work/workCtrl.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,11 +30,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="work.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/components/work/work.html">
+      <file leaf-file-name="expertise.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/components/expertise/expertise.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            <state relative-caret-position="40">
+              <caret line="2" column="59" lean-forward="false" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -89,7 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/components/telecom/telecom.html" />
         <option value="$PROJECT_DIR$/public/components/tech/tech.html" />
         <option value="$PROJECT_DIR$/public/components/demandgen/demandgen.html" />
         <option value="$PROJECT_DIR$/public/components/tds/tds.html" />
@@ -97,7 +97,6 @@
         <option value="$PROJECT_DIR$/public/styles/home-content-dir.scss" />
         <option value="$PROJECT_DIR$/public/directives/nav/navCtrl.js" />
         <option value="$PROJECT_DIR$/public/components/expertise/expertise.html" />
-        <option value="$PROJECT_DIR$/public/components/expertise/expertise.js" />
         <option value="$PROJECT_DIR$/public/components/about/aboutCtrl.js" />
         <option value="$PROJECT_DIR$/public/styles/tourism.scss" />
         <option value="$PROJECT_DIR$/public/styles/telecom.scss" />
@@ -140,6 +139,8 @@
         <option value="$PROJECT_DIR$/public/styles/expertise.scss" />
         <option value="$PROJECT_DIR$/public/styles/work.scss" />
         <option value="$PROJECT_DIR$/public/components/work/work.html" />
+        <option value="$PROJECT_DIR$/public/components/work/workCtrl.js" />
+        <option value="$PROJECT_DIR$/public/components/expertise/expertise.js" />
       </list>
     </option>
   </component>
@@ -234,24 +235,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -275,6 +258,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourism" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expertise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -382,12 +409,12 @@
       <workItem from="1503068609958" duration="29756000" />
       <workItem from="1503346549239" duration="225164000" />
       <workItem from="1504552066404" duration="1167000" />
-      <workItem from="1504624469934" duration="76924000" />
+      <workItem from="1504624469934" duration="77222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="513775000" />
+    <option name="totallyTimeSpent" value="514073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1699" y="41" width="2418" height="1318" extended-state="6" />
@@ -433,30 +460,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/edit-rtl.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/edit-rtl.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="0" column="1259" lean-forward="false" selection-start-line="0" selection-start-column="1259" selection-end-line="0" selection-end-column="1259" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/farbtastic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/farbtastic.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1303,6 +1306,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <marker date="1504907208141" expanded="true" signature="32:1995" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="111:1987" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="151:216" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="256:326" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="366:435" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="475:543" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="583:650" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="690:756" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="796:869" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="909:978" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="1018:1089" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="1129:1206" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="1246:1312" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="1352:1418" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="1458:1527" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="1567:1637" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="1677:1751" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="1791:1865" ph="..." />
+            <marker date="1504907208141" expanded="true" signature="1905:1975" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/components/tourism/tourismCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <marker date="1503960018229" expanded="true" signature="0:40" ph="/** Created by Seth on 8/17/2017. ...*/" />
+            <marker date="1503960018229" expanded="true" signature="144:512" ph="{...}" />
+            <marker date="1503960018229" expanded="true" signature="268:500" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/components/work/workCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <marker date="1504907449164" expanded="true" signature="0:40" ph="/** Created by Seth on 8/21/2017. ...*/" />
+            <marker date="1504907449164" expanded="true" signature="141:314" ph="{...}" />
+            <marker date="1504907449164" expanded="true" signature="185:302" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/components/expertise/expertise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="59" lean-forward="false" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
           <folding />
         </state>
       </provider>

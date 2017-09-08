@@ -260,24 +260,13 @@
 'use strict';
 
 (function () {
-  angular.module('app').controller('expertiseCtrl', function ($scope) {
+  angular.module('app').controller('expertiseCtrl', function ($scope, mainService) {
 
-    // $scope.expertCoolize = function(num) {
-    //
-    //   let expertise = document.getElementById('expertise-content-' + num);
-    //
-    //     console.log(expertise);
-    //
-    //   TweenMax.fromTo(expertise, 1, {
-    //     height: "2px",
-    //       color: "transparent"
-    //   }, {
-    //     height: "calc(100vw / 6)",
-    //       backgroundColor: "rgba(255,255,255,0.8)"
-    //   });
-    //
-    // }
+    window.onscroll = function () {
+      var offSet = window.pageYOffset;
 
+      mainService.navBackground(offSet);
+    };
   });
 })();
 'use strict';
@@ -615,7 +604,14 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-  angular.module('app').controller('workCtrl', function ($scope, mainService) {});
+    angular.module('app').controller('workCtrl', function ($scope, mainService) {
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset;
+
+            mainService.navBackground(offSet);
+        };
+    });
 })();
 'use strict';
 

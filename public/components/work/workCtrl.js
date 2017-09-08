@@ -5,5 +5,12 @@
     angular.module('app')
         .controller('workCtrl', function($scope, mainService){
 
+            window.onscroll = function() {
+                let offSet = window.pageYOffset;
+
+                mainService.navBackground(offSet);
+
+            };
+
         })
 })();

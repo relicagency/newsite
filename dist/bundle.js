@@ -240,6 +240,25 @@
 })();
 'use strict';
 
+/**
+ * Created by Seth on 8/22/2017.
+ */
+(function () {
+    angular.module('app').controller('demandgenCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('demandgen-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.5050505050505050;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
 (function () {
   angular.module('app').controller('expertiseCtrl', function ($scope) {
 
@@ -260,25 +279,6 @@
     // }
 
   });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/22/2017.
- */
-(function () {
-    angular.module('app').controller('demandgenCtrl', function ($scope, mainService) {
-
-        var backgroundPic = document.getElementById('demandgen-background');
-
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.5050505050505050;
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
 })();
 'use strict';
 
@@ -360,29 +360,15 @@
 'use strict';
 
 /**
- * Created by Seth on 8/21/2017.
- */
-(function () {
-    angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
-
-        var backgroundPic = document.getElementById('tds-background');
-
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
-})();
-'use strict';
-
-/**
  * Created by Seth on 8/11/2017.
  */
 (function () {
-    angular.module('app').controller('servicesCtrl', function ($scope, mainService) {
+    angular.module('app').controller('servicesCtrl', function ($scope, $location, $anchorScroll, mainService) {
+
+        $scope.scrollTo = function (id) {
+            $location.hash(id);
+            $anchorScroll();
+        };
 
         var lastAccordion = "";
         var lastTopSec = -1;
@@ -459,6 +445,111 @@
             title: 'pr & content',
             info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
         }];
+
+        $scope.lastNum = "";
+
+        $scope.servicesMobile = function (num, top) {
+            var mobileExpand = document.getElementById('services-mobile-expand'),
+                contentMobile = document.getElementById('content-mobile-content-' + num),
+                arrow = document.getElementById('mobile-expand-arrow-' + num),
+                lastArrow = document.getElementById('mobile-expand-arrow-' + $scope.lastNum),
+                lastContentMobile = document.getElementById('content-mobile-content-' + $scope.lastNum),
+                mainContainer = document.getElementById('services-main-container'),
+                servicesMobile = document.getElementById('services-mobile');
+
+            if (mobileExpand.style.height === "200vh" && num === $scope.lastNum) {
+                TweenMax.to(mobileExpand, 0.5, {
+                    position: "absolute",
+                    top: top + "vw",
+                    height: 0,
+                    width: "95%",
+                    backgroundColor: "rgba(255,255,255,1)",
+                    zIndex: "100"
+                });
+                TweenMax.to(arrow, 0.75, {
+                    transform: "rotateX(0deg)"
+                });
+                TweenMax.to(mainContainer, 0.75, {
+                    height: "320vh"
+                });
+                TweenMax.to(servicesMobile, 0.75, {
+                    height: "280vh"
+                });
+                TweenMax.to(contentMobile, 0.75, {
+                    marginBottom: "5vw"
+                });
+
+                return;
+            }if (mobileExpand.style.height === "200vh" && num !== $scope.lastNum) {
+
+                TweenMax.to(lastArrow, 0.75, {
+                    transform: "rotateX(0deg)"
+                });
+                TweenMax.to(lastContentMobile, 0.1, {
+                    marginBottom: "5vw"
+                });
+                TweenMax.to(contentMobile, 0.25, {
+                    marginBottom: "200vh"
+                });
+                TweenMax.to(mobileExpand, 0.5, {
+                    position: "absolute",
+                    top: top + "vw",
+                    height: "200vh",
+                    width: "95%",
+                    backgroundColor: "rgba(255,255,255,1)",
+                    zIndex: "100"
+                });
+                TweenMax.to(arrow, 0.75, {
+                    transform: "rotateX(180deg)"
+                });
+
+                $scope.lastNum = num;
+
+                return;
+            }
+
+            TweenMax.to(mainContainer, 0.1, {
+                height: "520vh"
+            });
+            TweenMax.to(servicesMobile, 0.1, {
+                height: "480vh"
+            });
+            TweenMax.to(contentMobile, 0.1, {
+                marginBottom: "200vh"
+            });
+            TweenMax.to(mobileExpand, 0.5, {
+                position: "absolute",
+                top: top + "vw",
+                height: "200vh",
+                width: "95%",
+                backgroundColor: "rgba(255,255,255,1)",
+                zIndex: "100"
+            });
+            TweenMax.to(arrow, 0.75, {
+                transform: "rotateX(180deg)"
+            });
+
+            $scope.lastNum = num;
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('tds-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
     });
 })();
 'use strict';
@@ -529,6 +620,31 @@
 'use strict';
 
 /**
+ * Created by Seth on 8/9/2017.
+ */
+(function () {
+
+    angular.module('app').directive('footerDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/footer/footer.html',
+            controller: 'footerCtrl'
+        };
+    });
+})();
+'use strict';
+
+(function () {
+    angular.module('app').controller('footerCtrl', function ($scope) {
+
+        $scope.footerSocialHover = function (social) {
+            TweenMax.to(document.getElementById('footer-social-' + social), 1, { fill: "white" });
+        };
+    });
+})();
+'use strict';
+
+/**
  * Created by Seth on 8/23/2017.
  */
 (function () {
@@ -561,31 +677,6 @@
         $scope.ctaHide = function () {
             var tl = new TimelineMax();
             tl.to(barSeven, 0.15, { left: "101%" }).to(barSix, 0.15, { left: 0 }, "-=0.15").to(barFive, 0.15, { left: "101%" }).to(barSix, 0.15, { left: '-100%' }, "-=0.15").to(mainPop, 0.5, { ease: Power2.easeIn, left: "-101%" });
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/9/2017.
- */
-(function () {
-
-    angular.module('app').directive('footerDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/footer/footer.html',
-            controller: 'footerCtrl'
-        };
-    });
-})();
-'use strict';
-
-(function () {
-    angular.module('app').controller('footerCtrl', function ($scope) {
-
-        $scope.footerSocialHover = function (social) {
-            TweenMax.to(document.getElementById('footer-social-' + social), 1, { fill: "white" });
         };
     });
 })();

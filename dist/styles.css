@@ -2475,19 +2475,28 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 5; }
+    z-index: 5;
+    height: 280vh;
+    width: 100%; }
   .content-mobile-content {
+    position: relative;
     height: 95vw;
     width: 95vw;
     background-color: rgba(0, 0, 0, 0.8);
-    margin-bottom: 25px;
+    margin-bottom: 5vw;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    color: #bd9a35; }
   .services-mobile-tile {
     height: 75vw; }
   #services-mobile-tile-digital {
-    height: 60vw; } }
+    height: 55vw; }
+  .mobile-down-arrow {
+    position: relative;
+    width: 25px; } }
 
 .tds-main-container {
   height: 623vh;

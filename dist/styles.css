@@ -1597,7 +1597,6 @@
     width: 60vw;
     cursor: pointer; } }
 
-
 .home-main-container {
   width: 100%;
   height: 100%;
@@ -1708,7 +1707,11 @@
     background-repeat: no-repeat;
     background-size: 203%;
     background-position-x: 50%;
-    background-position-y: -10vh; } }
+    background-position-y: -10vh; }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: calc((100vw / 2) * 0.469); } }
 
 @media screen and (max-device-width: 1024px) {
   .home-hero {
@@ -1719,7 +1722,11 @@
     background-repeat: no-repeat;
     background-size: 223%;
     background-position-x: 50%;
-    background-position-y: -14vh; } }
+    background-position-y: -14vh; }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: calc((100vw / 2) * 0.49); } }
 
 @media screen and (max-device-width: 768px) {
   .headline-content {
@@ -1741,7 +1748,17 @@
     background-repeat: no-repeat;
     background-size: 430%;
     background-position-x: 50%;
-    background-position-y: -15vh; } }
+    background-position-y: -15vh; }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: calc((100vw / 2) * 0.51); } }
+
+@media screen and (max-device-width: 600px) {
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: calc((100vw / 2) * 0.54); } }
 
 @media screen and (max-device-width: 425px) {
   .home-hero {
@@ -1752,7 +1769,28 @@
     background-repeat: no-repeat;
     background-size: 530%;
     background-position-x: 50%;
-    background-position-y: -10vh; } }
+    background-position-y: -10vh; }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 81vh; }
+  .video-main-content {
+    position: absolute;
+    height: calc(100% - 35px);
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  .home-client-video-tds {
+    position: relative;
+    width: 100%;
+    right: 0;
+    top: 0; }
+  .home-client-video-tuac {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-top: 20px solid #161616; } }
 
 .mobile-hamburger {
   visibility: hidden;

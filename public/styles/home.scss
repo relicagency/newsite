@@ -217,7 +217,7 @@
   .video-container {
     position: relative;
     width: 100%;
-    height: 81vh
+    height: 56vh
   }
 
   .video-main-content {
@@ -241,6 +241,26 @@
     left: 0;
     bottom: 0;
     border-top: 20px solid #161616;
+  }
+
+}
+
+@media screen and (max-device-width: 414px) {
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 54.5vh;
+  }
+
+}
+
+@media screen and (max-device-width: 360px) {
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 56vh;
   }
 
 }

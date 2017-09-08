@@ -3371,7 +3371,7 @@ div {
 
 @media screen and (max-device-width: 425px) {
   .work-main-container {
-    height: 600vh;
+    height: 940vh;
     width: 100%;
     display: flex;
     background-image: url("../images/work-bckgrnd.png");
@@ -3399,8 +3399,8 @@ div {
     justify-content: space-around;
     align-items: center; }
   .work-content img {
-    height: 50vw;
-    width: 50vw;
+    height: 80vw;
+    width: 90vw;
     margin-bottom: 10px; } }
 
 /*# sourceMappingURL=maps/styles.css.map */

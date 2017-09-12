@@ -51,20 +51,20 @@
             controller: 'demandgenCtrl',
             templateUrl: './components/demandgen/demandgen.html'
         })
+        .state('newsroom', {
+            url: '/newsroom',
+            controller: 'newsroomCtrl',
+            templateUrl: './components/newsroom/newsroom.html'
+        })
         .state('work', {
           url: '/work',
             controller: 'workCtrl',
             templateUrl: './components/work/work.html'
         })
-        .state('tds', {
-          url: '/work/tds',
-            controller: 'tdsCtrl',
-            templateUrl: './components/tds/tds.html'
-        })
-        .state('newsroom', {
-          url: '/newsroom',
-            controller: 'newsroomCtrl',
-            templateUrl: './components/newsroom/newsroom.html'
+        .state('workShow', {
+          url: '/work/:client',
+            controller: 'workShowCtrl',
+            templateUrl: './components/work/workShow.html'
         });
     
     $urlRouterProvider

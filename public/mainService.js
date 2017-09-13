@@ -55,7 +55,12 @@
                 digitalAdds: "../../images/work-assets/tds-digital.png",
                 brochures: "../../images/work-assets/tds-brochure.png",
                 billboards: "../../images/work-assets/tds-billboard.png",
-                directMail: "../../images/work-assets/work-tds1.png"
+                directMail: "../../images/work-assets/work-tds1.png",
+                branding: "",
+                posters: "",
+                postcards: "",
+                newspaper: "",
+                illustrations: ""
             },
             bryce: {
                 title: "Garfield County Tourism",
@@ -67,7 +72,12 @@
                 digitalAdds: "../../images/work-assets/garfield-banner.png",
                 brochures: "../../images/work-assets/garfield-brochure.png",
                 billboards: "",
-                directMail: ""
+                directMail: "",
+                branding: "../../images/work-assets/garfield-big.png",
+                posters: "../../images/work-assets/garfield-poster.png",
+                postcards: "",
+                newspaper: "",
+                illustrations: ""
             },
             tuac: {
                 title: "Tuacahn",
@@ -79,7 +89,12 @@
                 digitalAdds: "../../images/work-assets/tuac-banners.png",
                 brochures: "",
                 billboards: "../../images/work-assets/tuac-billboard.png",
-                directMail: ""
+                directMail: "",
+                branding: "",
+                posters: "../../images/work-assets/tuac-posters.png",
+                postcards: "",
+                newspaper: "",
+                illustrations: ""
             },
             uintah: {
                 title: "Uintah County Tourism",
@@ -91,7 +106,12 @@
                 digitalAdds: "",
                 brochures: "../../images/work-assets/uintah-book.png",
                 billboards: "",
-                directMail: ""
+                directMail: "",
+                branding: "",
+                posters: "../../images/work-assets/uintah-poster.png",
+                postcards: "../../images/work-assets/uintah-postcard.png",
+                newspaper: "",
+                illustrations: ""
             },
             uvhb:{
                 title: "Utah Valley Home Builders",
@@ -100,10 +120,15 @@
                 video: false,
                 logoPath: "",
                 webDesign: "",
-                digitalAdds: "",
+                digitalAdds: "../../images/work-assets/uvhba-digital.png",
                 brochures: "",
                 billboards: "../../images/work-assets/uvhba-billboard.png",
-                directMail: ""
+                directMail: "",
+                branding: "../../images/work-assets/uvhba-branding.png",
+                posters: "../../images/work-assets/uvhba-golf.png",
+                postcards: "",
+                newspaper: "",
+                illustrations: ""
             },
             maxx: {
                 title: "MaxxSouth",
@@ -112,10 +137,15 @@
                 video: false,
                 logoPath: "",
                 webDesign: "../../images/work-assets/maxx-site.png",
-                digitalAdds: "../../images/work-assets/maxx-bigfoot.png",
+                digitalAdds: "",
                 brochures: "",
                 billboards: "../../images/work-assets/maxx-billboard.png",
-                directMail: ""
+                directMail: "../../images/work-assets/maxx-bigfoot.png",
+                branding: "",
+                posters: "",
+                postcards: "",
+                newspaper: [{path: "../../images/work-assets/maxx-football.png"}, {path: "../../images/work-assets/maxx-posters.png"}],
+                illustrations: ""
             },
             moab: {
                 title: "Moab",
@@ -127,7 +157,12 @@
                 digitalAdds: "",
                 brochures: "",
                 billboards: "",
-                directMail: ""
+                directMail: "",
+                branding: "",
+                posters: "",
+                postcards: "",
+                newspaper: "",
+                illustrations: ""
 
             },
             zerorez: {
@@ -140,7 +175,12 @@
                 digitalAdds: "../../images/work-assets/zerorez-one.png",
                 brochures: "",
                 billboards: "",
-                directMail: ""
+                directMail: "",
+                branding: "",
+                posters: "",
+                postcards: "",
+                newspaper: "",
+                illustrations: ""
 
             },
             wfront: {
@@ -150,11 +190,15 @@
                 video: false,
                 logoPath: "",
                 webDesign: "",
-                digitalAdds: "../../images/work-assets/wfront-one.png",
+                digitalAdds: "",
                 brochures: "",
                 billboards: "",
-                directMail: ""
-
+                directMail: "",
+                branding: "",
+                posters: "",
+                postcards: "",
+                newspaper: "",
+                illustrations:  [{path: "../../images/work-assets/wfront-one.png"}, {path: "../../images/work-assets/wfront-two.png"}]
             },
             us: {
                 title: "Utah Shakespeare Festival",
@@ -166,8 +210,12 @@
                 digitalAdds: "",
                 brochures: "",
                 billboards: "",
-                directMail: ""
-
+                directMail: "",
+                branding: "",
+                posters: "",
+                postcards: "",
+                newspaper: [{path: "../../images/work-assets/us-knights.png"}, {path: "../../images/work-assets/us-boeing.png"}, {path: "../../images/work-assets/us-love.png"}, {path: "../../images/work-assets/us-mercy.png"}],
+                illustrations: ""
             },
             brio: {
                 title: "Brio",
@@ -179,11 +227,16 @@
                 digitalAdds: "../../images/work-assets/work-brio6.png",
                 brochures: "../../images/work-assets/brio-brochure.png",
                 billboards: "",
-                directMail: ""
+                directMail: "",
+                branding: "../../images/work-assets/brio-branding.png",
+                posters: "",
+                postcards: "",
+                newspaper: "",
+                illustrations: ""
 
             },
             ccbh: {
-                title: "Brio",
+                title: "Cedar City  |  Brian Head",
                 intro: "",
                 stats: "",
                 video: false,
@@ -192,8 +245,12 @@
                 digitalAdds: "",
                 brochures: "",
                 billboards: "",
-                directMail: ""
-
+                directMail: "",
+                branding: "",
+                posters: "",
+                postcards: "",
+                newspaper: "",
+                illustrations: ""
             },
             beehive: {
                 title: "Beehive Broadband",
@@ -203,9 +260,14 @@
                 logoPath: "",
                 webDesign: "",
                 digitalAdds: "",
-                brochures: "../../images/work-assets/",
+                brochures: "",
                 billboards: "",
-                directMail: ""
+                directMail: "",
+                branding: "",
+                posters: "",
+                postcards: "",
+                newspaper: "",
+                illustrations: ""
             },
             rubys: {
                 title: "Ruby's Inn",
@@ -217,7 +279,12 @@
                 digitalAdds: "",
                 brochures: "",
                 billboards: "",
-                directMail: ""
+                directMail: "",
+                branding: "",
+                posters: "",
+                postcards: "",
+                newspaper: "",
+                illustrations: ""
             },
             creef: {
                 title: "Wayne County Tourism",
@@ -229,7 +296,11 @@
                 digitalAdds: "",
                 brochures: "",
                 billboards: "",
-                directMail: ""
+                directMail: "",
+                branding: "",
+                postcards: "",
+                newspaper: "",
+                illustrations: ""
             },
             b2scapes: {
                 title: "B2 Landscapes",
@@ -241,7 +312,12 @@
                 digitalAdds: "",
                 brochures: "../../images/work-assets/b2-brochure.png",
                 billboards: "",
-                directMail: ""
+                directMail: "",
+                branding: "",
+                posters: "",
+                postcards: "",
+                newspaper: "",
+                illustrations: ""
             },
             branding: {
                 title: "Branding",
@@ -253,7 +329,12 @@
                 digitalAdds: "",
                 brochures: "",
                 billboards: "",
-                directMail: ""
+                directMail: "",
+                branding: "",
+                posters: "",
+                postcards: "",
+                newspaper: "",
+                illustrations: ""
             }
         };
 

@@ -29,25 +29,53 @@
             <p>The Work</p>
         </div>
 
+        <div class="tds-work-pics" id="client-branding-container">
+            <p class="tds-work-pic-title">Branding</p>
+            <img src="{{client.branding}}">
+        </div>
         <div class="tds-work-pics" id="client-webdesign-container">
             <p class="tds-work-pic-title">Website Design</p>
             <img src="{{client.webDesign}}">
+        </div>
+        <div class="tds-work-pics" id="client-illustration-container">
+            <p class="tds-work-pic-title">Newspaper Adds</p>
+            <img class="work-newspaper" ng-repeat="path in client.illustrations" src="{{path.path}}">
         </div>
         <div class="tds-work-pics" id="client-digital-container">
             <p class="tds-work-pic-title">Digital Ads</p>
             <img src="{{client.digitalAdds}}">
         </div>
+        <div class="tds-work-pics" id="ccbh-digital-container">
+            <p class="tds-work-pic-title">Digital Adds</p>
+            <img class="work-newspaper" ng-repeat="path in client.newspaper" src="{{path.path}}">
+        </div>
         <div class="tds-work-pics" id="client-brochures-container">
             <p class="tds-work-pic-title">Brochures</p>
             <img src="{{client.brochures}}">
         </div>
-        <div class="tds-work-pics" id="client-billboard-container">
-            <p class="tds-work-pic-title">Billboard</p>
-            <img src="{{client.billboards}}">
+        <div class="tds-work-pics" id="client-posters-container">
+            <p class="tds-work-pic-title">Posters</p>
+            <img src="{{client.posters}}">
+        </div>
+        <div class="tds-work-pics" id="client-postcards-container">
+            <p class="tds-work-pic-title">Postcards</p>
+            <img src="{{client.postcards}}">
         </div>
         <div class="tds-work-pics" id="client-dmail-container">
             <p class="tds-work-pic-title">Direct Mail</p>
             <img src="{{client.directMail}}">
+        </div>
+        <div class="tds-work-pics" id="client-newspaper-container">
+            <p class="tds-work-pic-title">Newspaper Adds</p>
+            <img class="work-newspaper" ng-repeat="path in client.newspaper" src="{{path.path}}">
+        </div>
+        <div class="tds-work-pics" id="us-newspaper-container">
+            <p class="tds-work-pic-title">Newspaper Adds</p>
+            <img class="work-newspaper us-newspaper" ng-repeat="path in client.newspaper" src="{{path.path}}">
+        </div>
+        <div class="tds-work-pics" id="client-billboard-container">
+            <p class="tds-work-pic-title">Billboard</p>
+            <img src="{{client.billboards}}">
         </div>
 
 

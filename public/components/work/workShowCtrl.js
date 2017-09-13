@@ -41,6 +41,33 @@
                 TweenMax.to(document.getElementById('client-billboard-container'), 0, {
                     display: "none"
                 })
+            } if($scope.client.branding === ""){
+                TweenMax.to(document.getElementById('client-branding-container'), 0, {
+                    display: "none"
+                })
+            }  if($scope.client.posters === ""){
+                TweenMax.to(document.getElementById('client-posters-container'), 0, {
+                    display: "none"
+                })
+            }  if($scope.client.postcards === ""){
+                TweenMax.to(document.getElementById('client-postcards-container'), 0, {
+                    display: "none"
+                })
+            } if($scope.client.newspaper === ""){
+                TweenMax.to(document.getElementById('client-newspaper-container'), 0, {
+                    display: "none"
+                })
+            } if($scope.client.illustrations === ""){
+                TweenMax.to(document.getElementById('client-illustration-container'), 0, {
+                    display: "none"
+                })
+            } if($stateParams.client === "us"){
+                TweenMax.to(document.getElementById('client-newspaper-container'), 0, {
+                    display: "none"
+                });
+                TweenMax.to(document.getElementById("us-newspaper-container"), 0, {
+                    display: "flex"
+                })
             }
 
 

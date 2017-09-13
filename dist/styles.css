@@ -2711,6 +2711,17 @@ table {
   font-size: 15px;
   color: #727272; }
 
+.work-newspaper {
+  width: 45%; }
+
+#us-newspaper-container {
+  display: none;
+  flex-direction: row; }
+
+.us-newspaper {
+  margin-left: -11%;
+  margin-right: -11%; }
+
 .tech-main-container {
   width: 100%;
   height: 213vh;

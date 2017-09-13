@@ -145,11 +145,41 @@
   width: 45%;
 }
 
+
+
+#ccbh-digital-container {
+  height: 160vh;
+  display: none;
+  flex-direction: column;
+}
+
+#beehive-webdesign-container {
+  display: none;
+  flex-direction: column;
+  height: 300vh;
+}
+
 #us-newspaper-container {
   display: none;
   flex-direction: row;
 }
+
+#rubys-newspaper-container {
+  display: none;
+  flex-direction: row;
+}
+
+#main-branding-container {
+    display: none;
+  flex-direction: column;
+  height: 510vh;
+}
+
 .us-newspaper {
   margin-left: -11%;
   margin-right: -11%;
+}
+.rubys-newspaper {
+  margin-left: -10%;
+  margin-right: -10%;
 }

@@ -133,7 +133,8 @@
                 posters: "",
                 postcards: "",
                 newspaper: "",
-                illustrations: ""
+                illustrations: "",
+                stationary: ""
             },
             bryce: {
                 title: "Garfield County Tourism",
@@ -150,7 +151,8 @@
                 posters: "../../images/work-assets/garfield-poster.png",
                 postcards: "",
                 newspaper: "",
-                illustrations: ""
+                illustrations: "",
+                stationary: ""
             },
             tuac: {
                 title: "Tuacahn",
@@ -167,7 +169,8 @@
                 posters: "../../images/work-assets/tuac-posters.png",
                 postcards: "",
                 newspaper: "",
-                illustrations: ""
+                illustrations: "",
+                stationary: ""
             },
             uintah: {
                 title: "Uintah County Tourism",
@@ -184,7 +187,8 @@
                 posters: "../../images/work-assets/uintah-poster.png",
                 postcards: "../../images/work-assets/uintah-postcard.png",
                 newspaper: "",
-                illustrations: ""
+                illustrations: "",
+                stationary: ""
             },
             uvhb: {
                 title: "Utah Valley Home Builders",
@@ -201,7 +205,8 @@
                 posters: "../../images/work-assets/uvhba-golf.png",
                 postcards: "",
                 newspaper: "",
-                illustrations: ""
+                illustrations: "",
+                stationary: ""
             },
             maxx: {
                 title: "MaxxSouth",
@@ -218,7 +223,8 @@
                 posters: "",
                 postcards: "",
                 newspaper: [{ path: "../../images/work-assets/maxx-football.png" }, { path: "../../images/work-assets/maxx-posters.png" }],
-                illustrations: ""
+                illustrations: "",
+                stationary: ""
             },
             moab: {
                 title: "Moab",
@@ -235,7 +241,8 @@
                 posters: "",
                 postcards: "",
                 newspaper: "",
-                illustrations: ""
+                illustrations: "",
+                stationary: ""
 
             },
             zerorez: {
@@ -253,7 +260,8 @@
                 posters: "",
                 postcards: "",
                 newspaper: "",
-                illustrations: ""
+                illustrations: "",
+                stationary: ""
 
             },
             wfront: {
@@ -271,7 +279,8 @@
                 posters: "",
                 postcards: "",
                 newspaper: "",
-                illustrations: [{ path: "../../images/work-assets/wfront-one.png" }, { path: "../../images/work-assets/wfront-two.png" }]
+                illustrations: [{ path: "../../images/work-assets/wfront-one.png" }, { path: "../../images/work-assets/wfront-two.png" }],
+                stationary: ""
             },
             us: {
                 title: "Utah Shakespeare Festival",
@@ -288,7 +297,8 @@
                 posters: "",
                 postcards: "",
                 newspaper: [{ path: "../../images/work-assets/us-knights.png" }, { path: "../../images/work-assets/us-boeing.png" }, { path: "../../images/work-assets/us-love.png" }, { path: "../../images/work-assets/us-mercy.png" }],
-                illustrations: ""
+                illustrations: "",
+                stationary: ""
             },
             brio: {
                 title: "Brio",
@@ -305,7 +315,8 @@
                 posters: "",
                 postcards: "",
                 newspaper: "",
-                illustrations: ""
+                illustrations: "",
+                stationary: ""
 
             },
             ccbh: {
@@ -315,7 +326,7 @@
                 video: false,
                 logoPath: "",
                 webDesign: "",
-                digitalAdds: "",
+                digitalAdds: [{ path: "../../images/work-assets/work-ccbh1.png" }, { path: "../../images/work-assets/work-ccbh2.png" }],
                 brochures: "",
                 billboards: "",
                 directMail: "",
@@ -323,7 +334,8 @@
                 posters: "",
                 postcards: "",
                 newspaper: "",
-                illustrations: ""
+                illustrations: "",
+                stationary: ""
             },
             beehive: {
                 title: "Beehive Broadband",
@@ -331,7 +343,7 @@
                 stats: "",
                 video: false,
                 logoPath: "",
-                webDesign: "",
+                webDesign: [{ path: "../../images/work-assets/work-bee2.png" }, { path: "../../images/work-assets/work-bee3.png" }, { path: "../../images/work-assets/work-bee4.png" }, { path: "../../images/work-assets/work-bee5.png" }],
                 digitalAdds: "",
                 brochures: "",
                 billboards: "",
@@ -339,8 +351,9 @@
                 branding: "",
                 posters: "",
                 postcards: "",
-                newspaper: "",
-                illustrations: ""
+                newspaper: [{ path: "../../images/work-assets/work-bee1.png" }],
+                illustrations: "",
+                stationary: ""
             },
             rubys: {
                 title: "Ruby's Inn",
@@ -356,8 +369,9 @@
                 branding: "",
                 posters: "",
                 postcards: "",
-                newspaper: "",
-                illustrations: ""
+                newspaper: [{ path: "../../images/work-assets/work-rubys1.png" }, { path: "../../images/work-assets/work-rubys2.png" }, { path: "../../images/work-assets/work-rubys3.png" }],
+                illustrations: "",
+                stationary: ""
             },
             creef: {
                 title: "Wayne County Tourism",
@@ -370,10 +384,12 @@
                 brochures: "",
                 billboards: "",
                 directMail: "",
-                branding: "",
+                branding: "../../images/work-assets/work-creef1.png",
+                stationary: "../../images/work-assets/work-creef2.png",
                 postcards: "",
                 newspaper: "",
-                illustrations: ""
+                illustrations: "",
+                posters: ""
             },
             b2scapes: {
                 title: "B2 Landscapes",
@@ -387,10 +403,11 @@
                 billboards: "",
                 directMail: "",
                 branding: "",
-                posters: "",
+                posters: "../../images/work-assets/work-b2-1.png",
                 postcards: "",
                 newspaper: "",
-                illustrations: ""
+                illustrations: "",
+                stationary: ""
             },
             branding: {
                 title: "Branding",
@@ -403,11 +420,12 @@
                 brochures: "",
                 billboards: "",
                 directMail: "",
-                branding: "",
+                branding: [{ path: "../../images/work-assets/work-branding1.png" }, { path: "../../images/work-assets/work-branding2.png" }, { path: "../../images/work-assets/work-branding3.png" }, { path: "../../images/work-assets/work-branding4.png" }, { path: "../../images/work-assets/work-branding5.png" }, { path: "../../images/work-assets/work-branding6.png" }, { path: "../../images/work-assets/work-branding7.png" }],
                 posters: "",
                 postcards: "",
                 newspaper: "",
-                illustrations: ""
+                illustrations: "",
+                stationary: ""
             }
         };
     });
@@ -952,11 +970,48 @@
             TweenMax.to(document.getElementById('client-illustration-container'), 0, {
                 display: "none"
             });
+        }if ($scope.client.stationary === "") {
+            TweenMax.to(document.getElementById('client-stationary-container'), 0, {
+                display: "none"
+            });
         }if ($stateParams.client === "us") {
             TweenMax.to(document.getElementById('client-newspaper-container'), 0, {
                 display: "none"
             });
             TweenMax.to(document.getElementById("us-newspaper-container"), 0, {
+                display: "flex"
+            });
+        }if ($stateParams.client === "ccbh") {
+            TweenMax.to(document.getElementById('client-digital-container'), 0, {
+                display: "none"
+            });
+            TweenMax.to(document.getElementById("ccbh-digital-container"), 0, {
+                display: "flex"
+            });
+        }if ($stateParams.client === "beehive") {
+
+            TweenMax.to(document.getElementById('client-webdesign-container'), 0, {
+                display: "none"
+            });
+            TweenMax.to(document.getElementById('beehive-webdesign-container'), 0, {
+                display: "flex"
+            });
+        }if ($stateParams.client === "rubys") {
+            TweenMax.to(document.getElementById('client-newspaper-container'), 0, {
+                display: "none"
+            });
+            TweenMax.to(document.getElementById('rubys-newspaper-container'), 0, {
+                display: "flex"
+            });
+        }if ($stateParams.client === "b2scapes") {
+            TweenMax.to(document.getElementById('posters-title'), 0, {
+                display: "none"
+            });
+        }if ($stateParams.client === "branding") {
+            TweenMax.to(document.getElementById('client-branding-container'), 0, {
+                display: "none"
+            });
+            TweenMax.to(document.getElementById('main-branding-container'), 0, {
                 display: "flex"
             });
         }

@@ -61,11 +61,49 @@
                 TweenMax.to(document.getElementById('client-illustration-container'), 0, {
                     display: "none"
                 })
-            } if($stateParams.client === "us"){
+            } if($scope.client.stationary === ""){
+                TweenMax.to(document.getElementById('client-stationary-container'), 0, {
+                    display: "none"
+                })
+            }  if($stateParams.client === "us"){
                 TweenMax.to(document.getElementById('client-newspaper-container'), 0, {
                     display: "none"
                 });
                 TweenMax.to(document.getElementById("us-newspaper-container"), 0, {
+                    display: "flex"
+                })
+            } if($stateParams.client === "ccbh"){
+                TweenMax.to(document.getElementById('client-digital-container'), 0, {
+                    display: "none"
+                });
+                TweenMax.to(document.getElementById("ccbh-digital-container"), 0, {
+                    display: "flex"
+                })
+            } if($stateParams.client === "beehive"){
+
+                TweenMax.to(document.getElementById('client-webdesign-container'), 0, {
+                    display: "none"
+                });
+                TweenMax.to(document.getElementById('beehive-webdesign-container'), 0, {
+                    display: "flex"
+                })
+
+            } if($stateParams.client === "rubys"){
+                TweenMax.to(document.getElementById('client-newspaper-container'), 0, {
+                    display: "none"
+                });
+                TweenMax.to(document.getElementById('rubys-newspaper-container'), 0, {
+                    display: "flex"
+                })
+            } if($stateParams.client === "b2scapes"){
+                TweenMax.to(document.getElementById('posters-title'), 0, {
+                    display: "none"
+                })
+            } if($stateParams.client === "branding"){
+                TweenMax.to(document.getElementById('client-branding-container'), 0, {
+                    display: "none"
+                })
+                TweenMax.to(document.getElementById('main-branding-container'), 0, {
                     display: "flex"
                 })
             }

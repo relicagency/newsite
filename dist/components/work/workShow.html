@@ -33,12 +33,23 @@
             <p class="tds-work-pic-title">Branding</p>
             <img src="{{client.branding}}">
         </div>
+        <div class="tds-work-pics" id="main-branding-container">
+            <img ng-repeat="brand in client.branding" src="{{brand.path}}">
+        </div>
+        <div class="tds-work-pics" id="client-stationary-container">
+            <p class="tds-work-pic-title">Stationary</p>
+            <img src="{{client.stationary}}">
+        </div>
         <div class="tds-work-pics" id="client-webdesign-container">
             <p class="tds-work-pic-title">Website Design</p>
             <img src="{{client.webDesign}}">
         </div>
+        <div class="tds-work-pics" id="beehive-webdesign-container">
+            <p class="tds-work-pic-title">Website Design</p>
+            <img ng-repeat="path in client.webDesign" src="{{path.path}}">
+        </div>
         <div class="tds-work-pics" id="client-illustration-container">
-            <p class="tds-work-pic-title">Newspaper Adds</p>
+            <p class="tds-work-pic-title">Illustrations & Mockups</p>
             <img class="work-newspaper" ng-repeat="path in client.illustrations" src="{{path.path}}">
         </div>
         <div class="tds-work-pics" id="client-digital-container">
@@ -47,14 +58,14 @@
         </div>
         <div class="tds-work-pics" id="ccbh-digital-container">
             <p class="tds-work-pic-title">Digital Adds</p>
-            <img class="work-newspaper" ng-repeat="path in client.newspaper" src="{{path.path}}">
+            <img ng-repeat="path in client.digitalAdds" src="{{path.path}}">
         </div>
         <div class="tds-work-pics" id="client-brochures-container">
             <p class="tds-work-pic-title">Brochures</p>
             <img src="{{client.brochures}}">
         </div>
         <div class="tds-work-pics" id="client-posters-container">
-            <p class="tds-work-pic-title">Posters</p>
+            <p class="tds-work-pic-title" id="posters-title">Posters</p>
             <img src="{{client.posters}}">
         </div>
         <div class="tds-work-pics" id="client-postcards-container">
@@ -68,6 +79,10 @@
         <div class="tds-work-pics" id="client-newspaper-container">
             <p class="tds-work-pic-title">Newspaper Adds</p>
             <img class="work-newspaper" ng-repeat="path in client.newspaper" src="{{path.path}}">
+        </div>
+        <div class="tds-work-pics" id="rubys-newspaper-container">
+            <p class="tds-work-pic-title">Newspaper Adds</p>
+            <img class="work-newspaper rubys-newspaper" ng-repeat="path in client.newspaper" src="{{path.path}}">
         </div>
         <div class="tds-work-pics" id="us-newspaper-container">
             <p class="tds-work-pic-title">Newspaper Adds</p>

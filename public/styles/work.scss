@@ -1,5 +1,5 @@
 .work-main-container {
-  height: 110vh;
+  height: 210vh;
   width: 100%;
   background-image: url('../images/work-bckgrnd.png');
   background-size: cover;
@@ -22,7 +22,7 @@
   top: 32%;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 85%;
+  width: 61%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -31,8 +31,8 @@
 }
 
 .work-content img {
-  height: 10vw;
-  width: 10vw;
+  width: 103%;
+  margin-bottom: -4px;
   cursor: pointer;
 }
 

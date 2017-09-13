@@ -2714,13 +2714,36 @@ table {
 .work-newspaper {
   width: 45%; }
 
+#ccbh-digital-container {
+  height: 160vh;
+  display: none;
+  flex-direction: column; }
+
+#beehive-webdesign-container {
+  display: none;
+  flex-direction: column;
+  height: 300vh; }
+
 #us-newspaper-container {
   display: none;
   flex-direction: row; }
 
+#rubys-newspaper-container {
+  display: none;
+  flex-direction: row; }
+
+#main-branding-container {
+  display: none;
+  flex-direction: column;
+  height: 510vh; }
+
 .us-newspaper {
   margin-left: -11%;
   margin-right: -11%; }
+
+.rubys-newspaper {
+  margin-left: -10%;
+  margin-right: -10%; }
 
 .tech-main-container {
   width: 100%;
@@ -3398,7 +3421,7 @@ div {
     letter-spacing: 2px; } }
 
 .work-main-container {
-  height: 110vh;
+  height: 210vh;
   width: 100%;
   background-image: url("../images/work-bckgrnd.png");
   background-size: cover;
@@ -3420,7 +3443,7 @@ div {
   top: 32%;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 85%;
+  width: 61%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -3428,8 +3451,8 @@ div {
   align-items: center; }
 
 .work-content img {
-  height: 10vw;
-  width: 10vw;
+  width: 103%;
+  margin-bottom: -4px;
   cursor: pointer; }
 
 @media screen and (max-device-width: 425px) {

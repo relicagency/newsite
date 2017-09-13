@@ -9,86 +9,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5673a4d2-2a4d-4a5e-92e3-5f5dfa47a7ae" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/components/tds/tds.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/components/tds/tdsCtrl.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/tds-case.png" afterPath="$PROJECT_DIR$/public/images/work-assets/tds-case.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/GarfieldStat.png" afterPath="$PROJECT_DIR$/public/images/work-assets/GarfieldStat.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/garfield-banner.png" afterPath="$PROJECT_DIR$/public/images/work-assets/garfield-banner.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/garfield-big.png" afterPath="$PROJECT_DIR$/public/images/work-assets/garfield-big.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/garfield-brochure.png" afterPath="$PROJECT_DIR$/public/images/work-assets/garfield-brochure.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/garfield-poster.png" afterPath="$PROJECT_DIR$/public/images/work-assets/garfield-poster.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/garfield-site.png" afterPath="$PROJECT_DIR$/public/images/work-assets/garfield-site.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/maxx-bigfoot.png" afterPath="$PROJECT_DIR$/public/images/work-assets/maxx-bigfoot.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/maxx-billboard.png" afterPath="$PROJECT_DIR$/public/images/work-assets/maxx-billboard.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/maxx-football.png" afterPath="$PROJECT_DIR$/public/images/work-assets/maxx-football.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/maxx-posters.png" afterPath="$PROJECT_DIR$/public/images/work-assets/maxx-posters.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/maxx-site.png" afterPath="$PROJECT_DIR$/public/images/work-assets/maxx-site.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/tuac-banners.png" afterPath="$PROJECT_DIR$/public/images/work-assets/tuac-banners.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/tuac-billboard.png" afterPath="$PROJECT_DIR$/public/images/work-assets/tuac-billboard.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/tuac-posters.png" afterPath="$PROJECT_DIR$/public/images/work-assets/tuac-posters.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/tuac-site.png" afterPath="$PROJECT_DIR$/public/images/work-assets/tuac-site.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/tuac-stats.png" afterPath="$PROJECT_DIR$/public/images/work-assets/tuac-stats.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/uintah-book.png" afterPath="$PROJECT_DIR$/public/images/work-assets/uintah-book.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/uintah-info-poster.png" afterPath="$PROJECT_DIR$/public/images/work-assets/uintah-info-poster.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/uintah-poster.png" afterPath="$PROJECT_DIR$/public/images/work-assets/uintah-poster.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/uintah-site.png" afterPath="$PROJECT_DIR$/public/images/work-assets/uintah-site.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/uintah-sketch.png" afterPath="$PROJECT_DIR$/public/images/work-assets/uintah-sketch.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/uintah-stat.png" afterPath="$PROJECT_DIR$/public/images/work-assets/uintah-stat.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/us-boeing.png" afterPath="$PROJECT_DIR$/public/images/work-assets/us-boeing.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/us-knights.png" afterPath="$PROJECT_DIR$/public/images/work-assets/us-knights.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/us-love.png" afterPath="$PROJECT_DIR$/public/images/work-assets/us-love.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/us-mercy.png" afterPath="$PROJECT_DIR$/public/images/work-assets/us-mercy.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/uvhb-stats.png" afterPath="$PROJECT_DIR$/public/images/work-assets/uvhb-stats.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/uvhba-billboard.png" afterPath="$PROJECT_DIR$/public/images/work-assets/uvhba-billboard.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/uvhba-golf.png" afterPath="$PROJECT_DIR$/public/images/work-assets/uvhba-golf.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/uvhba-posters-wide.png" afterPath="$PROJECT_DIR$/public/images/work-assets/uvhba-posters-wide.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/uvhba-posters.png" afterPath="$PROJECT_DIR$/public/images/work-assets/uvhba-posters.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/wfront-one.png" afterPath="$PROJECT_DIR$/public/images/work-assets/wfront-one.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/wfront-two.png" afterPath="$PROJECT_DIR$/public/images/work-assets/wfront-two.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-b2-1.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-b2-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-b2-2.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-b2-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-bee1.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-bee1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-bee2.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-bee2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-bee3.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-bee3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-bee4.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-bee4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-bee5.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-bee5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-branding1.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-branding1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-branding2.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-branding2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-branding3.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-branding3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-branding4.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-branding4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-branding5.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-branding5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-branding6.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-branding6.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-branding7.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-branding7.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-brio1.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-brio1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-brio2.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-brio2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-brio3.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-brio3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-brio4.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-brio4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-brio5.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-brio5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-brio6.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-brio6.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-ccbh1.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-ccbh1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-ccbh2.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-ccbh2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-creef1.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-creef1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-creef2.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-creef2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-rubys1.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-rubys1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-rubys2.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-rubys2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/work-rubys3.png" afterPath="$PROJECT_DIR$/public/images/work-assets/work-rubys3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/zerorez-one.png" afterPath="$PROJECT_DIR$/public/images/work-assets/zerorez-one.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/zerorez-three.png" afterPath="$PROJECT_DIR$/public/images/work-assets/zerorez-three.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work assets/zerorez-two.png" afterPath="$PROJECT_DIR$/public/images/work-assets/zerorez-two.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/work-assets/work-b2-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/work-assets/zerorez-three.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/work-assets/zerorez-two.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work-assets/work-brio2.png" afterPath="$PROJECT_DIR$/public/images/work-assets/brio-brochure.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work-assets/work-brio4.png" afterPath="$PROJECT_DIR$/public/images/work-assets/brio-site.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work-tds1.png" afterPath="$PROJECT_DIR$/public/images/work-assets/tds-directMail.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work-tds2.png" afterPath="$PROJECT_DIR$/public/images/work-assets/tds-billboard.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work-tds3.png" afterPath="$PROJECT_DIR$/public/images/work-assets/tds-brochure.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work-tds4.png" afterPath="$PROJECT_DIR$/public/images/work-assets/tds-digital.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/work-tds5.png" afterPath="$PROJECT_DIR$/public/images/work-assets/tds-site.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/bundle.js" afterPath="$PROJECT_DIR$/dist/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/components/work/work.html" afterPath="$PROJECT_DIR$/dist/components/work/work.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/directives/nav/navTmpl.html" afterPath="$PROJECT_DIR$/dist/directives/nav/navTmpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/components/work/workShow.html" afterPath="$PROJECT_DIR$/dist/components/work/workShow.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/maps/bundle.js.map" afterPath="$PROJECT_DIR$/dist/maps/bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/maps/styles.css.map" afterPath="$PROJECT_DIR$/dist/maps/styles.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles.css" afterPath="$PROJECT_DIR$/dist/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app.js" afterPath="$PROJECT_DIR$/public/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/work/work.html" afterPath="$PROJECT_DIR$/public/components/work/work.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/directives/nav/navTmpl.html" afterPath="$PROJECT_DIR$/public/directives/nav/navTmpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/work/workShow.html" afterPath="$PROJECT_DIR$/public/components/work/workShow.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/work/workShowCtrl.js" afterPath="$PROJECT_DIR$/public/components/work/workShowCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/mainService.js" afterPath="$PROJECT_DIR$/public/mainService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/tds.scss" afterPath="$PROJECT_DIR$/public/styles/tds.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/work.scss" afterPath="$PROJECT_DIR$/public/styles/work.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/index.js" afterPath="$PROJECT_DIR$/server/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -115,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workShow.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="workShow.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/components/work/workShow.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="60" lean-forward="false" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+            <state relative-caret-position="782">
+              <caret line="49" column="41" lean-forward="false" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -128,8 +68,18 @@
       <file leaf-file-name="workShowCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/components/work/workShowCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+            <state relative-caret-position="680">
+              <caret line="40" column="69" lean-forward="false" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tds.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/styles/tds.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -145,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainService.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mainService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/mainService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="52" column="53" lean-forward="false" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+            <state relative-caret-position="2119">
+              <caret line="217" column="28" lean-forward="false" selection-start-line="217" selection-start-column="28" selection-end-line="217" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -177,9 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>featured</find>
-      <find>@media</find>
-      <find>Antimony</find>
       <find>panel2-25</find>
       <find>panguitch</find>
       <find>panel10-2</find>
@@ -207,6 +154,9 @@
       <find>panel11-25</find>
       <find>panel11-2</find>
       <find>innerTabs dd a</find>
+      <find>webDesign</find>
+      <find>digitalAdds:</find>
+      <find>brochures</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -260,12 +210,12 @@
         <option value="$PROJECT_DIR$/public/components/expertise/expertise.js" />
         <option value="$PROJECT_DIR$/public/styles/home.scss" />
         <option value="$PROJECT_DIR$/public/components/work/work.html" />
-        <option value="$PROJECT_DIR$/public/styles/tds.scss" />
         <option value="$PROJECT_DIR$/public/directives/nav/navTmpl.html" />
         <option value="$PROJECT_DIR$/server/index.js" />
-        <option value="$PROJECT_DIR$/public/components/work/workShowCtrl.js" />
         <option value="$PROJECT_DIR$/public/components/work/workShow.html" />
+        <option value="$PROJECT_DIR$/public/styles/tds.scss" />
         <option value="$PROJECT_DIR$/public/mainService.js" />
+        <option value="$PROJECT_DIR$/public/components/work/workShowCtrl.js" />
       </list>
     </option>
   </component>
@@ -288,7 +238,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="648" />
     <option name="width" value="1279" />
-    <option name="height" value="1050" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -317,6 +267,19 @@
               <item name="newsite" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="newsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsite" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="newsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsite" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -338,11 +301,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Seth\Relic\relic-two\newsite\public\images\work-assets" />
       <recent name="C:\Users\Seth\Relic\relic-two\newsite\public\images\work assets" />
       <recent name="C:\Users\Seth\Documents\Relic\relic-two\newsite\public\styles" />
       <recent name="C:\Users\Seth\Documents\Relic\relic-two\newsite\public\images" />
       <recent name="C:\Users\Seth\Documents\Relic\newsite\public\directives" />
-      <recent name="C:\Users\Seth\Documents\Relic\newsite\public\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -436,22 +399,22 @@
       <workItem from="1503346549239" duration="225164000" />
       <workItem from="1504552066404" duration="1167000" />
       <workItem from="1504624469934" duration="80805000" />
-      <workItem from="1505239573063" duration="4244000" />
+      <workItem from="1505239573063" duration="12197000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="521900000" />
+    <option name="totallyTimeSpent" value="529853000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="648" y="0" width="1279" height="1050" extended-state="0" />
+    <frame x="648" y="0" width="1279" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23990498" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13553895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13552362" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -473,6 +436,33 @@
       <window_info id="Running Info" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Running Result" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="MaxCompute Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="MaxCompute Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294702" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23990498" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13552362" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Running Info" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Running Result" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -487,7 +477,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/ie-rtl.min.css" />
     <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/install.css" />
     <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/install.min.css" />
     <entry file="file://$PROJECT_DIR$/../../Clients/Bryce Canyon/css/css/install-rtl.css" />
@@ -686,14 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/tds.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="70" column="11" lean-forward="false" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/directives/nav/navTmpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -718,14 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/components/work/workShowCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -734,18 +707,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/components/work/workShow.html">
+    <entry file="file://$PROJECT_DIR$/public/images/work-assets/work-creef2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/tds.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="60" lean-forward="false" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+        <state relative-caret-position="408">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/mainService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="52" column="53" lean-forward="false" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+        <state relative-caret-position="2119">
+          <caret line="217" column="28" lean-forward="false" selection-start-line="217" selection-start-column="28" selection-end-line="217" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/components/work/workShowCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="69" lean-forward="false" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/components/work/workShow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="49" column="41" lean-forward="false" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
           <folding />
         </state>
       </provider>

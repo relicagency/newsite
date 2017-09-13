@@ -2598,9 +2598,9 @@ table {
 
 .tds-main-content {
   position: absolute;
-  top: 311%;
+  top: 20vh;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   width: 85%; }
 
 .tds-content-title {

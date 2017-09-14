@@ -22,18 +22,35 @@
   top: 32%;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 61%;
+  width: 65vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
+.work-content-item {
+  position: relative;
+  height: 30vh;
+  width: calc(65vw / 4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .work-content img {
-  width: 103%;
+  width: calc(65vw / 4);
+  height: calc(65vw / 4);
   margin-bottom: -4px;
   cursor: pointer;
+}
+
+.work-content-overlay {
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background-color: rgba(0,0,0,0.7);
 }
 
 @media screen and (max-device-width: 425px){

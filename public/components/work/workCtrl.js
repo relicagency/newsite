@@ -12,5 +12,18 @@
 
             };
 
+            //This is the animations for the work sections
+            $scope.workEnter = function(num){
+                TweenMax.to(document.getElementById('work-content-overlay-' + num), 0.25, {
+                            width: "100%"
+                    })
+            };
+
+            $scope.workLeave = function(num){
+                TweenMax.to(document.getElementById('work-content-overlay-' + num), 0.25, {
+                    width: 0
+                })
+            }
+
         })
 })();

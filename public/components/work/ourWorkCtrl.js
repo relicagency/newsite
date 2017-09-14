@@ -3,7 +3,7 @@
  */
 (function(){
     angular.module('app')
-        .controller('workShowCtrl', function($scope, $stateParams, $state, mainService){
+        .controller('ourWorkCtrl', function($scope, $stateParams, $state, mainService){
 
              $scope.client = mainService.clients[$stateParams.client];
 
@@ -121,6 +121,13 @@
                 mainService.navBackground(offSet);
                 mainService.parallaxIt(backgroundPic,csParaStart);
             };
+
+
+                //This adjusts the height of the main container based on the page
+                TweenMax.to(document.getElementById('work-show-main-container'), 0, {
+                    height: $scope.client.height
+                })
+
 
         })
 })();

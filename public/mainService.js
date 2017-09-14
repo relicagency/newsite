@@ -61,7 +61,8 @@
                 postcards: "",
                 newspaper: "",
                 illustrations: "",
-                stationary: ""
+                stationary: "",
+                height: "623vh"
             },
             bryce: {
                 title: "Garfield County Tourism",
@@ -79,7 +80,8 @@
                 postcards: "",
                 newspaper: "",
                 illustrations: "",
-                stationary: ""
+                stationary: "",
+                height: "542vh"
             },
             tuac: {
                 title: "Tuacahn",
@@ -97,7 +99,8 @@
                 postcards: "",
                 newspaper: "",
                 illustrations: "",
-                stationary: ""
+                stationary: "",
+                height: "468vh"
             },
             uintah: {
                 title: "Uintah County Tourism",
@@ -115,7 +118,8 @@
                 postcards: "../../images/work-assets/uintah-postcard.png",
                 newspaper: "",
                 illustrations: "",
-                stationary: ""
+                stationary: "",
+                height: "468vh"
             },
             uvhb:{
                 title: "Utah Valley Home Builders",
@@ -133,7 +137,8 @@
                 postcards: "",
                 newspaper: "",
                 illustrations: "",
-                stationary: ""
+                stationary: "",
+                height: "468vh"
             },
             maxx: {
                 title: "MaxxSouth",
@@ -151,7 +156,8 @@
                 postcards: "",
                 newspaper: [{path: "../../images/work-assets/maxx-football.png"}, {path: "../../images/work-assets/maxx-posters.png"}],
                 illustrations: "",
-                stationary: ""
+                stationary: "",
+                height: "371vh"
             },
             moab: {
                 title: "Moab",
@@ -169,8 +175,8 @@
                 postcards: "",
                 newspaper: "",
                 illustrations: "",
-                stationary: ""
-
+                stationary: "",
+                height: "130vh"
             },
             zerorez: {
                 title: "Zerorez",
@@ -188,8 +194,8 @@
                 postcards: "",
                 newspaper: "",
                 illustrations: "",
-                stationary: ""
-
+                stationary: "",
+                height: "130vh"
             },
             wfront: {
                 title: "WorkFront",
@@ -207,7 +213,8 @@
                 postcards: "",
                 newspaper: "",
                 illustrations:  [{path: "../../images/work-assets/wfront-one.png"}, {path: "../../images/work-assets/wfront-two.png"}],
-                stationary: ""
+                stationary: "",
+                height: "130vh"
             },
             us: {
                 title: "Utah Shakespeare Festival",
@@ -225,7 +232,8 @@
                 postcards: "",
                 newspaper: [{path: "../../images/work-assets/us-knights.png"}, {path: "../../images/work-assets/us-boeing.png"}, {path: "../../images/work-assets/us-love.png"}, {path: "../../images/work-assets/us-mercy.png"}],
                 illustrations: "",
-                stationary: ""
+                stationary: "",
+                height: "130vh"
             },
             brio: {
                 title: "Brio",
@@ -243,8 +251,8 @@
                 postcards: "",
                 newspaper: "",
                 illustrations: "",
-                stationary: ""
-
+                stationary: "",
+                height: "370vh"
             },
             ccbh: {
                 title: "Cedar City  |  Brian Head",
@@ -262,7 +270,8 @@
                 postcards: "",
                 newspaper: "",
                 illustrations: "",
-                stationary: ""
+                stationary: "",
+                height: "210vh"
             },
             beehive: {
                 title: "Beehive Broadband",
@@ -280,7 +289,8 @@
                 postcards: "",
                 newspaper: [{ path: "../../images/work-assets/work-bee1.png" }],
                 illustrations: "",
-                stationary: ""
+                stationary: "",
+                height: "430vh"
             },
             rubys: {
                 title: "Ruby's Inn",
@@ -298,7 +308,8 @@
                 postcards: "",
                 newspaper: [{path: "../../images/work-assets/work-rubys1.png"}, {path: "../../images/work-assets/work-rubys2.png"}, {path: "../../images/work-assets/work-rubys3.png"}],
                 illustrations: "",
-                stationary: ""
+                stationary: "",
+                height: "130vh"
             },
             creef: {
                 title: "Wayne County Tourism",
@@ -316,7 +327,8 @@
                 postcards: "",
                 newspaper: "",
                 illustrations: "",
-                posters: ""
+                posters: "",
+                height: "210vh"
             },
             b2scapes: {
                 title: "B2 Landscapes",
@@ -334,7 +346,8 @@
                 postcards: "",
                 newspaper: "",
                 illustrations: "",
-                stationary: ""
+                stationary: "",
+                height: "210vh"
             },
             branding: {
                 title: "Branding",
@@ -352,7 +365,8 @@
                 postcards: "",
                 newspaper: "",
                 illustrations: "",
-                stationary: ""
+                stationary: "",
+                height: "600vh"
             }
         };
 

@@ -3586,7 +3586,7 @@ div {
 
 @media screen and (max-device-width: 425px) {
   .work-main-container {
-    height: 2000vh;
+    height: 1100vh;
     width: 100%;
     background-image: url("../images/work-bckgrnd.png");
     background-size: cover;

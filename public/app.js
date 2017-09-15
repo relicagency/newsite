@@ -62,9 +62,19 @@
             templateUrl: './components/work/work.html'
         })
         .state('tds', {
-          url: '/work/tds',
+          url: '/work/tds-telecom',
             controller: 'tdsCtrl',
             templateUrl: './components/tds/tds.html'
+        })
+        .state('garfield', {
+          url: "/work/garfield-county-tourism",
+          controller: 'garfieldCtrl',
+            templateUrl: './components/garfield/garfield.html'
+        })
+        .state('tuacahn', {
+          url: "/work/tuacahn-amphitheater",
+            controller: 'tuacCtrl',
+            templateUrl: './components/tuacahn/tuacahn.html'
         });
     
     $urlRouterProvider

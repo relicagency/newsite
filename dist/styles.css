@@ -2844,7 +2844,7 @@ table {
 @media screen and (max-device-width: 320px) {
   .tds-content-intro {
     position: relative;
-    height: 120vh;
+    height: 130vh;
     width: 100%;
     background-color: white; } }
 
@@ -3586,7 +3586,7 @@ div {
 
 @media screen and (max-device-width: 425px) {
   .work-main-container {
-    height: 1095vh;
+    height: 2000vh;
     width: 100%;
     background-image: url("../images/work-bckgrnd.png");
     background-size: cover;

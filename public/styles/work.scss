@@ -28,7 +28,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .work-content-item {
@@ -46,7 +45,6 @@
   left: 0;
   width: calc(65vw / 4);
   height: calc(65vw / 4);
-  margin-bottom: -4px;
   cursor: pointer;
   z-index: 10;
 }
@@ -56,7 +54,6 @@
   left: 0;
   width: calc(65vw / 4);
   height: calc(65vw / 4);
-  margin-bottom: -4px;
   cursor: pointer;
 }
 
@@ -70,9 +67,8 @@
 @media screen and (max-device-width: 425px){
 
   .work-main-container {
-    height: 940vh;
+    height: 1095vh;
     width: 100%;
-    display: flex;
     background-image: url('../images/work-bckgrnd.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,32 +77,62 @@
   .work-title {
     position: absolute;
     color: white;
-    font-size: 40px;
+    font-size: 7vmin;
     text-transform: uppercase;
     letter-spacing: 3px;
-    top: 17%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, 0);
   }
 
   .work-content {
     position: absolute;
-    top: 32%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 85%;
+    width: 95vw;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
   }
 
-  .work-content img {
-    height: 80vw;
+  .work-content-item {
+    position: relative;
+    height: 90vw;
     width: 90vw;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
   }
+
+  .work-content-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90vw;
+    height: 90vw;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .work-content-image-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90vw;
+    height: 90vw;
+    cursor: pointer;
+  }
+
+  .work-content-overlay {
+    position: absolute;
+    height: 90vw;
+    width: 0;
+    background-color: rgba(0,0,0,0.7);
+  }
+
 
 
 }

@@ -3835,7 +3835,7 @@ h2 {
 
 .tuac-content-intro {
   position: relative;
-  height: 30vh;
+  height: 23vh;
   width: 100%;
   background-color: white; }
 
@@ -3953,6 +3953,12 @@ h2 {
     height: 513vh;
     width: 100%;
     background-color: #161616; }
+  .tuac-main-content {
+    position: absolute;
+    top: 12vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 85%; }
   .tuac-stats-pic {
     position: absolute;
     top: 40%;

@@ -9,6 +9,7 @@
   align-items: center;
   color: white;
 }
+
 .looking-for-help p {
   font-size: large;
   letter-spacing: 2px;
@@ -28,8 +29,6 @@
   cursor: pointer;
   letter-spacing: 2px;
 }
-
-
 
 .cta-pop-up {
   position: fixed;
@@ -52,15 +51,16 @@
   flex-direction: row;
   align-items: center;
 }
+
 .get-started-logo-svg {
   width: 182px;
 }
+
 .cta-get-started-title {
   font-size: 3vmin;
   color: white;
   margin-left: 5%;
 }
-
 
 .pop-up-outline-one {
   height: 2px;
@@ -71,6 +71,7 @@
   right: 0;
   z-index: 100;
 }
+
 .pop-up-outline-two {
   width: 2px;
   height: 0;
@@ -80,6 +81,7 @@
   top: 0;
   z-index: 100;
 }
+
 .pop-up-outline-three {
   height: 2px;
   width: 0;
@@ -89,6 +91,7 @@
   left: 0;
   z-index: 100;
 }
+
 .pop-up-outline-four {
   width: 2px;
   height: 0;
@@ -98,7 +101,6 @@
   bottom: 0;
   z-index: 100;
 }
-
 
 .pop-up-exit {
   position: absolute;
@@ -110,6 +112,7 @@
   z-index: 100;
   margin: 12px;
 }
+
 .pop-exit-bar-one {
   position: absolute;
   height: 2px;
@@ -119,9 +122,11 @@
   overflow: hidden;
   transform: rotate(45deg);
 }
+
 #get-started-animation-seven {
   left: 101%
 }
+
 .pop-exit-bar-two {
   position: absolute;
   height: 2px;
@@ -131,6 +136,7 @@
   overflow: hidden;
   transform: rotate(-45deg);
 }
+
 #get-started-animation-five {
   left: 101%;
 }
@@ -143,6 +149,7 @@
   width: 66%;
   overflow: hidden;
 }
+
 #get-started-animation-six {
   right: 101%;
 }
@@ -153,7 +160,6 @@
   width: 100%;
   background-color: white;
 }
-
 
 .cta-pop-up-form {
   position: absolute;

@@ -49,9 +49,17 @@
       controller: 'workCtrl',
       templateUrl: './components/work/work.html'
     }).state('tds', {
-      url: '/work/tds',
+      url: '/work/tds-telecom',
       controller: 'tdsCtrl',
       templateUrl: './components/tds/tds.html'
+    }).state('garfield', {
+      url: "/work/garfield-county-tourism",
+      controller: 'garfieldCtrl',
+      templateUrl: './components/garfield/garfield.html'
+    }).state('tuacahn', {
+      url: "/work/tuacahn-amphitheater",
+      controller: 'tuacCtrl',
+      templateUrl: './components/tuacahn/tuacahn.html'
     });
 
     $urlRouterProvider.otherwise('/home');
@@ -268,6 +276,25 @@
       mainService.navBackground(offSet);
     };
   });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('garfieldCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('garfield-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
 })();
 'use strict';
 
@@ -588,6 +615,25 @@
     angular.module('app').controller('tourismCtrl', function ($scope, mainService) {
 
         var backgroundPic = document.getElementById('tourism-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('tuacCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('tuac-background');
 
         window.onscroll = function () {
             var offSet = window.pageYOffset,

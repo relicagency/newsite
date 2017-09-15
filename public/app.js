@@ -61,10 +61,10 @@
             controller: 'workCtrl',
             templateUrl: './components/work/work.html'
         })
-        .state('our-work', {
-          url: '/work/:client',
-            controller: 'ourWorkCtrl',
-            templateUrl: './components/work/ourWork.html'
+        .state('tds', {
+          url: '/work/tds',
+            controller: 'tdsCtrl',
+            templateUrl: './components/tds/tds.html'
         });
     
     $urlRouterProvider

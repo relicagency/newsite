@@ -1,5 +1,5 @@
 .work-main-container {
-  height: 110vh;
+  height: 210vh;
   width: 100%;
   background-image: url('../images/work-bckgrnd.png');
   background-size: cover;
@@ -22,17 +22,49 @@
   top: 32%;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 85%;
+  width: 65vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
-.work-content img {
-  height: 10vw;
-  width: 10vw;
+.work-content-item {
+  position: relative;
+  height: calc(65vw / 4);
+  width: calc(65vw / 4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-content-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(65vw / 4);
+  height: calc(65vw / 4);
+  margin-bottom: -4px;
+  cursor: pointer;
+  z-index: 10;
+}
+.work-content-image-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(65vw / 4);
+  height: calc(65vw / 4);
+  margin-bottom: -4px;
+  cursor: pointer;
+}
+
+.work-content-overlay {
+  position: absolute;
+  height: calc(65vw / 4);
+  width: 0;
+  background-color: rgba(0,0,0,0.7);
 }
 
 @media screen and (max-device-width: 425px){

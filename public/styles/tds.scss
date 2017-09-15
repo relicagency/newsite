@@ -1,101 +1,102 @@
-.tds-main-container {
+.our-work-main-container {
   height: 623vh;
   width: 100%;
   background-color: #161616;
 }
 
-.tds-main-background {
+.our-work-main-background {
   position: absolute;
   top: 0;
   height: 151%;
   width: 100%;
 }
-.tds-background {
+.our-work-background {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url('../images/TDS-bckgrnd.jpg');
+  background-image: url('../images/tds-bckgrnd.jpg');
   background-repeat: no-repeat;
 }
 
-.tds-main-content {
+.our-work-main-content {
   position: absolute;
-  top: 311%;
+  top: 20vh;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   width: 85%;
 }
 
-.tds-content-title {
+.our-work-content-title {
   height: 17vh;
   display: flex;
   justify-content: center;
   font-size: 40px;
   color: white;
   letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
-.tds-top-bars {
+.our-work-top-bars {
   position: relative;
   height: 15px;
   width: 100%;
   display: flex;
 }
-.tds-top-bars-left {
+.our-work-top-bars-left {
   height: 100%;
   width: 25%;
   background-color: #BD9A35;
 }
-.tds-top-bars-right {
+.our-work-top-bars-right {
   height: 100%;
   width: 75%;
   background-color: #D0D0D0;
 }
 
-.tds-content-intro {
+.our-work-content-intro {
   position: relative;
   height: 30vh;
   width: 100%;
   background-color: white;
 }
-.tds-logo {
+.our-work-logo {
   height: 103px;
   position: absolute;
   top: 21%;
   right: 75%;
 }
-.tds-intro-text {
+.our-work-intro-text {
   top: 22%;
   position: absolute;
-  width: 600%;
+  width: 60%;
   left: 30%;
 }
 
-.tds-stats-container {
+.our-work-stats-container {
   position: relative;
   height: 50vh;
   width: 100%;
 }
-.tds-stats-underlay {
+.our-work-stats-underlay {
   position: absolute;
   height: 100%;
   width: 100%;
   background-color: black;
   opacity: 0.7;
 }
-.tds-stats-pic {
+.our-work-stats-pic {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -40%);
 }
 
-.tds-video-container {
+.our-work-video-container {
   position: relative;
   height: 70vh;
   width: 100%;
 }
-.tds-work-video {
+.our-work-work-video {
   position: absolute;
   top: 50%;
   height: 30vw;
@@ -103,7 +104,7 @@
   left: 50%;
   transform: translate(-50%, -58%);
 }
-.tds-work-video-play {
+.our-work-work-video-play {
   z-index: 1;
   position: absolute;
   top: 44%;
@@ -112,7 +113,7 @@
   height: 150px;
 }
 
-.tds-work-title {
+.our-work-work-title {
   position: relative;
   height: 12vh;
   background-color: white;
@@ -123,7 +124,7 @@
   font-size: 25px;
 }
 
-.tds-work-pics {
+.our-work-work-pics {
   position: relative;
   height: 80vh;
   display: flex;
@@ -132,10 +133,53 @@
   background-color: black;
   border-bottom: 2px solid #161616;
 }
-.tds-work-pic-title {
+.our-work-work-pic-title {
   position: absolute;
   top: 5%;
   left: 5%;
   font-size: 15px;
   color: #727272;
+}
+
+.work-newspaper {
+  width: 45%;
+}
+
+
+
+#ccbh-digital-container {
+  height: 160vh;
+  display: none;
+  flex-direction: column;
+}
+
+#beehive-webdesign-container {
+  display: none;
+  flex-direction: column;
+  height: 300vh;
+}
+
+#us-newspaper-container {
+  display: none;
+  flex-direction: row;
+}
+
+#rubys-newspaper-container {
+  display: none;
+  flex-direction: row;
+}
+
+#main-branding-container {
+    display: none;
+  flex-direction: column;
+  height: 510vh;
+}
+
+.us-newspaper {
+  margin-left: -11%;
+  margin-right: -11%;
+}
+.rubys-newspaper {
+  margin-left: -10%;
+  margin-right: -10%;
 }

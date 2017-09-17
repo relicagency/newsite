@@ -3,9 +3,9 @@
  */
 (function(){
     angular.module('app')
-        .controller('maxxsouthCtrl', function($scope, mainService){
+        .controller('moabCtrl', function($scope, mainService){
 
-            let backgroundPic = document.getElementById('maxxsouth-background');
+            let backgroundPic = document.getElementById('moab-background');
 
             window.onscroll = function() {
                 let offSet = window.pageYOffset,

@@ -1,0 +1,394 @@
+.wfront-main-container {
+  height: 623vh;
+  width: 100%;
+  background-color: #161616;
+}
+
+.wfront-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.wfront-main-content {
+  position: absolute;
+  top: 20vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 85%;
+}
+
+.wfront-content-title {
+  height: 17vh;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: 'Rogan-SemiBold', sans-serif;
+}
+
+.wfront-top-bars {
+  position: relative;
+  height: 15px;
+  width: 100%;
+  display: flex;
+}
+.wfront-top-bars-left {
+  height: 100%;
+  width: 25%;
+  background-color: #BD9A35;
+}
+.wfront-top-bars-right {
+  height: 100%;
+  width: 75%;
+  background-color: #D0D0D0;
+}
+
+.wfront-content-intro {
+  position: relative;
+  height: 23vh;
+  width: 100%;
+  background-color: white;
+}
+.wfront-logo {
+  height: 103px;
+  position: absolute;
+  top: 21%;
+  right: 75%;
+}
+.wfront-intro-text {
+  top: 50%;
+  position: absolute;
+  width: 65%;
+  left: 50%;
+  font-family: 'Rogan-Light', sans-serif;
+  font-size: 2vmin;
+  letter-spacing: 1px;
+  line-height: 32px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.wfront-stats-container {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+}
+.wfront-stats-underlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.7);
+}
+.wfront-stats-pic {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.wfront-work-title {
+  position: relative;
+  height: 12vh;
+  background-color: white;
+  color: #BD9A35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.wfront-work-pics {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.8);
+  border-bottom: 2px solid #161616;
+}
+.wfront-work-pic-title {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 2vmin;
+  color: #727272;
+}
+
+@media screen and (max-device-width: 1440px) {
+
+  .wfront-logo {
+    height: 8vmin;
+    position: absolute;
+    top: 21%;
+    right: 75%;
+  }
+
+  .wfront-content-intro {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    background-color: white;
+  }
+
+  .wfront-stats-container {
+    position: relative;
+    height: 71vh;
+    width: 100%;
+  }
+
+
+  .wfront-stats-pic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -51%);
+    width: 95%;
+  }
+
+  .wfront-work-image {
+    width: 75%;
+  }
+
+  .wfront-branding-image {
+    width: 65%;
+  }
+}
+
+//this is to get ipad pro under control
+@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+
+  .wfront-main-content {
+    position: absolute;
+    top: 8vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 85%;
+  }
+
+  .wfront-stats-pic {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 95%;
+  }
+
+  .wfront-content-title {
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+
+
+}
+
+@media screen and (max-device-width: 1024px) {
+
+  .wfront-main-container {
+    height: 513vh;
+    width: 100%;
+    background-color: #161616;
+  }
+
+  .wfront-main-content {
+    position: absolute;
+    top: 12vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 85%;
+  }
+
+  .wfront-stats-pic {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 95%;
+  }
+  .wfront-video-container {
+    position: relative;
+    height: 45vh;
+    width: 100%;
+  }
+  .wfront-work-pics {
+    position: relative;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.8);
+    border-bottom: 2px solid #161616;
+  }
+  .wfront-work-image {
+    width: 100%;
+  }
+  .wfront-branding-image {
+    width: 80%;
+  }
+  .wfront-work-image-digital {
+    width: 105%;
+  }
+  .wfront-work-image-brochure {
+    width: 105%;
+  }
+
+}
+
+
+@media screen and (max-device-width: 768px) {
+
+  .wfront-main-container {
+    height: 502vh;
+    width: 100%;
+    background-color: #161616;
+  }
+
+  .wfront-main-content {
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 85%;
+  }
+
+  .wfront-content-title {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  .wfront-content-intro {
+    position: relative;
+    height: 65vh;
+    width: 100%;
+    background-color: white;
+  }
+
+  .wfront-logo {
+    height: 11vmin;
+    position: absolute;
+    top: 12%;
+    right: 50%;
+    transform: translate(50%, 0);
+  }
+
+  .wfront-intro-text {
+    top: 40%;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    font-size: 3vmin;
+  }
+
+  .wfront-stats-container {
+    position: relative;
+    height: 32vh;
+    width: 100%;
+  }
+
+  .wfront-stats-pic {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 95%;
+  }
+
+  .wfront-video-container {
+    position: relative;
+    height: 28vh;
+    width: 100%;
+  }
+
+  .wfront-branding-image {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-device-width: 425px) {
+
+  .wfront-main-container {
+    height: 390vh;
+    width: 100%;
+    background-color: #161616;
+  }
+
+  .wfront-content-title {
+    font-size: 5vmin;
+  }
+
+  .wfront-content-intro {
+    position: relative;
+    height: 112vh;
+    width: 100%;
+    background-color: white;
+  }
+
+  .wfront-intro-text {
+    top: 6%;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    font-family: 'Rogan-Light', sans-serif;
+    font-size: 6vmin;
+    letter-spacing: 1px;
+    line-height: 32px;
+  }
+
+  .wfront-stats-pic {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 95%;
+  }
+
+  .wfront-work-pics {
+    position: relative;
+    height: 36vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    border-bottom: 2px solid #161616;
+  }
+
+  .wfront-branding-image {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-device-width: 320px) {
+
+  .wfront-content-intro {
+    position: relative;
+    height: 130vh;
+    width: 100%;
+    background-color: white;
+  }
+
+  .wfront-branding-image {
+    width: 80%;
+  }
+
+}

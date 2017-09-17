@@ -53,13 +53,69 @@
       controller: 'tdsCtrl',
       templateUrl: './components/tds/tds.html'
     }).state('garfield', {
-      url: "/work/garfield-county-tourism",
+      url: "/work/garfield",
       controller: 'garfieldCtrl',
       templateUrl: './components/garfield/garfield.html'
     }).state('tuacahn', {
-      url: "/work/tuacahn-amphitheater",
+      url: "/work/tuacahn",
       controller: 'tuacCtrl',
       templateUrl: './components/tuacahn/tuacahn.html'
+    }).state('uintah', {
+      url: "/work/uintah",
+      controller: 'uintahCtrl',
+      templateUrl: './components/uintah/uintah.html'
+    }).state('uvhba', {
+      url: "/work/uvhba",
+      controller: 'uvhbaCtrl',
+      templateUrl: './components/uvhba/uvhba.html'
+    }).state('maxxsouth', {
+      url: "/work/maxxsouth",
+      controller: "maxxsouthCtrl",
+      templateUrl: "./components/maxxsouth.html"
+    }).state('moab', {
+      url: "/work/moab",
+      controller: 'moabCtrl',
+      templateUrl: "./components/moab.html"
+    }).state('zerorez', {
+      url: "/work/zerorez",
+      controller: "zerorezCtrl",
+      templateUrl: "./components/zerorez.html"
+    }).state('workfront', {
+      url: "/work/workfront",
+      controller: "wfrontCtrl",
+      templateUrl: "./components/workfrontCtrl"
+    }).state('us', {
+      url: "/work/utah",
+      controller: "usCtrl",
+      templateUrl: "./components/us/us.html"
+    }).state('brio', {
+      url: "/work/brio",
+      controller: "brioCtrl",
+      templateUrl: "./components/brio/brio.html"
+    }).state('ccbh', {
+      url: "/work/ccbh",
+      controller: "ccbhCtrl",
+      templateUrl: "./components/ccbh/ccbh.html"
+    }).state('beehive', {
+      url: "/work/beehive",
+      controller: "beehiveCtrl",
+      templateUrl: "./components/beehive/beehive.html"
+    }).state('rubys', {
+      url: "/work/rubys",
+      controller: "rubysCtrl",
+      templateUrl: "./components/rubys/rubys.html"
+    }).state('creef', {
+      url: "/work/creef",
+      controller: "creefCtrl",
+      templateUrl: "./components/creef/creef.html"
+    }).state('b2scapes', {
+      url: "/work/b2scapes",
+      controller: "b2Ctrl",
+      templateUrl: "./components/b2scapes/b2scapes.html"
+    }).state('branding', {
+      url: "/work/branding",
+      controller: "brandingCtrl",
+      templateUrl: "./components/branding/branding.html"
     });
 
     $urlRouterProvider.otherwise('/home');
@@ -223,6 +279,101 @@
 'use strict';
 
 /**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('b2Ctrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('b2-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('beehiveCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('beehive-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('brandingCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('branding-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('brioCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('brio-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('ccbhCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('ccbh-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
+/**
  * Created by Seth on 8/14/2017.
  */
 (function () {
@@ -243,6 +394,25 @@
             mainService.contactRelic(contact).then(function (response) {
                 console.log(response);
             });
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('creefCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('creef-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
         };
     });
 })();
@@ -336,7 +506,44 @@
         };
     });
 })();
-"use strict";
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('maxxsouthCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('maxxsouth-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('moabCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('moab-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
 'use strict';
 
 /**
@@ -371,6 +578,25 @@
             }
 
             lastRoute = num;
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('rubysCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('rubys-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
         };
     });
 })();
@@ -664,7 +890,44 @@
         };
     });
 })();
-"use strict";
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('usCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('us-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('uvhbaCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('uvhba-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
 'use strict';
 
 /**
@@ -694,6 +957,44 @@
                                     });
                         };
             });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('wfrontCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('wfront-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+    angular.module('app').controller('zerorezCtrl', function ($scope, mainService) {
+
+        var backgroundPic = document.getElementById('zerorez-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
 })();
 'use strict';
 

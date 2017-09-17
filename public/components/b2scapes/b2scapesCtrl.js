@@ -3,9 +3,9 @@
  */
 (function(){
     angular.module('app')
-        .controller('maxxsouthCtrl', function($scope, mainService){
+        .controller('b2Ctrl', function($scope, mainService){
 
-            let backgroundPic = document.getElementById('maxxsouth-background');
+            let backgroundPic = document.getElementById('b2-background');
 
             window.onscroll = function() {
                 let offSet = window.pageYOffset,

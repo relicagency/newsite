@@ -67,14 +67,84 @@
             templateUrl: './components/tds/tds.html'
         })
         .state('garfield', {
-          url: "/work/garfield-county-tourism",
+          url: "/work/garfield",
           controller: 'garfieldCtrl',
             templateUrl: './components/garfield/garfield.html'
         })
         .state('tuacahn', {
-          url: "/work/tuacahn-amphitheater",
+          url: "/work/tuacahn",
             controller: 'tuacCtrl',
             templateUrl: './components/tuacahn/tuacahn.html'
+        })
+        .state('uintah', {
+          url: "/work/uintah",
+            controller: 'uintahCtrl',
+            templateUrl: './components/uintah/uintah.html'
+        })
+        .state('uvhba', {
+          url: "/work/uvhba",
+            controller: 'uvhbaCtrl',
+            templateUrl: './components/uvhba/uvhba.html'
+        })
+        .state('maxxsouth', {
+          url: "/work/maxxsouth",
+            controller: "maxxsouthCtrl",
+            templateUrl: "./components/maxxsouth.html"
+        })
+        .state('moab', {
+          url: "/work/moab",
+            controller: 'moabCtrl',
+            templateUrl: "./components/moab.html"
+        })
+        .state('zerorez', {
+          url: "/work/zerorez",
+            controller: "zerorezCtrl",
+            templateUrl: "./components/zerorez.html"
+        })
+        .state('workfront', {
+          url: "/work/workfront",
+            controller: "wfrontCtrl",
+            templateUrl: "./components/workfrontCtrl"
+        })
+        .state('us', {
+          url: "/work/utah",
+            controller: "usCtrl",
+            templateUrl: "./components/us/us.html"
+        })
+        .state('brio', {
+          url: "/work/brio",
+            controller: "brioCtrl",
+            templateUrl: "./components/brio/brio.html"
+        })
+        .state('ccbh', {
+          url: "/work/ccbh",
+            controller: "ccbhCtrl",
+            templateUrl: "./components/ccbh/ccbh.html"
+        })
+        .state('beehive', {
+          url: "/work/beehive",
+            controller: "beehiveCtrl",
+            templateUrl: "./components/beehive/beehive.html"
+        })
+        .state('rubys', {
+          url: "/work/rubys",
+            controller: "rubysCtrl",
+            templateUrl: "./components/rubys/rubys.html"
+        })
+        .state('creef', {
+          url: "/work/creef",
+            controller: "creefCtrl",
+            templateUrl: "./components/creef/creef.html"
+        })
+        .state('b2scapes', {
+          url: "/work/b2scapes",
+            controller: "b2Ctrl",
+            templateUrl: "./components/b2scapes/b2scapes.html"
+        })
+        .state('branding', {
+          url: "/work/branding",
+            controller: "brandingCtrl",
+            templateUrl: "./components/branding/branding.html"
         });
     
     $urlRouterProvider

@@ -89,22 +89,22 @@
         .state('maxxsouth', {
           url: "/work/maxxsouth",
             controller: "maxxsouthCtrl",
-            templateUrl: "./components/maxxsouth.html"
+            templateUrl: "./components/maxxsouth/maxxsouth.html"
         })
         .state('moab', {
           url: "/work/moab",
             controller: 'moabCtrl',
-            templateUrl: "./components/moab.html"
+            templateUrl: "./components/moab/moab.html"
         })
         .state('zerorez', {
           url: "/work/zerorez",
             controller: "zerorezCtrl",
-            templateUrl: "./components/zerorez.html"
+            templateUrl: "./components/zerorez/zerorez.html"
         })
         .state('workfront', {
           url: "/work/workfront",
             controller: "wfrontCtrl",
-            templateUrl: "./components/workfrontCtrl"
+            templateUrl: "./components/workfront/workfront.html"
         })
         .state('us', {
           url: "/work/utah",

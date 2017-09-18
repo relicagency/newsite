@@ -5649,7 +5649,7 @@ table {
 
 .tds-stats-container {
   position: relative;
-  height: 50vh;
+  height: 60vh;
   width: 100%; }
 
 .tds-stats-underlay {
@@ -5663,12 +5663,12 @@ table {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -40%); }
+  transform: translate(-50%, -45%); }
 
 .tds-video-container {
   position: relative;
   height: 70vh;
-  width: 100%; }
+  width: 105%; }
 
 .tds-work-video {
   position: absolute;
@@ -5705,6 +5705,10 @@ table {
   color: #727272; }
 
 @media screen and (max-device-width: 1440px) {
+  .tds-main-container {
+    height: 643vh;
+    width: 100%;
+    background-color: #161616; }
   .tds-logo {
     height: 8vmin;
     position: absolute;
@@ -5715,12 +5719,18 @@ table {
     height: 40vh;
     width: 100%;
     background-color: white; }
+  .tds-stats-container {
+    position: relative;
+    height: 80vh;
+    width: 100%; }
   .tds-stats-pic {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
-    width: 115%; } }
+    transform: translate(-50%, -45%);
+    width: 115%; }
+  .tds-work-image {
+    width: 75%; } }
 
 @media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
   .tds-main-content {
@@ -5846,6 +5856,10 @@ table {
     border-bottom: 2px solid #161616; } }
 
 @media screen and (max-device-width: 320px) {
+  .tds-main-container {
+    height: 425vh;
+    width: 100%;
+    background-color: #161616; }
   .tds-content-intro {
     position: relative;
     height: 130vh;

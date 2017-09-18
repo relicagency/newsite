@@ -62,7 +62,7 @@
             templateUrl: './components/work/work.html'
         })
         .state('tds', {
-          url: '/work/tds-telecom',
+          url: '/work/tds',
             controller: 'tdsCtrl',
             templateUrl: './components/tds/tds.html'
         })

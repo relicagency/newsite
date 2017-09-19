@@ -1373,7 +1373,7 @@
     width: 100%;
     background-color: #161616; }
   .brio-content-title {
-    font-size: 5vmin; }
+    font-size: 7vmin; }
   .brio-content-intro {
     position: relative;
     height: 112vh;
@@ -1660,7 +1660,9 @@
     width: 100%;
     background-color: #161616; }
   .ccbh-content-title {
-    font-size: 5vmin; }
+    font-size: 7vmin;
+    letter-spacing: 2px;
+    width: 102%; }
   .ccbh-content-intro {
     position: relative;
     height: 112vh;

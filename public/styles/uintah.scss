@@ -32,18 +32,8 @@
 
 .uintah-top-bars {
   position: relative;
-  height: 15px;
+  height: 2vmin;
   width: 100%;
-  display: flex;
-}
-.uintah-top-bars-left {
-  height: 100%;
-  width: 25%;
-  background-color: #BD9A35;
-}
-.uintah-top-bars-right {
-  height: 100%;
-  width: 75%;
   background-color: #D0D0D0;
 }
 
@@ -325,13 +315,27 @@
 @media screen and (max-device-width: 425px) {
 
   .uintah-main-container {
-    height: 390vh;
+    height: 220vh;
     width: 100%;
     background-color: #161616;
   }
 
+  .uintah-top-bars {
+    position: relative;
+    height: 5vmin;
+    width: 100%;
+    background-color: #D0D0D0;
+  }
+
   .uintah-content-title {
     font-size: 5vmin;
+  }
+
+  .vern-al-storybook {
+    width: 85%;
+  }
+  .uintah-illustration {
+    width: 80%;
   }
 
   .uintah-content-intro {

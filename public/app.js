@@ -107,7 +107,7 @@
             templateUrl: "./components/workfront/workfront.html"
         })
         .state('us', {
-          url: "/work/utah",
+          url: "/work/us",
             controller: "usCtrl",
             templateUrl: "./components/us/us.html"
         })

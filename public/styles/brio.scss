@@ -30,23 +30,6 @@
   font-family: 'Rogan-SemiBold', sans-serif;
 }
 
-.brio-top-bars {
-  position: relative;
-  height: 15px;
-  width: 100%;
-  display: flex;
-}
-.brio-top-bars-left {
-  height: 100%;
-  width: 25%;
-  background-color: #BD9A35;
-}
-.brio-top-bars-right {
-  height: 100%;
-  width: 75%;
-  background-color: #D0D0D0;
-}
-
 .brio-content-intro {
   position: relative;
   height: 23vh;
@@ -325,7 +308,7 @@
 @media screen and (max-device-width: 425px) {
 
   .brio-main-container {
-    height: 390vh;
+    height: 256vh;
     width: 100%;
     background-color: #161616;
   }
@@ -370,6 +353,10 @@
     align-items: center;
     background-color: rgba(0,0,0,0.8);
     border-bottom: 2px solid #161616;
+  }
+
+  .brio-branding {
+    width: 80%;
   }
 
   .brio-branding-image {

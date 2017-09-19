@@ -31,18 +31,8 @@
 
 .tds-top-bars {
   position: relative;
-  height: 15px;
+  height: 2vmin;
   width: 100%;
-  display: flex;
-}
-.tds-top-bars-left {
-  height: 100%;
-  width: 25%;
-  background-color: #BD9A35;
-}
-.tds-top-bars-right {
-  height: 100%;
-  width: 75%;
   background-color: #D0D0D0;
 }
 
@@ -127,7 +117,7 @@
   position: absolute;
   top: 5%;
   left: 5%;
-  font-size: 2vmin;
+  font-size: 3vmin;
   color: #727272;
 }
 
@@ -313,17 +303,17 @@
   .tds-logo {
     height: 11vmin;
     position: absolute;
-    top: 3%;
+    top: 10%;
     right: 50%;
-    transform: translate(50%, 0);
+    transform: translate(50%, -90%);
   }
 
   .tds-intro-text {
-    top: 9%;
+    top: 50%;
     position: absolute;
     width: 80%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     text-align: center;
     font-family: 'Rogan-Light', sans-serif;
     font-size: 6vmin;
@@ -346,6 +336,28 @@
 
 @media screen and (max-device-width: 320px) {
 
+  .tds-logo {
+    height: 11vmin;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    transform: translate(50%, -120%);
+  }
+
+  .tds-intro-text {
+    top: 53%;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Rogan-Light', sans-serif;
+    font-size: 6vmin;
+    letter-spacing: 1px;
+    line-height: 32px;
+  }
+
+
   .tds-main-container {
     height: 425vh;
     width: 100%;
@@ -357,6 +369,10 @@
     height: 130vh;
     width: 100%;
     background-color: white;
+  }
+
+  .tds-work-pic-title {
+    font-size: 3vmin;
   }
 
 }

@@ -32,18 +32,8 @@
 
 .garfield-top-bars {
   position: relative;
-  height: 15px;
+  height: 5vmin;
   width: 100%;
-  display: flex;
-}
-.garfield-top-bars-left {
-  height: 100%;
-  width: 25%;
-  background-color: #BD9A35;
-}
-.garfield-top-bars-right {
-  height: 100%;
-  width: 75%;
   background-color: #D0D0D0;
 }
 
@@ -115,7 +105,7 @@
   position: absolute;
   top: 5%;
   left: 5%;
-  font-size: 2vmin;
+  font-size: 3vmin;
   color: #727272;
 }
 
@@ -322,7 +312,9 @@
   }
 
   .garfield-content-title {
-    font-size: 5vmin;
+    font-size: 7vmin;
+    text-align: center;
+    height: 28vmin;
   }
 
   .garfield-content-intro {
@@ -333,11 +325,11 @@
   }
 
   .garfield-intro-text {
-    top: 6%;
+    top: 50%;
     position: absolute;
     width: 80%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     text-align: center;
     font-family: 'Rogan-Light', sans-serif;
     font-size: 6vmin;
@@ -373,7 +365,7 @@
 
   .garfield-content-intro {
     position: relative;
-    height: 130vh;
+    height: 115vh;
     width: 100%;
     background-color: white;
   }

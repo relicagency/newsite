@@ -492,7 +492,7 @@
     width: 100%;
     background-color: #161616; }
   .b2-content-title {
-    font-size: 5vmin; }
+    font-size: 7vmin; }
   .b2-content-intro {
     position: relative;
     height: 112vh;
@@ -793,7 +793,7 @@
     width: 100%;
     background-color: #161616; }
   .beehive-content-title {
-    font-size: 5vmin; }
+    font-size: 7vmin; }
   .beehive-content-intro {
     position: relative;
     height: 112vh;
@@ -1088,7 +1088,7 @@
     width: 100%;
     background-color: #161616; }
   .branding-content-title {
-    font-size: 5vmin; }
+    font-size: 7vmin; }
   .branding-content-intro {
     position: relative;
     height: 112vh;
@@ -1373,7 +1373,8 @@
     width: 100%;
     background-color: #161616; }
   .brio-content-title {
-    font-size: 7vmin; }
+    font-size: 7vmin;
+    letter-spacing: 2px; }
   .brio-content-intro {
     position: relative;
     height: 112vh;
@@ -2181,7 +2182,7 @@
     width: 100%;
     background-color: #161616; }
   .creef-content-title {
-    font-size: 5vmin; }
+    font-size: 7vmin; }
   .creef-content-intro {
     position: relative;
     height: 112vh;
@@ -3026,6 +3027,7 @@
     background-color: #161616; }
   .garfield-content-title {
     font-size: 7vmin;
+    letter-spacing: 2px;
     text-align: center;
     height: 28vmin; }
   .garfield-content-intro {
@@ -4088,7 +4090,9 @@
     width: 100%;
     background-color: #161616; }
   .maxxsouth-content-title {
-    font-size: 5vmin; }
+    font-size: 7vmin;
+    letter-spacing: 2px;
+    text-align: center; }
   .maxxsouth-content-intro {
     position: relative;
     height: 112vh;
@@ -5247,7 +5251,7 @@ table {
     width: 100%;
     background-color: #161616; }
   .rubys-content-title {
-    font-size: 5vmin; }
+    font-size: 7vmin; }
   .rubys-content-intro {
     position: relative;
     height: 112vh;
@@ -6700,7 +6704,8 @@ h2 {
   .tuac-top-bars {
     height: 5vmin; }
   .tuac-content-title {
-    font-size: 5vmin; }
+    font-size: 7vmin;
+    letter-spacing: 2px; }
   .tuac-content-intro {
     position: relative;
     height: 100vh;
@@ -6996,7 +7001,9 @@ h2 {
     width: 100%;
     background-color: #D0D0D0; }
   .uintah-content-title {
-    font-size: 5vmin; }
+    font-size: 7vmin;
+    letter-spacing: 2px;
+    text-align: center; }
   .vern-al-storybook {
     width: 85%; }
   .uintah-illustration {
@@ -7069,7 +7076,7 @@ div {
 @media screen and (max-device-width: 425px) {
   .page-title {
     font-family: 'Rogan-SemiBold', sans-serif;
-    font-size: 8vmin;
+    font-size: 7vmin;
     letter-spacing: 2px; } }
 
 .us-main-container {
@@ -7331,6 +7338,7 @@ div {
     background-color: #161616; }
   .us-content-title {
     font-size: 7vmin;
+    letter-spacing: 2px;
     text-align: center; }
   .us-content-intro {
     position: relative;
@@ -7632,8 +7640,9 @@ div {
     width: 100%;
     background-color: #161616; }
   .uvhba-content-title {
-    font-size: 5vmin;
-    text-align: center; }
+    font-size: 7vmin;
+    text-align: center;
+    letter-spacing: 2px; }
   .uvhba-content-intro {
     position: relative;
     height: 112vh;
@@ -8054,7 +8063,8 @@ div {
     width: 100%;
     background-color: #161616; }
   .wfront-content-title {
-    font-size: 5vmin; }
+    font-size: 7vmin;
+    letter-spacing: 2px; }
   .wfront-content-intro {
     position: relative;
     height: 112vh;
@@ -8355,7 +8365,8 @@ div {
     width: 100%;
     background-color: #161616; }
   .zerorez-content-title {
-    font-size: 5vmin; }
+    font-size: 7vmin;
+    letter-spacing: 2px; }
   .zerorez-content-intro {
     position: relative;
     height: 112vh;

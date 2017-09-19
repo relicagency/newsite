@@ -50,3 +50,9 @@ h2 {
     font-size: 70px;
   }
 }
+
+@media screen  and (max-device-width: 425px){
+  .massive-text {
+    font-size: 25vmin;
+  }
+}

@@ -6731,7 +6731,7 @@ h2 {
 @media screen and (max-device-width: 320px) {
   .tuac-content-intro {
     position: relative;
-    height: 115vh;
+    height: 125vh;
     width: 100%;
     background-color: white; }
   .tuac-branding-image {
@@ -7031,7 +7031,7 @@ h2 {
 @media screen and (max-device-width: 320px) {
   .uintah-content-intro {
     position: relative;
-    height: 130vh;
+    height: 140vh;
     width: 100%;
     background-color: white; }
   .uintah-branding-image {

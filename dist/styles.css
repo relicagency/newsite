@@ -488,7 +488,7 @@
 
 @media screen and (max-device-width: 425px) {
   .b2-main-container {
-    height: 390vh;
+    height: 111vh;
     width: 100%;
     background-color: #161616; }
   .b2-content-title {
@@ -789,7 +789,7 @@
 
 @media screen and (max-device-width: 425px) {
   .beehive-main-container {
-    height: 390vh;
+    height: 275vh;
     width: 100%;
     background-color: #161616; }
   .beehive-content-title {
@@ -1025,13 +1025,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     border-bottom: 2px solid #161616; }
   .branding-work-image {
-    width: 100%; }
-  .branding-branding-image {
-    width: 80%; }
-  .branding-work-image-digital {
-    width: 105%; }
-  .branding-work-image-brochure {
-    width: 105%; } }
+    width: 100%; } }
 
 @media screen and (max-device-width: 768px) {
   .branding-main-container {
@@ -1085,12 +1079,12 @@
     position: relative;
     height: 28vh;
     width: 100%; }
-  .branding-branding-image {
+  .branding-work-image {
     width: 80%; } }
 
 @media screen and (max-device-width: 425px) {
   .branding-main-container {
-    height: 390vh;
+    height: 292vh;
     width: 100%;
     background-color: #161616; }
   .branding-content-title {
@@ -1125,7 +1119,7 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.8);
     border-bottom: 2px solid #161616; }
-  .branding-branding-image {
+  .branding-work-image {
     width: 80%; } }
 
 @media screen and (max-device-width: 320px) {
@@ -1134,7 +1128,7 @@
     height: 130vh;
     width: 100%;
     background-color: white; }
-  .branding-branding-image {
+  .branding-work-image {
     width: 80%; } }
 
 .brio-main-container {
@@ -1452,22 +1446,6 @@
   text-transform: uppercase;
   font-family: 'Rogan-SemiBold', sans-serif; }
 
-.ccbh-top-bars {
-  position: relative;
-  height: 15px;
-  width: 100%;
-  display: flex; }
-
-.ccbh-top-bars-left {
-  height: 100%;
-  width: 25%;
-  background-color: #BD9A35; }
-
-.ccbh-top-bars-right {
-  height: 100%;
-  width: 75%;
-  background-color: #D0D0D0; }
-
 .ccbh-content-intro {
   position: relative;
   height: 23vh;
@@ -1678,7 +1656,7 @@
 
 @media screen and (max-device-width: 425px) {
   .ccbh-main-container {
-    height: 390vh;
+    height: 111vh;
     width: 100%;
     background-color: #161616; }
   .ccbh-content-title {
@@ -2004,22 +1982,6 @@
   text-transform: uppercase;
   font-family: 'Rogan-SemiBold', sans-serif; }
 
-.creef-top-bars {
-  position: relative;
-  height: 15px;
-  width: 100%;
-  display: flex; }
-
-.creef-top-bars-left {
-  height: 100%;
-  width: 25%;
-  background-color: #BD9A35; }
-
-.creef-top-bars-right {
-  height: 100%;
-  width: 75%;
-  background-color: #D0D0D0; }
-
 .creef-content-intro {
   position: relative;
   height: 23vh;
@@ -2043,23 +2005,6 @@
   line-height: 32px;
   transform: translate(-50%, -50%);
   text-align: center; }
-
-.creef-stats-container {
-  position: relative;
-  height: 50vh;
-  width: 100%; }
-
-.creef-stats-underlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7); }
-
-.creef-stats-pic {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -40%); }
 
 .creef-work-title {
   position: relative;
@@ -2230,7 +2175,7 @@
 
 @media screen and (max-device-width: 425px) {
   .creef-main-container {
-    height: 390vh;
+    height: 111vh;
     width: 100%;
     background-color: #161616; }
   .creef-content-title {
@@ -5292,7 +5237,7 @@ table {
 
 @media screen and (max-device-width: 425px) {
   .rubys-main-container {
-    height: 390vh;
+    height: 148vh;
     width: 100%;
     background-color: #161616; }
   .rubys-content-title {

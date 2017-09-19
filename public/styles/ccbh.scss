@@ -30,23 +30,6 @@
   font-family: 'Rogan-SemiBold', sans-serif;
 }
 
-.ccbh-top-bars {
-  position: relative;
-  height: 15px;
-  width: 100%;
-  display: flex;
-}
-.ccbh-top-bars-left {
-  height: 100%;
-  width: 25%;
-  background-color: #BD9A35;
-}
-.ccbh-top-bars-right {
-  height: 100%;
-  width: 75%;
-  background-color: #D0D0D0;
-}
-
 .ccbh-content-intro {
   position: relative;
   height: 23vh;
@@ -325,7 +308,7 @@
 @media screen and (max-device-width: 425px) {
 
   .ccbh-main-container {
-    height: 390vh;
+    height: 111vh;
     width: 100%;
     background-color: #161616;
   }

@@ -30,23 +30,6 @@
   font-family: 'Rogan-SemiBold', sans-serif;
 }
 
-.creef-top-bars {
-  position: relative;
-  height: 15px;
-  width: 100%;
-  display: flex;
-}
-.creef-top-bars-left {
-  height: 100%;
-  width: 25%;
-  background-color: #BD9A35;
-}
-.creef-top-bars-right {
-  height: 100%;
-  width: 75%;
-  background-color: #D0D0D0;
-}
-
 .creef-content-intro {
   position: relative;
   height: 23vh;
@@ -72,24 +55,6 @@
   text-align: center;
 }
 
-
-.creef-stats-container {
-  position: relative;
-  height: 50vh;
-  width: 100%;
-}
-.creef-stats-underlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0,0,0, 0.7);
-}
-.creef-stats-pic {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -40%);
-}
 
 .creef-work-title {
   position: relative;
@@ -118,6 +83,8 @@
   font-size: 2vmin;
   color: #727272;
 }
+
+
 
 @media screen and (max-device-width: 1440px) {
 
@@ -325,7 +292,7 @@
 @media screen and (max-device-width: 425px) {
 
   .creef-main-container {
-    height: 390vh;
+    height: 111vh;
     width: 100%;
     background-color: #161616;
   }

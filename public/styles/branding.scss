@@ -232,15 +232,6 @@
   .branding-work-image {
     width: 100%;
   }
-  .branding-branding-image {
-    width: 80%;
-  }
-  .branding-work-image-digital {
-    width: 105%;
-  }
-  .branding-work-image-brochure {
-    width: 105%;
-  }
 
 }
 
@@ -316,7 +307,7 @@
     width: 100%;
   }
 
-  .branding-branding-image {
+  .branding-work-image {
     width: 80%;
   }
 
@@ -325,7 +316,7 @@
 @media screen and (max-device-width: 425px) {
 
   .branding-main-container {
-    height: 390vh;
+    height: 292vh;
     width: 100%;
     background-color: #161616;
   }
@@ -372,7 +363,7 @@
     border-bottom: 2px solid #161616;
   }
 
-  .branding-branding-image {
+  .branding-work-image {
     width: 80%;
   }
 
@@ -387,7 +378,7 @@
     background-color: white;
   }
 
-  .branding-branding-image {
+  .branding-work-image {
     width: 80%;
   }
 

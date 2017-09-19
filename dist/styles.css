@@ -4127,7 +4127,11 @@
     width: 100%;
     background-color: white; }
   .maxxsouth-branding-image {
-    width: 80%; } }
+    width: 80%; }
+  .maxxsouth-work-image-digital {
+    width: 90%; }
+  .maxxsouth-work-image-brochure {
+    width: 85%; } }
 
 .moab-main-container {
   height: 623vh;

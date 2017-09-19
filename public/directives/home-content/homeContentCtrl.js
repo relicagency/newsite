@@ -23,7 +23,7 @@
                     console.log('Yo!');
 
                     TweenMax.to(swnContainer, 0.15, {
-                        height: "260vh"
+                        height: "270vh"
                     });
                     TweenMax.to(swnTopContainer, 0.15, {
                         height: "10%"

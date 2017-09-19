@@ -5,7 +5,8 @@
   "main": "./server/index.js",
   "scripts": {
     "start": "nodemon server/index.js",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "update": "git add . git commit -m 'pulling from master' git pull git push heroku master"
   },
   "repository": {
     "type": "git",

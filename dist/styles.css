@@ -3062,7 +3062,7 @@
 @media screen and (max-device-width: 320px) {
   .garfield-content-intro {
     position: relative;
-    height: 115vh;
+    height: 125vh;
     width: 100%;
     background-color: white; }
   .garfield-branding-image {

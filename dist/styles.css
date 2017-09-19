@@ -7328,7 +7328,8 @@ div {
     width: 100%;
     background-color: #161616; }
   .us-content-title {
-    font-size: 5vmin; }
+    font-size: 7vmin;
+    text-align: center; }
   .us-content-intro {
     position: relative;
     height: 112vh;

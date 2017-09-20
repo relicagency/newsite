@@ -5,6 +5,8 @@
     angular.module('app')
         .controller('brandingCtrl', function($scope, mainService){
 
+            $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
             let backgroundPic = document.getElementById('branding-background');
 
             window.onscroll = function() {

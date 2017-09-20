@@ -5,6 +5,8 @@
     angular.module('app')
         .controller('moabCtrl', function($scope, mainService){
 
+            $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
             let backgroundPic = document.getElementById('moab-background');
 
             window.onscroll = function() {

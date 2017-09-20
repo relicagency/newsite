@@ -6,19 +6,11 @@
   flex-direction: column;
 }
 
-.tourism-main-background {
+.tourism-background {
   position: absolute;
   top: 0;
   left: 0;
-  height: 146%;
   width: 100%;
-}
-.tourism-background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url('../images/tourism-bckgrnd.jpg');
-  background-size: cover;
 }
 
 .tourism-main-backfill {

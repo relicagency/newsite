@@ -6,19 +6,12 @@
   flex-direction: column;
 }
 
-.demandgen-main-background {
-  position: absolute;
-  height: 150%;
-  width: 100%;
-  background-color: #161616;
-  overflow: hidden;
-}
+
 .demandgen-background {
   position: absolute;
-  height: 100%;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-image: url('../images/tech-bckgrnd.jpg');
-  background-size: cover;
 }
 
 .demandgen-main-backfill {

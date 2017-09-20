@@ -5,6 +5,8 @@
     angular.module('app')
         .controller('usCtrl', function($scope, mainService){
 
+            $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
             let backgroundPic = document.getElementById('us-background');
 
             window.onscroll = function() {

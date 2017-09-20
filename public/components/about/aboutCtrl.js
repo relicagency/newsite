@@ -3,6 +3,10 @@
  */
 (function(){
     angular.module('app').controller('aboutCtrl', function($scope, mainService){
+
+
+        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
         $scope.aboutRouterTitle = "Leadership";
 
         let lastLeader = '',

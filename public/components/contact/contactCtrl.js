@@ -4,6 +4,8 @@
 (function(){
     angular.module('app').controller('contactCtrl', function($scope, mainService){
 
+        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
         let backgroundPic = document.getElementById('contact-background');
 
         window.onscroll = function() {

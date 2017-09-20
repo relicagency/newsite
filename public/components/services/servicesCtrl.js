@@ -4,6 +4,8 @@
 (function(){
     angular.module('app').controller('servicesCtrl', function($scope, $location, $anchorScroll, mainService){
 
+        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
         $scope.scrollTo = function(id) {
             $location.hash(id);
             $anchorScroll();

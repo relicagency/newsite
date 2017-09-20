@@ -180,6 +180,8 @@
                 return response;
             });
         };
+
+        this.backgrounds = ["../../images/work-backgrounds/relic1.jpg", "../../images/work-backgrounds/relic2.jpg", "../../images/work-backgrounds/relic3.jpg", "../../images/work-backgrounds/relic4.jpg", "../../images/work-backgrounds/relic5.jpg", "../../images/work-backgrounds/relic6.jpg", "../../images/work-backgrounds/relic7.jpg", "../../images/work-backgrounds/relic8.jpg", "../../images/work-backgrounds/relic9.jpg", "../../images/work-backgrounds/relic10.jpg", "../../images/work-backgrounds/relic11.jpg"];
     });
 })();
 'use strict';
@@ -189,6 +191,9 @@
  */
 (function () {
     angular.module('app').controller('aboutCtrl', function ($scope, mainService) {
+
+        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
         $scope.aboutRouterTitle = "Leadership";
 
         var lastLeader = '',
@@ -282,18 +287,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('b2Ctrl', function ($scope, mainService) {
+            angular.module('app').controller('b2Ctrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('b2-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('b2-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -301,18 +308,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('beehiveCtrl', function ($scope, mainService) {
+            angular.module('app').controller('beehiveCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('beehive-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('beehive-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -320,18 +329,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('brandingCtrl', function ($scope, mainService) {
+            angular.module('app').controller('brandingCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('branding-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('branding-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -339,18 +350,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('brioCtrl', function ($scope, mainService) {
+            angular.module('app').controller('brioCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('brio-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('brio-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -358,18 +371,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('ccbhCtrl', function ($scope, mainService) {
+            angular.module('app').controller('ccbhCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('ccbh-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('ccbh-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -378,6 +393,8 @@
  */
 (function () {
     angular.module('app').controller('contactCtrl', function ($scope, mainService) {
+
+        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
         var backgroundPic = document.getElementById('contact-background');
 
@@ -403,18 +420,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('creefCtrl', function ($scope, mainService) {
+            angular.module('app').controller('creefCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('creef-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('creef-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -422,30 +441,34 @@
  * Created by Seth on 8/22/2017.
  */
 (function () {
-    angular.module('app').controller('demandgenCtrl', function ($scope, mainService) {
+            angular.module('app').controller('demandgenCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('demandgen-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.5050505050505050;
+                        var backgroundPic = document.getElementById('demandgen-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.5050505050505050;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
 (function () {
-  angular.module('app').controller('expertiseCtrl', function ($scope, mainService) {
+      angular.module('app').controller('expertiseCtrl', function ($scope, mainService) {
 
-    window.onscroll = function () {
-      var offSet = window.pageYOffset;
+            $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-      mainService.navBackground(offSet);
-    };
-  });
+            window.onscroll = function () {
+                  var offSet = window.pageYOffset;
+
+                  mainService.navBackground(offSet);
+            };
+      });
 })();
 'use strict';
 
@@ -453,18 +476,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('garfieldCtrl', function ($scope, mainService) {
+            angular.module('app').controller('garfieldCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('garfield-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('garfield-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -514,18 +539,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('maxxsouthCtrl', function ($scope, mainService) {
+            angular.module('app').controller('maxxsouthCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('maxxsouth-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('maxxsouth-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -533,18 +560,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('moabCtrl', function ($scope, mainService) {
+            angular.module('app').controller('moabCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('moab-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('moab-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -553,6 +582,8 @@
  */
 (function () {
     angular.module('app').controller('newsroomCtrl', function ($scope, mainService) {
+
+        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
         var backgroundPic = document.getElementById('newsroom-background');
 
@@ -589,18 +620,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('rubysCtrl', function ($scope, mainService) {
+            angular.module('app').controller('rubysCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('rubys-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('rubys-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -609,6 +642,8 @@
  */
 (function () {
     angular.module('app').controller('servicesCtrl', function ($scope, $location, $anchorScroll, mainService) {
+
+        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
         $scope.scrollTo = function (id) {
             $location.hash(id);
@@ -793,18 +828,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
+            angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('tds-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('tds-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -812,18 +849,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('techCtrl', function ($scope, mainService) {
+            angular.module('app').controller('techCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('tech-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('tech-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -831,18 +870,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('telecomCtrl', function ($scope, mainService) {
+            angular.module('app').controller('telecomCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('telecom-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('telecom-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -850,18 +891,20 @@
  * Created by Seth on 8/17/2017.
  */
 (function () {
-    angular.module('app').controller('tourismCtrl', function ($scope, mainService) {
+            angular.module('app').controller('tourismCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('tourism-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('tourism-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -869,18 +912,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('tuacCtrl', function ($scope, mainService) {
+            angular.module('app').controller('tuacCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('tuac-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('tuac-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -888,18 +933,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('uintahCtrl', function ($scope, mainService) {
+            angular.module('app').controller('uintahCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('uintah-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('uintah-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -907,18 +954,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('usCtrl', function ($scope, mainService) {
+            angular.module('app').controller('usCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('us-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('us-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -926,18 +975,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('uvhbaCtrl', function ($scope, mainService) {
+            angular.module('app').controller('uvhbaCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('uvhba-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('uvhba-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -946,6 +997,8 @@
  */
 (function () {
             angular.module('app').controller('workCtrl', function ($scope, mainService) {
+
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
                         window.onscroll = function () {
                                     var offSet = window.pageYOffset;
@@ -975,18 +1028,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('wfrontCtrl', function ($scope, mainService) {
+            angular.module('app').controller('wfrontCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('wfront-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('wfront-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 
@@ -994,18 +1049,20 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-    angular.module('app').controller('zerorezCtrl', function ($scope, mainService) {
+            angular.module('app').controller('zerorezCtrl', function ($scope, mainService) {
 
-        var backgroundPic = document.getElementById('zerorez-background');
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
+                        var backgroundPic = document.getElementById('zerorez-background');
 
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-    });
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 

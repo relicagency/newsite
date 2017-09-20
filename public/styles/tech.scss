@@ -5,17 +5,12 @@
   display: flex;
   flex-direction: column;
 }
-.tech-main-background {
-  position: relative;
-  height: 69%;
-  width: 100%;
-}
+
 .tech-background {
   position: absolute;
-  height: 100%;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-image: url('../images/tech-bckgrnd.jpg');
-  background-size: cover;
 }
 
 .tech-main-backfill {

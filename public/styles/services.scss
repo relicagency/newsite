@@ -8,20 +8,12 @@
   flex-direction: column;
 }
 
-.services-main-background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 200vh;
-  width: 100%;
-}
+
 .services-background {
   position: absolute;
-  height: 100%;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-image: url('./images/services-bckgrnd.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .services-main-background-gradient {

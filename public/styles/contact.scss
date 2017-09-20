@@ -9,21 +9,11 @@
   align-items: center;
 }
 
-.contact-main-background {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 150%;
-  overflow: hidden;
-}
 .contact-background {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url('./images/contact-bckgrnd.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 0;
+  top: 0;
+  left: 0;
+ width: 100%;
 }
 
 .contact-main-content {

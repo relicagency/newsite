@@ -3,21 +3,9 @@
   width: 100%;
   background-color: #161616; }
 
-.about-main-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 145%;
-  width: 100%;
-  background-color: #161616;
-  overflow: hidden; }
-
 .about-background {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url("./images/about-bckgrnd.jpg");
-  background-size: cover; }
+  width: 100%; }
 
 .about-main-content {
   position: absolute;
@@ -1714,21 +1702,11 @@
   flex-direction: column;
   align-items: center; }
 
-.contact-main-background {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 150%;
-  overflow: hidden; }
-
 .contact-background {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url("./images/contact-bckgrnd.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 0; }
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 .contact-main-content {
   position: relative;
@@ -2232,19 +2210,11 @@
   display: flex;
   flex-direction: column; }
 
-.demandgen-main-background {
-  position: absolute;
-  height: 150%;
-  width: 100%;
-  background-color: #161616;
-  overflow: hidden; }
-
 .demandgen-background {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url("../images/tech-bckgrnd.jpg");
-  background-size: cover; }
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 .demandgen-main-backfill {
   position: relative;
@@ -4755,20 +4725,11 @@ nav {
   width: 100%;
   background-color: #161616; }
 
-.newsroom-main-background {
+.newsroom-background {
   position: absolute;
   top: 0;
   left: 0;
-  height: 145%;
-  width: 100%;
-  background-color: #161616; }
-
-.newsroom-background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url("./images/newsroom-bckgrnd.jpg");
-  background-size: cover; }
+  width: 100%; }
 
 .newsroom-main-content {
   position: absolute;
@@ -5307,20 +5268,11 @@ table {
   display: flex;
   flex-direction: column; }
 
-.services-main-background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 200vh;
-  width: 100%; }
-
 .services-background {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url("./images/services-bckgrnd.jpg");
-  background-size: contain;
-  background-repeat: no-repeat; }
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 .services-main-background-gradient {
   position: relative;
@@ -5840,17 +5792,11 @@ table {
   display: flex;
   flex-direction: column; }
 
-.tech-main-background {
-  position: relative;
-  height: 69%;
-  width: 100%; }
-
 .tech-background {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url("../images/tech-bckgrnd.jpg");
-  background-size: cover; }
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 .tech-main-backfill {
   position: relative;
@@ -6052,17 +5998,11 @@ table {
   display: flex;
   flex-direction: column; }
 
-.telecom-main-background {
-  position: relative;
-  height: 69%;
-  width: 100%; }
-
 .telecom-background {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url("../images/TDS-bckgrnd.jpg");
-  background-size: cover; }
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 .telecom-main-backfill {
   position: relative;
@@ -6422,19 +6362,11 @@ h2 {
   display: flex;
   flex-direction: column; }
 
-.tourism-main-background {
+.tourism-background {
   position: absolute;
   top: 0;
   left: 0;
-  height: 146%;
   width: 100%; }
-
-.tourism-background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url("../images/tourism-bckgrnd.jpg");
-  background-size: cover; }
 
 .tourism-main-backfill {
   position: relative;

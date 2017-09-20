@@ -5531,7 +5531,14 @@ table {
     height: 55vw; }
   .mobile-down-arrow {
     position: relative;
-    width: 25px; } }
+    width: 25px; }
+  .mobile-inner-expand {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black; } }
 
 .tds-main-container {
   height: 623vh;

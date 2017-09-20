@@ -108,8 +108,9 @@
                                 <p>{{services[0].intro}}</p>
                             </div>
 
-                            <div ng-repeat="sec in services[0].sections">
+                            <div class="mobile-inner-expand" ng-repeat="sec in services[0].sections">
                                 <p>{{sec.title}}</p>
+                                <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
                             </div>
                         </div>
         </div></a>
@@ -126,7 +127,10 @@
             <p>demand gen</p>
             <img class="mobile-down-arrow" id="mobile-expand-arrow-three" src="../../images/down-arrow.svg">
             <div class="services-mobile-expand" id="services-mobile-expand-three">
-
+                <div class="mobile-inner-expand" ng-repeat="sec in services[2].sections">
+                    <p>{{sec.title}}</p>
+                    <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
+                </div>
             </div>
         </div></a>
         <a ng-click="scrollTo('content-mobile-content-four')"><div class="content-mobile-content" id="content-mobile-content-four" ng-click="servicesMobile('four', 445)">

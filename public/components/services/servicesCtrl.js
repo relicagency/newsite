@@ -101,10 +101,18 @@
                 title: 'demand gen',
                 intro: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas.",
                 sections: [
-                    {},
-                    {},
-                    {},
-                    {}
+                    {number: "one", title: "Content Syndication"},
+                    {number: "two", title: "Marketing Automation"},
+                    {number: "three", title: "Facebook Paid Ads"},
+                    {number: "four", title: "Facebook Lead Gen Ads"},
+                    {number: "five", title: "Account Based Marketing"},
+                    {number: "six", title: "Retargeting"},
+                    {number: "seven", title: "PPC"},
+                    {number: "eight", title: "Twitter Paid Ads"},
+                    {number: "nine", title: "Appointment Setting"},
+                    {number: "ten", title: "Direct Mail"},
+                    {number: "eleven", title: "SEO"},
+                    {number: "twelve", title: "LinkedIn Ads"}
                 ]
             },
             {

@@ -1,9 +1,6 @@
 .expertise-main-container {
   width: 100%;
   height: 150vh;
-  background-color: #161616;
-  background-image: url('../images/work-bckgrnd.png');
-  background-size: cover;
 }
 
 .expertise-title {
@@ -33,14 +30,12 @@
   height: calc(100vw / 6);
   width: calc(100vw / 6);
   margin: -1px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   color: #bd9a35;
   font-size: 27px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #bd9a35;
-  border-bottom: 1px solid #bd9a35;
   cursor: pointer;
 }
 

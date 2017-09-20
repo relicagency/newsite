@@ -181,7 +181,7 @@
             });
         };
 
-        this.backgrounds = ["../../images/work-backgrounds/relic1.jpg", "../../images/work-backgrounds/relic2.jpg", "../../images/work-backgrounds/relic3.jpg", "../../images/work-backgrounds/relic4.jpg", "../../images/work-backgrounds/relic5.jpg", "../../images/work-backgrounds/relic6.jpg", "../../images/work-backgrounds/relic7.jpg", "../../images/work-backgrounds/relic8.jpg", "../../images/work-backgrounds/relic9.jpg", "../../images/work-backgrounds/relic10.jpg", "../../images/work-backgrounds/relic11.jpg"];
+        this.backgrounds = ["../../images/work-backgrounds/relic1.jpg", "../../images/work-backgrounds/relic1.jpg", "../../images/work-backgrounds/relic2.jpg", "../../images/work-backgrounds/relic3.jpg", "../../images/work-backgrounds/relic4.jpg", "../../images/work-backgrounds/relic5.jpg", "../../images/work-backgrounds/relic6.jpg", "../../images/work-backgrounds/relic7.jpg", "../../images/work-backgrounds/relic8.jpg", "../../images/work-backgrounds/relic9.jpg", "../../images/work-backgrounds/relic10.jpg", "../../images/work-backgrounds/relic11.jpg"];
     });
 })();
 'use strict';

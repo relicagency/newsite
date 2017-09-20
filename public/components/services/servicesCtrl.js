@@ -100,7 +100,8 @@
         $scope.lastNum = "";
 
         $scope.servicesMobile = function(num, top){
-            let mobileExpand = document.getElementById('services-mobile-expand'),
+            let mobileExpand = document.getElementById('services-mobile-expand-' + num),
+                mobileExpandLast = document.getElementById('services-mobile-expand-' + $scope.lastNum),
                 contentMobile = document.getElementById('content-mobile-content-' + num),
                 arrow = document.getElementById('mobile-expand-arrow-' + num),
                 lastArrow = document.getElementById('mobile-expand-arrow-' + $scope.lastNum),
@@ -108,14 +109,11 @@
                 mainContainer = document.getElementById('services-main-container'),
                 servicesMobile = document.getElementById('services-mobile');
 
+
             if( mobileExpand.style.height === "200vh" && num === $scope.lastNum ){
+
                 TweenMax.to(mobileExpand, 0.5, {
-                    position: "absolute",
-                    top: top + "vw",
-                    height: 0,
-                    width: "95%",
-                    backgroundColor: "rgba(255,255,255,1)",
-                    zIndex: "100",
+                    height: 0
                 });
                 TweenMax.to(arrow, 0.75, {
                     transform: "rotateX(0deg)"
@@ -131,7 +129,9 @@
                 });
 
                 return;
-            }  if(mobileExpand.style.height === "200vh" && num !== $scope.lastNum){
+            }  if($scope.lastNum !== "" && num !== $scope.lastNum){
+
+                console.log(mobileExpandLast.style.height);
 
                 TweenMax.to(lastArrow, 0.75, {
                     transform: "rotateX(0deg)"
@@ -139,16 +139,14 @@
                 TweenMax.to(lastContentMobile, 0.1, {
                     marginBottom: "5vw"
                 });
+                TweenMax.to(mobileExpandLast, 0.1, {
+                    height: 0
+                });
                 TweenMax.to(contentMobile, 0.25, {
                     marginBottom: "200vh"
                 });
                 TweenMax.to(mobileExpand, 0.5, {
-                    position: "absolute",
-                    top: top + "vw",
-                    height: "200vh",
-                    width: "95%",
-                    backgroundColor: "rgba(255,255,255,1)",
-                    zIndex: "100",
+                    height: "200vh"
                 });
                 TweenMax.to(arrow, 0.75, {
                     transform: "rotateX(180deg)"
@@ -170,12 +168,7 @@
                 marginBottom: "200vh"
             });
             TweenMax.to(mobileExpand, 0.5, {
-                position: "absolute",
-                top: top + "vw",
-                height: "200vh",
-                width: "95%",
-                backgroundColor: "rgba(255,255,255,1)",
-                zIndex: "100",
+                height: "200vh"
             });
             TweenMax.to(arrow, 0.75, {
                 transform: "rotateX(180deg)"

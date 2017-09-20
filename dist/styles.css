@@ -3516,7 +3516,7 @@
     transform: translate(-50%, 0); }
   .swn-top-content i {
     position: absolute;
-    bottom: 10px;
+    bottom: 50%;
     color: #BD9A35;
     font-size: 7vmin; }
   .swn-bottom-container {

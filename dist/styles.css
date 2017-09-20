@@ -5959,7 +5959,7 @@ table {
 
 .telecom-main-container {
   width: 100%;
-  height: 212vh;
+  height: 240vh;
   background-color: #161616;
   display: flex;
   flex-direction: column; }
@@ -6032,20 +6032,21 @@ table {
   position: absolute;
   top: 22%;
   right: 70%;
-  font-size: 30px;
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
-  letter-spacing: 3px;
-  line-height: 35px; }
+  line-height: 35px;
+  font-family: 'Rogan-ExtraBold', sans-serif;
+  font-size: 5vmin;
+  letter-spacing: 4px; }
 
 .telecom-industry-info {
   position: absolute;
   top: 22%;
   left: 35%;
-  font-size: 20px;
   color: #727272;
-  width: 60%; }
+  width: 60%;
+  font-size: 20px; }
 
 .telecom-video {
   position: relative;
@@ -6065,7 +6066,7 @@ table {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 180px;
+  height: 10vmin;
   cursor: pointer; }
 
 .telecom-video-underlay {
@@ -6099,29 +6100,187 @@ table {
   position: relative;
   height: 527px;
   width: 100%;
-  background-color: black; }
-
-.telecom-clients-clients {
-  position: absolute;
-  height: 230px;
-  width: calc(230px * 3.1);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer; }
-
-.telecom-clients-clients img {
-  margin: -3px;
-  outline: 0;
-  padding: 0; }
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
 .telecom-work {
   height: 230px;
   margin: 0;
-  outline: 0; }
+  outline: 0;
+  margin: -3px;
+  padding: 0; }
 
 #telecom-looking-for-help {
   position: relative; }
+
+@media screen and (max-device-width: 1440px) {
+  .telecom-main-container {
+    width: 100%;
+    height: 228vh;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-device-width: 1024px) {
+  .telecom-experts {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column; }
+  .telecom-industry-info {
+    position: absolute;
+    top: 22%;
+    left: 35%;
+    color: #727272;
+    width: 55%;
+    font-family: 'Rogan-Light', sans-serif;
+    font-size: 2.5vmin;
+    letter-spacing: 1px;
+    line-height: 32px; }
+  .telecom-video {
+    position: relative;
+    height: 42vh;
+    width: 100%;
+    background-color: transparent; }
+  .telecom-clients-title {
+    position: relative;
+    height: 7vh;
+    width: 100%;
+    background-color: white;
+    color: #BD9A35;
+    text-transform: capitalize;
+    font-size: 3vmin;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .telecom-work {
+    height: 23vmin;
+    margin: 0;
+    outline: 0; }
+  .telecom-clients {
+    position: relative;
+    height: 43vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; } }
+
+@media screen and (max-device-width: 768px) {
+  .telecom-main-content {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -16%);
+    display: flex;
+    flex-direction: column; }
+  .telecom-title {
+    position: relative;
+    height: 17vmin;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px; }
+  .telecom-experts-top-left {
+    display: none; }
+  .telecom-experts-top-right {
+    width: 100%; }
+  .telecom-experts {
+    position: relative;
+    height: 68vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column; }
+  .telecom-video {
+    position: relative;
+    height: 35vh;
+    width: 100%;
+    background-color: transparent; } }
+
+@media screen and (max-device-width: 425px) {
+  .telecom-main-container {
+    width: 100%;
+    height: 300vh;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column; }
+  .telecom-main-content {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -16%);
+    display: flex;
+    flex-direction: column; }
+  .telecom-industry-experts {
+    position: absolute;
+    top: 10%;
+    right: 70%;
+    font-size: 4vmin;
+    color: #BD9A35;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 20px; }
+  .industry-experts {
+    font-family: 'Rogan-ExtraBold', sans-serif;
+    font-size: 3.5vmin;
+    line-height: 19px;
+    letter-spacing: 3px; }
+  .telecom-industry-info {
+    position: absolute;
+    top: 9%;
+    left: 35%;
+    color: #727272;
+    width: 55%;
+    font-family: 'Rogan-Light', sans-serif;
+    font-size: 3vmin;
+    letter-spacing: 1px;
+    line-height: 32px; }
+  .telecom-experts {
+    position: relative;
+    height: 95vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column; }
+  .industry-experts {
+    font-family: 'Rogan-ExtraBold', sans-serif;
+    font-size: 3.5vmin;
+    line-height: 19px;
+    letter-spacing: 3px; }
+  .telecom-video {
+    position: relative;
+    height: 28vh;
+    width: 100%;
+    background-color: transparent; }
+  .telecom-clients {
+    position: relative;
+    height: 145vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .telecom-work {
+    height: 65vmin;
+    outline: 0;
+    margin: 0;
+    padding: 0; } }
 
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans");
 body {
@@ -6197,7 +6356,7 @@ h2 {
 
 .tourism-main-content {
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   left: 50%;
   width: 85%;
   transform: translate(-50%, 0%);
@@ -6214,15 +6373,8 @@ h2 {
   align-items: flex-start;
   text-transform: uppercase;
   color: white;
-  font-size: 30px; }
-
-.tourism-experts {
-  position: relative;
-  height: 320px;
-  width: 100%;
-  background-color: white;
-  display: flex;
-  flex-direction: column; }
+  font-size: 7vmin;
+  font-family: "Rogan-SemiBold", sans-serif; }
 
 .tourism-experts-top {
   position: relative;
@@ -6250,15 +6402,19 @@ h2 {
   text-transform: uppercase;
   text-align: right;
   letter-spacing: 3px;
-  line-height: 35px; }
+  line-height: 35px;
+  font-family: "Rogan-SemiBold", sans-serif; }
 
 .tourism-industry-info {
   position: absolute;
   top: 21%;
   left: 35%;
-  font-size: 20px;
   color: #727272;
-  width: 60%; }
+  width: 60%;
+  font-family: 'Rogan-Light', sans-serif;
+  font-size: 2vmin;
+  letter-spacing: 1px;
+  line-height: 32px; }
 
 .tourism-video {
   position: relative;
@@ -6383,11 +6539,12 @@ h2 {
   flex-direction: column;
   align-items: center;
   color: white;
-  font-size: 20px;
-  font-weight: bold; }
+  font-size: 2vmin;
+  font-weight: bold;
+  letter-spacing: 3px; }
 
 .tourism-award-title p {
-  line-height: 0; }
+  line-height: 10px; }
 
 .tourism-award-pic {
   position: absolute;
@@ -6463,7 +6620,7 @@ h2 {
 #tourism-looking-for-help {
   position: relative; }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-device-width: 1440px) {
   .tourism-main-container {
     width: 100%;
     height: 452vh;
@@ -6472,14 +6629,14 @@ h2 {
     flex-direction: column; }
   .tourism-experts {
     position: relative;
-    height: 52vmin;
+    height: 53vh;
     width: 100%;
     background-color: white;
     display: flex;
     flex-direction: column; }
   .tourism-video {
     position: relative;
-    height: 56vmin;
+    height: 75vh;
     width: 100%;
     background-color: transparent; }
   .tourism-clients-title {
@@ -6513,7 +6670,7 @@ h2 {
     background-color: black; }
   .tourism-awards {
     position: relative;
-    height: 180vmin;
+    height: 112vmin;
     width: 100%;
     background-color: black; }
   .tourism-award {
@@ -6548,6 +6705,194 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center; } }
+
+@media screen and (max-device-width: 1024px) {
+  .tourism-main-container {
+    width: 100%;
+    height: 303vh;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column; }
+  .tourism-video {
+    position: relative;
+    height: 47vh;
+    width: 100%;
+    background-color: transparent; }
+  .tourism-clients-title {
+    position: relative;
+    height: 7vmin;
+    width: 100%;
+    background-color: white;
+    color: #BD9A35;
+    text-transform: capitalize;
+    font-size: 3vmin;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .tourism-awards {
+    position: relative;
+    height: 84vmin;
+    width: 100%;
+    background-color: black; }
+  .tourism-awards-title {
+    position: relative;
+    height: 7vmin;
+    width: 100%;
+    background-color: white;
+    color: #BD9A35;
+    text-transform: capitalize;
+    font-size: 3vmin;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .tourism-award {
+    position: relative;
+    height: 30vmin;
+    width: 19vmin;
+    margin-left: 0;
+    margin-bottom: 0;
+    cursor: pointer; }
+  .tourism-award-title {
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    background-color: #BD9A35;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 2vmin;
+    font-weight: bold;
+    letter-spacing: 1px; } }
+
+@media screen and (max-device-width: 768px) {
+  .tourism-experts {
+    position: relative;
+    height: 65vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column; }
+  .tourism-industry-experts {
+    position: absolute;
+    top: 13%;
+    right: 70%;
+    font-size: 4vmin;
+    color: #BD9A35;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 35px; }
+  .tourism-industry-info {
+    position: absolute;
+    top: 13%;
+    left: 35%;
+    color: #727272;
+    width: 60%;
+    font-family: 'Rogan-Light', sans-serif;
+    font-size: 3vmin;
+    letter-spacing: 1px;
+    line-height: 32px; }
+  .intro-text {
+    font-family: 'Rogan-Light', sans-serif;
+    font-size: 3vmin;
+    letter-spacing: 1px;
+    line-height: 32px; } }
+
+@media screen and (max-device-width: 425px) {
+  .tourism-main-container {
+    width: 100%;
+    height: 395vh;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column; }
+  .tourism-title {
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: uppercase;
+    color: white;
+    font-size: 7vmin;
+    font-family: "Rogan-SemiBold", sans-serif; }
+  .tourism-experts-top-left {
+    display: none; }
+  .tourism-experts-top-right {
+    width: 100%; }
+  .tourism-experts {
+    position: relative;
+    height: 116vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column; }
+  .tourism-industry-experts {
+    position: absolute;
+    top: 6%;
+    right: 50%;
+    font-size: 6vmin;
+    color: #BD9A35;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 35px;
+    transform: translate(50%, 0%); }
+  .tourism-industry-info {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    color: #727272;
+    width: 80%;
+    font-family: 'Rogan-Light', sans-serif;
+    font-size: 5vmin;
+    letter-spacing: 1px;
+    line-height: 32px;
+    transform: translate(-50%, 0);
+    text-align: center; }
+  .tourism-video {
+    position: relative;
+    height: 25vh;
+    width: 100%;
+    background-color: transparent; }
+  .tourism-clients {
+    position: relative;
+    height: 55vmin;
+    width: 100%;
+    background-color: black; }
+  .tourism-awards {
+    position: relative;
+    height: 249vmin;
+    width: 100%;
+    background-color: black; }
+  .tourism-award {
+    position: relative;
+    height: 45vmin;
+    width: 30vmin;
+    margin-left: 0;
+    margin-bottom: 0;
+    cursor: pointer; }
+  .tourism-award-title {
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    background-color: #BD9A35;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 2vmin;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1px; } }
 
 .tuac-main-container {
   height: 623vh;
@@ -7165,7 +7510,7 @@ div {
 .industry-experts {
   font-family: 'Rogan-ExtraBold', sans-serif;
   font-size: 3.5vmin;
-  line-height: 48px;
+  line-height: 25px;
   letter-spacing: 4px; }
 
 @media screen and (max-device-width: 425px) {

@@ -35,7 +35,9 @@
 
   .swn-top-content p {
     position: absolute;
-    top: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .swn-top-content i {

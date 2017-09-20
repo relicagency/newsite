@@ -1217,27 +1217,25 @@
 })();
 'use strict';
 
+//navCtrl.js
+
 (function () {
     angular.module('app').controller('navCtrl', function ($scope) {
 
         var lastNavTitle = "";
 
         $scope.routeLighter = function (num) {
-
             var title = document.getElementById('nav-item-title-' + num),
                 lastTitle = document.getElementById('nav-item-title-' + lastNavTitle);
-
             if (num === "home") {
-                TweenMax.to(lastTitle, 0.1, {
+                TweenMax.to(lastTitle, 0.15, {
                     color: "#95989A"
                 });
-
                 lastNavTitle = "";
                 return;
             }
-
             if (lastNavTitle !== "" && lastNavTitle !== num) {
-                TweenMax.to(lastTitle, 0.1, {
+                TweenMax.to(lastTitle, 0.15, {
                     color: "#95989A"
                 });
             }
@@ -1245,45 +1243,43 @@
             TweenMax.to(title, 0.25, {
                 color: "white"
             });
-
             lastNavTitle = num;
         };
 
         $scope.navDropper = function (num) {
-
-            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.1, {
-                ease: Power3.easeIn,
+            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
+                ease: Power1.easeIn,
                 display: "flex",
-                height: "500px"
+                opacity: 1,
+                height: "auto"
             });
 
-            TweenMax.to(document.getElementById('nav-item-drop-' + num), 1, {
+            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.4, {
                 color: "#242424"
             });
         };
 
         $scope.navShrinker = function (num) {
-
-            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.1, {
+            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
                 color: "transparent"
             });
-            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.1, {
+            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
                 ease: Power3.easeIn,
-                display: "none",
-                height: 0
+                opacity: 0,
+                display: "none"
+                //height: 0
             }, 0.25);
         };
 
         $scope.dropDownHover = function (num) {
-
-            TweenMax.to(document.getElementById('drop-down-item-' + num), 0.2, {
+            TweenMax.to(document.getElementById('drop-down-item-' + num), 0.25, {
                 backgroundColor: "rgba(22,22,22,0.8)",
                 color: "#BD9A35"
             });
         };
 
         $scope.dropDownHoverLeave = function (num) {
-            TweenMax.to(document.getElementById('drop-down-item-' + num), 0.1, {
+            TweenMax.to(document.getElementById('drop-down-item-' + num), 0.15, {
                 backgroundColor: "rgba(255,255,255,0.8)",
                 color: "#242424"
             });

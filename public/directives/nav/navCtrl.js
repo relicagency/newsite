@@ -1,79 +1,74 @@
+//navCtrl.js
+
 (function(){
-  angular.module('app')
-  .controller('navCtrl', function($scope){
+    angular.module('app')
+        .controller('navCtrl', function($scope){
 
-      let lastNavTitle = "";
+            let lastNavTitle = "";
 
-      $scope.routeLighter = function(num) {
+            $scope.routeLighter = function(num) {
+                let title = document.getElementById('nav-item-title-' + num),
+                    lastTitle = document.getElementById('nav-item-title-' + lastNavTitle);
+                if(num === "home"){
+                    TweenMax.to( lastTitle, 0.15, {
+                        color: "#95989A"
+                    });
+                    lastNavTitle = "";
+                    return;
+                }
+                if(lastNavTitle !== "" && lastNavTitle !== num){
+                    TweenMax.to( lastTitle, 0.15, {
+                        color: "#95989A"
+                    })
+                }
 
-          let title = document.getElementById('nav-item-title-' + num),
-              lastTitle = document.getElementById('nav-item-title-' + lastNavTitle);
-
-          if(num === "home"){
-              TweenMax.to( lastTitle, 0.1, {
-                  color: "#95989A"
-              });
-
-              lastNavTitle = "";
-              return;
-          }
-
-          if(lastNavTitle !== "" && lastNavTitle !== num){
-              TweenMax.to( lastTitle, 0.1, {
-                    color: "#95989A"
-              })
-          }
-
-          TweenMax.to(title, 0.25, {
-              color: "white"
-          });
-
-          lastNavTitle = num;
-
-      };
+                TweenMax.to(title, 0.25, {
+                    color: "white"
+                });
+                lastNavTitle = num;
+            };
 
 
-      $scope.navDropper = function(num) {
+            $scope.navDropper = function(num) {
+                TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15,  {
+                    ease: Power1.easeIn,
+                    display: "flex",
+                    opacity: 1,
+                    height: "auto"
+                });
 
-          TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.1,  {
-            ease: Power3.easeIn,
-            display: "flex",
-            height: "500px"
-        });
+                TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.4, {
+                    color: "#242424"
+                });
 
-          TweenMax.to(document.getElementById('nav-item-drop-' + num), 1, {
-              color: "#242424"
-          });
+            };
 
-      };
+            $scope.navShrinker = function(num) {
+                TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
+                    color: "transparent"
+                });
+                TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15,  {
+                    ease: Power3.easeIn,
+                    opacity: 0,
+                    display: "none"
+                    //height: 0
+                }, 0.25);
+            };
 
-      $scope.navShrinker = function(num) {
+            $scope.dropDownHover = function(num){
+                TweenMax.to(document.getElementById('drop-down-item-' + num), 0.25, {
+                    backgroundColor: "rgba(22,22,22,0.8)",
+                    color: "#BD9A35"
+                })
 
-          TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.1, {
-              color: "transparent"
-          });
-          TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.1,  {
-              ease: Power3.easeIn,
-              display: "none",
-              height: 0
-          }, 0.25);
-      };
+            };
 
-      $scope.dropDownHover = function(num){
+            $scope.dropDownHoverLeave = function(num){
+                TweenMax.to(document.getElementById('drop-down-item-' + num), 0.15, {
+                    backgroundColor: "rgba(255,255,255,0.8)",
+                    color: "#242424"
+                })
+            };
 
-        TweenMax.to(document.getElementById('drop-down-item-' + num), 0.2, {
-            backgroundColor: "rgba(22,22,22,0.8)",
-            color: "#BD9A35"
         })
-
-      };
-
-      $scope.dropDownHoverLeave = function(num){
-          TweenMax.to(document.getElementById('drop-down-item-' + num), 0.1, {
-              backgroundColor: "rgba(255,255,255,0.8)",
-              color: "#242424"
-          })
-      };
-
-  })
 })();

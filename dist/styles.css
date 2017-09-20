@@ -4583,12 +4583,13 @@ nav {
   nav .nav-item-drop {
     position: absolute;
     top: 70px;
-    height: 0;
     width: 200px;
     background-color: transparent;
     display: none;
     flex-direction: column;
     color: transparent; }
+  nav .nav-item-drop-one {
+    height: 500px; }
   nav .drop-down-item {
     height: 50px;
     width: 100%;

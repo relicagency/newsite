@@ -48,46 +48,49 @@
 
                     <p class="services-content-title industry-experts">{{services[content].title}}</p>
 
-                    <p class="service-content-info intro-text">{{services[content].info}}</p>
+                    <p class="service-content-info intro-text">{{services[content].intro}}</p>
 
                 </div>
 
         <div class="services-accordion">
-            <div class="services-accordion-section" ng-click="accordionPop('one')">
-                <p>Creative Strategy</p>
-                <img class="services-plus-sign" id="plus-sign-one" src="../../images/plus-sign.svg">
+
+            <div ng-repeat="sec in services[content].sections">
+                <div class="services-accordion-section" ng-click="accordionPop(sec.number)">
+                    <p>{{sec.title}}</p>
+                    <img class="services-plus-sign" id="plus-sign-{{sec.number}}" src="../../images/plus-sign.svg">
+                </div>
+                <div class="services-accordion-pop" id="accordion-pop-{{sec.number}}"></div>
             </div>
-            <div class="services-accordion-pop" id="accordion-pop-one"></div>
-            <div class="services-accordion-section" ng-click="accordionPop('two')">
-                <p>Campaign Development</p>
-                <img class="services-plus-sign" id="plus-sign-two" src="../../images/plus-sign.svg">
-            </div>
-            <div class="services-accordion-pop" id="accordion-pop-two"></div>
-            <div class="services-accordion-section" ng-click="accordionPop('three')">
-                <p>Branding</p>
-                <img class="services-plus-sign" id="plus-sign-three" src="../../images/plus-sign.svg">
-            </div>
-            <div class="services-accordion-pop" id="accordion-pop-three"></div>
-            <div class="services-accordion-section" ng-click="accordionPop('four')">
-                <p>Graphic Design</p>
-                <img class="services-plus-sign" id="plus-sign-four" src="../../images/plus-sign.svg">
-            </div>
-            <div class="services-accordion-pop" id="accordion-pop-four"></div>
-            <div class="services-accordion-section" ng-click="accordionPop('five')">
-                <p>TV/Radio Production</p>
-                <img class="services-plus-sign" id="plus-sign-five" src="../../images/plus-sign.svg">
-            </div>
-            <div class="services-accordion-pop" id="accordion-pop-five"></div>
-            <div class="services-accordion-section" ng-click="accordionPop('six')">
-                <p>Digital Media</p>
-                <img class="services-plus-sign" id="plus-sign-six" src="../../images/plus-sign.svg">
-            </div>
-            <div class="services-accordion-pop" id="accordion-pop-six"></div>
-            <div class="services-accordion-section" ng-click="accordionPop('seven')">
-                <p>Web Design/Development</p>
-                <img class="services-plus-sign" id="plus-sign-seven" src="../../images/plus-sign.svg">
-            </div>
-            <div class="services-accordion-pop" id="accordion-pop-seven"></div>
+            <!--<div class="services-accordion-section" ng-click="accordionPop('two')">-->
+                <!--<p>Campaign Development</p>-->
+                <!--<img class="services-plus-sign" id="plus-sign-two" src="../../images/plus-sign.svg">-->
+            <!--</div>-->
+            <!--<div class="services-accordion-pop" id="accordion-pop-two"></div>-->
+            <!--<div class="services-accordion-section" ng-click="accordionPop('three')">-->
+                <!--<p>Branding</p>-->
+                <!--<img class="services-plus-sign" id="plus-sign-three" src="../../images/plus-sign.svg">-->
+            <!--</div>-->
+            <!--<div class="services-accordion-pop" id="accordion-pop-three"></div>-->
+            <!--<div class="services-accordion-section" ng-click="accordionPop('four')">-->
+                <!--<p>Graphic Design</p>-->
+                <!--<img class="services-plus-sign" id="plus-sign-four" src="../../images/plus-sign.svg">-->
+            <!--</div>-->
+            <!--<div class="services-accordion-pop" id="accordion-pop-four"></div>-->
+            <!--<div class="services-accordion-section" ng-click="accordionPop('five')">-->
+                <!--<p>TV/Radio Production</p>-->
+                <!--<img class="services-plus-sign" id="plus-sign-five" src="../../images/plus-sign.svg">-->
+            <!--</div>-->
+            <!--<div class="services-accordion-pop" id="accordion-pop-five"></div>-->
+            <!--<div class="services-accordion-section" ng-click="accordionPop('six')">-->
+                <!--<p>Digital Media</p>-->
+                <!--<img class="services-plus-sign" id="plus-sign-six" src="../../images/plus-sign.svg">-->
+            <!--</div>-->
+            <!--<div class="services-accordion-pop" id="accordion-pop-six"></div>-->
+            <!--<div class="services-accordion-section" ng-click="accordionPop('seven')">-->
+                <!--<p>Web Design/Development</p>-->
+                <!--<img class="services-plus-sign" id="plus-sign-seven" src="../../images/plus-sign.svg">-->
+            <!--</div>-->
+            <!--<div class="services-accordion-pop" id="accordion-pop-seven"></div>-->
         </div>
 
 
@@ -98,11 +101,17 @@
 
         <a ng-click="scrollTo('content-mobile-content-one')"><div class="content-mobile-content" id="content-mobile-content-one" ng-click="servicesMobile('one', 145)">
             <img class="services-mobile-tile" src="../../images/traditional-tile.svg">
-            <p>traditional media</p>
-            <img class="mobile-down-arrow" id="mobile-expand-arrow-one" src="../../images/down-arrow.svg">
-            <div class="services-mobile-expand" id="services-mobile-expand-one">
+                <p>traditional media</p>
+                    <img class="mobile-down-arrow" id="mobile-expand-arrow-one" src="../../images/down-arrow.svg">
+                        <div class="services-mobile-expand" id="services-mobile-expand-one">
+                            <div>
+                                <p>{{services[0].intro}}</p>
+                            </div>
 
-            </div>
+                            <div ng-repeat="sec in services[0].sections">
+                                <p>{{sec.title}}</p>
+                            </div>
+                        </div>
         </div></a>
         <a ng-click="scrollTo('content-mobile-content-two')"><div class="content-mobile-content"  id="content-mobile-content-two" ng-click="servicesMobile('two', 245)">
             <img class="services-mobile-tile" src="../../images/creative-tile2.svg">

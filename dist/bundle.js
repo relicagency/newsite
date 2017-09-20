@@ -676,19 +676,24 @@
 
         $scope.services = [{
             title: 'traditional',
-            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
+            intro: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas.",
+            sections: [{ number: "one", title: "Creative Strategy" }, { number: "two", title: "Campaign Development" }, { number: "three", title: "Branding" }, { number: "four", title: "Graphic Design" }, { number: "five", title: "TV/Radio Production" }, { number: "six", title: "Digital Media" }, { number: "seven", title: "Web Design/Development" }]
         }, {
             title: 'creative',
-            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
+            intro: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas.",
+            sections: [{}, {}, {}, {}]
         }, {
             title: 'demand gen',
-            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
+            intro: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas.",
+            sections: [{}, {}, {}, {}]
         }, {
             title: 'digital',
-            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
+            intro: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas.",
+            sections: [{}, {}, {}, {}]
         }, {
             title: 'pr & content',
-            info: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas."
+            intro: "There isn't much that can accelerate a company like awesome creative work.  Relic can take you from step one to rocking your creative, hipster socks off.  We'll guide from concepts and ideas to concrete creative products that will blow your customer's minds.  We can do it because we are creative Michelangelos ourselves; beautiful, innovative work comes as easily to us as Nutella on bananas.",
+            sections: [{}, {}, {}, {}]
         }];
 
         $scope.lastNum = "";
@@ -705,7 +710,11 @@
 
             if (mobileExpand.style.height === "200vh" && num === $scope.lastNum) {
 
+                TweenMax.to(mobileExpand, 0, {
+                    color: "transparent"
+                });
                 TweenMax.to(mobileExpand, 0.5, {
+                    display: "none",
                     height: 0
                 });
                 TweenMax.to(arrow, 0.75, {
@@ -732,14 +741,20 @@
                 TweenMax.to(lastContentMobile, 0.1, {
                     marginBottom: "5vw"
                 });
+                TweenMax.to(mobileExpandLast, 0, {
+                    color: "transparent"
+                });
                 TweenMax.to(mobileExpandLast, 0.1, {
+                    display: "none",
                     height: 0
                 });
                 TweenMax.to(contentMobile, 0.25, {
                     marginBottom: "200vh"
                 });
                 TweenMax.to(mobileExpand, 0.5, {
-                    height: "200vh"
+                    display: "flex",
+                    height: "200vh",
+                    color: "#bd9a35"
                 });
                 TweenMax.to(arrow, 0.75, {
                     transform: "rotateX(180deg)"
@@ -750,17 +765,19 @@
                 return;
             }
 
-            TweenMax.to(mainContainer, 0.1, {
+            TweenMax.to(mainContainer, 0.5, {
                 height: "520vh"
             });
-            TweenMax.to(servicesMobile, 0.1, {
+            TweenMax.to(servicesMobile, 0.5, {
                 height: "480vh"
             });
-            TweenMax.to(contentMobile, 0.1, {
+            TweenMax.to(contentMobile, 0.5, {
                 marginBottom: "200vh"
             });
             TweenMax.to(mobileExpand, 0.5, {
-                height: "200vh"
+                display: "flex",
+                height: "200vh",
+                color: "#bd9a35"
             });
             TweenMax.to(arrow, 0.75, {
                 transform: "rotateX(180deg)"

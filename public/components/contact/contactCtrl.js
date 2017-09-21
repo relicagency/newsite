@@ -43,6 +43,8 @@
         document.getElementsByName("utm_medium").value = medium;
         document.getElementsByName("utm_campaign").value = campaign;
 
+        console.log(source, medium, campaign);
+
 
         ///*******************  Google Analytics Legacy Tracking Code  *******************/
 

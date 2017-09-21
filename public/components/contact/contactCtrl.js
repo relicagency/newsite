@@ -113,6 +113,8 @@
                 source = 'google';
                 medium = 'cpc';
             }
+
+            console.log(source, medium, term, content,campaign, session_count, pageview_count);
         }
 
         function get_utm_value(l,n,s)
@@ -159,8 +161,6 @@
             }
             return pc;
         }
-
-        console.log(source, medium, term, content,campaign, session_count, pageview_count);
 
 
     });

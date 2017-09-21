@@ -496,6 +496,8 @@
 (function () {
     angular.module('app').controller('homeCtrl', function ($scope, mainService) {
 
+        console.log(document.location.hostname);
+
         var homeMainBack = document.getElementById('home-hero'),
             headlineContent = document.getElementById('headline-content'),
             backgroundGrad = document.getElementById('home-linear-grad');

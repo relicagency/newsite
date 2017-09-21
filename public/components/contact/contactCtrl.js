@@ -104,7 +104,7 @@
             term = get_utm_value(utmz, 'utmctr=', '|');
             content = get_utm_value(utmz, 'utmcct=', '|');
             campaign = get_utm_value(utmz, 'utmccn=', '|');
-            gclid = get_utm_value(utmz, 'utmgclid=', '|');
+            let gclid = get_utm_value(utmz, 'utmgclid=', '|');
 
             session_count = get_session_count(utma);
             pageview_count = get_pageview_count(utmb, utmc);

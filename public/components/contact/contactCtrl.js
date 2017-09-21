@@ -117,6 +117,8 @@
             console.log(source, medium, term, content,campaign, session_count, pageview_count);
         }
 
+        get_campaign_info();
+
         function get_utm_value(l,n,s)
         {
             if (!l || l === "" || !n || n === "" || !s || s === "") return "-";

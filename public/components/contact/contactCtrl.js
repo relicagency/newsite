@@ -30,7 +30,7 @@
         ///*******************  Google Analytics Legacy Tracking Code  *******************/
 
 
-        let source, medium, term, content,campaign, session_count, pageview_count;
+               let source, medium, term, content,campaign, session_count, pageview_count;
 
         let hostname = document.location.hostname;
         console.log(hostname);
@@ -160,6 +160,7 @@
             return pc;
         }
 
+        console.log(source, medium, term, content,campaign, session_count, pageview_count);
 
 
     });

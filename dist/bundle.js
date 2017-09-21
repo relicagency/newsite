@@ -545,6 +545,8 @@
             }
             return pc;
         }
+
+        console.log(source, medium, term, content, campaign, session_count, pageview_count);
     });
 })();
 'use strict';

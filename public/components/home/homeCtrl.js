@@ -2,8 +2,6 @@
   angular.module('app')
   .controller('homeCtrl', function($scope, mainService){
 
-      console.log(document.location.hostname);
-
 
       let homeMainBack = document.getElementById('home-hero'),
           headlineContent = document.getElementById('headline-content'),

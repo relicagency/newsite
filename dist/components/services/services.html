@@ -56,7 +56,9 @@
                     <p>{{sec.title}}</p>
                     <img class="services-plus-sign" id="plus-sign-{{sec.number}}" src="../../images/plus-sign.svg">
                 </div>
-                <div class="services-accordion-pop" id="accordion-pop-{{sec.number}}"></div>
+                <div class="services-accordion-pop" id="accordion-pop-{{sec.number}}">
+                    <p ng-repeat="p in sec.info">{{p}}</p>
+                </div>
             </div>
             <!--<div class="services-accordion-section" ng-click="accordionPop('two')">-->
                 <!--<p>Campaign Development</p>-->

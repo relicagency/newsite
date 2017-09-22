@@ -33,28 +33,35 @@
 .about-router {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 20vh;
 }
 
 .about-router-underlay {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: black;
-  opacity: 0.6;
+  background-color: rgba(0,0,0,0.9);
 }
 
 .about-router-story {
   position: absolute;
-  left: 15%;
+  left: 0;
   height: 100%;
-  width: 30%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
- }
+  transition: 0.15s;
+}
+.about-router-story:hover {
+  background-color: rgba(255,255,255,0.9);
+}
+.about-router--story:hover  i {
+  margin-top: 50px;
+  transition: 0.25s;
+}
 
 .story-router-pic {
   position: relative;
@@ -78,23 +85,20 @@
 
 .about-router-leadership {
   position: absolute;
-  right: 15%;
+  right: 0;
   height: 100%;
-  width: 30%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: 0.15s;
+}
+.about-router-leadership:hover {
+  background-color: rgba(255,255,255,0.9);
 }
 
-.leadership-router-pic {
-  position: relative;
-  height: 55%;
-  width: 100%;
-  margin-bottom: 35px;
-  background-color: #242424;
-}
 .leadership-router-title {
   position: relative;
   text-transform: uppercase;

@@ -48,18 +48,39 @@
 
         };
 
-        $scope.expandLeader = function(peep){
+        $scope.expandLeader = function(leader){
 
-            if(peep !== 'jessica'){
-                TweenMax.to(document.getElementById('leader-' + peep), 0.5, {
-                    height: "750px",
+            if(leader === 'adam'){
+                TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
+                    height: "92vh",
                     color: "white",
                     ease: Power3.easeIn
                 });
                 expand = true;
-            } else {
-                TweenMax.to(document.getElementById('leader-' + peep), 0.5, {
-                    height: "915px",
+            }  if(leader === 'jordan'){
+                TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
+                    height: "80vh",
+                    color: "white",
+                    ease: Power3.easeIn
+                });
+                expand = true;
+            }  if(leader === 'colby'){
+                TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
+                    height: "65vh",
+                    color: "white",
+                    ease: Power3.easeIn
+                });
+                expand = true;
+            } if(leader === 'jessica'){
+                TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
+                    height: "85vh",
+                    color: "white",
+                    ease: Power3.easeIn
+                });
+                expand = true;
+            } if(leader === 'hannah'){
+                TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
+                    height: "67vh",
                     color: "white",
                     ease: Power3.easeIn
                 });
@@ -79,7 +100,7 @@
 
             }
 
-            if(lastLeader !== peep){
+            if(lastLeader !== leader){
                 expand = true;
             }
 
@@ -96,7 +117,7 @@
             }
 
 
-            lastLeader = peep;
+            lastLeader = leader;
 
         }
 

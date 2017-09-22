@@ -47,14 +47,8 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: 0.15s; }
-
-.about-router-story:hover {
+  transition: 0.15s;
   background-color: rgba(255, 255, 255, 0.9); }
-
-.about-router--story:hover i {
-  margin-top: 50px;
-  transition: 0.25s; }
 
 .story-router-pic {
   position: relative;
@@ -86,9 +80,6 @@
   align-items: center;
   cursor: pointer;
   transition: 0.15s; }
-
-.about-router-leadership:hover {
-  background-color: rgba(255, 255, 255, 0.9); }
 
 .leadership-router-title {
   position: relative;
@@ -163,8 +154,9 @@
   position: relative;
   top: 0;
   width: 100%;
-  height: 81vh;
-  background-color: white; }
+  height: 97vh;
+  background-color: white;
+  margin-top: 2px; }
 
 .story-top {
   position: absolute;
@@ -201,11 +193,11 @@
   left: 40%;
   width: 44%;
   color: #161616;
-  font-size: 2vmin; }
+  font-size: 2vmin;
+  letter-spacing: 1px;
+  line-height: 35px; }
 
 .enter-relic {
-  position: relative;
-  left: 40%;
   font-size: 3vmin;
   text-transform: capitalize;
   color: #bd9a35; }

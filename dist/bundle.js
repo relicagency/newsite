@@ -187,322 +187,6 @@
 'use strict';
 
 /**
- * Created by Seth on 8/9/2017.
- */
-(function () {
-
-    angular.module('app').directive('footerDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/footer/footer.html',
-            controller: 'footerCtrl'
-        };
-    });
-})();
-'use strict';
-
-(function () {
-    angular.module('app').controller('footerCtrl', function ($scope) {
-
-        $scope.footerSocialHover = function (social) {
-            TweenMax.to(document.getElementById('footer-social-' + social), 1, { fill: "white" });
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/23/2017.
- */
-(function () {
-    angular.module('app').directive('getStartedDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/get-started/getStarted.html',
-            controller: 'getStartedCtrl'
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/23/2017.
- */
-(function () {
-    angular.module('app').controller('getStartedCtrl', function ($scope, mainService) {
-
-        $scope.ctaText = "Learn how we can help you.";
-
-        if (window.location.href.indexOf('tourism') > -1) {
-            $scope.ctaText = "Looking to bring more visitors to you area?";
-        }if (window.location.href.indexOf('demandgen') > -1) {
-            $scope.ctaText = "Looking for demand gen help?";
-        }
-
-        var mainPop = document.getElementById('cta-pop-up'),
-            barFive = document.getElementById('get-started-animation-five'),
-            barSix = document.getElementById('get-started-animation-six'),
-            barSeven = document.getElementById('get-started-animation-seven');
-
-        $scope.ctaShow = function () {
-            var tl = new TimelineMax();
-            tl.to(mainPop, 0.5, { ease: Power2.easeIn, left: 0 }).to(barFive, 0.15, { left: 0 }, "+=0.5").to(barSix, 0.15, { right: 0 }).to(barSeven, 0.15, { left: 0 }).to(barSix, 0.15, { left: "101%" }, "-=0.15");
-        };
-
-        $scope.ctaHide = function () {
-            var tl = new TimelineMax();
-            tl.to(barSeven, 0.15, { left: "101%" }).to(barSix, 0.15, { left: 0 }, "-=0.15").to(barFive, 0.15, { left: "101%" }).to(barSix, 0.15, { left: '-100%' }, "-=0.15").to(mainPop, 0.5, { ease: Power2.easeIn, left: "-101%" });
-        };
-    });
-})();
-'use strict';
-
-(function () {
-
-    angular.module('app').directive('homeContentDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/home-content/home-content.html',
-            controller: 'homeContentCtrl'
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/9/2017.
- */
-(function () {
-    angular.module('app').controller('homeContentCtrl', function ($scope) {
-
-        var previousContent = "main-content",
-            previousTop = "",
-            mainContent = document.getElementById('main-content'),
-            services = document.getElementById('services'),
-            work = document.getElementById('work'),
-            articles = document.getElementById('articles'),
-            swnContainer = document.getElementById('swn-container'),
-            swnTopContainer = document.getElementById('swn-top-container'),
-            swnBottomContainer = document.getElementById('swn-bottom-container');
-
-        $scope.switchContent = function (switcher) {
-
-            if (window.innerWidth < 600) {
-
-                console.log('Yo!');
-
-                TweenMax.to(swnContainer, 0.15, {
-                    height: "270vh"
-                });
-                TweenMax.to(swnTopContainer, 0.15, {
-                    height: "10%"
-                });
-            }
-
-            TweenMax.to(document.getElementById("top-" + switcher), 0.5, { backgroundColor: "white", color: '#161616' });
-            if (previousTop !== "" && previousTop !== "top-" + switcher) {
-                TweenMax.to(document.getElementById(previousTop), 0.5, { backgroundColor: '#161616', color: "white" });
-            }
-
-            TweenMax.to(document.getElementById(previousContent), 0, { display: "none" });
-            TweenMax.to(document.getElementById(switcher), 0, { display: 'flex' });
-
-            previousContent = switcher;
-            previousTop = "top-" + switcher;
-        };
-
-        $scope.switcher = function () {
-            TweenMax.to(document.getElementById(previousContent), 0, { display: "none" });
-            TweenMax.to(document.getElementById('main-content'), 0, { display: "flex" }, 0.5);
-            TweenMax.to(document.getElementById(previousTop), 0.25, { backgroundColor: '#161616', color: "white" });
-
-            previousContent = 'main-content';
-            previousTop = "";
-
-            if (window.innerWidth < 600) {
-
-                console.log('Yo mama....');
-
-                TweenMax.to(swnContainer, 0.15, {
-                    height: "30vh"
-                });
-                TweenMax.to(swnTopContainer, 0.15, {
-                    height: "80%"
-                });
-            }
-        };
-
-        $scope.swnContentHover = function (num) {
-
-            // if(num === "four"){
-            //     TweenMax.to(document.getElementById('services-content-' + num), 0.5, {ease: Power2.easeOut, height: "200px", width: "200px"}, 0.25)
-            // } else { TweenMax.to(document.getElementById('services-content-' + num), 0.5, {ease: Power2.easeOut, height: "250px", width: "250px"}, 0.25) }
-
-        };
-
-        $scope.swnContentHoverLeave = function (num) {
-            // if(num === "four"){
-            //     TweenMax.to(document.getElementById('services-content-' + num), 0.25, {ease: Power2.easeOut, height: "175px", width: "175px"})
-            // } else { TweenMax.to(document.getElementById('services-content-' + num), 0.25, {ease: Power2.easeOut, height: "225px", width: "225px"}) }            }
-        };
-
-        $scope.clientHover = function (num) {
-            // TweenMax.to(document.getElementById('client-image-' + num), 0.5, {
-            //     height: "225px",
-            //     width: "225px",
-            //     ease: Power3.easeOut
-            // })
-        };
-        $scope.clientHoverLeave = function (num) {
-            //     TweenMax.to(document.getElementById('client-image-' + num), 0.25, {
-            //         height: "200px",
-            //         width: "200px"
-            // })
-        };
-
-        $scope.articleHover = function (num) {
-            // TweenMax.to(document.getElementById('article-pic-' + num), 0.5, {
-            //     height: "225px",
-            //     width: "225px",
-            //     ease: Power3.easeOut
-            // })
-        };
-        $scope.articleHoverLeave = function (num) {
-            // TweenMax.to(document.getElementById('article-pic-' + num), 0.25, {
-            //     height: "200",
-            //     width: "200px"
-            // })
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/30/2017.
- */
-(function () {
-
-    angular.module('app').directive('mobileNavDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/mobile-nav/mobile-nav.html',
-            controller: 'mobileNavCtrl'
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/30/2017.
- */
-(function () {
-    angular.module('app').controller('mobileNavCtrl', function ($scope, mainService) {
-
-        var tl = new TimelineMax(),
-            mobileNav = document.getElementById('mobile-nav-popup'),
-            trigger = true,
-            hamburgerOne = document.getElementById('hamburger-one'),
-            hamburgerTwo = document.getElementById('hamburger-two'),
-            hamburgerThree = document.getElementById('hamburger-three');
-
-        $scope.exitNav = function () {
-
-            if (trigger) {
-                tl.to(hamburgerTwo, 0.08, { top: "47%" }).to(hamburgerOne, 0.08, { top: "47%" }).to(hamburgerThree, 0.08, { top: "47%" }).to(hamburgerOne, 0, { opacity: 0 }).to(hamburgerThree, 0.08, { transform: "rotate(45deg)" }).to(hamburgerTwo, 0.08, { transform: "rotate(-45deg)" }).to(mobileNav, 0.15, { right: 0, ease: Power2.easeIn });
-            }if (!trigger) {
-                tl.to(hamburgerThree, 0.08, { transform: "rotate(0deg)" }).to(hamburgerTwo, 0.08, { transform: "rotate(0deg)" }).to(hamburgerThree, 0.08, { top: "86%" }).to(hamburgerOne, 0.08, { opacity: 1, top: 0 }).to(hamburgerTwo, 0.08, { top: "47%" }).to(mobileNav, 0.15, { right: "-101%", ease: Power2.easeOut });
-            }
-
-            trigger = !trigger;
-        };
-    });
-})();
-'use strict';
-
-//navCtrl.js
-
-(function () {
-    angular.module('app').controller('navCtrl', function ($scope) {
-
-        var lastNavTitle = "";
-
-        $scope.routeLighter = function (num) {
-            var title = document.getElementById('nav-item-title-' + num),
-                lastTitle = document.getElementById('nav-item-title-' + lastNavTitle);
-            if (num === "home") {
-                TweenMax.to(lastTitle, 0.15, {
-                    color: "#95989A"
-                });
-                lastNavTitle = "";
-                return;
-            }
-            if (lastNavTitle !== "" && lastNavTitle !== num) {
-                TweenMax.to(lastTitle, 0.15, {
-                    color: "#95989A"
-                });
-            }
-
-            TweenMax.to(title, 0.25, {
-                color: "white"
-            });
-            lastNavTitle = num;
-        };
-
-        $scope.navDropper = function (num) {
-            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
-                ease: Power1.easeIn,
-                display: "flex",
-                opacity: 1,
-                height: "auto"
-            });
-
-            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.4, {
-                color: "#242424"
-            });
-        };
-
-        $scope.navShrinker = function (num) {
-            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
-                color: "transparent"
-            });
-            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
-                ease: Power3.easeIn,
-                opacity: 0,
-                display: "none"
-                //height: 0
-            }, 0.25);
-        };
-
-        $scope.dropDownHover = function (num) {
-            TweenMax.to(document.getElementById('drop-down-item-' + num), 0.25, {
-                backgroundColor: "rgba(22,22,22,0.8)",
-                color: "#BD9A35"
-            });
-        };
-
-        $scope.dropDownHoverLeave = function (num) {
-            TweenMax.to(document.getElementById('drop-down-item-' + num), 0.15, {
-                backgroundColor: "rgba(255,255,255,0.8)",
-                color: "#242424"
-            });
-        };
-    });
-})();
-'use strict';
-
-(function () {
-
-  angular.module('app').directive('navDir', function () {
-    return {
-      restrict: 'E',
-      templateUrl: './directives/nav/navTmpl.html',
-      controller: 'navCtrl'
-    };
-  });
-})();
-'use strict';
-
-/**
  * Created by Seth on 8/16/2017.
  */
 (function () {
@@ -527,6 +211,14 @@
         $scope.changeAboutRoute = function (route) {
 
             if (route === 'story') {
+
+                TweenMax.to(document.getElementById('about-leadership'), 0.35, {
+                    backgroundColor: "rgba(0,0,0,0.8)"
+                });
+                TweenMax.to(document.getElementById('about-story'), 0.35, {
+                    backgroundColor: "rgba(255,255,255,0.9)"
+                });
+
                 TweenMax.to(document.getElementById('about-route-story'), 0.25, {
                     ease: Power2.easeIn,
                     display: "inline"
@@ -538,6 +230,15 @@
             }
 
             if (route === 'leadership') {
+
+                TweenMax.to(document.getElementById('about-leadership'), 0.35, {
+                    backgroundColor: "rgba(255,255,255,0.9)"
+
+                });
+                TweenMax.to(document.getElementById('about-story'), 0.35, {
+                    backgroundColor: "rgba(0,0,0,0.8)"
+                });
+
                 TweenMax.to(document.getElementById('about-route-leadership'), 0.25, {
                     ease: Power2.easeIn,
                     display: "inline"
@@ -1583,5 +1284,321 @@
                                     mainService.parallaxIt(backgroundPic, csParaStart);
                         };
             });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/9/2017.
+ */
+(function () {
+
+    angular.module('app').directive('footerDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/footer/footer.html',
+            controller: 'footerCtrl'
+        };
+    });
+})();
+'use strict';
+
+(function () {
+    angular.module('app').controller('footerCtrl', function ($scope) {
+
+        $scope.footerSocialHover = function (social) {
+            TweenMax.to(document.getElementById('footer-social-' + social), 1, { fill: "white" });
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/23/2017.
+ */
+(function () {
+    angular.module('app').directive('getStartedDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/get-started/getStarted.html',
+            controller: 'getStartedCtrl'
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/23/2017.
+ */
+(function () {
+    angular.module('app').controller('getStartedCtrl', function ($scope, mainService) {
+
+        $scope.ctaText = "Learn how we can help you.";
+
+        if (window.location.href.indexOf('tourism') > -1) {
+            $scope.ctaText = "Looking to bring more visitors to you area?";
+        }if (window.location.href.indexOf('demandgen') > -1) {
+            $scope.ctaText = "Looking for demand gen help?";
+        }
+
+        var mainPop = document.getElementById('cta-pop-up'),
+            barFive = document.getElementById('get-started-animation-five'),
+            barSix = document.getElementById('get-started-animation-six'),
+            barSeven = document.getElementById('get-started-animation-seven');
+
+        $scope.ctaShow = function () {
+            var tl = new TimelineMax();
+            tl.to(mainPop, 0.5, { ease: Power2.easeIn, left: 0 }).to(barFive, 0.15, { left: 0 }, "+=0.5").to(barSix, 0.15, { right: 0 }).to(barSeven, 0.15, { left: 0 }).to(barSix, 0.15, { left: "101%" }, "-=0.15");
+        };
+
+        $scope.ctaHide = function () {
+            var tl = new TimelineMax();
+            tl.to(barSeven, 0.15, { left: "101%" }).to(barSix, 0.15, { left: 0 }, "-=0.15").to(barFive, 0.15, { left: "101%" }).to(barSix, 0.15, { left: '-100%' }, "-=0.15").to(mainPop, 0.5, { ease: Power2.easeIn, left: "-101%" });
+        };
+    });
+})();
+'use strict';
+
+(function () {
+
+    angular.module('app').directive('homeContentDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/home-content/home-content.html',
+            controller: 'homeContentCtrl'
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/9/2017.
+ */
+(function () {
+    angular.module('app').controller('homeContentCtrl', function ($scope) {
+
+        var previousContent = "main-content",
+            previousTop = "",
+            mainContent = document.getElementById('main-content'),
+            services = document.getElementById('services'),
+            work = document.getElementById('work'),
+            articles = document.getElementById('articles'),
+            swnContainer = document.getElementById('swn-container'),
+            swnTopContainer = document.getElementById('swn-top-container'),
+            swnBottomContainer = document.getElementById('swn-bottom-container');
+
+        $scope.switchContent = function (switcher) {
+
+            if (window.innerWidth < 600) {
+
+                console.log('Yo!');
+
+                TweenMax.to(swnContainer, 0.15, {
+                    height: "270vh"
+                });
+                TweenMax.to(swnTopContainer, 0.15, {
+                    height: "10%"
+                });
+            }
+
+            TweenMax.to(document.getElementById("top-" + switcher), 0.5, { backgroundColor: "white", color: '#161616' });
+            if (previousTop !== "" && previousTop !== "top-" + switcher) {
+                TweenMax.to(document.getElementById(previousTop), 0.5, { backgroundColor: '#161616', color: "white" });
+            }
+
+            TweenMax.to(document.getElementById(previousContent), 0, { display: "none" });
+            TweenMax.to(document.getElementById(switcher), 0, { display: 'flex' });
+
+            previousContent = switcher;
+            previousTop = "top-" + switcher;
+        };
+
+        $scope.switcher = function () {
+            TweenMax.to(document.getElementById(previousContent), 0, { display: "none" });
+            TweenMax.to(document.getElementById('main-content'), 0, { display: "flex" }, 0.5);
+            TweenMax.to(document.getElementById(previousTop), 0.25, { backgroundColor: '#161616', color: "white" });
+
+            previousContent = 'main-content';
+            previousTop = "";
+
+            if (window.innerWidth < 600) {
+
+                console.log('Yo mama....');
+
+                TweenMax.to(swnContainer, 0.15, {
+                    height: "30vh"
+                });
+                TweenMax.to(swnTopContainer, 0.15, {
+                    height: "80%"
+                });
+            }
+        };
+
+        $scope.swnContentHover = function (num) {
+
+            // if(num === "four"){
+            //     TweenMax.to(document.getElementById('services-content-' + num), 0.5, {ease: Power2.easeOut, height: "200px", width: "200px"}, 0.25)
+            // } else { TweenMax.to(document.getElementById('services-content-' + num), 0.5, {ease: Power2.easeOut, height: "250px", width: "250px"}, 0.25) }
+
+        };
+
+        $scope.swnContentHoverLeave = function (num) {
+            // if(num === "four"){
+            //     TweenMax.to(document.getElementById('services-content-' + num), 0.25, {ease: Power2.easeOut, height: "175px", width: "175px"})
+            // } else { TweenMax.to(document.getElementById('services-content-' + num), 0.25, {ease: Power2.easeOut, height: "225px", width: "225px"}) }            }
+        };
+
+        $scope.clientHover = function (num) {
+            // TweenMax.to(document.getElementById('client-image-' + num), 0.5, {
+            //     height: "225px",
+            //     width: "225px",
+            //     ease: Power3.easeOut
+            // })
+        };
+        $scope.clientHoverLeave = function (num) {
+            //     TweenMax.to(document.getElementById('client-image-' + num), 0.25, {
+            //         height: "200px",
+            //         width: "200px"
+            // })
+        };
+
+        $scope.articleHover = function (num) {
+            // TweenMax.to(document.getElementById('article-pic-' + num), 0.5, {
+            //     height: "225px",
+            //     width: "225px",
+            //     ease: Power3.easeOut
+            // })
+        };
+        $scope.articleHoverLeave = function (num) {
+            // TweenMax.to(document.getElementById('article-pic-' + num), 0.25, {
+            //     height: "200",
+            //     width: "200px"
+            // })
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/30/2017.
+ */
+(function () {
+
+    angular.module('app').directive('mobileNavDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/mobile-nav/mobile-nav.html',
+            controller: 'mobileNavCtrl'
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/30/2017.
+ */
+(function () {
+    angular.module('app').controller('mobileNavCtrl', function ($scope, mainService) {
+
+        var tl = new TimelineMax(),
+            mobileNav = document.getElementById('mobile-nav-popup'),
+            trigger = true,
+            hamburgerOne = document.getElementById('hamburger-one'),
+            hamburgerTwo = document.getElementById('hamburger-two'),
+            hamburgerThree = document.getElementById('hamburger-three');
+
+        $scope.exitNav = function () {
+
+            if (trigger) {
+                tl.to(hamburgerTwo, 0.08, { top: "47%" }).to(hamburgerOne, 0.08, { top: "47%" }).to(hamburgerThree, 0.08, { top: "47%" }).to(hamburgerOne, 0, { opacity: 0 }).to(hamburgerThree, 0.08, { transform: "rotate(45deg)" }).to(hamburgerTwo, 0.08, { transform: "rotate(-45deg)" }).to(mobileNav, 0.15, { right: 0, ease: Power2.easeIn });
+            }if (!trigger) {
+                tl.to(hamburgerThree, 0.08, { transform: "rotate(0deg)" }).to(hamburgerTwo, 0.08, { transform: "rotate(0deg)" }).to(hamburgerThree, 0.08, { top: "86%" }).to(hamburgerOne, 0.08, { opacity: 1, top: 0 }).to(hamburgerTwo, 0.08, { top: "47%" }).to(mobileNav, 0.15, { right: "-101%", ease: Power2.easeOut });
+            }
+
+            trigger = !trigger;
+        };
+    });
+})();
+'use strict';
+
+//navCtrl.js
+
+(function () {
+    angular.module('app').controller('navCtrl', function ($scope) {
+
+        var lastNavTitle = "";
+
+        $scope.routeLighter = function (num) {
+            var title = document.getElementById('nav-item-title-' + num),
+                lastTitle = document.getElementById('nav-item-title-' + lastNavTitle);
+            if (num === "home") {
+                TweenMax.to(lastTitle, 0.15, {
+                    color: "#95989A"
+                });
+                lastNavTitle = "";
+                return;
+            }
+            if (lastNavTitle !== "" && lastNavTitle !== num) {
+                TweenMax.to(lastTitle, 0.15, {
+                    color: "#95989A"
+                });
+            }
+
+            TweenMax.to(title, 0.25, {
+                color: "white"
+            });
+            lastNavTitle = num;
+        };
+
+        $scope.navDropper = function (num) {
+            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
+                ease: Power1.easeIn,
+                display: "flex",
+                opacity: 1,
+                height: "auto"
+            });
+
+            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.4, {
+                color: "#242424"
+            });
+        };
+
+        $scope.navShrinker = function (num) {
+            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
+                color: "transparent"
+            });
+            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
+                ease: Power3.easeIn,
+                opacity: 0,
+                display: "none"
+                //height: 0
+            }, 0.25);
+        };
+
+        $scope.dropDownHover = function (num) {
+            TweenMax.to(document.getElementById('drop-down-item-' + num), 0.25, {
+                backgroundColor: "rgba(22,22,22,0.8)",
+                color: "#BD9A35"
+            });
+        };
+
+        $scope.dropDownHoverLeave = function (num) {
+            TweenMax.to(document.getElementById('drop-down-item-' + num), 0.15, {
+                backgroundColor: "rgba(255,255,255,0.8)",
+                color: "#242424"
+            });
+        };
+    });
+})();
+'use strict';
+
+(function () {
+
+  angular.module('app').directive('navDir', function () {
+    return {
+      restrict: 'E',
+      templateUrl: './directives/nav/navTmpl.html',
+      controller: 'navCtrl'
+    };
+  });
 })();
 //# sourceMappingURL=maps/bundle.js.map

@@ -24,6 +24,14 @@
         $scope.changeAboutRoute = function(route){
 
                 if (route === 'story') {
+
+                    TweenMax.to(document.getElementById('about-leadership'), 0.35, {
+                        backgroundColor: "rgba(0,0,0,0.8)"
+                    });
+                    TweenMax.to(document.getElementById('about-story'), 0.35, {
+                        backgroundColor: "rgba(255,255,255,0.9)"
+                    });
+
                     TweenMax.to(document.getElementById('about-route-story'), 0.25, {
                         ease: Power2.easeIn,
                         display: "inline"
@@ -36,6 +44,15 @@
 
 
             if(route === 'leadership'){
+
+                TweenMax.to(document.getElementById('about-leadership'), 0.35, {
+                    backgroundColor: "rgba(255,255,255,0.9)"
+
+                });
+                TweenMax.to(document.getElementById('about-story'), 0.35, {
+                    backgroundColor: "rgba(0,0,0,0.8)"
+                });
+
                 TweenMax.to(document.getElementById('about-route-leadership'), 0.25, {
                     ease: Power2.easeIn,
                     display: "inline"
@@ -86,12 +103,6 @@
                 });
                 expand = true;
             }
-
-            Bryce Zion Inn
-            Galaxy of Hatch
-            Hatch Station
-            Mountain Ridge Motel
-            Riverside Resort
 
 
             if( lastLeader !== "" && document.getElementById('leader-' + lastLeader).style.height !== "175px")  {

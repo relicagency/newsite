@@ -87,6 +87,12 @@
                 expand = true;
             }
 
+            Bryce Zion Inn
+            Galaxy of Hatch
+            Hatch Station
+            Mountain Ridge Motel
+            Riverside Resort
+
 
             if( lastLeader !== "" && document.getElementById('leader-' + lastLeader).style.height !== "175px")  {
 

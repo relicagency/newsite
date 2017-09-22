@@ -45,13 +45,13 @@
 
 .telecom-experts {
   position: relative;
-  height: 320px;
+  height: 60vh;
   width: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
+  line-height: 35px;
 }
-
 .telecom-experts-top {
   position: relative;
   height: 15px;
@@ -77,10 +77,10 @@
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
-  line-height: 35px;
-    font-family: 'Rogan-ExtraBold', sans-serif;
-    font-size: 5vmin;
-    letter-spacing: 4px;
+  line-height: 45px;
+  font-family: 'Rogan-SemiBold', sans-serif;
+  font-size: 4vmin;
+  letter-spacing: 2px;
 }
 .telecom-industry-info {
   position: absolute;

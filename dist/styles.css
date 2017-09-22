@@ -2205,7 +2205,7 @@
 
 .demandgen-main-container {
   width: 100%;
-  height: 213vh;
+  height: 350vh;
   background-color: #161616;
   display: flex;
   flex-direction: column; }
@@ -2224,10 +2224,10 @@
 
 .demandgen-main-content {
   position: absolute;
-  top: 55%;
+  top: 20vh;
   left: 50%;
   width: 85%;
-  transform: translate(-50%, -16%);
+  transform: translate(-50%, 0);
   display: flex;
   flex-direction: column; }
 
@@ -2287,18 +2287,21 @@
   color: #727272;
   width: 60%; }
 
-.demandgen-video {
+.demand-gen-sections {
   position: relative;
-  height: 750px;
+  height: 240vh;
   width: 100%;
-  background-color: transparent; }
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
 
-.demandgen-video-underlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.8; }
+.demand-gen-section {
+  color: white; }
+
+.demand-gen-infographic {
+  width: 25vw; }
 
 .demandgen-clients-title {
   position: relative;
@@ -3041,7 +3044,7 @@
   position: relative;
   height: 30vh;
   width: 100%;
-  background-color: transparent;
+  background-color: #161616;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5849,7 +5852,7 @@ table {
 
 .tech-experts {
   position: relative;
-  height: 320px;
+  height: 55vh;
   width: 100%;
   background-color: white;
   display: flex;
@@ -6055,11 +6058,12 @@ table {
 
 .telecom-experts {
   position: relative;
-  height: 320px;
+  height: 60vh;
   width: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  line-height: 35px; }
 
 .telecom-experts-top {
   position: relative;
@@ -6085,10 +6089,10 @@ table {
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
-  line-height: 35px;
-  font-family: 'Rogan-ExtraBold', sans-serif;
-  font-size: 5vmin;
-  letter-spacing: 4px; }
+  line-height: 45px;
+  font-family: 'Rogan-SemiBold', sans-serif;
+  font-size: 4vmin;
+  letter-spacing: 2px; }
 
 .telecom-industry-info {
   position: absolute;
@@ -7536,34 +7540,8 @@ h2 {
   .uintah-branding-image {
     width: 80%; } }
 
-p {
-  font-family: 'Rogan-Regular', sans-serif; }
-
-div {
-  font-family: 'Rogan-Regular', sans-serif; }
-
-.intro-text {
-  font-family: 'Rogan-Light', sans-serif;
-  font-size: 2vmin;
-  letter-spacing: 1px;
-  line-height: 32px; }
-
-.page-title {
-  font-family: 'Rogan-SemiBold', sans-serif;
-  font-size: 5vmin;
-  letter-spacing: 2px; }
-
-.industry-experts {
-  font-family: 'Rogan-ExtraBold', sans-serif;
-  font-size: 3.5vmin;
-  line-height: 25px;
-  letter-spacing: 4px; }
-
-@media screen and (max-device-width: 425px) {
-  .page-title {
-    font-family: 'Rogan-SemiBold', sans-serif;
-    font-size: 7vmin;
-    letter-spacing: 2px; } }
+body {
+  font-family: Rogan-Regular, sans-serif; }
 
 .us-main-container {
   height: 623vh;

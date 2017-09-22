@@ -1,35 +1,4 @@
-p {
-   font-family: 'Rogan-Regular', sans-serif;
- }
-div {
-  font-family: 'Rogan-Regular', sans-serif;
-}
 
-.intro-text {
-  font-family: 'Rogan-Light', sans-serif;
-  font-size: 2vmin;
-  letter-spacing: 1px;
-  line-height: 32px;
-}
-
-.page-title {
-  font-family: 'Rogan-SemiBold', sans-serif;
-  font-size: 5vmin;
-  letter-spacing: 2px;
-}
-
-.industry-experts {
-   font-family: 'Rogan-ExtraBold', sans-serif;
-   font-size: 3.5vmin;
-   line-height: 25px;
-   letter-spacing: 4px;
- }
-@media screen and (max-device-width: 425px) {
-
-  .page-title {
-    font-family: 'Rogan-SemiBold', sans-serif;
-    font-size: 7vmin;
-    letter-spacing: 2px;
-  }
-
+body {
+  font-family: Rogan-Regular, sans-serif;
 }

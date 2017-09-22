@@ -1,6 +1,6 @@
 .demandgen-main-container {
   width: 100%;
-  height: 213vh;
+  height: 350vh;
   background-color: #161616;
   display: flex;
   flex-direction: column;
@@ -23,10 +23,10 @@
 
 .demandgen-main-content {
   position: absolute;
-  top: 55%;
+  top: 20vh;
   left: 50%;
   width: 85%;
-  transform: translate(-50%, -16%);
+  transform: translate(-50%, 0);
   display: flex;
   flex-direction: column;
 }
@@ -88,20 +88,22 @@
   width: 60%;
 }
 
-.demandgen-video {
+.demand-gen-sections {
   position: relative;
-  height: 750px;
+  height: 240vh;
   width: 100%;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.demand-gen-section {
+  color: white;
 }
 
-
-.demandgen-video-underlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.8;
+.demand-gen-infographic {
+  width: 25vw;
 }
 
 .demandgen-clients-title {

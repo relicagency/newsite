@@ -1294,12 +1294,12 @@
 (function () {
     angular.module('app').controller('getStartedCtrl', function ($scope, mainService) {
 
-        console.log(window.location.href.indexOf('tourism'));
-
         $scope.ctaText = "Learn how we can help you.";
 
-        if (window.location.href.indexOf('tourism') === 35) {
+        if (window.location.href.indexOf('tourism') > -1) {
             $scope.ctaText = "Looking to bring more visitors to you area?";
+        }if (window.location.href.indexOf('demandgen') > -1) {
+            $scope.ctaText = "Looking for demand gen help?";
         }
 
         var mainPop = document.getElementById('cta-pop-up'),

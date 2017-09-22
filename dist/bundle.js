@@ -839,6 +839,7 @@
         $scope.accordionPop = function (num) {
 
             TweenMax.to(document.getElementById('accordion-pop-' + num), 0.5, {
+                display: "flex",
                 ease: Power3.easeIn,
                 height: "460px"
             });
@@ -851,6 +852,7 @@
             if (lastAccordion !== "" && document.getElementById('accordion-pop-' + lastAccordion).style.height !== "0px") {
 
                 TweenMax.to(document.getElementById('accordion-pop-' + lastAccordion), 0.5, {
+                    display: "none",
                     ease: Power3.easeOut,
                     height: 0
                 });
@@ -1291,6 +1293,14 @@
  */
 (function () {
     angular.module('app').controller('getStartedCtrl', function ($scope, mainService) {
+
+        console.log(window.location.href.indexOf('tourism'));
+
+        $scope.ctaText = "Learn how we can help you.";
+
+        if (window.location.href.indexOf('tourism') === 35) {
+            $scope.ctaText = "Looking to bring more visitors to you area?";
+        }
 
         var mainPop = document.getElementById('cta-pop-up'),
             barFive = document.getElementById('get-started-animation-five'),

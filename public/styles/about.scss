@@ -121,6 +121,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .about-route-leadership {
@@ -135,10 +136,13 @@
   width: 100%;
   height: 175px;
   background-color: black;
-  margin-top: 2px;
+  border-top: 2px solid #161616;
   cursor: pointer;
   color: black;
   overflow: hidden;
+}
+#leader-adam {
+  border-top: none;
 }
 
 .leader-pic {
@@ -173,7 +177,6 @@
   width: 100%;
   height: 97vh;
   background-color: white;
-  margin-top: 2px;
 }
 
 .story-top {

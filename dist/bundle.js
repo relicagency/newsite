@@ -213,10 +213,10 @@
             if (route === 'story') {
 
                 TweenMax.to(document.getElementById('about-leadership'), 0.35, {
-                    backgroundColor: "rgba(0,0,0,0.8)"
+                    backgroundColor: "rgba(0,0,0,1)"
                 });
                 TweenMax.to(document.getElementById('about-story'), 0.35, {
-                    backgroundColor: "rgba(255,255,255,0.9)"
+                    backgroundColor: "rgba(255,255,255,1)"
                 });
 
                 TweenMax.to(document.getElementById('about-route-story'), 0.25, {
@@ -232,11 +232,11 @@
             if (route === 'leadership') {
 
                 TweenMax.to(document.getElementById('about-leadership'), 0.35, {
-                    backgroundColor: "rgba(255,255,255,0.9)"
+                    backgroundColor: "rgba(255,255,255,1)"
 
                 });
                 TweenMax.to(document.getElementById('about-story'), 0.35, {
-                    backgroundColor: "rgba(0,0,0,0.8)"
+                    backgroundColor: "rgba(0,0,0,1)"
                 });
 
                 TweenMax.to(document.getElementById('about-route-leadership'), 0.25, {
@@ -255,36 +255,46 @@
             if (leader === 'adam') {
                 TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
                     height: "92vh",
-                    color: "white",
                     ease: Power3.easeIn
+                });
+                TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
+                    opacity: 1
                 });
                 expand = true;
             }if (leader === 'jordan') {
                 TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
                     height: "80vh",
-                    color: "white",
                     ease: Power3.easeIn
+                });
+                TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
+                    opacity: 1
                 });
                 expand = true;
             }if (leader === 'colby') {
                 TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
                     height: "65vh",
-                    color: "white",
                     ease: Power3.easeIn
+                });
+                TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
+                    opacity: 1
                 });
                 expand = true;
             }if (leader === 'jessica') {
                 TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
                     height: "85vh",
-                    color: "white",
                     ease: Power3.easeIn
+                });
+                TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
+                    opacity: 1
                 });
                 expand = true;
             }if (leader === 'hannah') {
                 TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
                     height: "67vh",
-                    color: "white",
                     ease: Power3.easeIn
+                });
+                TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
+                    opacity: 1
                 });
                 expand = true;
             }
@@ -293,8 +303,10 @@
 
                 TweenMax.to(document.getElementById('leader-' + lastLeader), 0.5, {
                     ease: Power3.easeOut,
-                    height: "175px",
-                    color: 'black'
+                    height: "175px"
+                });
+                TweenMax.to(document.getElementById('leader-about-' + lastLeader), 0.15, {
+                    opacity: 0
                 });
 
                 expand = false;

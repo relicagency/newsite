@@ -326,7 +326,7 @@
                     expand = true;
                 }
 
-                if (expand) {
+                if (expand === true && window.innerWidth > 425) {
 
                     TweenMax.to(document.getElementById('about-main-container'), 0.5, {
                         height: "295vh"
@@ -334,6 +334,15 @@
                 } else if (!expand) {
                     TweenMax.to(document.getElementById('about-main-container'), 0.5, {
                         height: "216vh"
+                    });
+                }if (expand === true && window.innerWidth < 425) {
+
+                    TweenMax.to(document.getElementById('about-main-container'), 0.5, {
+                        height: "450vh"
+                    });
+                } else if (!expand) {
+                    TweenMax.to(document.getElementById('about-main-container'), 0.5, {
+                        height: "400vh"
                     });
                 }
 

@@ -71,7 +71,7 @@
             if(window.innerWidth < 425) {
                 if(leader === 'adam'){
                     TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
-                        height: "80vh",
+                        height: "100vh",
                         ease: Power3.easeIn,
                         overflow: "scroll"
                     });
@@ -81,7 +81,7 @@
                     expand = true;
                 }  if(leader === 'jordan'){
                     TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
-                        height: "80vh",
+                        height: "100vh",
                         ease: Power3.easeIn,
                         overflow: "scroll"
                     });
@@ -91,7 +91,7 @@
                     expand = true;
                 }  if(leader === 'colby'){
                     TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
-                        height: "80vh",
+                        height: "100vh",
                         ease: Power3.easeIn,
                         overflow: "scroll"
                     });
@@ -101,7 +101,7 @@
                     expand = true;
                 } if(leader === 'jessica'){
                     TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
-                        height: "80vh",
+                        height: "100vh",
                         ease: Power3.easeIn,
                         overflow: "scroll"
                     });
@@ -111,7 +111,7 @@
                     expand = true;
                 } if(leader === 'hannah'){
                     TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
-                        height: "80vh",
+                        height: "100vh",
                         ease: Power3.easeIn,
                         overflow: "scroll"
                     });
@@ -158,7 +158,7 @@
                         height: "450vh"
                     });
 
-                } else if(!expand){
+                } else if(!expand) {
                     TweenMax.to(document.getElementById('about-main-container'), 0.5, {
                         height: "400vh"
                     });

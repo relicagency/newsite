@@ -66,63 +66,20 @@
 
         $scope.expandLeader = function(leader){
 
-            console.log(document.getElementById('leader-' + leader).scrollTop);
-
             if(window.innerWidth < 425) {
-                if(leader === 'adam'){
-                    TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
-                        height: "100vh",
-                        ease: Power3.easeIn,
-                        overflow: "scroll"
-                    });
-                    TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
-                        opacity: 1
-                    });
-                    expand = true;
-                }  if(leader === 'jordan'){
-                    TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
-                        height: "100vh",
-                        ease: Power3.easeIn,
-                        overflow: "scroll"
-                    });
-                    TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
-                        opacity: 1
-                    });
-                    expand = true;
-                }  if(leader === 'colby'){
-                    TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
-                        height: "100vh",
-                        ease: Power3.easeIn,
-                        overflow: "scroll"
-                    });
-                    TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
-                        opacity: 1
-                    });
-                    expand = true;
-                } if(leader === 'jessica'){
-                    TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
-                        height: "100vh",
-                        ease: Power3.easeIn,
-                        overflow: "scroll"
-                    });
-                    TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
-                        opacity: 1
-                    });
-                    expand = true;
-                } if(leader === 'hannah'){
-                    TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
-                        height: "100vh",
-                        ease: Power3.easeIn,
-                        overflow: "scroll"
-                    });
-                    TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
-                        opacity: 1
-                    });
-                    expand = true;
-                }
+
+                TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
+                    height: "100vh",
+                    ease: Power3.easeIn,
+                    overflow: "scroll"
+                });
+                TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
+                    opacity: 1
+                });
+                expand = true;
 
 
-                if( lastLeader !== "" && document.getElementById('leader-' + lastLeader).style.height > "210px" )  {
+                if (lastLeader !== "" && document.getElementById('leader-' + lastLeader).style.height !== "210px") {
 
                     TweenMax.to(document.getElementById('leader-' + lastLeader), 0.5, {
                         ease: Power3.easeOut,
@@ -137,6 +94,12 @@
                     expand = false;
 
                 }
+
+                lastLeader = leader;
+
+                return;
+
+            }
 
                 if(lastLeader !== leader){
                     expand = true;
@@ -164,11 +127,6 @@
                     });
                 }
 
-
-                lastLeader = leader;
-
-                return;
-            }
 
             if(leader === 'adam'){
                 TweenMax.to(document.getElementById('leader-' + leader), 0.5, {

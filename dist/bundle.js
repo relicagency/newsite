@@ -252,6 +252,96 @@
 
         $scope.expandLeader = function (leader) {
 
+            console.log(document.getElementById('leader-' + leader).scrollTop);
+
+            if (window.innerWidth < 425) {
+                if (leader === 'adam') {
+                    TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
+                        height: "80vh",
+                        ease: Power3.easeIn,
+                        overflow: "scroll"
+                    });
+                    TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
+                        opacity: 1
+                    });
+                    expand = true;
+                }if (leader === 'jordan') {
+                    TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
+                        height: "80vh",
+                        ease: Power3.easeIn,
+                        overflow: "scroll"
+                    });
+                    TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
+                        opacity: 1
+                    });
+                    expand = true;
+                }if (leader === 'colby') {
+                    TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
+                        height: "80vh",
+                        ease: Power3.easeIn,
+                        overflow: "scroll"
+                    });
+                    TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
+                        opacity: 1
+                    });
+                    expand = true;
+                }if (leader === 'jessica') {
+                    TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
+                        height: "80vh",
+                        ease: Power3.easeIn,
+                        overflow: "scroll"
+                    });
+                    TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
+                        opacity: 1
+                    });
+                    expand = true;
+                }if (leader === 'hannah') {
+                    TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
+                        height: "80vh",
+                        ease: Power3.easeIn,
+                        overflow: "scroll"
+                    });
+                    TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
+                        opacity: 1
+                    });
+                    expand = true;
+                }
+
+                if (lastLeader !== "" && document.getElementById('leader-' + lastLeader).style.height > "210px") {
+
+                    TweenMax.to(document.getElementById('leader-' + lastLeader), 0.5, {
+                        ease: Power3.easeOut,
+                        height: "210px",
+                        overflow: "hidden",
+                        scrollTop: 0
+                    });
+                    TweenMax.to(document.getElementById('leader-about-' + lastLeader), 0.15, {
+                        opacity: 0
+                    });
+
+                    expand = false;
+                }
+
+                if (lastLeader !== leader) {
+                    expand = true;
+                }
+
+                if (expand) {
+
+                    TweenMax.to(document.getElementById('about-main-container'), 0.5, {
+                        height: "295vh"
+                    });
+                } else if (!expand) {
+                    TweenMax.to(document.getElementById('about-main-container'), 0.5, {
+                        height: "216vh"
+                    });
+                }
+
+                lastLeader = leader;
+
+                return;
+            }
+
             if (leader === 'adam') {
                 TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
                     height: "92vh",

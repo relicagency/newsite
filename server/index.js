@@ -9,7 +9,7 @@ const express = require('express'),
       // config = require('../config.js');
 
 // const dbPassword = config.dbPassword;
-const port = process.env.PORT || 3007;
+const port = process.env.PORT || 3008;
 // const conStr = `postgres://postgres:${dbPassword}@localhost/relictwo`;
 
 

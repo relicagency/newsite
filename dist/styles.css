@@ -329,7 +329,7 @@
     position: relative;
     top: 0;
     width: 100%;
-    height: 257vh;
+    height: 270vh;
     background-color: white; }
   .our-story-one {
     position: absolute;
@@ -7664,7 +7664,8 @@ h2 {
     width: 80%; } }
 
 body {
-  font-family: Rogan-Regular, sans-serif; }
+  font-family: Rogan-Regular, sans-serif;
+  background-color: #161616; }
 
 .us-main-container {
   height: 623vh;

@@ -4580,6 +4580,13 @@
   text-transform: uppercase;
   font-size: 4vmin; }
 
+.mobile-nav-popup a {
+  color: inherit;
+  text-decoration: none; }
+
+.mobile-nav-popup a:active {
+  text-underline: none; }
+
 .mobile-nav-exit {
   position: absolute;
   top: 100px;

@@ -252,6 +252,38 @@
 
         $scope.expandLeader = function (leader) {
 
+            if (window.innerWidth < 769) {
+
+                TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
+                    height: "100vh",
+                    ease: Power3.easeIn,
+                    overflow: "scroll"
+                });
+                TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
+                    opacity: 1
+                });
+                expand = true;
+
+                if (lastLeader !== "" && document.getElementById('leader-' + lastLeader).style.height !== "210px") {
+
+                    TweenMax.to(document.getElementById('leader-' + lastLeader), 0.5, {
+                        ease: Power3.easeOut,
+                        height: "210px",
+                        overflow: "hidden",
+                        scrollTop: 0
+                    });
+                    TweenMax.to(document.getElementById('leader-about-' + lastLeader), 0.15, {
+                        opacity: 0
+                    });
+
+                    expand = false;
+                }
+
+                lastLeader = leader;
+
+                return;
+            }
+
             if (window.innerWidth < 425) {
 
                 TweenMax.to(document.getElementById('leader-' + leader), 0.5, {

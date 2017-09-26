@@ -342,7 +342,7 @@
 
             if (leader === 'adam') {
                 TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
-                    height: "92vh",
+                    height: "95vh",
                     ease: Power3.easeIn
                 });
                 TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
@@ -378,7 +378,7 @@
                 expand = true;
             }if (leader === 'jessica' && window.innerWidth > 1024) {
                 TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
-                    height: "85vh",
+                    height: "90vh",
                     ease: Power3.easeIn
                 });
                 TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {
@@ -396,7 +396,7 @@
                 expand = true;
             }if (leader === 'hannah' && window.innerWidth > 1024) {
                 TweenMax.to(document.getElementById('leader-' + leader), 0.5, {
-                    height: "67vh",
+                    height: "75vh",
                     ease: Power3.easeIn
                 });
                 TweenMax.to(document.getElementById('leader-about-' + leader), 0.5, {

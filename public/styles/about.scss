@@ -254,6 +254,14 @@
 
 @media screen and (max-device-width: 1024px) {
 
+  .about-route-story {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 170vh;
+    background-color: white;
+  }
+
   .about-router {
     position: relative;
     width: 100%;

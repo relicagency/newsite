@@ -17,7 +17,7 @@
 
             $scope.exitNav = function(section){
 
-                if(section !== "dont") {
+                if( section !== "dont" ) {
                     TweenMax.to(document.getElementById('mobile-nav-section-' + section), 0.05, {
                         backgroundColor: "rgba(255,255,255,1)",
                         ease: Power2.easeIn
@@ -25,22 +25,29 @@
                 }
 
             if(trigger){
-                tl.to(hamburgerTwo, 0.08, {top: "45%", backgroundColor: "#262626"})
+                  tl.to(hamburgerTwo, 0.08, {top: "44%", backgroundColor: "#262626"})
                     .to(hamburgerOne, 0.08, {top: "47%", backgroundColor: "#262626"})
                     .to(hamburgerThree, 0.08, {top: "47%", backgroundColor: "#262626"})
                     .to(hamburgerOne, 0, { opacity: 0})
                     .to(hamburgerThree, 0.08, {transform: "rotate(45deg)"})
                     .to(hamburgerTwo, 0.08, {transform: "rotate(-45deg)"})
                     .to(mobileNav, 0.15, {right: 0, ease: Power2.easeIn});
-            } if(!trigger) {
-                    tl.to(hamburgerThree, 0.08, {transform: "rotate(0deg)"})
+            } if(!trigger && section !== "dont") {
+                      tl.to(hamburgerThree, 0.08, {transform: "rotate(0deg)"})
                         .to(hamburgerTwo, 0.08, {transform: "rotate(0deg)"})
                         .to(hamburgerThree, 0.08, { top: "86%", backgroundColor: "white"})
                         .to(hamburgerOne, 0.08, { opacity: 1, top: 0, backgroundColor: "white"})
                         .to(hamburgerTwo, 0.08, { top: "45%", backgroundColor: "white"})
                         .to(mobileNav, 0.15, {right: "-101%", ease: Power2.easeOut})
                         .to(document.getElementById('mobile-nav-section-' + section), 0, {backgroundColor: "transparent"});
-            }
+            } if(!trigger) {
+                    tl.to(hamburgerThree, 0.08, {transform: "rotate(0deg)"})
+                        .to(hamburgerTwo, 0.08, {transform: "rotate(0deg)"})
+                        .to(hamburgerThree, 0.08, { top: "86%", backgroundColor: "white"})
+                        .to(hamburgerOne, 0.08, { opacity: 1, top: 0, backgroundColor: "white"})
+                        .to(hamburgerTwo, 0.08, { top: "44%", backgroundColor: "white"})
+                        .to(mobileNav, 0.15, {right: "-101%", ease: Power2.easeOut});
+                }
 
             trigger = !trigger;
         };

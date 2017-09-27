@@ -25,9 +25,9 @@
                 }
 
             if(trigger){
-                tl.to(hamburgerTwo, 0.08, {top: "47%"})
-                    .to(hamburgerOne, 0.08, {top: "47%"})
-                    .to(hamburgerThree, 0.08, {top: "47%"})
+                tl.to(hamburgerTwo, 0.08, {top: "46%", backgroundColor: "black"})
+                    .to(hamburgerOne, 0.08, {top: "47%", backgroundColor: "black"})
+                    .to(hamburgerThree, 0.08, {top: "47%", backgroundColor: "black"})
                     .to(hamburgerOne, 0, { opacity: 0})
                     .to(hamburgerThree, 0.08, {transform: "rotate(45deg)"})
                     .to(hamburgerTwo, 0.08, {transform: "rotate(-45deg)"})
@@ -35,9 +35,9 @@
             } if(!trigger) {
                     tl.to(hamburgerThree, 0.08, {transform: "rotate(0deg)"})
                         .to(hamburgerTwo, 0.08, {transform: "rotate(0deg)"})
-                        .to(hamburgerThree, 0.08, { top: "86%"})
-                        .to(hamburgerOne, 0.08, { opacity: 1, top: 0})
-                        .to(hamburgerTwo, 0.08, { top: "47%"})
+                        .to(hamburgerThree, 0.08, { top: "86%", backgroundColor: "white"})
+                        .to(hamburgerOne, 0.08, { opacity: 1, top: 0, backgroundColor: "white"})
+                        .to(hamburgerTwo, 0.08, { top: "47%", backgroundColor: "white"})
                         .to(mobileNav, 0.15, {right: "-101%", ease: Power2.easeOut})
                         .to(document.getElementById('mobile-nav-section-' + section), 0, {backgroundColor: "transparent"});
             }

@@ -4591,7 +4591,7 @@
   right: -101%;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4600,7 +4600,7 @@
 
 .mobile-nav-section {
   position: relative;
-  height: 50px;
+  height: 70px;
   width: 100%;
   display: flex;
   align-items: center;

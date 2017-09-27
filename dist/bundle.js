@@ -1627,8 +1627,8 @@
         $scope.exitNav = function (section) {
 
             if (section !== "dont") {
-                TweenMax.to(document.getElementById('mobile-nav-arrow-' + section), 0.05, {
-                    right: 0,
+                TweenMax.to(document.getElementById('mobile-nav-section-' + section), 0.05, {
+                    backgroundColor: "rgba(255,255,255,1)",
                     ease: Power2.easeIn
                 });
             }
@@ -1636,10 +1636,7 @@
             if (trigger) {
                 tl.to(hamburgerTwo, 0.08, { top: "47%" }).to(hamburgerOne, 0.08, { top: "47%" }).to(hamburgerThree, 0.08, { top: "47%" }).to(hamburgerOne, 0, { opacity: 0 }).to(hamburgerThree, 0.08, { transform: "rotate(45deg)" }).to(hamburgerTwo, 0.08, { transform: "rotate(-45deg)" }).to(mobileNav, 0.15, { right: 0, ease: Power2.easeIn });
             }if (!trigger) {
-                tl.to(hamburgerThree, 0.08, { transform: "rotate(0deg)" }).to(hamburgerTwo, 0.08, { transform: "rotate(0deg)" }).to(hamburgerThree, 0.08, { top: "86%" }).to(hamburgerOne, 0.08, { opacity: 1, top: 0 }).to(hamburgerTwo, 0.08, { top: "47%" }).to(mobileNav, 0.15, { right: "-101%", ease: Power2.easeOut }).to(document.getElementById('mobile-nav-arrow-' + section), 0, { right: "100%" });
-                // .to(document.getElementById('arrow-shaft-' + section), 0, {
-                //     width: "100%"
-                // });
+                tl.to(hamburgerThree, 0.08, { transform: "rotate(0deg)" }).to(hamburgerTwo, 0.08, { transform: "rotate(0deg)" }).to(hamburgerThree, 0.08, { top: "86%" }).to(hamburgerOne, 0.08, { opacity: 1, top: 0 }).to(hamburgerTwo, 0.08, { top: "47%" }).to(mobileNav, 0.15, { right: "-101%", ease: Power2.easeOut }).to(document.getElementById('mobile-nav-section-' + section), 0, { backgroundColor: "transparent" });
             }
 
             trigger = !trigger;

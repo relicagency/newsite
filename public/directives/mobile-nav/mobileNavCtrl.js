@@ -25,7 +25,7 @@
                 }
 
             if(trigger){
-                tl.to(hamburgerTwo, 0.08, {top: "47%", backgroundColor: "#262626"})
+                tl.to(hamburgerTwo, 0.08, {top: "45%", backgroundColor: "#262626"})
                     .to(hamburgerOne, 0.08, {top: "47%", backgroundColor: "#262626"})
                     .to(hamburgerThree, 0.08, {top: "47%", backgroundColor: "#262626"})
                     .to(hamburgerOne, 0, { opacity: 0})
@@ -37,7 +37,7 @@
                         .to(hamburgerTwo, 0.08, {transform: "rotate(0deg)"})
                         .to(hamburgerThree, 0.08, { top: "86%", backgroundColor: "white"})
                         .to(hamburgerOne, 0.08, { opacity: 1, top: 0, backgroundColor: "white"})
-                        .to(hamburgerTwo, 0.08, { top: "46%", backgroundColor: "white"})
+                        .to(hamburgerTwo, 0.08, { top: "45%", backgroundColor: "white"})
                         .to(mobileNav, 0.15, {right: "-101%", ease: Power2.easeOut})
                         .to(document.getElementById('mobile-nav-section-' + section), 0, {backgroundColor: "transparent"});
             }

@@ -17,7 +17,7 @@
         templateUrl: './components/expertise/expertise.html'
       })
         .state('services', {
-          url: '/services',
+          url: '/services/:num',
             controller: 'servicesCtrl',
             templateUrl: './components/services/services.html'
         })

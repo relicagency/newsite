@@ -13,7 +13,7 @@
       controller: 'expertiseCtrl',
       templateUrl: './components/expertise/expertise.html'
     }).state('services', {
-      url: '/services',
+      url: '/services/:num',
       controller: 'servicesCtrl',
       templateUrl: './components/services/services.html'
     }).state('contact', {
@@ -954,7 +954,7 @@
  * Created by Seth on 8/11/2017.
  */
 (function () {
-    angular.module('app').controller('servicesCtrl', function ($scope, $location, $anchorScroll, mainService) {
+    angular.module('app').controller('servicesCtrl', function ($scope, $stateParams, $location, $anchorScroll, mainService) {
 
         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
@@ -966,17 +966,10 @@
         var lastAccordion = "";
         var lastTopSec = -1;
         var backgroundPic = document.getElementById('services-background');
-        $scope.content = 0;
-
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.75;
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
+        $scope.content = $stateParams.num;
 
         $scope.changeContent = function (num) {
+
             $scope.content = num;
 
             TweenMax.to(document.getElementById('top-sec-' + num), 0.10, {
@@ -991,6 +984,17 @@
 
             lastTopSec = num;
         };
+        $scope.changeContent($stateParams.num);
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+
+        $scope.hoverContent = function (num) {};
 
         $scope.accordionPop = function (num) {
 
@@ -1000,9 +1004,7 @@
                 height: "460px"
             });
             TweenMax.to(document.getElementById('plus-sign-' + num), 0.5, {
-                transform: "rotate(315deg)",
-                height: "65px",
-                width: "50px"
+                transform: "rotate(315deg)"
             });
 
             if (lastAccordion !== "" && document.getElementById('accordion-pop-' + lastAccordion).style.height !== "0px") {
@@ -1013,9 +1015,7 @@
                     height: 0
                 });
                 TweenMax.to(document.getElementById('plus-sign-' + lastAccordion), 0.5, {
-                    transform: "rotate(0deg)",
-                    height: "55px",
-                    width: "40px"
+                    transform: "rotate(0deg)"
                 });
             }
 

@@ -124,15 +124,14 @@ height: 15px;
   font-weight: bold;
 }
 .service-content-info {
-  position: absolute;
-  top: 27%;
-  left: 30%;
-  color: #161616;
-  height: 1000px;
-  width: 50%;
-  letter-spacing: 2px;
-  font-size: medium;
-  line-height: 40px;
+    position: absolute;
+    top: 27%;
+    left: 30%;
+    color: #161616;
+    width: 50%;
+    letter-spacing: 1px;
+    line-height: 35px;
+  font-family: "Rogan-Regular", sans-serif;
 }
 
 .services-accordion {
@@ -179,7 +178,7 @@ height: 15px;
   letter-spacing: 1px;
   line-height: 35px;
   color: #161616;
-  left: 20%;
+  left: 30%;
   top: 10%;
 }
 

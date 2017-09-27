@@ -2,7 +2,7 @@
  * Created by Seth on 8/11/2017.
  */
 (function(){
-    angular.module('app').controller('servicesCtrl', function($scope, $location, $anchorScroll, mainService){
+    angular.module('app').controller('servicesCtrl', function($scope, $stateParams, $location, $anchorScroll, mainService){
 
         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
@@ -15,7 +15,25 @@
         let lastAccordion = "";
         let lastTopSec = -1;
         let backgroundPic = document.getElementById('services-background');
-        $scope.content = 0;
+        $scope.content = $stateParams.num;
+
+        $scope.changeContent = function(num){
+
+            $scope.content = num;
+
+            TweenMax.to(document.getElementById('top-sec-' + num), 0.10,  {
+                backgroundColor: "#BD9A35"
+            });
+
+            if(lastTopSec > -1 && lastTopSec !== num) {
+                TweenMax.to(document.getElementById('top-sec-' + lastTopSec), 0.10, {
+                    backgroundColor: "transparent"
+                });
+            }
+
+            lastTopSec = num;
+        };
+        $scope.changeContent($stateParams.num);
 
         window.onscroll = function() {
             let offSet = window.pageYOffset,
@@ -25,20 +43,9 @@
             mainService.parallaxIt(backgroundPic,csParaStart);
         };
 
-            $scope.changeContent = function(num){
-                              $scope.content = num;
 
-                              TweenMax.to(document.getElementById('top-sec-' + num), 0.10,  {
-                                  backgroundColor: "#BD9A35"
-                              });
+        $scope.hoverContent = function(num){
 
-                                if(lastTopSec > -1 && lastTopSec !== num) {
-                                    TweenMax.to(document.getElementById('top-sec-' + lastTopSec), 0.10, {
-                                        backgroundColor: "transparent"
-                                    });
-                                }
-
-                                lastTopSec = num;
         };
 
         $scope.accordionPop = function(num) {
@@ -50,9 +57,7 @@
                     height: "460px"
                 });
                 TweenMax.to(document.getElementById('plus-sign-' + num), 0.5, {
-                    transform: "rotate(315deg)",
-                    height: "65px",
-                    width: "50px"
+                    transform: "rotate(315deg)"
                 });
 
 
@@ -64,9 +69,7 @@
                         height: 0
                     });
                     TweenMax.to(document.getElementById('plus-sign-' + lastAccordion), 0.5, {
-                        transform: "rotate(0deg)",
-                        height: "55px",
-                        width: "40px"
+                        transform: "rotate(0deg)"
                     });
                 }
 

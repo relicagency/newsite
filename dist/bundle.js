@@ -1041,7 +1041,7 @@
             intro: "Marketing has always been about connecting with your audience in the right place at the right time. With people spending more time online, it has become apparent that often the best place to advertise is online. Relic’s digital team is experts in every aspect of online marketing, from SEO to website optimization to in-depth analytics. Read about our best digital offerings below, then contact us when you realize that we are the heaven-sent digital marketing agency that you have been waiting for.",
             sections: [{ number: "one", title: "PPC", info: ["What better place to advertise than where customers are actively searching for your product? Our experienced, paid search campaign managers will select relevant keywords to ensure your business appears at the top of Google’s and other search engines’ results when those keywords are entered. Our campaigns are optimized monthly to eliminate waste. And no, we’re not talking about firing Toby in HR. He’s actually super helpful."] }, { number: "two", title: "SEO", info: ["Google is the most trusted resource on the internet. That’s why it’s responsible for almost 3/4 of all web searches. If your website doesn’t match Google’s search results, your competitor could overtake your position and poach your potential sales. Our SEO team is well versed in Google’s latest algorithms and ready to make sure your site stays at the top of Google and other search engines’ organic results."] }, { number: "three", title: "Social Media Advertisements", info: ["Did you know that the average person spends over five years on of their life on social media? With so much time being spent pretending to care about your friends from high school, social media presents a huge marketing opportunity. Relic’s team targets the correct audiences at the correct time to get your ad in front of the correct people on all social media platforms. With both paid and lead generation ads, your top-of-funnel marketing efforts will be filled with qualified opportunities. Think of social media ads as a teenage girl. Does anyone care that Stephanie doesn’t have a homecoming date? Of course not, but get the post in front of the perfect audience at the appropriate time, and she just might generate some leads."] }, { number: "four", title: "Facebook Instant Articles", info: ["Instant Articles are a new way to interact with your consumers on Facebook. Loading 10 times faster than normal links, Instant Articles are 20 percent more likely to be read and 70 percent less likely to be abandoned, making adorable puppies the only other thing less likely to abandoned. Relic’s digital team is always on top of new online marketing opportunities, and Instant Articles is one of the latest digital techniques we have seen success with."] }, { number: "five", title: "Display Advertisements", info: ["With the amount of time spent online, web advertising is vital for any business, so let us help you out. Relic uses display ads to effectively communicate your message through graphic design images, rich media, video, audio, flash and more. With our display ads, you’ll get noticed more than Liam Neeson’s fictional children get kidnapped."] }, { number: "six", title: "Marketing Automation", info: ["You may think that all those emails you get from businesses are spam, but you’re getting them for a reason. They’re effective! Proper marketing automation planning and execution will not only generate leads for your business, it can push leads all the way through your conversion funnel. Marketing automation is also the perfect way to build brand awareness. The more you’re on your audience’s mind, the more likely they are to purchase."] }, { number: "seven", title: "Website Optimization", info: ["Just because you desire a change on your website doesn’t mean you should do it. Our website optimization team will A/B test changes on your website to make sure the site is converting at the highest rate possible. This testing ensures that all images, buttons, copy and other web functions operate properly on all devices. Let data drive the decision making on your website so that you have time to focus on more important things, like how Arie became the next bachelor over Peter when clearly Peter deserved it. Just look at that face."] }, { number: "eight", title: "Reporting & Analytics", info: ["Spend your money where it counts. If you’re going to try the shotgun approach and just throw money at something and hope it works, we would prefer if you throw that money at us. We investigate your target markets and get to know what they like and what they are talking about in order to create an efficient campaign. Our professionals research which ads and posts work the best for your audience through our extensive reporting and analytics.]"] }]
         }, {
-            title: 'Public Relations & Content',
+            title: 'PR & Content',
             intro: "While certain reality TV stars may have lead you to believe that any press is good press, we vehemently disagree. Public relations exists for the exact opposite reason; we ensure that you and your company are represented in the best possible light. PR is necessary because it will boost credibility in ways advertising simply cannot. Relic’s team specializes in media pitches, press releases, social media, website content and more in order to increase the public awareness of our clients and their unique work and offerings. For more information on Relic’s PR resources, click on any of the tabs below. For less information, click here.",
             sections: [{
                 number: "one",
@@ -1158,6 +1158,10 @@
             });
 
             $scope.lastNum = num;
+        };
+
+        $scope.mobileInnerExpand = function () {
+            console.log('Its working.....');
         };
     });
 })();
@@ -1553,44 +1557,47 @@
 
         $scope.swnContentHover = function (num) {
 
-            // if(num === "four"){
-            //     TweenMax.to(document.getElementById('services-content-' + num), 0.5, {ease: Power2.easeOut, height: "200px", width: "200px"}, 0.25)
-            // } else { TweenMax.to(document.getElementById('services-content-' + num), 0.5, {ease: Power2.easeOut, height: "250px", width: "250px"}, 0.25) }
-
+            if (num === "four") {
+                TweenMax.to(document.getElementById('services-content-' + num), 0.5, { ease: Power2.easeOut, height: "200px", width: "200px" }, 0.25);
+            } else {
+                TweenMax.to(document.getElementById('services-content-' + num), 0.5, { ease: Power2.easeOut, height: "250px", width: "250px" }, 0.25);
+            }
         };
 
         $scope.swnContentHoverLeave = function (num) {
-            // if(num === "four"){
-            //     TweenMax.to(document.getElementById('services-content-' + num), 0.25, {ease: Power2.easeOut, height: "175px", width: "175px"})
-            // } else { TweenMax.to(document.getElementById('services-content-' + num), 0.25, {ease: Power2.easeOut, height: "225px", width: "225px"}) }            }
+            if (num === "four") {
+                TweenMax.to(document.getElementById('services-content-' + num), 0.25, { ease: Power2.easeOut, height: "175px", width: "175px" });
+            } else {
+                TweenMax.to(document.getElementById('services-content-' + num), 0.25, { ease: Power2.easeOut, height: "225px", width: "225px" });
+            }
         };
 
         $scope.clientHover = function (num) {
-            // TweenMax.to(document.getElementById('client-image-' + num), 0.5, {
-            //     height: "225px",
-            //     width: "225px",
-            //     ease: Power3.easeOut
-            // })
+            TweenMax.to(document.getElementById('client-image-' + num), 0.05, {
+                height: "225px",
+                width: "225px",
+                ease: Power3.easeOut
+            });
         };
         $scope.clientHoverLeave = function (num) {
-            //     TweenMax.to(document.getElementById('client-image-' + num), 0.25, {
-            //         height: "200px",
-            //         width: "200px"
-            // })
+            TweenMax.to(document.getElementById('client-image-' + num), 0.25, {
+                height: "200px",
+                width: "200px"
+            });
         };
 
         $scope.articleHover = function (num) {
-            // TweenMax.to(document.getElementById('article-pic-' + num), 0.5, {
-            //     height: "225px",
-            //     width: "225px",
-            //     ease: Power3.easeOut
-            // })
+            TweenMax.to(document.getElementById('article-pic-' + num), 0.5, {
+                height: "225px",
+                width: "225px",
+                ease: Power3.easeOut
+            });
         };
         $scope.articleHoverLeave = function (num) {
-            // TweenMax.to(document.getElementById('article-pic-' + num), 0.25, {
-            //     height: "200",
-            //     width: "200px"
-            // })
+            TweenMax.to(document.getElementById('article-pic-' + num), 0.25, {
+                height: "200",
+                width: "200px"
+            });
         };
     });
 })();

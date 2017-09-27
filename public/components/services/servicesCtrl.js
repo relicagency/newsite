@@ -131,7 +131,7 @@
                     ]
             },
             {
-                title: 'Public Relations & Content',
+                title: 'PR & Content',
                 intro: "While certain reality TV stars may have lead you to believe that any press is good press, we vehemently disagree. Public relations exists for the exact opposite reason; we ensure that you and your company are represented in the best possible light. PR is necessary because it will boost credibility in ways advertising simply cannot. Relic’s team specializes in media pitches, press releases, social media, website content and more in order to increase the public awareness of our clients and their unique work and offerings. For more information on Relic’s PR resources, click on any of the tabs below. For less information, click here.",
                 sections: [
                     {
@@ -259,6 +259,10 @@
 
             $scope.lastNum = num;
 
+        };
+
+        $scope.mobileInnerExpand = function(){
+            console.log('Its working.....')
         }
 
 

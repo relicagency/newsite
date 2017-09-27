@@ -67,44 +67,44 @@
 
             $scope.swnContentHover = function(num){
 
-                // if(num === "four"){
-                //     TweenMax.to(document.getElementById('services-content-' + num), 0.5, {ease: Power2.easeOut, height: "200px", width: "200px"}, 0.25)
-                // } else { TweenMax.to(document.getElementById('services-content-' + num), 0.5, {ease: Power2.easeOut, height: "250px", width: "250px"}, 0.25) }
+                if(num === "four"){
+                    TweenMax.to(document.getElementById('services-content-' + num), 0.5, {ease: Power2.easeOut, height: "200px", width: "200px"}, 0.25)
+                } else { TweenMax.to(document.getElementById('services-content-' + num), 0.5, {ease: Power2.easeOut, height: "250px", width: "250px"}, 0.25) }
 
             };
 
             $scope.swnContentHoverLeave = function(num) {
-                // if(num === "four"){
-                //     TweenMax.to(document.getElementById('services-content-' + num), 0.25, {ease: Power2.easeOut, height: "175px", width: "175px"})
-                // } else { TweenMax.to(document.getElementById('services-content-' + num), 0.25, {ease: Power2.easeOut, height: "225px", width: "225px"}) }            }
+                if(num === "four"){
+                    TweenMax.to(document.getElementById('services-content-' + num), 0.25, {ease: Power2.easeOut, height: "175px", width: "175px"})
+                } else { TweenMax.to(document.getElementById('services-content-' + num), 0.25, {ease: Power2.easeOut, height: "225px", width: "225px"}) }
             };
 
                 $scope.clientHover = function(num){
-                        // TweenMax.to(document.getElementById('client-image-' + num), 0.5, {
-                        //     height: "225px",
-                        //     width: "225px",
-                        //     ease: Power3.easeOut
-                        // })
+                        TweenMax.to(document.getElementById('client-image-' + num), 0.05, {
+                            height: "225px",
+                            width: "225px",
+                            ease: Power3.easeOut
+                        })
                 };
                 $scope.clientHoverLeave = function(num){
-                    //     TweenMax.to(document.getElementById('client-image-' + num), 0.25, {
-                    //         height: "200px",
-                    //         width: "200px"
-                    // })
+                        TweenMax.to(document.getElementById('client-image-' + num), 0.25, {
+                            height: "200px",
+                            width: "200px"
+                    })
                 };
 
                 $scope.articleHover = function(num){
-                    // TweenMax.to(document.getElementById('article-pic-' + num), 0.5, {
-                    //     height: "225px",
-                    //     width: "225px",
-                    //     ease: Power3.easeOut
-                    // })
+                    TweenMax.to(document.getElementById('article-pic-' + num), 0.5, {
+                        height: "225px",
+                        width: "225px",
+                        ease: Power3.easeOut
+                    })
                 };
                 $scope.articleHoverLeave = function(num){
-                    // TweenMax.to(document.getElementById('article-pic-' + num), 0.25, {
-                    //     height: "200",
-                    //     width: "200px"
-                    // })
+                    TweenMax.to(document.getElementById('article-pic-' + num), 0.25, {
+                        height: "200",
+                        width: "200px"
+                    })
                 };
 
         })

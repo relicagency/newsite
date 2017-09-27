@@ -2349,7 +2349,7 @@
 
 .demandgen-main-container {
   width: 100%;
-  height: 350vh;
+  height: 395vh;
   background-color: #161616;
   display: flex;
   flex-direction: column; }
@@ -2389,7 +2389,7 @@
 
 .demandgen-experts {
   position: relative;
-  height: 320px;
+  height: 50vh;
   width: 100%;
   background-color: white;
   display: flex;
@@ -2429,7 +2429,9 @@
   left: 35%;
   font-size: 20px;
   color: #727272;
-  width: 60%; }
+  width: 60%;
+  line-height: 35px;
+  letter-spacing: 1px; }
 
 .demand-gen-sections {
   position: relative;
@@ -2442,7 +2444,20 @@
   justify-content: space-around; }
 
 .demand-gen-section {
-  color: white; }
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.gen-section-title {
+  font-size: 2vmin;
+  font-family: "Rogan-Medium", sans-serif; }
+
+.gen-section-info {
+  line-height: 35px;
+  letter-spacing: 1px;
+  width: 60%; }
 
 .demand-gen-infographic {
   width: 25vw; }

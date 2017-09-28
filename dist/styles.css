@@ -2385,7 +2385,7 @@
   align-items: flex-start;
   text-transform: uppercase;
   color: white;
-  font-size: 30px; }
+  font-size: 5vmin; }
 
 .demandgen-experts {
   position: relative;
@@ -2414,24 +2414,26 @@
 
 .demandgen-industry-experts {
   position: absolute;
-  top: 22%;
+  top: 1in;
   right: 70%;
-  font-size: 30px;
+  font-size: 3.5vmin;
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
   letter-spacing: 3px;
-  line-height: 35px; }
+  line-height: 35px;
+  font-family: 'Rogan-SemiBold', sans-serif; }
 
 .demandgen-industry-info {
   position: absolute;
-  top: 22%;
+  top: 1in;
   left: 35%;
-  font-size: 20px;
-  color: #727272;
   width: 60%;
-  line-height: 35px;
-  letter-spacing: 1px; }
+  font-family: 'Rogan-Light', sans-serif;
+  font-size: 2vmin;
+  letter-spacing: 1px;
+  line-height: 32px;
+  color: #161616; }
 
 .demand-gen-sections {
   position: relative;
@@ -6043,7 +6045,7 @@ table {
 
 .tech-main-content {
   position: absolute;
-  top: 40%;
+  top: 42vh;
   left: 50%;
   width: 85%;
   transform: translate(-50%, -16%);
@@ -6060,7 +6062,7 @@ table {
   align-items: flex-start;
   text-transform: uppercase;
   color: white;
-  font-size: 30px; }
+  font-size: 5vmin; }
 
 .tech-experts {
   position: relative;
@@ -6089,7 +6091,7 @@ table {
 
 .tech-industry-experts {
   position: absolute;
-  top: 22%;
+  top: 1in;
   right: 70%;
   font-size: 3.5vmin;
   color: #BD9A35;
@@ -6101,7 +6103,7 @@ table {
 
 .tech-industry-info {
   position: absolute;
-  top: 22%;
+  top: 1in;
   left: 35%;
   color: #727272;
   width: 60%;
@@ -6249,7 +6251,7 @@ table {
 
 .telecom-main-content {
   position: absolute;
-  top: 55%;
+  top: 54.5vh;
   left: 50%;
   width: 85%;
   transform: translate(-50%, -16%);
@@ -6266,7 +6268,7 @@ table {
   align-items: flex-start;
   text-transform: uppercase;
   color: white;
-  font-size: 30px; }
+  font-size: 5vmin; }
 
 .telecom-experts {
   position: relative;
@@ -6296,23 +6298,26 @@ table {
 
 .telecom-industry-experts {
   position: absolute;
-  top: 22%;
+  top: 1in;
   right: 70%;
+  font-size: 3.5vmin;
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
-  line-height: 45px;
-  font-family: 'Rogan-SemiBold', sans-serif;
-  font-size: 4vmin;
-  letter-spacing: 2px; }
+  letter-spacing: 3px;
+  line-height: 35px;
+  font-family: 'Rogan-SemiBold', sans-serif; }
 
 .telecom-industry-info {
   position: absolute;
-  top: 22%;
+  top: 1in;
   left: 35%;
   color: #727272;
   width: 60%;
-  font-size: 20px; }
+  font-family: 'Rogan-Light', sans-serif;
+  font-size: 2vmin;
+  letter-spacing: 1px;
+  line-height: 32px; }
 
 .telecom-video {
   position: relative;
@@ -6631,8 +6636,7 @@ h2 {
   align-items: flex-start;
   text-transform: uppercase;
   color: white;
-  font-size: 7vmin;
-  font-family: "Rogan-SemiBold", sans-serif; }
+  font-size: 5vmin; }
 
 .tourism-experts {
   background-color: white;
@@ -6657,19 +6661,19 @@ h2 {
 
 .tourism-industry-experts {
   position: absolute;
-  top: 8%;
+  top: 2.5in;
   right: 70%;
-  font-size: 30px;
+  font-size: 3.5vmin;
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
   letter-spacing: 3px;
   line-height: 35px;
-  font-family: "Rogan-SemiBold", sans-serif; }
+  font-family: 'Rogan-SemiBold', sans-serif; }
 
 .tourism-industry-info {
   position: absolute;
-  top: 8%;
+  top: 2.5in;
   left: 35%;
   color: #727272;
   width: 60%;

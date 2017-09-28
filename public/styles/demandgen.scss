@@ -41,7 +41,7 @@
   align-items: flex-start;
   text-transform: uppercase;
   color: white;
-  font-size: 30px;
+  font-size: 5vmin;
 }
 .demandgen-experts {
   position: relative;
@@ -70,24 +70,26 @@
 }
 .demandgen-industry-experts {
   position: absolute;
-  top: 22%;
+  top: 1in;
   right: 70%;
-  font-size: 30px;
+  font-size: 3.5vmin;
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
   letter-spacing: 3px;
   line-height: 35px;
+  font-family: 'Rogan-SemiBold', sans-serif;
 }
 .demandgen-industry-info {
   position: absolute;
-  top: 22%;
+  top: 1in;
   left: 35%;
-  font-size: 20px;
-  color: #727272;
   width: 60%;
-  line-height: 35px;
+  font-family: 'Rogan-Light', sans-serif;
+  font-size: 2vmin;
   letter-spacing: 1px;
+  line-height: 32px;
+  color: #161616;
 }
 
 .demand-gen-sections {

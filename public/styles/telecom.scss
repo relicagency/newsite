@@ -22,7 +22,7 @@
 
 .telecom-main-content {
   position: absolute;
-  top: 55%;
+  top: 54.5vh;
   left: 50%;
   width: 85%;
   transform: translate(-50%, -16%);
@@ -40,7 +40,7 @@
   align-items: flex-start;
   text-transform: uppercase;
   color: white;
-  font-size: 30px;
+  font-size: 5vmin;
 }
 
 .telecom-experts {
@@ -72,23 +72,26 @@
 }
 .telecom-industry-experts {
   position: absolute;
-  top: 22%;
+  top: 1in;
   right: 70%;
+  font-size: 3.5vmin;
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
-  line-height: 45px;
+  letter-spacing: 3px;
+  line-height: 35px;
   font-family: 'Rogan-SemiBold', sans-serif;
-  font-size: 4vmin;
-  letter-spacing: 2px;
 }
 .telecom-industry-info {
   position: absolute;
-  top: 22%;
+  top: 1in;
   left: 35%;
   color: #727272;
   width: 60%;
-  font-size: 20px;
+  font-family: 'Rogan-Light', sans-serif;
+  font-size: 2vmin;
+  letter-spacing: 1px;
+  line-height: 32px;
 }
 
 .telecom-video {

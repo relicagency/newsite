@@ -1001,7 +1001,7 @@
             TweenMax.to(document.getElementById('accordion-pop-' + num), 0.5, {
                 display: "flex",
                 ease: Power3.easeIn,
-                height: "460px"
+                height: "560px"
             });
             TweenMax.to(document.getElementById('plus-sign-' + num), 0.5, {
                 transform: "rotate(315deg)"

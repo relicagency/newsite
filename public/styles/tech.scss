@@ -131,18 +131,27 @@
 
 @media screen and (max-width: 1024px) {
 
-  .tech-experts {
-    position: relative;
-    height: 46vh;
+  .tech-main-container {
     width: 100%;
-    background-color: white;
+    height: 280vh;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tech-main-content {
+    position: absolute;
+    top: 70vh;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -16%);
     display: flex;
     flex-direction: column;
   }
 
   .tech-title {
     position: relative;
-    height: 145vh;
+    height: 145px;
     width: 100%;
     background-color: transparent;
     display: flex;
@@ -153,12 +162,11 @@
     font-size: 30px;
   }
 
-  .tech-main-content {
-    position: absolute;
-    top: 60vh;
-    left: 50%;
-    width: 85%;
-    transform: translate(-50%, -16%);
+  .tech-experts {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
     display: flex;
     flex-direction: column;
   }
@@ -177,7 +185,7 @@
 
   .tech-main-content {
     position: absolute;
-    top: 64%;
+    top: 67vh;
     left: 50%;
     width: 85%;
     transform: translate(-50%, -16%);

@@ -2514,14 +2514,36 @@
   position: relative; }
 
 @media screen and (max-width: 1024px) {
+  .demandgen-main-container {
+    width: 100%;
+    height: 773vh;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column; }
   .demandgen-main-content {
     position: absolute;
-    top: 31vh;
+    top: 28vh;
     left: 50%;
     width: 85%;
     transform: translate(-50%, 0);
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .demandgen-experts {
+    position: relative;
+    height: 84vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column; }
+  .demand-gen-sections {
+    position: relative;
+    height: 510vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; } }
 
 .expertise-main-container {
   width: 100%;
@@ -5687,6 +5709,70 @@ table {
   margin-bottom: 100px;
   position: relative; }
 
+@media screen and (max-width: 1024px) {
+  .services-main-container {
+    width: 100%;
+    height: 355vh;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column; }
+  .services-main-content-container {
+    position: absolute;
+    top: 30vh;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: transparent;
+    z-index: 2;
+    display: flex;
+    flex-direction: column; }
+  .services-content-top {
+    position: relative;
+    height: 190px;
+    width: 100%;
+    background-color: rgba(22, 22, 22, 0.9);
+    display: flex;
+    flex-direction: row; }
+  #services-tile-four {
+    height: 90px;
+    bottom: 68px; }
+  .services-tile {
+    height: 122px;
+    position: absolute;
+    bottom: 55px; }
+  .down-arrow {
+    height: 10px;
+    position: absolute;
+    bottom: 20px; }
+  .services-top-services p {
+    position: absolute;
+    bottom: 40px;
+    font-size: 2vmin; }
+  .services-content-middle {
+    position: relative;
+    height: 490px;
+    width: 100%;
+    background-color: white; }
+  .services-content-title {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    text-transform: uppercase;
+    color: #BD9A35;
+    letter-spacing: 3px;
+    font-size: 3vmin;
+    font-weight: bold; }
+  .service-content-info {
+    position: absolute;
+    top: 19%;
+    left: 35%;
+    color: #161616;
+    width: 50%;
+    letter-spacing: 1px;
+    line-height: 35px;
+    font-family: "Rogan-Regular", sans-serif;
+    font-size: 2.5vmin; } }
+
 @media screen and (max-width: 425px) {
   .services-background {
     position: absolute;
@@ -6171,16 +6257,23 @@ table {
   position: relative; }
 
 @media screen and (max-width: 1024px) {
-  .tech-experts {
-    position: relative;
-    height: 46vh;
+  .tech-main-container {
     width: 100%;
-    background-color: white;
+    height: 280vh;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column; }
+  .tech-main-content {
+    position: absolute;
+    top: 70vh;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -16%);
     display: flex;
     flex-direction: column; }
   .tech-title {
     position: relative;
-    height: 145vh;
+    height: 145px;
     width: 100%;
     background-color: transparent;
     display: flex;
@@ -6189,12 +6282,11 @@ table {
     text-transform: uppercase;
     color: white;
     font-size: 30px; }
-  .tech-main-content {
-    position: absolute;
-    top: 60vh;
-    left: 50%;
-    width: 85%;
-    transform: translate(-50%, -16%);
+  .tech-experts {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
     display: flex;
     flex-direction: column; } }
 
@@ -6207,7 +6299,7 @@ table {
     flex-direction: column; }
   .tech-main-content {
     position: absolute;
-    top: 64%;
+    top: 67vh;
     left: 50%;
     width: 85%;
     transform: translate(-50%, -16%);
@@ -6422,6 +6514,14 @@ table {
     flex-direction: column; } }
 
 @media screen and (max-width: 1024px) {
+  .telecom-main-content {
+    position: absolute;
+    top: 60.5vh;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -16%);
+    display: flex;
+    flex-direction: column; }
   .telecom-title {
     position: relative;
     height: 145px;

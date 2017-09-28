@@ -183,6 +183,16 @@
 
 @media screen and (max-width: 1024px) {
 
+  .telecom-main-content {
+    position: absolute;
+    top: 60.5vh;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -16%);
+    display: flex;
+    flex-direction: column;
+  }
+
   .telecom-title {
     position: relative;
     height: 145px;

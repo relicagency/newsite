@@ -171,14 +171,42 @@
 
 @media screen and (max-width: 1024px) {
 
+  .demandgen-main-container {
+    width: 100%;
+    height: 773vh;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+  }
+
   .demandgen-main-content {
     position: absolute;
-    top: 31vh;
+    top: 28vh;
     left: 50%;
     width: 85%;
     transform: translate(-50%, 0);
     display: flex;
     flex-direction: column;
+  }
+
+  .demandgen-experts {
+    position: relative;
+    height: 84vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .demand-gen-sections {
+    position: relative;
+    height: 510vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
 
 }

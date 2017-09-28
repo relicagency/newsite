@@ -2514,6 +2514,16 @@
 #demandgen-looking-for-help {
   position: relative; }
 
+@media screen and (max-device-width: 1024px) {
+  .demandgen-main-content {
+    position: absolute;
+    top: 31vh;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column; } }
+
 .expertise-main-container {
   width: 100%;
   height: 150vh;
@@ -6171,7 +6181,7 @@ table {
     flex-direction: column; }
   .tech-title {
     position: relative;
-    height: 13vh;
+    height: 145px;
     width: 100%;
     background-color: transparent;
     display: flex;
@@ -6182,7 +6192,7 @@ table {
     font-size: 30px; }
   .tech-main-content {
     position: absolute;
-    top: 35%;
+    top: 60vh;
     left: 50%;
     width: 85%;
     transform: translate(-50%, -16%);
@@ -6413,6 +6423,17 @@ table {
     flex-direction: column; } }
 
 @media screen and (max-device-width: 1024px) {
+  .telecom-title {
+    position: relative;
+    height: 145px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: uppercase;
+    color: white;
+    font-size: 5vmin; }
   .telecom-experts {
     position: relative;
     height: 60vh;
@@ -6997,6 +7018,25 @@ h2 {
     background-color: #161616;
     display: flex;
     flex-direction: column; }
+  .tourism-main-content {
+    position: absolute;
+    top: 26vh;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column; }
+  .tourism-title {
+    position: relative;
+    height: 145px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: uppercase;
+    color: white;
+    font-size: 5vmin; }
   .tourism-video {
     position: relative;
     height: 47vh;

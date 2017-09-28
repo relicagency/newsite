@@ -183,6 +183,19 @@
 
 @media screen and (max-device-width: 1024px) {
 
+  .telecom-title {
+    position: relative;
+    height: 145px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: uppercase;
+    color: white;
+    font-size: 5vmin;
+  }
+
   .telecom-experts {
     position: relative;
     height: 60vh;

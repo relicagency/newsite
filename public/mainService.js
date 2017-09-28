@@ -21,7 +21,7 @@
 
         this.parallaxIt = function(pic, picLax){
             TweenMax.to(pic, 0, {
-                top: picLax + "px"
+                top: (picLax / 2) + "px"
             })
         };
 
@@ -56,7 +56,7 @@
             "../../images/work-backgrounds/relic8.jpg",
             "../../images/work-backgrounds/relic9.jpg",
             "../../images/work-backgrounds/relic10.jpg",
-            "../../images/work-backgrounds/relic11.jpg"
+            "../../images/work-backgrounds/relic10.jpg"
         ]
 
     });

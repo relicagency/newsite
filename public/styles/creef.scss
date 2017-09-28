@@ -87,7 +87,7 @@
 
 
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
 
   .creef-logo {
     height: 8vmin;
@@ -128,7 +128,7 @@
 }
 
 //this is to get ipad pro under control
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
 
   .creef-main-content {
     position: absolute;
@@ -160,7 +160,7 @@
 
 }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
   .creef-main-container {
     height: 513vh;
@@ -213,7 +213,7 @@
 }
 
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
 
   .creef-main-container {
     height: 502vh;
@@ -290,7 +290,7 @@
 
 }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
 
   .creef-main-container {
     height: 111vh;
@@ -346,7 +346,7 @@
 
 }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
 
   .creef-content-intro {
     position: relative;

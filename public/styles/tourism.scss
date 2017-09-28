@@ -232,7 +232,7 @@
 }
 
 .tourism-award-one {
-  background-image: url(../images/telly_award.png);
+  background-image: url('../images/telly_award.png');
   background-color: white;
   background-repeat: no-repeat;
   background-size: 70%;
@@ -240,7 +240,7 @@
   background-position-y: 50%;
 }
 .tourism-award-two {
-  background-image: url(../images/samy_award.png);
+  background-image: url('../images/samy_award.png');
   background-color: white;
   background-repeat: no-repeat;
   background-size: 115%;
@@ -256,7 +256,7 @@
   background-position-y: 50%;
 }
 .tourism-award-four {
-  background-image: url(../images/golden_spike.png);
+  background-image: url('../images/golden_spike.png');
   background-color: #242424;
   background-repeat: no-repeat;
   background-size: 97%;
@@ -300,18 +300,7 @@
   position: relative;
 }
 
-//@media screen and (max-device-width: 1440px){
-//  .tourism-main-container {
-//    width: 100%;
-//    height: 452vh;
-//    background-color: #161616;
-//    display: flex;
-//    flex-direction: column;
-//  }
-//}
-
-
-@media screen and (max-device-width: 1440px){
+@media screen and (max-width: 1440px){
 
   .tourism-main-container {
     width: 100%;
@@ -421,11 +410,11 @@
 
 }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
   .tourism-main-container {
     width: 100%;
-    height: 303vh;
+    height: 475vh;
     background-color: #161616;
     display: flex;
     flex-direction: column;
@@ -454,9 +443,43 @@
     font-size: 5vmin;
   }
 
+  .tourism-experts {
+    position: relative;
+    height: 170vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tourism-industry-experts {
+    position: absolute;
+    top: 12vh;
+    right: 70%;
+    font-size: 3.5vmin;
+    color: #BD9A35;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 35px;
+    font-family: 'Rogan-SemiBold', sans-serif;
+  }
+
+  .tourism-industry-info {
+    position: absolute;
+    top: 12vh;
+    left: 35%;
+    color: #727272;
+    width: 60%;
+    font-family: 'Rogan-Light', sans-serif;
+    font-size: 2vmin;
+    letter-spacing: 1px;
+    line-height: 32px;
+  }
+
   .tourism-video {
     position: relative;
-    height: 47vh;
+    height: 80vh;
     width: 100%;
     background-color: transparent;
   }
@@ -523,7 +546,7 @@
 
 }
 
-@media screen and (max-device-width: 768px){
+@media screen and (max-width: 768px){
 
   .tourism-experts {
     position: relative;
@@ -567,7 +590,7 @@
 
 }
 
-@media screen and (max-device-width: 425px){
+@media screen and (max-width: 425px){
 
   .tourism-main-container {
     width: 100%;

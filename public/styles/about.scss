@@ -244,7 +244,7 @@
 }
 
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .about-route-story {
     position: relative;
     top: 0;
@@ -254,7 +254,7 @@
   }
 }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
   .about-route-story {
     position: relative;
@@ -281,7 +281,7 @@
   }
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
 
   .about-main-container {
     height: 230vh;
@@ -318,7 +318,7 @@
 
 }
 
-@media screen and (max-device-width: 425px){
+@media screen and (max-width: 425px){
 
   .about-main-container {
     height: 400vh;

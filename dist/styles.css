@@ -221,7 +221,7 @@
 #about-looking-for-help {
   height: 45vh; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .about-route-story {
     position: relative;
     top: 0;
@@ -229,7 +229,7 @@
     height: 130vh;
     background-color: white; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .about-route-story {
     position: relative;
     top: 0;
@@ -249,7 +249,7 @@
     opacity: 0;
     color: black; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .about-main-container {
     height: 230vh;
     width: 100%;
@@ -276,7 +276,7 @@
     color: #bd9a35;
     font-size: 20px; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .about-main-container {
     height: 400vh;
     width: 100%;
@@ -479,7 +479,7 @@
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .b2-logo {
     height: 8vmin;
     position: absolute;
@@ -505,7 +505,7 @@
   .b2-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .b2-main-content {
     position: absolute;
     top: 8vh;
@@ -527,7 +527,7 @@
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .b2-main-container {
     height: 513vh;
     width: 100%;
@@ -565,7 +565,7 @@
   .b2-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .b2-main-container {
     height: 502vh;
     width: 100%;
@@ -620,7 +620,7 @@
   .b2-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .b2-main-container {
     height: 111vh;
     width: 100%;
@@ -660,7 +660,7 @@
   .b2-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .b2-content-intro {
     position: relative;
     height: 130vh;
@@ -781,7 +781,7 @@
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .beehive-logo {
     height: 8vmin;
     position: absolute;
@@ -807,7 +807,7 @@
   .beehive-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .beehive-main-content {
     position: absolute;
     top: 8vh;
@@ -829,7 +829,7 @@
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .beehive-main-container {
     height: 513vh;
     width: 100%;
@@ -867,7 +867,7 @@
   .beehive-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .beehive-main-container {
     height: 502vh;
     width: 100%;
@@ -922,7 +922,7 @@
   .beehive-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .beehive-main-container {
     height: 275vh;
     width: 100%;
@@ -962,7 +962,7 @@
   .beehive-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .beehive-content-intro {
     position: relative;
     height: 130vh;
@@ -1083,7 +1083,7 @@
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .branding-logo {
     height: 8vmin;
     position: absolute;
@@ -1109,7 +1109,7 @@
   .branding-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .branding-main-content {
     position: absolute;
     top: 8vh;
@@ -1131,7 +1131,7 @@
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .branding-main-container {
     height: 513vh;
     width: 100%;
@@ -1163,7 +1163,7 @@
   .branding-work-image {
     width: 100%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .branding-main-container {
     height: 502vh;
     width: 100%;
@@ -1218,7 +1218,7 @@
   .branding-work-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .branding-main-container {
     height: 292vh;
     width: 100%;
@@ -1258,7 +1258,7 @@
   .branding-work-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .branding-content-intro {
     position: relative;
     height: 130vh;
@@ -1363,7 +1363,7 @@
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .brio-logo {
     height: 8vmin;
     position: absolute;
@@ -1389,7 +1389,7 @@
   .brio-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .brio-main-content {
     position: absolute;
     top: 8vh;
@@ -1411,7 +1411,7 @@
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .brio-main-container {
     height: 513vh;
     width: 100%;
@@ -1449,7 +1449,7 @@
   .brio-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .brio-main-container {
     height: 502vh;
     width: 100%;
@@ -1504,7 +1504,7 @@
   .brio-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .brio-main-container {
     height: 256vh;
     width: 100%;
@@ -1547,7 +1547,7 @@
   .brio-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .brio-content-intro {
     position: relative;
     height: 130vh;
@@ -1565,8 +1565,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  opacity: 0.4; }
+  width: 100%; }
 
 .ccbh-main-content {
   position: absolute;
@@ -1652,7 +1651,7 @@
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .ccbh-logo {
     height: 8vmin;
     position: absolute;
@@ -1678,7 +1677,7 @@
   .ccbh-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .ccbh-main-content {
     position: absolute;
     top: 8vh;
@@ -1700,7 +1699,7 @@
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .ccbh-main-container {
     height: 513vh;
     width: 100%;
@@ -1738,7 +1737,7 @@
   .ccbh-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .ccbh-main-container {
     height: 502vh;
     width: 100%;
@@ -1793,7 +1792,7 @@
   .ccbh-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .ccbh-main-container {
     height: 111vh;
     width: 100%;
@@ -1835,7 +1834,7 @@
   .ccbh-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .ccbh-content-intro {
     position: relative;
     height: 130vh;
@@ -1987,7 +1986,7 @@
   font-size: large;
   font-weight: 700; }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .get-started {
     position: absolute;
     top: 3%;
@@ -2024,7 +2023,7 @@
     cursor: pointer;
     letter-spacing: 2px; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .contact-input {
     color: #727272;
     background-color: #efefef;
@@ -2165,7 +2164,7 @@
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .creef-logo {
     height: 8vmin;
     position: absolute;
@@ -2191,7 +2190,7 @@
   .creef-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .creef-main-content {
     position: absolute;
     top: 8vh;
@@ -2213,7 +2212,7 @@
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .creef-main-container {
     height: 513vh;
     width: 100%;
@@ -2251,7 +2250,7 @@
   .creef-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .creef-main-container {
     height: 502vh;
     width: 100%;
@@ -2306,7 +2305,7 @@
   .creef-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .creef-main-container {
     height: 111vh;
     width: 100%;
@@ -2346,7 +2345,7 @@
   .creef-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .creef-content-intro {
     position: relative;
     height: 130vh;
@@ -2514,7 +2513,7 @@
 #demandgen-looking-for-help {
   position: relative; }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .demandgen-main-content {
     position: absolute;
     top: 31vh;
@@ -2562,7 +2561,7 @@
   align-items: center;
   cursor: pointer; }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .expertise-main-container {
     width: 100%;
     height: 285vh;
@@ -2804,7 +2803,7 @@
   cursor: pointer;
   transition-duration: 0.5s; }
 
-@media screen and (max-device-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .footer-container {
     position: relative;
     width: 100%;
@@ -2861,7 +2860,7 @@
     cursor: pointer;
     transition-duration: 0.5s; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer-container {
     position: relative;
     width: 100%;
@@ -3035,7 +3034,7 @@
   font-size: 3vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .garfield-logo {
     height: 8vmin;
     position: absolute;
@@ -3061,7 +3060,7 @@
   .garfield-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .garfield-main-content {
     position: absolute;
     top: 8vh;
@@ -3083,7 +3082,7 @@
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .garfield-main-container {
     height: 513vh;
     width: 100%;
@@ -3115,7 +3114,7 @@
   .garfield-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .garfield-main-container {
     height: 502vh;
     width: 100%;
@@ -3170,7 +3169,7 @@
   .garfield-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .garfield-main-container {
     height: 390vh;
     width: 100%;
@@ -3213,7 +3212,7 @@
   .garfield-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .garfield-content-intro {
     position: relative;
     height: 125vh;
@@ -3666,7 +3665,7 @@
 .home-content-hide {
   display: none; }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .swn-container {
     position: relative;
     height: 30vh;
@@ -3886,7 +3885,7 @@
   cursor: pointer;
   z-index: 2; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .home-hero {
     position: relative;
     height: 100%;
@@ -3901,7 +3900,7 @@
     width: 100%;
     height: calc((100vw / 2) * 0.469); } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .home-hero {
     position: relative;
     height: 100%;
@@ -3916,7 +3915,7 @@
     width: 100%;
     height: calc((100vw / 2) * 0.49); } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .headline-content {
     position: absolute;
     width: 100%;
@@ -3942,13 +3941,13 @@
     width: 100%;
     height: calc((100vw / 2) * 0.51); } }
 
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .video-container {
     position: relative;
     width: 100%;
     height: calc((100vw / 2) * 0.54); } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .home-hero {
     position: relative;
     height: 100%;
@@ -3984,13 +3983,13 @@
     bottom: 0;
     border-top: 20px solid #161616; } }
 
-@media screen and (max-device-width: 414px) {
+@media screen and (max-width: 414px) {
   .video-container {
     position: relative;
     width: 100%;
     height: 54.5vh; } }
 
-@media screen and (max-device-width: 360px) {
+@media screen and (max-width: 360px) {
   .video-container {
     position: relative;
     width: 100%;
@@ -4108,7 +4107,7 @@
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .maxxsouth-logo {
     height: 8vmin;
     position: absolute;
@@ -4134,7 +4133,7 @@
   .maxxsouth-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .maxxsouth-main-content {
     position: absolute;
     top: 8vh;
@@ -4156,7 +4155,7 @@
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .maxxsouth-main-container {
     height: 513vh;
     width: 100%;
@@ -4194,7 +4193,7 @@
   .maxxsouth-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .maxxsouth-main-container {
     height: 502vh;
     width: 100%;
@@ -4249,7 +4248,7 @@
   .maxxsouth-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .maxxsouth-main-container {
     height: 220vh;
     width: 100%;
@@ -4291,7 +4290,7 @@
   .maxxsouth-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .maxxsouth-content-intro {
     position: relative;
     height: 130vh;
@@ -4415,7 +4414,7 @@
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .moab-logo {
     height: 8vmin;
     position: absolute;
@@ -4441,7 +4440,7 @@
   .moab-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .moab-main-content {
     position: absolute;
     top: 8vh;
@@ -4463,7 +4462,7 @@
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .moab-main-container {
     height: 513vh;
     width: 100%;
@@ -4501,7 +4500,7 @@
   .moab-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .moab-main-container {
     height: 502vh;
     width: 100%;
@@ -4556,7 +4555,7 @@
   .moab-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .moab-main-container {
     height: 390vh;
     width: 100%;
@@ -4596,7 +4595,7 @@
   .moab-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .moab-content-intro {
     position: relative;
     height: 130vh;
@@ -4707,7 +4706,7 @@
   position: absolute;
   transition: 0.15s; }
 
-@media screen and (max-device-width: 850px) {
+@media screen and (max-width: 850px) {
   .mobile-hamburger {
     visibility: visible;
     position: fixed;
@@ -4836,7 +4835,7 @@ nav {
     border-radius: 30px;
     padding: 7px 15px; } }
 
-@media screen and (max-device-width: 1400px) {
+@media screen and (max-width: 1400px) {
   nav {
     position: fixed;
     top: 0;
@@ -4922,7 +4921,7 @@ nav {
       width: 160px;
       font-size: 16px; } }
 
-@media screen and (max-device-width: 1100px) {
+@media screen and (max-width: 1100px) {
   nav .nav-item {
     margin-left: 20px; }
   nav .nav-item-title {
@@ -4941,7 +4940,7 @@ nav {
     width: 130px;
     font-size: 12px; } }
 
-@media screen and (max-device-width: 850px) {
+@media screen and (max-width: 850px) {
   nav {
     position: fixed;
     top: 0;
@@ -5131,7 +5130,7 @@ nav {
   font-size: 30px;
   font-family: 'Rogan-Medium', sans-serif; }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .newsroom-main-container {
     height: 124vh;
     width: 100%;
@@ -5323,7 +5322,7 @@ table {
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .rubys-logo {
     height: 8vmin;
     position: absolute;
@@ -5349,7 +5348,7 @@ table {
   .rubys-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .rubys-main-content {
     position: absolute;
     top: 8vh;
@@ -5371,7 +5370,7 @@ table {
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .rubys-main-container {
     height: 513vh;
     width: 100%;
@@ -5409,7 +5408,7 @@ table {
   .rubys-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .rubys-main-container {
     height: 502vh;
     width: 100%;
@@ -5464,7 +5463,7 @@ table {
   .rubys-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .rubys-main-container {
     height: 148vh;
     width: 100%;
@@ -5504,7 +5503,7 @@ table {
   .rubys-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .rubys-content-intro {
     position: relative;
     height: 130vh;
@@ -5688,7 +5687,7 @@ table {
   margin-bottom: 100px;
   position: relative; }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .services-background {
     position: absolute;
     height: auto;
@@ -5868,7 +5867,7 @@ table {
   font-size: 3vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .tds-main-container {
     height: 643vh;
     width: 100%;
@@ -5896,7 +5895,7 @@ table {
   .tds-work-image {
     width: 75%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .tds-main-content {
     position: absolute;
     top: 8vh;
@@ -5912,7 +5911,7 @@ table {
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .tds-main-container {
     height: 513vh;
     width: 100%;
@@ -5936,7 +5935,7 @@ table {
   .tds-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .tds-main-container {
     height: 502vh;
     width: 100%;
@@ -5983,7 +5982,7 @@ table {
     height: 28vh;
     width: 100%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .tds-main-container {
     height: 390vh;
     width: 100%;
@@ -6019,7 +6018,7 @@ table {
     background-color: black;
     border-bottom: 2px solid #161616; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .tds-logo {
     height: 11vmin;
     position: absolute;
@@ -6171,7 +6170,7 @@ table {
 #tech-looking-for-help {
   position: relative; }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .tech-experts {
     position: relative;
     height: 46vh;
@@ -6181,7 +6180,7 @@ table {
     flex-direction: column; }
   .tech-title {
     position: relative;
-    height: 145px;
+    height: 145vh;
     width: 100%;
     background-color: transparent;
     display: flex;
@@ -6199,7 +6198,7 @@ table {
     display: flex;
     flex-direction: column; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .tech-main-container {
     width: 100%;
     height: 312vh;
@@ -6414,7 +6413,7 @@ table {
 #telecom-looking-for-help {
   position: relative; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .telecom-main-container {
     width: 100%;
     height: 228vh;
@@ -6422,7 +6421,7 @@ table {
     display: flex;
     flex-direction: column; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .telecom-title {
     position: relative;
     height: 145px;
@@ -6434,26 +6433,30 @@ table {
     text-transform: uppercase;
     color: white;
     font-size: 5vmin; }
-  .telecom-experts {
-    position: relative;
-    height: 60vh;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column; }
+  .telecom-industry-experts {
+    position: absolute;
+    top: 12vh;
+    right: 70%;
+    font-size: 3.5vmin;
+    color: #BD9A35;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 35px;
+    font-family: 'Rogan-SemiBold', sans-serif; }
   .telecom-industry-info {
     position: absolute;
-    top: 22%;
+    top: 12vh;
     left: 35%;
     color: #727272;
-    width: 55%;
+    width: 60%;
     font-family: 'Rogan-Light', sans-serif;
-    font-size: 2.5vmin;
+    font-size: 2vmin;
     letter-spacing: 1px;
     line-height: 32px; }
   .telecom-video {
     position: relative;
-    height: 42vh;
+    height: 80vh;
     width: 100%;
     background-color: transparent; }
   .telecom-clients-title {
@@ -6482,7 +6485,7 @@ table {
     justify-content: center;
     align-items: center; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .telecom-main-content {
     position: absolute;
     top: 42%;
@@ -6519,7 +6522,7 @@ table {
     width: 100%;
     background-color: transparent; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .telecom-main-container {
     width: 100%;
     height: 300vh;
@@ -6608,7 +6611,7 @@ h2 {
   font-size: 120px;
   font-family: Serif, serif; }
 
-@media screen and (max-device-width: 1400px) {
+@media screen and (max-width: 1400px) {
   h2 {
     font-family: 'Rogan-SemiBold', sans-serif;
     letter-spacing: 6px;
@@ -6620,7 +6623,7 @@ h2 {
     text-align: center;
     font-size: 90px; } }
 
-@media screen and (max-device-width: 1100px) {
+@media screen and (max-width: 1100px) {
   h2 {
     font-family: 'Rogan-SemiBold', sans-serif;
     letter-spacing: 6px;
@@ -6632,7 +6635,7 @@ h2 {
     text-align: center;
     font-size: 70px; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .massive-text {
     font-size: 25vmin; } }
 
@@ -6859,7 +6862,7 @@ h2 {
   background-color: white; }
 
 .tourism-award-one {
-  background-image: url(../images/telly_award.png);
+  background-image: url("../images/telly_award.png");
   background-color: white;
   background-repeat: no-repeat;
   background-size: 70%;
@@ -6867,7 +6870,7 @@ h2 {
   background-position-y: 50%; }
 
 .tourism-award-two {
-  background-image: url(../images/samy_award.png);
+  background-image: url("../images/samy_award.png");
   background-color: white;
   background-repeat: no-repeat;
   background-size: 115%;
@@ -6883,7 +6886,7 @@ h2 {
   background-position-y: 50%; }
 
 .tourism-award-four {
-  background-image: url(../images/golden_spike.png);
+  background-image: url("../images/golden_spike.png");
   background-color: #242424;
   background-repeat: no-repeat;
   background-size: 97%;
@@ -6925,7 +6928,7 @@ h2 {
 #tourism-looking-for-help {
   position: relative; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .tourism-main-container {
     width: 100%;
     height: 452vh;
@@ -7011,10 +7014,10 @@ h2 {
     justify-content: center;
     align-items: center; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .tourism-main-container {
     width: 100%;
-    height: 303vh;
+    height: 475vh;
     background-color: #161616;
     display: flex;
     flex-direction: column; }
@@ -7037,9 +7040,37 @@ h2 {
     text-transform: uppercase;
     color: white;
     font-size: 5vmin; }
+  .tourism-experts {
+    position: relative;
+    height: 170vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column; }
+  .tourism-industry-experts {
+    position: absolute;
+    top: 12vh;
+    right: 70%;
+    font-size: 3.5vmin;
+    color: #BD9A35;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 35px;
+    font-family: 'Rogan-SemiBold', sans-serif; }
+  .tourism-industry-info {
+    position: absolute;
+    top: 12vh;
+    left: 35%;
+    color: #727272;
+    width: 60%;
+    font-family: 'Rogan-Light', sans-serif;
+    font-size: 2vmin;
+    letter-spacing: 1px;
+    line-height: 32px; }
   .tourism-video {
     position: relative;
-    height: 47vh;
+    height: 80vh;
     width: 100%;
     background-color: transparent; }
   .tourism-clients-title {
@@ -7093,7 +7124,7 @@ h2 {
     font-weight: bold;
     letter-spacing: 1px; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .tourism-experts {
     position: relative;
     height: 65vh;
@@ -7127,7 +7158,7 @@ h2 {
     letter-spacing: 1px;
     line-height: 32px; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .tourism-main-container {
     width: 100%;
     height: 395vh;
@@ -7320,7 +7351,7 @@ h2 {
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .tuac-logo {
     height: 8vmin;
     position: absolute;
@@ -7346,7 +7377,7 @@ h2 {
   .tuac-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .tuac-main-content {
     position: absolute;
     top: 8vh;
@@ -7368,7 +7399,7 @@ h2 {
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .tuac-main-container {
     height: 513vh;
     width: 100%;
@@ -7406,7 +7437,7 @@ h2 {
   .tuac-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .tuac-main-container {
     height: 502vh;
     width: 100%;
@@ -7461,7 +7492,7 @@ h2 {
   .tuac-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .tuac-main-container {
     height: 390vh;
     width: 100%;
@@ -7504,7 +7535,7 @@ h2 {
   .tuac-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .tuac-content-intro {
     position: relative;
     height: 125vh;
@@ -7615,7 +7646,7 @@ h2 {
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .uintah-logo {
     height: 8vmin;
     position: absolute;
@@ -7641,7 +7672,7 @@ h2 {
   .uintah-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .uintah-main-content {
     position: absolute;
     top: 8vh;
@@ -7663,7 +7694,7 @@ h2 {
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .uintah-main-container {
     height: 513vh;
     width: 100%;
@@ -7701,7 +7732,7 @@ h2 {
   .uintah-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .uintah-main-container {
     height: 502vh;
     width: 100%;
@@ -7756,7 +7787,7 @@ h2 {
   .uintah-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .uintah-main-container {
     height: 220vh;
     width: 100%;
@@ -7807,7 +7838,7 @@ h2 {
   .uintah-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .uintah-content-intro {
     position: relative;
     height: 140vh;
@@ -7932,7 +7963,7 @@ body {
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .us-logo {
     height: 8vmin;
     position: absolute;
@@ -7958,7 +7989,7 @@ body {
   .us-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .us-main-content {
     position: absolute;
     top: 8vh;
@@ -7980,7 +8011,7 @@ body {
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .us-main-container {
     height: 513vh;
     width: 100%;
@@ -8018,7 +8049,7 @@ body {
   .us-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .us-main-container {
     height: 502vh;
     width: 100%;
@@ -8073,7 +8104,7 @@ body {
   .us-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .us-main-container {
     height: 185vh;
     width: 100%;
@@ -8115,7 +8146,7 @@ body {
   .us-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .us-content-intro {
     position: relative;
     height: 130vh;
@@ -8236,7 +8267,7 @@ body {
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .uvhba-logo {
     height: 8vmin;
     position: absolute;
@@ -8262,7 +8293,7 @@ body {
   .uvhba-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .uvhba-main-content {
     position: absolute;
     top: 8vh;
@@ -8284,7 +8315,7 @@ body {
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .uvhba-main-container {
     height: 513vh;
     width: 100%;
@@ -8322,7 +8353,7 @@ body {
   .uvhba-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .uvhba-main-container {
     height: 502vh;
     width: 100%;
@@ -8377,7 +8408,7 @@ body {
   .uvhba-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .uvhba-main-container {
     height: 390vh;
     width: 100%;
@@ -8421,7 +8452,7 @@ body {
   .uvhba-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .uvhba-content-intro {
     position: relative;
     height: 130vh;
@@ -8491,7 +8522,7 @@ body {
   width: 0;
   background-color: rgba(0, 0, 0, 0.7); }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .work-main-container {
     height: 1200vh;
     width: 100%;
@@ -8660,7 +8691,7 @@ body {
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .wfront-logo {
     height: 8vmin;
     position: absolute;
@@ -8686,7 +8717,7 @@ body {
   .wfront-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .wfront-main-content {
     position: absolute;
     top: 8vh;
@@ -8708,7 +8739,7 @@ body {
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .wfront-main-container {
     height: 513vh;
     width: 100%;
@@ -8746,7 +8777,7 @@ body {
   .wfront-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .wfront-main-container {
     height: 502vh;
     width: 100%;
@@ -8801,7 +8832,7 @@ body {
   .wfront-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .wfront-main-container {
     height: 113vh;
     width: 100%;
@@ -8842,7 +8873,7 @@ body {
   .wfront-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .wfront-content-intro {
     position: relative;
     height: 130vh;
@@ -8963,7 +8994,7 @@ body {
   font-size: 2vmin;
   color: #727272; }
 
-@media screen and (max-device-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .zerorez-logo {
     height: 8vmin;
     position: absolute;
@@ -8989,7 +9020,7 @@ body {
   .zerorez-branding-image {
     width: 65%; } }
 
-@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
   .zerorez-main-content {
     position: absolute;
     top: 8vh;
@@ -9011,7 +9042,7 @@ body {
     letter-spacing: 4px;
     text-transform: uppercase; } }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .zerorez-main-container {
     height: 513vh;
     width: 100%;
@@ -9049,7 +9080,7 @@ body {
   .zerorez-work-image-brochure {
     width: 105%; } }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .zerorez-main-container {
     height: 502vh;
     width: 100%;
@@ -9104,7 +9135,7 @@ body {
   .zerorez-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
   .zerorez-main-container {
     height: 78vh;
     width: 100%;
@@ -9145,7 +9176,7 @@ body {
   .zerorez-branding-image {
     width: 80%; } }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   .zerorez-content-intro {
     position: relative;
     height: 130vh;

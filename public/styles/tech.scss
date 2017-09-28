@@ -129,7 +129,7 @@
   position: relative;
 }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
   .tech-experts {
     position: relative;
@@ -142,7 +142,7 @@
 
   .tech-title {
     position: relative;
-    height: 145px;
+    height: 145vh;
     width: 100%;
     background-color: transparent;
     display: flex;
@@ -165,7 +165,7 @@
 
 }
 
-@media screen and (max-device-width: 425px){
+@media screen and (max-width: 425px){
 
   .tech-main-container {
     width: 100%;

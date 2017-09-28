@@ -169,7 +169,7 @@
   position: relative;
 }
 
-@media screen and (max-device-width: 1440px){
+@media screen and (max-width: 1440px){
 
   .telecom-main-container {
     width: 100%;
@@ -181,7 +181,7 @@
 
 }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
   .telecom-title {
     position: relative;
@@ -196,30 +196,34 @@
     font-size: 5vmin;
   }
 
-  .telecom-experts {
-    position: relative;
-    height: 60vh;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
+  .telecom-industry-experts {
+    position: absolute;
+    top: 12vh;
+    right: 70%;
+    font-size: 3.5vmin;
+    color: #BD9A35;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 35px;
+    font-family: 'Rogan-SemiBold', sans-serif;
   }
 
   .telecom-industry-info {
     position: absolute;
-    top: 22%;
+    top: 12vh;
     left: 35%;
     color: #727272;
-    width: 55%;
+    width: 60%;
     font-family: 'Rogan-Light', sans-serif;
-    font-size: 2.5vmin;
+    font-size: 2vmin;
     letter-spacing: 1px;
     line-height: 32px;
   }
 
   .telecom-video {
     position: relative;
-    height: 42vh;
+    height: 80vh;
     width: 100%;
     background-color: transparent;
   }
@@ -258,7 +262,7 @@
 
 }
 
-@media screen and (max-device-width: 768px)  {
+@media screen and (max-width: 768px)  {
 
   .telecom-main-content {
     position: absolute;
@@ -308,7 +312,7 @@
 
 }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
 
   .telecom-main-container {
     width: 100%;

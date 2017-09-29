@@ -95,7 +95,7 @@
             </p>
 
 
-            <div class="mobile-inner-expand" id="mobile-inner-expand-one" ng-repeat="sec in services[0].sections">
+            <div class="mobile-inner-expand" id="mobile-inner-expand-one" ng-repeat="sec in services[0].sections" ng-click="mobileInnerExpand()">
                 <p>{{sec.title}}</p>
                 <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
             </div>
@@ -137,7 +137,7 @@
                 {{services[2].intro}}
             </p>
 
-            <div class="mobile-inner-expand" id="mobile-inner-expand-three" ng-repeat="sec in services[2].sections" ng-click="mobileInnerExpand()">
+            <div class="mobile-inner-expand" id="mobile-inner-expand-three" ng-repeat="sec in services[2].sections">
                 <p>{{sec.title}}</p>
                 <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
             </div>

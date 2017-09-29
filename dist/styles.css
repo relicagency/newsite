@@ -5922,7 +5922,12 @@ table {
     align-items: center;
     border-bottom: 1px solid black;
     color: white;
-    font-size: 4vmin; }
+    font-size: 4vmin;
+    cursor: pointer;
+    transition-duration: 0.15s; }
+  .mobile-inner-expand:hover {
+    height: 500px;
+    background-color: white; }
   .mobile-inner-expand p {
     margin-left: 10px; }
   .services-plus-sign {

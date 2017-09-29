@@ -964,27 +964,34 @@
         };
 
         var lastAccordion = "";
-        var lastTopSec = -1;
+        var lastTopSec = 0;
+        var lastTopSecInd = "two";
         var backgroundPic = document.getElementById('services-background');
         $scope.content = $stateParams.num;
 
-        $scope.changeContent = function (num) {
+        $scope.changeContent = function (num, ind) {
 
             $scope.content = num;
 
-            TweenMax.to(document.getElementById('top-sec-' + num), 0.10, {
-                backgroundColor: "#BD9A35"
-            });
-
-            if (lastTopSec > -1 && lastTopSec !== num) {
-                TweenMax.to(document.getElementById('top-sec-' + lastTopSec), 0.10, {
+            if (lastTopSec !== num) {
+                TweenMax.to(document.getElementById('services-top-overlay-' + ind), 0.25, {
+                    height: 0
+                });
+                TweenMax.to(document.getElementById('services-top-overlay-' + lastTopSecInd), 0.25, {
+                    height: "100%"
+                });
+                TweenMax.to(document.getElementById('top-two-sec-' + ind), 0.25, {
+                    backgroundColor: "white"
+                });
+                TweenMax.to(document.getElementById('top-two-sec-' + lastTopSecInd), 0.25, {
                     backgroundColor: "transparent"
                 });
             }
 
             lastTopSec = num;
+            lastTopSecInd = ind;
         };
-        $scope.changeContent($stateParams.num);
+        $scope.changeContent($stateParams.num, "one");
 
         window.onscroll = function () {
             var offSet = window.pageYOffset,

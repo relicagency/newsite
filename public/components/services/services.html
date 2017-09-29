@@ -8,39 +8,44 @@
 
 
                 <div class="services-content-top">
-                    <div class="services-top-services" id="top-services-one" ng-mouseover="hoverContent(0)" ng-click="changeContent(0)">
+                    <div class="services-top-services" id="top-services-one" ng-mouseover="hoverContent(0)" ng-click="changeContent(0, 'one')">
                         <img class="services-tile" id="services-tile-one" src="../../images/traditional-tile.svg">
                         <p>traditional media</p>
                         <img class="down-arrow" src="../../images/down-arrow.svg">
+                        <div class="services-top-overlay" id="services-top-overlay-one"></div>
                     </div>
-                    <div class="services-top-services" id="top-services-two" ng-mouseover="hoverContent(1)" ng-click="changeContent(1)">
+                    <div class="services-top-services" id="top-services-two" ng-mouseover="hoverContent(1)" ng-click="changeContent(1, 'two')">
                         <img class="services-tile" id="services-tile-two" src="../../images/creative-tile2.svg">
                         <p>creative</p>
                         <img class="down-arrow" src="../../images/down-arrow.svg">
+                        <div class="services-top-overlay" id="services-top-overlay-two"></div>
                     </div>
-                    <div class="services-top-services" id="top-services-three" ng-mouseover="hoverContent(2)" ng-click="changeContent(2)">
+                    <div class="services-top-services" id="top-services-three" ng-mouseover="hoverContent(2)" ng-click="changeContent(2, 'three')">
                         <img class="services-tile" id="services-tile-three" src="../../images/demand-gen-tile.svg">
                         <p>demand gen</p>
                         <img class="down-arrow" src="../../images/down-arrow.svg">
+                        <div class="services-top-overlay" id="services-top-overlay-three"></div>
                     </div>
-                    <div class="services-top-services" id="top-services-four" ng-mouseover="hoverContent(3)" ng-click="changeContent(3)">
+                    <div class="services-top-services" id="top-services-four" ng-mouseover="hoverContent(3)" ng-click="changeContent(3, 'four')">
                         <img class="services-tile" id="services-tile-four" src="../../images/digital-tile.svg">
                         <p>digital</p>
                         <img class="down-arrow" src="../../images/down-arrow.svg">
-                    </div>-
-                    <div class="services-top-services" id="top-services-five" ng-mouseover="hoverContent(4)" ng-click="changeContent(4)">
+                        <div class="services-top-overlay" id="services-top-overlay-four"></div>
+                    </div>
+                    <div class="services-top-services" id="top-services-five" ng-mouseover="hoverContent(4)" ng-click="changeContent(4, 'five')">
                         <img class="services-tile" id="services-tile-five" src="../../images/pr-acount.svg">
                         <p>pr & content</p>
                         <img class="down-arrow" src="../../images/down-arrow.svg">
+                        <div class="services-top-overlay" id="services-top-overlay-five"></div>
                     </div>
                 </div>
                 <div class="services-content-middle">
                         <div class="content-two-top">
-                            <div class="top-two-sec" id="top-sec-0"></div>
-                            <div class="top-two-sec" id="top-sec-1"></div>
-                            <div class="top-two-sec" id="top-sec-2"></div>
-                            <div class="top-two-sec" id="top-sec-3"></div>
-                            <div class="top-two-sec" id="top-sec-4"></div>
+                            <div class="top-two-sec" id="top-two-sec-one"></div>
+                            <div class="top-two-sec" id="top-two-sec-two"></div>
+                            <div class="top-two-sec" id="top-two-sec-three"></div>
+                            <div class="top-two-sec" id="top-two-sec-four"></div>
+                            <div class="top-two-sec" id="top-two-sec-five"></div>
                         </div>
 
                     <div class="services-content-title"><p>{{services[content].title}}</p></div>

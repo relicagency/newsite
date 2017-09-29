@@ -5617,6 +5617,14 @@ table {
   position: absolute;
   bottom: 30px; }
 
+.services-top-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
 .services-content-middle {
   position: relative;
   height: auto;
@@ -5650,14 +5658,13 @@ table {
 
 .service-content-info {
   position: relative;
-  top: 27%;
-  left: 30%;
+  left: 10%;
   color: #161616;
   width: 50%;
   letter-spacing: 1px;
   line-height: 35px;
   font-family: "Rogan-Regular", sans-serif;
-  margin-top: 50px;
+  margin-top: 25px;
   margin-bottom: 50px; }
 
 .services-accordion {
@@ -5704,7 +5711,7 @@ table {
   font-family: "Rogan-Regular", sans-serif;
   letter-spacing: 1px;
   line-height: 35px;
-  left: 6%;
+  left: 10%;
   top: 10%;
   margin-top: 20px;
   margin-bottom: 20px; }

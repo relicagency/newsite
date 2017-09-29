@@ -465,9 +465,10 @@ height: 15px;
     cursor: pointer;
     transition-duration: 0.15s;
   }
-  .mobile-inner-expand:hover {
+  .mobile-inner-expand:active {
     height: 500px;
     background-color: white;
+    color: #161616;
   }
   .mobile-inner-expand p{
     margin-left: 10px;

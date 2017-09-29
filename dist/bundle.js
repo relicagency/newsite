@@ -980,11 +980,11 @@
                     height: 0
                 }).to(document.getElementById('services-top-overlay-' + lastTopSecInd), 0.05, {
                     height: "100%"
-                }, "-=0.05").to(document.getElementById('top-two-sec-' + ind), 0.25, {
-                    height: 0
-                }, "-=0.25").to(document.getElementById('top-two-sec-' + lastTopSecInd), 0.15, {
-                    height: "100%"
-                }, "-=0.25");
+                }, "-=0.05").to(document.getElementById('top-two-sec-' + ind), 0.05, {
+                    backgroundColor: "white"
+                }).to(document.getElementById('top-two-sec-' + lastTopSecInd), 0.05, {
+                    backgroundColor: "transparent"
+                }, "-=0.05");
             }
 
             lastTopSec = num;

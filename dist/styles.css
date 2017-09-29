@@ -5597,7 +5597,8 @@ table {
   flex-direction: column;
   color: #cccccc;
   text-transform: uppercase;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  cursor: pointer; }
 
 .services-top-services p {
   position: absolute;
@@ -5623,6 +5624,10 @@ table {
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition-duration: 0.15s; }
+
+.services-top-overlay:hover {
   background-color: rgba(0, 0, 0, 0.5); }
 
 .services-content-middle {
@@ -5654,7 +5659,8 @@ table {
   letter-spacing: 3px;
   font-size: x-large;
   font-weight: bold;
-  margin-top: 50px; }
+  margin-top: 50px;
+  transition-duration: 0.25s; }
 
 .service-content-info {
   position: relative;
@@ -5665,7 +5671,8 @@ table {
   line-height: 35px;
   font-family: "Rogan-Regular", sans-serif;
   margin-top: 25px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  transition-duration: 0.25s; }
 
 .services-accordion {
   position: relative;

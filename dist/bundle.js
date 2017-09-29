@@ -968,24 +968,23 @@
         var lastTopSecInd = "two";
         var backgroundPic = document.getElementById('services-background');
         $scope.content = $stateParams.num;
+        var tl = new TimelineMax();
 
         $scope.changeContent = function (num, ind) {
 
             $scope.content = num;
 
             if (lastTopSec !== num) {
-                TweenMax.to(document.getElementById('services-top-overlay-' + ind), 0.25, {
+
+                tl.to(document.getElementById('services-top-overlay-' + ind), 0.05, {
                     height: 0
-                });
-                TweenMax.to(document.getElementById('services-top-overlay-' + lastTopSecInd), 0.25, {
+                }).to(document.getElementById('services-top-overlay-' + lastTopSecInd), 0.05, {
                     height: "100%"
-                });
-                TweenMax.to(document.getElementById('top-two-sec-' + ind), 0.25, {
-                    backgroundColor: "white"
-                });
-                TweenMax.to(document.getElementById('top-two-sec-' + lastTopSecInd), 0.25, {
-                    backgroundColor: "transparent"
-                });
+                }, "-=0.05").to(document.getElementById('top-two-sec-' + ind), 0.25, {
+                    height: 0
+                }, "-=0.25").to(document.getElementById('top-two-sec-' + lastTopSecInd), 0.15, {
+                    height: "100%"
+                }, "-=0.25");
             }
 
             lastTopSec = num;

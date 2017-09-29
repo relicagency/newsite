@@ -365,12 +365,12 @@ height: 15px;
     flex-direction: column;
     align-items: center;
     z-index: 5;
-    height: 280vh;
+    height: auto;
     width: 100%;
   }
   .content-mobile-content {
     position: relative;
-    height: 95vw;
+    height: auto;
     width: 95vw;
     background-color: rgba(0,0,0,0.8);
     margin-bottom: 5vw;
@@ -382,11 +382,11 @@ height: 15px;
     color: #bd9a35;
   }
   .services-mobile-expand {
-    position: absolute;
+    position: relative;
     background-color: white;
     width: 100%;
     height: 0;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -397,6 +397,14 @@ height: 15px;
   .services-mobile-tile {
     height: 75vw;
   }
+  .mobile-expand-intro {
+    position: relative;
+    margin: 20px;
+    font-family: "Rogan-Regular", sans-serif;
+    line-height: 25px;
+    letter-spacing: 1px;
+    width: 70%;
+  }
   #services-mobile-tile-digital {
     height: 55vw;
   }
@@ -406,6 +414,7 @@ height: 15px;
   }
 
   .mobile-inner-expand {
+    position: relative;
     height: 100px;
     width: 100%;
     background-color: rgba(0,0,0,0.8);

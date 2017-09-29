@@ -55,6 +55,9 @@
                     ease: Power3.easeIn,
                     height: "auto"
                 });
+            TweenMax.to(document.getElementById('accordion-pop-' + num), 0.25, {
+                color: "#161616"
+            });
                 TweenMax.to(document.getElementById('plus-sign-' + num), 0.5, {
                     transform: "rotate(315deg)"
                 });
@@ -62,6 +65,9 @@
 
                 if( lastAccordion !== "" && document.getElementById('accordion-pop-' + lastAccordion).style.height !== "0px" )  {
 
+                    TweenMax.to(document.getElementById('accordion-pop-' + lastAccordion), 0.05, {
+                        color: "transparent"
+                    });
                     TweenMax.to(document.getElementById('accordion-pop-' + lastAccordion), 0.5, {
                         ease: Power3.easeOut,
                         height: 0

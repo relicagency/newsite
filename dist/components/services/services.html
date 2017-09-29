@@ -90,9 +90,9 @@
 
         <div class="services-mobile-expand" id="services-mobile-expand-one">
 
-            <div class="mobile-expand-intro">
-                <p>{{services[0].intro}}</p>
-            </div>
+            <p class="mobile-expand-intro">
+                {{services[0].intro}}
+            </p>
 
 
             <div class="mobile-inner-expand" id="mobile-inner-expand-one" ng-repeat="sec in services[0].sections">
@@ -112,9 +112,10 @@
         </a>
 
         <div class="services-mobile-expand" id="services-mobile-expand-two">
-            <div>
-                <p>{{services[1].intro}}</p>
-            </div>
+            <p class="mobile-expand-intro">
+                {{services[1].intro}}
+            </p>
+
             <div class="mobile-inner-expand" id="mobile-inner-expand-two" ng-repeat="sec in services[1].sections">
                 <p>{{sec.title}}</p>
                 <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
@@ -131,6 +132,11 @@
         </a>
 
         <div class="services-mobile-expand" id="services-mobile-expand-three">
+
+            <p class="mobile-expand-intro">
+                {{services[2].intro}}
+            </p>
+
             <div class="mobile-inner-expand" id="mobile-inner-expand-three" ng-repeat="sec in services[2].sections" ng-click="mobileInnerExpand()">
                 <p>{{sec.title}}</p>
                 <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
@@ -146,6 +152,11 @@
         </a>
 
         <div class="services-mobile-expand" id="services-mobile-expand-four">
+
+            <p class="mobile-expand-intro">
+                {{services[3].intro}}
+            </p>
+
             <div class="mobile-inner-expand" id="mobile-inner-expand-four" ng-repeat="sec in services[3].sections">
                 <p>{{sec.title}}</p>
                 <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
@@ -161,6 +172,11 @@
         </a>
 
         <div class="services-mobile-expand" id="services-mobile-expand-five">
+
+            <p class="mobile-expand-intro">
+                {{services[4].intro}}
+            </p>
+
             <div class="mobile-inner-expand" id="mobile-inner-expand-six" ng-repeat="sec in services[4].sections">
                 <p>{{sec.title}}</p>
                 <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">

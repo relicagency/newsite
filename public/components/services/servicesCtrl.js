@@ -282,19 +282,27 @@
 
         $scope.servicesMobile = function(num, top){
 
+            console.log('YYYYOOOOOOO!!!!!!!  WORK YOU FOOL!!!');
+
             let mobileExpand = document.getElementById('services-mobile-expand-' + num),
                 mobileExpandLast = document.getElementById('services-mobile-expand-' + $scope.lastNum),
                 arrow = document.getElementById('mobile-expand-arrow-' + num),
-                lastArrow = document.getElementById('mobile-expand-arrow-' + $scope.lastNum);
+                lastArrow = document.getElementById('mobile-expand-arrow-' + $scope.lastNum),
+                mobileInnerExpand = document.getElementById('services-mobile-expand-' + num).getElementsByTagName('mobile-inner-expand'),
+                mobileInnerExpandLast = document.getElementById('services-mobile-expand-' + $scope.lastNum).getElementsByTagName('mobile-inner-expand');
 
 
             if( mobileExpand.style.height === "auto" && num === $scope.lastNum ){
 
                 TweenMax.to(mobileExpand, 0, {
-                    color: "transparent"
+                    display: "none",
+                    fontSize: 0
                 });
                 TweenMax.to(mobileExpand, 0.5, {
                     height: 0
+                });
+                TweenMax.to(mobileInnerExpand, 0.5, {
+                    display: "none"
                 });
                 TweenMax.to(arrow, 0.75, {
                     transform: "rotateX(0deg)"
@@ -307,12 +315,22 @@
                     transform: "rotateX(0deg)"
                 });
                 TweenMax.to(mobileExpandLast, 0.1, {
-                    color: "transparent",
-                    height: 0
+                    display: "none",
+                    height: 0,
+                    fontSize: 0
                 });
+                TweenMax.to(mobileInnerExpandLast, 0.5, {
+                    display: "none"
+                });
+
                 TweenMax.to(mobileExpand, 0.5, {
                     height: "auto",
-                    color: "#161616"
+                    color: "#161616",
+                    fontSize: "inherit",
+                    display: "flex"
+                });
+                TweenMax.to(mobileInnerExpand, 0.5, {
+                    display: "flex"
                 });
                 TweenMax.to(arrow, 0.75, {
                     transform: "rotateX(180deg)"
@@ -326,7 +344,12 @@
 
             TweenMax.to(mobileExpand, 0.5, {
                 height: "auto",
-                color: "#161616"
+                color: "#161616",
+                fontSize: "inherit",
+                display: "flex"
+            });
+            TweenMax.to(mobileInnerExpand, 0.5, {
+                display: "flex"
             });
             TweenMax.to(arrow, 0.75, {
                 transform: "rotateX(180deg)"

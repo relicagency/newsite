@@ -74,68 +74,99 @@
     <div class="services-content-mobile" id="services-mobile">
 
 
-       <div class="content-mobile-content" id="content-mobile-content-one">
-           <a ng-click="scrollTo('content-mobile-content-one')"><img class="services-mobile-tile" src="../../images/traditional-tile.svg" ng-click="servicesMobile('one', 145)"></a>
-                <p>traditional media</p>
-                    <img class="mobile-down-arrow" id="mobile-expand-arrow-one" src="../../images/down-arrow.svg">
-                        <div class="services-mobile-expand" id="services-mobile-expand-one">
-                            <div class="mobile-expand-intro">
-                                <p>{{services[0].intro}}</p>
-                            </div>
+        <a ng-click="scrollTo('content-mobile-content-one') ; servicesMobile('one', 145)">
+            <div class="content-mobile-content" id="content-mobile-content-one">
 
-                            <div class="mobile-inner-expand" ng-repeat="sec in services[0].sections">
-                                <p>{{sec.title}}</p>
-                                <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
-                            </div>
-                        </div>
+
+               <img class="services-mobile-tile" src="../../images/traditional-tile.svg">
+
+
+           <p class="services-mobile-title">traditional media</p>
+
+           <img class="mobile-down-arrow" id="mobile-expand-arrow-one" src="../../images/down-arrow.svg">
+
         </div>
-       <div class="content-mobile-content"  id="content-mobile-content-two">
-           <a ng-click="scrollTo('content-mobile-content-two')"><img class="services-mobile-tile" src="../../images/creative-tile2.svg"  ng-click="servicesMobile('two', 245)"></a>
-            <p>creative</p>
+        </a>
+
+        <div class="services-mobile-expand" id="services-mobile-expand-one">
+
+            <div class="mobile-expand-intro">
+                <p>{{services[0].intro}}</p>
+            </div>
+
+
+            <div class="mobile-inner-expand" id="mobile-inner-expand-one" ng-repeat="sec in services[0].sections">
+                <p>{{sec.title}}</p>
+                <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
+            </div>
+
+        </div>
+
+        <a ng-click="scrollTo('content-mobile-content-two') ; servicesMobile('two', 245)">
+            <div class="content-mobile-content"  id="content-mobile-content-two">
+           <img class="services-mobile-tile" src="../../images/creative-tile2.svg">
+            <p class="services-mobile-title">creative</p>
            <img class="mobile-down-arrow" id="mobile-expand-arrow-two" src="../../images/down-arrow.svg">
-            <div class="services-mobile-expand" id="services-mobile-expand-two">
-                <div>
-                    <p>{{services[1].intro}}</p>
-                </div>
-                <div class="mobile-inner-expand" ng-repeat="sec in services[1].sections">
-                    <p>{{sec.title}}</p>
-                    <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
-                </div>
+
+        </div>
+        </a>
+
+        <div class="services-mobile-expand" id="services-mobile-expand-two">
+            <div>
+                <p>{{services[1].intro}}</p>
+            </div>
+            <div class="mobile-inner-expand" id="mobile-inner-expand-two" ng-repeat="sec in services[1].sections">
+                <p>{{sec.title}}</p>
+                <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
             </div>
         </div>
-        <div class="content-mobile-content" id="content-mobile-content-three">
-            <a ng-click="scrollTo('content-mobile-content-three')"><img class="services-mobile-tile" src="../../images/demand-gen-tile.svg" ng-click="servicesMobile('three', 345)"></a>
-            <p>demand gen</p>
+
+
+        <a ng-click="scrollTo('content-mobile-content-three'); servicesMobile('three', 345)">
+            <div class="content-mobile-content" id="content-mobile-content-three">
+           <img class="services-mobile-tile" src="../../images/demand-gen-tile.svg" >
+            <p class="services-mobile-title">demand gen</p>
             <img class="mobile-down-arrow" id="mobile-expand-arrow-three" src="../../images/down-arrow.svg">
-            <div class="services-mobile-expand" id="services-mobile-expand-three">
-                <div class="mobile-inner-expand" ng-repeat="sec in services[2].sections" ng-click="mobileInnerExpand()">
-                    <p>{{sec.title}}</p>
-                    <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
-                </div>
+             </div>
+        </a>
+
+        <div class="services-mobile-expand" id="services-mobile-expand-three">
+            <div class="mobile-inner-expand" id="mobile-inner-expand-three" ng-repeat="sec in services[2].sections" ng-click="mobileInnerExpand()">
+                <p>{{sec.title}}</p>
+                <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
             </div>
         </div>
-        <a ng-click="scrollTo('content-mobile-content-four')"><div class="content-mobile-content" id="content-mobile-content-four" ng-click="servicesMobile('four', 445)">
+
+        <a ng-click="scrollTo('content-mobile-content-four'); servicesMobile('four', 445)">
+            <div class="content-mobile-content" id="content-mobile-content-four">
             <img class="services-mobile-tile" id="services-mobile-tile-digital" src="../../images/digital-tile.svg">
-            <p>digital</p>
+            <p class="services-mobile-title">digital</p>
             <img class="mobile-down-arrow" id="mobile-expand-arrow-four" src="../../images/down-arrow.svg">
-            <div class="services-mobile-expand" id="services-mobile-expand-four">
-                <div class="mobile-inner-expand" ng-repeat="sec in services[3].sections">
-                    <p>{{sec.title}}</p>
-                    <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
-                </div>
+        </div>
+        </a>
+
+        <div class="services-mobile-expand" id="services-mobile-expand-four">
+            <div class="mobile-inner-expand" id="mobile-inner-expand-four" ng-repeat="sec in services[3].sections">
+                <p>{{sec.title}}</p>
+                <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
             </div>
-        </div></a>
-        <a ng-click="scrollTo('content-mobile-content-five')"><div class="content-mobile-content" id="content-mobile-content-five" ng-click="servicesMobile('five', 545)">
+        </div>
+
+        <a ng-click="scrollTo('content-mobile-content-five'); servicesMobile('five', 545)">
+            <div class="content-mobile-content" id="content-mobile-content-five">
             <img class="services-mobile-tile" src="../../images/pr-acount.svg">
-            <p>pr & content</p>
+            <p class="services-mobile-title">pr & content</p>
             <img class="mobile-down-arrow" id="mobile-expand-arrow-five" src="../../images/down-arrow.svg">
-            <div class="services-mobile-expand" id="services-mobile-expand-five">
-                <div class="mobile-inner-expand" ng-repeat="sec in services[4].sections">
-                    <p>{{sec.title}}</p>
-                    <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
-                </div>
+        </div>
+        </a>
+
+        <div class="services-mobile-expand" id="services-mobile-expand-five">
+            <div class="mobile-inner-expand" id="mobile-inner-expand-six" ng-repeat="sec in services[4].sections">
+                <p>{{sec.title}}</p>
+                <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
             </div>
-        </div></a>
+        </div>
+
     </div>
 
 

@@ -43,9 +43,9 @@
                             <div class="top-two-sec" id="top-sec-4"></div>
                         </div>
 
-                    <p class="services-content-title industry-experts">{{services[content].title}}</p>
+                    <div class="services-content-title"><p>{{services[content].title}}</p></div>
 
-                    <p class="service-content-info intro-text">{{services[content].intro}}</p>
+                    <div class="service-content-info"><p>{{services[content].intro}}</p></div>
 
                 </div>
 
@@ -57,7 +57,7 @@
                     <img class="services-plus-sign" id="plus-sign-{{sec.number}}" src="../../images/plus-sign.svg">
                 </div>
                 <div class="services-accordion-pop" id="accordion-pop-{{sec.number}}">
-                    <p class="services-accordion-text" ng-repeat="p in sec.info">{{p}}</p>
+                    <div class="services-accordion-text"><p ng-repeat="p in sec.info">{{p}}<br ng-repeat="p in sec.info"></div></p>
                 </div>
             </div>
 

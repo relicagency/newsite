@@ -999,9 +999,8 @@
         $scope.accordionPop = function (num) {
 
             TweenMax.to(document.getElementById('accordion-pop-' + num), 0.5, {
-                display: "flex",
                 ease: Power3.easeIn,
-                height: "560px"
+                height: "auto"
             });
             TweenMax.to(document.getElementById('plus-sign-' + num), 0.5, {
                 transform: "rotate(315deg)"
@@ -1010,7 +1009,6 @@
             if (lastAccordion !== "" && document.getElementById('accordion-pop-' + lastAccordion).style.height !== "0px") {
 
                 TweenMax.to(document.getElementById('accordion-pop-' + lastAccordion), 0.5, {
-                    display: "none",
                     ease: Power3.easeOut,
                     height: 0
                 });

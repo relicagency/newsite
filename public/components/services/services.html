@@ -180,6 +180,7 @@
             <div class="mobile-inner-expand" id="mobile-inner-expand-six" ng-repeat="sec in services[4].sections">
                 <p>{{sec.title}}</p>
                 <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
+                <p class="mobile-services-info" ng-repeat="para in sec.info">{{para}}</p>
             </div>
         </div>
 

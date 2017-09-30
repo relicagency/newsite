@@ -467,14 +467,22 @@ height: 15px;
   }
   .mobile-inner-expand > .mobile-services-info {
     font-size: 0;
+    position: relative;
+    top: 10%;
+    left: 10px;
+    width: 80%;
+    margin: 2vmin 0 2vmin 0;
+    display: flex;
+    flex-direction: column;
+
   }
-  .mobile-inner-expand:active {
-    height: 500px;
+  .mobile-inner-expand:hover {
+    height: 6in;
     background-color: white;
     color: #161616;
   }
-  .mobile-inner-expand:active > .mobile-services-info{
-    font-size: 2vmin;
+  .mobile-inner-expand:hover > .mobile-services-info{
+    font-size: 3vmin;
   }
   .mobile-inner-expand p{
     margin-left: 10px;

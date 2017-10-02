@@ -3,7 +3,7 @@
  */
 let https = require('https');
 let nodemailer = require('nodemailer');
-let user = require()
+let config = require('../../config');
 
 module.exports = {
     contactRelic: function(req, res){
@@ -13,7 +13,7 @@ module.exports = {
            service: "Gmail", // true for 465, false for other ports
             auth: {
                 user: 'seth@relicagency.com', // generated ethereal user
-                pass: account.pass  // generated ethereal password
+                pass: config.emailPassword  // generated ethereal password
             }
         });
 

@@ -10,7 +10,7 @@ module.exports = {
            service: "Gmail",
             auth: {
                 user: 'formsend@relicagency.com',
-                pass: config.emailPassword
+                pass: process.env.emailPass//config.emailPassword
             }
         });
 

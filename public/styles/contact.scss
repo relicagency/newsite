@@ -57,7 +57,7 @@
 
 .contact-form-container {
   position: relative;
-  height: 700px;
+  height: 1100px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -74,10 +74,21 @@
   text-transform: uppercase;
 }
 
+.get-started-intro {
+  position: absolute;
+  top: 8%;
+  left: 30%;
+  width: 60%;
+  font-size: 2vmin;
+  color: #161616;
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
 .contact-form {
   position: absolute;
   left: 30%;
-  top: 9%;
+  top: 22%;
   height: 75%;
   width: 60%;
 }
@@ -93,7 +104,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-size: medium;
+  font-size: 2vmin;
+  letter-spacing: 1px;
+  font-family: Rogan-Regular, sans-serif;
   padding-left: 15px;
 }
 .contact-input:focus {
@@ -109,7 +122,20 @@
 }
 
 .contact-button {
-  margin-top: 15px;
+  //margin-top: 15px;
+  color: white;
+  background-color: #bd9a35;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  height: 10%;
+  width: 101.5%;
+  text-align: center;
+  font-size: 3vmin;
+  font-family: Rogan-Medium, sans-serif;
+  padding-left: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .contact-relic-info {

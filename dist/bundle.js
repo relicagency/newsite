@@ -564,7 +564,9 @@
             return $http({
                 method: 'POST',
                 url: '/relic/verify',
-                captchaStr: str
+                data: {
+                    captchaString: str
+                }
             }).then(function (res) {
                 return res;
             });
@@ -994,13 +996,6 @@
         $scope.contactRelic = function (contact) {
 
             var valid = void 0;
-            /**
-             * SERVER SIDE VALIDATION
-             *
-             * You need to implement your server side validation here.
-             * Send the reCaptcha response to the server and use some of the server side APIs to validate it
-             * See https://developers.google.com/recaptcha/docs/verify
-             */
 
             mainService.verifyCaptcha($scope.response).then(function (res) {
                 console.log(response);

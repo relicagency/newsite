@@ -30,7 +30,9 @@
             return $http ({
                 method: 'POST',
                 url: '/relic/verify',
-                captchaStr: str
+                data: {
+                    captchaString: str
+                }
             }).then(function(res){
                 return res
             })

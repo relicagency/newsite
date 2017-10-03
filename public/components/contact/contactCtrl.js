@@ -56,6 +56,10 @@
              */
 
 
+            mainService.verifyCaptcha($scope.response).then(function(res){
+               console.log(response);
+            });
+
 
             console.log('sending the captcha response to the server', $scope.response);
             if (valid) {

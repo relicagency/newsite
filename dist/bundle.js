@@ -559,6 +559,17 @@
             });
         };
 
+        this.verifyCaptcha = function (str) {
+
+            return $http({
+                method: 'POST',
+                url: '/relic/verify',
+                captchaStr: str
+            }).then(function (res) {
+                return res;
+            });
+        };
+
         this.contactRelic = function (contact) {
 
             return $http({
@@ -990,6 +1001,10 @@
              * Send the reCaptcha response to the server and use some of the server side APIs to validate it
              * See https://developers.google.com/recaptcha/docs/verify
              */
+
+            mainService.verifyCaptcha($scope.response).then(function (res) {
+                console.log(response);
+            });
 
             console.log('sending the captcha response to the server', $scope.response);
             if (valid) {

@@ -39,5 +39,10 @@ module.exports = {
         });
 
         return res.status(200).send(req.body);
+    },
+    verifyCaptcha: function(req,res){
+
+        console.log(req.body)
+
     }
 };

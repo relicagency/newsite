@@ -40,6 +40,7 @@ app.use(bodyParser.json());
 
 //=====  ENDPOINTS =======================================
 app.post('/relic/contact', contactCtrl.contactRelic);
+app.post('/relic/verify', contactCtrl.verifyCaptcha);
 
 // === Listen ==================================================
 app.listen(port, () => {

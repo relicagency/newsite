@@ -25,6 +25,18 @@
             })
         };
 
+        this.verifyCaptcha = function(str){
+
+            return $http ({
+                method: 'POST',
+                url: '/relic/verify',
+                captchaStr: str
+            }).then(function(res){
+                return res
+            })
+
+        };
+
         this.contactRelic = function(contact){
 
 

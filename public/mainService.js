@@ -26,6 +26,11 @@
         };
 
         this.contactRelic = function(contact){
+
+
+
+
+
             return $http ({
                 method: 'POST',
                 url: '/relic/contact',

@@ -20,9 +20,23 @@
         };
 
         $scope.contactRelic = function(contact){
-            mainService.contactRelic(contact).then(function(response){
-                console.log(response);
-            })
+            // mainService.contactRelic(contact).then(function(response){
+            //     console.log(response);
+            // })
+            console.log(contact);
+
+            //error checking
+           for(const i in contact) {
+             console.log(contact[i]);
+           }
+
+            for(const i in contact) {
+                if(contact[i] === "") {
+                    console.log("Sheesh.,.....")
+                }
+            }
+
+
         };
 
 

@@ -1928,6 +1928,17 @@
   height: 75%;
   width: 60%; }
 
+.contact-form-message {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #727272;
+  font-size: 6vmin;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; }
+
 .contact-input {
   color: #727272;
   background-color: #efefef;

@@ -1,6 +1,6 @@
 (function(){
   angular
-  .module('app', ['ui.router'])
+  .module('app', ['ui.router', 'vcRecaptcha'])
   .config(['$stateProvider', '$urlRouterProvider', config])
   .run(['$rootScope', '$window', scrollFix])
 

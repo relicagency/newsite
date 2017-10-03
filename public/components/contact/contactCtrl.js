@@ -55,7 +55,7 @@
              * See https://developers.google.com/recaptcha/docs/verify
              */
 
-            
+
 
             console.log('sending the captcha response to the server', $scope.response);
             if (valid) {

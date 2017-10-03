@@ -1,5 +1,6 @@
 
 let nodemailer = require('nodemailer');
+const https = require('https');
 
 module.exports = {
     contactRelic: function(req, res){
@@ -42,8 +43,14 @@ module.exports = {
     },
     verifyCaptcha: function(req,res){
 
-        console.log(req.body)
-        res.send(req.body);
+        https.request({
+            method: "POST",
+            secret:
+        });
+
+        console.log(req.body.captchaString)
+
+
 
     }
 };

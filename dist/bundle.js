@@ -123,7 +123,7 @@
             var deferred = $q.defer(),
                 promise = deferred.promise,
                 instances = {},
-                recaptcha;
+                recaptcha = void 0;
 
             $window.vcRecaptchaApiLoadedCallback = $window.vcRecaptchaApiLoadedCallback || [];
 
@@ -585,27 +585,6 @@
 'use strict';
 
 /**
- * Created by Seth on 8/21/2017.
- */
-(function () {
-            angular.module('app').controller('b2Ctrl', function ($scope, mainService) {
-
-                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
-
-                        var backgroundPic = document.getElementById('b2-background');
-
-                        window.onscroll = function () {
-                                    var offSet = window.pageYOffset,
-                                        csParaStart = offSet * 0.75;
-
-                                    mainService.navBackground(offSet);
-                                    mainService.parallaxIt(backgroundPic, csParaStart);
-                        };
-            });
-})();
-'use strict';
-
-/**
  * Created by Seth on 8/16/2017.
  */
 (function () {
@@ -862,6 +841,27 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
+            angular.module('app').controller('b2Ctrl', function ($scope, mainService) {
+
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
+                        var backgroundPic = document.getElementById('b2-background');
+
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
             angular.module('app').controller('beehiveCtrl', function ($scope, mainService) {
 
                         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
@@ -946,7 +946,7 @@
  * Created by Seth on 8/14/2017.
  */
 (function () {
-    angular.module('app').controller('contactCtrl', function ($scope, mainService) {
+    angular.module('app').controller('contactCtrl', function ($scope, mainService, vcRecaptchaService) {
 
         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
@@ -961,7 +961,46 @@
             mainService.parallaxIt(backgroundPic, csParaStart);
         };
 
+        $scope.response = null;
+        $scope.widgetId = null;
+        $scope.model = {
+            key: '6LfjNi0UAAAAABBsQ1W4gywWWmj8ZM5re4bf5Gcz'
+        };
+        $scope.setResponse = function (response) {
+            console.info('Response available');
+            $scope.response = response;
+        };
+        $scope.setWidgetId = function (widgetId) {
+            console.info('Created widget ID: %s', widgetId);
+            $scope.widgetId = widgetId;
+        };
+        $scope.cbExpiration = function () {
+            console.info('Captcha expired. Resetting response object');
+            vcRecaptchaService.reload($scope.widgetId);
+            $scope.response = null;
+        };
+
         $scope.contactRelic = function (contact) {
+
+            var valid = void 0;
+            /**
+             * SERVER SIDE VALIDATION
+             *
+             * You need to implement your server side validation here.
+             * Send the reCaptcha response to the server and use some of the server side APIs to validate it
+             * See https://developers.google.com/recaptcha/docs/verify
+             */
+
+            console.log('sending the captcha response to the server', $scope.response);
+            if (valid) {
+                console.log('Success');
+            } else {
+                console.log('Failed validation');
+                // In case of a failed validation you need to reload the captcha
+                // because each response can be checked just once
+                vcRecaptchaService.reload($scope.widgetId);
+            }
+
             // mainService.contactRelic(contact).then(function(response){
             //     console.log(response);
             // })

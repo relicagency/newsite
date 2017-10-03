@@ -20,14 +20,14 @@
         throw new Error('You need to set the "key" attribute to your public reCaptcha key. If you don\'t have a key, please get one from https://www.google.com/recaptcha/admin/create');
     }
 
-    var app = ng.module('vcRecaptcha');
+    let app = ng.module('vcRecaptcha');
 
     /**
      * An angular service to wrap the reCaptcha API
      */
     app.provider('vcRecaptchaService', function(){
-        var provider = this;
-        var config = {};
+        let provider = this;
+        let config = {};
         provider.onLoadFunctionName = 'vcRecaptchaApiLoaded';
 
         /**
@@ -119,11 +119,11 @@
         };
 
         provider.$get = ['$rootScope','$window', '$q', '$document', function ($rootScope, $window, $q, $document) {
-            var deferred = $q.defer(), promise = deferred.promise, instances = {}, recaptcha;
+            let deferred = $q.defer(), promise = deferred.promise, instances = {}, recaptcha;
 
             $window.vcRecaptchaApiLoadedCallback = $window.vcRecaptchaApiLoadedCallback || [];
 
-            var callback = function () {
+            let callback = function () {
                 recaptcha = $window.grecaptcha;
 
                 deferred.resolve(recaptcha);
@@ -158,7 +158,7 @@
                 callback();
             } else {
                 // Generate link on demand
-                var script = $window.document.createElement('script');
+                let script = $window.document.createElement('script');
                 script.async = true;
                 script.defer = true;
                 script.src = 'https://www.google.com/recaptcha/api.js?onload='+provider.onLoadFunctionName+'&render=explicit';
@@ -188,7 +188,7 @@
                         throwNoKeyException();
                     }
                     return getRecaptcha().then(function (recaptcha) {
-                        var widgetId = recaptcha.render(elm, conf);
+                        let widgetId = recaptcha.render(elm, conf);
                         instances[widgetId] = elm;
                         return widgetId;
                     });
@@ -219,14 +219,14 @@
                  * Get/Set reCaptcha language
                  */
                 useLang: function (widgetId, lang) {
-                    var instance = instances[widgetId];
+                    let instance = instances[widgetId];
 
                     if (instance) {
-                        var iframe = instance.querySelector('iframe');
+                        let iframe = instance.querySelector('iframe');
                         if (lang) {
                             // Setter
                             if (iframe && iframe.src) {
-                                var s = iframe.src;
+                                let s = iframe.src;
                                 if (/[?&]hl=/.test(s)) {
                                     s = s.replace(/([?&]hl=)\w+/, '$1' + lang);
                                 } else {
@@ -285,7 +285,7 @@
 (function (ng) {
     'use strict';
 
-    var app = ng.module('vcRecaptcha');
+    let app = ng.module('vcRecaptcha');
 
     app.directive('vcRecaptcha', ['$document', '$timeout', 'vcRecaptchaService', function ($document, $timeout, vcRecaptcha) {
 
@@ -314,8 +314,8 @@
                     scope.$watch('required', validate);
                 }
 
-                var removeCreationListener = scope.$watch('key', function (key) {
-                    var callback = function (gRecaptchaResponse) {
+                let removeCreationListener = scope.$watch('key', function (key) {
+                    let callback = function (gRecaptchaResponse) {
                         // Safe $apply
                         $timeout(function () {
                             scope.response = gRecaptchaResponse;

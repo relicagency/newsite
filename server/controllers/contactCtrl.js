@@ -1,7 +1,6 @@
 
 let nodemailer = require('nodemailer');
 let request = require('request');
-let config = require('../../config');
 
 module.exports = {
     contactRelic: function(req, res){

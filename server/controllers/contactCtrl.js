@@ -1,6 +1,7 @@
 
 let nodemailer = require('nodemailer');
-const https = require('https');
+let request = require('request');
+let config = require('../../config');
 
 module.exports = {
     contactRelic: function(req, res){
@@ -10,7 +11,7 @@ module.exports = {
            service: "Gmail",
             auth: {
                 user: 'formsend@relicagency.com',
-                pass: process.env.emailPass//config.emailPassword
+                pass: process.env.emailPass
             }
         });
 
@@ -43,14 +44,18 @@ module.exports = {
     },
     verifyCaptcha: function(req,res){
 
-        https.request({
-            method: "POST",
-            secret:
+        request.post({
+            url:'https://www.google.com/recaptcha/api/siteverify?secret=' + process.env.captchaPass + "&response=" + req.body.captchaString
+        }, function(err, httpResponse, body){
+            if(err){
+                 console.error(err);
+                 return res.send("Sorry, it looks like there was a problem submitting your entry, please try again.");
+            }
+            console.log(JSON.parse(body));
+            return res.status(200).send(JSON.parse(body));
         });
 
-        console.log(req.body.captchaString)
-
-
-
     }
+
+
 };

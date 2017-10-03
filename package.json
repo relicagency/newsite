@@ -37,6 +37,7 @@
     "nodemailer": "^4.1.1",
     "nodemon": "^1.11.0",
     "passport": "^0.3.2",
-    "passport-auth0": ""
+    "passport-auth0": "",
+    "request": "^2.83.0"
   }
 }

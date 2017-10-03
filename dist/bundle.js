@@ -995,37 +995,22 @@
 
         $scope.contactRelic = function (contact) {
 
-            var valid = void 0;
-
-            mainService.verifyCaptcha($scope.response).then(function (res) {
-                console.log(response);
-            });
-
             console.log('sending the captcha response to the server', $scope.response);
-            if (valid) {
-                console.log('Success');
-            } else {
-                console.log('Failed validation');
-                // In case of a failed validation you need to reload the captcha
-                // because each response can be checked just once
-                vcRecaptchaService.reload($scope.widgetId);
-            }
-
-            // mainService.contactRelic(contact).then(function(response){
-            //     console.log(response);
-            // })
-            console.log(contact);
-
-            //error checking
-            for (var i in contact) {
-                console.log(contact[i]);
-            }
-
-            for (var _i in contact) {
-                if (contact[_i] === "") {
-                    console.log("Sheesh.,.....");
+            mainService.verifyCaptcha($scope.response).then(function (res) {
+                console.log(res.data.success);
+                if (res.data.success) {
+                    console.log('Success');
+                    mainService.contactRelic(contact).then(function (response) {
+                        console.log(response);
+                    });
+                }if (!res.data.success) {
+                    console.log('Failed validation');
+                    // In case of a failed validation you need to reload the captcha
+                    // because each response can be checked just once
+                    vcRecaptchaService.reload($scope.widgetId);
+                    alert('Sorry, we couldn\'t verify you, please try again.');
                 }
-            }
+            });
         };
     });
 })();

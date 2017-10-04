@@ -57,7 +57,7 @@
                    mainService.contactRelic(contact).then(function(response){
                        console.log(response);
                        if(response.status === 200){
-                           $scope.formStatus = "Awesome!  Looks like your message went through.  We\'ll be in touch with you as soon as possible.";
+                           $scope.formStatus = "Awesome!  Looks like your message went through.  We\'ll be in touch with you as soon as possible. \n -Sincerely, \n Relic";
                            TweenMax.to(document.getElementById('form-status-message'), 0.15, {
                                display: "flex",
                                ease: Power2.easeIn

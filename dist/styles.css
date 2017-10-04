@@ -1940,6 +1940,9 @@
   align-items: center;
   z-index: 10; }
 
+.contact-form-message p {
+  width: 30%; }
+
 .contact-input {
   color: #727272;
   background-color: #efefef;

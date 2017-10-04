@@ -854,6 +854,27 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
+            angular.module('app').controller('b2Ctrl', function ($scope, mainService) {
+
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
+                        var backgroundPic = document.getElementById('b2-background');
+
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
             angular.module('app').controller('beehiveCtrl', function ($scope, mainService) {
 
                         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
@@ -935,27 +956,6 @@
 'use strict';
 
 /**
- * Created by Seth on 8/21/2017.
- */
-(function () {
-            angular.module('app').controller('b2Ctrl', function ($scope, mainService) {
-
-                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
-
-                        var backgroundPic = document.getElementById('b2-background');
-
-                        window.onscroll = function () {
-                                    var offSet = window.pageYOffset,
-                                        csParaStart = offSet * 0.75;
-
-                                    mainService.navBackground(offSet);
-                                    mainService.parallaxIt(backgroundPic, csParaStart);
-                        };
-            });
-})();
-'use strict';
-
-/**
  * Created by Seth on 8/14/2017.
  */
 (function () {
@@ -1008,7 +1008,7 @@
                     mainService.contactRelic(contact).then(function (response) {
                         console.log(response);
                         if (response.status === 200) {
-                            $scope.formStatus = "Awesome!  Looks like your message went through.  We\'ll be in touch with you as soon as possible.";
+                            $scope.formStatus = "Awesome!  Looks like your message went through.  We\'ll be in touch with you as soon as possible. \n -Sincerely, \n Relic";
                             TweenMax.to(document.getElementById('form-status-message'), 0.15, {
                                 display: "flex",
                                 ease: Power2.easeIn

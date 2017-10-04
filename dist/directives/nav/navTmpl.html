@@ -6,7 +6,7 @@
   <div class="nav-items">
 
     <div class="nav-item" ng-mouseenter="navDropper('one')" ng-mouseleave="navShrinker('one')" ng-click="routeLighter('one')">
-      <div class="nav-item-title" id="nav-item-title-one" ui-sref="expertise"><p>Expertise</p></div>
+      <div class="nav-item-title" id="nav-item-title-one" ui-sref="expertise"><p>Expertise<i class="fa fa-angle-down" aria-hidden="true"></i></p></div>
       <div class="nav-item-drop nav-item-drop-one" id="nav-item-drop-one">
         <div class="drop-down-item" ng-mouseleave="dropDownHoverLeave('one')" ng-mouseenter="dropDownHover('one')" id="drop-down-item-one" ui-sref="tourism"><p>Tourism</p></div>
         <div class="drop-down-item" ng-mouseleave="dropDownHoverLeave('two')" ng-mouseenter="dropDownHover('two')" id="drop-down-item-two" ui-sref="telecom"><p>Telecom</p></div>
@@ -21,7 +21,7 @@
       <div class="nav-item-title" ui-sref="about" id="nav-item-title-three"><p>About</p></div>
     </div>
     <div class="nav-item" ng-mouseenter="navDropper('three')" ng-mouseleave="navShrinker('three')" ng-click="routeLighter('four')">
-      <div class="nav-item-title" ui-sref="services({num: 0})" id="nav-item-title-four"><p>Services</p></div>
+      <div class="nav-item-title" ui-sref="services({num: 0})" id="nav-item-title-four"><p>Services<i class="fa fa-angle-down" aria-hidden="true"></i></p></div>
       <div class="nav-item-drop nav-item-drop-four" id="nav-item-drop-three">
         <div class="drop-down-item" ui-sref="services({num: 0})" ng-mouseleave="dropDownHoverLeave('six')" ng-mouseenter="dropDownHover('six')" id="drop-down-item-six"><p>Traditional Media</p></div>
         <div class="drop-down-item" ui-sref="services({num: 1})" ng-mouseleave="dropDownHoverLeave('seven')" ng-mouseenter="dropDownHover('seven')" id="drop-down-item-seven"><p>Creative</p></div>

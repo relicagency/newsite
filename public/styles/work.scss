@@ -1,11 +1,17 @@
 .work-main-container {
   height: 210vh;
   width: 100%;
-  background-image: url('../images/work-bckgrnd.png');
-  background-size: cover;
-  background-repeat: no-repeat;
   background-color: #161616;
 }
+
+.work-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.4;
+}
+
 .work-title {
   position: absolute;
   color: white;

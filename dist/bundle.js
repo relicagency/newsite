@@ -1088,10 +1088,14 @@
 
             $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
+            var backgroundPic = document.getElementById('expertise-background');
+
             window.onscroll = function () {
-                  var offSet = window.pageYOffset;
+                  var offSet = window.pageYOffset,
+                      csParaStart = offSet * 0.75;
 
                   mainService.navBackground(offSet);
+                  mainService.parallaxIt(backgroundPic, csParaStart);
             };
       });
 })();
@@ -1645,18 +1649,19 @@
 })();
 'use strict';
 
-/**
- * Created by Seth on 8/21/2017.
- */
 (function () {
             angular.module('app').controller('workCtrl', function ($scope, mainService) {
 
                         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
+                        var backgroundPic = document.getElementById('work-background');
+
                         window.onscroll = function () {
-                                    var offSet = window.pageYOffset;
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
 
                                     mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
                         };
 
                         //This is the animations for the work sections

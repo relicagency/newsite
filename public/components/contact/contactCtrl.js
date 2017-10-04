@@ -62,17 +62,6 @@
                                display: "flex",
                                ease: Power2.easeIn
                            });
-                          $timeout(function(){
-                              TweenMax.to(document.getElementById('form-status-message'), 0.15, {
-                                  display: "none",
-                                  ease: Power2.easeIn
-                              });
-
-                              for(const i in contact){
-                                  contact[i] = null;
-                              }
-                              vcRecaptchaService.reload($scope.widgetId);
-                          }, 2000)
                        }
                    })
                } if(!res.data.success) {
@@ -85,6 +74,19 @@
             });
 
         };
+
+        $scope.exitFormStatus = function(){
+
+                TweenMax.to(document.getElementById('form-status-message'), 0.15, {
+                    display: "none",
+                    ease: Power2.easeOut
+                });
+
+                for(const i in contact){
+                    contact[i] = null;
+                }
+                vcRecaptchaService.reload($scope.widgetId);
+        }
 
 
     });

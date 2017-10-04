@@ -1943,6 +1943,13 @@
 .contact-form-message p {
   width: 30%; }
 
+.form-status-exit {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  height: 20px;
+  width: 20px; }
+
 .contact-input {
   color: #727272;
   background-color: #efefef;

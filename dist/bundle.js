@@ -1013,17 +1013,6 @@
                                 display: "flex",
                                 ease: Power2.easeIn
                             });
-                            $timeout(function () {
-                                TweenMax.to(document.getElementById('form-status-message'), 0.15, {
-                                    display: "none",
-                                    ease: Power2.easeIn
-                                });
-
-                                for (var i in contact) {
-                                    contact[i] = null;
-                                }
-                                vcRecaptchaService.reload($scope.widgetId);
-                            }, 2000);
                         }
                     });
                 }if (!res.data.success) {
@@ -1034,6 +1023,19 @@
                     alert('Sorry, we couldn\'t verify you, please try again.');
                 }
             });
+        };
+
+        $scope.exitFormStatus = function () {
+
+            TweenMax.to(document.getElementById('form-status-message'), 0.15, {
+                display: "none",
+                ease: Power2.easeOut
+            });
+
+            for (var i in contact) {
+                contact[i] = null;
+            }
+            vcRecaptchaService.reload($scope.widgetId);
         };
     });
 })();

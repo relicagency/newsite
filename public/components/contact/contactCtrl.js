@@ -66,7 +66,12 @@
                               TweenMax.to(document.getElementById('form-status-message'), 0.15, {
                                   display: "none",
                                   ease: Power2.easeIn
-                              })
+                              });
+
+                              for(const i in contact){
+                                  contact[i] = null;
+                              }
+                              vcRecaptchaService.reload($scope.widgetId);
                           }, 2000)
                        }
                    })

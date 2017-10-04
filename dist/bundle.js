@@ -1018,6 +1018,11 @@
                                     display: "none",
                                     ease: Power2.easeIn
                                 });
+
+                                for (var i in contact) {
+                                    contact[i] = null;
+                                }
+                                vcRecaptchaService.reload($scope.widgetId);
                             }, 2000);
                         }
                     });

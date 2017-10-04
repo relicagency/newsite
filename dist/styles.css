@@ -2667,13 +2667,17 @@
   height: calc(100vw / 6);
   width: calc(100vw / 6);
   margin: -1px;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #bd9a35;
+  background-color: rgba(225, 225, 225, 0.9);
+  color: #161616;
   font-size: 27px;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer; }
+  cursor: pointer;
+  transition-duration: .15s; }
+
+.expertise-content:hover {
+  background-color: white; }
 
 @media screen and (max-width: 425px) {
   .expertise-main-container {
@@ -3929,7 +3933,7 @@
   position: relative;
   box-sizing: border-box;
   padding: 70px;
-  height: 100vh;
+  height: 97vh;
   width: 100%;
   color: white; }
 

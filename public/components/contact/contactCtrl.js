@@ -2,7 +2,7 @@
  * Created by Seth on 8/14/2017.
  */
 (function(){
-    angular.module('app').controller('contactCtrl', function($scope, mainService, vcRecaptchaService){
+    angular.module('app').controller('contactCtrl', function($scope, $timeout, mainService, vcRecaptchaService){
 
 
 
@@ -57,14 +57,17 @@
                    mainService.contactRelic(contact).then(function(response){
                        console.log(response);
                        if(response.status === 200){
-                           $scope.formStatus = "Awesome!  Looks like your message went through.  We\'ll be in touch with you as soon as possible. \n -Sincerely, \n Relic";
+                           $scope.formStatus = "Awesome!  Looks like your message went through.  We\'ll be in touch with you as soon as possible.";
                            TweenMax.to(document.getElementById('form-status-message'), 0.15, {
                                display: "flex",
                                ease: Power2.easeIn
-                           })
-                           // (function(){
-                           //
-                           // })()
+                           });
+                          $timeout(function(){
+                              TweenMax.to(document.getElementById('form-status-message'), 0.15, {
+                                  display: "none",
+                                  ease: Power2.easeIn
+                              })
+                          }, 2000)
                        }
                    })
                } if(!res.data.success) {

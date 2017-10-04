@@ -55,20 +55,20 @@
                 }, 0.25);
             };
 
-            $scope.dropDownHover = function(num){
-                TweenMax.to(document.getElementById('drop-down-item-' + num), 0.25, {
-                    backgroundColor: "rgba(22,22,22,0.8)",
-                    color: "#BD9A35"
-                })
+            // $scope.dropDownHover = function(num){
+            //     TweenMax.to(document.getElementById('drop-down-item-' + num), 0.25, {
+            //         backgroundColor: "rgba(22,22,22,0.8)",
+            //         color: "#BD9A35"
+            //     })
 
-            };
+            // };
 
-            $scope.dropDownHoverLeave = function(num){
-                TweenMax.to(document.getElementById('drop-down-item-' + num), 0.15, {
-                    backgroundColor: "rgba(255,255,255,0.8)",
-                    color: "#242424"
-                })
-            };
+            // $scope.dropDownHoverLeave = function(num){
+            //     TweenMax.to(document.getElementById('drop-down-item-' + num), 0.15, {
+            //         backgroundColor: "rgba(255,255,255,0.8)",
+            //         color: "#242424"
+            //     })
+            // };
 
         })
 })();

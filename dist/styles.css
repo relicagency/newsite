@@ -4915,7 +4915,10 @@ nav {
     align-items: center;
     justify-content: center;
     margin-top: 1px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition-duration: 0.15s; }
+  nav .drop-down-item:hover {
+    background-color: white; }
   nav .cta-button {
     color: white;
     text-transform: none;

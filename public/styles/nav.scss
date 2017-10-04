@@ -92,6 +92,10 @@ nav {
     justify-content: center;
     margin-top: 1px;
     cursor: pointer;
+    transition-duration: 0.15s;
+  }
+  .drop-down-item:hover {
+    background-color: rgba(255,255,255, 1);
   }
 
   .cta-button {

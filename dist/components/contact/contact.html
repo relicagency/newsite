@@ -14,15 +14,15 @@
 
             <p class="get-started-intro">Need advertising experts that delivers real, measurable results? Maybe you want to see how the cross between digital and traditional advertising isn’t an unbridgeable gap? Perhaps you just want a free lunch? Regardless of the reason, fill out this form and we’ll be in contact with you soon.</p>
 
-            <form class="contact-form">
+            <form class="contact-form" ng-submit="contactRelic(contact)">
 
-                <input ng-model="contact.firstName" class="contact-input" type="text" placeholder="First Name">
-                <input ng-model="contact.lastName" class="contact-input" type="text" placeholder="Last Name">
-                <input ng-model="contact.jobTitle" class="contact-input" type="text" placeholder="Job Title">
-                <input ng-model="contact.business" class="contact-input" type="text" placeholder="Business Name">
-                <input ng-model="contact.email" class="contact-input" type="email" placeholder="Email">
-                <input ng-model="contact.phone" class="contact-input" type="text" placeholder="Phone Number">
-                <input ng-model="contact.message" class="contact-input" type="text" placeholder="Message">
+                <input ng-model="contact.firstName" class="contact-input" type="text" placeholder="First Name" required>
+                <input ng-model="contact.lastName" class="contact-input" type="text" placeholder="Last Name" required>
+                <input ng-model="contact.jobTitle" class="contact-input" type="text" placeholder="Job Title" required>
+                <input ng-model="contact.business" class="contact-input" type="text" placeholder="Business Name" required>
+                <input ng-model="contact.email" class="contact-input" type="email" placeholder="Email" required>
+                <input ng-model="contact.phone" class="contact-input" type="text" placeholder="Phone Number" >
+                <input ng-model="contact.message" class="contact-input" type="text" placeholder="Message" required>
 
                 <div
                         vc-recaptcha
@@ -32,7 +32,7 @@
                         on-success="setResponse(response)"
                         on-expire="cbExpiration()"
                 ></div>
-                <button class="contact-button" ng-click="contactRelic(contact)" type="submit">Submit</button>
+                <button class="contact-button" type="submit">Submit</button>
             </form>
 
             <div class="contact-form-message" id="contact-form-message">

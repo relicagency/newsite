@@ -41,15 +41,19 @@
         };
 
 
-
-
         $scope.contactRelic = function(contact){
 
+
             console.log('sending the captcha response to the server', $scope.response);
+
             mainService.verifyCaptcha($scope.response).then(function(res){
-               console.log(res.data.success);
+
+                console.log(res.data.success);
+
                if(res.data.success) {
+
                    console.log('Success');
+
                    mainService.contactRelic(contact).then(function(response){
                        console.log(response);
                    })

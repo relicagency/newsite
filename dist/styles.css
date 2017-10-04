@@ -1895,7 +1895,7 @@
 
 .contact-form-container {
   position: relative;
-  height: 1100px;
+  height: 1200px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1905,7 +1905,7 @@
 
 .get-started {
   position: absolute;
-  top: 8%;
+  top: 9%;
   right: 75%;
   color: #BD9A35;
   font-size: x-large;
@@ -1913,7 +1913,7 @@
 
 .get-started-intro {
   position: absolute;
-  top: 8%;
+  top: 9%;
   left: 30%;
   width: 60%;
   font-size: 2vmin;
@@ -1924,7 +1924,7 @@
 .contact-form {
   position: absolute;
   left: 30%;
-  top: 22%;
+  top: 21%;
   height: 75%;
   width: 60%; }
 
@@ -1957,7 +1957,7 @@
   border: none;
   outline: none;
   margin-bottom: 15px;
-  height: 10%;
+  height: 7%;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -1969,6 +1969,16 @@
 
 .contact-input:focus {
   outline: none; }
+
+.google-captcha {
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
 
 .contact-map-container {
   position: relative;
@@ -1983,7 +1993,7 @@
   border: none;
   outline: none;
   margin-bottom: 15px;
-  height: 10%;
+  height: 7%;
   width: 101.5%;
   text-align: center;
   font-size: 3vmin;

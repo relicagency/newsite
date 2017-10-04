@@ -2070,7 +2070,7 @@
 @media screen and (max-width: 425px) {
   .contact-main-content {
     position: relative;
-    height: 500vh;
+    height: 600vh;
     width: 90%;
     background-color: transparent;
     top: 12vh; }

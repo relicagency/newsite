@@ -1924,7 +1924,7 @@
 .contact-form {
   position: absolute;
   left: 30%;
-  top: 21%;
+  top: 30%;
   height: 75%;
   width: 60%; }
 
@@ -1996,7 +1996,7 @@
   height: 7%;
   width: 101.5%;
   text-align: center;
-  font-size: 5vmin;
+  font-size: 4vmin;
   font-family: Rogan-Medium, sans-serif;
   padding-left: 15px;
   letter-spacing: 1px;
@@ -2099,13 +2099,13 @@
     text-transform: uppercase; }
   .get-started-intro {
     position: absolute;
-    top: 5%;
-    left: 15%;
-    width: 75%;
+    top: 9%;
+    left: 30%;
+    width: 60%;
+    font-size: 2vmin;
     color: #161616;
     letter-spacing: 1px;
-    line-height: 35px;
-    font-size: 4vmin; }
+    line-height: 35px; }
   .contact-input {
     color: #727272;
     background-color: #efefef;

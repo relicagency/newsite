@@ -2,7 +2,7 @@
  * Created by Seth on 8/23/2017.
  */
 (function(){
-    angular.module('app').controller('getStartedCtrl', function($scope, $timeout, mainService, vcRecaptchaService){
+    angular.module('app').controller('getStartedCtrl', function($scope, $state,$timeout, mainService, vcRecaptchaService){
 
         $scope.ctaText = "Learn how we can help you.";
 
@@ -18,6 +18,12 @@
             barSeven = document.getElementById('get-started-animation-seven');
 
         $scope.ctaShow = function () {
+
+            if(window.innerWidth < 426){
+                    $state.go('contact');
+                    return;
+            }
+
             let tl = new TimelineMax();
             tl.to(mainPop, 0.5, { ease: Power2.easeIn, left: 0 })
                 .to(barFive, 0.15, {left: 0}, "+=0.5")

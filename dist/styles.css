@@ -3643,8 +3643,16 @@
     position: absolute;
     top: 0;
     left: 5%;
-    transform: translate(-50%, 0);
+    transform: translate(0, 0);
     width: 82px; }
+  .cta-get-started-title {
+    font-size: 5vmin;
+    color: white;
+    margin-left: 0;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%); }
   .cta-contact-form-container {
     position: absolute;
     height: 75%;

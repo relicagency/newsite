@@ -9,12 +9,12 @@
         this.navBackground = function(offset){
 
 
-             if(offset > 100){
-                  TweenMax.to(nav, 2, {
-                      backgroundColor: "rgba(0,0,0,0.9)"
+             if(offset > 50){
+                  TweenMax.to(nav, 0.5, {
+                      backgroundColor: "rgba(0,0,0,0.95)"
                   })
-             } if(offset < 95){
-                 TweenMax.to(nav, 2, { backgroundColor: "rgba(0,0,0,0)"} );
+             } if(offset < 45){
+                 TweenMax.to(nav, 1, { backgroundColor: "rgba(0,0,0,0)"} );
             }
 
         };

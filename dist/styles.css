@@ -3639,6 +3639,12 @@
     border-radius: 5px; } }
 
 @media screen and (max-device-width: 425px) {
+  .get-started-logo-svg {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    transform: translate(-50%);
+    width: 82px; }
   .cta-contact-form-container {
     position: absolute;
     height: 75%;

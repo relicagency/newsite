@@ -3559,14 +3559,14 @@
   background-color: rgba(0, 0, 0, 0.9);
   color: #bd9a35;
   font-family: 'Rogan-Medium', sans-serif;
-  font-size: 6vmin;
+  font-size: 4vmin;
   display: none;
   justify-content: center;
   align-items: center;
   z-index: 10; }
 
 .get-started-form-message p {
-  width: 30%; }
+  width: 50%; }
 
 .get-started-form-status-exit {
   position: absolute;

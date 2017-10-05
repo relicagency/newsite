@@ -229,7 +229,9 @@
 }
 
 .get-started-form-message {
-  height: 100%;
+  position: absolute;
+  top: 9%;
+  height: 91%;
   width: 100%;
   background-color: rgba(0,0,0,0.9);
   color: #bd9a35;

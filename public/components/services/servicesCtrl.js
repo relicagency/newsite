@@ -6,6 +6,10 @@
 
         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
+        console.log($stateParams.num);
+
+            $scope.content = $stateParams.num;
+
         $scope.scrollTo = function(id) {
             $location.hash(id);
             $anchorScroll();
@@ -13,28 +17,34 @@
 
 
         let lastAccordion = "";
-        let lastTopSec = 0;
-        let lastTopSecInd = "two";
+        let lastTopSec = null;
         let backgroundPic = document.getElementById('services-background');
-        $scope.content = $stateParams.num;
         let tl = new TimelineMax();
 
-        $scope.changeContent = function(num, ind){
+        $scope.changeContent = function(num){
 
             $scope.content = num;
 
-            if(lastTopSec !== num){
+            if(lastTopSec === null){
+                tl.to(document.getElementById('services-top-overlay-' + num), 0.05, {
+                    height: 0
+                }).to(document.getElementById('top-two-sec-' + num), 0.05, {
+                    backgroundColor: "white"
+                });
+            }
 
-                tl.to(document.getElementById('services-top-overlay-' + ind), 0.05, {
+            if(lastTopSec !== null && lastTopSec !== num){
+
+                tl.to(document.getElementById('services-top-overlay-' + num), 0.05, {
                     height: 0
                 })
-                    .to(document.getElementById('services-top-overlay-' + lastTopSecInd), 0.05, {
+                    .to(document.getElementById('services-top-overlay-' + lastTopSec), 0.05, {
                     height: "100%"
                 }, "-=0.05")
-                    .to(document.getElementById('top-two-sec-' + ind), 0.05, {
+                    .to(document.getElementById('top-two-sec-' + num), 0.05, {
                     backgroundColor: "white"
                 })
-                    .to(document.getElementById('top-two-sec-' + lastTopSecInd), 0.05, {
+                    .to(document.getElementById('top-two-sec-' + lastTopSec), 0.05, {
                     backgroundColor: "transparent"
                 }, "-=0.05");
             }
@@ -42,9 +52,9 @@
 
 
             lastTopSec = num;
-            lastTopSecInd = ind;
         };
-        $scope.changeContent($stateParams.num, "one");
+
+        $scope.changeContent($stateParams.num);
 
         window.onscroll = function() {
             let offSet = window.pageYOffset,
@@ -92,8 +102,6 @@
             lastAccordion = num;
 
         };
-
-        $scope.content = 0;
 
         $scope.services = [
 
@@ -191,8 +199,6 @@
 
         $scope.servicesMobile = function(num, top){
 
-            console.log('YYYYOOOOOOO!!!!!!!  WORK YOU FOOL!!!');
-
             let mobileExpand = document.getElementById('services-mobile-expand-' + num),
                 mobileExpandLast = document.getElementById('services-mobile-expand-' + $scope.lastNum),
                 arrow = document.getElementById('mobile-expand-arrow-' + num),
@@ -270,7 +276,7 @@
 
         $scope.mobileInnerExpand = function(){
             console.log('Its working.....')
-        }
+        };
 
 
 

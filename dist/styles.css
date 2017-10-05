@@ -5193,6 +5193,10 @@ nav {
   width: 100%;
   background-color: #161616; }
 
+.newsroom-main-container a {
+  text-decoration: none;
+  color: white; }
+
 .newsroom-background {
   position: absolute;
   top: 0;
@@ -5254,7 +5258,13 @@ nav {
   right: 0;
   height: 100%;
   width: 75%;
-  background-color: white; }
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #bd9a35;
+  font-size: 5vmin;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .nr-routes-nav {
   position: absolute;

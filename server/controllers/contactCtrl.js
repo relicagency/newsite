@@ -24,7 +24,7 @@ module.exports = {
 
         let mailOptions = {
             from: "formsend@relicagency.com",
-            to: ["adam@relicagency.com", "jordan@relicagency.com", "barry@relicagency.com","seth@relicagency.com"],
+            to: ["seth@relicagency.com"], //"adam@relicagency.com", "jordan@relicagency.com", "barry@relicagency.com",
             subject: "Contact request from Relic form.",
             text: message
         };

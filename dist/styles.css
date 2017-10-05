@@ -3643,7 +3643,7 @@
     position: absolute;
     top: 0;
     left: 5%;
-    transform: translate(-50%);
+    transform: translate(-50%, 0);
     width: 82px; }
   .cta-contact-form-container {
     position: absolute;

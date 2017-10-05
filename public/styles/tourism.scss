@@ -594,7 +594,7 @@
 
   .tourism-main-container {
     width: 100%;
-    height: 395vh;
+    height: 690vh;
     background-color: #161616;
     display: flex;
     flex-direction: column;
@@ -623,7 +623,7 @@
 
   .tourism-experts {
     position: relative;
-    height: 116vh;
+    height: 380vh;
     width: 100%;
     background-color: white;
     display: flex;
@@ -632,7 +632,7 @@
 
   .tourism-industry-experts {
     position: absolute;
-    top: 6%;
+    top: 3%;
     right: 50%;
     font-size: 6vmin;
     color: #BD9A35;
@@ -645,7 +645,7 @@
 
   .tourism-industry-info {
     position: absolute;
-    top: 18%;
+    top: 7%;
     left: 50%;
     color: #727272;
     width: 80%;

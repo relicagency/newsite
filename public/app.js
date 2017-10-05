@@ -1,8 +1,9 @@
 (function(){
   angular
   .module('app', ['ui.router', 'vcRecaptcha'])
-  .config(['$stateProvider', '$urlRouterProvider', config])
-  .run(['$rootScope', '$window', scrollFix])
+      .run(['$rootScope', '$window', scrollFix])
+  .config(['$stateProvider', '$urlRouterProvider', config]);
+
 
   function config($stateProvider, $urlRouterProvider){
     $stateProvider

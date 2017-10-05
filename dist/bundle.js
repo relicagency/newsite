@@ -398,7 +398,7 @@
 'use strict';
 
 (function () {
-  angular.module('app', ['ui.router', 'vcRecaptcha']).config(['$stateProvider', '$urlRouterProvider', config]).run(['$rootScope', '$window', scrollFix]);
+  angular.module('app', ['ui.router', 'vcRecaptcha']).run(['$rootScope', '$window', scrollFix]).config(['$stateProvider', '$urlRouterProvider', config]);
 
   function config($stateProvider, $urlRouterProvider) {
     $stateProvider.state('home', {

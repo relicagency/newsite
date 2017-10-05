@@ -1849,7 +1849,7 @@
             });
         };
 
-        $scope.exitFormStatus = function () {
+        $scope.exitFormStatus = function (contact) {
 
             TweenMax.to(document.getElementById('get-started-form-status-message'), 0.15, {
                 display: "none",

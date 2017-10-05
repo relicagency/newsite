@@ -3548,6 +3548,9 @@
 .contact-input:focus {
   outline: none; }
 
+.get-started-google-captcha {
+  margin-bottom: 15px; }
+
 @media screen and (max-device-width: 850px) {
   .cta-pop-up-header {
     position: absolute;

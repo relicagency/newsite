@@ -1848,6 +1848,19 @@
                 }
             });
         };
+
+        $scope.exitFormStatus = function () {
+
+            TweenMax.to(document.getElementById('get-started-form-status-message'), 0.15, {
+                display: "none",
+                ease: Power2.easeOut
+            });
+
+            for (var i in contact) {
+                contact[i] = null;
+            }
+            vcRecaptchaService.reload($scope.widgetId);
+        };
     });
 })();
 'use strict';

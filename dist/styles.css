@@ -2086,7 +2086,7 @@
   .contact-form {
     position: absolute;
     left: 15%;
-    top: 24%;
+    top: 30%;
     height: 75%;
     width: 67%; }
   .get-started {
@@ -7582,7 +7582,7 @@ h2 {
 @media screen and (max-width: 425px) {
   .tourism-main-container {
     width: 100%;
-    height: 690vh;
+    height: 670vh;
     background-color: #161616;
     display: flex;
     flex-direction: column; }

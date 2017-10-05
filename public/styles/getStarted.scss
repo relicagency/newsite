@@ -228,6 +228,30 @@
   margin-bottom: 15px;
 }
 
+.get-started-form-message {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.9);
+  color: #bd9a35;
+  font-family: 'Rogan-Medium', sans-serif;
+  font-size: 6vmin;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.get-started-form-message p{
+  width: 30%;
+}
+.get-started-form-status-exit {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
 @media screen and (max-device-width: 850px) {
 
   .cta-pop-up-header {

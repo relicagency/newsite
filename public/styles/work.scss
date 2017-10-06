@@ -70,14 +70,101 @@
   background-color: rgba(0,0,0,0.7);
 }
 
+@media screen and (max-width: 1200px){
+
+  .work-content {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work-content-item {
+    position: relative;
+    height: calc(65vw / 2);
+    width: calc(65vw / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work-content-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(65vw / 2);
+    height: calc(65vw / 2);
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .work-content-image-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(65vw / 2);
+    height: calc(65vw / 2);
+    cursor: pointer;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+
+  .work-content {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work-content-item {
+    position: relative;
+    height: calc(75vw / 2);
+    width: calc(75vw / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work-content-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(75vw / 2);
+    height: calc(75vw / 2);
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .work-content-image-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(75vw / 2);
+    height: calc(75vw / 2);
+    cursor: pointer;
+  }
+
+}
+
 @media screen and (max-width: 425px){
 
   .work-main-container {
     height: 1200vh;
     width: 100%;
-    background-image: url('../images/work-bckgrnd.png');
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #161616;
   }
   .work-title {
@@ -111,7 +198,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10vh;
+    margin-bottom: 3vw;
   }
 
   .work-content-image {

@@ -7038,7 +7038,7 @@ table {
     background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center; }
   .telecom-work {
     height: 65vmin;

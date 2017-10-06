@@ -814,11 +814,11 @@
                 expand = true;
             }
 
-            if (lastLeader !== "" && document.getElementById('leader-' + lastLeader).style.height !== "175px") {
+            if (lastLeader !== "" && document.getElementById('leader-' + lastLeader).style.height !== "210px") {
 
                 TweenMax.to(document.getElementById('leader-' + lastLeader), 0.5, {
                     ease: Power3.easeOut,
-                    height: "175px"
+                    height: "210px"
                 });
                 TweenMax.to(document.getElementById('leader-about-' + lastLeader), 0.15, {
                     opacity: 0

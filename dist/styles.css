@@ -10,7 +10,7 @@
 
 .about-main-content {
   position: absolute;
-  top: 20%;
+  top: 200px;
   left: 50%;
   transform: translate(-50%, 0);
   width: 90%;
@@ -19,7 +19,7 @@
 
 .about-content-title {
   position: relative;
-  height: 20vh;
+  height: 150px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -30,8 +30,7 @@
 .about-router {
   position: relative;
   width: 100%;
-  height: 20vh;
-  margin-bottom: -1px; }
+  height: 100px; }
 
 .about-router-underlay {
   position: absolute;
@@ -62,7 +61,7 @@
 .story-router-title {
   position: relative;
   text-transform: uppercase;
-  font-size: 3vmin;
+  font-size: 24px;
   color: #BD9A35; }
 
 .story-router-down {
@@ -85,7 +84,7 @@
 .leadership-router-title {
   position: relative;
   text-transform: uppercase;
-  font-size: 3vmin;
+  font-size: 24px;
   color: #BD9A35; }
 
 .leadership-router-down {
@@ -159,7 +158,7 @@
   position: relative;
   top: 0;
   width: 100%;
-  height: 105vh;
+  height: auto;
   background-color: white; }
 
 .story-top {
@@ -179,30 +178,28 @@
   width: 70%;
   background-color: #D0D0D0; }
 
+#our-story {
+  font-family: 'Rogan-Bold', sans-serif; }
+
 .our-story-title {
-  position: absolute;
-  top: 12%;
-  right: 70%;
-  font-size: 3vmin;
+  position: relative;
+  margin: 60px 0 60px 10%;
+  font-size: 25px;
   text-transform: uppercase;
   color: #bd9a35;
   font-family: 'Rogan-SemiBold', sans-serif; }
 
-#our-story {
-  font-family: 'Rogan-Bold', sans-serif; }
-
 .our-story-one {
-  position: absolute;
-  top: 13%;
-  left: 40%;
-  width: 44%;
+  position: relative;
+  margin: 0 0 60px 10%;
+  width: 80%;
   color: #161616;
-  font-size: 2vmin;
+  font-size: 17px;
   letter-spacing: 1px;
   line-height: 30px; }
 
 .enter-relic {
-  font-size: 3vmin;
+  font-size: 24px;
   text-transform: capitalize;
   color: #bd9a35; }
 
@@ -221,25 +218,7 @@
 #about-looking-for-help {
   height: 45vh; }
 
-@media screen and (max-width: 1440px) {
-  .about-route-story {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 130vh;
-    background-color: white; } }
-
 @media screen and (max-width: 1024px) {
-  .about-route-story {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 180vh;
-    background-color: white; }
-  .about-router {
-    position: relative;
-    width: 100%;
-    height: 12vh; }
   .leader-about {
     position: absolute;
     top: 1.5in;
@@ -262,12 +241,6 @@
     line-height: 34px;
     opacity: 0;
     color: black; }
-  .about-route-story {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 157vh;
-    background-color: white; }
   .leader-name {
     position: absolute;
     top: 87px;
@@ -286,15 +259,9 @@
     width: 100%;
     height: 14vh; }
   .story-router-title {
-    position: relative;
-    text-transform: uppercase;
-    font-size: 5vmin;
-    color: #BD9A35; }
+    font-size: 18px; }
   .leadership-router-title {
-    position: relative;
-    text-transform: uppercase;
-    font-size: 5vmin;
-    color: #BD9A35; }
+    font-size: 18px; }
   .leadership-leader {
     position: relative;
     width: 100%;
@@ -338,34 +305,7 @@
     position: relative;
     margin-top: 0;
     color: #BD9A35;
-    font-size: 5vmin; }
-  .our-story-title {
-    position: absolute;
-    top: 5%;
-    right: 64%;
-    font-size: 4vmin;
-    text-transform: uppercase;
-    color: #bd9a35;
-    font-family: 'Rogan-SemiBold', sans-serif; }
-  .about-route-story {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 16in;
-    background-color: white; }
-  .our-story-one {
-    position: absolute;
-    top: 9%;
-    left: 11%;
-    width: 75%;
-    color: #161616;
-    font-size: 4vmin;
-    letter-spacing: 1px;
-    line-height: 30px; }
-  .enter-relic {
-    font-size: 5vmin;
-    text-transform: capitalize;
-    color: #bd9a35; } }
+    font-size: 5vmin; } }
 
 .b2-main-container {
   height: 623vh;
@@ -8932,7 +8872,7 @@ body {
     width: 80%; } }
 
 .work-main-container {
-  height: 210vh;
+  height: 16in;
   width: 100%;
   background-color: #161616; }
 
@@ -8996,10 +8936,10 @@ body {
   width: 0;
   background-color: rgba(0, 0, 0, 0.7); }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .work-content {
     position: absolute;
-    top: 32%;
+    top: 350px;
     left: 50%;
     transform: translate(-50%, 0);
     width: 90vw;
@@ -9010,8 +8950,8 @@ body {
     align-items: center; }
   .work-content-item {
     position: relative;
-    height: calc(65vw / 2);
-    width: calc(65vw / 2);
+    height: calc(90vw / 4);
+    width: calc(90vw / 4);
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -9019,22 +8959,22 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(65vw / 2);
-    height: calc(65vw / 2);
+    width: calc(90vw / 4);
+    height: calc(90vw / 4);
     cursor: pointer;
     z-index: 10; }
   .work-content-image-color {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(65vw / 2);
-    height: calc(65vw / 2);
+    width: calc(90vw / 4);
+    height: calc(90vw / 4);
     cursor: pointer; } }
 
 @media screen and (max-width: 768px) {
   .work-content {
     position: absolute;
-    top: 32%;
+    top: 350px;
     left: 50%;
     transform: translate(-50%, 0);
     width: 90vw;

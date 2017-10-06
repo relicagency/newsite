@@ -3590,7 +3590,7 @@
   width: 20px;
   cursor: pointer; }
 
-@media screen and (max-device-width: 850px) {
+@media screen and (max-width: 850px) {
   .cta-pop-up-header {
     position: absolute;
     top: 0;
@@ -3652,7 +3652,12 @@
     outline: none;
     border-radius: 5px; } }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (max-width: 425px) {
+  .looking-for-help p {
+    font-size: large;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    text-align: center; }
   .get-started-logo-svg {
     position: absolute;
     top: 0;
@@ -7582,7 +7587,7 @@ h2 {
 @media screen and (max-width: 425px) {
   .tourism-main-container {
     width: 100%;
-    height: 670vh;
+    height: 1035vh;
     background-color: #161616;
     display: flex;
     flex-direction: column; }
@@ -7604,7 +7609,7 @@ h2 {
     width: 100%; }
   .tourism-experts {
     position: relative;
-    height: 380vh;
+    height: 465vh;
     width: 100%;
     background-color: white;
     display: flex;
@@ -7634,14 +7639,30 @@ h2 {
     text-align: center; }
   .tourism-video {
     position: relative;
-    height: 25vh;
+    height: 35vh;
     width: 100%;
     background-color: transparent; }
   .tourism-clients {
     position: relative;
-    height: 55vmin;
+    height: 455vmin;
     width: 100%;
     background-color: black; }
+  .tourism-clients-clients {
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -50%);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+  .tourism-work {
+    height: 45vmin;
+    margin: 0;
+    outline: 0; }
   .tourism-awards {
     position: relative;
     height: 249vmin;

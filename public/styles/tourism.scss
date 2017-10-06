@@ -594,7 +594,7 @@
 
   .tourism-main-container {
     width: 100%;
-    height: 670vh;
+    height: 1035vh;
     background-color: #161616;
     display: flex;
     flex-direction: column;
@@ -623,7 +623,7 @@
 
   .tourism-experts {
     position: relative;
-    height: 380vh;
+    height: 465vh;
     width: 100%;
     background-color: white;
     display: flex;
@@ -659,16 +659,36 @@
 
   .tourism-video {
     position: relative;
-    height: 25vh;
+    height: 35vh;
     width: 100%;
     background-color: transparent;
   }
 
   .tourism-clients {
     position: relative;
-    height: 55vmin;
+    height: 455vmin;
     width: 100%;
     background-color: black;
+  }
+
+  .tourism-clients-clients {
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -50%);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .tourism-work {
+    height: 45vmin;
+    margin: 0;
+    outline: 0;
   }
 
   .tourism-awards {

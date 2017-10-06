@@ -1670,16 +1670,14 @@
 
                         //This is the animations for the work sections
                         $scope.workEnter = function (num) {
-                                    TweenMax.to(document.getElementById('work-content-image-' + num), 0.75, {
-                                                filter: "blur(8px)",
+                                    TweenMax.to(document.getElementById('work-content-image-' + num), 0.40, {
                                                 opacity: 0
                                     });
                         };
 
                         $scope.workLeave = function (num) {
-                                    TweenMax.to(document.getElementById('work-content-image-' + num), 0.5, {
-                                                opacity: 1,
-                                                filter: "blur(0)"
+                                    TweenMax.to(document.getElementById('work-content-image-' + num), 0.40, {
+                                                opacity: 1
                                     });
                         };
             });

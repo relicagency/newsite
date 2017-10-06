@@ -7661,7 +7661,7 @@ h2 {
     justify-content: space-evenly; }
   .tourism-work {
     height: 45vmin;
-    margin: 0;
+    margin: 50px 0 0 0;
     outline: 0; }
   .tourism-awards {
     position: relative;

@@ -8949,13 +8949,13 @@ body {
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  top: 17%;
+  top: 200px;
   left: 50%;
   transform: translate(-50%, 0); }
 
 .work-content {
   position: absolute;
-  top: 32%;
+  top: 350px;
   left: 50%;
   transform: translate(-50%, 0);
   width: 65vw;

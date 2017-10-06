@@ -119,7 +119,7 @@
 }
 
 .tech-work {
-  height: 35vmin;
+  height: 25vmin;
   margin: 0;
   outline: 0;
   margin: -1px;
@@ -177,7 +177,7 @@
 
   .tech-main-container {
     width: 100%;
-    height: 312vh;
+    height: 33in;
     background-color: #161616;
     display: flex;
     flex-direction: column;
@@ -185,17 +185,30 @@
 
   .tech-main-content {
     position: absolute;
-    top: 67vh;
+    top: 140px;
     left: 50%;
     width: 85%;
-    transform: translate(-50%, -16%);
+    transform: translate(-50%, 0);
     display: flex;
     flex-direction: column;
   }
 
+  .tech-title {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+  }
+
   .tech-experts {
     position: relative;
-    height: 140vh;
+    height: 14.5in;
     width: 100%;
     background-color: white;
     display: flex;
@@ -211,28 +224,49 @@
 
   .tech-industry-experts {
     position: absolute;
-    top: 10%;
-    right: 70%;
-    font-size: 5vmin;
+    top: 70px;
+    right: 50%;
+    font-size: 6vmin;
     color: #BD9A35;
     text-transform: uppercase;
-    text-align: right;
-    letter-spacing: 1px;
-    line-height: 22px;
+    letter-spacing: 3px;
+    line-height: 20px;
+    transform: translate(50%, 0);
+    text-align: center;
   }
 
   .tech-industry-info {
     position: absolute;
-    top: 9%;
-    left: 35%;
-    font-size: 4vmin;
+    top: 150px;
+    left: 50%;
     color: #727272;
-    width: 57%;
+    width: 80%;
+    font-family: 'Rogan-Light', sans-serif;
+    font-size: 5vmin;
+    letter-spacing: 1px;
+    line-height: 31px;
+    transform: translate(-50%, 0%);
+    text-align: center;
+  }
+
+  .tech-clients-title {
+    position: relative;
+    height: 115px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #BD9A35;
+    text-transform: capitalize;
+    font-size: 6vmin;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -2px;
   }
 
   .tech-clients {
     position: relative;
-    height: 96vh;
+    height: 15in;
     width: 100%;
     background-color: black;
     display: flex;

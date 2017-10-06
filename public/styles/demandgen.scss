@@ -210,3 +210,108 @@
   }
 
 }
+
+@media screen and (max-width: 425px){
+
+  .demandgen-main-container {
+    width: 100%;
+    height: 91in;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .demandgen-main-content {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .demandgen-experts-top-left {
+    height: 100%;
+    width: 30%;
+    background-color: #d0d0d0;
+  }
+
+  .demandgen-title {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: uppercase;
+    color: white;
+    font-size: 7vmin;
+    font-family: "Rogan-SemiBold", sans-serif;
+    letter-spacing: 3px;
+  }
+
+  .demandgen-industry-experts {
+    position: absolute;
+    top: 70px;
+    right: 50%;
+    font-size: 6vmin;
+    color: #BD9A35;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 20px;
+    transform: translate(50%, 0);
+    text-align: center;
+  }
+
+  .demandgen-industry-info {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    color: #727272;
+    width: 80%;
+    font-family: 'Rogan-Light', sans-serif;
+    font-size: 5vmin;
+    letter-spacing: 1px;
+    line-height: 31px;
+    transform: translate(-50%, 0%);
+    text-align: center;
+  }
+
+  .demandgen-experts {
+    position: relative;
+    height: 12in;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .demand-gen-sections {
+    position: relative;
+    height: 70in;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .demandgen-clients-title {
+    position: relative;
+    height: 1in;
+    width: 100%;
+    background-color: white;
+    color: #BD9A35;
+    text-transform: capitalize;
+    font-size: 6vmin;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+}

@@ -1328,10 +1328,11 @@
 
         $scope.accordionPop = function (num) {
 
-            TweenMax.to(document.getElementById('accordion-pop-' + num), 0.5, {
+            TweenMax.to(document.getElementById('accordion-pop-' + num), 0.15, {
                 ease: Power3.easeIn,
                 height: "auto"
             });
+
             TweenMax.to(document.getElementById('accordion-pop-' + num), 0.25, {
                 color: "#161616"
             });
@@ -1359,7 +1360,7 @@
         $scope.services = [{
             title: 'Traditional Media',
             intro: "There are certain things in life that are risky. Asking out that girl you’ve been eyeing across the room? Risky. Looking into a new investment? Risky. The movie Risky Business? Ironically, not that risky. However, traditional media and media buying should never have you on the edge of your seat. Relic has media buying experts who focus on negotiating and planning to guarantee the highest return for each client.",
-            sections: [{ number: "one", title: "TV", info: ["We’ve noticed a myth going around. No, not that one about Steve in accounting and his weirdly large left foot – myth about TV spots. Some people are led to believe that TV advertisements have been completely supplanted by digital marketing, but that’s not the case. There is strength in a good TV spot, and Relic’s media team ensures that your TV ads are presented to the correct demographics to leave a lasting impact on your audience."] }, { number: "two", title: "Radio", info: ["Did you know that it’s scientifically proven that everybody listens to music? Everyone. You know that person you’re thinking of who may not listen to music? Nope, they do too. The fact that everyone loves music means radio spots bring tremendous advertising value. A radio ad is wonderful because it is exactly like a shotgun Vegas wedding – cost effective, time efficient, and it leaves a trail of measurable results."] }, { number: "three", title: "Print/Newspaper", info: ["Much like Apple products, print ads and newspapers have been permeating our lives for as long as we can remember, and these items are not leaving any time soon. There’s a good reason for it, too. Print advertising offers certain advantages that create tangible and distinct results. Printed ads in magazines target niche markets, while newspapers target regional audiences. Loyal readership provides a sense of trust that can be used to your advantage. Relic’s media team finds the perfect publications for your ads and delivers measurable results on them."] }, { number: "four", title: "Outdoor Advertising", info: ["Imagine the cool breeze running through your hair, the sounds of nature in your ears, the beautiful smell of exhaust—there’s nothing quite like the great outdoors. Turns out, it’s also a great place to advertise. Relic’s team has been working with unique, distinguishable outdoor advertising for years. We know exactly what it takes to ensure the best results for your campaign. From roadside billboards to public transit banners, Relic delivers the best placement for your ads to ensure you have the greatest reach, the best ROI and drive the most engagement with your products."] }, { number: "five", title: "Direct Mail", info: ["Direct mail offers the opportunity to personally connect with an audience in an original way that sets you apart from the competition. The key to building any relationship with a customer is communicating a clear message and making it personal. Studies found that once a direct mail piece is opened, the recipient is more likely to engage with the company. Relic’s team has seen remarkable success with our direct mail pieces. In fact, I’m currently recruiting Relic to send out direct mail pieces to potential dating partners. Stay tuned for an update. (Update: apparently I’m married and my wife was not happy with what turned up in our mail today. Though it did intrigue her enough to open it)."] }, { number: "six", title: "Sponsorships", info: ["Sponsorship advertising is a great way to build up a reputable brand image for your company. Sponsoring a local event will insert your brand name in the forefront of the minds of the public. Additionally, sponsorships can build priceless PR value. Being a part of these sponsored events will show the positive impact you have on your community. The hardest part of sponsorships is finding the best events to be a part of, and Relic’s team knows the exact information your audience will want to see. Always keep in mind the importance of relevance. There’s a reason you never see events such as the “Nike Hotdog Eating Contest.”"] }]
+            sections: [{ number: "one", title: "TV", info: ["We’ve noticed a myth going around. No, not that one about Steve in accounting and his weirdly large left foot – a myth about TV spots. Some people are led to believe that TV advertisements have been completely supplanted by digital marketing, but that’s not the case. There is strength in a good TV spot, and Relic’s media team ensures that your TV ads are presented to the correct demographics to leave a lasting impact on your audience."] }, { number: "two", title: "Radio", info: ["Did you know that it’s scientifically proven that everybody listens to music? Everyone. You know that person you’re thinking of who may not listen to music? Nope, they do too. The fact that everyone loves music means radio spots bring tremendous advertising value. A radio ad is wonderful because it is exactly like a shotgun Vegas wedding – cost effective, time efficient, and it leaves a trail of measurable results."] }, { number: "three", title: "Print/Newspaper", info: ["Much like Apple products, print ads and newspapers have been permeating our lives for as long as we can remember, and these items are not leaving any time soon. There’s a good reason for it, too. Print advertising offers certain advantages that create tangible and distinct results. Printed ads in magazines target niche markets, while newspapers target regional audiences. Loyal readership provides a sense of trust that can be used to your advantage. Relic’s media team finds the perfect publications for your ads and delivers measurable results on them."] }, { number: "four", title: "Outdoor Advertising", info: ["Imagine the cool breeze running through your hair, the sounds of nature in your ears, the beautiful smell of exhaust—there’s nothing quite like the great outdoors. Turns out, it’s also a great place to advertise. Relic’s team has been working with unique, distinguishable outdoor advertising for years. We know exactly what it takes to ensure the best results for your campaign. From roadside billboards to public transit banners, Relic delivers the best placement for your ads to ensure you have the greatest reach, the best ROI and drive the most engagement with your products."] }, { number: "five", title: "Direct Mail", info: ["Direct mail offers the opportunity to personally connect with an audience in an original way that sets you apart from the competition. The key to building any relationship with a customer is communicating a clear message and making it personal. Studies found that once a direct mail piece is opened, the recipient is more likely to engage with the company. Relic’s team has seen remarkable success with our direct mail pieces. In fact, I’m currently recruiting Relic to send out direct mail pieces to potential dating partners. Stay tuned for an update. (Update: apparently I’m married and my wife was not happy with what turned up in our mail today. Though it did intrigue her enough to open it)."] }, { number: "six", title: "Sponsorships", info: ["Sponsorship advertising is a great way to build up a reputable brand image for your company. Sponsoring a local event will insert your brand name in the forefront of the minds of the public. Additionally, sponsorships can build priceless PR value. Being a part of these sponsored events will show the positive impact you have on your community. The hardest part of sponsorships is finding the best events to be a part of, and Relic’s team knows the exact information your audience will want to see. Always keep in mind the importance of relevance. There’s a reason you never see events such as the “Nike Hotdog Eating Contest.”"] }]
         }, {
             title: 'Creative',
             intro: "Do you remember the last advertisement you saw? Creating a message that resonates can be difficult. Our creative team specializes in delivering unforgettable campaigns, content and designs. Good creative should communicate the same message as when you meet your in-laws for the first time−a strong, memorable directive that leaves just enough of an impact that you’ll linger in the back of their minds. It’s a tough balance, but we’ll work with you to ensure that we deliver creative that knocks your customers’ weirdly colorful socks off.",
@@ -2088,81 +2089,6 @@
 // })();
 'use strict';
 
-//navCtrl.js
-
-// (function(){
-//     angular.module('app')
-//         .controller('navCtrl', function($scope){
-//
-//             let lastNavTitle = "";
-//
-//             $scope.routeLighter = function(num) {
-//                 let title = document.getElementById('nav-item-title-' + num),
-//                     lastTitle = document.getElementById('nav-item-title-' + lastNavTitle);
-//                 if(num === "home"){
-//                     TweenMax.to( lastTitle, 0.15, {
-//                         color: "#95989A"
-//                     });
-//                     lastNavTitle = "";
-//                     return;
-//                 }
-//                 if(lastNavTitle !== "" && lastNavTitle !== num){
-//                     TweenMax.to( lastTitle, 0.15, {
-//                         color: "#95989A"
-//                     })
-//                 }
-//
-//                 TweenMax.to(title, 0.25, {
-//                     color: "white"
-//                 });
-//                 lastNavTitle = num;
-//             };
-//
-//
-//             $scope.navDropper = function(num) {
-//                 TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15,  {
-//                     ease: Power1.easeIn,
-//                     display: "flex",
-//                     opacity: 1,
-//                     height: "auto"
-//                 });
-//
-//                 TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.4, {
-//                     color: "#242424"
-//                 });
-//
-//             };
-//
-//             $scope.navShrinker = function(num) {
-//                 TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
-//                     color: "transparent"
-//                 });
-//                 TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15,  {
-//                     ease: Power3.easeIn,
-//                     opacity: 0,
-//                     display: "none"
-//                     //height: 0
-//                 }, 0.25);
-//             };
-//
-//             // $scope.dropDownHover = function(num){
-//             //     TweenMax.to(document.getElementById('drop-down-item-' + num), 0.25, {
-//             //         backgroundColor: "rgba(22,22,22,0.8)",
-//             //         color: "#BD9A35"
-//             //     })
-//
-//             // };
-//
-//             // $scope.dropDownHoverLeave = function(num){
-//             //     TweenMax.to(document.getElementById('drop-down-item-' + num), 0.15, {
-//             //         backgroundColor: "rgba(255,255,255,0.8)",
-//             //         color: "#242424"
-//             //     })
-//             // };
-//
-//         })
-// })();
-
 (function () {
     angular.module('app').controller('navCtrl', function ($scope) {
 
@@ -2217,8 +2143,7 @@
 
         $scope.dropDownHover = function (num) {
             TweenMax.to(document.getElementById('drop-down-item-' + num), 0.25, {
-                backgroundColor: "rgba(22,22,22,0.8)",
-                color: "#BD9A35"
+                backgroundColor: "rgba(255,255,255,1)"
             });
         };
 

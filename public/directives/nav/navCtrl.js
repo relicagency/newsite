@@ -67,5 +67,9 @@
                 })
             };
 
+            $scope.getStarted = function(){
+                mainService.navGetStarted();
+            }
+
         })
 })();

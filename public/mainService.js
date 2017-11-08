@@ -68,7 +68,13 @@
             "../../images/work-backgrounds/relic9.jpg",
             "../../images/work-backgrounds/relic10.jpg",
             "../../images/work-backgrounds/relic10.jpg"
-        ]
+        ];
+
+        this.navStarted = false;
+
+        this.navGetStarted = function(){
+            this.navStarted = !this.navStarted;
+        }
 
     });
 })();

@@ -8,6 +8,7 @@
           backgroundGrad = document.getElementById('home-linear-grad');
 
       window.onscroll = function(){
+
           let offSet = window.pageYOffset,
               csParaStart = offSet * 0.75;
 

@@ -5,7 +5,8 @@
   "main": "./server/index.js",
   "scripts": {
     "start": "nodemon server/index.js",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "postinstall": "gulp default"
   },
   "repository": {
     "type": "git",
@@ -17,16 +18,6 @@
     "url": "https://github.com/relicagency/newsite/issues"
   },
   "homepage": "https://github.com/relicagency/newsite#readme",
-  "devDependencies": {
-    "babel-preset-es2015": "^6.22.0",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-cachebust": "0.0.6",
-    "gulp-concat": "^2.6.1",
-    "gulp-print": "^2.0.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.4.1"
-  },
   "dependencies": {
     "angular-recaptcha": "^4.1.0",
     "body-parser": "^1.17.1",
@@ -38,6 +29,15 @@
     "nodemon": "^1.11.0",
     "passport": "^0.3.2",
     "passport-auth0": "",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cachebust": "0.0.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-print": "^2.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "babel-preset-es2015": "^6.22.0"
   }
-}
+  }
+

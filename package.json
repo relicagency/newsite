@@ -5,7 +5,7 @@
   "main": "./server/index.js",
   "scripts": {
     "start": "nodemon server/index.js",
-    "gulp": "gulp",
+    "gulp": "gulp dev",
     "postinstall": "gulp default"
   },
   "repository": {

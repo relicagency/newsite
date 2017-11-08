@@ -65,6 +65,14 @@ gulp.task('default', [
   'build-js',
   'build-html',
   'copy-images',
+    'build-fonts'
+]);
+
+gulp.task('dev', [
+    'build-css',
+    'build-js',
+    'build-html',
+    'copy-images',
     'build-fonts',
-  'watch'
+    'watch'
 ]);

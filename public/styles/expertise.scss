@@ -1,7 +1,11 @@
 .expertise-main-container {
+  position: relative;
   width: 100%;
-  height: 150vh;
+  height: auto;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .expertise-background {
@@ -13,26 +17,23 @@
 }
 
 .expertise-title {
+  position: relative;
   color: white;
   font-size: 30px;
   text-transform: uppercase;
-  position: absolute;
-  top: 17%;
-  left: 50%;
-  transform: translate(-50%);
+  margin: 180px 0 0 0;
   letter-spacing: 3px;
 }
 
 .expertise-main-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 30%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin: 170px 0 12% 0;
+  height: auto;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 80%;
+  flex-wrap: wrap;
 }
 
 .expertise-content {
@@ -41,52 +42,82 @@
   margin: -1px;
   background-color: rgba(225, 225, 225, 0.9);
   color: #161616;
-  font-size: 4vmin;
+  font-size: 27px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition-duration: .15s;
+  text-align: center;
 }
 .expertise-content:hover {
   background-color: rgba(255, 255, 255, 1);
 }
 
-
-@media screen and (max-width: 425px) {
-
-  .expertise-main-container {
-    width: 100%;
-    height: 285vh;
-    background-color: #161616;
-    background-image: url('../images/work-bckgrnd.png');
-    background-size: cover;
-  }
-
-  .expertise-main-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 250%;
-    transform: translate(-50%, -8%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 80%;
-    align-items: center;
-  }
+@media screen and (max-width: 1200px) {
 
   .expertise-content {
-    height: 80vw;
-    width: 90vw;
-    background-color: rgba(225, 225, 225, 0.9);
-    color: #161616;
-    font-size: 7vmin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: none;
+    font-size: 20px;
   }
 
 }
+
+@media screen and (max-width: 920px) {
+
+  .expertise-content {
+    height: calc(100vw / 3);
+    width: calc(100vw / 3);
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .expertise-content {
+    height: calc(100vw - 100px);
+    width: calc(100vw - 100px);
+    font-size: 30px;
+  }
+
+}
+
+
+//@media screen and (max-width: 425px) {
+//
+//  .expertise-main-container {
+//    width: 100%;
+//    height: 285vh;
+//    background-color: #161616;
+//    background-image: url('../images/work-bckgrnd.png');
+//    background-size: cover;
+//  }
+//
+//  .expertise-main-content {
+//    position: absolute;
+//    top: 50%;
+//    left: 50%;
+//    height: 250%;
+//    transform: translate(-50%, -8%);
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: space-around;
+//    width: 80%;
+//    align-items: center;
+//  }
+//
+//  .expertise-content {
+//    height: 80vw;
+//    width: 90vw;
+//    background-color: rgba(225, 225, 225, 0.9);
+//    color: #161616;
+//    font-size: 7vmin;
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+//    cursor: pointer;
+//    border: none;
+//  }
+//
+//}

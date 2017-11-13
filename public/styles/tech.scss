@@ -1,9 +1,11 @@
 .tech-main-container {
+  position: relative;
   width: 100%;
-  height: 157vh;
+  height: auto;
   background-color: #161616;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .tech-background {
@@ -14,19 +16,11 @@
   opacity: 0.4;
 }
 
-.tech-main-backfill {
-  position: relative;
-  height: 50%;
-  width: 100%;
-  background-color: #161616;
-}
-
 .tech-main-content {
-  position: absolute;
-  top: 42vh;
-  left: 50%;
+  position: relative;
+  height: auto;
+  margin: 175px 0 145px 0;
   width: 85%;
-  transform: translate(-50%, -16%);
   display: flex;
   flex-direction: column;
 }
@@ -45,11 +39,9 @@
 }
 .tech-experts {
   position: relative;
-  height: 55vh;
+  height: auto;
   width: 100%;
   background-color: white;
-  display: flex;
-  flex-direction: column;
 }
 
 .tech-experts-top {
@@ -71,7 +63,7 @@
 }
 .tech-industry-experts {
   position: absolute;
-  top: 1in;
+  top: 115px;
   right: 70%;
   font-size: 3.5vmin;
   color: #BD9A35;
@@ -82,11 +74,11 @@
   font-family: 'Rogan-SemiBold', sans-serif;
 }
 .tech-industry-info {
-  position: absolute;
-  top: 1in;
+  position: relative;
+  margin: 100px 0 100px 0;
   left: 35%;
   color: #727272;
-  width: 60%;
+  width: 40%;
   font-family: 'Rogan-Light', sans-serif;
   font-size: 2vmin;
   letter-spacing: 1px;
@@ -95,7 +87,7 @@
 
 .tech-clients-title {
   position: relative;
-  height: 160px;
+  height: 145px;
   width: 100%;
   background-color: rgba(0,0,0,0.9);
   color: #BD9A35;
@@ -107,178 +99,66 @@
   align-items: center;
   margin-bottom: -2px;
 }
+
 .tech-clients {
   position: relative;
-  height: 527px;
+  height: auto;
   width: 100%;
   background-color: black;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
-
+.tech-clients-content {
+  position: relative;
+  height: auto;
+  width: calc( 15vw * 5.1 );
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 100px 0 100px 0;
+}
 .tech-work {
-  height: 25vmin;
-  margin: 0;
+  height: 15vw;
   outline: 0;
-  margin: -1px;
 }
 
 #tech-looking-for-help {
   position: relative;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
 
-  .tech-main-container {
-    width: 100%;
-    height: 280vh;
-    background-color: #161616;
+  .tech-clients-content {
+    width: calc( 30vw * 2.1 );
     display: flex;
-    flex-direction: column;
-  }
-
-  .tech-main-content {
-    position: absolute;
-    top: 70vh;
-    left: 50%;
-    width: 85%;
-    transform: translate(-50%, -16%);
-    display: flex;
-    flex-direction: column;
-  }
-
-  .tech-title {
-    position: relative;
-    height: 145px;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    text-transform: uppercase;
-    color: white;
-    font-size: 30px;
+    flex-wrap: wrap;
+  }
+  .tech-work {
+    height: 30vw;
+    margin: 0 0 0 0;
   }
 
-  .tech-experts {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-  }
 
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
 
-  .tech-main-container {
-    width: 100%;
-    height: 33in;
-    background-color: #161616;
+  .tech-clients-content {
+    width: calc( 60vw * 1.1 );
     display: flex;
-    flex-direction: column;
-  }
-
-  .tech-main-content {
-    position: absolute;
-    top: 140px;
-    left: 50%;
-    width: 85%;
-    transform: translate(-50%, 0);
-    display: flex;
-    flex-direction: column;
-  }
-
-  .tech-title {
-    position: relative;
-    height: 100px;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-transform: uppercase;
-    color: white;
-    font-size: 30px;
-  }
-
-  .tech-experts {
-    position: relative;
-    height: 14.5in;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .tech-experts-top-left {
-   display: none;
-  }
-  .tech-experts-top-right {
-    width: 100%;
-  }
-
-  .tech-industry-experts {
-    position: absolute;
-    top: 70px;
-    right: 50%;
-    font-size: 6vmin;
-    color: #BD9A35;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height: 20px;
-    transform: translate(50%, 0);
-    text-align: center;
-  }
-
-  .tech-industry-info {
-    position: absolute;
-    top: 150px;
-    left: 50%;
-    color: #727272;
-    width: 80%;
-    font-family: 'Rogan-Light', sans-serif;
-    font-size: 5vmin;
-    letter-spacing: 1px;
-    line-height: 31px;
-    transform: translate(-50%, 0%);
-    text-align: center;
-  }
-
-  .tech-clients-title {
-    position: relative;
-    height: 115px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #BD9A35;
-    text-transform: capitalize;
-    font-size: 6vmin;
-    letter-spacing: 3px;
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    margin-bottom: -2px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-
-  .tech-clients {
-    position: relative;
-    height: 15in;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-
   .tech-work {
-    height: 65vmin;
-    margin: 0;
-    outline: 0;
+    height: 60vw;
+    margin: 0 0 0 0;
   }
+
 
 }

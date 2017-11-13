@@ -1,11 +1,12 @@
 .demandgen-main-container {
+ position: relative;
   width: 100%;
-  height: 395vh;
+  height: auto;
   background-color: #161616;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-
 
 .demandgen-background {
   position: absolute;
@@ -15,19 +16,10 @@
   opacity: 0.4;
 }
 
-.demandgen-main-backfill {
-  position: relative;
-  height: 50%;
-  width: 100%;
-  background-color: #161616;
-}
-
 .demandgen-main-content {
-  position: absolute;
-  top: 20vh;
-  left: 50%;
+  position: relative;
+  margin: 200px 0 145px 0;
   width: 85%;
-  transform: translate(-50%, 0);
   display: flex;
   flex-direction: column;
 }
@@ -42,11 +34,12 @@
   align-items: flex-start;
   text-transform: uppercase;
   color: white;
-  font-size: 5vmin;
+  font-size: 50px;
 }
+
 .demandgen-experts {
   position: relative;
-  height: 50vh;
+  height: auto;
   width: 100%;
   background-color: white;
   display: flex;
@@ -71,9 +64,9 @@
 }
 .demandgen-industry-experts {
   position: absolute;
-  top: 1in;
+  top: 115px;
   right: 70%;
-  font-size: 3.5vmin;
+  font-size: 25px;
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
@@ -82,12 +75,12 @@
   font-family: 'Rogan-SemiBold', sans-serif;
 }
 .demandgen-industry-info {
-  position: absolute;
-  top: 1in;
+  position: relative;
+  margin: 100px 0 100px 0;
   left: 35%;
   width: 60%;
   font-family: 'Rogan-Light', sans-serif;
-  font-size: 2vmin;
+  font-size: 20px;
   letter-spacing: 1px;
   line-height: 32px;
   color: #161616;

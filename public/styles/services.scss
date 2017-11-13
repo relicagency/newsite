@@ -1,11 +1,13 @@
 
 
 .services-main-container {
+  position: relative;
   width: 100%;
-  height: 220vh;
+  height: auto;
   background-color: #161616;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .services-background {
@@ -16,24 +18,14 @@
   opacity: 0.4;
 }
 
-.services-main-background-gradient {
-  position: relative;
-  height: 35vh;
-  width: 100%;
-  background-color: #161616;
-}
-
 .services-content-mobile {
   display: none;
 }
 
 .services-main-content-container {
-  position: absolute;
-  top: 14%;
-  //height: 170%;
+  position: relative;
+  margin: 200px 0 100px 0;
   width: 90%;
-  left: 50%;
-  transform: translate(-50%);
   background-color: transparent;
   z-index: 2;
   display: flex;
@@ -42,11 +34,11 @@
 
 .services-main-title {
   position: relative;
-  height: 114px;
+  height: 150px;
   width: 100%;
   color: white;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 50px;
   letter-spacing: 3px;
   display: flex;
   justify-content: center;
@@ -73,6 +65,7 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   cursor: pointer;
+  text-align: center;
 }
 .services-top-services p {
   position: absolute;
@@ -154,6 +147,7 @@ height: 15px;
 
 .services-accordion {
   position: relative;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -212,91 +206,20 @@ height: 15px;
 
 @media screen and(max-width: 1024px) {
 
-  .services-main-container {
-    width: 100%;
-    height: 355vh;
-    background-color: #161616;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .services-main-content-container {
-    position: absolute;
-    top: 30vh;
-    width: 90%;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: transparent;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
+  #services-tile-four {
+    height: 31%;
+    width: 55%;
+    margin: 28px 0 -13px 0px;
   }
 
   .services-content-top {
     position: relative;
-    height: 190px;
+    height: 216px;
     width: 100%;
-    background-color: rgba(22, 22, 22, 0.9);
+    background-color: rgba(22,22,22,0.9);
     display: flex;
     flex-direction: row;
   }
-
-  #services-tile-four {
-    height: 90px;
-    bottom: 68px;
-  }
-
-  .services-tile {
-    height: 122px;
-    position: absolute;
-    bottom: 55px;
-  }
-
-  .down-arrow {
-    height: 10px;
-    position: absolute;
-    bottom: 20px;
-  }
-
-  .services-top-services p {
-    position: absolute;
-    bottom: 40px;
-    font-size: 2vmin;
-  }
-
-  .services-content-middle {
-    position: relative;
-    height: 490px;
-    width: 100%;
-    background-color: white;
-  }
-
-  .services-content-title {
-    position: relative;
-    top: 20%;
-    left: 10%;
-    text-transform: uppercase;
-    color: #BD9A35;
-    letter-spacing: 3px;
-    font-size: 3vmin;
-    font-weight: bold;
-  }
-
-  .service-content-info {
-    position: relative;
-    top: 19%;
-    left: 35%;
-    color: #161616;
-    width: 50%;
-    letter-spacing: 1px;
-    line-height: 35px;
-    font-family: "Rogan-Regular", sans-serif;
-    font-size: 2.5vmin;
-  }
-
-}
-
-@media screen and (max-width: 768px) {
 
   .services-content-title {
     position: relative;
@@ -314,13 +237,36 @@ height: 15px;
     height: 100%;
     width: calc(100% / 5);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     color: #cccccc;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
+
+  .services-tile {
+    height: 75%;
+    width: 75%;
+    margin: -20px 0 -62px 0;
+  }
+
+  .services-top-services p {
+    position: relative;
+    bottom: 0;
+  }
+
+  .down-arrow {
+    height: 15px;
+    position: relative;
+    bottom: 0;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
 
   .services-content-middle {
     position: relative;
@@ -348,29 +294,10 @@ height: 15px;
 
 @media screen and (max-width: 425px) {
 
-  .services-background {
-    position: absolute;
-    height: auto;
-    width: 100%;
-    background-image: url('./images/services-bckgrnd.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .services-main-container {
-    width: 100%;
-    height: 1000vh;
-    background-color: #161616;
-    display: flex;
-    flex-direction: column;
-  }
-
   .services-main-content-container {
-    position: absolute;
-    top: 20vh;
+    position: relative;
+    margin: 200px 0 0 0;
     width: 90%;
-    left: 50%;
-    transform: translate(-50%);
     background-color: transparent;
     z-index: 2;
     display: flex;
@@ -388,7 +315,8 @@ height: 15px;
   }
 
   .services-content-mobile {
-    margin-top: 43vh;
+    position: relative;
+    margin: 0 0 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;

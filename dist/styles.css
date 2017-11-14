@@ -6215,7 +6215,8 @@ table {
   height: 157vh;
   background-color: #161616;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
 
 .tech-background {
   position: absolute;
@@ -6224,20 +6225,13 @@ table {
   width: 100%;
   opacity: 0.4; }
 
-.tech-main-backfill {
-  position: relative;
-  height: 50%;
-  width: 100%;
-  background-color: #161616; }
-
 .tech-main-content {
-  position: absolute;
-  top: 42vh;
-  left: 50%;
+  position: relative;
   width: 85%;
-  transform: translate(-50%, -16%);
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  height: auto;
+  margin: 170px 0 0 0; }
 
 .tech-title {
   position: relative;
@@ -6253,7 +6247,7 @@ table {
 
 .tech-experts {
   position: relative;
-  height: 55vh;
+  height: auto;
   width: 100%;
   background-color: white;
   display: flex;
@@ -6278,7 +6272,7 @@ table {
 
 .tech-industry-experts {
   position: absolute;
-  top: 1in;
+  top: 115px;
   right: 70%;
   font-size: 3.5vmin;
   color: #BD9A35;
@@ -6289,15 +6283,15 @@ table {
   font-family: 'Rogan-SemiBold', sans-serif; }
 
 .tech-industry-info {
-  position: absolute;
-  top: 1in;
+  position: relative;
   left: 35%;
   color: #727272;
   width: 60%;
   font-family: 'Rogan-Light', sans-serif;
   font-size: 2vmin;
   letter-spacing: 1px;
-  line-height: 32px; }
+  line-height: 32px;
+  margin: 100px 0 100px 0; }
 
 .tech-clients-title {
   position: relative;
@@ -6315,7 +6309,7 @@ table {
 
 .tech-clients {
   position: relative;
-  height: 527px;
+  height: auto;
   width: 100%;
   background-color: black;
   display: flex;
@@ -6324,138 +6318,16 @@ table {
   align-items: center; }
 
 .tech-work {
-  height: 25vmin;
-  margin: 0;
-  outline: 0;
-  margin: -1px; }
+  height: 15vw;
+  margin: 100px -1px 100px -1px;
+  outline: 0; }
 
 #tech-looking-for-help {
   position: relative; }
 
-@media screen and (max-width: 1024px) {
-  .tech-main-container {
-    width: 100%;
-    height: 280vh;
-    background-color: #161616;
-    display: flex;
-    flex-direction: column; }
-  .tech-main-content {
-    position: absolute;
-    top: 70vh;
-    left: 50%;
-    width: 85%;
-    transform: translate(-50%, -16%);
-    display: flex;
-    flex-direction: column; }
-  .tech-title {
-    position: relative;
-    height: 145px;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-transform: uppercase;
-    color: white;
-    font-size: 30px; }
-  .tech-experts {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column; } }
-
-@media screen and (max-width: 425px) {
-  .tech-main-container {
-    width: 100%;
-    height: 33in;
-    background-color: #161616;
-    display: flex;
-    flex-direction: column; }
-  .tech-main-content {
-    position: absolute;
-    top: 140px;
-    left: 50%;
-    width: 85%;
-    transform: translate(-50%, 0);
-    display: flex;
-    flex-direction: column; }
-  .tech-title {
-    position: relative;
-    height: 100px;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-transform: uppercase;
-    color: white;
-    font-size: 30px; }
-  .tech-experts {
-    position: relative;
-    height: 14.5in;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column; }
-  .tech-experts-top-left {
-    display: none; }
-  .tech-experts-top-right {
-    width: 100%; }
-  .tech-industry-experts {
-    position: absolute;
-    top: 70px;
-    right: 50%;
-    font-size: 6vmin;
-    color: #BD9A35;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height: 20px;
-    transform: translate(50%, 0);
-    text-align: center; }
-  .tech-industry-info {
-    position: absolute;
-    top: 150px;
-    left: 50%;
-    color: #727272;
-    width: 80%;
-    font-family: 'Rogan-Light', sans-serif;
-    font-size: 5vmin;
-    letter-spacing: 1px;
-    line-height: 31px;
-    transform: translate(-50%, 0%);
-    text-align: center; }
-  .tech-clients-title {
-    position: relative;
-    height: 115px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #BD9A35;
-    text-transform: capitalize;
-    font-size: 6vmin;
-    letter-spacing: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -2px; }
-  .tech-clients {
-    position: relative;
-    height: 15in;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-  .tech-work {
-    height: 65vmin;
-    margin: 0;
-    outline: 0; } }
-
 .telecom-main-container {
   width: 100%;
-  height: 240vh;
+  height: auto;
   background-color: #161616;
   display: flex;
   flex-direction: column; }
@@ -6467,24 +6339,19 @@ table {
   width: 100%;
   opacity: 0.4; }
 
-.telecom-main-backfill {
-  position: relative;
-  height: 50%;
-  width: 100%;
-  background-color: #161616; }
-
 .telecom-main-content {
-  position: absolute;
-  top: 54.5vh;
+  position: relative;
+  height: auto;
+  margin: 172px 0 152px 0;
   left: 50%;
   width: 85%;
-  transform: translate(-50%, -16%);
+  transform: translate(-50%);
   display: flex;
   flex-direction: column; }
 
 .telecom-title {
   position: relative;
-  height: 145px;
+  height: 165px;
   width: 100%;
   background-color: transparent;
   display: flex;
@@ -6496,7 +6363,7 @@ table {
 
 .telecom-experts {
   position: relative;
-  height: 60vh;
+  height: auto;
   width: 100%;
   background-color: white;
   display: flex;
@@ -6522,7 +6389,7 @@ table {
 
 .telecom-industry-experts {
   position: absolute;
-  top: 1in;
+  top: 115px;
   right: 70%;
   font-size: 3.5vmin;
   color: #BD9A35;
@@ -6533,8 +6400,8 @@ table {
   font-family: 'Rogan-SemiBold', sans-serif; }
 
 .telecom-industry-info {
-  position: absolute;
-  top: 1in;
+  position: relative;
+  margin: 100px 0 100px 0;
   left: 35%;
   color: #727272;
   width: 60%;
@@ -6545,16 +6412,9 @@ table {
 
 .telecom-video {
   position: relative;
-  height: 750px;
+  height: auto;
   width: 100%;
   background-color: transparent; }
-
-.telecom-video-overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.4; }
 
 .telecom-video-play {
   position: absolute;
@@ -6571,12 +6431,12 @@ table {
   background-color: black;
   opacity: 0.8; }
 
-.telecom-tuac-video {
-  position: absolute;
+.telecom-tds-video {
+  position: relative;
   width: 86%;
-  top: 50%;
+  margin: 100px 0 100px 0;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%); }
 
 .telecom-clients-title {
   position: relative;
@@ -6593,7 +6453,7 @@ table {
 
 .telecom-clients {
   position: relative;
-  height: 527px;
+  height: auto;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
@@ -6602,229 +6462,13 @@ table {
   align-items: center; }
 
 .telecom-work {
-  height: 230px;
-  margin: 0;
+  height: 15vw;
+  margin: 100px -1px 100px -1px;
   outline: 0;
-  margin: -3px;
   padding: 0; }
 
 #telecom-looking-for-help {
   position: relative; }
-
-@media screen and (max-width: 1440px) {
-  .telecom-main-container {
-    width: 100%;
-    height: 228vh;
-    background-color: #161616;
-    display: flex;
-    flex-direction: column; } }
-
-@media screen and (max-width: 1024px) {
-  .telecom-main-content {
-    position: absolute;
-    top: 60.5vh;
-    left: 50%;
-    width: 85%;
-    transform: translate(-50%, -16%);
-    display: flex;
-    flex-direction: column; }
-  .telecom-title {
-    position: relative;
-    height: 145px;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-transform: uppercase;
-    color: white;
-    font-size: 5vmin; }
-  .telecom-industry-experts {
-    position: absolute;
-    top: 12vh;
-    right: 70%;
-    font-size: 3.5vmin;
-    color: #BD9A35;
-    text-transform: uppercase;
-    text-align: right;
-    letter-spacing: 3px;
-    line-height: 35px;
-    font-family: 'Rogan-SemiBold', sans-serif; }
-  .telecom-industry-info {
-    position: absolute;
-    top: 12vh;
-    left: 35%;
-    color: #727272;
-    width: 60%;
-    font-family: 'Rogan-Light', sans-serif;
-    font-size: 2vmin;
-    letter-spacing: 1px;
-    line-height: 32px; }
-  .telecom-video {
-    position: relative;
-    height: 80vh;
-    width: 100%;
-    background-color: transparent; }
-  .telecom-clients-title {
-    position: relative;
-    height: 7vh;
-    width: 100%;
-    background-color: white;
-    color: #BD9A35;
-    text-transform: capitalize;
-    font-size: 3vmin;
-    letter-spacing: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .telecom-work {
-    height: 23vmin;
-    margin: 0;
-    outline: 0; }
-  .telecom-clients {
-    position: relative;
-    height: 43vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; } }
-
-@media screen and (max-width: 768px) {
-  .telecom-main-content {
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    width: 85%;
-    transform: translate(-50%, -16%);
-    display: flex;
-    flex-direction: column; }
-  .telecom-title {
-    position: relative;
-    height: 17vmin;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-transform: uppercase;
-    color: white;
-    font-size: 30px; }
-  .telecom-experts-top-left {
-    display: none; }
-  .telecom-experts-top-right {
-    width: 100%; }
-  .telecom-experts {
-    position: relative;
-    height: 68vh;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column; }
-  .telecom-video {
-    position: relative;
-    height: 35vh;
-    width: 100%;
-    background-color: transparent; } }
-
-@media screen and (max-width: 425px) {
-  .telecom-main-container {
-    width: 100%;
-    height: 30in;
-    background-color: #161616;
-    display: flex;
-    flex-direction: column; }
-  .telecom-main-content {
-    position: absolute;
-    top: 140px;
-    left: 50%;
-    width: 85%;
-    transform: translate(-50%, 0);
-    display: flex;
-    flex-direction: column; }
-  .telecom-title {
-    position: relative;
-    height: 100px;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-transform: uppercase;
-    color: white;
-    font-size: 30px; }
-  .telecom-industry-experts {
-    position: absolute;
-    top: 70px;
-    right: 50%;
-    font-size: 6vmin;
-    color: #BD9A35;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height: 20px;
-    transform: translate(50%, 0);
-    text-align: center; }
-  .industry-experts {
-    font-family: 'Rogan-ExtraBold', sans-serif;
-    font-size: 3.5vmin;
-    line-height: 19px;
-    letter-spacing: 3px; }
-  .telecom-industry-info {
-    position: absolute;
-    top: 150px;
-    left: 50%;
-    color: #727272;
-    width: 80%;
-    font-family: 'Rogan-Light', sans-serif;
-    font-size: 5vmin;
-    letter-spacing: 1px;
-    line-height: 31px;
-    transform: translate(-50%, 0%);
-    text-align: center; }
-  .telecom-experts {
-    position: relative;
-    height: 1510px;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column; }
-  .industry-experts {
-    font-family: 'Rogan-ExtraBold', sans-serif;
-    font-size: 3.5vmin;
-    line-height: 19px;
-    letter-spacing: 3px; }
-  .telecom-video {
-    position: relative;
-    height: 2in;
-    width: 100%;
-    background-color: transparent; }
-  .telecom-clients-title {
-    position: relative;
-    height: 80px;
-    width: 100%;
-    background-color: white;
-    color: #BD9A35;
-    text-transform: capitalize;
-    font-size: 6vmin;
-    letter-spacing: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .telecom-clients {
-    position: relative;
-    height: 10in;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-  .telecom-work {
-    height: 65vmin;
-    outline: 0;
-    margin: 0;
-    padding: 0; } }
 
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans");
 body {
@@ -6903,7 +6547,7 @@ h2 {
 
 .tourism-title {
   position: relative;
-  height: auto;
+  height: 165px;
   width: 100%;
   background-color: transparent;
   display: flex;
@@ -6911,8 +6555,8 @@ h2 {
   align-items: flex-start;
   text-transform: uppercase;
   color: white;
-  font-size: 28px;
-  margin: 0 0 100px 0; }
+  font-size: 5vmin;
+  margin: 0 0 0 0; }
 
 .tourism-experts {
   position: relative;
@@ -7005,8 +6649,8 @@ h2 {
 
 .tourism-clients-clients {
   position: relative;
-  height: calc(230px * 2);
-  width: calc(230px * 4.1);
+  height: calc(12vw * 2);
+  width: calc(12vw * 4.1);
   cursor: pointer;
   margin: 100px 0 100px 0; }
 
@@ -7016,7 +6660,7 @@ h2 {
   padding: 0; }
 
 .tourism-work {
-  height: 230px;
+  height: 12vw;
   margin: 0;
   outline: 0; }
 
@@ -7044,21 +6688,22 @@ h2 {
 
 .tourism-awards-awards {
   position: relative;
-  height: 834px;
+  height: auto;
   width: 90%;
   color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin: 75px 0 75px 0; }
 
 .tourism-award {
   position: relative;
-  height: 40%;
-  width: 14%;
-  margin-left: 72px;
-  cursor: pointer; }
+  height: 335px;
+  width: 213px;
+  cursor: pointer;
+  margin: 40px 40px 40px 40px; }
 
 .tourism-award-title {
   position: absolute;
@@ -7151,6 +6796,37 @@ h2 {
 
 #tourism-looking-for-help {
   position: relative; }
+
+@media screen and (max-width: 920px) {
+  .tourism-work {
+    height: 24vw;
+    margin: 0;
+    outline: 0; }
+  .tourism-clients-clients {
+    position: relative;
+    height: calc(24vw * 4);
+    width: calc(24vw * 2.1);
+    cursor: pointer;
+    margin: 100px 0 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 425px) {
+  .tourism-work {
+    height: 60vw;
+    margin: 0;
+    outline: 0; }
+  .tourism-clients-clients {
+    position: relative;
+    height: calc(60vw * 8);
+    width: calc(60vw * 1.1);
+    cursor: pointer;
+    margin: 100px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 .tuac-main-container {
   height: 623vh;

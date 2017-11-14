@@ -1,7 +1,11 @@
 .tds-main-container {
-  height: 623vh;
+  position: relative;
+  height: auto;
   width: 100%;
   background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tds-background {
@@ -13,18 +17,19 @@
 }
 
 .tds-main-content {
-  position: absolute;
-  top: 20vh;
-  left: 50%;
-  transform: translate(-50%, 0);
+  position: relative;
+  margin: 200px 0 100px 0;
   width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tds-content-title {
-  height: 17vh;
+  height: 165px;
   display: flex;
   justify-content: center;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -32,39 +37,42 @@
 
 .tds-top-bars {
   position: relative;
-  height: 2vmin;
+  height: 15px;
   width: 100%;
   background-color: #D0D0D0;
 }
 
 .tds-content-intro {
   position: relative;
-  height: 30vh;
+  height: auto;
   width: 100%;
   background-color: white;
 }
 .tds-logo {
-  height: 103px;
+  height: 7vw;
   position: absolute;
-  top: 21%;
   right: 75%;
+  margin: 100px 0 0 0;
 }
 .tds-intro-text {
-  top: 22%;
-  position: absolute;
+  position: relative;
   width: 60%;
   left: 30%;
   font-family: 'Rogan-Light', sans-serif;
   font-size: 2vmin;
   letter-spacing: 1px;
   line-height: 32px;
+  margin: 100px 0 100px 0;
 }
 
 
 .tds-stats-container {
   position: relative;
-  height: 60vh;
+  height: auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .tds-stats-underlay {
   position: absolute;
@@ -74,29 +82,30 @@
   opacity: 0.7;
 }
 .tds-stats-pic {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -45%);
+  position: relative;
+  margin: 0 0 0 0;
+  width: 100vw;
 }
 
 .tds-video-container {
   position: relative;
-  height: 70vh;
-  width: 105%;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .tds-work-video {
-  position: absolute;
-  top: 50%;
+  position: relative;
   height: 30vw;
   width: 70vw;
-  left: 50%;
-  transform: translate(-50%, -58%);
+  margin: 0 0 100px 0;
 }
 
 .tds-work-title {
   position: relative;
-  height: 12vh;
+  height: 145px;
+  width: 100%;
   background-color: white;
   color: #BD9A35;
   display: flex;
@@ -107,7 +116,8 @@
 
 .tds-work-pics {
   position: relative;
-  height: 80vh;
+  height: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,262 +128,44 @@
   position: absolute;
   top: 5%;
   left: 5%;
-  font-size: 3vmin;
+  font-size: 20px;
   color: #727272;
 }
 
-@media screen and (max-width: 1440px) {
-
-  .tds-main-container {
-    height: 643vh;
-    width: 100%;
-    background-color: #161616;
-  }
-
-  .tds-logo {
-    height: 8vmin;
-    position: absolute;
-    top: 21%;
-    right: 75%;
-  }
-
-  .tds-content-intro {
-    position: relative;
-    height: 40vh;
-    width: 100%;
-    background-color: white;
-  }
-
-  .tds-stats-container {
-    position: relative;
-    height: 80vh;
-    width: 100%;
-  }
-
-  .tds-stats-pic {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -45%);
-    width: 115%;
-  }
-
-  .tds-work-image {
-    width: 75%;
-  }
+.tds-work-image {
+  margin: 100px 0 100px 0;
+  width: 60vw;
 }
-
-//this is to get ipad pro under control
-@media screen and (max-width: 1024px) and (max-height: 1366px) {
-
-  .tds-main-content {
-    position: absolute;
-    top: 8vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 85%;
-  }
-
-  .tds-content-title {
-    height: 12vh;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    color: white;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-  }
-
-}
-
-@media screen and (max-width: 1024px) {
-
-  .tds-main-container {
-    height: 513vh;
-    width: 100%;
-    background-color: #161616;
-  }
-
-  .tds-video-container {
-    position: relative;
-    height: 45vh;
-    width: 100%;
-  }
-  .tds-work-pics {
-    position: relative;
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border-bottom: 2px solid #161616;
-  }
-  .tds-work-image {
-    width: 100%;
-  }
-  .tds-work-image-digital {
-    width: 105%;
-  }
-  .tds-work-image-brochure {
-    width: 105%;
-  }
-
-}
-
 
 @media screen and (max-width: 768px) {
 
-  .tds-main-container {
-    height: 502vh;
-    width: 100%;
-    background-color: #161616;
-  }
-
-  .tds-main-content {
-    position: absolute;
-    top: 10vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 85%;
-  }
-
-  .tds-content-title {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    color: white;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-  }
-
   .tds-content-intro {
-    position: relative;
-    height: 65vh;
-    width: 100%;
-    background-color: white;
-  }
-
-  .tds-logo {
-    height: 11vmin;
-    position: absolute;
-    top: 12%;
-    right: 50%;
-    transform: translate(50%, 0);
-  }
-
-  .tds-intro-text {
-    top: 40%;
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    text-align: center;
-    font-size: 3vmin;
-  }
-
-  .tds-stats-container {
-    position: relative;
-    height: 32vh;
-    width: 100%;
-  }
-
-  .tds-video-container {
-    position: relative;
-    height: 28vh;
-    width: 100%;
-  }
-
-}
-
-@media screen and (max-width: 425px) {
-
-  .tds-main-container {
-    height: 390vh;
-    width: 100%;
-    background-color: #161616;
-  }
-
-  .tds-content-intro {
-    position: relative;
-    height: 112vh;
-    width: 100%;
-    background-color: white;
-  }
-
-  .tds-logo {
-    height: 11vmin;
-    position: absolute;
-    top: 10%;
-    right: 50%;
-    transform: translate(50%, -90%);
-  }
-
-  .tds-intro-text {
-    top: 50%;
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-family: 'Rogan-Light', sans-serif;
-    font-size: 6vmin;
-    letter-spacing: 1px;
-    line-height: 32px;
-  }
-
-
-  .tds-work-pics {
-    position: relative;
-    height: 36vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: black;
-    border-bottom: 2px solid #161616;
   }
 
-}
-
-@media screen and (max-width: 320px) {
-
   .tds-logo {
-    height: 11vmin;
-    position: absolute;
-    top: 10%;
-    right: 50%;
-    transform: translate(50%, -120%);
+    height: 75px;
+    position: relative;
+    right: 0;
+    margin: 50px 0 0 0;
   }
 
   .tds-intro-text {
-    top: 53%;
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    position: relative;
+    width: 85%;
+    left: 0;
     font-family: 'Rogan-Light', sans-serif;
-    font-size: 6vmin;
+    font-size: 18px;
     letter-spacing: 1px;
     line-height: 32px;
+    margin: 50px 0 100px 0;
+    text-align: center;
   }
 
-
-  .tds-main-container {
-    height: 425vh;
-    width: 100%;
-    background-color: #161616;
-  }
-
-  .tds-content-intro {
-    position: relative;
-    height: 130vh;
-    width: 100%;
-    background-color: white;
-  }
-
-  .tds-work-pic-title {
-    font-size: 3vmin;
+  .tds-work-image {
+    width: 80vw;
   }
 
 }

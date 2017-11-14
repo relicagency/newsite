@@ -46,7 +46,6 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   line-height: 35px;
 }
 .telecom-experts-top {
@@ -163,6 +162,9 @@
 
 @media screen and (max-width: 425px) {
 
+  .telecom-experts {
+    align-items: center;
+  }
 
   .telecom-industry-experts {
     position: relative;
@@ -191,5 +193,25 @@
     margin: 0 0 100px 0;
     text-align: center;
   }
+
+  .telecom-clients {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 100px 0;
+  }
+
+  .telecom-work {
+    height: 60vw;
+    margin: 0 0 0 0;
+    outline: 0;
+    padding: 0;
+  }
+
 
 }

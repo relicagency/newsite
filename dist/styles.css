@@ -1,7 +1,11 @@
 .about-main-container {
-  height: 216vh;
+  position: relative;
+  height: auto;
   width: 100%;
-  background-color: #161616; }
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .about-background {
   position: absolute;
@@ -9,10 +13,9 @@
   opacity: 0.4; }
 
 .about-main-content {
-  position: absolute;
-  top: 200px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  position: relative;
+  height: auto;
+  margin: 200px 0 100px 0;
   width: 90%;
   display: flex;
   flex-direction: column; }
@@ -24,13 +27,15 @@
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 50px;
   color: white; }
 
 .about-router {
   position: relative;
   width: 100%;
-  height: 100px; }
+  height: 100px;
+  display: flex;
+  flex-direction: row; }
 
 .about-router-underlay {
   position: absolute;
@@ -39,7 +44,7 @@
   background-color: black; }
 
 .about-router-story {
-  position: absolute;
+  position: relative;
   left: 0;
   height: 100%;
   width: 50%;
@@ -106,6 +111,7 @@
 
 .about-routes {
   position: relative;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column; }
@@ -1784,6 +1790,7 @@
     width: 80%; } }
 
 .contact-main-container {
+  position: relative;
   width: 100%;
   height: auto;
   background-color: #161616;
@@ -1800,21 +1807,20 @@
 
 .contact-main-content {
   position: relative;
-  height: 24in;
+  height: auto;
+  margin: 200px 0 100px 0;
   width: 90%;
-  background-color: transparent;
-  top: 12vh; }
+  background-color: transparent; }
 
 .contact-main-title {
   position: relative;
-  height: 200px;
+  height: 150px;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   text-transform: uppercase;
   color: white;
-  font-size: xx-large; }
+  font-size: 50px; }
 
 .contact-top-bars {
   position: relative;
@@ -1917,14 +1923,6 @@
   justify-content: flex-start;
   align-items: center; }
 
-.contact-map-container {
-  position: relative;
-  height: 600px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  margin-top: -50px; }
-
 .contact-button {
   color: white;
   background-color: #bd9a35;
@@ -1940,9 +1938,17 @@
   letter-spacing: 1px;
   cursor: pointer; }
 
+.contact-map-container {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: -50px; }
+
 .contact-relic-info {
   position: relative;
-  height: 100%;
+  height: 600px;
   width: 30%;
   background-color: black;
   opacity: 0.7;
@@ -1950,7 +1956,7 @@
 
 .contact-map {
   position: relative;
-  height: 100%;
+  height: 600px;
   width: 70%; }
 
 .relic-address-logo {
@@ -2012,7 +2018,49 @@
     height: 930px;
     width: 81%;
     margin: 27px 0 50px -22%;
-    left: 28%; } }
+    left: 28%; }
+  .contact-map-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px; }
+  .contact-relic-info {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    color: white; }
+  .contact-map {
+    position: relative;
+    height: 600px;
+    width: 100%; }
+  .relic-address-logo {
+    width: 60%;
+    position: absolute;
+    bottom: 70%;
+    left: 27%; }
+  .underneath-relic {
+    position: absolute;
+    top: 34%;
+    right: 22%;
+    height: 2px;
+    width: 50px;
+    background-color: #BD9A35; }
+  .relic-address {
+    text-transform: uppercase;
+    color: white;
+    text-align: right;
+    position: absolute;
+    top: 39%;
+    right: 22%; }
+  .address-provo {
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 700; } }
 
 .creef-main-container {
   height: 623vh;
@@ -2284,11 +2332,13 @@
     width: 80%; } }
 
 .demandgen-main-container {
+  position: relative;
   width: 100%;
-  height: 395vh;
+  height: auto;
   background-color: #161616;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
 
 .demandgen-background {
   position: absolute;
@@ -2297,18 +2347,10 @@
   width: 100%;
   opacity: 0.4; }
 
-.demandgen-main-backfill {
-  position: relative;
-  height: 50%;
-  width: 100%;
-  background-color: #161616; }
-
 .demandgen-main-content {
-  position: absolute;
-  top: 20vh;
-  left: 50%;
+  position: relative;
+  margin: 200px 0 145px 0;
   width: 85%;
-  transform: translate(-50%, 0);
   display: flex;
   flex-direction: column; }
 
@@ -2322,11 +2364,11 @@
   align-items: flex-start;
   text-transform: uppercase;
   color: white;
-  font-size: 5vmin; }
+  font-size: 50px; }
 
 .demandgen-experts {
   position: relative;
-  height: 50vh;
+  height: auto;
   width: 100%;
   background-color: white;
   display: flex;
@@ -2351,9 +2393,9 @@
 
 .demandgen-industry-experts {
   position: absolute;
-  top: 1in;
+  top: 115px;
   right: 70%;
-  font-size: 3.5vmin;
+  font-size: 25px;
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
@@ -2362,12 +2404,12 @@
   font-family: 'Rogan-SemiBold', sans-serif; }
 
 .demandgen-industry-info {
-  position: absolute;
-  top: 1in;
+  position: relative;
+  margin: 100px 0 100px 0;
   left: 35%;
   width: 60%;
   font-family: 'Rogan-Light', sans-serif;
-  font-size: 2vmin;
+  font-size: 20px;
   letter-spacing: 1px;
   line-height: 32px;
   color: #161616; }
@@ -2578,9 +2620,9 @@
 .expertise-title {
   position: relative;
   color: white;
-  font-size: 30px;
+  font-size: 50px;
   text-transform: uppercase;
-  margin: 180px 0 0 0;
+  margin: 200px 0 0 0;
   letter-spacing: 3px; }
 
 .expertise-main-content {
@@ -4944,9 +4986,13 @@ nav {
     display: block; } }
 
 .newsroom-main-container {
-  height: 146vh;
+  position: relative;
+  height: auto;
   width: 100%;
-  background-color: #161616; }
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .newsroom-main-container a {
   text-decoration: none;
@@ -4960,22 +5006,21 @@ nav {
   opacity: 0.4; }
 
 .newsroom-main-content {
-  position: absolute;
-  top: 14%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  position: relative;
+  height: auto;
+  margin: 200px 0 100px 0;
   width: 85%;
   display: flex;
   flex-direction: column; }
 
 .newsroom-content-title {
   position: relative;
-  height: 13vh;
+  height: 150px;
   width: 100%;
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  font-size: 29px;
+  font-size: 50px;
   color: white; }
 
 .newsroom-routes-container {
@@ -5058,7 +5103,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.7); }
 
 .nr-press-contact-title {
   color: white;
@@ -5115,10 +5161,6 @@ nav {
   font-family: 'Rogan-Medium', sans-serif; }
 
 @media screen and (max-width: 425px) {
-  .newsroom-main-container {
-    height: 124vh;
-    width: 100%;
-    background-color: #161616; }
   .newsroom-main-background {
     position: absolute;
     top: 0;
@@ -5126,14 +5168,6 @@ nav {
     height: 58%;
     width: 100%;
     background-color: #161616; }
-  .newsroom-main-content {
-    position: absolute;
-    top: 14%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 90%;
-    display: flex;
-    flex-direction: column; }
   .routes-router {
     position: absolute;
     left: 0;
@@ -5497,11 +5531,13 @@ table {
     width: 80%; } }
 
 .services-main-container {
+  position: relative;
   width: 100%;
-  height: 220vh;
+  height: auto;
   background-color: #161616;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
 
 .services-background {
   position: absolute;
@@ -5510,21 +5546,13 @@ table {
   width: 100%;
   opacity: 0.4; }
 
-.services-main-background-gradient {
-  position: relative;
-  height: 35vh;
-  width: 100%;
-  background-color: #161616; }
-
 .services-content-mobile {
   display: none; }
 
 .services-main-content-container {
-  position: absolute;
-  top: 14%;
+  position: relative;
+  margin: 200px 0 100px 0;
   width: 90%;
-  left: 50%;
-  transform: translate(-50%);
   background-color: transparent;
   z-index: 2;
   display: flex;
@@ -5532,11 +5560,11 @@ table {
 
 .services-main-title {
   position: relative;
-  height: 114px;
+  height: 150px;
   width: 100%;
   color: white;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 50px;
   letter-spacing: 3px;
   display: flex;
   justify-content: center; }
@@ -5560,7 +5588,8 @@ table {
   color: #cccccc;
   text-transform: uppercase;
   letter-spacing: 3px;
-  cursor: pointer; }
+  cursor: pointer;
+  text-align: center; }
 
 .services-top-services p {
   position: absolute;
@@ -5638,6 +5667,7 @@ table {
 
 .services-accordion {
   position: relative;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column; }
@@ -5691,70 +5721,17 @@ table {
   position: relative; }
 
 @media screen and (max-width: 1024px) {
-  .services-main-container {
-    width: 100%;
-    height: 355vh;
-    background-color: #161616;
-    display: flex;
-    flex-direction: column; }
-  .services-main-content-container {
-    position: absolute;
-    top: 30vh;
-    width: 90%;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: transparent;
-    z-index: 2;
-    display: flex;
-    flex-direction: column; }
+  #services-tile-four {
+    height: 31%;
+    width: 55%;
+    margin: 28px 0 -13px 0px; }
   .services-content-top {
     position: relative;
-    height: 190px;
+    height: 216px;
     width: 100%;
     background-color: rgba(22, 22, 22, 0.9);
     display: flex;
     flex-direction: row; }
-  #services-tile-four {
-    height: 90px;
-    bottom: 68px; }
-  .services-tile {
-    height: 122px;
-    position: absolute;
-    bottom: 55px; }
-  .down-arrow {
-    height: 10px;
-    position: absolute;
-    bottom: 20px; }
-  .services-top-services p {
-    position: absolute;
-    bottom: 40px;
-    font-size: 2vmin; }
-  .services-content-middle {
-    position: relative;
-    height: 490px;
-    width: 100%;
-    background-color: white; }
-  .services-content-title {
-    position: relative;
-    top: 20%;
-    left: 10%;
-    text-transform: uppercase;
-    color: #BD9A35;
-    letter-spacing: 3px;
-    font-size: 3vmin;
-    font-weight: bold; }
-  .service-content-info {
-    position: relative;
-    top: 19%;
-    left: 35%;
-    color: #161616;
-    width: 50%;
-    letter-spacing: 1px;
-    line-height: 35px;
-    font-family: "Rogan-Regular", sans-serif;
-    font-size: 2.5vmin; } }
-
-@media screen and (max-width: 768px) {
   .services-content-title {
     position: relative;
     top: 10%;
@@ -5769,12 +5746,25 @@ table {
     height: 100%;
     width: calc(100% / 5);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     color: #cccccc;
     text-transform: uppercase;
     letter-spacing: 1px; }
+  .services-tile {
+    height: 75%;
+    width: 75%;
+    margin: -20px 0 -62px 0; }
+  .services-top-services p {
+    position: relative;
+    bottom: 0; }
+  .down-arrow {
+    height: 15px;
+    position: relative;
+    bottom: 0; } }
+
+@media screen and (max-width: 768px) {
   .services-content-middle {
     position: relative;
     height: auto;
@@ -5792,25 +5782,10 @@ table {
     font-size: 2.5vmin; } }
 
 @media screen and (max-width: 425px) {
-  .services-background {
-    position: absolute;
-    height: auto;
-    width: 100%;
-    background-image: url("./images/services-bckgrnd.jpg");
-    background-size: contain;
-    background-repeat: no-repeat; }
-  .services-main-container {
-    width: 100%;
-    height: 1000vh;
-    background-color: #161616;
-    display: flex;
-    flex-direction: column; }
   .services-main-content-container {
-    position: absolute;
-    top: 20vh;
+    position: relative;
+    margin: 200px 0 0 0;
     width: 90%;
-    left: 50%;
-    transform: translate(-50%);
     background-color: transparent;
     z-index: 2;
     display: flex;
@@ -5822,7 +5797,8 @@ table {
   .services-accordion {
     display: none; }
   .services-content-mobile {
-    margin-top: 43vh;
+    position: relative;
+    margin: 0 0 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6211,8 +6187,9 @@ table {
     font-size: 3vmin; } }
 
 .tech-main-container {
+  position: relative;
   width: 100%;
-  height: 157vh;
+  height: auto;
   background-color: #161616;
   display: flex;
   flex-direction: column;
@@ -6227,6 +6204,11 @@ table {
 
 .tech-main-content {
   position: relative;
+<<<<<<< HEAD
+=======
+  height: auto;
+  margin: 200px 0 145px 0;
+>>>>>>> 3ccd427a2ee2613186a788d01ab8607f067474f2
   width: 85%;
   display: flex;
   flex-direction: column;
@@ -6243,15 +6225,13 @@ table {
   align-items: flex-start;
   text-transform: uppercase;
   color: white;
-  font-size: 5vmin; }
+  font-size: 50px; }
 
 .tech-experts {
   position: relative;
   height: auto;
   width: 100%;
-  background-color: white;
-  display: flex;
-  flex-direction: column; }
+  background-color: white; }
 
 .tech-experts-top {
   position: relative;
@@ -6274,7 +6254,7 @@ table {
   position: absolute;
   top: 115px;
   right: 70%;
-  font-size: 3.5vmin;
+  font-size: 25px;
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
@@ -6284,18 +6264,22 @@ table {
 
 .tech-industry-info {
   position: relative;
+<<<<<<< HEAD
+=======
+  margin: 100px 0 100px 0;
+>>>>>>> 3ccd427a2ee2613186a788d01ab8607f067474f2
   left: 35%;
   color: #727272;
   width: 60%;
   font-family: 'Rogan-Light', sans-serif;
-  font-size: 2vmin;
+  font-size: 20px;
   letter-spacing: 1px;
   line-height: 32px;
   margin: 100px 0 100px 0; }
 
 .tech-clients-title {
   position: relative;
-  height: 160px;
+  height: 145px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   color: #BD9A35;
@@ -6313,18 +6297,90 @@ table {
   width: 100%;
   background-color: black;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center; }
+
+.tech-clients-content {
+  position: relative;
+  height: auto;
+  width: calc( 15vw * 5.1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 100px 0 100px 0; }
 
 .tech-work {
   height: 15vw;
+<<<<<<< HEAD
   margin: 100px -1px 100px -1px;
+=======
+>>>>>>> 3ccd427a2ee2613186a788d01ab8607f067474f2
   outline: 0; }
 
 #tech-looking-for-help {
   position: relative; }
 
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 768px) {
+  .tech-title {
+    font-size: 35px; }
+  .tech-clients-content {
+    width: calc( 30vw * 2.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .tech-work {
+    height: 30vw;
+    margin: 0 0 0 0; } }
+
+@media screen and (max-width: 425px) {
+  .tech-experts {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .tech-industry-experts {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 50px 0 50px 0;
+    font-size: 20px;
+    color: #BD9A35;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 35px;
+    font-family: 'Rogan-SemiBold', sans-serif; }
+  .tech-industry-info {
+    position: relative;
+    margin: 0 0 100px 0;
+    left: 0;
+    color: #727272;
+    width: 80%;
+    font-family: 'Rogan-Light', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: center; }
+  .tech-clients-content {
+    width: calc( 60vw * 1.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .tech-work {
+    height: 60vw;
+    margin: 0 0 0 0; } }
+
+>>>>>>> 3ccd427a2ee2613186a788d01ab8607f067474f2
 .telecom-main-container {
   width: 100%;
   height: auto;
@@ -8041,9 +8097,13 @@ body {
     width: 80%; } }
 
 .work-main-container {
-  height: 16in;
+  position: relative;
+  height: auto;
   width: 100%;
-  background-color: #161616; }
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .work-background {
   position: absolute;
@@ -8053,20 +8113,15 @@ body {
   opacity: 0.4; }
 
 .work-title {
-  position: absolute;
+  position: relative;
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  top: 200px;
-  left: 50%;
-  transform: translate(-50%, 0); }
+  margin: 200px 0 100px 0; }
 
 .work-content {
-  position: absolute;
-  top: 350px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  position: relative;
   width: 65vw;
   display: flex;
   flex-direction: row;
@@ -8105,48 +8160,12 @@ body {
   width: 0;
   background-color: rgba(0, 0, 0, 0.7); }
 
-@media screen and (max-width: 1300px) {
-  .work-content {
-    position: absolute;
-    top: 350px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; }
-  .work-content-item {
-    position: relative;
-    height: calc(90vw / 4);
-    width: calc(90vw / 4);
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .work-content-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(90vw / 4);
-    height: calc(90vw / 4);
-    cursor: pointer;
-    z-index: 10; }
-  .work-content-image-color {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(90vw / 4);
-    height: calc(90vw / 4);
-    cursor: pointer; } }
-
 @media screen and (max-width: 768px) {
+  .work-title {
+    font-size: 30px; }
   .work-content {
-    position: absolute;
-    top: 350px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 90vw;
+    position: relative;
+    width: 65vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -8154,8 +8173,8 @@ body {
     align-items: center; }
   .work-content-item {
     position: relative;
-    height: calc(75vw / 2);
-    width: calc(75vw / 2);
+    height: calc(65vw / 2);
+    width: calc(65vw / 2);
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -8163,69 +8182,57 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(75vw / 2);
-    height: calc(75vw / 2);
+    width: calc(65vw / 2);
+    height: calc(65vw / 2);
     cursor: pointer;
     z-index: 10; }
   .work-content-image-color {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(75vw / 2);
-    height: calc(75vw / 2);
-    cursor: pointer; } }
-
-@media screen and (max-width: 425px) {
-  .work-main-container {
-    height: 1200vh;
-    width: 100%;
-    background-color: #161616; }
-  .work-title {
-    position: absolute;
-    color: white;
-    font-size: 7vmin;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, 0); }
-  .work-content {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 95vw;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center; }
-  .work-content-item {
-    position: relative;
-    height: 90vw;
-    width: 90vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3vw; }
-  .work-content-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90vw;
-    height: 90vw;
-    cursor: pointer;
-    z-index: 10; }
-  .work-content-image-color {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90vw;
-    height: 90vw;
+    width: calc(65vw / 2);
+    height: calc(65vw / 2);
     cursor: pointer; }
   .work-content-overlay {
     position: absolute;
-    height: 90vw;
+    height: calc(65vw / 2);
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.7); } }
+
+@media screen and (max-width: 425px) {
+  .work-content {
+    position: relative;
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+  .work-content-item {
+    position: relative;
+    height: 65vw;
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .work-content-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65vw;
+    height: 65vw;
+    cursor: pointer;
+    z-index: 10; }
+  .work-content-image-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65vw;
+    height: 65vw;
+    cursor: pointer; }
+  .work-content-overlay {
+    position: absolute;
+    height: 65vw;
     width: 0;
     background-color: rgba(0, 0, 0, 0.7); } }
 

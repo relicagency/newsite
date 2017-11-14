@@ -1,7 +1,11 @@
 .newsroom-main-container {
-  height: 146vh;
+  position: relative;
+  height: auto;
   width: 100%;
   background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .newsroom-main-container a {
@@ -18,10 +22,9 @@
 }
 
 .newsroom-main-content {
-  position: absolute;
-  top: 14%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  position: relative;
+  height: auto;
+  margin: 200px 0 100px 0;
   width: 85%;
   display: flex;
   flex-direction: column;
@@ -29,12 +32,12 @@
 
 .newsroom-content-title {
   position: relative;
-  height: 13vh;
+  height: 150px;
   width: 100%;
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  font-size: 29px;
+  font-size: 50px;
   color: white;
 }
 
@@ -123,6 +126,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  background-color: rgba(0,0,0,0.7);
 }
 .nr-press-contact-title {
   color: white;
@@ -183,11 +187,6 @@
 
 @media screen and (max-width: 425px) {
 
-  .newsroom-main-container {
-    height: 124vh;
-    width: 100%;
-    background-color: #161616;
-  }
 
   .newsroom-main-background {
     position: absolute;
@@ -196,16 +195,6 @@
     height: 58%;
     width: 100%;
     background-color: #161616;
-  }
-
-  .newsroom-main-content {
-    position: absolute;
-    top: 14%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 90%;
-    display: flex;
-    flex-direction: column;
   }
 
   .routes-router {

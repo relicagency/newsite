@@ -1274,8 +1274,12 @@
   margin: 100px 0 100px 0; }
 
 .ccbh-main-container {
-  height: 623vh;
+  position: relative;
+  height: auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #161616; }
 
 .ccbh-background {
@@ -1285,76 +1289,39 @@
   width: 100%; }
 
 .ccbh-main-content {
-  position: absolute;
-  top: 20vh;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 85%; }
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  margin: 200px 0 100px 0; }
 
 .ccbh-content-title {
-  height: 17vh;
+  height: 165px;
   display: flex;
   justify-content: center;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
   letter-spacing: 4px;
   text-transform: uppercase;
   font-family: 'Rogan-SemiBold', sans-serif; }
 
-.ccbh-content-intro {
-  position: relative;
-  height: 23vh;
-  width: 100%;
-  background-color: white; }
-
-.ccbh-logo {
-  height: 103px;
-  position: absolute;
-  top: 21%;
-  right: 75%; }
-
-.ccbh-intro-text {
-  top: 50%;
-  position: absolute;
-  width: 65%;
-  left: 50%;
-  font-family: 'Rogan-Light', sans-serif;
-  font-size: 2vmin;
-  letter-spacing: 1px;
-  line-height: 32px;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-.ccbh-stats-container {
-  position: relative;
-  height: 50vh;
-  width: 100%; }
-
-.ccbh-stats-underlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7); }
-
-.ccbh-stats-pic {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -40%); }
-
 .ccbh-work-title {
   position: relative;
-  height: 12vh;
+  height: 145px;
+  width: 100%;
   background-color: white;
   color: #BD9A35;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px; }
+  font-size: 30px; }
 
 .ccbh-work-pics {
   position: relative;
-  height: 80vh;
+  height: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1365,200 +1332,12 @@
   position: absolute;
   top: 5%;
   left: 5%;
-  font-size: 2vmin;
+  font-size: 25px;
   color: #727272; }
 
-@media screen and (max-width: 1440px) {
-  .ccbh-logo {
-    height: 8vmin;
-    position: absolute;
-    top: 21%;
-    right: 75%; }
-  .ccbh-content-intro {
-    position: relative;
-    height: 40vh;
-    width: 100%;
-    background-color: white; }
-  .ccbh-stats-container {
-    position: relative;
-    height: 71vh;
-    width: 100%; }
-  .ccbh-stats-pic {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -51%);
-    width: 95%; }
-  .ccbh-work-image {
-    width: 75%; }
-  .ccbh-branding-image {
-    width: 65%; } }
-
-@media screen and (max-width: 1024px) and (max-height: 1366px) {
-  .ccbh-main-content {
-    position: absolute;
-    top: 8vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 85%; }
-  .ccbh-stats-pic {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 95%; }
-  .ccbh-content-title {
-    height: 12vh;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    color: white;
-    letter-spacing: 4px;
-    text-transform: uppercase; } }
-
-@media screen and (max-width: 1024px) {
-  .ccbh-main-container {
-    height: 513vh;
-    width: 100%;
-    background-color: #161616; }
-  .ccbh-main-content {
-    position: absolute;
-    top: 12vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 85%; }
-  .ccbh-stats-pic {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 95%; }
-  .ccbh-video-container {
-    position: relative;
-    height: 45vh;
-    width: 100%; }
-  .ccbh-work-pics {
-    position: relative;
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 2px solid #161616; }
-  .ccbh-work-image {
-    width: 100%; }
-  .ccbh-branding-image {
-    width: 80%; }
-  .ccbh-work-image-digital {
-    width: 105%; }
-  .ccbh-work-image-brochure {
-    width: 105%; } }
-
-@media screen and (max-width: 768px) {
-  .ccbh-main-container {
-    height: 502vh;
-    width: 100%;
-    background-color: #161616; }
-  .ccbh-main-content {
-    position: absolute;
-    top: 15vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 85%; }
-  .ccbh-content-title {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    color: white;
-    letter-spacing: 4px;
-    text-transform: uppercase; }
-  .ccbh-content-intro {
-    position: relative;
-    height: 65vh;
-    width: 100%;
-    background-color: white; }
-  .ccbh-logo {
-    height: 11vmin;
-    position: absolute;
-    top: 12%;
-    right: 50%;
-    transform: translate(50%, 0); }
-  .ccbh-intro-text {
-    top: 40%;
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    text-align: center;
-    font-size: 3vmin; }
-  .ccbh-stats-container {
-    position: relative;
-    height: 32vh;
-    width: 100%; }
-  .ccbh-stats-pic {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 95%; }
-  .ccbh-video-container {
-    position: relative;
-    height: 28vh;
-    width: 100%; }
-  .ccbh-branding-image {
-    width: 80%; } }
-
-@media screen and (max-width: 425px) {
-  .ccbh-main-container {
-    height: 111vh;
-    width: 100%;
-    background-color: #161616; }
-  .ccbh-content-title {
-    font-size: 7vmin;
-    letter-spacing: 2px;
-    width: 102%; }
-  .ccbh-content-intro {
-    position: relative;
-    height: 112vh;
-    width: 100%;
-    background-color: white; }
-  .ccbh-intro-text {
-    top: 6%;
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    text-align: center;
-    font-family: 'Rogan-Light', sans-serif;
-    font-size: 6vmin;
-    letter-spacing: 1px;
-    line-height: 32px; }
-  .ccbh-stats-pic {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 95%; }
-  .ccbh-work-pics {
-    position: relative;
-    height: 36vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 2px solid #161616; }
-  .ccbh-branding-image {
-    width: 80%; } }
-
-@media screen and (max-width: 320px) {
-  .ccbh-content-intro {
-    position: relative;
-    height: 130vh;
-    width: 100%;
-    background-color: white; }
-  .ccbh-branding-image {
-    width: 80%; } }
+.ccbh-work-image {
+  width: 75vw;
+  margin: 100px 0 100px 0; }
 
 .contact-main-container {
   position: relative;

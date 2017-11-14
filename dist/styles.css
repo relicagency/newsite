@@ -6656,9 +6656,13 @@ h2 {
     margin: 0 0 50px 0; } }
 
 .uintah-main-container {
-  height: 623vh;
+  position: relative;
+  height: auto;
   width: 100%;
-  background-color: #161616; }
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .uintah-background {
   position: absolute;
@@ -6668,295 +6672,60 @@ h2 {
   opacity: 0.4; }
 
 .uintah-main-content {
-  position: absolute;
-  top: 20vh;
-  left: 50%;
-  transform: translate(-50%, 0);
+  position: relative;
+  height: auto;
+  margin: 200px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 85%; }
 
 .uintah-content-title {
-  height: 17vh;
+  height: 145px;
   display: flex;
   justify-content: center;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-family: 'Rogan-SemiBold', sans-serif; }
-
-.uintah-top-bars {
-  position: relative;
-  height: 2vmin;
-  width: 100%;
-  background-color: #D0D0D0; }
-
-.uintah-content-intro {
-  position: relative;
-  height: 23vh;
-  width: 100%;
-  background-color: white; }
-
-.uintah-logo {
-  height: 103px;
-  position: absolute;
-  top: 21%;
-  right: 75%; }
-
-.uintah-intro-text {
-  top: 50%;
-  position: absolute;
-  width: 65%;
-  left: 50%;
-  font-family: 'Rogan-Light', sans-serif;
-  font-size: 2vmin;
-  letter-spacing: 1px;
-  line-height: 32px;
-  transform: translate(-50%, -50%);
+  font-family: 'Rogan-SemiBold', sans-serif;
   text-align: center; }
-
-.uintah-stats-container {
-  position: relative;
-  height: 50vh;
-  width: 100%; }
-
-.uintah-stats-underlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7); }
-
-.uintah-stats-pic {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -40%); }
 
 .uintah-work-title {
   position: relative;
-  height: 12vh;
+  height: 145px;
+  width: 100%;
   background-color: white;
   color: #BD9A35;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px; }
+  font-size: 30px; }
 
 .uintah-work-pics {
   position: relative;
-  height: 80vh;
+  height: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
   border-bottom: 2px solid #161616; }
 
+.uintah-work-image {
+  width: 75vw;
+  margin: 100px 0 100px 0; }
+
 .uintah-work-pic-title {
   position: absolute;
   top: 5%;
   left: 5%;
-  font-size: 2vmin;
+  font-size: 25px;
   color: #727272; }
 
-@media screen and (max-width: 1440px) {
-  .uintah-logo {
-    height: 8vmin;
-    position: absolute;
-    top: 21%;
-    right: 75%; }
-  .uintah-content-intro {
-    position: relative;
-    height: 40vh;
-    width: 100%;
-    background-color: white; }
-  .uintah-stats-container {
-    position: relative;
-    height: 71vh;
-    width: 100%; }
-  .uintah-stats-pic {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -51%);
-    width: 95%; }
-  .uintah-work-image {
-    width: 75%; }
-  .uintah-branding-image {
-    width: 65%; } }
-
-@media screen and (max-width: 1024px) and (max-height: 1366px) {
-  .uintah-main-content {
-    position: absolute;
-    top: 8vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 85%; }
-  .uintah-stats-pic {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 95%; }
-  .uintah-content-title {
-    height: 12vh;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    color: white;
-    letter-spacing: 4px;
-    text-transform: uppercase; } }
-
-@media screen and (max-width: 1024px) {
-  .uintah-main-container {
-    height: 513vh;
-    width: 100%;
-    background-color: #161616; }
-  .uintah-main-content {
-    position: absolute;
-    top: 12vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 85%; }
-  .uintah-stats-pic {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 95%; }
-  .uintah-video-container {
-    position: relative;
-    height: 45vh;
-    width: 100%; }
-  .uintah-work-pics {
-    position: relative;
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 2px solid #161616; }
-  .uintah-work-image {
-    width: 100%; }
-  .uintah-branding-image {
-    width: 80%; }
-  .uintah-work-image-digital {
-    width: 105%; }
-  .uintah-work-image-brochure {
-    width: 105%; } }
-
 @media screen and (max-width: 768px) {
-  .uintah-main-container {
-    height: 502vh;
-    width: 100%;
-    background-color: #161616; }
-  .uintah-main-content {
-    position: absolute;
-    top: 15vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 85%; }
   .uintah-content-title {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    color: white;
-    letter-spacing: 4px;
-    text-transform: uppercase; }
-  .uintah-content-intro {
-    position: relative;
-    height: 65vh;
-    width: 100%;
-    background-color: white; }
-  .uintah-logo {
-    height: 11vmin;
-    position: absolute;
-    top: 12%;
-    right: 50%;
-    transform: translate(50%, 0); }
-  .uintah-intro-text {
-    top: 40%;
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    text-align: center;
-    font-size: 3vmin; }
-  .uintah-stats-container {
-    position: relative;
-    height: 32vh;
-    width: 100%; }
-  .uintah-stats-pic {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 95%; }
-  .uintah-video-container {
-    position: relative;
-    height: 28vh;
-    width: 100%; }
-  .uintah-branding-image {
-    width: 80%; } }
-
-@media screen and (max-width: 425px) {
-  .uintah-main-container {
-    height: 220vh;
-    width: 100%;
-    background-color: #161616; }
-  .uintah-top-bars {
-    position: relative;
-    height: 5vmin;
-    width: 100%;
-    background-color: #D0D0D0; }
-  .uintah-content-title {
-    font-size: 7vmin;
-    letter-spacing: 2px;
-    text-align: center; }
-  .vern-al-storybook {
-    width: 85%; }
-  .uintah-illustration {
-    width: 80%; }
-  .uintah-content-intro {
-    position: relative;
-    height: 112vh;
-    width: 100%;
-    background-color: white; }
-  .uintah-intro-text {
-    top: 6%;
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    text-align: center;
-    font-family: 'Rogan-Light', sans-serif;
-    font-size: 6vmin;
-    letter-spacing: 1px;
-    line-height: 32px; }
-  .uintah-stats-pic {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 95%; }
-  .uintah-work-pics {
-    position: relative;
-    height: 36vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 2px solid #161616; }
-  .uintah-branding-image {
-    width: 80%; } }
-
-@media screen and (max-width: 320px) {
-  .uintah-content-intro {
-    position: relative;
-    height: 140vh;
-    width: 100%;
-    background-color: white; }
-  .uintah-branding-image {
-    width: 80%; } }
+    margin: 0 0 100px 0; } }
 
 body {
   font-family: Rogan-Regular, sans-serif;
@@ -7267,7 +7036,11 @@ body {
     width: 80%; } }
 
 .uvhba-main-container {
-  height: 455vh;
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   background-color: #161616; }
 
@@ -7279,66 +7052,50 @@ body {
   opacity: 0.4; }
 
 .uvhba-main-content {
-  position: absolute;
-  top: 20vh;
-  left: 50%;
-  transform: translate(-50%, 0);
+  position: relative;
+  height: auto;
+  margin: 200px 0 100px 0;
   width: 85%; }
 
 .uvhba-content-title {
-  height: 17vh;
+  height: 145px;
   display: flex;
   justify-content: center;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-family: 'Rogan-SemiBold', sans-serif; }
-
-.uvhba-top-bars {
-  position: relative;
-  height: 15px;
-  width: 100%;
-  display: flex; }
-
-.uvhba-top-bars-left {
-  height: 100%;
-  width: 25%;
-  background-color: #BD9A35; }
-
-.uvhba-top-bars-right {
-  height: 100%;
-  width: 75%;
-  background-color: #D0D0D0; }
+  font-family: 'Rogan-SemiBold', sans-serif;
+  text-align: center; }
 
 .uvhba-content-intro {
   position: relative;
-  height: 23vh;
+  height: auto;
   width: 100%;
-  background-color: white; }
-
-.uvhba-logo {
-  height: 103px;
-  position: absolute;
-  top: 21%;
-  right: 75%; }
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .uvhba-intro-text {
-  top: 50%;
-  position: absolute;
-  width: 65%;
-  left: 50%;
-  font-family: 'Rogan-Light', sans-serif;
-  font-size: 2vmin;
+  position: relative;
+  height: auto;
+  width: 75%;
+  font-family: 'Rogan-Regular', sans-serif;
+  font-size: 18px;
+  color: #161616;
   letter-spacing: 1px;
   line-height: 32px;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+  margin: 50px 0 50px 0; }
 
 .uvhba-stats-container {
   position: relative;
-  height: 50vh;
-  width: 100%; }
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .uvhba-stats-underlay {
   position: absolute;
@@ -7347,14 +7104,13 @@ body {
   background-color: rgba(0, 0, 0, 0.7); }
 
 .uvhba-stats-pic {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -40%); }
+  position: relative;
+  margin: 50px 0 50px 0;
+  width: 75vw; }
 
 .uvhba-work-title {
   position: relative;
-  height: 12vh;
+  height: 145px;
   background-color: white;
   color: #BD9A35;
   display: flex;
@@ -7364,7 +7120,7 @@ body {
 
 .uvhba-work-pics {
   position: relative;
-  height: 80vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7375,202 +7131,16 @@ body {
   position: absolute;
   top: 5%;
   left: 5%;
-  font-size: 2vmin;
+  font-size: 20px;
   color: #727272; }
 
-@media screen and (max-width: 1440px) {
-  .uvhba-logo {
-    height: 8vmin;
-    position: absolute;
-    top: 21%;
-    right: 75%; }
-  .uvhba-content-intro {
-    position: relative;
-    height: 40vh;
-    width: 100%;
-    background-color: white; }
-  .uvhba-stats-container {
-    position: relative;
-    height: 71vh;
-    width: 100%; }
-  .uvhba-stats-pic {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -51%);
-    width: 95%; }
-  .uvhba-work-image {
-    width: 75%; }
-  .uvhba-branding-image {
-    width: 65%; } }
-
-@media screen and (max-width: 1024px) and (max-height: 1366px) {
-  .uvhba-main-content {
-    position: absolute;
-    top: 8vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 85%; }
-  .uvhba-stats-pic {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 95%; }
-  .uvhba-content-title {
-    height: 12vh;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    color: white;
-    letter-spacing: 4px;
-    text-transform: uppercase; } }
-
-@media screen and (max-width: 1024px) {
-  .uvhba-main-container {
-    height: 513vh;
-    width: 100%;
-    background-color: #161616; }
-  .uvhba-main-content {
-    position: absolute;
-    top: 12vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 85%; }
-  .uvhba-stats-pic {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 95%; }
-  .uvhba-video-container {
-    position: relative;
-    height: 45vh;
-    width: 100%; }
-  .uvhba-work-pics {
-    position: relative;
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 2px solid #161616; }
-  .uvhba-work-image {
-    width: 100%; }
-  .uvhba-branding-image {
-    width: 80%; }
-  .uvhba-work-image-digital {
-    width: 105%; }
-  .uvhba-work-image-brochure {
-    width: 105%; } }
+.uvhba-work-image {
+  width: 75vw;
+  margin: 100px 0 100px 0; }
 
 @media screen and (max-width: 768px) {
-  .uvhba-main-container {
-    height: 502vh;
-    width: 100%;
-    background-color: #161616; }
-  .uvhba-main-content {
-    position: absolute;
-    top: 15vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 85%; }
   .uvhba-content-title {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    color: white;
-    letter-spacing: 4px;
-    text-transform: uppercase; }
-  .uvhba-content-intro {
-    position: relative;
-    height: 65vh;
-    width: 100%;
-    background-color: white; }
-  .uvhba-logo {
-    height: 11vmin;
-    position: absolute;
-    top: 12%;
-    right: 50%;
-    transform: translate(50%, 0); }
-  .uvhba-intro-text {
-    top: 40%;
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    text-align: center;
-    font-size: 3vmin; }
-  .uvhba-stats-container {
-    position: relative;
-    height: 32vh;
-    width: 100%; }
-  .uvhba-stats-pic {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 95%; }
-  .uvhba-video-container {
-    position: relative;
-    height: 28vh;
-    width: 100%; }
-  .uvhba-branding-image {
-    width: 80%; } }
-
-@media screen and (max-width: 425px) {
-  .uvhba-main-container {
-    height: 390vh;
-    width: 100%;
-    background-color: #161616; }
-  .uvhba-content-title {
-    font-size: 7vmin;
-    text-align: center;
-    letter-spacing: 2px; }
-  .uvhba-content-intro {
-    position: relative;
-    height: 112vh;
-    width: 100%;
-    background-color: white; }
-  .uvhba-intro-text {
-    top: 6%;
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    text-align: center;
-    font-family: 'Rogan-Light', sans-serif;
-    font-size: 6vmin;
-    letter-spacing: 1px;
-    line-height: 32px; }
-  .uvhba-branding {
-    width: 80%; }
-  .uvhba-stats-pic {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 95%; }
-  .uvhba-work-pics {
-    position: relative;
-    height: 36vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 2px solid #161616; }
-  .uvhba-branding-image {
-    width: 80%; } }
-
-@media screen and (max-width: 320px) {
-  .uvhba-content-intro {
-    position: relative;
-    height: 130vh;
-    width: 100%;
-    background-color: white; }
-  .uvhba-branding-image {
-    width: 80%; } }
+    margin: 0 0 100px 0; } }
 
 .work-main-container {
   position: relative;

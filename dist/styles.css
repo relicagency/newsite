@@ -235,10 +235,6 @@
     color: black; } }
 
 @media screen and (max-width: 768px) {
-  .about-main-container {
-    height: 230vh;
-    width: 100%;
-    background-color: #161616; }
   .leader-about {
     position: absolute;
     top: 2in;
@@ -256,14 +252,6 @@
     font-size: 20px; } }
 
 @media screen and (max-width: 425px) {
-  .about-main-container {
-    height: 22in;
-    width: 100%;
-    background-color: #161616; }
-  .about-router {
-    position: relative;
-    width: 100%;
-    height: 14vh; }
   .story-router-title {
     font-size: 18px; }
   .leadership-router-title {
@@ -2032,35 +2020,42 @@
     width: 100%;
     background-color: black;
     opacity: 0.7;
-    color: white; }
-  .contact-map {
-    position: relative;
-    height: 600px;
-    width: 100%; }
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .relic-address-logo {
-    width: 60%;
-    position: absolute;
-    bottom: 70%;
-    left: 27%; }
+    width: 80%;
+    position: relative;
+    bottom: 0;
+    left: 0; }
   .underneath-relic {
-    position: absolute;
-    top: 34%;
-    right: 22%;
+    position: relative;
+    top: 0;
+    right: 0;
     height: 2px;
-    width: 50px;
-    background-color: #BD9A35; }
+    width: 100px;
+    background-color: #BD9A35;
+    margin-top: 20px; }
   .relic-address {
     text-transform: uppercase;
     color: white;
-    text-align: right;
-    position: absolute;
-    top: 39%;
-    right: 22%; }
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    top: 0;
+    right: 0; }
   .address-provo {
     color: white;
     text-transform: uppercase;
     font-size: large;
-    font-weight: 700; } }
+    font-weight: 700;
+    text-align: center; }
+  .contact-map {
+    position: relative;
+    height: 600px;
+    width: 100%; } }
 
 .creef-main-container {
   height: 623vh;
@@ -2356,7 +2351,7 @@
 
 .demandgen-title {
   position: relative;
-  height: 145px;
+  height: 165px;
   width: 100%;
   background-color: transparent;
   display: flex;
@@ -2372,7 +2367,8 @@
   width: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
 
 .demandgen-experts-top {
   position: relative;
@@ -2395,7 +2391,7 @@
   position: absolute;
   top: 115px;
   right: 70%;
-  font-size: 25px;
+  font-size: 35px;
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
@@ -2484,121 +2480,29 @@
 #demandgen-looking-for-help {
   position: relative; }
 
-@media screen and (max-width: 1024px) {
-  .demandgen-main-container {
-    width: 100%;
-    height: 773vh;
-    background-color: #161616;
-    display: flex;
-    flex-direction: column; }
-  .demandgen-main-content {
-    position: absolute;
-    top: 28vh;
-    left: 50%;
-    width: 85%;
-    transform: translate(-50%, 0);
-    display: flex;
-    flex-direction: column; }
-  .demandgen-experts {
-    position: relative;
-    height: 84vh;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column; }
-  .demand-gen-sections {
-    position: relative;
-    height: 510vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; } }
-
 @media screen and (max-width: 425px) {
-  .demandgen-main-container {
-    width: 100%;
-    height: 91in;
-    background-color: #161616;
-    display: flex;
-    flex-direction: column; }
-  .demandgen-main-content {
-    position: absolute;
-    top: 140px;
-    left: 50%;
-    width: 85%;
-    transform: translate(-50%, 0);
-    display: flex;
-    flex-direction: column; }
-  .demandgen-experts-top-left {
-    height: 100%;
-    width: 30%;
-    background-color: #d0d0d0; }
-  .demandgen-title {
-    position: relative;
-    height: 100px;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-transform: uppercase;
-    color: white;
-    font-size: 7vmin;
-    font-family: "Rogan-SemiBold", sans-serif;
-    letter-spacing: 3px; }
   .demandgen-industry-experts {
-    position: absolute;
-    top: 70px;
-    right: 50%;
-    font-size: 6vmin;
+    position: relative;
+    top: 0;
+    right: 0;
+    font-size: 25px;
     color: #BD9A35;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 3px;
-    line-height: 20px;
-    transform: translate(50%, 0);
-    text-align: center; }
+    line-height: 35px;
+    font-family: 'Rogan-SemiBold', sans-serif;
+    margin: 50px 0 50px 0; }
   .demandgen-industry-info {
-    position: absolute;
-    top: 150px;
-    left: 50%;
-    color: #727272;
-    width: 80%;
+    position: relative;
+    margin: 0 0 100px 0;
+    left: 0;
+    width: 85%;
     font-family: 'Rogan-Light', sans-serif;
-    font-size: 5vmin;
+    font-size: 18px;
     letter-spacing: 1px;
-    line-height: 31px;
-    transform: translate(-50%, 0%);
-    text-align: center; }
-  .demandgen-experts {
-    position: relative;
-    height: 12in;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column; }
-  .demand-gen-sections {
-    position: relative;
-    height: 70in;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
-  .demandgen-clients-title {
-    position: relative;
-    height: 1in;
-    width: 100%;
-    background-color: white;
-    color: #BD9A35;
-    text-transform: capitalize;
-    font-size: 6vmin;
-    letter-spacing: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    line-height: 32px;
+    color: #161616;
     text-align: center; } }
 
 .expertise-main-container {
@@ -6204,20 +6108,15 @@ table {
 
 .tech-main-content {
   position: relative;
-<<<<<<< HEAD
-=======
   height: auto;
   margin: 200px 0 145px 0;
->>>>>>> 3ccd427a2ee2613186a788d01ab8607f067474f2
   width: 85%;
   display: flex;
-  flex-direction: column;
-  height: auto;
-  margin: 170px 0 0 0; }
+  flex-direction: column; }
 
 .tech-title {
   position: relative;
-  height: 145px;
+  height: 165px;
   width: 100%;
   background-color: transparent;
   display: flex;
@@ -6254,7 +6153,7 @@ table {
   position: absolute;
   top: 115px;
   right: 70%;
-  font-size: 25px;
+  font-size: 35px;
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
@@ -6264,18 +6163,14 @@ table {
 
 .tech-industry-info {
   position: relative;
-<<<<<<< HEAD
-=======
   margin: 100px 0 100px 0;
->>>>>>> 3ccd427a2ee2613186a788d01ab8607f067474f2
   left: 35%;
   color: #727272;
   width: 60%;
   font-family: 'Rogan-Light', sans-serif;
   font-size: 20px;
   letter-spacing: 1px;
-  line-height: 32px;
-  margin: 100px 0 100px 0; }
+  line-height: 32px; }
 
 .tech-clients-title {
   position: relative;
@@ -6311,17 +6206,12 @@ table {
 
 .tech-work {
   height: 15vw;
-<<<<<<< HEAD
   margin: 100px -1px 100px -1px;
-=======
->>>>>>> 3ccd427a2ee2613186a788d01ab8607f067474f2
   outline: 0; }
 
 #tech-looking-for-help {
   position: relative; }
 
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 768px) {
   .tech-title {
     font-size: 35px; }
@@ -6351,7 +6241,7 @@ table {
     top: 0;
     right: 0;
     margin: 50px 0 50px 0;
-    font-size: 20px;
+    font-size: 25px;
     color: #BD9A35;
     text-transform: uppercase;
     text-align: center;
@@ -6365,12 +6255,12 @@ table {
     color: #727272;
     width: 80%;
     font-family: 'Rogan-Light', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 1px;
     line-height: 32px;
     text-align: center; }
   .tech-clients-content {
-    width: calc( 60vw * 1.1);
+    width: calc(60vw * 1.1);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -6380,7 +6270,6 @@ table {
     height: 60vw;
     margin: 0 0 0 0; } }
 
->>>>>>> 3ccd427a2ee2613186a788d01ab8607f067474f2
 .telecom-main-container {
   width: 100%;
   height: auto;
@@ -6398,12 +6287,13 @@ table {
 .telecom-main-content {
   position: relative;
   height: auto;
-  margin: 172px 0 152px 0;
+  margin: 200px 0 152px 0;
   left: 50%;
   width: 85%;
   transform: translate(-50%);
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
 
 .telecom-title {
   position: relative;
@@ -6415,7 +6305,7 @@ table {
   align-items: flex-start;
   text-transform: uppercase;
   color: white;
-  font-size: 5vmin; }
+  font-size: 50px; }
 
 .telecom-experts {
   position: relative;
@@ -6424,6 +6314,7 @@ table {
   background-color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
   line-height: 35px; }
 
 .telecom-experts-top {
@@ -6447,7 +6338,7 @@ table {
   position: absolute;
   top: 115px;
   right: 70%;
-  font-size: 3.5vmin;
+  font-size: 35px;
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
@@ -6526,6 +6417,32 @@ table {
 #telecom-looking-for-help {
   position: relative; }
 
+@media screen and (max-width: 425px) {
+  .telecom-industry-experts {
+    position: relative;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    color: #BD9A35;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 35px;
+    font-family: 'Rogan-SemiBold', sans-serif;
+    margin: 50px 0 50px 0; }
+  .telecom-industry-info {
+    position: relative;
+    left: 0;
+    color: #727272;
+    width: 85%;
+    height: auto;
+    font-family: 'Rogan-Light', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    margin: 0 0 100px 0;
+    text-align: center; } }
+
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans");
 body {
   background-color: black; }
@@ -6599,7 +6516,7 @@ h2 {
   display: flex;
   flex-direction: column;
   height: auto;
-  margin: 170px 0 0 0; }
+  margin: 200px 0 0 0; }
 
 .tourism-title {
   position: relative;
@@ -6611,7 +6528,7 @@ h2 {
   align-items: flex-start;
   text-transform: uppercase;
   color: white;
-  font-size: 5vmin;
+  font-size: 50px;
   margin: 0 0 0 0; }
 
 .tourism-experts {
@@ -6640,7 +6557,7 @@ h2 {
   position: absolute;
   top: 120px;
   right: 70%;
-  font-size: 3.5vmin;
+  font-size: 35px;
   color: #BD9A35;
   text-transform: uppercase;
   text-align: right;
@@ -6870,6 +6787,37 @@ h2 {
     flex-wrap: wrap; } }
 
 @media screen and (max-width: 425px) {
+  .tourism-experts {
+    position: relative;
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .tourism-industry-experts {
+    position: relative;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    color: #BD9A35;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 35px;
+    font-family: 'Rogan-SemiBold', sans-serif;
+    margin: 50px 0 50px 0; }
+  .tourism-industry-info {
+    position: relative;
+    left: 0;
+    color: #727272;
+    width: 85%;
+    height: auto;
+    font-family: 'Rogan-Light', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    margin: 0 0 100px 0;
+    text-align: center; }
   .tourism-work {
     height: 60vw;
     margin: 0;

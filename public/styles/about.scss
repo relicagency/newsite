@@ -263,11 +263,11 @@
 
 @media screen and (max-width: 768px) {
 
-  .about-main-container {
-    height: 230vh;
-    width: 100%;
-    background-color: #161616;
-  }
+  //.about-main-container {
+  //  height: 230vh;
+  //  width: 100%;
+  //  background-color: #161616;
+  //}
 
   .leader-about {
     position: absolute;
@@ -292,17 +292,17 @@
 
 @media screen and (max-width: 425px){
 
-  .about-main-container {
-    height: 22in;
-    width: 100%;
-    background-color: #161616;
-  }
-
-  .about-router {
-    position: relative;
-    width: 100%;
-    height: 14vh;
-  }
+  //.about-main-container {
+  //  height: 22in;
+  //  width: 100%;
+  //  background-color: #161616;
+  //}
+  //
+  //.about-router {
+  //  position: relative;
+  //  width: 100%;
+  //  height: 14vh;
+  //}
 
   .story-router-title {
     font-size: 18px;

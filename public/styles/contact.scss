@@ -273,6 +273,45 @@
     background-color: black;
     opacity: 0.7;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .relic-address-logo {
+    width: 80%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+
+  .underneath-relic {
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 100px;
+    background-color: #BD9A35;
+    margin-top: 20px;
+  }
+
+  .relic-address {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    top: 0;
+    right: 0;
+  }
+
+  .address-provo {
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
   }
 
   .contact-map {
@@ -280,35 +319,5 @@
     height: 600px;
     width: 100%;
   }
-
-  .relic-address-logo {
-    width: 60%;
-    position: absolute;
-    bottom: 70%;
-    left: 27%;
-  }
-  .underneath-relic {
-    position: absolute;
-    top: 34%;
-    right: 22%;
-    height: 2px;
-    width: 50px;
-    background-color: #BD9A35;
-  }
-  .relic-address {
-    text-transform: uppercase;
-    color: white;
-    text-align: right;
-    position: absolute;
-    top: 39%;
-    right: 22%;
-  }
-  .address-provo {
-    color: white;
-    text-transform: uppercase;
-    font-size: large;
-    font-weight: 700;
-  }
-
 
 }

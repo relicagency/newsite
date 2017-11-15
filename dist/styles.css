@@ -300,7 +300,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 200px 0 100px 0;
+  margin: 200px 0 0 0;
   width: 85%; }
 
 .b2-content-title {
@@ -368,7 +368,7 @@
   flex-direction: column;
   align-items: center;
   width: 85%;
-  margin: 200px 0 100px 0; }
+  margin: 200px 0 0 0; }
 
 .beehive-content-title {
   height: 165px;
@@ -435,7 +435,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 200px 0 100px 0;
+  margin: 200px 0 0 0;
   width: 85%; }
 
 .branding-content-title {
@@ -503,7 +503,7 @@
   flex-direction: column;
   align-items: center;
   width: 85%;
-  margin: 200px 0 100px 0; }
+  margin: 200px 0 0 0; }
 
 .brio-content-title {
   position: relative;
@@ -574,7 +574,7 @@
   flex-direction: column;
   align-items: center;
   width: 85%;
-  margin: 200px 0 100px 0; }
+  margin: 200px 0 0 0; }
 
 .ccbh-content-title {
   height: 165px;
@@ -921,7 +921,7 @@
   flex-direction: column;
   align-items: center;
   width: 85%;
-  margin: 200px 0 100px 0; }
+  margin: 200px 0 0 0; }
 
 .creef-content-title {
   height: 165px;
@@ -1582,7 +1582,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 200px 0 100px 0; }
+  margin: 200px 0 0 0; }
 
 .garfield-content-title {
   height: 145px;
@@ -1976,6 +1976,8 @@
     border-radius: 5px; } }
 
 @media screen and (max-width: 425px) {
+  .looking-for-help {
+    height: 250px; }
   .looking-for-help p {
     font-size: large;
     letter-spacing: 2px;
@@ -2558,7 +2560,7 @@
 .maxxsouth-main-content {
   position: relative;
   height: auto;
-  margin: 200px 0 100px 0;
+  margin: 200px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3394,7 +3396,7 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 200px 0 100px 0; }
+  margin: 200px 0 0 0; }
 
 .rubys-content-title {
   position: relative;
@@ -3828,7 +3830,7 @@ table {
 
 .tds-main-content {
   position: relative;
-  margin: 200px 0 100px 0;
+  margin: 200px 0 0 0;
   width: 85%;
   display: flex;
   flex-direction: column;
@@ -4736,7 +4738,7 @@ h2 {
 .tuac-main-content {
   position: relative;
   height: auto;
-  margin: 200px 0 100px 0;
+  margin: 200px 0 0 0;
   width: 85%;
   display: flex;
   flex-direction: column;
@@ -4852,7 +4854,7 @@ h2 {
 .uintah-main-content {
   position: relative;
   height: auto;
-  margin: 200px 0 100px 0;
+  margin: 200px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4932,7 +4934,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 200px 0 100px 0; }
+  margin: 200px 0 0 0; }
 
 .us-content-title {
   position: relative;
@@ -4996,7 +4998,7 @@ body {
 .uvhba-main-content {
   position: relative;
   height: auto;
-  margin: 200px 0 100px 0;
+  margin: 200px 0 0 0;
   width: 85%; }
 
 .uvhba-content-title {
@@ -5242,7 +5244,7 @@ body {
   position: relative;
   height: auto;
   width: 85%;
-  margin: 200px 0 100px 0;
+  margin: 200px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -5308,7 +5310,7 @@ body {
 .zerorez-main-content {
   position: relative;
   width: 85%;
-  margin: 200px 0 100px 0;
+  margin: 200px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center; }

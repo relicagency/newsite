@@ -3788,13 +3788,13 @@ table {
     position: relative;
     width: 80%;
     margin: 50px 0 50px 0; }
-  .mobile-inner-expand:hover {
+  .mobile-inner-expand:focus {
     height: auto;
     background-color: white;
     color: #161616; }
-  .mobile-inner-expand:hover > .mobile-services-info {
+  .mobile-inner-expand:focus > .mobile-services-info {
     font-size: 15px; }
-  .mobile-inner-expand:hover > .services-plus-sign {
+  .mobile-inner-expand:focus > .services-plus-sign {
     transform: rotate(45deg); }
   .mobile-inner-expand p {
     position: absolute;

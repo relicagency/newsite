@@ -275,6 +275,10 @@ height: 15px;
     background-color: white;
   }
 
+  .services-content-top {
+    height: 175px;
+  }
+
   .service-content-info {
     position: relative;
     top: 18%;
@@ -287,7 +291,15 @@ height: 15px;
     font-size: 2.5vmin;
   }
 
+  .services-top-services p {
+    font-size: 12px;
+  }
 
+  .down-arrow {
+    height: 10px;
+    position: relative;
+    bottom: 0;
+  }
 
 }
 
@@ -347,7 +359,7 @@ height: 15px;
     align-items: center;
     top: 100%;
     color: #161616;
-    font-size: 3vmin;
+    font-size: 15px;
     margin: 0 0 30px 0;
   }
 
@@ -359,7 +371,7 @@ height: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
     color: white;
-    font-size: 5vmin;
+    font-size: 25px;
   }
   .mobile-expand-intro {
     position: relative;
@@ -367,8 +379,9 @@ height: 15px;
     font-family: "Rogan-Regular", sans-serif;
     line-height: 20px;
     letter-spacing: 1px;
-    width: 70%;
+    width: 80%;
     color: #161616;
+    text-align: center;
   }
 
   #services-mobile-tile-digital {
@@ -383,7 +396,7 @@ height: 15px;
 
   .mobile-inner-expand {
     position: relative;
-    height: 200px;
+    height: 100px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
@@ -398,18 +411,16 @@ height: 15px;
   .mobile-inner-expand > .mobile-services-info {
     font-size: 0;
     position: relative;
-    top: 15vmin;
-    left: -15px;
     width: 80%;
-    margin: 2vmin 0 2vmin 0;
+    margin: 50px 0 50px 0;
   }
   .mobile-inner-expand:hover {
-    height: 360vmin;
+    height: auto;
     background-color: white;
     color: #161616;
   }
   .mobile-inner-expand:hover > .mobile-services-info{
-    font-size: 3.5vmin;
+    font-size: 15px;
   }
   .mobile-inner-expand:hover > .services-plus-sign{
     transform: rotate(45deg);
@@ -419,6 +430,7 @@ height: 15px;
     position: absolute;
     top: 25px;
     left: 10px;
+    font-size: 15px;
   }
 
   .services-plus-sign {

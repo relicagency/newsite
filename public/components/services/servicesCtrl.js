@@ -197,7 +197,7 @@
         $scope.lastNum = "";
 
 
-        $scope.servicesMobile = function(num, top){
+        $scope.servicesMobile = function(num){
 
             let mobileExpand = document.getElementById('services-mobile-expand-' + num),
                 mobileExpandLast = document.getElementById('services-mobile-expand-' + $scope.lastNum),

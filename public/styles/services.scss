@@ -414,15 +414,15 @@ height: 15px;
     width: 80%;
     margin: 50px 0 50px 0;
   }
-  .mobile-inner-expand:active {
+  .mobile-inner-expand:hover {
     height: auto;
     background-color: white;
     color: #161616;
   }
-  .mobile-inner-expand:active > .mobile-services-info{
+  .mobile-inner-expand:hover > .mobile-services-info{
     font-size: 15px;
   }
-  .mobile-inner-expand:active > .services-plus-sign{
+  .mobile-inner-expand:hover > .services-plus-sign{
     transform: rotate(45deg);
   }
 

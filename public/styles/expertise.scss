@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   height: auto;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +28,7 @@
   position: relative;
   margin: 170px 0 0 0;
   height: auto;
-  width: 80%;
+  width: 40%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -49,6 +48,7 @@
   cursor: pointer;
   transition-duration: .15s;
   text-align: center;
+  margin: 0 0 80px 0;
 }
 .expertise-content:hover {
   background-color: rgba(255, 255, 255, 1);

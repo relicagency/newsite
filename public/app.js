@@ -155,7 +155,7 @@
   function scrollFix($rootScope, $window){
     $rootScope.$on('$stateChangeSuccess', function(){
       $window.scrollTo(0, 0)
-    })
+    });
   }
 
 })();

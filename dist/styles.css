@@ -681,7 +681,8 @@
   color: #BD9A35;
   font-size: 30px;
   text-transform: uppercase;
-  font-family: Rogan-SemiBold, sans-serif; }
+  font-family: Rogan-SemiBold, sans-serif;
+  width: 30%; }
 
 .get-started-intro {
   position: relative;
@@ -1721,19 +1722,29 @@
   background-color: rgba(22, 22, 22, 0.9);
   z-index: 10; }
 
+.cta-pop-up-form {
+  position: relative;
+  top: 110px;
+  left: 50%;
+  transform: translate(-50%);
+  height: auto;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .cta-pop-up-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 9%;
+  position: relative;
   width: 100%;
+  height: 75px;
   background-color: #242424;
   display: flex;
   flex-direction: row;
   align-items: center; }
 
 .get-started-logo-svg {
-  width: 182px; }
+  width: 120px; }
 
 .cta-get-started-title {
   font-size: 3vmin;
@@ -1830,27 +1841,15 @@
   width: 100%;
   background-color: white; }
 
-.cta-pop-up-form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 80%;
-  width: 50%;
-  background-color: rgba(0, 0, 0, 0.95); }
-
 .cta-contact-form-container {
-  position: absolute;
+  position: relative;
   height: 70%;
   width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  background-color: transparent; }
 
 .cta-get-started-button {
   left: -2%;
@@ -1943,17 +1942,15 @@
     transform: translate(-50%, -50%);
     width: 82px; }
   .cta-contact-form-container {
-    position: absolute;
-    height: 75%;
-    width: 90%;
+    position: relative;
+    height: 70%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, 0); }
+    margin: 20px 0 20px 0; }
   .cta-contact-input {
     background-color: #181818;
     border: none;
@@ -3624,7 +3621,7 @@ table {
 
 .services-accordion-text {
   position: relative;
-  width: 50%;
+  width: 80%;
   font-family: "Rogan-Regular", sans-serif;
   letter-spacing: 1px;
   line-height: 35px;

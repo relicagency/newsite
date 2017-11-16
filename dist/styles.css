@@ -1913,6 +1913,10 @@
   width: 20px;
   cursor: pointer; }
 
+@media screen and (max-width: 1024px) {
+  .looking-for-help {
+    height: 350px; } }
+
 @media screen and (max-width: 768px) {
   .cta-pop-up-header {
     position: absolute;
@@ -3449,7 +3453,8 @@ table {
   background-color: #161616;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
 
 .services-background {
   position: absolute;

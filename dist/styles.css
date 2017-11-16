@@ -3758,7 +3758,7 @@ table {
     margin-bottom: 20px; }
   .mobile-inner-expand {
     position: relative;
-    height: 100px;
+    height: 72px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;

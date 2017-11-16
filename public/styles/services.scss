@@ -24,7 +24,7 @@
 
 .services-main-content-container {
   position: relative;
-  margin: 200px 0 100px 0;
+  margin: 200px 0 0 0;
   width: 90%;
   background-color: transparent;
   z-index: 2;
@@ -130,6 +130,7 @@ height: 15px;
   font-weight: bold;
   margin-top: 50px;
   transition-duration: 0.25s;
+  width: 30%;
 }
 .service-content-info {
   position: relative;
@@ -305,7 +306,7 @@ height: 15px;
 
   .services-content-mobile {
     position: relative;
-    margin: 0 0 100px 0;
+    margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;

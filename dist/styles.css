@@ -15,7 +15,7 @@
 .about-main-content {
   position: relative;
   height: auto;
-  margin: 200px 0 100px 0;
+  margin: 200px 0 0 0;
   width: 90%;
   display: flex;
   flex-direction: column; }
@@ -988,7 +988,7 @@
 
 .demandgen-main-content {
   position: relative;
-  margin: 200px 0 145px 0;
+  margin: 200px 0 0 0;
   width: 85%;
   display: flex;
   flex-direction: column; }
@@ -1176,7 +1176,7 @@
 
 .expertise-main-content {
   position: relative;
-  margin: 170px 0 12% 0;
+  margin: 170px 0 0 0;
   height: auto;
   width: 80%;
   display: flex;
@@ -1913,7 +1913,7 @@
   width: 20px;
   cursor: pointer; }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
   .cta-pop-up-header {
     position: absolute;
     top: 0;
@@ -3137,7 +3137,8 @@ nav {
   background-color: #161616;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
 
 .newsroom-main-container a {
   text-decoration: none;
@@ -3153,7 +3154,7 @@ nav {
 .newsroom-main-content {
   position: relative;
   height: auto;
-  margin: 200px 0 100px 0;
+  margin: 200px 0 0 0;
   width: 85%;
   display: flex;
   flex-direction: column; }
@@ -3323,8 +3324,7 @@ nav {
     position: absolute;
     right: 0;
     height: 100%;
-    width: 60%;
-    background-color: white; } }
+    width: 60%; } }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -3463,7 +3463,7 @@ table {
 
 .services-main-content-container {
   position: relative;
-  margin: 200px 0 100px 0;
+  margin: 200px 0 0 0;
   width: 90%;
   background-color: transparent;
   z-index: 2;
@@ -3563,7 +3563,8 @@ table {
   font-size: x-large;
   font-weight: bold;
   margin-top: 50px;
-  transition-duration: 0.25s; }
+  transition-duration: 0.25s;
+  width: 30%; }
 
 .service-content-info {
   position: relative;
@@ -3699,7 +3700,7 @@ table {
     display: none; }
   .services-content-mobile {
     position: relative;
-    margin: 0 0 100px 0;
+    margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3962,7 +3963,7 @@ table {
 .tech-main-content {
   position: relative;
   height: auto;
-  margin: 200px 0 145px 0;
+  margin: 200px 0 0 0;
   width: 85%;
   display: flex;
   flex-direction: column; }
@@ -4140,7 +4141,7 @@ table {
 .telecom-main-content {
   position: relative;
   height: auto;
-  margin: 200px 0 152px 0;
+  margin: 200px 0 0 0;
   left: 50%;
   width: 85%;
   transform: translate(-50%);

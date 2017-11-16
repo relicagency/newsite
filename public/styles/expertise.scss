@@ -27,7 +27,7 @@
 
 .expertise-main-content {
   position: relative;
-  margin: 170px 0 12% 0;
+  margin: 170px 0 0 0;
   height: auto;
   width: 80%;
   display: flex;
@@ -82,42 +82,3 @@
   }
 
 }
-
-
-//@media screen and (max-width: 425px) {
-//
-//  .expertise-main-container {
-//    width: 100%;
-//    height: 285vh;
-//    background-color: #161616;
-//    background-image: url('../images/work-bckgrnd.png');
-//    background-size: cover;
-//  }
-//
-//  .expertise-main-content {
-//    position: absolute;
-//    top: 50%;
-//    left: 50%;
-//    height: 250%;
-//    transform: translate(-50%, -8%);
-//    display: flex;
-//    flex-direction: column;
-//    justify-content: space-around;
-//    width: 80%;
-//    align-items: center;
-//  }
-//
-//  .expertise-content {
-//    height: 80vw;
-//    width: 90vw;
-//    background-color: rgba(225, 225, 225, 0.9);
-//    color: #161616;
-//    font-size: 7vmin;
-//    display: flex;
-//    justify-content: center;
-//    align-items: center;
-//    cursor: pointer;
-//    border: none;
-//  }
-//
-//}

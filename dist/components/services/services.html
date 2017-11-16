@@ -64,7 +64,7 @@
 
             <div ng-repeat="sec in services[content].sections">
                 <div class="services-accordion-section" ng-click="accordionPop(sec.number)">
-                    <p>{{sec.title}}</p>
+                    <h4>{{sec.title}}</h4>
                     <img class="services-plus-sign" id="plus-sign-{{sec.number}}" src="../../images/plus-sign.svg">
                 </div>
                 <div class="services-accordion-pop" id="accordion-pop-{{sec.number}}">
@@ -100,7 +100,7 @@
 
 
             <div class="mobile-inner-expand" id="mobile-inner-expand-one" ng-repeat="sec in services[0].sections" ng-click="mobileInnerExpand()">
-                <p>{{sec.title}}</p>
+                <h4>{{sec.title}}</h4>
                 <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
                 <p class="mobile-services-info" ng-repeat="para in sec.info">{{para}}</p>
             </div>
@@ -122,7 +122,7 @@
             </p>
 
             <div class="mobile-inner-expand" id="mobile-inner-expand-two" ng-repeat="sec in services[1].sections">
-                <p>{{sec.title}}</p>
+                <h4>{{sec.title}}</h4>
                 <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
                 <p class="mobile-services-info" ng-repeat="para in sec.info">{{para}}</p>
             </div>
@@ -144,7 +144,7 @@
             </p>
 
             <div class="mobile-inner-expand" id="mobile-inner-expand-three" ng-repeat="sec in services[2].sections">
-                <p>{{sec.title}}</p>
+                <h4>{{sec.title}}</h4>
                 <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
                 <p class="mobile-services-info" ng-repeat="para in sec.info">{{para}}</p>
             </div>
@@ -165,7 +165,7 @@
             </p>
 
             <div class="mobile-inner-expand" id="mobile-inner-expand-four" ng-repeat="sec in services[3].sections">
-                <p>{{sec.title}}</p>
+                <h4>{{sec.title}}</h4>
                 <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
                 <p class="mobile-services-info" ng-repeat="para in sec.info">{{para}}</p>
             </div>
@@ -186,7 +186,7 @@
             </p>
 
             <div class="mobile-inner-expand" id="mobile-inner-expand-six" ng-repeat="sec in services[4].sections">
-                <p>{{sec.title}}</p>
+                <h4>{{sec.title}}</h4>
                 <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
                 <p class="mobile-services-info" ng-repeat="para in sec.info">{{para}}</p>
             </div>

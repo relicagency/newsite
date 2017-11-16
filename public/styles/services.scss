@@ -391,12 +391,17 @@ height: 15px;
     font-size: 0;
     position: relative;
     width: 80%;
+    line-height: 22px;
+    font-family: 'Rogan-Regular', sans-serif;
   }
   .mobile-inner-expand > p:nth-child(3) {
-    margin: 50px 0 10px 0;
+    margin: 75px 0 10px 0;
   }
   .mobile-inner-expand > p:last-child {
     margin: 10px 0 50px 0;
+  }
+  .mobile-inner-expand > p:only-of-type {
+    margin: 75px 0 50px 0!important;
   }
   .mobile-inner-expand:hover {
     height: auto;
@@ -404,13 +409,13 @@ height: 15px;
     color: #161616;
   }
   .mobile-inner-expand:hover > .mobile-services-info{
-    font-size: 15px;
+    font-size: 18px;
   }
   .mobile-inner-expand:hover > .services-plus-sign{
     transform: rotate(45deg);
   }
 
-  .mobile-inner-expand p {
+  .mobile-inner-expand h4 {
     position: absolute;
     top: 25px;
     left: 10px;

@@ -3569,7 +3569,7 @@ table {
   position: relative;
   left: 10%;
   color: #161616;
-  width: 50%;
+  width: 80%;
   letter-spacing: 1px;
   line-height: 35px;
   font-family: "Rogan-Regular", sans-serif;
@@ -3644,15 +3644,6 @@ table {
     background-color: rgba(22, 22, 22, 0.9);
     display: flex;
     flex-direction: row; }
-  .services-content-title {
-    position: relative;
-    top: 10%;
-    left: 20%;
-    text-transform: uppercase;
-    color: #BD9A35;
-    letter-spacing: 3px;
-    font-size: 3vmin;
-    font-weight: bold; }
   .services-top-services {
     position: relative;
     height: 100%;
@@ -3684,16 +3675,6 @@ table {
     background-color: white; }
   .services-content-top {
     height: 175px; }
-  .service-content-info {
-    position: relative;
-    top: 18%;
-    left: 20%;
-    color: #161616;
-    width: 65%;
-    letter-spacing: 1px;
-    line-height: 35px;
-    font-family: "Rogan-Regular", sans-serif;
-    font-size: 2.5vmin; }
   .services-top-services p {
     font-size: 12px; }
   .down-arrow {

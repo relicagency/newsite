@@ -3772,8 +3772,11 @@ table {
   .mobile-inner-expand > .mobile-services-info {
     font-size: 0;
     position: relative;
-    width: 80%;
-    margin: 50px 0 50px 0; }
+    width: 80%; }
+  .mobile-inner-expand > p:nth-child(3) {
+    margin: 50px 0 10px 0; }
+  .mobile-inner-expand > p:last-child {
+    margin: 10px 0 50px 0; }
   .mobile-inner-expand:hover {
     height: auto;
     background-color: white;

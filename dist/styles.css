@@ -1052,7 +1052,7 @@
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 32px;
-  color: #161616; }
+  color: #727272; }
 
 .demand-gen-sections {
   position: relative;
@@ -3598,7 +3598,7 @@ table {
   align-items: center;
   cursor: pointer; }
 
-.services-accordion-section p {
+.services-accordion-section h4 {
   position: relative;
   right: -40px;
   font-size: medium; }
@@ -3626,9 +3626,19 @@ table {
   letter-spacing: 1px;
   line-height: 35px;
   left: 10%;
-  top: 10%;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  top: 10%; }
+
+.services-accordion-text > p:nth-child(1) {
+  margin: 30px 0 30px 0; }
+
+.services-accordion-text > p:nth-child(2) {
+  margin: 0 0 30px 0; }
+
+.services-accordion-text > p:last-child {
+  margin: 10px 0 30px 0; }
+
+.services-accordion-text > p:only-of-type {
+  margin: 30px 0 30px 0 !important; }
 
 .services-looking-for-help {
   margin-top: 100px;

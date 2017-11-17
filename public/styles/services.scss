@@ -196,6 +196,15 @@ height: 15px;
   top: 10%;
 }
 
+.services-work-link {
+  color: #bd9a35;
+  text-decoration: underline;
+}
+.services-work-link:focus {
+  color: #727272;
+  text-decoration: line-through;
+}
+
 .services-accordion-text > p:nth-child(1) {
   margin: 30px 0 30px 0;
 }

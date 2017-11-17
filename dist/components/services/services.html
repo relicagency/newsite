@@ -62,13 +62,13 @@
 
         <div class="services-accordion">
 
-            <div ng-repeat="sec in services[content].sections">
+            <div ng-repeat="sec in services[content].sections" ng-click="checkForLink(sec)">
                 <div class="services-accordion-section" ng-click="accordionPop(sec.number)">
                     <h4>{{sec.title}}</h4>
                     <img class="services-plus-sign" id="plus-sign-{{sec.number}}" src="../../images/plus-sign.svg">
                 </div>
                 <div class="services-accordion-pop" id="accordion-pop-{{sec.number}}">
-                    <div class="services-accordion-text"><p ng-repeat="p in sec.info">{{p}}</div></p>
+                    <div class="services-accordion-text"><p id="accordion-text-{{sec.number}}" ng-repeat="p in sec.info">{{p}}</p></div>
                 </div>
             </div>
 

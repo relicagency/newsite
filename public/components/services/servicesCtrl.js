@@ -2,7 +2,7 @@
  * Created by Seth on 8/11/2017.
  */
 (function(){
-    angular.module('app').controller('servicesCtrl', function($scope, $stateParams, $location, $anchorScroll, mainService){
+    angular.module('app').controller('servicesCtrl', function($scope, $sce, $stateParams, $location, $anchorScroll, mainService){
 
         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
@@ -103,6 +103,33 @@
 
         };
 
+        $scope.clientWork = $sce.trustAsHtml('<span>Graphic design is the backbone for any creative work. But like your parents taught you, “Actions speak louder than words,” and we at Relic think that our graphics speak fairly loud. Check out our design portfolio from our <a class="services-work-link" href="/#!/work">client work</a>.</span>');
+        $scope.blankClientWork = $sce.trustAsHtml('<span></span>');
+        let incr = true;
+
+
+        $scope.checkForLink = function(sec){
+
+            if(sec.title === "Graphic Design" && incr === true) {
+                document.getElementById('accordion-text-four').innerHTML = $scope.clientWork;
+                incr = !incr;
+                return 0;
+            } if(sec.title === "Graphic Design" && incr === false) {
+                document.getElementById('accordion-text-four').innerHTML = $scope.blankClientWork;
+                incr = !incr;
+                return 0;
+            } if(sec.title !== "Graphic Design" && incr === true) {
+                document.getElementById('accordion-text-four').innerHTML = $scope.blankClientWork;
+                incr = true;
+                return 0;
+            } if(sec.title !== "Graphic Design" && incr === false) {
+                document.getElementById('accordion-text-four').innerHTML = $scope.blankClientWork;
+                incr = true;
+                return 0;
+            }
+
+        };
+
         $scope.services = [
 
             {
@@ -123,7 +150,7 @@
                     {number: "one", title: "Creative Strategy", info: ["Any successful company, brand or campaign has a creative strategy behind it. Believe it or not, this is actually not decided by blindly throwing darts in the Museum of Modern Art and seeing what we hit. It consists of detailed market research, a strategic plan and an effective delivery. The creative team at Relic provides top-of-the-line design from our best and brightest minds, ensuring that your campaign delivers the best results."]},
                     {number: "two", title: "Campaign Development", info: ["From conception to execution, the creative development of a campaign will shape the future of your company. At Relic, we believe that collaboration and attentiveness are the tenets to any successful campaign. While we work with you to develop the correct strategy, we will combine your vision with our renowned creative expertise. As all the pieces of our jigsaw puzzle of ideas come together, that’s when you’ll see the sparks fly. In a good way. Nothing is on fire, don’t worry."]},
                     {number: "three", title: "Branding", info: ["Every brand has a story to tell. The creative techniques behind branding will reflect the message you convey to the public. Why do certain brands stick with you? Why are you loyal to certain brands but not others? The answer is simple. In today’s content-driven society, a compellingly crafted story will do more for your bottom line than ads. But if you’ve ever been in a job interview, you know that sometimes it’s hard to recognize what sets you apart. Let Relic highlight your company’s unique qualities. You have a story worth telling; let us share it."]},
-                    {number: "four", title: "Graphic Design", info: ["Graphic design is the backbone for any creative work. But like your parents taught you, “Actions speak louder than words,” and we at Relic think that our graphics speak fairly loud. Check out our design portfolio from our client work. (LINK TO WORK PAGES)"]},
+                    {number: "four", title: "Graphic Design", info: ["something"]},
                     {number: "five", title: "TV/Radio Production", info: ["When the radio was invented in 1895, Guglielmo Marconi was quoted saying that he couldn’t wait for Relic to take full advantage of his invention (don’t fact check us on that). The flattery paid off, and now Relic is producing many TV and radio spots every year. Specifically targeted TV and radio ads are still tremendously valuable today, and Relic has the production process down."]},
                     {number: "six", title: "Web Design/Development", info: ["Relic also offers website design and development services. From complete web overhaul to slight, but important, adjustments, our web team will prove to be invaluable. We’ll take your website from the lame Neville Longbottom in the first Harry Potter to the snake-slaying hero from the last movie.]"]}
                     ]

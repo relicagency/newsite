@@ -1132,7 +1132,7 @@
  * Created by Seth on 8/11/2017.
  */
 (function () {
-    angular.module('app').controller('servicesCtrl', function ($scope, $stateParams, $location, $anchorScroll, mainService) {
+    angular.module('app').controller('servicesCtrl', function ($scope, $sce, $stateParams, $location, $anchorScroll, mainService) {
 
         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
@@ -1221,6 +1221,31 @@
             lastAccordion = num;
         };
 
+        $scope.clientWork = $sce.trustAsHtml('<span>Graphic design is the backbone for any creative work. But like your parents taught you, “Actions speak louder than words,” and we at Relic think that our graphics speak fairly loud. Check out our design portfolio from our <a class="services-work-link" href="/#!/work">client work</a>.</span>');
+        $scope.blankClientWork = $sce.trustAsHtml('<span></span>');
+        var incr = true;
+
+        $scope.checkForLink = function (sec) {
+
+            if (sec.title === "Graphic Design" && incr === true) {
+                document.getElementById('accordion-text-four').innerHTML = $scope.clientWork;
+                incr = !incr;
+                return 0;
+            }if (sec.title === "Graphic Design" && incr === false) {
+                document.getElementById('accordion-text-four').innerHTML = $scope.blankClientWork;
+                incr = !incr;
+                return 0;
+            }if (sec.title !== "Graphic Design" && incr === true) {
+                document.getElementById('accordion-text-four').innerHTML = $scope.blankClientWork;
+                incr = true;
+                return 0;
+            }if (sec.title !== "Graphic Design" && incr === false) {
+                document.getElementById('accordion-text-four').innerHTML = $scope.blankClientWork;
+                incr = true;
+                return 0;
+            }
+        };
+
         $scope.services = [{
             title: 'Traditional Media',
             intro: "There are certain things in life that are risky. Asking out that girl you’ve been eyeing across the room? Risky. Looking into a new investment? Risky. The movie Risky Business? Ironically, not that risky. However, traditional media and media buying should never have you on the edge of your seat. Relic has media buying experts who focus on negotiating and planning to guarantee the highest return for each client.",
@@ -1228,7 +1253,7 @@
         }, {
             title: 'Creative',
             intro: "Do you remember the last advertisement you saw? Creating a message that resonates can be difficult. Our creative team specializes in delivering unforgettable campaigns, content and designs. Good creative should communicate the same message as when you meet your in-laws for the first time−a strong, memorable directive that leaves just enough of an impact that you’ll linger in the back of their minds. It’s a tough balance, but we’ll work with you to ensure that we deliver creative that knocks your customers’ weirdly colorful socks off.",
-            sections: [{ number: "one", title: "Creative Strategy", info: ["Any successful company, brand or campaign has a creative strategy behind it. Believe it or not, this is actually not decided by blindly throwing darts in the Museum of Modern Art and seeing what we hit. It consists of detailed market research, a strategic plan and an effective delivery. The creative team at Relic provides top-of-the-line design from our best and brightest minds, ensuring that your campaign delivers the best results."] }, { number: "two", title: "Campaign Development", info: ["From conception to execution, the creative development of a campaign will shape the future of your company. At Relic, we believe that collaboration and attentiveness are the tenets to any successful campaign. While we work with you to develop the correct strategy, we will combine your vision with our renowned creative expertise. As all the pieces of our jigsaw puzzle of ideas come together, that’s when you’ll see the sparks fly. In a good way. Nothing is on fire, don’t worry."] }, { number: "three", title: "Branding", info: ["Every brand has a story to tell. The creative techniques behind branding will reflect the message you convey to the public. Why do certain brands stick with you? Why are you loyal to certain brands but not others? The answer is simple. In today’s content-driven society, a compellingly crafted story will do more for your bottom line than ads. But if you’ve ever been in a job interview, you know that sometimes it’s hard to recognize what sets you apart. Let Relic highlight your company’s unique qualities. You have a story worth telling; let us share it."] }, { number: "four", title: "Graphic Design", info: ["Graphic design is the backbone for any creative work. But like your parents taught you, “Actions speak louder than words,” and we at Relic think that our graphics speak fairly loud. Check out our design portfolio from our client work. (LINK TO WORK PAGES)"] }, { number: "five", title: "TV/Radio Production", info: ["When the radio was invented in 1895, Guglielmo Marconi was quoted saying that he couldn’t wait for Relic to take full advantage of his invention (don’t fact check us on that). The flattery paid off, and now Relic is producing many TV and radio spots every year. Specifically targeted TV and radio ads are still tremendously valuable today, and Relic has the production process down."] }, { number: "six", title: "Web Design/Development", info: ["Relic also offers website design and development services. From complete web overhaul to slight, but important, adjustments, our web team will prove to be invaluable. We’ll take your website from the lame Neville Longbottom in the first Harry Potter to the snake-slaying hero from the last movie.]"] }]
+            sections: [{ number: "one", title: "Creative Strategy", info: ["Any successful company, brand or campaign has a creative strategy behind it. Believe it or not, this is actually not decided by blindly throwing darts in the Museum of Modern Art and seeing what we hit. It consists of detailed market research, a strategic plan and an effective delivery. The creative team at Relic provides top-of-the-line design from our best and brightest minds, ensuring that your campaign delivers the best results."] }, { number: "two", title: "Campaign Development", info: ["From conception to execution, the creative development of a campaign will shape the future of your company. At Relic, we believe that collaboration and attentiveness are the tenets to any successful campaign. While we work with you to develop the correct strategy, we will combine your vision with our renowned creative expertise. As all the pieces of our jigsaw puzzle of ideas come together, that’s when you’ll see the sparks fly. In a good way. Nothing is on fire, don’t worry."] }, { number: "three", title: "Branding", info: ["Every brand has a story to tell. The creative techniques behind branding will reflect the message you convey to the public. Why do certain brands stick with you? Why are you loyal to certain brands but not others? The answer is simple. In today’s content-driven society, a compellingly crafted story will do more for your bottom line than ads. But if you’ve ever been in a job interview, you know that sometimes it’s hard to recognize what sets you apart. Let Relic highlight your company’s unique qualities. You have a story worth telling; let us share it."] }, { number: "four", title: "Graphic Design", info: ["something"] }, { number: "five", title: "TV/Radio Production", info: ["When the radio was invented in 1895, Guglielmo Marconi was quoted saying that he couldn’t wait for Relic to take full advantage of his invention (don’t fact check us on that). The flattery paid off, and now Relic is producing many TV and radio spots every year. Specifically targeted TV and radio ads are still tremendously valuable today, and Relic has the production process down."] }, { number: "six", title: "Web Design/Development", info: ["Relic also offers website design and development services. From complete web overhaul to slight, but important, adjustments, our web team will prove to be invaluable. We’ll take your website from the lame Neville Longbottom in the first Harry Potter to the snake-slaying hero from the last movie.]"] }]
         }, {
             title: 'Demand Generation',
             intro: "B2B demand generation is not a new concept, but it’s one that can be approached in new ways. Ultimately, demand gen is the process of collecting leads on new business, and there are countless ways to approach this. With big data, in-depth analytics tools and more resources at your fingertips, demand gen has never had a more direct correlation to your company’s bottom line than it does today. However, you can only contribute to that revenue stream once you have properly structured your marketing efforts around demand gen.",
@@ -1354,11 +1379,11 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-            angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
+            angular.module('app').controller('techCtrl', function ($scope, mainService) {
 
                         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-                        var backgroundPic = document.getElementById('tds-background');
+                        var backgroundPic = document.getElementById('tech-background');
 
                         window.onscroll = function () {
                                     var offSet = window.pageYOffset,
@@ -1375,11 +1400,11 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-            angular.module('app').controller('techCtrl', function ($scope, mainService) {
+            angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
 
                         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-                        var backgroundPic = document.getElementById('tech-background');
+                        var backgroundPic = document.getElementById('tds-background');
 
                         window.onscroll = function () {
                                     var offSet = window.pageYOffset,

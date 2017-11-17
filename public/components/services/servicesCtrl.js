@@ -130,6 +130,12 @@
 
         };
 
+        $scope.checkForLinkMobile = function(sec){
+
+            document.getElementById('accordion-text-mobile-four').innerHTML = $scope.clientWork;
+
+        };
+
         $scope.services = [
 
             {

@@ -1246,6 +1246,11 @@
             }
         };
 
+        $scope.checkForLinkMobile = function (sec) {
+
+            document.getElementById('accordion-text-mobile-four').innerHTML = $scope.clientWork;
+        };
+
         $scope.services = [{
             title: 'Traditional Media',
             intro: "There are certain things in life that are risky. Asking out that girl you’ve been eyeing across the room? Risky. Looking into a new investment? Risky. The movie Risky Business? Ironically, not that risky. However, traditional media and media buying should never have you on the edge of your seat. Relic has media buying experts who focus on negotiating and planning to guarantee the highest return for each client.",
@@ -1379,11 +1384,11 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-            angular.module('app').controller('techCtrl', function ($scope, mainService) {
+            angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
 
                         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-                        var backgroundPic = document.getElementById('tech-background');
+                        var backgroundPic = document.getElementById('tds-background');
 
                         window.onscroll = function () {
                                     var offSet = window.pageYOffset,
@@ -1400,11 +1405,11 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-            angular.module('app').controller('tdsCtrl', function ($scope, mainService) {
+            angular.module('app').controller('techCtrl', function ($scope, mainService) {
 
                         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-                        var backgroundPic = document.getElementById('tds-background');
+                        var backgroundPic = document.getElementById('tech-background');
 
                         window.onscroll = function () {
                                     var offSet = window.pageYOffset,

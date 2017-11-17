@@ -121,10 +121,10 @@
                 {{services[1].intro}}
             </p>
 
-            <div class="mobile-inner-expand" id="mobile-inner-expand-two" ng-repeat="sec in services[1].sections">
+            <div class="mobile-inner-expand" id="mobile-inner-expand-two" ng-repeat="sec in services[1].sections" ng-mouseenter="checkForLinkMobile(sec)">
                 <h4>{{sec.title}}</h4>
                 <img class="services-plus-sign" id="mobile-plus-sign-{{sec.title}}-{{sec.number}}" src="../../images/plus-sign.svg">
-                <p class="mobile-services-info" ng-repeat="para in sec.info">{{para}}</p>
+                <p class="mobile-services-info" id="accordion-text-mobile-{{sec.number}}" ng-repeat="para in sec.info">{{para}}</p>
             </div>
         </div>
 

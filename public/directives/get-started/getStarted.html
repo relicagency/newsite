@@ -7,18 +7,13 @@
 
 <div class="cta-pop-up" id="cta-pop-up">
 
+    <div class="pop-up-exit" ng-click="ctaHide()">
+        <div class="pop-exit-bar pop-exit-bar-one"><div class="exit-inner-bar" id="get-started-animation-seven"></div></div>
+        <div class="pop-exit-bar pop-exit-bar-two"><div class="exit-inner-bar" id="get-started-animation-five"></div></div>
+        <div class="pop-exit-bar-three"><div class="exit-inner-bar" id="get-started-animation-six"></div></div>
+    </div>
+
     <div class="cta-pop-up-form">
-
-        <div class="pop-up-outline pop-up-outline-one" id="get-started-animation-one"></div>
-        <div class="pop-up-outline pop-up-outline-two" id="get-started-animation-two"></div>
-        <div class="pop-up-outline pop-up-outline-three" id="get-started-animation-three"></div>
-        <div class="pop-up-outline pop-up-outline-four" id="get-started-animation-four"></div>
-
-        <div class="pop-up-exit" ng-click="ctaHide()">
-            <div class="pop-exit-bar pop-exit-bar-one"><div class="exit-inner-bar" id="get-started-animation-seven"></div></div>
-            <div class="pop-exit-bar pop-exit-bar-two"><div class="exit-inner-bar" id="get-started-animation-five"></div></div>
-            <div class="pop-exit-bar-three"><div class="exit-inner-bar" id="get-started-animation-six"></div></div>
-        </div>
 
         <div class="cta-pop-up-header">
             <div class="nav-logo">
@@ -52,6 +47,7 @@
             </form>
 
         </div>
+
         <div class="get-started-form-message" id="get-started-form-status-message">
             <img class="get-started-form-status-exit" src="../../images/exit.svg" ng-click="exitFormStatus(contact)">
             <p>{{formStatus}}</p>

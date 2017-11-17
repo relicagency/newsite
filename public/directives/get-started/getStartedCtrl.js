@@ -19,10 +19,10 @@
 
         $scope.ctaShow = function () {
 
-            if(window.innerWidth < 426){
-                    $state.go('contact');
-                    return;
-            }
+            // if(window.innerWidth < 426){
+            //         $state.go('contact');
+            //         return;
+            // }
 
             let tl = new TimelineMax();
             tl.to(mainPop, 0.5, { ease: Power2.easeIn, left: 0 })

@@ -1681,10 +1681,10 @@
 
         $scope.ctaShow = function () {
 
-            // if(window.innerWidth < 426){
-            //         $state.go('contact');
-            //         return;
-            // }
+            if (window.innerWidth < 426) {
+                $state.go('contact');
+                return;
+            }
 
             var tl = new TimelineMax();
             tl.to(mainPop, 0.5, { ease: Power2.easeIn, left: 0 }).to(barFive, 0.15, { left: 0 }, "+=0.5").to(barSix, 0.15, { right: 0 }).to(barSeven, 0.15, { left: 0 }).to(barSix, 0.15, { left: "101%" }, "-=0.15");

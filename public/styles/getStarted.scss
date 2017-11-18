@@ -266,6 +266,22 @@
 
 }
 
+@media screen and (max-width: 425px){
+
+  .top-bar-left {
+    height: 100%;
+    width: 0;
+    background-color: #BD9A35;
+  }
+
+  .top-bar-right {
+    height: 100%;
+    width: 100%;
+    background-color: #CCCCCC;
+  }
+
+}
+
 //@media screen and (max-width: 1024px){
 //
 //  .looking-for-help {

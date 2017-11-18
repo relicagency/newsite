@@ -1916,6 +1916,12 @@
   width: 20px;
   cursor: pointer; }
 
+@media screen and (max-width: 1024px) {
+  .cta-pop-up-form {
+    width: 90%; }
+  .cta-contact-form-container {
+    width: 90%; } }
+
 .swn-container {
   position: relative;
   height: 65vh;

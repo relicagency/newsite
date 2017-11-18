@@ -254,6 +254,18 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1024px){
+
+  .cta-pop-up-form {
+    width: 90%;
+  }
+
+  .cta-contact-form-container {
+    width: 90%;
+  }
+
+}
+
 //@media screen and (max-width: 1024px){
 //
 //  .looking-for-help {

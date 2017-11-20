@@ -3788,8 +3788,8 @@ table {
   height: auto;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
 
 .tds-stats-underlay {
   position: absolute;
@@ -3801,7 +3801,7 @@ table {
 .tds-stats-pic {
   position: relative;
   margin: 0 0 0 0;
-  width: 100vw; }
+  width: calc(100vw - 100px); }
 
 .tds-video-container {
   position: relative;
@@ -3867,7 +3867,7 @@ table {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 32px;
-    margin: 50px 0 100px 0;
+    margin: 50px 0 50px 0;
     text-align: center; }
   .tds-work-image {
     width: 80vw; } }
@@ -4004,9 +4004,11 @@ table {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; }
+  .tech-clients-content a {
+    margin: 3px 0 0 0; }
   .tech-work {
     height: 30vw;
-    margin: 0 0 0 0; }
+    margin: -3px 0 0 0; }
   .tech-experts {
     position: relative;
     height: auto;
@@ -4052,6 +4054,8 @@ table {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; }
+  .tech-clients-content a {
+    margin: 0 0 -3px 0; }
   .tech-work {
     height: 60vw;
     margin: 0 0 0 0; } }

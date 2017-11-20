@@ -143,9 +143,14 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  .tech-clients-content a {
+    margin: 3px 0 0 0;
+  }
+
   .tech-work {
     height: 30vw;
-    margin: 0 0 0 0;
+    margin: -3px 0 0 0;
   }
 
 
@@ -202,6 +207,9 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .tech-clients-content a {
+    margin: 0 0 -3px 0;
   }
   .tech-work {
     height: 60vw;

@@ -155,7 +155,7 @@
 
 .leader-about {
   position: relative;
-  margin: 145px 0 80px 286px;
+  margin: 195px 0 80px 100px;
   width: 62%;
   line-height: 34px;
   opacity: 0;
@@ -311,7 +311,8 @@
   color: white;
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-family: 'Rogan-SemiBold', sans-serif; }
+  font-family: 'Rogan-SemiBold', sans-serif;
+  text-align: center; }
 
 .b2-work-title {
   position: relative;
@@ -344,6 +345,11 @@
 .b2-work-image {
   width: 85vw;
   margin: 100px 0 100px 0; }
+
+@media screen and (max-width: 425px) {
+  .b2-content-title {
+    font-size: 45px;
+    letter-spacing: 2px; } }
 
 .beehive-main-container {
   position: relative;
@@ -584,7 +590,8 @@
   color: white;
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-family: 'Rogan-SemiBold', sans-serif; }
+  font-family: 'Rogan-SemiBold', sans-serif;
+  text-align: center; }
 
 .ccbh-work-title {
   position: relative;
@@ -617,6 +624,15 @@
 .ccbh-work-image {
   width: 75vw;
   margin: 100px 0 100px 0; }
+
+@media screen and (max-width: 768px) {
+  .ccbh-content-title {
+    margin: 0 0 50px 0; } }
+
+@media screen and (max-width: 425px) {
+  .ccbh-work-image {
+    width: 115vw;
+    margin: 50px 0 50px 0; } }
 
 .contact-main-container {
   position: relative;
@@ -3344,6 +3360,11 @@ table {
   width: 85%;
   margin: 100px 0 100px 0; }
 
+@media screen and (max-width: 425px) {
+  .rubys-work-image {
+    width: 115%;
+    margin: 50px 0 50px 0; } }
+
 .services-main-container {
   position: relative;
   width: 100%;
@@ -4878,7 +4899,8 @@ body {
   color: white;
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-family: 'Rogan-SemiBold', sans-serif; }
+  font-family: 'Rogan-SemiBold', sans-serif;
+  text-align: center; }
 
 .us-work-title {
   position: relative;
@@ -4911,6 +4933,10 @@ body {
 .us-work-image {
   width: 85%;
   margin: 50px 0 50px 0; }
+
+@media screen and (max-width: 768px) {
+  .us-content-title {
+    margin: 0 0 50px 0; } }
 
 @media screen and (max-width: 425px) {
   .us-content-title {

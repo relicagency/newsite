@@ -163,12 +163,14 @@
   position: relative;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
 
-
-}
-
-@media screen and (max-width: 425px){
+  .demandgen-experts-top-left {
+    width: 0;
+  }
+  .demandgen-experts-top-right {
+    width: 100%;
+  }
 
   .demandgen-experts {
     align-items: center;
@@ -199,6 +201,12 @@
     color: #161616;
     text-align: center;
   }
+
+
+
+}
+
+@media screen and (max-width: 425px){
 
 
 }

@@ -1124,7 +1124,11 @@
 #demandgen-looking-for-help {
   position: relative; }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
+  .demandgen-experts-top-left {
+    width: 0; }
+  .demandgen-experts-top-right {
+    width: 100%; }
   .demandgen-experts {
     align-items: center; }
   .demandgen-industry-experts {
@@ -4002,9 +4006,7 @@ table {
     flex-wrap: wrap; }
   .tech-work {
     height: 30vw;
-    margin: 0 0 0 0; } }
-
-@media screen and (max-width: 425px) {
+    margin: 0 0 0 0; }
   .tech-experts {
     position: relative;
     height: auto;
@@ -4014,6 +4016,10 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .tech-experts-top-left {
+    width: 0; }
+  .tech-experts-top-right {
+    width: 100%; }
   .tech-industry-experts {
     position: relative;
     top: 0;
@@ -4036,7 +4042,9 @@ table {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 32px;
-    text-align: center; }
+    text-align: center; } }
+
+@media screen and (max-width: 425px) {
   .tech-clients-content {
     width: calc(60vw * 1.1);
     display: flex;
@@ -4194,9 +4202,13 @@ table {
 #telecom-looking-for-help {
   position: relative; }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .telecom-experts {
     align-items: center; }
+  .telecom-experts-top-left {
+    width: 0; }
+  .telecom-experts-top-right {
+    width: 100%; }
   .telecom-industry-experts {
     position: relative;
     top: 0;
@@ -4220,7 +4232,9 @@ table {
     letter-spacing: 1px;
     line-height: 32px;
     margin: 0 0 100px 0;
-    text-align: center; }
+    text-align: center; } }
+
+@media screen and (max-width: 425px) {
   .telecom-clients {
     position: relative;
     height: auto;
@@ -4580,7 +4594,7 @@ h2 {
     justify-content: center;
     flex-wrap: wrap; } }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .tourism-experts {
     position: relative;
     background-color: white;
@@ -4588,6 +4602,10 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  .tourism-experts-top-left {
+    width: 0; }
+  .tourism-experts-top-right {
+    width: 100%; }
   .tourism-industry-experts {
     position: relative;
     top: 0;

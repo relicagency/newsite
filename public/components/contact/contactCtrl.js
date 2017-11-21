@@ -29,6 +29,7 @@
         $scope.setResponse = function (response) {
             console.info('Response available');
             $scope.response = response;
+            window.pageYOffset = 100;
         };
         $scope.setWidgetId = function (widgetId) {
             console.info('Created widget ID: %s', widgetId);

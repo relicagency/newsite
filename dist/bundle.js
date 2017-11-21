@@ -883,6 +883,7 @@
                             if (window.innerWidth > 426) {
                                 TweenMax.to(document.getElementById('form-status-message'), 0.15, {
                                     display: "flex",
+                                    position: "absolute",
                                     ease: Power2.easeIn
                                 });
                             }

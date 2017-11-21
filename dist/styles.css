@@ -730,7 +730,7 @@
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 10; }
+  z-index: 10000; }
 
 .contact-form-message p {
   width: 30%; }

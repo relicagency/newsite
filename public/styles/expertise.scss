@@ -48,13 +48,18 @@
   cursor: pointer;
   transition-duration: .15s;
   text-align: center;
-  margin: 0 5vw 100px 5vw;
+  margin: 0 50px 100px 50px;
 }
 .expertise-content:hover {
   background-color: rgba(255, 255, 255, 1);
 }
 
 @media screen and (max-width: 850px) {
+
+
+  .expertise-main-content {
+    width: 95%;
+  }
 
   .expertise-content {
     font-size: 20px;

@@ -757,11 +757,11 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-            angular.module('app').controller('brioCtrl', function ($scope, mainService) {
+            angular.module('app').controller('brandingCtrl', function ($scope, mainService) {
 
                         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-                        var backgroundPic = document.getElementById('brio-background');
+                        var backgroundPic = document.getElementById('branding-background');
 
                         window.onscroll = function () {
                                     var offSet = window.pageYOffset,
@@ -778,11 +778,11 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-            angular.module('app').controller('brandingCtrl', function ($scope, mainService) {
+            angular.module('app').controller('brioCtrl', function ($scope, mainService) {
 
                         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-                        var backgroundPic = document.getElementById('branding-background');
+                        var backgroundPic = document.getElementById('brio-background');
 
                         window.onscroll = function () {
                                     var offSet = window.pageYOffset,
@@ -843,7 +843,9 @@
         $scope.setResponse = function (response) {
             console.info('Response available');
             $scope.response = response;
-            window.pageYOffset = 100;
+            if (window.innerWidth < 426) {
+                window.scrollTo(0, 100);
+            }window.pageYOffset = 100;
         };
         $scope.setWidgetId = function (widgetId) {
             console.info('Created widget ID: %s', widgetId);
@@ -1083,27 +1085,6 @@
 'use strict';
 
 /**
- * Created by Seth on 8/21/2017.
- */
-(function () {
-            angular.module('app').controller('rubysCtrl', function ($scope, mainService) {
-
-                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
-
-                        var backgroundPic = document.getElementById('rubys-background');
-
-                        window.onscroll = function () {
-                                    var offSet = window.pageYOffset,
-                                        csParaStart = offSet * 0.75;
-
-                                    mainService.navBackground(offSet);
-                                    mainService.parallaxIt(backgroundPic, csParaStart);
-                        };
-            });
-})();
-'use strict';
-
-/**
  * Created by Seth on 8/23/2017.
  */
 (function () {
@@ -1139,6 +1120,27 @@
             lastRoute = num;
         };
     });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/21/2017.
+ */
+(function () {
+            angular.module('app').controller('rubysCtrl', function ($scope, mainService) {
+
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
+                        var backgroundPic = document.getElementById('rubys-background');
+
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 

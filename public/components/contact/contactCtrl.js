@@ -20,7 +20,6 @@
         };
 
 
-
         $scope.response = null;
         $scope.widgetId = null;
         $scope.model = {
@@ -29,7 +28,9 @@
         $scope.setResponse = function (response) {
             console.info('Response available');
             $scope.response = response;
-            window.pageYOffset = 100;
+            if(window.innerWidth < 426){
+                window.scrollTo(0, 100);
+            }window.pageYOffset = 100;
         };
         $scope.setWidgetId = function (widgetId) {
             console.info('Created widget ID: %s', widgetId);

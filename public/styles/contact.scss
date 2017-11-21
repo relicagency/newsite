@@ -322,3 +322,16 @@
   }
 
 }
+@media screen and (max-width: 425px) {
+
+  .get-started {
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+  }
+
+  .get-started-intro {
+    text-align: center;
+  }
+
+}

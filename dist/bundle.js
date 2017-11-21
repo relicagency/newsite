@@ -893,8 +893,8 @@
                 ease: Power2.easeOut
             });
 
-            for (var i in contact) {
-                contact[i] = null;
+            for (var i in $scope.contact) {
+                $scope.contact[i] = null;
             }
             vcRecaptchaService.reload($scope.widgetId);
         };

@@ -82,8 +82,8 @@
                     ease: Power2.easeOut
                 });
 
-                for(const i in contact){
-                    contact[i] = null;
+                for(const i in $scope.contact){
+                    $scope.contact[i] = null;
                 }
                 vcRecaptchaService.reload($scope.widgetId);
         }

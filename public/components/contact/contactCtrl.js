@@ -58,10 +58,25 @@
                        console.log(response);
                        if(response.status === 200){
                            $scope.formStatus = "Awesome!  Looks like your message went through.  We\'ll be in touch with you as soon as possible.";
-                           TweenMax.to(document.getElementById('form-status-message'), 0.15, {
-                               display: "flex",
-                               ease: Power2.easeIn
-                           });
+
+
+                           if(window.innerWidth <= 425){
+                               TweenMax.to(document.getElementById('form-status-message'), 0.15, {
+                                   display: "flex",
+                                   ease: Power2.easeIn,
+                                   position: "fixed",
+                                   top: 0,
+                                   left: 0
+                               });
+                           }
+                           if(window.innerWidth > 426) {
+                               TweenMax.to(document.getElementById('form-status-message'), 0.15, {
+                                   display: "flex",
+                                   ease: Power2.easeIn
+                               });
+                           }
+
+
                        }
                    })
                } if(!res.data.success) {

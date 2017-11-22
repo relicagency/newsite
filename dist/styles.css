@@ -4265,7 +4265,7 @@ h2 {
 
 .tourism-industry-experts {
   position: absolute;
-  top: 120px;
+  top: 100px;
   right: 70%;
   font-size: 35px;
   color: #BD9A35;
@@ -4282,7 +4282,7 @@ h2 {
   width: 60%;
   height: auto;
   font-family: 'Rogan-Light', sans-serif;
-  font-size: 2vmin;
+  font-size: 20px;
   letter-spacing: 1px;
   line-height: 32px;
   margin: 100px 0 100px 0; }

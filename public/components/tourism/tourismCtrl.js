@@ -20,36 +20,69 @@
 
             $scope.readMore = function () {
 
-                TweenMax.to(document.getElementById('tourism-experts'), 0.25, {
-                    opacity: 1
-                });
-                TweenMax.to(document.getElementById('tourism-experts'), 0.25, {
-                    height: "auto"
-                });
+                if(window.innerWidth <= 768){
 
-                TweenMax.to(document.getElementById('tourism-read-more'), 0.25, {
-                    height: 0,
-                    ease: Power3.easeOut,
-                    display: "none"
-                });
+                    TweenMax.to(document.getElementById('tourism-more-info'), 0.25, {
+                        position: "relative",
+                        visibility: "visible",
+                        margin: "0 0 100px 0"
+                    });
+                    TweenMax.to(document.getElementById('tourism-read-more'), 0.25, {
+                        visibility: "hidden"
+                    });
+                    TweenMax.to(document.getElementById('tourism-industry-info'), 0.25, {
+                        margin: "0 0 0 0"
+                    });
+
+                }
+
+                if(window.innerWidth > 768){
+
+                    TweenMax.to(document.getElementById('tourism-more-info'), 0.25, {
+                        position: "relative",
+                        visibility: "visible",
+                        margin: "0 0 100px 0"
+                    });
+                    TweenMax.to(document.getElementById('tourism-read-more'), 0.25, {
+                        visibility: "hidden"
+                    });
+                    TweenMax.to(document.getElementById('tourism-industry-info'), 0.25, {
+                        margin: "100px 0 0 0"
+                    });
+
+                }
 
             };
 
             $scope.readLess = function () {
 
-                TweenMax.to(document.getElementById('tourism-experts'), 0.20, {
-                    opacity: 0
-                });
-                TweenMax.to(document.getElementById('tourism-experts'), 0.25, {
-                    height: 0,
-                    ease: Power3.easeOut
-                });
+                if(window.innerWidth <= 768){
+                    TweenMax.to(document.getElementById('tourism-more-info'), 0.25, {
+                        position: "absolute",
+                        visibility: "hidden",
+                        margin: "0 0 0 0"
+                    });
+                    TweenMax.to(document.getElementById('tourism-read-more'), 0.25, {
+                        visibility: "visible"
+                    });
+                    TweenMax.to(document.getElementById('tourism-industry-info'), 0.25, {
+                        margin: "0 0 100px 0"
+                    });
+                }
 
-                TweenMax.to(document.getElementById('tourism-read-more'), 0.25, {
-                    height: "auto",
-                    ease: Power3.easeOut,
-                    display: "flex"
-                });
+                if(window.innerWidth > 768){
+                    TweenMax.to(document.getElementById('tourism-more-info'), 0.25, {
+                        position: "absolute",
+                        visibility: "hidden",
+                        margin: "0 0 0 0"
+                    });
+                    TweenMax.to(document.getElementById('tourism-read-more'), 0.25, {
+                        visibility: "visible"
+                    });
+                    TweenMax.to(document.getElementById('tourism-industry-info'), 0.25, {
+                        margin: "100px 0 100px 0"
+                    });
+                }
 
             }
 

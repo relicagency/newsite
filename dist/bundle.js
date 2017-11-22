@@ -513,6 +513,22 @@
       url: "/work/branding",
       controller: "brandingCtrl",
       templateUrl: "./components/branding/branding.html"
+    }).state('inmoment', {
+      url: "/work/inmoment",
+      controller: "inMomentCtrl",
+      templateUrl: "./components/inmoment/inmoment.html"
+    }).state('bamboohr', {
+      url: "/work/bamboohr",
+      controller: "bambooHrCtrl",
+      templateUrl: "./components/bamboohr/bamboohr.html"
+    }).state('jive', {
+      url: "/work/jive",
+      controller: "jiveCtrl",
+      templateUrl: "./components/jive/jive.html"
+    }).state('numetric', {
+      url: "/work/numetric",
+      controller: "numetricCtrl",
+      templateUrl: "./components/numetric/numetric.html"
     });
 
     $urlRouterProvider.otherwise('/home');
@@ -720,6 +736,24 @@
                         $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
                         var backgroundPic = document.getElementById('b2-background');
+
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
+})();
+'use strict';
+
+(function () {
+            angular.module('app').controller('bambooHrCtrl', function ($scope, mainService) {
+
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
+                        var backgroundPic = document.getElementById('bamboo-background');
 
                         window.onscroll = function () {
                                     var offSet = window.pageYOffset,
@@ -1042,6 +1076,42 @@
 })();
 'use strict';
 
+(function () {
+            angular.module('app').controller('inMomentCtrl', function ($scope, mainService) {
+
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
+                        var backgroundPic = document.getElementById('inmoment-background');
+
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
+})();
+'use strict';
+
+(function () {
+            angular.module('app').controller('jiveCtrl', function ($scope, mainService) {
+
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
+                        var backgroundPic = document.getElementById('jive-background');
+
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
+})();
+'use strict';
+
 /**
  * Created by Seth on 8/21/2017.
  */
@@ -1120,6 +1190,24 @@
             lastRoute = num;
         };
     });
+})();
+'use strict';
+
+(function () {
+            angular.module('app').controller('numetricCtrl', function ($scope, mainService) {
+
+                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
+                        var backgroundPic = document.getElementById('numetric-background');
+
+                        window.onscroll = function () {
+                                    var offSet = window.pageYOffset,
+                                        csParaStart = offSet * 0.75;
+
+                                    mainService.navBackground(offSet);
+                                    mainService.parallaxIt(backgroundPic, csParaStart);
+                        };
+            });
 })();
 'use strict';
 

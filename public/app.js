@@ -146,10 +146,31 @@
           url: "/work/branding",
             controller: "brandingCtrl",
             templateUrl: "./components/branding/branding.html"
+        })
+        .state('inmoment', {
+            url: "/work/inmoment",
+            controller: "inMomentCtrl",
+            templateUrl: "./components/inmoment/inmoment.html"
+        })
+        .state('bamboohr', {
+            url: "/work/bamboohr",
+            controller: "bambooHrCtrl",
+            templateUrl: "./components/bamboohr/bamboohr.html"
+        })
+        .state('jive', {
+            url: "/work/jive",
+            controller: "jiveCtrl",
+            templateUrl: "./components/jive/jive.html"
+        })
+        .state('numetric', {
+            url: "/work/numetric",
+            controller: "numetricCtrl",
+            templateUrl: "./components/numetric/numetric.html"
         });
+
     
     $urlRouterProvider
-      .otherwise('/home')
+      .otherwise('/home');
   }
 
   function scrollFix($rootScope, $window){

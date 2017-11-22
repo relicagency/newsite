@@ -21,6 +21,9 @@
             $scope.readMore = function () {
 
                 TweenMax.to(document.getElementById('tourism-experts'), 0.25, {
+                    opacity: 1
+                });
+                TweenMax.to(document.getElementById('tourism-experts'), 0.25, {
                     height: "auto"
                 });
 
@@ -28,6 +31,24 @@
                     height: 0,
                     ease: Power3.easeOut,
                     display: "none"
+                });
+
+            };
+
+            $scope.readLess = function () {
+
+                TweenMax.to(document.getElementById('tourism-experts'), 0.20, {
+                    opacity: 0
+                });
+                TweenMax.to(document.getElementById('tourism-experts'), 0.25, {
+                    height: 0,
+                    ease: Power3.easeOut
+                });
+
+                TweenMax.to(document.getElementById('tourism-read-more'), 0.25, {
+                    height: "auto",
+                    ease: Power3.easeOut,
+                    display: "flex"
                 });
 
             }

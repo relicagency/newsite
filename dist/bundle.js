@@ -1463,33 +1463,53 @@
  * Created by Seth on 8/17/2017.
  */
 (function () {
-            angular.module('app').controller('tourismCtrl', function ($scope, mainService) {
+    angular.module('app').controller('tourismCtrl', function ($scope, mainService) {
 
-                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
-                        var backgroundPic = document.getElementById('tourism-background');
+        var backgroundPic = document.getElementById('tourism-background');
 
-                        window.onscroll = function () {
-                                    var offSet = window.pageYOffset,
-                                        csParaStart = offSet * 0.75;
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
 
-                                    mainService.navBackground(offSet);
-                                    mainService.parallaxIt(backgroundPic, csParaStart);
-                        };
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
 
-                        $scope.readMore = function () {
+        $scope.readMore = function () {
 
-                                    TweenMax.to(document.getElementById('tourism-experts'), 0.25, {
-                                                height: "auto"
-                                    });
-
-                                    TweenMax.to(document.getElementById('tourism-read-more'), 0.25, {
-                                                height: 0,
-                                                ease: Power3.easeOut,
-                                                display: "none"
-                                    });
-                        };
+            TweenMax.to(document.getElementById('tourism-experts'), 0.25, {
+                opacity: 1
             });
+            TweenMax.to(document.getElementById('tourism-experts'), 0.25, {
+                height: "auto"
+            });
+
+            TweenMax.to(document.getElementById('tourism-read-more'), 0.25, {
+                height: 0,
+                ease: Power3.easeOut,
+                display: "none"
+            });
+        };
+
+        $scope.readLess = function () {
+
+            TweenMax.to(document.getElementById('tourism-experts'), 0.20, {
+                opacity: 0
+            });
+            TweenMax.to(document.getElementById('tourism-experts'), 0.25, {
+                height: 0,
+                ease: Power3.easeOut
+            });
+
+            TweenMax.to(document.getElementById('tourism-read-more'), 0.25, {
+                height: "auto",
+                ease: Power3.easeOut,
+                display: "flex"
+            });
+        };
+    });
 })();
 'use strict';
 

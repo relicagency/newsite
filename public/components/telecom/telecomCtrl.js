@@ -5,8 +5,6 @@
     angular.module('app')
         .controller('telecomCtrl', function($scope, mainService){
 
-            $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
-
             let backgroundPic = document.getElementById('telecom-background');
 
             window.onscroll = function() {

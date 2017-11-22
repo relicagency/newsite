@@ -1421,20 +1421,18 @@
  * Created by Seth on 8/21/2017.
  */
 (function () {
-            angular.module('app').controller('techCtrl', function ($scope, mainService) {
+    angular.module('app').controller('techCtrl', function ($scope, mainService) {
 
-                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+        var backgroundPic = document.getElementById('tech-background');
 
-                        var backgroundPic = document.getElementById('tech-background');
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
 
-                        window.onscroll = function () {
-                                    var offSet = window.pageYOffset,
-                                        csParaStart = offSet * 0.75;
-
-                                    mainService.navBackground(offSet);
-                                    mainService.parallaxIt(backgroundPic, csParaStart);
-                        };
-            });
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
 })();
 'use strict';
 
@@ -1443,8 +1441,6 @@
  */
 (function () {
     angular.module('app').controller('telecomCtrl', function ($scope, mainService) {
-
-        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
         var backgroundPic = document.getElementById('telecom-background');
 
@@ -1531,8 +1527,6 @@
  */
 (function () {
     angular.module('app').controller('tourismCtrl', function ($scope, mainService) {
-
-        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
 
         var backgroundPic = document.getElementById('tourism-background');
 
@@ -1699,33 +1693,31 @@
 'use strict';
 
 (function () {
-            angular.module('app').controller('workCtrl', function ($scope, mainService) {
+    angular.module('app').controller('workCtrl', function ($scope, mainService) {
 
-                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+        var backgroundPic = document.getElementById('work-background');
 
-                        var backgroundPic = document.getElementById('work-background');
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.75;
 
-                        window.onscroll = function () {
-                                    var offSet = window.pageYOffset,
-                                        csParaStart = offSet * 0.75;
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
 
-                                    mainService.navBackground(offSet);
-                                    mainService.parallaxIt(backgroundPic, csParaStart);
-                        };
-
-                        //This is the animations for the work sections
-                        $scope.workEnter = function (num) {
-                                    TweenMax.to(document.getElementById('work-content-image-' + num), 0.40, {
-                                                opacity: 0
-                                    });
-                        };
-
-                        $scope.workLeave = function (num) {
-                                    TweenMax.to(document.getElementById('work-content-image-' + num), 0.40, {
-                                                opacity: 1
-                                    });
-                        };
+        //This is the animations for the work sections
+        $scope.workEnter = function (num) {
+            TweenMax.to(document.getElementById('work-content-image-' + num), 0.40, {
+                opacity: 0
             });
+        };
+
+        $scope.workLeave = function (num) {
+            TweenMax.to(document.getElementById('work-content-image-' + num), 0.40, {
+                opacity: 1
+            });
+        };
+    });
 })();
 'use strict';
 

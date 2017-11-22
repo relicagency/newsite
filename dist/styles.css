@@ -3402,14 +3402,25 @@ nav {
 
 .numetric-work-pic-title {
   position: absolute;
-  top: 5%;
+  top: 75px;
   left: 5%;
   font-size: 20px;
   color: #727272; }
 
 .numetric-work-image {
   width: 75vw;
-  margin: 100px 0 100px 0; }
+  margin: 175px 0 100px 0; }
+
+@media screen and (max-width: 768px) {
+  .numetric-work-pic-title {
+    position: absolute;
+    top: 25px;
+    left: 5%;
+    font-size: 20px;
+    color: #727272; }
+  .numetric-work-image {
+    width: 75vw;
+    margin: 100px 0 100px 0; } }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

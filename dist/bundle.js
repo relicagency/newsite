@@ -844,8 +844,8 @@
             console.info('Response available');
             $scope.response = response;
             if (window.innerWidth < 426) {
-                window.scrollTo(0, 1600);
-            }window.pageYOffset = 100;
+                window.scrollTo(0, 600);
+            }
         };
         $scope.setWidgetId = function (widgetId) {
             console.info('Created widget ID: %s', widgetId);

@@ -68,6 +68,8 @@
                     TweenMax.to(document.getElementById('tourism-industry-info'), 0.25, {
                         margin: "0 0 100px 0"
                     });
+
+                    window.scrollTo(0,0);
                 }
 
                 if(window.innerWidth > 768){
@@ -82,6 +84,7 @@
                     TweenMax.to(document.getElementById('tourism-industry-info'), 0.25, {
                         margin: "100px 0 100px 0"
                     });
+                    window.scrollTo(0,0);
                 }
 
             }

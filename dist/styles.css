@@ -4056,9 +4056,32 @@ table {
   color: #727272;
   width: 60%;
   font-family: 'Rogan-Light', sans-serif;
-  font-size: 2vmin;
+  font-size: 20px;
   letter-spacing: 1px;
   line-height: 32px; }
+
+.telecom-read-more {
+  color: #bd9a35;
+  font-size: 20px;
+  cursor: pointer; }
+
+.telecom-read-less {
+  color: #bd9a35;
+  font-size: 20px;
+  cursor: pointer; }
+
+.telecom-more-info {
+  position: absolute;
+  visibility: hidden;
+  left: 35%;
+  color: #727272;
+  width: 60%;
+  height: auto;
+  font-family: 'Rogan-Light', sans-serif;
+  font-size: 2vmin;
+  letter-spacing: 1px;
+  line-height: 32px;
+  margin: -50px 0 100px 0; }
 
 .telecom-video {
   position: relative;
@@ -4150,6 +4173,14 @@ table {
     letter-spacing: 1px;
     line-height: 32px;
     margin: 0 0 100px 0;
+    text-align: center; }
+  .telecom-more-info {
+    position: absolute;
+    visibility: hidden;
+    left: 0;
+    color: #727272;
+    width: 85%;
+    font-size: 18px;
     text-align: center; } }
 
 @media screen and (max-width: 425px) {

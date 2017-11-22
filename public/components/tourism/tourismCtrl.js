@@ -18,5 +18,19 @@
                 mainService.parallaxIt(backgroundPic,csParaStart);
             };
 
+            $scope.readMore = function () {
+
+                TweenMax.to(document.getElementById('tourism-experts'), 0.25, {
+                    height: "auto"
+                });
+
+                TweenMax.to(document.getElementById('tourism-read-more'), 0.25, {
+                    height: 0,
+                    ease: Power3.easeOut,
+                    display: "none"
+                });
+
+            }
+
         })
 })();

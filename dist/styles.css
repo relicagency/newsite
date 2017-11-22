@@ -4257,27 +4257,36 @@ h2 {
   font-size: 50px;
   margin: 0 0 0 0; }
 
+.tourism-read-more {
+  position: relative;
+  height: auto;
+  width: 100%;
+  background-color: black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.tourism-read-more-title {
+  position: relative;
+  left: 50px;
+  color: #bd9a35;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin: 45px 0 45px 0; }
+
+.tourism-read-more-plus {
+  position: absolute;
+  height: 75px;
+  cursor: pointer;
+  right: 50px;
+  margin: -10px 0 0 0; }
+
 .tourism-experts {
   position: relative;
   background-color: white;
-  height: auto; }
-
-.tourism-experts-top {
-  position: relative;
-  height: 15px;
-  width: 100%;
-  display: flex;
-  flex-direction: row; }
-
-.tourism-experts-top-left {
-  height: 100%;
-  width: 30%;
-  background-color: #BD9A35; }
-
-.tourism-experts-top-right {
-  height: 100%;
-  width: 70%;
-  background-color: #D0D0D0; }
+  height: 0;
+  width: 100%; }
 
 .tourism-industry-experts {
   position: absolute;
@@ -4308,6 +4317,14 @@ h2 {
   height: auto;
   width: 100%;
   background-color: transparent; }
+
+.tourism-video-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 180px;
+  cursor: pointer; }
 
 .tourism-video-underlay {
   position: absolute;

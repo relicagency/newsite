@@ -4286,7 +4286,8 @@ h2 {
   position: relative;
   background-color: white;
   height: 0;
-  width: 100%; }
+  width: 100%;
+  opacity: 0; }
 
 .tourism-read-less-plus {
   position: absolute;
@@ -4352,6 +4353,12 @@ h2 {
   left: 50%;
   transform: translate(-50%, 0%);
   margin: 100px 0 100px 0; }
+
+.tourism-spacer {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  background-color: transparent; }
 
 .tourism-clients-title {
   position: relative;
@@ -4544,10 +4551,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .tourism-experts-top-left {
-    width: 0; }
-  .tourism-experts-top-right {
-    width: 100%; }
   .tourism-industry-experts {
     position: relative;
     top: 0;

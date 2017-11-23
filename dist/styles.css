@@ -1703,7 +1703,7 @@
   left: -101%;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.99);
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 50; }
 
 .cta-pop-up-form {
@@ -1713,7 +1713,7 @@
   transform: translate(-50%);
   height: auto;
   width: 50%;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -1794,7 +1794,8 @@
   transform: rotate(45deg); }
 
 #get-started-animation-seven {
-  left: 101%; }
+  left: 101%;
+  background-color: black; }
 
 .pop-exit-bar-two {
   position: absolute;
@@ -1806,7 +1807,8 @@
   transform: rotate(-45deg); }
 
 #get-started-animation-five {
-  left: 101%; }
+  left: 101%;
+  background-color: black; }
 
 .pop-exit-bar-three {
   position: absolute;
@@ -1817,13 +1819,13 @@
   overflow: hidden; }
 
 #get-started-animation-six {
-  right: 101%; }
+  right: 101%;
+  background-color: black; }
 
 .exit-inner-bar {
   position: relative;
   height: 100%;
-  width: 100%;
-  background-color: white; }
+  width: 100%; }
 
 .cta-contact-form-container {
   position: relative;
@@ -1855,16 +1857,17 @@
   height: 100%; }
 
 .cta-contact-input {
-  background-color: rgba(22, 22, 22, 0.5);
+  background-color: #efefef;
   border: none;
   outline: none;
   margin-bottom: 15px;
-  height: 48px;
+  height: 55px;
   width: 100%;
-  font-size: 2vmin;
+  font-size: 25px;
+  letter-spacing: 1px;
   padding-left: 15px;
   font-family: 'Rogan-Light', sans-serif;
-  color: #727272; }
+  color: #161616; }
 
 .contact-input:focus {
   outline: none; }
@@ -3156,8 +3159,7 @@ nav {
   background-color: #161616;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  overflow: hidden; }
+  align-items: center; }
 
 .newsroom-main-container a {
   text-decoration: none;
@@ -3173,7 +3175,7 @@ nav {
 .newsroom-main-content {
   position: relative;
   height: auto;
-  margin: 200px 0 0 0;
+  margin: 200px 0 100px 0;
   width: 85%;
   display: flex;
   flex-direction: column; }
@@ -3235,14 +3237,14 @@ nav {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 40%;
+  height: 30%;
   display: flex;
   flex-direction: column; }
 
 .nr-route-nav {
   position: relative;
   width: 100%;
-  height: calc(20% - 2px);
+  height: calc(33.3% - 2px);
   margin-bottom: 2px;
   background-color: black;
   opacity: 0.8;
@@ -3264,7 +3266,7 @@ nav {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;

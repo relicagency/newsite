@@ -3182,7 +3182,7 @@ nav {
 
 .newsroom-content-title {
   position: relative;
-  height: 150px;
+  height: 165px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -3219,19 +3219,6 @@ nav {
   background-color: black;
   opacity: 0.7;
   z-index: -1; }
-
-.routes-route {
-  position: absolute;
-  right: 0;
-  height: 100%;
-  width: 75%;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #bd9a35;
-  font-size: 5vmin;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
 
 .nr-routes-nav {
   position: absolute;
@@ -3326,6 +3313,41 @@ nav {
   color: #BD9A35;
   font-size: 30px;
   font-family: 'Rogan-Medium', sans-serif; }
+
+.routes-route {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 75%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #727272;
+  font-size: 5vmin;
+  overflow-y: scroll; }
+
+.a-route {
+  position: relative;
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 15%;
+  text-align: center; }
+
+.press-release {
+  position: relative;
+  margin: 50px 0 50px 0; }
+
+.press-release-title {
+  font-size: 30px;
+  cursor: pointer; }
+
+.press-release-subtitle {
+  margin: 10px;
+  font-size: 20px; }
+
+.press-release-date {
+  font-size: 18px;
+  margin: 10px 0 0 0; }
 
 @media screen and (max-width: 425px) {
   .newsroom-main-background {

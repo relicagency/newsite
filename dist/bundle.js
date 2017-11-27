@@ -977,20 +977,18 @@
  * Created by Seth on 8/22/2017.
  */
 (function () {
-            angular.module('app').controller('demandgenCtrl', function ($scope, mainService) {
+    angular.module('app').controller('demandgenCtrl', function ($scope, mainService) {
 
-                        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+        var backgroundPic = document.getElementById('demandgen-background');
 
-                        var backgroundPic = document.getElementById('demandgen-background');
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.5050505050505050;
 
-                        window.onscroll = function () {
-                                    var offSet = window.pageYOffset,
-                                        csParaStart = offSet * 0.5050505050505050;
-
-                                    mainService.navBackground(offSet);
-                                    mainService.parallaxIt(backgroundPic, csParaStart);
-                        };
-            });
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+    });
 })();
 'use strict';
 

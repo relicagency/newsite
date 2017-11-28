@@ -3192,15 +3192,15 @@ nav {
 
 .newsroom-routes-container {
   position: relative;
-  height: 75vh;
-  width: 100%; }
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
 
 .routes-router {
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: relative;
   width: 25%;
-  height: 100%; }
+  height: 1000px; }
 
 .routes-underlay {
   position: absolute;
@@ -3315,14 +3315,12 @@ nav {
   font-family: 'Rogan-Medium', sans-serif; }
 
 .routes-route {
-  position: absolute;
-  right: 0;
-  height: 100%;
+  position: relative;
+  height: auto;
   width: 75%;
   background-color: rgba(255, 255, 255, 0.9);
   color: #727272;
-  font-size: 5vmin;
-  overflow-y: scroll; }
+  font-size: 5vmin; }
 
 .a-route {
   position: relative;
@@ -3332,6 +3330,12 @@ nav {
   flex-direction: column;
   margin: 0 0 0 15%;
   text-align: left; }
+
+.a-route div:first-child {
+  margin: 100px 0 30px 0; }
+
+.a-route div:last-child {
+  margin: 30px 0 100px 0; }
 
 .press-release {
   position: relative;

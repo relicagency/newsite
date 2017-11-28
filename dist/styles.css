@@ -3331,23 +3331,32 @@ nav {
   display: flex;
   flex-direction: column;
   margin: 0 0 0 15%;
-  text-align: center; }
+  text-align: left; }
 
 .press-release {
   position: relative;
-  margin: 50px 0 50px 0; }
+  margin: 30px 0 30px 0; }
 
 .press-release-title {
   font-size: 30px;
-  cursor: pointer; }
-
-.press-release-subtitle {
-  margin: 10px;
-  font-size: 20px; }
+  cursor: pointer;
+  color: black;
+  line-height: 35px; }
 
 .press-release-date {
-  font-size: 18px;
-  margin: 10px 0 0 0; }
+  font-size: 15px;
+  margin: 10px 0 10px 0; }
+
+.press-release-intro {
+  font-size: 19px;
+  color: black;
+  line-height: 25px;
+  text-align: left; }
+
+.press-release-intro a {
+  text-decoration: none;
+  color: #BD9A35;
+  cursor: pointer; }
 
 @media screen and (max-width: 425px) {
   .newsroom-main-background {

@@ -3362,6 +3362,52 @@ nav {
   color: #BD9A35;
   cursor: pointer; }
 
+.press-release-content {
+  position: fixed;
+  top: 0;
+  right: 105%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 10000;
+  overflow-y: scroll; }
+
+.press-release-content a {
+  color: #BD9A35;
+  text-decoration: none; }
+
+.press-release-content-title {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin: 100px 0 50px 10%;
+  color: #727272; }
+
+.press-release-content-subtitle {
+  font-size: 23px;
+  letter-spacing: 2px;
+  margin: 30px  0 30px 12%;
+  color: #727272; }
+
+.press-release-content-text {
+  font-size: 18px;
+  color: #727272;
+  margin: 25px 0 25px 15%;
+  width: 70%;
+  line-height: 35px;
+  letter-spacing: 1px; }
+
+.press-release-exit {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  height: 20px;
+  width: 20px;
+  background-color: #161616;
+  cursor: pointer; }
+
+.press-release-content-bold {
+  font-weight: bold; }
+
 @media screen and (max-width: 425px) {
   .newsroom-main-background {
     position: absolute;

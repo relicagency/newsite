@@ -9,16 +9,16 @@
             <div class="routes-router">
                 <div class="routes-underlay"></div>
                 <div class="nr-routes-nav">
-                    <div class="nr-route-nav" >
-                        <img class="blue-triangle" src="../../images/blue-triangle.svg">
+                    <div class="nr-route-nav" ng-click="changeRoute('news')">
+                        <img class="blue-triangle" id="blue-triangle-news" src="../../images/blue-triangle.svg">
                         <p class="route-nav-title">Latest News</p>
                     </div>
-                    <div class="nr-route-nav" >
-                        <img class="blue-triangle" src="../../images/blue-triangle.svg">
+                    <div class="nr-route-nav" ng-click="changeRoute('press')">
+                        <img class="blue-triangle" id="blue-triangle-press" src="../../images/blue-triangle.svg">
                         <p class="route-nav-title">Press Releases</p>
                     </div>
-                    <div class="nr-route-nav" >
-                        <img class="blue-triangle" src="../../images/blue-triangle.svg">
+                    <div class="nr-route-nav" ng-click="changeRoute('awards')">
+                        <img class="blue-triangle" id="blue-triangle-awards" src="../../images/blue-triangle.svg">
                         <p class="route-nav-title">Awards</p>
                     </div>
                 </div>
@@ -33,14 +33,14 @@
 
             <div class="routes-route">
 
-                <!--<div class="latest-mews-route a-route">-->
+                <div class="news-route a-route" id="news">
 
-                <!--</div>-->
+                </div>
 
-                <div class="press-releases-route a-route">
+                <div class="press-releases-route a-route" id="press">
 
                     <div class="press-release">
-                        <h3 class="press-release-title" ng-click="pressShow('one')">Sorenson Advertising Becomes Relic</h3>
+                        <h3 class="press-release-title press-release-first" ng-click="pressShow('one')">Sorenson Advertising Becomes Relic</h3>
                             <p class="press-release-date">Posted January 24, 2017</p>
                                 <p class="press-release-intro">Sorenson Advertising, an established Utah advertising agency, becomes Relic today.  “I love the name Relic, because it represents a time when ad agencies had one purpose in mind, to drive sales,” said Adam Stoker, President/CEO of Relic . . . <a class="press-release-more" ng-click="pressShow('one')">Read More</a>
                                 </p>
@@ -81,7 +81,7 @@
                                 <p class="press-release-intro">Relic, an advertising agency based in Provo, Utah, won four Communicator Awards—a leading international awards program—for its work with three Destination Marketing Organizations (DMOs) in Utah . . . <a class="press-release-more" ng-click="pressShow('eight')">Read More</a>
                                 </p>
                     </div>
-                    <div class="press-release">
+                    <div class="press-release press-release-last">
                         <h3 class="press-release-title" ng-click="pressShow('nine')">The Forever Young Foundation partners with Relic to help children in need</h3>
                             <p class="press-release-date">Posted October 13, 2017</p>
                                 <p class="press-release-intro">Relic, a Utah advertising agency, and the Forever Young Foundation—a nonprofit that provides support to children in need—are proud to announce a new partnership as of Sept. 15, 2017 . . . <a class="press-release-more" ng-click="pressShow('nine')">Read More</a>
@@ -89,9 +89,76 @@
                     </div>
 
                 </div>
-                <!--<div class="awards-route a-route">-->
+                <div class="awards-route a-route" id="awards">
 
-                <!--</div>-->
+                    <div class="newsroom-award">
+                        <img class="newsroom-award-image" src="../../images/bronze-stevie.png">
+                        <div class="newsroom-award-title">
+                            <p>Marketer of the Year</p>
+                        </div>
+                    </div>
+                        <div class="newsroom-award">
+                            <img class="newsroom-award-image" src="../../images/bronze-stevie.png">
+                            <div class="newsroom-award-title">
+                                <p>Communications Professional of the Year</p>
+                            </div>
+                        </div>
+                            <div class="newsroom-award">
+                                <img class="newsroom-award-image" src="../../images/bronze-stevie.png">
+                                <div class="newsroom-award-title">
+                                    <p>Dinosaurland: The Origin of Adventure</p>
+                                </div>
+                            </div>
+                    <div class="newsroom-award">
+                        <img class="newsroom-award-image" src="../../images/Group%20109.png">
+                        <div class="newsroom-award-title">
+                            <p>The Origin of Adventure</p>
+                        </div>
+                    </div>
+                    <div class="newsroom-award">
+                        <img class="newsroom-award-image" src="../../images/Group%20109.png">
+                        <div class="newsroom-award-title">
+                            <p>Moab Travel Planner</p>
+                        </div>
+                    </div>
+                    <div class="newsroom-award">
+                        <img class="newsroom-award-image" src="../../images/Group%20109.png">
+                        <div class="newsroom-award-title">
+                            <p>Origin of Adventure: Children's Storybook</p>
+                        </div>
+                    </div>
+                    <div class="newsroom-award">
+                        <img class="newsroom-award-image" src="../../images/Group%20109.png">
+                        <div class="newsroom-award-title">
+                            <p>Bryce Canyon Country Take Your Time Travel Video</p>
+                        </div>
+                    </div>
+                    <div class="newsroom-award">
+                        <img class="newsroom-award-image telly-image" src="../../images/telly_award.png">
+                        <div class="newsroom-award-title">
+                            <p>The Origin of Adventure</p>
+                        </div>
+                    </div>
+                    <div class="newsroom-award">
+                        <img class="newsroom-award-image uv-fifty" src="../../images/uv50logo.gif">
+                        <div class="newsroom-award-title">
+                            <p>Utah Valley's 50 Fastest Growing Companies</p>
+                        </div>
+                    </div>
+                    <div class="newsroom-award">
+                        <img class="newsroom-award-image samy-image" src="../../images/samy_award.png">
+                        <div class="newsroom-award-title">
+                            <p>Sales & Marketer of the Year</p>
+                        </div>
+                    </div>
+                    <div class="newsroom-award">
+                        <img class="newsroom-award-image samy-image" src="../../images/golden_spike.png">
+                        <div class="newsroom-award-title">
+                            <p>Moab Travel Planner</p>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
 

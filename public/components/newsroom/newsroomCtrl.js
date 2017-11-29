@@ -14,22 +14,46 @@
                 mainService.parallaxIt(backgroundPic,csParaStart);
             };
 
-            let lastRoute = "";
+            $scope.changeRoute = function(route){
 
-            $scope.newsroomRouteShow = function(num){
-                TweenMax.to(document.getElementById('newsroom-route-' + num), 0.5, {
-                    ease: Power2.easeIn,
-                    opacity: 1
-                });
+                let awards = document.getElementById('awards'),
+                    press = document.getElementById('press'),
+                    news = document.getElementById('news');
 
-                if(lastRoute !== "" && lastRoute !== num){
-                    TweenMax.to(document.getElementById('newsroom-route-' + lastRoute), 0.5,  {
-                        ease: Power2.easeOut,
-                        opacity: 0
-                    })
+                if(route === "news"){
+                    TweenMax.to(news, 0.25, {
+                        display: "flex"
+                    });
+                    TweenMax.to(press, 0.25, {
+                        display: "none"
+                    });
+                    TweenMax.to(awards, 0.25, {
+                        display: "none"
+                    });
+                }
+                if(route === "awards"){
+                    TweenMax.to(press, 0.25, {
+                        display: "none"
+                    });
+                    TweenMax.to(news, 0.25, {
+                        display: "none"
+                    });
+                    TweenMax.to(awards, 0.25, {
+                        display: "flex"
+                    });
+                }
+                if(route === "press"){
+                    TweenMax.to(awards, 0.25, {
+                        display: "none"
+                    });
+                    TweenMax.to(news, 0.25, {
+                        display: "none"
+                    });
+                    TweenMax.to(press, 0.25, {
+                        display: "flex"
+                    });
                 }
 
-                lastRoute = num;
 
             };
 

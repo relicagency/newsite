@@ -3318,28 +3318,31 @@ nav {
   position: relative;
   height: auto;
   width: 75%;
-  background-color: rgba(255, 255, 255, 0.9);
   color: #727272;
   font-size: 5vmin; }
 
 .a-route {
   position: relative;
-  width: 70%;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  margin: 0 0 0 15%;
+  margin: 0 0 0 0;
   text-align: left; }
 
-.a-route div:first-child {
-  margin: 100px 0 30px 0; }
+.news-route {
+  height: 1500px;
+  background-color: white;
+  display: none; }
 
-.a-route div:last-child {
-  margin: 30px 0 100px 0; }
+.press-releases-route {
+  display: none;
+  background-color: white; }
 
 .press-release {
   position: relative;
-  margin: 30px 0 30px 0; }
+  margin: 30px 0 30px 10%;
+  width: 70%; }
 
 .press-release-title {
   font-size: 30px;
@@ -3396,6 +3399,12 @@ nav {
   line-height: 35px;
   letter-spacing: 1px; }
 
+.press-release-first {
+  margin: 100px 0 30px 0; }
+
+.press-release-last {
+  margin: 30px 0 100px 10%; }
+
 .press-release-exit {
   position: absolute;
   top: 50px;
@@ -3407,6 +3416,62 @@ nav {
 
 .press-release-content-bold {
   font-weight: bold; }
+
+.awards-route {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: black;
+  padding: 100px 10px 100px 10px; }
+
+.newsroom-award {
+  position: relative;
+  height: 370px;
+  width: 204px;
+  background-color: white;
+  margin: 25px 25px 25px 25px;
+  overflow: hidden; }
+
+.newsroom-award-title {
+  position: absolute;
+  bottom: 0;
+  height: 120px;
+  width: 100%;
+  background-color: #BD9A35;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 21px; }
+
+.newsroom-award-title p {
+  width: 90%; }
+
+.newsroom-award-image {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  width: 200px;
+  transform: translate(-50%, 0); }
+
+.uv-fifty {
+  top: 0; }
+
+.telly-image {
+  top: 55px;
+  width: 164px; }
+
+.samy-image {
+  position: absolute;
+  top: 0;
+  width: 259px; }
 
 @media screen and (max-width: 425px) {
   .newsroom-main-background {

@@ -209,9 +209,16 @@
 }
 
 .news-route {
-  height: 1500px;
+  position: relative;
+  height: auto;
   background-color: white;
   display: flex;
+  padding: 0 0 100px 0;
+}
+.news-release {
+  position: relative;
+  margin: 0 0 0 10%;
+  width: 70%;
 }
 
 .press-releases-route {
@@ -305,19 +312,32 @@
 
 .awards-route {
   display: none;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  background-color: rgba(255,255,255,1);
+}
+.awards-underlay {
+  position: relative;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  background-color: rgba(255,255,255,0.8);
-  padding: 10px 0 10px 20px;
+  background-color: #95989a;
+  margin: 50px 50px 50px 50px;
+}
+.awards-bottom-layer {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: #95989a;
 }
 .newsroom-award {
   position: relative;
   height: 370px;
   width: 204px;
   background-color: white;
-  margin: 25px 25px 25px 25px;
+  margin: 50px 0 0 50px;
   overflow: hidden;
 }
 .newsroom-award-title {

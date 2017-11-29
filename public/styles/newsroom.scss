@@ -215,10 +215,18 @@
   display: flex;
   padding: 0 0 100px 0;
 }
+.news-route .news-release {
+  margin: 45px 0 10px 10%;
+}
+
 .news-release {
   position: relative;
   margin: 0 0 0 10%;
   width: 70%;
+}
+.news-release .press-release-title {
+  width: 60%;
+  margin: 45px 0 10px 0;
 }
 
 .press-releases-route {
@@ -228,7 +236,7 @@
 
 .press-release {
   position: relative;
-  margin: 30px 0 30px 10%;
+  margin: 45px 0 45px 10%;
   width: 70%;
 }
 .press-release-title {
@@ -252,7 +260,13 @@
   color: #BD9A35;
   cursor: pointer;
 }
-
+.press-separator {
+  position: relative;
+  height: 1px;
+  width: 70%;
+  margin: 0 0 0 10%;
+  background-color: rgba(0,0,0,0.3);
+}
 
 
 .press-release-content {
@@ -291,10 +305,10 @@
 }
 
 .press-release-first {
-  margin: 100px 0 30px 0;
+  margin: 100px 0 45px 10%;
 }
 .press-release-last {
-  margin: 30px 0 100px 10%;
+  margin: 45px 0 100px 10%;
 }
 
 .press-release-exit {
@@ -323,14 +337,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #95989a;
+  background-color: rgba(0,0,0,0.1);
   margin: 50px 50px 50px 50px;
 }
 .awards-bottom-layer {
   position: relative;
   height: 50px;
   width: 100%;
-  background-color: #95989a;
+  background-color: rgba(0,0,0,0.1);
 }
 .newsroom-award {
   position: relative;

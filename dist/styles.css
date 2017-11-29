@@ -3238,16 +3238,35 @@ nav {
   cursor: pointer;
   font-size: 2.5vmin; }
 
-.blue-triangle {
+.blue-triangle-news {
+  width: 18px;
+  display: flex; }
+
+.blue-triangle-press {
   width: 18px;
   display: none; }
+
+.blue-triangle-awards {
+  width: 18px;
+  display: none; }
+
+.route-nav-news {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #161616; }
+
+.route-nav-press {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white; }
+
+.route-nav-awards {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white; }
 
 .route-nav-title {
   position: absolute;
   top: 50%;
   left: 10%;
-  transform: translate(0, -50%);
-  color: white; }
+  transform: translate(0, -50%); }
 
 .nr-press-contact {
   position: absolute;

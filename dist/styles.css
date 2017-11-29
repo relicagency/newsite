@@ -3352,7 +3352,7 @@ nav {
 .news-route {
   height: 1500px;
   background-color: white;
-  display: none; }
+  display: flex; }
 
 .press-releases-route {
   display: none;
@@ -3437,13 +3437,13 @@ nav {
   font-weight: bold; }
 
 .awards-route {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  background-color: black;
-  padding: 100px 10px 100px 10px; }
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0 10px 20px; }
 
 .newsroom-award {
   position: relative;
@@ -3491,26 +3491,6 @@ nav {
   position: absolute;
   top: 0;
   width: 259px; }
-
-@media screen and (max-width: 425px) {
-  .newsroom-main-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 58%;
-    width: 100%;
-    background-color: #161616; }
-  .routes-router {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 40%;
-    height: 100%; }
-  .routes-route {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    width: 60%; } }
 
 .numetric-main-container {
   position: relative;

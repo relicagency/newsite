@@ -5245,6 +5245,13 @@ body {
   font-family: Rogan-Regular, sans-serif;
   background-color: #161616; }
 
+.work-infographic {
+  width: 400px; }
+
+@media screen and (max-width: 500px) {
+  .work-infographic {
+    width: 250px; } }
+
 .us-main-container {
   position: relative;
   height: auto;

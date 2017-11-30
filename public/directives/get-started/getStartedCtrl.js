@@ -4,13 +4,21 @@
 (function(){
     angular.module('app').controller('getStartedCtrl', function($scope, $state,$timeout, mainService, vcRecaptchaService){
 
-        $scope.ctaText = "Learn how we can help you.";
 
-        if(window.location.href.indexOf('tourism') > -1 ){
-            $scope.ctaText = "Looking to bring more visitors to you area?"
-        } if(window.location.href.indexOf('demandgen') > -1){
-            $scope.ctaText = "Looking for demand gen help?"
-        }
+        $rootScope.$on('$stateChangeStart',
+            function(){
+
+                if(window.location.href.indexOf('tourism') > -1 ){
+                    $scope.ctaText = "Looking to bring more visitors to you area?"
+                } if(window.location.href.indexOf('demandgen') > -1){
+                    $scope.ctaText = "Looking for demand gen help?"
+                } else {
+                    $scope.ctaText = "Learn how we can help you.";
+                }
+
+            });
+
+
 
         let mainPop = document.getElementById('cta-pop-up'),
             barFive = document.getElementById('get-started-animation-five'),

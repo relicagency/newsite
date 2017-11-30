@@ -1451,15 +1451,18 @@
                 document.getElementById('accordion-text-four').innerHTML = $scope.clientWork;
                 incr = !incr;
                 return 0;
-            }if (sec.title === "Graphic Design" && incr === false) {
+            }
+            if (sec.title === "Graphic Design" && incr === false) {
                 document.getElementById('accordion-text-four').innerHTML = $scope.blankClientWork;
                 incr = !incr;
                 return 0;
-            }if (sec.title !== "Graphic Design" && incr === true) {
+            }
+            if (sec.title !== "Graphic Design" && incr === true) {
                 document.getElementById('accordion-text-four').innerHTML = $scope.blankClientWork;
                 incr = true;
                 return 0;
-            }if (sec.title !== "Graphic Design" && incr === false) {
+            }
+            if (sec.title !== "Graphic Design" && incr === false) {
                 document.getElementById('accordion-text-four').innerHTML = $scope.blankClientWork;
                 incr = true;
                 return 0;

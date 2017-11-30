@@ -618,116 +618,6 @@
 'use strict';
 
 /**
- * Created by Seth on 8/16/2017.
- */
-(function () {
-    angular.module('app').controller('aboutCtrl', function ($scope, mainService) {
-
-        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
-
-        $scope.aboutRouterTitle = "Leadership";
-
-        var lastLeader = '',
-            expand = true,
-            backgroundPic = document.getElementById('about-background');
-
-        window.onscroll = function () {
-            var offSet = window.pageYOffset,
-                csParaStart = offSet * 0.5050505050505050;
-
-            mainService.navBackground(offSet);
-            mainService.parallaxIt(backgroundPic, csParaStart);
-        };
-
-        $scope.changeAboutRoute = function (route) {
-
-            if (route === 'story') {
-
-                TweenMax.to(document.getElementById('about-leadership'), 0.35, {
-                    backgroundColor: "rgba(0,0,0,1)"
-                });
-                TweenMax.to(document.getElementById('about-story'), 0.35, {
-                    backgroundColor: "rgba(255,255,255,1)"
-                });
-
-                TweenMax.to(document.getElementById('about-route-story'), 0.25, {
-                    ease: Power2.easeIn,
-                    display: "inline"
-                });
-                TweenMax.to(document.getElementById('about-route-leadership'), 0.25, {
-                    ease: Power2.easeOut,
-                    display: "none"
-                });
-            }
-
-            if (route === 'leadership') {
-
-                TweenMax.to(document.getElementById('about-leadership'), 0.35, {
-                    backgroundColor: "rgba(255,255,255,1)"
-
-                });
-                TweenMax.to(document.getElementById('about-story'), 0.35, {
-                    backgroundColor: "rgba(0,0,0,1)"
-                });
-
-                TweenMax.to(document.getElementById('about-route-leadership'), 0.25, {
-                    ease: Power2.easeIn,
-                    display: "inline"
-                });
-                TweenMax.to(document.getElementById('about-route-story'), 0.25, {
-                    ease: Power2.easeOut,
-                    display: "none"
-                });
-            }
-        };
-
-        var shrinkTheLeader = "";
-
-        $scope.expandLeader = function (leader) {
-
-            var leaderDiv = document.getElementById('leader-' + leader),
-                leaderAbout = document.getElementById('leader-about-' + leader),
-                shrinkLeader = document.getElementById('leader-' + shrinkTheLeader),
-                shrinkLeaderAbout = document.getElementById('leader-about-' + shrinkTheLeader);
-
-            if (leaderDiv.style.height === "auto") {
-                TweenMax.to(leaderDiv, 0.25, {
-                    ease: Power2.easeIn,
-                    height: '200px'
-                });
-                TweenMax.to(leaderAbout, 0.10, {
-                    opacity: 0,
-                    ease: Power2.easeIn
-                });
-
-                return 0;
-            }if (shrinkTheLeader !== leader && shrinkTheLeader !== "") {
-                TweenMax.to(shrinkLeader, 0.25, {
-                    ease: Power2.easeIn,
-                    height: '200px'
-                });
-                TweenMax.to(shrinkLeaderAbout, 0.10, {
-                    opacity: 0,
-                    ease: Power2.easeIn
-                });
-            }
-
-            TweenMax.to(leaderDiv, 0.5, {
-                ease: Power2.easeIn,
-                height: 'auto'
-            });
-            TweenMax.to(leaderAbout, 0.10, {
-                opacity: 1,
-                ease: Power2.easeIn
-            });
-
-            shrinkTheLeader = leader;
-        };
-    });
-})();
-'use strict';
-
-/**
  * Created by Seth on 8/21/2017.
  */
 (function () {
@@ -1443,6 +1333,7 @@
 
         $scope.clientWork = $sce.trustAsHtml('<span>Graphic design is the backbone for any creative work. But like your parents taught you, “Actions speak louder than words,” and we at Relic think that our graphics speak fairly loud. Check out our design portfolio from our <a class="services-work-link" href="/#!/work">client work</a>.</span>');
         $scope.blankClientWork = $sce.trustAsHtml('<span></span>');
+
         var incr = true;
 
         $scope.checkForLink = function (sec) {
@@ -1477,7 +1368,7 @@
         $scope.services = [{
             title: 'Traditional Media',
             intro: "There are certain things in life that are risky. Asking out that girl you’ve been eyeing across the room? Risky. Looking into a new investment? Risky. The movie Risky Business? Ironically, not that risky. However, traditional media and media buying should never have you on the edge of your seat. Relic has media buying experts who focus on negotiating and planning to guarantee the highest return for each client.",
-            sections: [{ number: "one", title: "TV", info: ["We’ve noticed a myth going around. No, not that one about Steve in accounting and his weirdly large left foot – a myth about TV spots. Some people are led to believe that TV advertisements have been completely supplanted by digital marketing, but that’s not the case. There is strength in a good TV spot, and Relic’s media team ensures that your TV ads are presented to the correct demographics to leave a lasting impact on your audience."] }, { number: "two", title: "Radio", info: ["Did you know that it’s scientifically proven that everybody listens to music? Everyone. You know that person you’re thinking of who may not listen to music? Nope, they do too. The fact that everyone loves music means radio spots bring tremendous advertising value. A radio ad is wonderful because it is exactly like a shotgun Vegas wedding – cost effective, time efficient, and it leaves a trail of measurable results."] }, { number: "three", title: "Print/Newspaper", info: ["Much like Apple products, print ads and newspapers have been permeating our lives for as long as we can remember, and these items are not leaving any time soon. There’s a good reason for it, too. Print advertising offers certain advantages that create tangible and distinct results. Printed ads in magazines target niche markets, while newspapers target regional audiences. Loyal readership provides a sense of trust that can be used to your advantage. Relic’s media team finds the perfect publications for your ads and delivers measurable results on them."] }, { number: "four", title: "Outdoor Advertising", info: ["Imagine the cool breeze running through your hair, the sounds of nature in your ears, the beautiful smell of exhaust—there’s nothing quite like the great outdoors. Turns out, it’s also a great place to advertise. Relic’s team has been working with unique, distinguishable outdoor advertising for years. We know exactly what it takes to ensure the best results for your campaign. From roadside billboards to public transit banners, Relic delivers the best placement for your ads to ensure you have the greatest reach, the best ROI and drive the most engagement with your products."] }, { number: "five", title: "Direct Mail", info: ["Direct mail offers the opportunity to personally connect with an audience in an original way that sets you apart from the competition. The key to building any relationship with a customer is communicating a clear message and making it personal. Studies found that once a direct mail piece is opened, the recipient is more likely to engage with the company. Relic’s team has seen remarkable success with our direct mail pieces. In fact, I’m currently recruiting Relic to send out direct mail pieces to potential dating partners. Stay tuned for an update. (Update: apparently I’m married and my wife was not happy with what turned up in our mail today. Though it did intrigue her enough to open it)."] }, { number: "six", title: "Sponsorships", info: ["Sponsorship advertising is a great way to build up a reputable brand image for your company. Sponsoring a local event will insert your brand name in the forefront of the minds of the public. Additionally, sponsorships can build priceless PR value. Being a part of these sponsored events will show the positive impact you have on your community. The hardest part of sponsorships is finding the best events to be a part of, and Relic’s team knows the exact information your audience will want to see. Always keep in mind the importance of relevance. There’s a reason you never see events such as the “Nike Hotdog Eating Contest.”"] }]
+            sections: [{ number: "one", title: "TV", info: ["We’ve noticed a myth going around. No, not that one about Steve in accounting and his weirdly large left foot – a myth about TV spots. Some people are led to believe that TV advertisements have been completely supplanted by digital marketing, but that’s not the case. There is strength in a good TV spot, and Relic’s media team ensures that your TV ads are presented to the correct demographics to leave a lasting impact on your audience."] }, { number: "two", title: "Radio", info: ["Did you know that it’s scientifically proven that everybody listens to music? Everyone. You know that person you’re thinking of who may not listen to music? Nope, they do too. The fact that everyone loves music means radio spots bring tremendous advertising value. A radio ad is wonderful because it is exactly like a shotgun Vegas wedding – cost effective, time efficient, and it leaves a trail of measurable results."] }, { number: "three", title: "Print/Newspaper", info: ["Much like Apple products, print ads and newspapers have been permeating our lives for as long as we can remember, and these items are not leaving any time soon. There’s a good reason for it, too. Print advertising offers certain advantages that create tangible and distinct results. Printed ads in magazines target niche markets, while newspapers target regional audiences. Loyal readership provides a sense of trust that can be used to your advantage. Relic’s media team finds the perfect publications for your ads and delivers measurable results on them."] }, { number: "five", title: "Outdoor Advertising", info: ["Imagine the cool breeze running through your hair, the sounds of nature in your ears, the beautiful smell of exhaust—there’s nothing quite like the great outdoors. Turns out, it’s also a great place to advertise. Relic’s team has been working with unique, distinguishable outdoor advertising for years. We know exactly what it takes to ensure the best results for your campaign. From roadside billboards to public transit banners, Relic delivers the best placement for your ads to ensure you have the greatest reach, the best ROI and drive the most engagement with your products."] }, { number: "six", title: "Direct Mail", info: ["Direct mail offers the opportunity to personally connect with an audience in an original way that sets you apart from the competition. The key to building any relationship with a customer is communicating a clear message and making it personal. Studies found that once a direct mail piece is opened, the recipient is more likely to engage with the company. Relic’s team has seen remarkable success with our direct mail pieces. In fact, I’m currently recruiting Relic to send out direct mail pieces to potential dating partners. Stay tuned for an update. (Update: apparently I’m married and my wife was not happy with what turned up in our mail today. Though it did intrigue her enough to open it)."] }, { number: "seven", title: "Sponsorships", info: ["Sponsorship advertising is a great way to build up a reputable brand image for your company. Sponsoring a local event will insert your brand name in the forefront of the minds of the public. Additionally, sponsorships can build priceless PR value. Being a part of these sponsored events will show the positive impact you have on your community. The hardest part of sponsorships is finding the best events to be a part of, and Relic’s team knows the exact information your audience will want to see. Always keep in mind the importance of relevance. There’s a reason you never see events such as the “Nike Hotdog Eating Contest.”"] }]
         }, {
             title: 'Creative',
             intro: "Do you remember the last advertisement you saw? Creating a message that resonates can be difficult. Our creative team specializes in delivering unforgettable campaigns, content and designs. Good creative should communicate the same message as when you meet your in-laws for the first time−a strong, memorable directive that leaves just enough of an impact that you’ll linger in the back of their minds. It’s a tough balance, but we’ll work with you to ensure that we deliver creative that knocks your customers’ weirdly colorful socks off.",
@@ -1489,7 +1380,7 @@
         }, {
             title: 'Digital',
             intro: "Marketing has always been about connecting with your audience in the right place at the right time. With people spending more time online, it has become apparent that often the best place to advertise is online. Relic’s digital team is experts in every aspect of online marketing, from SEO to website optimization to in-depth analytics. Read about our best digital offerings below, then contact us when you realize that we are the heaven-sent digital marketing agency that you have been waiting for.",
-            sections: [{ number: "one", title: "PPC", info: ["What better place to advertise than where customers are actively searching for your product? Our experienced, paid search campaign managers will select relevant keywords to ensure your business appears at the top of Google’s and other search engines’ results when those keywords are entered. Our campaigns are optimized monthly to eliminate waste. And no, we’re not talking about firing Toby in HR. He’s actually super helpful."] }, { number: "two", title: "SEO", info: ["Google is the most trusted resource on the internet. That’s why it’s responsible for almost 3/4 of all web searches. If your website doesn’t match Google’s search results, your competitor could overtake your position and poach your potential sales. Our SEO team is well versed in Google’s latest algorithms and ready to make sure your site stays at the top of Google and other search engines’ organic results."] }, { number: "three", title: "Social Media Advertisements", info: ["Did you know that the average person spends over five years on of their life on social media? With so much time being spent pretending to care about your friends from high school, social media presents a huge marketing opportunity. Relic’s team targets the correct audiences at the correct time to get your ad in front of the correct people on all social media platforms. With both paid and lead generation ads, your top-of-funnel marketing efforts will be filled with qualified opportunities. Think of social media ads as a teenage girl. Does anyone care that Stephanie doesn’t have a homecoming date? Of course not, but get the post in front of the perfect audience at the appropriate time, and she just might generate some leads."] }, { number: "four", title: "Facebook Instant Articles", info: ["Instant Articles are a new way to interact with your consumers on Facebook. Loading 10 times faster than normal links, Instant Articles are 20 percent more likely to be read and 70 percent less likely to be abandoned, making adorable puppies the only other thing less likely to abandoned. Relic’s digital team is always on top of new online marketing opportunities, and Instant Articles is one of the latest digital techniques we have seen success with."] }, { number: "five", title: "Display Advertisements", info: ["With the amount of time spent online, web advertising is vital for any business, so let us help you out. Relic uses display ads to effectively communicate your message through graphic design images, rich media, video, audio, flash and more. With our display ads, you’ll get noticed more than Liam Neeson’s fictional children get kidnapped."] }, { number: "six", title: "Marketing Automation", info: ["You may think that all those emails you get from businesses are spam, but you’re getting them for a reason. They’re effective! Proper marketing automation planning and execution will not only generate leads for your business, it can push leads all the way through your conversion funnel. Marketing automation is also the perfect way to build brand awareness. The more you’re on your audience’s mind, the more likely they are to purchase."] }, { number: "seven", title: "Website Optimization", info: ["Just because you desire a change on your website doesn’t mean you should do it. Our website optimization team will A/B test changes on your website to make sure the site is converting at the highest rate possible. This testing ensures that all images, buttons, copy and other web functions operate properly on all devices. Let data drive the decision making on your website so that you have time to focus on more important things, like how Arie became the next bachelor over Peter when clearly Peter deserved it. Just look at that face."] }, { number: "eight", title: "Reporting & Analytics", info: ["Spend your money where it counts. If you’re going to try the shotgun approach and just throw money at something and hope it works, we would prefer if you throw that money at us. We investigate your target markets and get to know what they like and what they are talking about in order to create an efficient campaign. Our professionals research which ads and posts work the best for your audience through our extensive reporting and analytics.]"] }]
+            sections: [{ number: "one", title: "PPC", info: ["What better place to advertise than where customers are actively searching for your product? Our experienced, paid search campaign managers will select relevant keywords to ensure your business appears at the top of Google’s and other search engines’ results when those keywords are entered. Our campaigns are optimized monthly to eliminate waste. And no, we’re not talking about firing Toby in HR. He’s actually super helpful."] }, { number: "two", title: "SEO", info: ["Google is the most trusted resource on the internet. That’s why it’s responsible for almost 3/4 of all web searches. If your website doesn’t match Google’s search results, your competitor could overtake your position and poach your potential sales. Our SEO team is well versed in Google’s latest algorithms and ready to make sure your site stays at the top of Google and other search engines’ organic results."] }, { number: "three", title: "Social Media Advertisements", info: ["Did you know that the average person spends over five years on of their life on social media? With so much time being spent pretending to care about your friends from high school, social media presents a huge marketing opportunity. Relic’s team targets the correct audiences at the correct time to get your ad in front of the correct people on all social media platforms. With both paid and lead generation ads, your top-of-funnel marketing efforts will be filled with qualified opportunities. Think of social media ads as a teenage girl. Does anyone care that Stephanie doesn’t have a homecoming date? Of course not, but get the post in front of the perfect audience at the appropriate time, and she just might generate some leads."] }, { number: "five", title: "Facebook Instant Articles", info: ["Instant Articles are a new way to interact with your consumers on Facebook. Loading 10 times faster than normal links, Instant Articles are 20 percent more likely to be read and 70 percent less likely to be abandoned, making adorable puppies the only other thing less likely to abandoned. Relic’s digital team is always on top of new online marketing opportunities, and Instant Articles is one of the latest digital techniques we have seen success with."] }, { number: "six", title: "Display Advertisements", info: ["With the amount of time spent online, web advertising is vital for any business, so let us help you out. Relic uses display ads to effectively communicate your message through graphic design images, rich media, video, audio, flash and more. With our display ads, you’ll get noticed more than Liam Neeson’s fictional children get kidnapped."] }, { number: "seven", title: "Marketing Automation", info: ["You may think that all those emails you get from businesses are spam, but you’re getting them for a reason. They’re effective! Proper marketing automation planning and execution will not only generate leads for your business, it can push leads all the way through your conversion funnel. Marketing automation is also the perfect way to build brand awareness. The more you’re on your audience’s mind, the more likely they are to purchase."] }, { number: "eight", title: "Website Optimization", info: ["Just because you desire a change on your website doesn’t mean you should do it. Our website optimization team will A/B test changes on your website to make sure the site is converting at the highest rate possible. This testing ensures that all images, buttons, copy and other web functions operate properly on all devices. Let data drive the decision making on your website so that you have time to focus on more important things, like how Arie became the next bachelor over Peter when clearly Peter deserved it. Just look at that face."] }, { number: "nine", title: "Reporting & Analytics", info: ["Spend your money where it counts. If you’re going to try the shotgun approach and just throw money at something and hope it works, we would prefer if you throw that money at us. We investigate your target markets and get to know what they like and what they are talking about in order to create an efficient campaign. Our professionals research which ads and posts work the best for your audience through our extensive reporting and analytics.]"] }]
         }, {
             title: 'PR & Content',
             intro: "While certain reality TV stars may have lead you to believe that any press is good press, we vehemently disagree. Public relations exists for the exact opposite reason; we ensure that you and your company are represented in the best possible light. PR is necessary because it will boost credibility in ways advertising simply cannot. Relic’s team specializes in media pitches, press releases, social media, website content and more in order to increase the public awareness of our clients and their unique work and offerings. For more information on Relic’s PR resources, click on any of the tabs below. For less information, click here.",
@@ -2413,5 +2304,115 @@
       controller: 'navCtrl'
     };
   });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/16/2017.
+ */
+(function () {
+    angular.module('app').controller('aboutCtrl', function ($scope, mainService) {
+
+        $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
+
+        $scope.aboutRouterTitle = "Leadership";
+
+        var lastLeader = '',
+            expand = true,
+            backgroundPic = document.getElementById('about-background');
+
+        window.onscroll = function () {
+            var offSet = window.pageYOffset,
+                csParaStart = offSet * 0.5050505050505050;
+
+            mainService.navBackground(offSet);
+            mainService.parallaxIt(backgroundPic, csParaStart);
+        };
+
+        $scope.changeAboutRoute = function (route) {
+
+            if (route === 'story') {
+
+                TweenMax.to(document.getElementById('about-leadership'), 0.35, {
+                    backgroundColor: "rgba(0,0,0,1)"
+                });
+                TweenMax.to(document.getElementById('about-story'), 0.35, {
+                    backgroundColor: "rgba(255,255,255,1)"
+                });
+
+                TweenMax.to(document.getElementById('about-route-story'), 0.25, {
+                    ease: Power2.easeIn,
+                    display: "inline"
+                });
+                TweenMax.to(document.getElementById('about-route-leadership'), 0.25, {
+                    ease: Power2.easeOut,
+                    display: "none"
+                });
+            }
+
+            if (route === 'leadership') {
+
+                TweenMax.to(document.getElementById('about-leadership'), 0.35, {
+                    backgroundColor: "rgba(255,255,255,1)"
+
+                });
+                TweenMax.to(document.getElementById('about-story'), 0.35, {
+                    backgroundColor: "rgba(0,0,0,1)"
+                });
+
+                TweenMax.to(document.getElementById('about-route-leadership'), 0.25, {
+                    ease: Power2.easeIn,
+                    display: "inline"
+                });
+                TweenMax.to(document.getElementById('about-route-story'), 0.25, {
+                    ease: Power2.easeOut,
+                    display: "none"
+                });
+            }
+        };
+
+        var shrinkTheLeader = "";
+
+        $scope.expandLeader = function (leader) {
+
+            var leaderDiv = document.getElementById('leader-' + leader),
+                leaderAbout = document.getElementById('leader-about-' + leader),
+                shrinkLeader = document.getElementById('leader-' + shrinkTheLeader),
+                shrinkLeaderAbout = document.getElementById('leader-about-' + shrinkTheLeader);
+
+            if (leaderDiv.style.height === "auto") {
+                TweenMax.to(leaderDiv, 0.25, {
+                    ease: Power2.easeIn,
+                    height: '200px'
+                });
+                TweenMax.to(leaderAbout, 0.10, {
+                    opacity: 0,
+                    ease: Power2.easeIn
+                });
+
+                return 0;
+            }if (shrinkTheLeader !== leader && shrinkTheLeader !== "") {
+                TweenMax.to(shrinkLeader, 0.25, {
+                    ease: Power2.easeIn,
+                    height: '200px'
+                });
+                TweenMax.to(shrinkLeaderAbout, 0.10, {
+                    opacity: 0,
+                    ease: Power2.easeIn
+                });
+            }
+
+            TweenMax.to(leaderDiv, 0.5, {
+                ease: Power2.easeIn,
+                height: 'auto'
+            });
+            TweenMax.to(leaderAbout, 0.10, {
+                opacity: 1,
+                ease: Power2.easeIn
+            });
+
+            shrinkTheLeader = leader;
+        };
+    });
 })();
 //# sourceMappingURL=maps/bundle.js.map

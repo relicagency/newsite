@@ -2972,14 +2972,12 @@ nav {
   nav .drop-down-item {
     height: 50px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 1px;
     cursor: pointer; }
-  nav .drop-down-item:hover {
-    opacity: 1; }
   nav .cta-button {
     color: white;
     text-transform: none;
@@ -3004,7 +3002,6 @@ nav {
   z-index: 20;
   height: 22px;
   width: 27px;
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;

@@ -62,7 +62,7 @@
 
             $scope.dropDownHoverLeave = function(num){
                 TweenMax.to(document.getElementById('drop-down-item-' + num), 0.15, {
-                    backgroundColor: "rgba(255,255,255,0.8)",
+                    backgroundColor: "rgba(255,255,255,0.9)",
                     color: "#242424"
                 })
             };

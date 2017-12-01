@@ -701,6 +701,46 @@
     width: 115vw;
     margin: 50px 0 50px 0; } }
 
+.cms-main-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1000000;
+  margin: 0 0 -500px 0; }
+
+.cms-top-bar {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background-color: #161616;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1100000; }
+
+.cms-nav-logo {
+  position: relative;
+  height: 60px;
+  margin: 0 0 0 300px; }
+
+.cms-nav-text {
+  position: relative;
+  font-size: 30px;
+  font-family: 'Rogan-MediumItalic', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 0 0 10px; }
+
+.cms-main-content {
+  position: relative;
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #95989a; }
+
 .contact-main-container {
   position: relative;
   width: 100%;

@@ -398,9 +398,9 @@
 'use strict';
 
 (function () {
-  angular.module('app', ['ui.router', 'vcRecaptcha']).run(['$rootScope', '$window', scrollFix]).config(['$stateProvider', '$urlRouterProvider', config]);
+  angular.module('app', ['ui.router', 'auth0', 'angular-auth0', 'vcRecaptcha']).run(['$rootScope', '$window', scrollFix]).config(['$stateProvider', '$urlRouterProvider', 'angularAuth0Provider', config]);
 
-  function config($stateProvider, $urlRouterProvider) {
+  function config($stateProvider, $urlRouterProvider, angularAuth0Provider, $locationProvider) {
     $stateProvider.state('home', {
       url: '/home',
       controller: 'homeCtrl',
@@ -529,10 +529,32 @@
       url: "/work/numetric",
       controller: "numetricCtrl",
       templateUrl: "./components/numetric/numetric.html"
+    }).state('cms', {
+      url: "/cms",
+      controller: "cmsCtrl",
+      templateUrl: "./cms/cms.html"
+    });
+
+    angularAuth0Provider.init({
+      clientID: 'Gp0QmQXJOrjk2x4-Socon3puBaFUcTEk', // Your Default Client ID
+      domain: 'relic-agency.auth0.com', // Your Auth0 Domain
+      responseType: 'token id_token',
+      redirectUri: AUTH0_CALLBACK_URL, // Your Callback URL
+      audience: AUTH0_API_AUDIENCE // The API Identifier value you gave your API
+    }, auth0lock);
+
+    // Configure a tokenGetter so that the isAuthenticated
+    // method from angular-jwt can be used
+    jwtOptionsProvider.config({
+      tokenGetter: function tokenGetter() {
+        return localStorage.getItem('id_token');
+      }
     });
 
     $urlRouterProvider.otherwise('/home');
   }
+
+  $locationProvider.hashPrefix('');
 
   function scrollFix($rootScope, $window) {
     $rootScope.$on('$stateChangeSuccess', function () {
@@ -612,6 +634,79 @@
 
         this.navGetStarted = function () {
             this.navStarted = !this.navStarted;
+        };
+    });
+})();
+'use strict';
+
+var AUTH0_CLIENT_ID = 'Gp0QmQXJOrjk2x4-Socon3puBaFUcTEk';
+var AUTH0_DOMAIN = 'relic-agency.auth0.com';
+var AUTH0_CALLBACK_URL = location.href;
+'use strict';
+
+(function () {
+        angular.module('app').controller('cmsCtrl', function ($scope, cmsService) {
+
+                var vm = this;
+                vm.auth = cmsService;
+
+                $scope.login = function () {
+                        vm.auth.login();
+                };
+        });
+})();
+'use strict';
+
+(function () {
+    angular.module('app').service('cmsService', function ($http, $state, angularAuth0, $timeout) {
+
+        function login() {
+            angularAuth0.authorize();
+        }
+
+        function handleAuthentication() {
+            angularAuth0.parseHash(function (err, authResult) {
+                if (authResult && authResult.accessToken && authResult.idToken) {
+                    setSession(authResult);
+                    $state.go('home');
+                } else if (err) {
+                    $timeout(function () {
+                        $state.go('home');
+                    });
+                    console.log(err);
+                    alert('Error: ' + err.error + '. Check the console for further details.');
+                }
+            });
+        }
+
+        function setSession(authResult) {
+            // Set the time that the access token will expire at
+            var expiresAt = JSON.stringify(authResult.expiresIn * 1000 + new Date().getTime());
+            localStorage.setItem('access_token', authResult.accessToken);
+            localStorage.setItem('id_token', authResult.idToken);
+            localStorage.setItem('expires_at', expiresAt);
+        }
+
+        function logout() {
+            // Remove tokens and expiry time from localStorage
+            localStorage.removeItem('access_token');
+            localStorage.removeItem('id_token');
+            localStorage.removeItem('expires_at');
+            $state.go('home');
+        }
+
+        function isAuthenticated() {
+            // Check whether the current time is past the
+            // access token's expiry time
+            var expiresAt = JSON.parse(localStorage.getItem('expires_at'));
+            return new Date().getTime() < expiresAt;
+        }
+
+        return {
+            login: login,
+            handleAuthentication: handleAuthentication,
+            logout: logout,
+            isAuthenticated: isAuthenticated
         };
     });
 })();

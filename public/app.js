@@ -1,11 +1,11 @@
 (function(){
   angular
-  .module('app', ['ui.router', 'vcRecaptcha'])
+  .module('app', ['ui.router', 'auth0','angular-auth0', 'vcRecaptcha'])
       .run(['$rootScope', '$window', scrollFix])
-  .config(['$stateProvider', '$urlRouterProvider', config]);
+  .config(['$stateProvider', '$urlRouterProvider', 'angularAuth0Provider', config]);
 
 
-  function config($stateProvider, $urlRouterProvider){
+  function config($stateProvider, $urlRouterProvider, angularAuth0Provider, $locationProvider){
     $stateProvider
       .state('home', {
         url: '/home',
@@ -166,12 +166,35 @@
             url: "/work/numetric",
             controller: "numetricCtrl",
             templateUrl: "./components/numetric/numetric.html"
+        })
+        .state('cms', {
+            url: "/cms",
+            controller: "cmsCtrl",
+            templateUrl: "./cms/cms.html"
         });
+
+      angularAuth0Provider.init({
+          clientID: 'Gp0QmQXJOrjk2x4-Socon3puBaFUcTEk', // Your Default Client ID
+          domain: 'relic-agency.auth0.com', // Your Auth0 Domain
+          responseType: 'token id_token',
+          redirectUri: AUTH0_CALLBACK_URL, // Your Callback URL
+          audience: AUTH0_API_AUDIENCE, // The API Identifier value you gave your API
+      }, auth0lock);
+
+      // Configure a tokenGetter so that the isAuthenticated
+      // method from angular-jwt can be used
+      jwtOptionsProvider.config({
+          tokenGetter: function() {
+              return localStorage.getItem('id_token');
+          }
+      });
 
     
     $urlRouterProvider
       .otherwise('/home');
   }
+
+    $locationProvider.hashPrefix('');
 
   function scrollFix($rootScope, $window){
     $rootScope.$on('$stateChangeSuccess', function(){

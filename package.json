@@ -2,11 +2,10 @@
   "name": "newsite",
   "version": "1.0.0",
   "description": "Relic 2.0",
-  "main": "./server/index.js",
+  "main": "server/index.js",
   "scripts": {
     "start": "nodemon server/index.js",
     "gulp": "gulp"
-    //"postinstall": "gulp default"
   },
   "repository": {
     "type": "git",

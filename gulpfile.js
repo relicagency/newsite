@@ -57,7 +57,7 @@ gulp.task('watch', () => {
   gulp.watch(paths.app_CSS, ['build-css']);
   gulp.watch(paths.app_HTML, ['build-html']);
   gulp.watch(paths.images, ['copy-images']);
-  gulp.watch(path.app_FONTS, ['build-fonts']);
+  gulp.watch(paths.app_FONTS, ['build-fonts']);
 });
 
 gulp.task('default', [
@@ -68,12 +68,3 @@ gulp.task('default', [
   'build-fonts',
   'watch'
 ]);
-
-//gulp.task('dev', [
-//     'build-css',
-//     'build-js',
-//     'build-html',
-//     'copy-images',
-//     'build-fonts',
-//     'watch'
-// ]);

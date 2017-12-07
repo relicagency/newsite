@@ -10,8 +10,8 @@ const cachebust = new CacheBuster();
 
 const paths = {
   app_JS: ['public/**/*.js'],
-  app_CSS: ['public/styles**/*.*css'],
-    app_FONTS: ['public/styles/webfonts/*.*'],
+  app_CSS: ['public/styles/*.*css'],
+  app_FONTS: ['public/styles/webfonts/*.*'],
   app_HTML: ['public/**/*.html'],
   images: ['public/images/**/*.*']
 };
@@ -65,14 +65,15 @@ gulp.task('default', [
   'build-js',
   'build-html',
   'copy-images',
-    'build-fonts'
+  'build-fonts',
+  'watch'
 ]);
 
-gulp.task('dev', [
-    'build-css',
-    'build-js',
-    'build-html',
-    'copy-images',
-    'build-fonts',
-    'watch'
-]);
+//gulp.task('dev', [
+//     'build-css',
+//     'build-js',
+//     'build-html',
+//     'copy-images',
+//     'build-fonts',
+//     'watch'
+// ]);

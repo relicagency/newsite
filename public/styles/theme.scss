@@ -2,6 +2,15 @@
 
 body {
   background-color: black;
+  font-family: 'Rogan-Light', sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-family: 'Rogan-Regular', sans-serif;
+  font-size: 52px;
 }
 
 h2 {
@@ -11,6 +20,87 @@ h2 {
   color: white;
   text-align: center;
   text-transform: uppercase;
+}
+
+p {
+  font-family: 'Rogan-Light', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+.main-container {
+  width: 100%;
+  background-color: #161616;
+}
+
+.page-main-content {
+  padding-top: 90px;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.page-title {
+  padding: 90px 0 125px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.page-subtitle {
+  font-size: 26px;
+  color: #BD9A35;
+  padding: 60px 0;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.page-intro {
+  border-top: 15px solid #D0D0D0;
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.intro-logo {
+  height: 130px;
+  flex: 1 1 25%;
+}
+
+.intro-text {
+  flex: 1 1 75%;
+  box-sizing: border-box;
+  padding: 100px 40px;
+}
+
+.page-content {
+  position: relative;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-top: 2px;
+}
+
+.content-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 18px;
+  color: #727272;
+}
+
+.dark-back {
+  background: rgba(0,0,0,0.7);
+}
+
+.black-back {
+  background: #000000;
+}
+
+.full-width-pic, .full-width-vid {
+  width: 100%;
 }
 
 .massive-text {

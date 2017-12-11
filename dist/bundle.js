@@ -398,169 +398,169 @@
 'use strict';
 
 (function () {
-  angular.module('app', ['ui.router', 'auth0', 'angular-auth0', 'vcRecaptcha']).run(['$rootScope', '$window', scrollFix]).config(['$stateProvider', '$urlRouterProvider', 'angularAuth0Provider', config]);
+    angular.module('app', ['ui.router', 'vcRecaptcha']).run(['$rootScope', '$window', scrollFix]).config(['$stateProvider', '$urlRouterProvider', config]);
 
-  function config($stateProvider, $urlRouterProvider, angularAuth0Provider, $locationProvider) {
-    $stateProvider.state('home', {
-      url: '/home',
-      controller: 'homeCtrl',
-      templateUrl: './components/home/home.html'
-    }).state('expertise', {
-      url: '/expertise',
-      controller: 'expertiseCtrl',
-      templateUrl: './components/expertise/expertise.html'
-    }).state('services', {
-      url: '/services/:num',
-      controller: 'servicesCtrl',
-      templateUrl: './components/services/services.html'
-    }).state('contact', {
-      url: '/contact',
-      controller: 'contactCtrl',
-      templateUrl: './components/contact/contact.html'
-    }).state('about', {
-      url: '/about',
-      controller: 'aboutCtrl',
-      templateUrl: './components/about/about.html'
-    }).state('tourism', {
-      url: '/expertise/tourism',
-      controller: 'tourismCtrl',
-      templateUrl: './components/tourism/tourism.html'
-    }).state('telecom', {
-      url: '/expertise/telecom',
-      controller: 'telecomCtrl',
-      templateUrl: './components/telecom/telecom.html'
-    }).state('tech', {
-      url: '/expertise/tech',
-      controller: 'techCtrl',
-      templateUrl: './components/tech/tech.html'
-    }).state('demandgen', {
-      url: '/expertise/demandgen',
-      controller: 'demandgenCtrl',
-      templateUrl: './components/demandgen/demandgen.html'
-    }).state('newsroom', {
-      url: '/newsroom',
-      controller: 'newsroomCtrl',
-      templateUrl: './components/newsroom/newsroom.html'
-    }).state('work', {
-      url: '/work',
-      controller: 'workCtrl',
-      templateUrl: './components/work/work.html'
-    }).state('tds', {
-      url: '/work/tds',
-      controller: 'tdsCtrl',
-      templateUrl: './components/tds/tds.html'
-    }).state('garfield', {
-      url: "/work/garfield",
-      controller: 'garfieldCtrl',
-      templateUrl: './components/garfield/garfield.html'
-    }).state('tuacahn', {
-      url: "/work/tuacahn",
-      controller: 'tuacCtrl',
-      templateUrl: './components/tuacahn/tuacahn.html'
-    }).state('uintah', {
-      url: "/work/uintah",
-      controller: 'uintahCtrl',
-      templateUrl: './components/uintah/uintah.html'
-    }).state('uvhba', {
-      url: "/work/uvhba",
-      controller: 'uvhbaCtrl',
-      templateUrl: './components/uvhba/uvhba.html'
-    }).state('maxxsouth', {
-      url: "/work/maxxsouth",
-      controller: "maxxsouthCtrl",
-      templateUrl: "./components/maxxsouth/maxxsouth.html"
-    }).state('moab', {
-      url: "/work/moab",
-      controller: 'moabCtrl',
-      templateUrl: "./components/moab/moab.html"
-    }).state('zerorez', {
-      url: "/work/zerorez",
-      controller: "zerorezCtrl",
-      templateUrl: "./components/zerorez/zerorez.html"
-    }).state('workfront', {
-      url: "/work/workfront",
-      controller: "wfrontCtrl",
-      templateUrl: "./components/workfront/workfront.html"
-    }).state('us', {
-      url: "/work/us",
-      controller: "usCtrl",
-      templateUrl: "./components/us/us.html"
-    }).state('brio', {
-      url: "/work/brio",
-      controller: "brioCtrl",
-      templateUrl: "./components/brio/brio.html"
-    }).state('ccbh', {
-      url: "/work/ccbh",
-      controller: "ccbhCtrl",
-      templateUrl: "./components/ccbh/ccbh.html"
-    }).state('beehive', {
-      url: "/work/beehive",
-      controller: "beehiveCtrl",
-      templateUrl: "./components/beehive/beehive.html"
-    }).state('rubys', {
-      url: "/work/rubys",
-      controller: "rubysCtrl",
-      templateUrl: "./components/rubys/rubys.html"
-    }).state('creef', {
-      url: "/work/creef",
-      controller: "creefCtrl",
-      templateUrl: "./components/creef/creef.html"
-    }).state('b2scapes', {
-      url: "/work/b2scapes",
-      controller: "b2Ctrl",
-      templateUrl: "./components/b2scapes/b2scapes.html"
-    }).state('branding', {
-      url: "/work/branding",
-      controller: "brandingCtrl",
-      templateUrl: "./components/branding/branding.html"
-    }).state('inmoment', {
-      url: "/work/inmoment",
-      controller: "inMomentCtrl",
-      templateUrl: "./components/inmoment/inmoment.html"
-    }).state('bamboohr', {
-      url: "/work/bamboohr",
-      controller: "bambooHrCtrl",
-      templateUrl: "./components/bamboohr/bamboohr.html"
-    }).state('jive', {
-      url: "/work/jive",
-      controller: "jiveCtrl",
-      templateUrl: "./components/jive/jive.html"
-    }).state('numetric', {
-      url: "/work/numetric",
-      controller: "numetricCtrl",
-      templateUrl: "./components/numetric/numetric.html"
-    }).state('cms', {
-      url: "/cms",
-      controller: "cmsCtrl",
-      templateUrl: "./cms/cms.html"
-    });
+    config.$inject = ['$stateProvider', '$locationProvider', '$urlRouterProvider'
+    // 'angularAuth0Provider'
+    ];
 
-    angularAuth0Provider.init({
-      clientID: 'Gp0QmQXJOrjk2x4-Socon3puBaFUcTEk', // Your Default Client ID
-      domain: 'relic-agency.auth0.com', // Your Auth0 Domain
-      responseType: 'token id_token',
-      redirectUri: AUTH0_CALLBACK_URL, // Your Callback URL
-      audience: AUTH0_API_AUDIENCE // The API Identifier value you gave your API
-    }, auth0lock);
+    // angularAuth0Provider, 'auth0.auth0',
 
-    // Configure a tokenGetter so that the isAuthenticated
-    // method from angular-jwt can be used
-    jwtOptionsProvider.config({
-      tokenGetter: function tokenGetter() {
-        return localStorage.getItem('id_token');
-      }
-    });
+    function config($stateProvider, $urlRouterProvider, $locationProvider) {
+        $stateProvider.state('home', {
+            url: '/home',
+            controller: 'homeCtrl',
+            templateUrl: './components/home/home.html'
+        }).state('expertise', {
+            url: '/expertise',
+            controller: 'expertiseCtrl',
+            templateUrl: './components/expertise/expertise.html'
+        }).state('services', {
+            url: '/services/:num',
+            controller: 'servicesCtrl',
+            templateUrl: './components/services/services.html'
+        }).state('contact', {
+            url: '/contact',
+            controller: 'contactCtrl',
+            templateUrl: './components/contact/contact.html'
+        }).state('about', {
+            url: '/about',
+            controller: 'aboutCtrl',
+            templateUrl: './components/about/about.html'
+        }).state('tourism', {
+            url: '/expertise/tourism',
+            controller: 'tourismCtrl',
+            templateUrl: './components/tourism/tourism.html'
+        }).state('telecom', {
+            url: '/expertise/telecom',
+            controller: 'telecomCtrl',
+            templateUrl: './components/telecom/telecom.html'
+        }).state('tech', {
+            url: '/expertise/tech',
+            controller: 'techCtrl',
+            templateUrl: './components/tech/tech.html'
+        }).state('demandgen', {
+            url: '/expertise/demandgen',
+            controller: 'demandgenCtrl',
+            templateUrl: './components/demandgen/demandgen.html'
+        }).state('newsroom', {
+            url: '/newsroom',
+            controller: 'newsroomCtrl',
+            templateUrl: './components/newsroom/newsroom.html'
+        }).state('work', {
+            url: '/work',
+            controller: 'workCtrl',
+            templateUrl: './components/work/work.html'
+        }).state('tds', {
+            url: '/work/tds',
+            controller: 'tdsCtrl',
+            templateUrl: './components/tds/tds.html'
+        }).state('garfield', {
+            url: "/work/garfield",
+            controller: 'garfieldCtrl',
+            templateUrl: './components/garfield/garfield.html'
+        }).state('tuacahn', {
+            url: "/work/tuacahn",
+            controller: 'tuacCtrl',
+            templateUrl: './components/tuacahn/tuacahn.html'
+        }).state('uintah', {
+            url: "/work/uintah",
+            controller: 'uintahCtrl',
+            templateUrl: './components/uintah/uintah.html'
+        }).state('uvhba', {
+            url: "/work/uvhba",
+            controller: 'uvhbaCtrl',
+            templateUrl: './components/uvhba/uvhba.html'
+        }).state('maxxsouth', {
+            url: "/work/maxxsouth",
+            controller: "maxxsouthCtrl",
+            templateUrl: "./components/maxxsouth/maxxsouth.html"
+        }).state('moab', {
+            url: "/work/moab",
+            controller: 'moabCtrl',
+            templateUrl: "./components/moab/moab.html"
+        }).state('zerorez', {
+            url: "/work/zerorez",
+            controller: "zerorezCtrl",
+            templateUrl: "./components/zerorez/zerorez.html"
+        }).state('workfront', {
+            url: "/work/workfront",
+            controller: "wfrontCtrl",
+            templateUrl: "./components/workfront/workfront.html"
+        }).state('us', {
+            url: "/work/us",
+            controller: "usCtrl",
+            templateUrl: "./components/us/us.html"
+        }).state('brio', {
+            url: "/work/brio",
+            controller: "brioCtrl",
+            templateUrl: "./components/brio/brio.html"
+        }).state('ccbh', {
+            url: "/work/ccbh",
+            controller: "ccbhCtrl",
+            templateUrl: "./components/ccbh/ccbh.html"
+        }).state('beehive', {
+            url: "/work/beehive",
+            controller: "beehiveCtrl",
+            templateUrl: "./components/beehive/beehive.html"
+        }).state('rubys', {
+            url: "/work/rubys",
+            controller: "rubysCtrl",
+            templateUrl: "./components/rubys/rubys.html"
+        }).state('creef', {
+            url: "/work/creef",
+            controller: "creefCtrl",
+            templateUrl: "./components/creef/creef.html"
+        }).state('b2scapes', {
+            url: "/work/b2scapes",
+            controller: "b2Ctrl",
+            templateUrl: "./components/b2scapes/b2scapes.html"
+        }).state('branding', {
+            url: "/work/branding",
+            controller: "brandingCtrl",
+            templateUrl: "./components/branding/branding.html"
+        }).state('inmoment', {
+            url: "/work/inmoment",
+            controller: "inMomentCtrl",
+            templateUrl: "./components/inmoment/inmoment.html"
+        }).state('bamboohr', {
+            url: "/work/bamboohr",
+            controller: "bambooHrCtrl",
+            templateUrl: "./components/bamboohr/bamboohr.html"
+        }).state('jive', {
+            url: "/work/jive",
+            controller: "jiveCtrl",
+            templateUrl: "./components/jive/jive.html"
+        }).state('numetric', {
+            url: "/work/numetric",
+            controller: "numetricCtrl",
+            templateUrl: "./components/numetric/numetric.html"
+        });
+        // .state('cms', {
+        //     url: "/cms",
+        //     controller: "cmsCtrl",
+        //     templateUrl: "./cms/cms.html",
+        //     controllerAs: "vm"
+        // });
 
-    $urlRouterProvider.otherwise('/home');
-  }
+        // angularAuth0Provider.init({
+        //     clientID: 'Gp0QmQXJOrjk2x4-Socon3puBaFUcTEk',
+        //     domain: 'relic-agency.auth0.com',
+        //     responseType: 'token id_token',
+        //     audience: 'https://relic-agency.auth0.com/userinfo',
+        //     redirectUri: location.href,
+        //     scope: 'openid'
+        // });
 
-  $locationProvider.hashPrefix('');
+        $urlRouterProvider.otherwise('/home');
 
-  function scrollFix($rootScope, $window) {
-    $rootScope.$on('$stateChangeSuccess', function () {
-      $window.scrollTo(0, 0);
-    });
-  }
+        $locationProvider.hashPrefix('');
+    }
+    function scrollFix($rootScope, $window) {
+        $rootScope.$on('$stateChangeSuccess', function () {
+            $window.scrollTo(0, 0);
+        });
+    }
 })();
 'use strict';
 
@@ -637,78 +637,487 @@
         };
     });
 })();
+// (function(){
+//     angular.module('app').controller('cmsCtrl', function($scope, auth, $state){
+//
+//         auth.signin({
+//             popup: true,
+//             chrome: true,
+//             standalone: true
+//         }, function(){
+//             $state.go('cms');
+//         }, function(error){
+//             console.log("There was an error: ", error);
+//         });
+//
+// })
+//
+// })();
+"use strict";
+// (function() {
+//     angular.module('app').service('cmsService', function ($http, $state, angularAuth0, $timeout  ) {
+//
+//         function login() {
+//             angularAuth0.authorize();
+//         }
+//
+//         return {
+//             login: login
+//         }
+//     }
+//
+//     })
+//
+// })();
+"use strict";
 'use strict';
 
-var AUTH0_CLIENT_ID = 'Gp0QmQXJOrjk2x4-Socon3puBaFUcTEk';
-var AUTH0_DOMAIN = 'relic-agency.auth0.com';
-var AUTH0_CALLBACK_URL = location.href;
-'use strict';
-
+/**
+ * Created by Seth on 8/9/2017.
+ */
 (function () {
-        angular.module('app').controller('cmsCtrl', function ($scope, cmsService) {
 
-                var vm = this;
-                vm.auth = cmsService;
-
-                $scope.login = function () {
-                        vm.auth.login();
-                };
-        });
+    angular.module('app').directive('footerDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/footer/footer.html',
+            controller: 'footerCtrl'
+        };
+    });
 })();
 'use strict';
 
 (function () {
-    angular.module('app').service('cmsService', function ($http, $state, angularAuth0, $timeout) {
+    angular.module('app').controller('footerCtrl', function ($scope) {
 
-        function login() {
-            angularAuth0.authorize();
-        }
-
-        function handleAuthentication() {
-            angularAuth0.parseHash(function (err, authResult) {
-                if (authResult && authResult.accessToken && authResult.idToken) {
-                    setSession(authResult);
-                    $state.go('home');
-                } else if (err) {
-                    $timeout(function () {
-                        $state.go('home');
-                    });
-                    console.log(err);
-                    alert('Error: ' + err.error + '. Check the console for further details.');
-                }
-            });
-        }
-
-        function setSession(authResult) {
-            // Set the time that the access token will expire at
-            var expiresAt = JSON.stringify(authResult.expiresIn * 1000 + new Date().getTime());
-            localStorage.setItem('access_token', authResult.accessToken);
-            localStorage.setItem('id_token', authResult.idToken);
-            localStorage.setItem('expires_at', expiresAt);
-        }
-
-        function logout() {
-            // Remove tokens and expiry time from localStorage
-            localStorage.removeItem('access_token');
-            localStorage.removeItem('id_token');
-            localStorage.removeItem('expires_at');
-            $state.go('home');
-        }
-
-        function isAuthenticated() {
-            // Check whether the current time is past the
-            // access token's expiry time
-            var expiresAt = JSON.parse(localStorage.getItem('expires_at'));
-            return new Date().getTime() < expiresAt;
-        }
-
-        return {
-            login: login,
-            handleAuthentication: handleAuthentication,
-            logout: logout,
-            isAuthenticated: isAuthenticated
+        $scope.footerSocialHover = function (social) {
+            TweenMax.to(document.getElementById('footer-social-' + social), 1, { fill: "white" });
         };
     });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/23/2017.
+ */
+(function () {
+    angular.module('app').directive('getStartedDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/get-started/getStarted.html',
+            controller: 'getStartedCtrl'
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/23/2017.
+ */
+(function () {
+    angular.module('app').controller('getStartedCtrl', function ($scope, $state, $timeout, mainService, vcRecaptchaService) {
+
+        $rootScope.$on('$stateChangeStart', function () {
+
+            if (window.location.href.indexOf('tourism') > -1) {
+                $scope.ctaText = "Looking to bring more visitors to you area?";
+            }if (window.location.href.indexOf('demandgen') > -1) {
+                $scope.ctaText = "Looking for demand gen help?";
+            } else {
+                $scope.ctaText = "Learn how we can help you.";
+            }
+        });
+
+        var mainPop = document.getElementById('cta-pop-up'),
+            barFive = document.getElementById('get-started-animation-five'),
+            barSix = document.getElementById('get-started-animation-six'),
+            barSeven = document.getElementById('get-started-animation-seven');
+
+        $scope.ctaShow = function () {
+
+            if (window.innerWidth < 426) {
+                $state.go('contact');
+                return;
+            }
+
+            var tl = new TimelineMax();
+            tl.to(mainPop, 0.5, { ease: Power2.easeIn, left: 0 }).to(barFive, 0.15, { left: 0 }, "+=0.5").to(barSix, 0.15, { right: 0 }).to(barSeven, 0.15, { left: 0 }).to(barSix, 0.15, { left: "101%" }, "-=0.15");
+        };
+
+        $scope.ctaHide = function () {
+            var tl = new TimelineMax();
+            tl.to(barSeven, 0.15, { left: "101%" }).to(barSix, 0.15, { left: 0 }, "-=0.15").to(barFive, 0.15, { left: "101%" }).to(barSix, 0.15, { left: '-100%' }, "-=0.15").to(mainPop, 0.5, { ease: Power2.easeIn, left: "-101%" });
+        };
+
+        $scope.response = null;
+        $scope.widgetId = null;
+        $scope.model = {
+            key: '6LfjNi0UAAAAABBsQ1W4gywWWmj8ZM5re4bf5Gcz'
+        };
+        $scope.setResponse = function (response) {
+            console.info('Response available');
+            $scope.response = response;
+        };
+        $scope.setWidgetId = function (widgetId) {
+            console.info('Created widget ID: %s', widgetId);
+            $scope.widgetId = widgetId;
+        };
+        $scope.cbExpiration = function () {
+            console.info('Captcha expired. Resetting response object');
+            vcRecaptchaService.reload($scope.widgetId);
+            $scope.response = null;
+        };
+
+        $scope.contactRelic = function (contact) {
+
+            console.log('sending the captcha response to the server', $scope.response);
+
+            mainService.verifyCaptcha($scope.response).then(function (res) {
+
+                console.log(res.data.success);
+
+                if (res.data.success) {
+
+                    console.log('Google has verified the user.');
+
+                    mainService.contactRelic(contact).then(function (response) {
+                        console.log(response);
+                        if (response.status === 200) {
+                            $scope.formStatus = "Awesome!  Looks like your message went through.  We\'ll be in touch with you as soon as possible.";
+                            TweenMax.to(document.getElementById('get-started-form-status-message'), 0.15, {
+                                display: "flex",
+                                ease: Power2.easeIn
+                            });
+                        }
+                    });
+                }if (!res.data.success) {
+                    console.log('Failed validation');
+                    // In case of a failed validation you need to reload the captcha
+                    // because each response can be checked just once
+                    vcRecaptchaService.reload($scope.widgetId);
+                    alert('Sorry, we couldn\'t verify you, please try again.');
+                }
+            });
+        };
+
+        $scope.exitFormStatus = function (contact) {
+
+            TweenMax.to(document.getElementById('get-started-form-status-message'), 0.15, {
+                display: "none",
+                ease: Power2.easeOut
+            });
+
+            for (var i in contact) {
+                contact[i] = null;
+            }
+            vcRecaptchaService.reload($scope.widgetId);
+        };
+    });
+})();
+'use strict';
+
+(function () {
+
+    angular.module('app').directive('homeContentDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/home-content/home-content.html',
+            controller: 'homeContentCtrl'
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/9/2017.
+ */
+(function () {
+    angular.module('app').controller('homeContentCtrl', function ($scope) {
+
+        var previousContent = "main-content",
+            previousTop = "",
+            mainContent = document.getElementById('main-content'),
+            services = document.getElementById('services'),
+            work = document.getElementById('work'),
+            articles = document.getElementById('articles'),
+            swnContainer = document.getElementById('swn-container'),
+            swnTopContainer = document.getElementById('swn-top-container'),
+            swnBottomContainer = document.getElementById('swn-bottom-container');
+
+        $scope.switchContent = function (switcher) {
+
+            if (window.innerWidth < 600) {
+
+                console.log('Yo!');
+
+                TweenMax.to(swnContainer, 0.15, {
+                    height: "270vh"
+                });
+                TweenMax.to(swnTopContainer, 0.15, {
+                    height: "10%"
+                });
+            }
+
+            TweenMax.to(document.getElementById("top-" + switcher), 0.5, { backgroundColor: "white", color: '#161616' });
+            if (previousTop !== "" && previousTop !== "top-" + switcher) {
+                TweenMax.to(document.getElementById(previousTop), 0.5, { backgroundColor: '#161616', color: "white" });
+            }
+
+            TweenMax.to(document.getElementById(previousContent), 0, { display: "none" });
+            TweenMax.to(document.getElementById(switcher), 0, { display: 'flex' });
+
+            previousContent = switcher;
+            previousTop = "top-" + switcher;
+        };
+
+        $scope.switcher = function () {
+            TweenMax.to(document.getElementById(previousContent), 0, { display: "none" });
+            TweenMax.to(document.getElementById('main-content'), 0, { display: "flex" }, 0.5);
+            TweenMax.to(document.getElementById(previousTop), 0.25, { backgroundColor: '#161616', color: "white" });
+
+            previousContent = 'main-content';
+            previousTop = "";
+
+            if (window.innerWidth < 600) {
+
+                console.log('Yo mama....');
+
+                TweenMax.to(swnContainer, 0.15, {
+                    height: "30vh"
+                });
+                TweenMax.to(swnTopContainer, 0.15, {
+                    height: "80%"
+                });
+            }
+        };
+
+        $scope.swnContentHover = function (num) {
+
+            if (num === "four") {
+                TweenMax.to(document.getElementById('services-content-' + num), 0.5, { ease: Power2.easeOut, height: "200px", width: "200px" }, 0.25);
+            } else {
+                TweenMax.to(document.getElementById('services-content-' + num), 0.5, { ease: Power2.easeOut, height: "250px", width: "250px" }, 0.25);
+            }
+        };
+
+        $scope.swnContentHoverLeave = function (num) {
+            if (num === "four") {
+                TweenMax.to(document.getElementById('services-content-' + num), 0.25, { ease: Power2.easeOut, height: "175px", width: "175px" });
+            } else {
+                TweenMax.to(document.getElementById('services-content-' + num), 0.25, { ease: Power2.easeOut, height: "225px", width: "225px" });
+            }
+        };
+
+        $scope.clientHover = function (num) {
+            TweenMax.to(document.getElementById('client-image-' + num), 0.05, {
+                height: "225px",
+                width: "225px",
+                ease: Power3.easeOut
+            });
+        };
+        $scope.clientHoverLeave = function (num) {
+            TweenMax.to(document.getElementById('client-image-' + num), 0.25, {
+                height: "200px",
+                width: "200px"
+            });
+        };
+
+        $scope.articleHover = function (num) {
+            TweenMax.to(document.getElementById('article-pic-' + num), 0.5, {
+                height: "225px",
+                width: "225px",
+                ease: Power3.easeOut
+            });
+        };
+        $scope.articleHoverLeave = function (num) {
+            TweenMax.to(document.getElementById('article-pic-' + num), 0.25, {
+                height: "200",
+                width: "200px"
+            });
+        };
+    });
+})();
+'use strict';
+
+/**
+ * Created by Seth on 8/30/2017.
+ */
+(function () {
+
+    angular.module('app').directive('mobileNavDir', function () {
+        return {
+            restrict: 'E',
+            templateUrl: './directives/mobile-nav/mobile-nav.html',
+            controller: 'mobileNavCtrl'
+        };
+    });
+})();
+'use strict';
+
+(function () {
+    angular.module('app').controller('mobileNavCtrl', function ($scope, mainService) {
+
+        var tl = new TimelineMax(),
+            mobileNav = document.getElementById('mobile-nav-popup'),
+            trigger = true,
+            hb1 = document.getElementById('ham-one'),
+            hb2 = document.getElementById('ham-two'),
+            hb3 = document.getElementById('ham-three'),
+            hb4 = document.getElementById('ham-four'),
+            hb5 = document.getElementById('ham-five');
+
+        $scope.exitNav = function (section) {
+            if (trigger) {
+                tl.to(hb1, 0.1, { opacity: 0 }).to(hb2, 0.1, { opacity: 0 }, "-=0.1").to(hb3, 0.1, { opacity: 0 }, "-=0.2").to(hb4, 0.15, { rotation: -45 }).to(hb5, 0.15, { rotation: 45 }, "-=0.15").to(mobileNav, 0.25, { right: 0, ease: Power3.easeIn }, "-=0.15").to(hb4, 0.5, { backgroundColor: "black" }, "-=0.15").to(hb5, 0.5, { backgroundColor: "black" }, "-=0.5").to(hb1, 0.1, { top: "10px" }).to(hb3, 0.1, { bottom: "10px" }, "-=0.1");
+                trigger = false;
+            } else if (!trigger) {
+                tl.to(hb4, 0.1, { opacity: 0, backgroundColor: "white" }).to(hb5, 0.1, { opacity: 0, backgroundColor: "white" }, "-=0.1").to(hb2, 0.1, { opacity: 1, backgroundColor: "white" }).to(hb1, 0.1, { opacity: 1, top: 0, backgroundColor: "white" }).to(hb3, 0.1, { opacity: 1, bottom: 0, backgroundColor: "white" }, "-=0.1").to(mobileNav, 0.25, { right: "-101%", ease: Power2.easeOut }, "-=0.2").to(hb4, 0.01, { rotation: 0 }).to(hb5, 0.01, { rotation: 0 }).to(hb4, 0.01, { opacity: 1 }).to(hb5, 0.01, { opacity: 1 });
+                trigger = true;
+            }
+        };
+    });
+})();
+
+// /**
+//  * Created by Seth on 8/30/2017.
+//  */
+// (function(){
+//     angular.module('app').controller('mobileNavCtrl', function($scope, mainService){
+//
+//         let tl = new TimelineMax(),
+//             mobileNav = document.getElementById('mobile-nav-popup'),
+//             trigger = true,
+//             hamburgerOne = document.getElementById('hamburger-one'),
+//             hamburgerTwo = document.getElementById('hamburger-two'),
+//             hamburgerThree = document.getElementById('hamburger-three');
+//
+//
+//
+//
+//
+//             $scope.exitNav = function(section){
+//
+//                 if( section !== "dont" ) {
+//                     TweenMax.to(document.getElementById('mobile-nav-section-' + section), 0.05, {
+//                         backgroundColor: "rgba(255,255,255,1)",
+//                         ease: Power2.easeIn
+//                     });
+//                 }
+//
+//             if(trigger){
+//                   tl.to(hamburgerTwo, 0.08, {top: "44%", backgroundColor: "#262626"})
+//                     .to(hamburgerOne, 0.08, {top: "47%", backgroundColor: "#262626"})
+//                     .to(hamburgerThree, 0.08, {top: "47%", backgroundColor: "#262626"})
+//                     .to(hamburgerOne, 0, { opacity: 0})
+//                     .to(hamburgerThree, 0.08, {transform: "rotate(45deg)"})
+//                     .to(hamburgerTwo, 0.08, {transform: "rotate(-45deg)"})
+//                     .to(mobileNav, 0.15, {right: 0, ease: Power2.easeIn});
+//             } if(!trigger && section !== "dont") {
+//                       tl.to(hamburgerThree, 0.08, {transform: "rotate(0deg)"})
+//                         .to(hamburgerTwo, 0.08, {transform: "rotate(0deg)"})
+//                         .to(hamburgerThree, 0.08, { top: "86%", backgroundColor: "white"})
+//                         .to(hamburgerOne, 0.08, { opacity: 1, top: 0, backgroundColor: "white"})
+//                         .to(hamburgerTwo, 0.08, { top: "45%", backgroundColor: "white"})
+//                         .to(mobileNav, 0.15, {right: "-101%", ease: Power2.easeOut})
+//                         .to(document.getElementById('mobile-nav-section-' + section), 0, {backgroundColor: "transparent"});
+//             } if(!trigger) {
+//                     tl.to(hamburgerThree, 0.08, {transform: "rotate(0deg)"})
+//                         .to(hamburgerTwo, 0.08, {transform: "rotate(0deg)"})
+//                         .to(hamburgerThree, 0.08, { top: "86%", backgroundColor: "white"})
+//                         .to(hamburgerOne, 0.08, { opacity: 1, top: 0, backgroundColor: "white"})
+//                         .to(hamburgerTwo, 0.08, { top: "44%", backgroundColor: "white"})
+//                         .to(mobileNav, 0.15, {right: "-101%", ease: Power2.easeOut});
+//                 }
+//
+//             trigger = !trigger;
+//         };
+//
+//
+//     })
+// })();
+'use strict';
+
+(function () {
+    angular.module('app').controller('navCtrl', function ($scope) {
+
+        var lastNavTitle = "";
+
+        $scope.routeLighter = function (num) {
+            var title = document.getElementById('nav-item-title-' + num),
+                lastTitle = document.getElementById('nav-item-title-' + lastNavTitle);
+            if (num === "home") {
+                TweenMax.to(lastTitle, 0.15, {
+                    color: "#95989A"
+                });
+                lastNavTitle = "";
+                return;
+            }
+            if (lastNavTitle !== "" && lastNavTitle !== num) {
+                TweenMax.to(lastTitle, 0.15, {
+                    color: "#95989A"
+                });
+            }
+
+            TweenMax.to(title, 0.25, {
+                color: "white"
+            });
+            lastNavTitle = num;
+        };
+
+        $scope.navDropper = function (num) {
+            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
+                ease: Power1.easeIn,
+                display: "flex",
+                opacity: 1,
+                height: "auto"
+            });
+
+            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.4, {
+                color: "#242424"
+            });
+        };
+
+        $scope.navShrinker = function (num) {
+            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
+                color: "transparent"
+            });
+            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
+                ease: Power3.easeIn,
+                opacity: 0,
+                display: "none"
+                //height: 0
+            }, 0.25);
+        };
+
+        $scope.dropDownHover = function (num) {
+            TweenMax.to(document.getElementById('drop-down-item-' + num), 0.25, {
+                backgroundColor: "rgba(255,255,255,1)"
+            });
+        };
+
+        $scope.dropDownHoverLeave = function (num) {
+            TweenMax.to(document.getElementById('drop-down-item-' + num), 0.15, {
+                backgroundColor: "rgba(255,255,255,0.9)",
+                color: "#242424"
+            });
+        };
+
+        $scope.getStarted = function () {
+            mainService.navGetStarted();
+        };
+    });
+})();
+'use strict';
+
+(function () {
+
+  angular.module('app').directive('navDir', function () {
+    return {
+      restrict: 'E',
+      templateUrl: './directives/nav/navTmpl.html',
+      controller: 'navCtrl'
+    };
+  });
 })();
 'use strict';
 
@@ -2063,454 +2472,5 @@ var AUTH0_CALLBACK_URL = location.href;
                                     mainService.parallaxIt(backgroundPic, csParaStart);
                         };
             });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/9/2017.
- */
-(function () {
-
-    angular.module('app').directive('footerDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/footer/footer.html',
-            controller: 'footerCtrl'
-        };
-    });
-})();
-'use strict';
-
-(function () {
-    angular.module('app').controller('footerCtrl', function ($scope) {
-
-        $scope.footerSocialHover = function (social) {
-            TweenMax.to(document.getElementById('footer-social-' + social), 1, { fill: "white" });
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/23/2017.
- */
-(function () {
-    angular.module('app').directive('getStartedDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/get-started/getStarted.html',
-            controller: 'getStartedCtrl'
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/23/2017.
- */
-(function () {
-    angular.module('app').controller('getStartedCtrl', function ($scope, $state, $timeout, mainService, vcRecaptchaService) {
-
-        $rootScope.$on('$stateChangeStart', function () {
-
-            if (window.location.href.indexOf('tourism') > -1) {
-                $scope.ctaText = "Looking to bring more visitors to you area?";
-            }if (window.location.href.indexOf('demandgen') > -1) {
-                $scope.ctaText = "Looking for demand gen help?";
-            } else {
-                $scope.ctaText = "Learn how we can help you.";
-            }
-        });
-
-        var mainPop = document.getElementById('cta-pop-up'),
-            barFive = document.getElementById('get-started-animation-five'),
-            barSix = document.getElementById('get-started-animation-six'),
-            barSeven = document.getElementById('get-started-animation-seven');
-
-        $scope.ctaShow = function () {
-
-            if (window.innerWidth < 426) {
-                $state.go('contact');
-                return;
-            }
-
-            var tl = new TimelineMax();
-            tl.to(mainPop, 0.5, { ease: Power2.easeIn, left: 0 }).to(barFive, 0.15, { left: 0 }, "+=0.5").to(barSix, 0.15, { right: 0 }).to(barSeven, 0.15, { left: 0 }).to(barSix, 0.15, { left: "101%" }, "-=0.15");
-        };
-
-        $scope.ctaHide = function () {
-            var tl = new TimelineMax();
-            tl.to(barSeven, 0.15, { left: "101%" }).to(barSix, 0.15, { left: 0 }, "-=0.15").to(barFive, 0.15, { left: "101%" }).to(barSix, 0.15, { left: '-100%' }, "-=0.15").to(mainPop, 0.5, { ease: Power2.easeIn, left: "-101%" });
-        };
-
-        $scope.response = null;
-        $scope.widgetId = null;
-        $scope.model = {
-            key: '6LfjNi0UAAAAABBsQ1W4gywWWmj8ZM5re4bf5Gcz'
-        };
-        $scope.setResponse = function (response) {
-            console.info('Response available');
-            $scope.response = response;
-        };
-        $scope.setWidgetId = function (widgetId) {
-            console.info('Created widget ID: %s', widgetId);
-            $scope.widgetId = widgetId;
-        };
-        $scope.cbExpiration = function () {
-            console.info('Captcha expired. Resetting response object');
-            vcRecaptchaService.reload($scope.widgetId);
-            $scope.response = null;
-        };
-
-        $scope.contactRelic = function (contact) {
-
-            console.log('sending the captcha response to the server', $scope.response);
-
-            mainService.verifyCaptcha($scope.response).then(function (res) {
-
-                console.log(res.data.success);
-
-                if (res.data.success) {
-
-                    console.log('Google has verified the user.');
-
-                    mainService.contactRelic(contact).then(function (response) {
-                        console.log(response);
-                        if (response.status === 200) {
-                            $scope.formStatus = "Awesome!  Looks like your message went through.  We\'ll be in touch with you as soon as possible.";
-                            TweenMax.to(document.getElementById('get-started-form-status-message'), 0.15, {
-                                display: "flex",
-                                ease: Power2.easeIn
-                            });
-                        }
-                    });
-                }if (!res.data.success) {
-                    console.log('Failed validation');
-                    // In case of a failed validation you need to reload the captcha
-                    // because each response can be checked just once
-                    vcRecaptchaService.reload($scope.widgetId);
-                    alert('Sorry, we couldn\'t verify you, please try again.');
-                }
-            });
-        };
-
-        $scope.exitFormStatus = function (contact) {
-
-            TweenMax.to(document.getElementById('get-started-form-status-message'), 0.15, {
-                display: "none",
-                ease: Power2.easeOut
-            });
-
-            for (var i in contact) {
-                contact[i] = null;
-            }
-            vcRecaptchaService.reload($scope.widgetId);
-        };
-    });
-})();
-'use strict';
-
-(function () {
-
-    angular.module('app').directive('homeContentDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/home-content/home-content.html',
-            controller: 'homeContentCtrl'
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/9/2017.
- */
-(function () {
-    angular.module('app').controller('homeContentCtrl', function ($scope) {
-
-        var previousContent = "main-content",
-            previousTop = "",
-            mainContent = document.getElementById('main-content'),
-            services = document.getElementById('services'),
-            work = document.getElementById('work'),
-            articles = document.getElementById('articles'),
-            swnContainer = document.getElementById('swn-container'),
-            swnTopContainer = document.getElementById('swn-top-container'),
-            swnBottomContainer = document.getElementById('swn-bottom-container');
-
-        $scope.switchContent = function (switcher) {
-
-            if (window.innerWidth < 600) {
-
-                console.log('Yo!');
-
-                TweenMax.to(swnContainer, 0.15, {
-                    height: "270vh"
-                });
-                TweenMax.to(swnTopContainer, 0.15, {
-                    height: "10%"
-                });
-            }
-
-            TweenMax.to(document.getElementById("top-" + switcher), 0.5, { backgroundColor: "white", color: '#161616' });
-            if (previousTop !== "" && previousTop !== "top-" + switcher) {
-                TweenMax.to(document.getElementById(previousTop), 0.5, { backgroundColor: '#161616', color: "white" });
-            }
-
-            TweenMax.to(document.getElementById(previousContent), 0, { display: "none" });
-            TweenMax.to(document.getElementById(switcher), 0, { display: 'flex' });
-
-            previousContent = switcher;
-            previousTop = "top-" + switcher;
-        };
-
-        $scope.switcher = function () {
-            TweenMax.to(document.getElementById(previousContent), 0, { display: "none" });
-            TweenMax.to(document.getElementById('main-content'), 0, { display: "flex" }, 0.5);
-            TweenMax.to(document.getElementById(previousTop), 0.25, { backgroundColor: '#161616', color: "white" });
-
-            previousContent = 'main-content';
-            previousTop = "";
-
-            if (window.innerWidth < 600) {
-
-                console.log('Yo mama....');
-
-                TweenMax.to(swnContainer, 0.15, {
-                    height: "30vh"
-                });
-                TweenMax.to(swnTopContainer, 0.15, {
-                    height: "80%"
-                });
-            }
-        };
-
-        $scope.swnContentHover = function (num) {
-
-            if (num === "four") {
-                TweenMax.to(document.getElementById('services-content-' + num), 0.5, { ease: Power2.easeOut, height: "200px", width: "200px" }, 0.25);
-            } else {
-                TweenMax.to(document.getElementById('services-content-' + num), 0.5, { ease: Power2.easeOut, height: "250px", width: "250px" }, 0.25);
-            }
-        };
-
-        $scope.swnContentHoverLeave = function (num) {
-            if (num === "four") {
-                TweenMax.to(document.getElementById('services-content-' + num), 0.25, { ease: Power2.easeOut, height: "175px", width: "175px" });
-            } else {
-                TweenMax.to(document.getElementById('services-content-' + num), 0.25, { ease: Power2.easeOut, height: "225px", width: "225px" });
-            }
-        };
-
-        $scope.clientHover = function (num) {
-            TweenMax.to(document.getElementById('client-image-' + num), 0.05, {
-                height: "225px",
-                width: "225px",
-                ease: Power3.easeOut
-            });
-        };
-        $scope.clientHoverLeave = function (num) {
-            TweenMax.to(document.getElementById('client-image-' + num), 0.25, {
-                height: "200px",
-                width: "200px"
-            });
-        };
-
-        $scope.articleHover = function (num) {
-            TweenMax.to(document.getElementById('article-pic-' + num), 0.5, {
-                height: "225px",
-                width: "225px",
-                ease: Power3.easeOut
-            });
-        };
-        $scope.articleHoverLeave = function (num) {
-            TweenMax.to(document.getElementById('article-pic-' + num), 0.25, {
-                height: "200",
-                width: "200px"
-            });
-        };
-    });
-})();
-'use strict';
-
-/**
- * Created by Seth on 8/30/2017.
- */
-(function () {
-
-    angular.module('app').directive('mobileNavDir', function () {
-        return {
-            restrict: 'E',
-            templateUrl: './directives/mobile-nav/mobile-nav.html',
-            controller: 'mobileNavCtrl'
-        };
-    });
-})();
-'use strict';
-
-(function () {
-    angular.module('app').controller('mobileNavCtrl', function ($scope, mainService) {
-
-        var tl = new TimelineMax(),
-            mobileNav = document.getElementById('mobile-nav-popup'),
-            trigger = true,
-            hb1 = document.getElementById('ham-one'),
-            hb2 = document.getElementById('ham-two'),
-            hb3 = document.getElementById('ham-three'),
-            hb4 = document.getElementById('ham-four'),
-            hb5 = document.getElementById('ham-five');
-
-        $scope.exitNav = function (section) {
-            if (trigger) {
-                tl.to(hb1, 0.1, { opacity: 0 }).to(hb2, 0.1, { opacity: 0 }, "-=0.1").to(hb3, 0.1, { opacity: 0 }, "-=0.2").to(hb4, 0.15, { rotation: -45 }).to(hb5, 0.15, { rotation: 45 }, "-=0.15").to(mobileNav, 0.25, { right: 0, ease: Power3.easeIn }, "-=0.15").to(hb4, 0.5, { backgroundColor: "black" }, "-=0.15").to(hb5, 0.5, { backgroundColor: "black" }, "-=0.5").to(hb1, 0.1, { top: "10px" }).to(hb3, 0.1, { bottom: "10px" }, "-=0.1");
-                trigger = false;
-            } else if (!trigger) {
-                tl.to(hb4, 0.1, { opacity: 0, backgroundColor: "white" }).to(hb5, 0.1, { opacity: 0, backgroundColor: "white" }, "-=0.1").to(hb2, 0.1, { opacity: 1, backgroundColor: "white" }).to(hb1, 0.1, { opacity: 1, top: 0, backgroundColor: "white" }).to(hb3, 0.1, { opacity: 1, bottom: 0, backgroundColor: "white" }, "-=0.1").to(mobileNav, 0.25, { right: "-101%", ease: Power2.easeOut }, "-=0.2").to(hb4, 0.01, { rotation: 0 }).to(hb5, 0.01, { rotation: 0 }).to(hb4, 0.01, { opacity: 1 }).to(hb5, 0.01, { opacity: 1 });
-                trigger = true;
-            }
-        };
-    });
-})();
-
-// /**
-//  * Created by Seth on 8/30/2017.
-//  */
-// (function(){
-//     angular.module('app').controller('mobileNavCtrl', function($scope, mainService){
-//
-//         let tl = new TimelineMax(),
-//             mobileNav = document.getElementById('mobile-nav-popup'),
-//             trigger = true,
-//             hamburgerOne = document.getElementById('hamburger-one'),
-//             hamburgerTwo = document.getElementById('hamburger-two'),
-//             hamburgerThree = document.getElementById('hamburger-three');
-//
-//
-//
-//
-//
-//             $scope.exitNav = function(section){
-//
-//                 if( section !== "dont" ) {
-//                     TweenMax.to(document.getElementById('mobile-nav-section-' + section), 0.05, {
-//                         backgroundColor: "rgba(255,255,255,1)",
-//                         ease: Power2.easeIn
-//                     });
-//                 }
-//
-//             if(trigger){
-//                   tl.to(hamburgerTwo, 0.08, {top: "44%", backgroundColor: "#262626"})
-//                     .to(hamburgerOne, 0.08, {top: "47%", backgroundColor: "#262626"})
-//                     .to(hamburgerThree, 0.08, {top: "47%", backgroundColor: "#262626"})
-//                     .to(hamburgerOne, 0, { opacity: 0})
-//                     .to(hamburgerThree, 0.08, {transform: "rotate(45deg)"})
-//                     .to(hamburgerTwo, 0.08, {transform: "rotate(-45deg)"})
-//                     .to(mobileNav, 0.15, {right: 0, ease: Power2.easeIn});
-//             } if(!trigger && section !== "dont") {
-//                       tl.to(hamburgerThree, 0.08, {transform: "rotate(0deg)"})
-//                         .to(hamburgerTwo, 0.08, {transform: "rotate(0deg)"})
-//                         .to(hamburgerThree, 0.08, { top: "86%", backgroundColor: "white"})
-//                         .to(hamburgerOne, 0.08, { opacity: 1, top: 0, backgroundColor: "white"})
-//                         .to(hamburgerTwo, 0.08, { top: "45%", backgroundColor: "white"})
-//                         .to(mobileNav, 0.15, {right: "-101%", ease: Power2.easeOut})
-//                         .to(document.getElementById('mobile-nav-section-' + section), 0, {backgroundColor: "transparent"});
-//             } if(!trigger) {
-//                     tl.to(hamburgerThree, 0.08, {transform: "rotate(0deg)"})
-//                         .to(hamburgerTwo, 0.08, {transform: "rotate(0deg)"})
-//                         .to(hamburgerThree, 0.08, { top: "86%", backgroundColor: "white"})
-//                         .to(hamburgerOne, 0.08, { opacity: 1, top: 0, backgroundColor: "white"})
-//                         .to(hamburgerTwo, 0.08, { top: "44%", backgroundColor: "white"})
-//                         .to(mobileNav, 0.15, {right: "-101%", ease: Power2.easeOut});
-//                 }
-//
-//             trigger = !trigger;
-//         };
-//
-//
-//     })
-// })();
-'use strict';
-
-(function () {
-    angular.module('app').controller('navCtrl', function ($scope) {
-
-        var lastNavTitle = "";
-
-        $scope.routeLighter = function (num) {
-            var title = document.getElementById('nav-item-title-' + num),
-                lastTitle = document.getElementById('nav-item-title-' + lastNavTitle);
-            if (num === "home") {
-                TweenMax.to(lastTitle, 0.15, {
-                    color: "#95989A"
-                });
-                lastNavTitle = "";
-                return;
-            }
-            if (lastNavTitle !== "" && lastNavTitle !== num) {
-                TweenMax.to(lastTitle, 0.15, {
-                    color: "#95989A"
-                });
-            }
-
-            TweenMax.to(title, 0.25, {
-                color: "white"
-            });
-            lastNavTitle = num;
-        };
-
-        $scope.navDropper = function (num) {
-            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
-                ease: Power1.easeIn,
-                display: "flex",
-                opacity: 1,
-                height: "auto"
-            });
-
-            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.4, {
-                color: "#242424"
-            });
-        };
-
-        $scope.navShrinker = function (num) {
-            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
-                color: "transparent"
-            });
-            TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15, {
-                ease: Power3.easeIn,
-                opacity: 0,
-                display: "none"
-                //height: 0
-            }, 0.25);
-        };
-
-        $scope.dropDownHover = function (num) {
-            TweenMax.to(document.getElementById('drop-down-item-' + num), 0.25, {
-                backgroundColor: "rgba(255,255,255,1)"
-            });
-        };
-
-        $scope.dropDownHoverLeave = function (num) {
-            TweenMax.to(document.getElementById('drop-down-item-' + num), 0.15, {
-                backgroundColor: "rgba(255,255,255,0.9)",
-                color: "#242424"
-            });
-        };
-
-        $scope.getStarted = function () {
-            mainService.navGetStarted();
-        };
-    });
-})();
-'use strict';
-
-(function () {
-
-  angular.module('app').directive('navDir', function () {
-    return {
-      restrict: 'E',
-      templateUrl: './directives/nav/navTmpl.html',
-      controller: 'navCtrl'
-    };
-  });
 })();
 //# sourceMappingURL=maps/bundle.js.map

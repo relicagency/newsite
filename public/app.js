@@ -195,7 +195,7 @@
           .otherwise('/home');
 
 
-      $locationProvider.hashPrefix('');
+      // $locationProvider.hashPrefix('');
   }
   function scrollFix($rootScope, $window){
     $rootScope.$on('$stateChangeSuccess', function(){

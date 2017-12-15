@@ -22,12 +22,21 @@ h2 {
   text-align: center;
   text-transform: uppercase;
 }
+h3 {
+  font-family: 'Rogan-Light', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #BD9A35;
+  text-transform: uppercase;
+}
 
 p {
   font-family: 'Rogan-Light', sans-serif;
   font-size: 18px;
   line-height: 32px;
   letter-spacing: 1px;
+  padding-bottom: 10px;
 }
 
 .main-container {
@@ -44,9 +53,11 @@ p {
 }
 
 .page-title {
-  padding: 90px 0 125px 0;
+  padding: 100px 0;
   text-align: center;
   color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .page-subtitle {
@@ -68,7 +79,8 @@ p {
 }
 
 .intro-logo {
-  height: 130px;
+  width: 25vw;
+  max-width: 275px;
   flex: 1 1 25%;
 }
 
@@ -137,6 +149,80 @@ p {
   width: 100%;
 }
 
+.key-point {
+  font-family: Rogan-SemiBold, sans-serif;
+  text-align: right;
+  letter-spacing: 3px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #BD9A35;
+}
+
+.column-25 {
+  flex: 0 0 25%;
+  box-sizing: border-box;
+  padding: 40px 0 40px 40px;
+  border-top: 11px solid #BD9A35;
+}
+
+.column-75 {
+  flex: 0 0 75%;
+  box-sizing: border-box;
+  padding: 40px;
+  border-top: 11px solid #D0D0D0;
+}
+
+.text-area-white {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.text-area-white p {
+  padding-bottom: 24px;
+}
+
+.gold-emphasis {
+  color: #BD9A35;
+  font-weight: 800;
+}
+
+.cta-section {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 100px 20px 85px 20px;
+  color: white;
+}
+
+.contact-form {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-input {
+  background-color: #efefef;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-family: Rogan-Regular, sans-serif;
+  padding: 10px;
+}
+.map-container {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
 
 @media screen and (max-width: 1400px) {
   h2 {
@@ -170,6 +256,9 @@ p {
 }
 
 @media screen and (max-width: 900px){
+  .flex-invisible {
+    display: none;
+  }
   .flex-item-25 {
     position: relative;
     flex: 1 1 33%;
@@ -178,6 +267,12 @@ p {
 }
 
 @media screen and (max-width: 625px){
+  h1{
+    font-size: 44px;
+  }
+  .page-title {
+    padding: 80px 0;
+  }
   .flex-item-25 {
     position: relative;
     flex: 1 1 50%;
@@ -188,5 +283,8 @@ p {
 @media screen  and (max-width: 425px){
   .massive-text {
     font-size: 25vmin;
+  }
+  .page-main-content {
+    width: 90%;
   }
 }

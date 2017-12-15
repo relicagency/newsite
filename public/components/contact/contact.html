@@ -1,47 +1,38 @@
-<div class="contact-main-container">
-
-    <img src="{{backgroundImage}}" class="contact-background" id="contact-background">
-
-    <div class="contact-main-content">
-        <div class="contact-main-title page-title">contact</div>
-        <div class="contact-top-bars">
-            <div class="top-bar-left"></div>
-            <div class="top-bar-right"></div>
-        </div>
-        <div class="contact-form-container">
-
-            <p class="get-started">get started</p>
-
-            <p class="get-started-intro">Need advertising experts that delivers real, measurable results? Maybe you want to see how the cross between digital and traditional advertising isn’t an unbridgeable gap? Perhaps you just want a free lunch? Regardless of the reason, fill out this form and we’ll be in contact with you soon.</p>
-
-            <form class="contact-form" ng-submit="contactRelic(contact)">
-
-                <input ng-model="contact.firstName" class="contact-input" type="text" placeholder="First Name" required>
-                <input ng-model="contact.lastName" class="contact-input" type="text" placeholder="Last Name" required>
-                <input ng-model="contact.jobTitle" class="contact-input" type="text" placeholder="Job Title" required>
-                <input ng-model="contact.business" class="contact-input" type="text" placeholder="Business Name" required>
-                <input ng-model="contact.email" class="contact-input" type="email" placeholder="Email" required>
-                <input ng-model="contact.phone" class="contact-input" type="text" placeholder="Phone Number" >
-                <input ng-model="contact.message" class="contact-input" type="text" placeholder="Message" required>
-
-                <div    class="google-captcha"
-                        vc-recaptcha
-                        theme="'dark'"
-                        key="model.key"
-                        on-create="setWidgetId(widgetId)"
-                        on-success="setResponse(response)"
-                        on-expire="cbExpiration()"
-                ></div>
-                <button class="contact-button" type="submit">Submit</button>
-            </form>
-
-            <div class="contact-form-message" id="form-status-message">
-                <img class="form-status-exit" src="../../images/exit.svg" ng-click="exitFormStatus()">
-                <p>{{formStatus}}</p>
-            </div>
-
-        </div>
-        <div class="contact-map-container">
+<div class="main-container">
+  <img src="{{backgroundImage}}" class="tech-background" id="tecch-background">
+  <div class="page-main-content">
+    <h1 class="page-title">contact</h1>
+    <div class="text-area-white">
+      <div class="column-25">
+        <h3 class="key-point">Get Started</h3>
+      </div>
+      <div class="column-75">
+        <p>Need advertising experts that delivers real, measurable results? Maybe you want to see how the cross between digital and traditional advertising isn’t an unbridgeable gap? Perhaps you just want a free lunch? Regardless of the reason, fill out this form and we’ll be in contact with you soon.</p>
+        <form class="contact-form" ng-submit="contactRelic(contact)">
+          <input ng-model="contact.firstName" class="contact-input" type="text" placeholder="First Name" required>
+          <input ng-model="contact.lastName" class="contact-input" type="text" placeholder="Last Name" required>
+          <input ng-model="contact.jobTitle" class="contact-input" type="text" placeholder="Job Title" required>
+          <input ng-model="contact.business" class="contact-input" type="text" placeholder="Business Name" required>
+          <input ng-model="contact.email" class="contact-input" type="email" placeholder="Email" required>
+          <input ng-model="contact.phone" class="contact-input" type="text" placeholder="Phone Number" >
+          <input ng-model="contact.message" class="contact-input" type="text" placeholder="Message" required>
+          <div class="google-captcha"
+            vc-recaptcha
+            theme="'dark'"
+            key="model.key"
+            on-create="setWidgetId(widgetId)"
+            on-success="setResponse(response)"
+            on-expire="cbExpiration()"
+          ></div>
+          <button class="contact-button" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="contact-form-message" id="form-status-message">
+        <img class="form-status-exit" src="../../images/exit.svg" ng-click="exitFormStatus()">
+        <p>{{formStatus}}</p>
+      </div>
+    </div>
+        <div class="map-container">
             <div class="contact-relic-info">
                 <img class="relic-address-logo" src="../../images/main-relic-logo.svg">
                 <div class="underneath-relic"></div>

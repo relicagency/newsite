@@ -2,7 +2,6 @@
   angular.module('app').controller('aboutCtrl', function($scope, mainService){
 
     $scope.backgroundImage = mainService.backgrounds[Math.floor(Math.random() * (11 - 1 + 1)) + 1];
-
     $scope.aboutRouterTitle = "Leadership";
 
     let lastLeader = '',
@@ -12,7 +11,6 @@
     window.onscroll = function() {
       let offSet = window.pageYOffset,
           csParaStart = offSet * 0.85;
-
       mainService.navBackground(offSet);
       mainService.parallaxIt(backgroundPic,csParaStart);
     };
@@ -22,29 +20,16 @@
         TweenMax.to(document.getElementById('about-leadership'), 0.1, {backgroundColor: "rgba(0,0,0,1)"});
         TweenMax.to(document.getElementById('about-story'), 0.1, {backgroundColor: "rgba(255,255,255,1)"});
 
-        TweenMax.to(document.getElementById('about-route-story'), 0.25, {ease: Power2.easeIn, display: "flex"});
-        TweenMax.to(document.getElementById('about-route-leadership'), 0.25, {ease: Power2.easeOut, display: "none"});
+        TweenMax.to(document.getElementById('about-route-story'), 0.05, {display: "flex"});
+        TweenMax.to(document.getElementById('about-route-leadership'), 0.05, {display: "none"});
       }
-
       if(route === 'leadership'){
-        TweenMax.to(document.getElementById('about-leadership'), 0.1, {
-            backgroundColor: "rgba(255,255,255,1)"
+        TweenMax.to(document.getElementById('about-leadership'), 0.1, {backgroundColor: "rgba(255,255,255,1)"});
+        TweenMax.to(document.getElementById('about-story'), 0.1, {backgroundColor: "rgba(0,0,0,1)"});
 
-        });
-        TweenMax.to(document.getElementById('about-story'), 0.1, {
-            backgroundColor: "rgba(0,0,0,1)"
-        });
-
-        TweenMax.to(document.getElementById('about-route-leadership'), 0.25, {
-            ease: Power2.easeIn,
-            display: "inline"
-        });
-        TweenMax.to(document.getElementById('about-route-story'), 0.25, {
-            ease: Power2.easeOut,
-            display: "none"
-          });
+        TweenMax.to(document.getElementById('about-route-leadership'), 0.05, {display: "inline"});
+        TweenMax.to(document.getElementById('about-route-story'), 0.05, {display: "none"});
       }
-
     };
 
     let shrinkTheLeader = "";

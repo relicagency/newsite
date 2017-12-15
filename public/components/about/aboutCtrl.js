@@ -35,46 +35,44 @@
     let shrinkTheLeader = "";
 
     $scope.expandLeader = function(leader){
+      let leaderDiv = document.getElementById('leader-' + leader),
+        leaderAbout = document.getElementById('leader-about-' + leader),
+        shrinkLeader = document.getElementById('leader-' + shrinkTheLeader),
+        shrinkLeaderAbout = document.getElementById('leader-about-' + shrinkTheLeader);
 
-        let leaderDiv = document.getElementById('leader-' + leader),
-            leaderAbout = document.getElementById('leader-about-' + leader),
-            shrinkLeader = document.getElementById('leader-' + shrinkTheLeader),
-            shrinkLeaderAbout = document.getElementById('leader-about-' + shrinkTheLeader);
-
-        if(leaderDiv.style.height === "auto"){
-            TweenMax.to(leaderDiv, 0.25  , {
-                ease: Power2.easeIn,
-                height: '200px'
-            });
-            TweenMax.to(leaderAbout, 0.10, {
-                opacity: 0,
-                ease: Power2.easeIn
-            });
-
-            return 0;
-
-        } if(shrinkTheLeader !== leader && shrinkTheLeader !== ""){
-            TweenMax.to(shrinkLeader, 0.25  , {
-                ease: Power2.easeIn,
-                height: '200px'
-            });
-            TweenMax.to(shrinkLeaderAbout, 0.10, {
-                opacity: 0,
-                ease: Power2.easeIn
-            });
-        }
-
-        TweenMax.to(leaderDiv, 0.5  , {
-            ease: Power2.easeIn,
-            height: 'auto'
+      if(leaderDiv.style.height === "auto"){
+        TweenMax.to(leaderDiv, 0.25  , {
+          ease: Power2.easeIn,
+          height: '200px'
         });
         TweenMax.to(leaderAbout, 0.10, {
-            opacity: 1,
-            ease: Power2.easeIn
+          opacity: 0,
+          ease: Power2.easeIn
         });
 
-    shrinkTheLeader = leader;
+        return 0;
 
+      } if(shrinkTheLeader !== leader && shrinkTheLeader !== ""){
+        TweenMax.to(shrinkLeader, 0.25  , {
+          ease: Power2.easeIn,
+          height: '200px'
+        });
+        TweenMax.to(shrinkLeaderAbout, 0.10, {
+          opacity: 0,
+          ease: Power2.easeIn
+        });
+      }
+
+      TweenMax.to(leaderDiv, 0.5  , {
+        ease: Power2.easeIn,
+        height: 'auto'
+      });
+      TweenMax.to(leaderAbout, 0.10, {
+        opacity: 1,
+        ease: Power2.easeIn
+      });
+
+    shrinkTheLeader = leader;
     }
 
   });

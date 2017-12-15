@@ -54,6 +54,16 @@
   font-size: 4vmin;
 }
 
+.leader-top {
+  display: flex;
+  height: 200px;
+  flex-flow: row nowrap;
+  align-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 30px 80px;
+}
+
 .about-route-title {
   position: relative;
   top: 0;
@@ -97,30 +107,21 @@
 }
 
 .leader-pic {
-  position: absolute;
-  top: 42.5px;
-  left: 1in;
-  height: 115px;
   width: 115px;
   border-radius: 50%;
 }
 
 .leader-name {
-  position: absolute;
-  top: 100px;
-  left: 3in;
-  transform: translate(0, -50%);
   color: #bd9a35;
   font-size: 25px;
+  margin-left: 30px;
 }
 
 .leader-about {
   position: relative;
-  margin: 195px 0 80px 100px;
-  width: 62%;
-  line-height: 34px;
   opacity: 0;
   color: black;
+  padding: 0px 80px 30px 80px;
 }
 
 .about-route-story {

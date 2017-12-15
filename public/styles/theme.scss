@@ -40,7 +40,7 @@ p {
   position: relative;
   width: 80%;
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1400px;
 }
 
 .page-title {
@@ -113,6 +113,30 @@ p {
   font-family: Serif, serif;
 }
 
+.flex-grid {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.flex-item-25 {
+  position: relative;
+  flex: 1 1 25%;
+  margin-bottom: -11px;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.image-underlay {
+  width: 100%;
+}
+
 
 @media screen and (max-width: 1400px) {
   h2 {
@@ -142,6 +166,22 @@ p {
   .massive-text {
     text-align: center;
     font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .flex-item-25 {
+    position: relative;
+    flex: 1 1 33%;
+    margin-bottom: -11px;
+  }
+}
+
+@media screen and (max-width: 625px){
+  .flex-item-25 {
+    position: relative;
+    flex: 1 1 50%;
+    margin-bottom: -11px;
   }
 }
 

@@ -3,7 +3,7 @@
     angular.module('app')
         .controller('workCtrl', function($scope, mainService){
 
-            let backgroundPic = document.getElementById('work-background');
+            let backgroundPic = document.getElementById('tecch-background');
 
             window.onscroll = function() {
                 let offSet = window.pageYOffset,
@@ -14,17 +14,13 @@
             };
 
             //This is the animations for the work sections
-            $scope.workEnter = function(num){
-                TweenMax.to(document.getElementById('work-content-image-' + num), 0.40, {
-                            opacity: 0
-                    });
+            $scope.workEnter = function(){
+                let overlay = event.currentTarget.children[0];
+                TweenMax.to(overlay, 0.25, {opacity: 0});
             };
-
-            $scope.workLeave = function(num) {
-                TweenMax.to(document.getElementById('work-content-image-' + num), 0.40, {
-                    opacity: 1
-                })
+            $scope.workLeave = function() {
+                let overlay = event.currentTarget.children[0];
+                TweenMax.to(overlay, 0.25, {opacity: 1})
             }
-
         })
 })();

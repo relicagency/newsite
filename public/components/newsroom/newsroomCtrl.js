@@ -34,7 +34,7 @@
                         backgroundColor: "rgba(255,255,255,0.8)",
                         color: "#161616"
                     });
-                    TweenMax.to(blueTriangleNews, 0.25, {
+                    TweenMax.to(blueTriangleNews, 0.05, {
                         display: "flex"
                     });
                     TweenMax.to(press, 0.05, {
@@ -86,7 +86,7 @@
                         backgroundColor: "rgba(255,255,255,0.8)",
                         color: "#161616"
                     });
-                    TweenMax.to(blueTriangleAwards, 0.25, {
+                    TweenMax.to(blueTriangleAwards, 0.05, {
                         display: "inline"
                     });
                 }
@@ -108,7 +108,7 @@
                         backgroundColor: "rgba(255,255,255,0.8)",
                         color: "#161616"
                     });
-                    TweenMax.to(blueTrianglePress, 0.25, {
+                    TweenMax.to(blueTrianglePress, 0.05, {
                         display: "inline"
                     });
                     TweenMax.to(awards, 0.05, {

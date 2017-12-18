@@ -1,40 +1,34 @@
 .footer-container {
   position: relative;
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   background-color: #161616;
   background-image: url('./images/Mask Group 11.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 25px 0 25px 0;
+  box-sizing: border-box;
+  padding: 50px 50px;
 }
 
 .relic-e {
-  position: absolute;
   height: 50px;
-  left: 50px;
   cursor: pointer;
 }
 
 .footer-list{
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: auto;
-  height: auto;
-  margin: 25px 25px 25px 150px;
+  flex-flow: row wrap;
+  margin: 0;
 }
 
 .footer-list-content {
-  font-family: 'Rogan-Regular', sans-serif;
   font-weight: bold;
   cursor: pointer;
   transition-duration: 0.5s;
@@ -48,30 +42,20 @@
   color: white;
 }
 
-.footer-social-icon {
-  height: 35px;
-  width: 35px;
-  margin: -12px;
-  z-index: 1;
-}
+
 
 .footer-social {
   position: relative;
-  height: auto;
-  width: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  margin: 25px 25px 25px 25px;
+  justify-content: center;
+  margin: 0;
 }
 
 .footer-social-content {
   box-sizing: border-box;
-  padding: 5px;
-  font-size: 13px;
-  line-height: 34px;
-  margin: 0 15px 0 15px;
+  padding: 3px 7px 0 7px;
   display: inline-block;
   position: relative;
   font-weight: bold;
@@ -79,3 +63,20 @@
   transition-duration: 0.5s;
 }
 
+.footer-social-icon {
+  height: 35px;
+}
+
+@media all and (max-width: 1000px){
+  .relic-e {
+    width: 100%;
+  }
+  .footer-list {
+    margin: 0 auto;
+    width: 100%
+  }
+  .footer-social {
+    margin: 0 auto;
+    width: 100%;
+  }
+}

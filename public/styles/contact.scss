@@ -24,20 +24,13 @@
   width: 20px;
   cursor: pointer;
 }
-.contact-input:focus {
-  outline: none;
-}
-.google-captcha {
-  border: none;
-  outline: none;
-  margin-bottom: 15px;
-  height: 10%;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
 
+.google-captcha {
+  transform:scale(0.85);
+  -webkit-transform:scale(0.85);
+  transform-origin:0 0;
+  -webkit-transform-origin:0 0;
+}
 
 .contact-button {
   color: white;
@@ -46,53 +39,54 @@
   outline: none;
   margin-bottom: 15px;
   height: 75px;
-  width: 101.5%;
+  width: 100%;
   text-align: center;
-  font-size: 4vmin;
+  font-size: 24px;
   font-family: Rogan-Medium, sans-serif;
-  padding-left: 15px;
   letter-spacing: 1px;
   cursor: pointer;
 }
 
 
-
+.map-container {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
 .contact-relic-info {
   position: relative;
-  height: 600px;
-  width: 30%;
+  flex: 1 1 30%;
   background-color: black;
   opacity: 0.7;
   color: white;
+  box-sizing: border-box;
+  padding: 100px 50px;
+  text-align: right;
 }
-
 .contact-map {
   position: relative;
+  flex: 1 1 70%;
   height: 600px;
-  width: 70%;
 }
 
 .relic-address-logo {
-  width: 60%;
-  position: absolute;
-  bottom: 70%;
-  left: 27%;
+  max-width: 250px;
 }
 .underneath-relic {
-  position: absolute;
-  top: 34%;
-  right: 22%;
   height: 2px;
-  width: 50px;
+  width: 100%;
   background-color: #BD9A35;
 }
 .relic-address {
+  padding-top: 20px;
   text-transform: uppercase;
   color: white;
   text-align: right;
-  position: absolute;
-  top: 39%;
-  right: 22%;
+}
+.relic-address p {
+  padding-bottom: 24px;
 }
 .address-provo {
   color: white;
@@ -101,124 +95,23 @@
   font-weight: 700;
 }
 
-
-@media screen and (max-width: 768px) {
-
-  .top-bar-left {
-    height: 100%;
-    width: calc(100vw / 20);
-    background-color: #BD9A35;
+@media all and (max-width: 600px){
+  .google-captcha {
+    transform:scale(0.77);
+    -webkit-transform:scale(0.77);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
   }
-
-  .top-bar-right {
-    height: 100%;
-    width: calc(100% - 5vw);
-    background-color: #CCCCCC;
+  .contact-relic-info, .contact-map {
+    flex: 1 1 100%;
   }
-
-  .get-started {
-    position: relative;
-    top: 40px;
-    left: 6%;
-    color: #BD9A35;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-family: Rogan-SemiBold, sans-serif;
-  }
-
-  .get-started-intro {
-    position: relative;
-    margin: 67px 0 0 0;
-    left: 6%;
-    width: 87%;
-    font-size: 20px;
-    color: #161616;
-    letter-spacing: 1px;
-    line-height: 35px;
-  }
-
-  .contact-form {
-    position: relative;
-    height: 930px;
-    width: 81%;
-    margin: 27px 0 50px -22%;
-    left: 28%;
-  }
-
-  .contact-map-container {
-    position: relative;
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: -50px;
-  }
-
-  .contact-relic-info {
-    position: relative;
-    height: 600px;
-    width: 100%;
-    background-color: black;
-    opacity: 0.7;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .relic-address-logo {
-    width: 80%;
-    position: relative;
-    bottom: 0;
-    left: 0;
-  }
-
-  .underneath-relic {
-    position: relative;
-    top: 0;
-    right: 0;
-    height: 2px;
-    width: 100px;
-    background-color: #BD9A35;
-    margin-top: 20px;
-  }
-
-  .relic-address {
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    position: relative;
-    margin-top: 20px;
-    top: 0;
-    right: 0;
-  }
-
-  .address-provo {
-    color: white;
-    text-transform: uppercase;
-    font-size: large;
-    font-weight: 700;
-    text-align: center;
-  }
-
   .contact-map {
-    position: relative;
-    height: 600px;
-    width: 100%;
+    height: 500px;
   }
-
 }
-@media screen and (max-width: 425px) {
 
-  .get-started {
-    left: 50%;
-    transform: translate(-50%);
-    text-align: center;
+@media all and (max-width: 400px){
+  .contact-map {
+    height: 400px;
   }
-
-  .get-started-intro {
-    text-align: center;
-  }
-
 }

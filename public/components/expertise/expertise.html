@@ -1,19 +1,16 @@
 <div class="main-container">
-    <img src="{{backgroundImage}}" class="tech-background" id="tecch-background">
-    <div class="page-main-content">
-    <h1 class="page-title">expertise</h1>
-        <div class="expertise-content" ui-sref="tourism" id="expertise-content-one" ng-mouseover="expertCoolize('one')"><p>Tourism</p></div>
-        <div class="expertise-content" ui-sref="telecom" id="expertise-content-two" ng-mouseenter="expertCoolize('two')"><p>Telecom</p></div>
-        <div class="expertise-content" ui-sref="tech" id="expertise-content-three" ng-mouseenter="expertCoolize('three')"><p>Tech</p></div>
-        <div class="expertise-content" ui-sref="demandgen" id="expertise-content-four" ng-mouseenter="expertCoolize('four')"><p>Demand Gen</p></div>
+	<img src="{{backgroundImage}}" class="tech-background" id="tecch-background">
+	<div class="page-main-content">
+		<h1 class="page-title">expertise</h1>
+		<div class="expertise-container">
+			<div class="expertise-content" ui-sref="tourism" id="expertise-content-one" ng-mouseover="expertCoolize('one')"><p>Tourism</p></div>
+			<div class="expertise-content" ui-sref="telecom" id="expertise-content-two" ng-mouseenter="expertCoolize('two')"><p>Telecom</p></div>
+			<div class="expertise-content" ui-sref="tech" id="expertise-content-three" ng-mouseenter="expertCoolize('three')"><p>Tech</p></div>
+			<div class="expertise-content" ui-sref="demandgen" id="expertise-content-four" ng-mouseenter="expertCoolize('four')"><p>Demand Gen</p></div>
+		</div>
+		<div class="cta-section">
+      <p>Looking for advertising help?</p>
+      <get-started-dir></get-started-dir>
     </div>
-
-</div>
-
-<div class="looking-for-help">
-
-    <p>{{ctaText}}</p>
-
-    <get-started-dir></get-started-dir>
-
+	</div>
 </div>

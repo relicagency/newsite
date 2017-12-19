@@ -1,59 +1,51 @@
-<div class="telecom-main-container">
-
-    <img src="../../images/telecom.jpg" class="telecom-background" id="telecom-background">
-
-
-    <div class="telecom-main-content">
-        <div class="telecom-title"><p class="page-title">Telecom</p></div>
-        <div class="telecom-experts">
-            <div class="telecom-experts-top">
-                <div class="telecom-experts-top-left"></div>
-                <div class="telecom-experts-top-right"></div>
-            </div>
-
-            <div class="telecom-industry-experts">
-                <p>industry<br>
-                    experts</p>
-            </div>
-
-            <div class="telecom-industry-info" id="telecom-industry-info">
-                <p>Telecommunications is the carrier pigeon of the 21st century. The only difference is that carrier pigeons didn’t have to compete with thousands of other telecom options. The immense amount of competition in the telecom market creates an environment that can be difficult to penetrate. Relic is just the industry-disrupting ad agency that you’ve been searching for. You know your market like the back of your hand. We know the best content and creative tactics to deliver a message that resonates and presents you as an industry leader. Together, we’ll create the most unstoppable duo since chocolate and peanut butter. </p>
-                <p class="telecom-read-more" id="telecom-read-more" ng-click="readMore()">Read More . . . </p>
-            </div>
-            <div class="telecom-more-info" id="telecom-more-info">
-                <p>TDS, a Wisconsin-based telecom company, has been one of our biggest clients for a long time. We’ve built an environment that fosters creativity and opportunities for new ideas, which has led to them seeing immense growth. TDS even named us as one of the top five reasons for its success! To learn more about our experience in telecom, watch the video below.</p>
-                <p class="telecom-read-less" id="telecom-read-less" ng-click="readLess()"> . . . Read Less</p>
-            </div>
-
+<div class="main-container">
+  <img src="../../images/telecom.jpg" class="telecom-background" id="telecom-background">
+  <div class="page-main-content">
+    <h1 class="page-title">telecom</h1>
+    <div class="text-area-white" id="about-route-story">
+      <div class="column-25">
+        <h3 class="key-point">Industry Experts</h3>
+      </div>
+      <div class="column-75">
+        <p>Telecommunications is the carrier pigeon of the 21st century. The only difference is that carrier pigeons didn’t have to compete with thousands of other telecom options. The immense amount of competition in the telecom market creates an environment that can be difficult to penetrate. Relic is just the industry-disrupting ad agency that you’ve been searching for. You know your market like the back of your hand. We know the best content and creative tactics to deliver a message that resonates and presents you as an industry leader. Together, we’ll create the most unstoppable duo since chocolate and peanut butter.<span class="gold-emphasis" id="telecom-read-more" ng-click="readMore()"> Read More . . .</span></p>
+        <div class="telecom-more-info" id="telecom-more-info">
+          <p>TDS, a Wisconsin-based telecom company, has been one of our biggest clients for a long time. We’ve built an environment that fosters creativity and opportunities for new ideas, which has led to them seeing immense growth. TDS even named us as one of the top five reasons for its success! To learn more about our experience in telecom, watch the video below.</p>
+          <p class="gold-emphasis" id="telecom-read-less" ng-click="readLess()"> . . . Read Less</p>
         </div>
-
-
-        <div class="telecom-video">
-            <div class="telecom-video-underlay"></div>
-            <video class="telecom-tds-video" poster="../../images/tds-customer-story2.jpg">
-
-            </video>
-            <img class="telecom-video-play" src="../../images/play-button.svg">
-        </div>
-        <div class="telecom-clients-title">
-            <p>telecom clients</p>
-        </div>
-        <div class="telecom-clients">
-            <a href="/#!/work/tds"><img class="telecom-work" src="../../images/work-tds.jpg"></a>
-            <a href="/#!/work/maxxsouth"><img class="telecom-work" src="../../images/work-maxx.jpg"></a>
-            <a href="/#!/work/beehive"><img class="telecom-work" src="../../images/work-beehive.jpg"></a>
-        </div>
-
-
-
+      </div>
     </div>
-
-</div>
-
-<div class="looking-for-help">
-
-    <p>{{ctaText}}</p>
-
-    <get-started-dir></get-started-dir>
-
+    <div class="telecom-video">
+      <div class="telecom-video-underlay"></div>
+      <video class="telecom-tds-video" poster="../../images/tds-customer-story2.jpg">
+      </video>
+      <img class="telecom-video-play" src="../../images/play-button.svg">
+    </div>
+    <p class="page-subtitle">Telecom Clients</p>
+    <div class="page-content dark-back">
+      <div class="flex-grid">
+        <a class="flex-item-25" href="/#!/work/tds">
+          <div  ng-mouseover="workEnter()" ng-mouseleave="workLeave()">
+            <img src="../../images/work-tds.jpg" class="image-overlay">
+            <img src="../../images/work-tds2.png" class="image-underlay">
+          </div>
+        </a>
+        <a class="flex-item-25" href="/#!/work/maxxsouth">
+          <div ng-mouseover="workEnter()" ng-mouseleave="workLeave()">
+            <img src="../../images/work-maxx.jpg" class="image-overlay">
+            <img src="../../images/work-maxxsouth2.png" class="image-underlay">
+          </div>
+        </a>
+        <a class="flex-item-25" href="/#!/work/beehive">
+          <div ng-mouseover="workEnter()" ng-mouseleave="workLeave()">
+            <img src="../../images/work-beehive.jpg" class="image-overlay">
+            <img src="../../images/work-beehive2.png" class="image-underlay">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="cta-section">
+      <p>Looking for advertising help?</p>
+      <get-started-dir></get-started-dir>
+    </div>
+  </div>
 </div>

@@ -11,7 +11,7 @@
   width: 100%;
   background-color: #161616;
 }
-.tourism-more-info {
+.tourism-more-info, .telecom-more-info {
   display: none;
   visibility: hidden;
 }
@@ -44,48 +44,11 @@
   transform: translate(-50%, 0%);
   margin: 100px 0 100px 0;
 }
-
-.tourism-clients-title {
-  position: relative;
-  height: 160px;
-  width: 100%;
-  background-color: white;
-  color: #BD9A35;
-  text-transform: capitalize;
-  font-size: 28px;
-  letter-spacing: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.tourism-clients {
-  position: relative;
-  height: auto;
-  width: 100%;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.tourism-clients-clients {
-  position: relative;
-  height: calc(12vw * 2);
-  width: calc(12vw * 4.1);
-  cursor: pointer;
-  margin: 100px 0 100px 0;
-}
-.tourism-clients-clients img {
-  margin: -3px;
-  outline: 0;
-  padding: 0;
-}
-
 .tourism-work {
   height: 12vw;
   margin: 0;
   outline: 0;
 }
-
 .tourism-awards-title {
   position: relative;
   height: 160px;
@@ -216,23 +179,4 @@
   background-size: 97%;
   background-position-x: 45%;
   background-position-y: 50%;
-}
-
-#tourism-looking-for-help {
-  position: relative;
-}
-
-
-@media screen and (max-width: 768px){
-  .tourism-clients-clients {
-    position: relative;
-    height: calc(60vw * 8);
-    width: calc(60vw * 1.1);
-    cursor: pointer;
-    margin: 100px 0 100px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
 }

@@ -118,9 +118,22 @@ p {
   background: #000000;
 }
 
-.full-width-pic, .full-width-vid {
+.full-width-pic {
   width: 100%;
   padding: 100px 0;
+}
+
+.full-width-vid {
+  width: 100%;
+}
+
+.vid-play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  cursor: pointer;
 }
 
 .massive-text {

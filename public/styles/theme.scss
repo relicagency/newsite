@@ -110,6 +110,10 @@ p {
   background: rgba(0,0,0,0.7);
 }
 
+.dark-back p, .dark-back ul li, .dark-back ol li {
+  color: #eee;
+}
+
 .black-back {
   background: #000000;
 }
@@ -137,6 +141,9 @@ p {
   position: relative;
   flex: 1 1 25%;
   margin-bottom: -11px;
+}
+.flex-item-50 {
+  flex: 1 1 50%;
 }
 
 .image-overlay {
@@ -180,7 +187,7 @@ p {
   flex-flow: row nowrap;
 }
 
-.text-area-white p, .leader-about p {
+.text-area-white p, .leader-about p, .page-content p {
   padding-bottom: 24px;
 }
 

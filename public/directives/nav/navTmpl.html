@@ -1,17 +1,18 @@
 
 <nav id="nav">
   <div class="nav-logo">
-    <img class="nav-logo-svg" ui-sref="home" src="./images/main-relic-logo.svg"  ng-click="routeLighter('home')" />
+    <img class="nav-logo-svg" ui-sref="home" src="./images/relic-logo-white.png"  ng-click="routeLighter('home')" />
   </div>
   <div class="nav-items">
     <div class="nav-item" ng-mouseenter="navDropper('one')" ng-mouseleave="navShrinker('one')" ng-click="routeLighter('one')">
-      <div class="nav-item-title" id="nav-item-title-one" ui-sref="expertise"><p>Expertise<i class="fa fa-angle-down" aria-hidden="true"></i>
-      </p></div>
-      <div class="nav-item-drop nav-item-drop-one" id="nav-item-drop-one">
-        <div class="drop-down-item" ng-mouseleave="dropDownHoverLeave('one')" ng-mouseenter="dropDownHover('one')" id="drop-down-item-one" ui-sref="tourism"><p>Tourism</p></div>
-        <div class="drop-down-item" ng-mouseleave="dropDownHoverLeave('two')" ng-mouseenter="dropDownHover('two')" id="drop-down-item-two" ui-sref="telecom"><p>Telecom</p></div>
-        <div class="drop-down-item" ng-mouseleave="dropDownHoverLeave('three')" ng-mouseenter="dropDownHover('three')" id="drop-down-item-three" ui-sref="tech"><p>Tech</p></div>
-        <div class="drop-down-item" ng-mouseleave="dropDownHoverLeave('four')" ng-mouseenter="dropDownHover('four')" id="drop-down-item-four" ui-sref="demandgen"><p>Demand Gen</p></div>
+      <div class="nav-item-title" id="nav-item-title-one">
+        <p ui-sref="expertise">Expertise <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+        <div class="nav-item-drop nav-item-drop-one" id="nav-item-drop-one">
+          <div class="drop-down-item" ng-mouseleave="dropDownHoverLeave('one')" ng-mouseenter="dropDownHover('one')" id="drop-down-item-one" ui-sref="tourism"><p>Tourism</p></div>
+          <div class="drop-down-item" ng-mouseleave="dropDownHoverLeave('two')" ng-mouseenter="dropDownHover('two')" id="drop-down-item-two" ui-sref="telecom"><p>Telecom</p></div>
+          <div class="drop-down-item" ng-mouseleave="dropDownHoverLeave('three')" ng-mouseenter="dropDownHover('three')" id="drop-down-item-three" ui-sref="tech"><p>Tech</p></div>
+          <div class="drop-down-item" ng-mouseleave="dropDownHoverLeave('four')" ng-mouseenter="dropDownHover('four')" id="drop-down-item-four" ui-sref="demandgen"><p>Demand Gen</p></div>
+        </div>
       </div>
     </div>
     <div class="nav-item" ng-mouseenter="navDropper('two')" ng-mouseleave="navShrinker('two')" ng-click="routeLighter('two')">
@@ -21,14 +22,15 @@
       <div class="nav-item-title" ui-sref="about" id="nav-item-title-three"><p>About</p></div>
     </div>
     <div class="nav-item" ng-mouseenter="navDropper('three')" ng-mouseleave="navShrinker('three')" ng-click="routeLighter('four')">
-      <div class="nav-item-title" ui-sref="services({num: 0})" id="nav-item-title-four"><p>Services<i class="fa fa-angle-down" aria-hidden="true"></i>
-      </p></div>
-      <div class="nav-item-drop nav-item-drop-four" id="nav-item-drop-three">
-        <div class="drop-down-item" ui-sref="services({num: 0})" ng-mouseleave="dropDownHoverLeave('six')" ng-mouseenter="dropDownHover('six')" id="drop-down-item-six"><p>Traditional Media</p></div>
-        <div class="drop-down-item" ui-sref="services({num: 1})" ng-mouseleave="dropDownHoverLeave('seven')" ng-mouseenter="dropDownHover('seven')" id="drop-down-item-seven"><p>Creative</p></div>
-        <div class="drop-down-item" ui-sref="services({num: 2})" ng-mouseleave="dropDownHoverLeave('eight')" ng-mouseenter="dropDownHover('eight')" id="drop-down-item-eight"><p>Demand Gen</p></div>
-        <div class="drop-down-item" ui-sref="services({num: 3})" ng-mouseleave="dropDownHoverLeave('nine')" ng-mouseenter="dropDownHover('nine')" id="drop-down-item-nine"><p>Digital</p></div>
-        <div class="drop-down-item" ui-sref="services({num: 4})" ng-mouseleave="dropDownHoverLeave('ten')" ng-mouseenter="dropDownHover('ten')" id="drop-down-item-ten"><p>PR & Content</p></div>
+      <div class="nav-item-title" id="nav-item-title-four">
+        <p ui-sref="services({num: 0})">Services <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+        <div class="nav-item-drop nav-item-drop-four" id="nav-item-drop-three">
+            <div class="drop-down-item" ui-sref="services({num: 0})" ng-mouseleave="dropDownHoverLeave('six')" ng-mouseenter="dropDownHover('six')" id="drop-down-item-six"><p>Traditional Media</p></div>
+            <div class="drop-down-item" ui-sref="services({num: 1})" ng-mouseleave="dropDownHoverLeave('seven')" ng-mouseenter="dropDownHover('seven')" id="drop-down-item-seven"><p>Creative</p></div>
+            <div class="drop-down-item" ui-sref="services({num: 2})" ng-mouseleave="dropDownHoverLeave('eight')" ng-mouseenter="dropDownHover('eight')" id="drop-down-item-eight"><p>Demand Gen</p></div>
+            <div class="drop-down-item" ui-sref="services({num: 3})" ng-mouseleave="dropDownHoverLeave('nine')" ng-mouseenter="dropDownHover('nine')" id="drop-down-item-nine"><p>Digital</p></div>
+            <div class="drop-down-item" ui-sref="services({num: 4})" ng-mouseleave="dropDownHoverLeave('ten')" ng-mouseenter="dropDownHover('ten')" id="drop-down-item-ten"><p>PR & Content</p></div>
+          </div>
       </div>
     </div>
     <div class="nav-item" ng-click="routeLighter('five')">

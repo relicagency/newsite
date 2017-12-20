@@ -2,26 +2,36 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 90px;
+  height: 100px;
   z-index: 20;
   display: flex;
   align-items: center;
-  font-family: 'Rogan-Regular', sans-serif;
+
+  p {
+    font-family: 'Rogan-Regular', sans-serif;
+    padding-bottom: 0px;
+    //color: #7F7F7F;
+    color: #aaa;
+    text-transform: uppercase;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
 
   .nav-logo {
     position: absolute;
-    top: 18px;
-    left: 25px;
+    top: 20px;
+    left: 30px;
     cursor: pointer;
   }
   .nav-logo-svg {
-    height: 50px;
-    width: 194px;
+    width: 229px;
   }
   .nav-items  {
     position: absolute;
     top: 0;
-    right: 40px;
+    right: 45px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -32,8 +42,7 @@ nav {
     margin-left: 45px;
   }
   .nav-item-title {
-    color: #95989a;
-    text-transform: uppercase;
+    position: relative;
     cursor: pointer;
     letter-spacing: 1px;
     transition: 0.25s;
@@ -42,7 +51,6 @@ nav {
   }
   .nav-item-title p {
     margin-top: 15px;
-    padding-bottom: 0;
   }
   .nav-item-title p:after {
     content: '';
@@ -61,7 +69,8 @@ nav {
   }
   .nav-item-drop {
     position: absolute;
-    top: 70px;
+    top: 41px;
+    left: -18px;
     height: 0;
     width: 200px;
     background-color: transparent;
@@ -70,14 +79,16 @@ nav {
     color: transparent;
   }
   .drop-down-item {
-    height: 50px;
     width: 100%;
-    background-color: rgba(255,255,255,0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
     margin-top: 1px;
     cursor: pointer;
+  }
+  .drop-down-item p {
+    margin-top: 0px;
+    text-transform: capitalize;
+    padding: 10px 0px 0px 20px;
+    color: #3B3B3B;
   }
   .cta-button {
     color: white;
@@ -101,8 +112,8 @@ nav {
 .mobile-hamburger {
   display: none;
   position: fixed;
-  top: 32px;
-  right: 25px;
+  top: 38px;
+  right: 35px;
   z-index: 20;
   height: 22px;
   width: 27px;
@@ -224,12 +235,15 @@ nav {
   transition: 0.15s;
 }
 
-@media screen and (max-width: 1200px){
-  nav .nav-item-title {
-    font-size: 18px;
-  }
+@media screen and (max-width: 1260px){
   nav .nav-item {
     margin-left: 2vw;
+  }
+  nav .nav-logo {
+    left: 20px;
+  }
+  nav .nav-items {
+    right: 35px;
   }
   nav .cta-button {
     border-radius: 30px;
@@ -237,7 +251,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 920px){
+@media screen and (max-width: 1080px){
   nav .nav-items {
     display: none;
   }

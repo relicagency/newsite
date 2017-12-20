@@ -7,51 +7,24 @@
 }
 .router-tab {
   position: relative;
-  width: 50%;
+  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: 0.2s;
-  background-color: rgba(255,255,255,1);
+  background-color: white;
+}
+.router-tab h3 {
+  padding-top: 55px;
 }
 .leadership-tab {
   background-color: rgba(0,0,0,1);
 }
-.story-router-pic {
-  position: relative;
-  height: 55%;
-  width: 100%;
-  margin-bottom: 35px;
-  background-color: #242424;
-}
-.story-router-title {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 24px;
-  color: #BD9A35;
-  text-align: center;
-}
-.story-router-down {
+.small-down-arrow {
   position: relative;
   color: #BD9A35;
-  font-size: 4vmin;
-}
-
-
-
-.leadership-router-title {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 24px;
-  color: #BD9A35;
-  text-align: center;
-}
-.leadership-router-down {
-  position: relative;
-  color: #BD9A35;
-  font-size: 4vmin;
+  font-size: 36px;
 }
 
 .leader-top {
@@ -188,78 +161,3 @@
   top: 67%;
   left: 40%;
 }
-
-#about-looking-for-help {
-  height: 45vh;
-}
-
-@media screen and (max-width: 425px){
-
-  .story-router-title {
-    font-size: 18px;
-  }
-  .leadership-router-title {
-    font-size: 18px;
-  }
-
-  .leadership-leader {
-    position: relative;
-    width: 100%;
-    height: 210px;
-    background-color: white;
-    border-top: 2px solid #f4f4f4;
-    cursor: pointer;
-    color: black;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .leader-pic {
-    position: relative;
-    margin: 20px 0 20px;
-    height: 115px;
-    width: 115px;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-  }
-
-  .leader-name {
-    position: relative;
-    font-size: 20px;
-    margin: 20px 0 20px 0;
-    top: 0;
-    left: 0;
-  }
-
-  .leader-about {
-    position: relative;
-    margin: 25px 0 50px 0;
-    width: 80%;
-    line-height: 34px;
-    opacity: 0;
-    color: black;
-    transform: translate(0, 0);
-    text-align: center;
-    top: 0;
-    left: 0;
-  }
-
-  .story-router-down {
-    position: relative;
-    margin-top: 0;
-    color: #BD9A35;
-    font-size: 5vmin;
-  }
-
-  .leadership-router-down {
-    position: relative;
-    margin-top: 0;
-    color: #BD9A35;
-    font-size: 5vmin;
-  }
-
-}
-

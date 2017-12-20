@@ -1,55 +1,53 @@
-
-    <a><button ng-click="ctaShow()" class="get-started-button">Get Started</button></a>
-
-
+<a><button ng-click="ctaShow()" class="get-started-button">Get Started</button></a>
 
 <div class="cta-pop-up" id="cta-pop-up">
 
-    <div class="pop-up-exit" ng-click="ctaHide()">
-        <div class="pop-exit-bar pop-exit-bar-one"><div class="exit-inner-bar" id="get-started-animation-seven"></div></div>
-        <div class="pop-exit-bar pop-exit-bar-two"><div class="exit-inner-bar" id="get-started-animation-five"></div></div>
-        <div class="pop-exit-bar-three"><div class="exit-inner-bar" id="get-started-animation-six"></div></div>
-    </div>
+	<div class="pop-up-exit" ng-click="ctaHide()">
+		<div class="pop-exit-bar pop-exit-bar-one">
+			<div class="exit-inner-bar" id="get-started-animation-seven"></div>
+		</div>
+		<div class="pop-exit-bar pop-exit-bar-two">
+			<div class="exit-inner-bar" id="get-started-animation-five"></div>
+		</div>
+		<div class="pop-exit-bar-three">
+			<div class="exit-inner-bar" id="get-started-animation-six"></div>
+		</div>
+	</div>
 
-    <div class="cta-pop-up-form">
+	<div class="cta-pop-up-form">
 
-        <div class="cta-pop-up-header">
-            <div class="nav-logo">
-                <img class="get-started-logo-svg" src="./images/main-relic-logo.svg" />
-            </div>
-            <div class="cta-get-started-title"><p>Get Started</p></div>
-        </div>
+		<div class="cta-pop-up-header">
+			<div class="nav-logo">
+				<img class="get-started-logo-svg" src="./images/main-relic-logo.svg" />
+			</div>
+			<div class="cta-get-started-title">
+				<p>Get Started</p>
+			</div>
+		</div>
 
+		<div class="cta-contact-form-container">
 
-        <div class="cta-contact-form-container">
+			<form class="cta-contact-form" ng-submit="contactRelic(contact)">
+				<input ng-model="contact.firstName" class="cta-contact-input" type="text" placeholder="First Name" required>
+				<input ng-model="contact.lastName" class="cta-contact-input" type="text" placeholder="Last Name" required>
+				<input ng-model="contact.jobTitle" class="cta-contact-input" type="text" placeholder="Job Title" required>
+				<input ng-model="contact.business" class="cta-contact-input" type="text" placeholder="Business Name" required>
+				<input ng-model="contact.email" class="cta-contact-input" type="email" placeholder="Email" required>
+				<input ng-model="contact.phone" class="cta-contact-input" type="text" placeholder="Phone Number">
+				<input ng-model="contact.message" class="cta-contact-input" type="text" placeholder="Message" required>
 
-            <form class="cta-contact-form" ng-submit="contactRelic(contact)">
-                <input ng-model="contact.firstName" class="cta-contact-input" type="text" placeholder="First Name" required>
-                <input ng-model="contact.lastName" class="cta-contact-input" type="text" placeholder="Last Name" required>
-                <input ng-model="contact.jobTitle" class="cta-contact-input" type="text" placeholder="Job Title" required>
-                <input ng-model="contact.business" class="cta-contact-input" type="text" placeholder="Business Name" required>
-                <input ng-model="contact.email" class="cta-contact-input" type="email" placeholder="Email" required>
-                <input ng-model="contact.phone" class="cta-contact-input" type="text" placeholder="Phone Number">
-                <input ng-model="contact.message" class="cta-contact-input" type="text" placeholder="Message" required>
+				<div class="get-started-google-captcha" vc-recaptcha theme="'dark'" key="model.key" on-create="setWidgetId(widgetId)" on-success="setResponse(response)"
+				 on-expire="cbExpiration()"></div>
 
-                <div    class="get-started-google-captcha"
-                        vc-recaptcha
-                        theme="'dark'"
-                        key="model.key"
-                        on-create="setWidgetId(widgetId)"
-                        on-success="setResponse(response)"
-                        on-expire="cbExpiration()"
-                ></div>
+				<button class="cta-get-started-button contact-button" type="submit">Submit</button>
+			</form>
 
-                <button class="cta-get-started-button contact-button" type="submit">Submit</button>
-            </form>
+		</div>
 
-        </div>
-
-        <div class="get-started-form-message" id="get-started-form-status-message">
-            <img class="get-started-form-status-exit" src="../../images/exit.svg" ng-click="exitFormStatus(contact)">
-            <p>{{formStatus}}</p>
-        </div>
-    </div>
+		<div class="get-started-form-message" id="get-started-form-status-message">
+			<img class="get-started-form-status-exit" src="../../images/exit.svg" ng-click="exitFormStatus(contact)">
+			<p>{{formStatus}}</p>
+		</div>
+	</div>
 
 </div>

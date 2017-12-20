@@ -154,7 +154,7 @@
 }
 .services-accordion-section h4 {
   position: relative;
-  right: -40px;
+  padding: 10px 0 10px 40px;
   font-size: medium;
 }
 .services-plus-sign {
@@ -175,12 +175,9 @@
 }
 .services-accordion-text {
   position: relative;
-  width: 80%;
-  font-family: "Rogan-Regular", sans-serif;
-  letter-spacing: 1px;
-  line-height: 35px;
-  left: 10%;
-  top: 10%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 30px 30px 115px;
 }
 
 .services-work-link {
@@ -191,25 +188,3 @@
   color: #727272;
   text-decoration: line-through;
 }
-
-.services-accordion-text > p:nth-child(1) {
-  margin: 30px 0 30px 0;
-}
-.services-accordion-text > p:nth-child(2) {
-  margin: 0 0 30px 0;
-}
-.services-accordion-text > p:last-child {
-  margin: 10px 0 30px 0;
-}
-.services-accordion-text > p:only-of-type {
-  margin: 30px 0 30px 0!important;
-}
-
-.services-looking-for-help {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  position: relative;
-}
-
-
-

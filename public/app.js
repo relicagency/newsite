@@ -180,7 +180,7 @@
 
       $urlRouterProvider
           .otherwise('/home');
-      
+
   }
   function scrollFix($rootScope, $window){
     $rootScope.$on('$stateChangeSuccess', function(){

@@ -1,113 +1,40 @@
-.about-main-container {
-  position: relative;
-  height: auto;
-  width: 100%;
-  background-color: #161616;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-background {
-  position: absolute;
-  width: 100%;
-  opacity: 0.4;
-}
-
-.about-main-content {
-  position: relative;
-  height: auto;
-  margin: 200px 0 0 0;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-}
-
-.about-content-title {
-  position: relative;
-  height: 150px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  font-size: 50px;
-  color: white;
-}
-
-.about-router {
+.tab-container {
   position: relative;
   width: 100%;
   height: 150px;
   display: flex;
   flex-direction: row;
 }
-
-
-.about-router-underlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+.router-tab {
+  position: relative;
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: white;
+}
+.router-tab h3 {
+  padding-top: 55px;
+}
+.leadership-tab {
   background-color: rgba(0,0,0,1);
 }
-
-.about-router-story {
+.small-down-arrow {
   position: relative;
-  left: 0;
-  height: 100%;
-  width: 50%;
+  color: #BD9A35;
+  font-size: 36px;
+}
+
+.leader-top {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 200px;
+  flex-flow: row nowrap;
+  align-content: flex-start;
   align-items: center;
-  cursor: pointer;
-  transition: 0.15s;
-  background-color: rgba(255,255,255,1);
-}
-
-.story-router-pic {
-  position: relative;
-  height: 55%;
-  width: 100%;
-  margin-bottom: 35px;
-  background-color: #242424;
-}
-.story-router-title {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 24px;
-  color: #BD9A35;
-  text-align: center;
-}
-.story-router-down {
-  position: relative;
-  color: #BD9A35;
-  font-size: 4vmin;
-}
-
-.about-router-leadership {
-  position: absolute;
-  right: 0;
-  height: 100%;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.15s;
-}
-
-.leadership-router-title {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 24px;
-  color: #BD9A35;
-  text-align: center;
-}
-.leadership-router-down {
-  position: relative;
-  color: #BD9A35;
-  font-size: 4vmin;
+  box-sizing: border-box;
+  padding: 30px 80px;
 }
 
 .about-route-title {
@@ -153,30 +80,21 @@
 }
 
 .leader-pic {
-  position: absolute;
-  top: 42.5px;
-  left: 1in;
-  height: 115px;
   width: 115px;
   border-radius: 50%;
 }
 
 .leader-name {
-  position: absolute;
-  top: 100px;
-  left: 3in;
-  transform: translate(0, -50%);
   color: #bd9a35;
   font-size: 25px;
+  margin-left: 30px;
 }
 
 .leader-about {
   position: relative;
-  margin: 195px 0 80px 100px;
-  width: 62%;
-  line-height: 34px;
   opacity: 0;
   color: black;
+  padding: 0px 80px 30px 80px;
 }
 
 .about-route-story {
@@ -243,78 +161,3 @@
   top: 67%;
   left: 40%;
 }
-
-#about-looking-for-help {
-  height: 45vh;
-}
-
-@media screen and (max-width: 425px){
-
-  .story-router-title {
-    font-size: 18px;
-  }
-  .leadership-router-title {
-    font-size: 18px;
-  }
-
-  .leadership-leader {
-    position: relative;
-    width: 100%;
-    height: 210px;
-    background-color: white;
-    border-top: 2px solid #f4f4f4;
-    cursor: pointer;
-    color: black;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .leader-pic {
-    position: relative;
-    margin: 20px 0 20px;
-    height: 115px;
-    width: 115px;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-  }
-
-  .leader-name {
-    position: relative;
-    font-size: 20px;
-    margin: 20px 0 20px 0;
-    top: 0;
-    left: 0;
-  }
-
-  .leader-about {
-    position: relative;
-    margin: 25px 0 50px 0;
-    width: 80%;
-    line-height: 34px;
-    opacity: 0;
-    color: black;
-    transform: translate(0, 0);
-    text-align: center;
-    top: 0;
-    left: 0;
-  }
-
-  .story-router-down {
-    position: relative;
-    margin-top: 0;
-    color: #BD9A35;
-    font-size: 5vmin;
-  }
-
-  .leadership-router-down {
-    position: relative;
-    margin-top: 0;
-    color: #BD9A35;
-    font-size: 5vmin;
-  }
-
-}
-

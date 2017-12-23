@@ -1,90 +1,34 @@
-.expertise-main-container {
+.expertise-backdrop {
   position: relative;
-  width: 100%;
-  height: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.expertise-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0.4;
-}
-
-.expertise-title {
-  position: relative;
-  color: white;
-  font-size: 50px;
-  text-transform: uppercase;
-  margin: 200px 0 0 0;
-  letter-spacing: 3px;
-}
-
-.expertise-main-content {
-  position: relative;
-  margin: 170px 0 0 0;
-  height: auto;
-  width: 75%;
-  display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
-  flex-wrap: wrap;
+  width: 100%;
 }
-
-.expertise-content {
-  height: 25vw;
-  width: 25vw;
-  margin: -1px;
-  background-color: rgba(225, 225, 225, 0.9);
-  color: #161616;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition-duration: .15s;
+.expertise-item {
+  position: relative;
+  background-color: rgba(180, 180, 180, 1);
+  margin: 10px;
+  width: 27vw;
+  height: 27vw;
+  transition: 0.2s;
+}
+.expertise-item p {
+  color: #777;
   text-align: center;
-  margin: 0 50px 100px 50px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.expertise-content:hover {
+.expertise-item:hover {
   background-color: rgba(255, 255, 255, 1);
 }
 
-@media screen and (max-width: 850px) {
-
-
-  .expertise-main-content {
-    width: 95%;
+@media all and (max-width: 650px){
+  .expertise-item {
+    width: 45vw;
+    height: 45vw;
   }
-
-  .expertise-content {
-    font-size: 20px;
-  }
-
-}
-
-@media screen and (max-width: 500px) {
-
-  .expertise-main-content {
-    position: relative;
-    margin: 170px 0 0 0;
-    height: auto;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .expertise-content {
-    height: calc(100vw - 100px);
-    width: calc(100vw - 100px);
-    font-size: 30px;
-    margin: 20px 0 0 0;
-  }
-
 }

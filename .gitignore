@@ -1,4 +1,5 @@
+# Dependency Directory
 node_modules
-.vscode
-.npm
+
+#Gulp Output
 dist

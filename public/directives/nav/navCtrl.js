@@ -1,11 +1,7 @@
-
-
 (function(){
     angular.module('app')
         .controller('navCtrl', function($scope){
-
             let lastNavTitle = "";
-
             $scope.routeLighter = function(num) {
                 let title = document.getElementById('nav-item-title-' + num),
                     lastTitle = document.getElementById('nav-item-title-' + lastNavTitle);
@@ -27,7 +23,6 @@
                 });
                 lastNavTitle = num;
             };
-
 
             $scope.navDropper = function(num) {
                 TweenMax.to(document.getElementById('nav-item-drop-' + num), 0.15,  {

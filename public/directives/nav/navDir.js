@@ -1,5 +1,4 @@
 (function(){
-
   angular.module('app')
   .directive('navDir', function(){
     return {
@@ -8,5 +7,4 @@
       controller: 'navCtrl'
     }
   })
-
 })()

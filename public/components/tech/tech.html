@@ -1,52 +1,57 @@
-<div class="tech-main-container">
-
-    <img src="../../images/tech.jpg" class="tech-background" id="tech-background">
-
-    <div class="tech-main-content">
-        <div class="tech-title"><p class="page-title">Tech</p></div>
-        <div class="tech-experts">
-            <div class="tech-experts-top">
-                <div class="tech-experts-top-left"></div>
-                <div class="tech-experts-top-right"></div>
-            </div>
-
-            <div class="tech-industry-experts">
-                <h6>industry<br>
-                    experts</h6>
-            </div>
-
-            <div class="tech-industry-info">
-                <p>The tech world is flooded with countless products, services and options. We are living in a time when thousands of new tech products are being created every single day. In such a seemingly oversaturated market, it can be hard to distinguish yourself from the competition, but that’s what we’re here for. Relic’s team has the experience in tech that will allow help your company grow exponentially.</p> <br>
-                <p>At Relic, we take pride in our ability to deliver real, measurable results on our campaigns. We don’t spout off empty statistics that appear good but are, in reality, meaningless. We save that for the baseball “experts.” Rather, our focus is on the client and the metrics that bring success specifically for your company. You know your customer base; we know the strategy to deliver your product. Our industry disrupting advertising techniques can take your business to the next level. Ever heard of a match made in heaven?</p>
-            </div>
-
-        </div>
-
-        <div class="tech-clients-title">
-            <p>tech clients</p>
-        </div>
-        <div class="tech-clients">
-
-            <div class="tech-clients-content">
-                <a href="/#!/work/workfront"><img class="tech-work" src="../../images/work-workfront.jpg"></a>
-                <img class="tech-work" src="../../images/work-bamboo.jpg">
-                <img class="tech-work" src="../../images/work-jive.jpg">
-                <img class="tech-work" src="../../images/work-inmoment.jpg">
-                <img class="tech-work" src="../../images/work-numetric.jpg">
-            </div>
-
-        </div>
-
-
-
-    </div>
-
-</div>
-
-<div class="looking-for-help">
-
-    <p>{{ctaText}}</p>
-
-    <get-started-dir></get-started-dir>
-
+<div class="main-container">
+	<img src="../../images/tech.jpg" class="tech-background" id="tech-background">
+	<div class="page-main-content">
+		<h1 class="page-title">tech</h1>
+		<div class="text-area-white" id="about-route-story">
+			<div class="column-25">
+				<h3 class="key-point">Industry Experts</h3>
+			</div>
+			<div class="column-75">
+				<p>The tech world is flooded with countless products, services and options. We are living in a time when thousands of new tech products are being created every single day. In such a seemingly oversaturated market, it can be hard to distinguish yourself from the competition, but that’s what we’re here for. Relic’s team has the experience in tech that will allow help your company grow exponentially.<span class="gold-emphasis" id="tech-read-more" ng-click="readMore()"> Read More . . .</span></p>
+				<div class="tech-more-info" id="tech-more-info">
+					<p>At Relic, we take pride in our ability to deliver real, measurable results on our campaigns. We don’t spout off empty statistics that appear good but are, in reality, meaningless. We save that for the baseball “experts.” Rather, our focus is on the client and the metrics that bring success specifically for your company. You know your customer base; we know the strategy to deliver your product. Our industry disrupting advertising techniques can take your business to the next level. Ever heard of a match made in heaven?</p>
+					<p class="gold-emphasis" id="tech-read-less" ng-click="readLess()"> . . . Read Less</p>
+				</div>
+			</div>
+		</div>
+		<p class="page-subtitle">Tech Clients</p>
+		<div class="page-content dark-back">
+			<div class="flex-grid">
+				<a class="flex-item-25" href="/#!/work/workfront">
+					<div ng-mouseover="workEnter()" ng-mouseleave="workLeave()">
+						<img src="../../images/work-workfront.jpg" class="image-overlay">
+						<img src="../../images/work-workfront2.png" class="image-underlay">
+					</div>
+				</a>
+				<a class="flex-item-25" href="/#!/work/bamboohr">
+					<div ng-mouseover="workEnter()" ng-mouseleave="workLeave()">
+						<img src="../../images/work-bamboo.jpg" class="image-overlay">
+						<img src="../../images/work-bamboo2.jpg" class="image-underlay">
+					</div>
+				</a>
+				<a class="flex-item-25" href="/#!/work/jive">
+					<div ng-mouseover="workEnter()" ng-mouseleave="workLeave()">
+						<img src="../../images/work-jive.jpg" class="image-overlay">
+						<img src="../../images/work-jive2.jpg" class="image-underlay">
+					</div>
+				</a>
+				<a class="flex-item-25" href="/#!/work/inmoment">
+					<div ng-mouseover="workEnter()" ng-mouseleave="workLeave()">
+						<img src="../../images/work-inmoment.jpg" class="image-overlay">
+						<img src="../../images/work-inmoment2.jpg" class="image-underlay">
+					</div>
+				</a>
+				<a class="flex-item-25" href="/#!/work/numetric">
+					<div ng-mouseover="workEnter()" ng-mouseleave="workLeave()">
+						<img src="../../images/work-numetric.jpg" class="image-overlay">
+						<img src="../../images/work-numetric2.jpg" class="image-underlay">
+					</div>
+				</a>
+			</div>
+		</div>
+    <div class="cta-section">
+			<p>Looking for advertising help?</p>
+			<get-started-dir></get-started-dir>
+		</div>
+	</div>
 </div>
